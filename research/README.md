@@ -29,6 +29,8 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 
 - `pt-BR/sintese-revisoes-centrais-01.md`: first critical review-of-reviews synthesis.
 - `data/review-of-reviews-01.csv`: structured comparison of the first eight central reviews.
+- `pt-BR/sintese-formatos-resposta-feedback-01.md`: focused synthesis of response formats, scoring, feedback content, timing and retry cycles.
+- `data/response-feedback-evidence-01.csv`: structured evidence table for the response and feedback review.
 
 ### Search records
 
@@ -45,10 +47,11 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `templates/triagem.csv`: screening template.
 - `library/referencias-iniciais.bib`: verified seed and central review references.
 - `library/referencias-sistemas-iniciais.bib`: official and academic references for related learning systems.
+- `library/referencias-formatos-feedback.bib`: references for response formats, scoring and feedback.
 - `requests/textos-integrais.md`: precise requests for inaccessible material.
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.
