@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "ara.research-framework.v1",
+  "status": "accepted-normative-handoff",
+  "objects": {
+    "ResearchQuestion": {"required": ["id","version","text","purpose","constructRefs","decisionUse","owner"]},
+    "Protocol": {"required": ["id","version","status","questions","population","eligibility","conditions","assignment","instruments","eventAuthorizations","outcomes","analysisPlan","governance","retention","exportPolicy","provenance"]},
+    "Condition": {"required": ["id","version","label","contentManifest","configurationSnapshot","compositionManifest","capabilityManifest","instrumentSchedule","eventAuthorizationManifest","lockedDimensions","allowedRightsOverrides"]},
+    "Participant": {"required": ["id","identityMode","eligibilityStatus","consentRefs","assignmentRefs","rightsStatus"]},
+    "Assignment": {"required": ["id","participantRef","conditionRef","method","timestamp","authority","strataOrSequence","concealmentOrVisibility"]},
+    "EventDefinition": {"required": ["id","version","purpose","actorTypes","objectType","requiredProperties","authorization","retentionClass","prohibitedInferences"]},
+    "InstrumentDefinition": {"required": ["id","version","methodFamily","sourceOrLicense","language","administration","scoringOrCoding","accommodations","constructRefs"]},
+    "InstrumentInstance": {"required": ["id","definitionRef","participantRef","conditionRef","scheduledAt","administeredAt","status","versionSnapshot"]},
+    "MeasureDefinition": {"required": ["id","version","questionRef","formula","unit","unitOfAnalysis","window","inputs","missingDataPolicy","limitations","permittedUse"]},
+    "ConstructDefinition": {"required": ["id","version","definition","evidenceBasis","measureRefs","validityScope","prohibitedProxies"]},
+    "InterpretationRule": {"required": ["id","constructRef","conditions","allowedClaim","prohibitedClaim","uncertainty"]},
+    "EvidenceRecord": {"required": ["id","type","sourceRef","participantOrArtifactRef","conditionRef","version","accessClass","provenance"]},
+    "ResearchPackage": {"required": ["id","protocolRef","taxonomyVersion","dataDictionary","artifactManifest","provenance","exports","limitations"]}
+  },
+  "invariants": [
+    "Event availability never authorizes collection.",
+    "Each event property and instrument maps to an explicit purpose and protocol.",
+    "Event, measure, construct, interpretation and intervention are distinct.",
+    "Personal analytics does not imply researcher, teacher or institutional visibility.",
+    "Consent and withdrawal status have rights-based precedence.",
+    "Pseudonymized data remains personal data.",
+    "Operational telemetry is separated from educational/research analytics.",
+    "Every measure declares formula, denominator, window, missingness, limits and allowed use.",
+    "Research labels such as randomized or causal require the corresponding method.",
+    "Condition snapshots preserve content, configuration, composition, capabilities and instruments.",
+    "Rights-required accommodation may override a condition but must be documented without penalization.",
+    "Cross-deployment pooling requires semantic conformance evidence."
+  ],
+  "interoperability": {
+    "Caliper": "candidate event/profile mapping",
+    "xAPI": "candidate statement/LRS mapping",
+    "QTI": "candidate assessment item/test mapping",
+    "DDI": "candidate study/instrument/variable metadata mapping",
+    "PROV-O": "candidate provenance mapping",
+    "RO-Crate": "candidate portable research package mapping",
+    "DPV": "candidate privacy-purpose/processing/rights mapping",
+    "internalAuthority": "ARA semantics remain canonical; mappings may be partial and versioned"
+  }
+}
