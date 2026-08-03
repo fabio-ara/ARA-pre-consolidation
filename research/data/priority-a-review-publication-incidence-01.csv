@@ -1,0 +1,175 @@
+review_id,primary_publication_id,source_subset,provenance_status,citation_as_reported,match_basis,notes,short_name,family
+RA02,PP0001,asterisk-marked-reference,full-citation-no-doi,Akhshik 2021,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0002,asterisk-marked-reference,full-citation-no-doi,Aksel 2021,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0003,asterisk-marked-reference,exact-doi-or-full-citation,Andarab 2019,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0004,asterisk-marked-reference,full-citation-no-doi,Arslan 2020,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0005,asterisk-marked-reference,exact-doi-or-full-citation,Ashcroft 2018,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0006,asterisk-marked-reference,full-citation-no-doi,Atalan 2022,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0007,asterisk-marked-reference,full-citation-no-doi,Barr 2016,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0008,asterisk-marked-reference,exact-doi-or-full-citation,Chaikovska 2020,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0009,asterisk-marked-reference,full-citation-no-doi,Cinar 2019,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0010,asterisk-marked-reference,exact-doi-or-full-citation,Fursenko 2021,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0011,asterisk-marked-reference,exact-doi-or-full-citation,Ho 2021,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0012,asterisk-marked-reference,exact-doi-or-full-citation,Korlu 2018,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0013,asterisk-marked-reference,full-citation-no-doi,Kurtoglu 2021,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0014,asterisk-marked-reference,exact-doi-or-full-citation,Lin 2022,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0015,asterisk-marked-reference,exact-doi-or-full-citation,Nguyen 2022,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0016,asterisk-marked-reference,exact-doi-or-full-citation,Ozer 2017,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0017,asterisk-marked-reference,exact-doi-or-full-citation,Sanosi 2018,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0018,asterisk-marked-reference,full-citation-no-doi,Setiawan 2021,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0019,asterisk-marked-reference,full-citation-no-doi,Tanjung 2020,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0020,asterisk-marked-reference,full-citation-no-doi,Toy 2019,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0021,asterisk-marked-reference,full-citation-no-doi,Van 2020,author-year-title,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA02,PP0022,asterisk-marked-reference,exact-doi-or-full-citation,Wang 2021,doi,,Özdemir & Seçkin 2024,quizlet-vocabulary
+RA03,PP0023,included-publication-table,author-year-only,Amabile 2021,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0024,included-publication-table,author-year-only,Anders 2022,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0025,included-publication-table,author-year-only,Biwer 2022,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0026,included-publication-table,author-year-only,Blasiman 2017,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0027,included-publication-table,author-year-only,Breckwoldt 2016,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0028,included-publication-table,author-year-only,Brown-Kramer 2021,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0029,included-publication-table,author-year-only,Burdo and O’Dwyer 2015,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0030,included-publication-table,author-year-only,Cadaret and Yates 2018,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0031,included-publication-table,author-year-only,Carpenter 2016,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0032,included-publication-table,author-year-only,Carpenter 2018,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0033,included-publication-table,author-year-only,Cecilio-Fernandes 2018,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0034,included-publication-table,author-year-only,Dobson and Linderholm 2015a,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0035,included-publication-table,author-year-only,Dobson and Linderholm 2015b,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0036,included-publication-table,author-year-only,Dobson 2018,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0037,included-publication-table,author-year-only,Dobson 2011,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0038,included-publication-table,author-year-only,Dobson 2012,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0039,included-publication-table,author-year-only,Dobson 2013,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0040,included-publication-table,author-year-only,Dobson 2019,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0041,included-publication-table,author-year-only,Dobson 2015,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0042,included-publication-table,author-year-only,Dobson 2017,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0043,included-publication-table,author-year-only,Ernst 2014,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0044,included-publication-table,author-year-only,Fendos 2020,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0045,included-publication-table,author-year-only,Francis 2020,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0046,included-publication-table,author-year-only,Glass 2013,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0047,included-publication-table,author-year-only,Gopalan 2020,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0048,included-publication-table,author-year-only,Gurung and Burns 2019,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0049,included-publication-table,author-year-only,Hernick 2015,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0050,included-publication-table,author-year-only,Higham 2022,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0051,included-publication-table,author-year-only,Iwamoto 2017,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0052,included-publication-table,author-year-only,Janes 2020,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0053,included-publication-table,author-year-only,Kerdijk 2015,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0054,included-publication-table,author-year-only,Keus 2019,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0055,included-publication-table,author-year-only,LaDisa and Biesboer 2017,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0056,included-publication-table,author-year-only,Lawson 2022,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0057,included-publication-table,author-year-only,Linderholm 2016,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0058,included-publication-table,author-year-only,Logan 1975,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0059,included-publication-table,author-year-only,Messineo 2015,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0060,included-publication-table,author-year-only,Miller and Srimaneerungroj 2022,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0061,included-publication-table,author-year-only,Moore and Chalk 2012,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0062,included-publication-table,author-year-only,Nevid 2016,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0063,included-publication-table,author-year-only,Oermann 2022a,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0064,included-publication-table,author-year-only,Oermann 2022b,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0065,included-publication-table,author-year-only,Opre 2022,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0066,included-publication-table,author-year-only,Osterhage 2019,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0067,included-publication-table,author-year-only,Palmen 2015,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0068,included-publication-table,author-year-only,Palmer 2019,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0069,included-publication-table,author-year-only,Poorthuis and van Dijk 2021,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0070,included-publication-table,author-year-only,Schmidmaier 2011,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0071,included-publication-table,author-year-only,Schneider 2019,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0072,included-publication-table,author-year-only,Sennhenn-Kirchner 2018,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0073,included-publication-table,author-year-only,Shobe 2022,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0074,included-publication-table,author-year-only,Terenyi 2018,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0075,included-publication-table,author-year-only,Terenyi 2019,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0076,included-publication-table,author-year-only,Timmer 2020,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0077,included-publication-table,author-year-only,Trumbo 2016,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA03,PP0078,included-publication-table,author-year-only,Wong 2022,author-year,Full bibliographic normalization pending.,Trumble et al. 2024,health-professions-retrieval-spacing
+RA05,PP0079,included-study-list,exact-doi-or-full-citation,Deng 2015,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0080,included-study-list,exact-doi-or-full-citation,Magro 2024,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0081,included-study-list,exact-doi-or-full-citation,Wothe 2023,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0082,included-study-list,exact-doi-or-full-citation,Haughey 2025,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0083,included-study-list,exact-doi-or-full-citation,Durrani 2024,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0084,included-study-list,exact-doi-or-full-citation,Sun 2021,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0085,included-study-list,exact-doi-or-full-citation,Winter 2025,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0086,included-study-list,exact-doi-or-full-citation,Levy 2023,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0087,included-study-list,exact-doi-or-full-citation,Mehta 2023,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0088,included-study-list,exact-doi-or-full-citation,Gilbert 2023,doi,,Frappa et al. 2026,anki-medical
+RA05,PP0089,included-study-list,exact-doi-or-full-citation,Lu 2021,doi,,Frappa et al. 2026,anki-medical
+RA06,PP0090,review-table,full-table-row,Baghdady 2014,author-year,,Thompson & Hughes 2023,radiology-retrieval-spacing
+RA06,PP0091,review-table,full-table-row,Kleiman 2017,author-year,,Thompson & Hughes 2023,radiology-retrieval-spacing
+RA06,PP0092,review-table,full-table-row,Kleiman 2019,author-year,,Thompson & Hughes 2023,radiology-retrieval-spacing
+RA06,PP0093,review-table,full-table-row,Potter 2019,author-year,,Thompson & Hughes 2023,radiology-retrieval-spacing
+RA06,PP0094,review-table,full-table-row,Choe 2022,author-year,,Thompson & Hughes 2023,radiology-retrieval-spacing
+RA06,PP0095,review-table,full-table-row,Tshibwabwa 2017,author-year,,Thompson & Hughes 2023,radiology-retrieval-spacing
+RA06,PP0096,review-table,full-table-row,Rozenshtein 2016,author-year-title,,Thompson & Hughes 2023,radiology-retrieval-spacing
+RA06,PP0097,review-table,full-table-row,Shah 2016,author-year-title,,Thompson & Hughes 2023,radiology-retrieval-spacing
+RA07,PP0088,meta-analysis-subset,exact-doi-or-full-citation,Gilbert 2023,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0089,meta-analysis-subset,exact-doi-or-full-citation,Lu 2021,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0083,meta-analysis-subset,exact-doi-or-full-citation,Durrani 2024,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0098,meta-analysis-subset,exact-doi-or-full-citation,Tsai 2021,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0099,meta-analysis-subset,exact-doi-or-full-citation,Brateanu 2019,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0100,meta-analysis-subset,exact-doi-or-full-citation,Santos-Ferreira 2024,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0101,meta-analysis-subset,exact-doi-or-full-citation,Kerfoot 2007a,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0102,meta-analysis-subset,exact-doi-or-full-citation,Kerfoot 2009,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0103,meta-analysis-subset,exact-doi-or-full-citation,Kerfoot 2010a,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0104,meta-analysis-subset,exact-doi-or-full-citation,Kerfoot 2010b,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0105,meta-analysis-subset,exact-doi-or-full-citation,Cunningham 2023,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0106,meta-analysis-subset,exact-doi-or-full-citation,Larsen 2009,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA07,PP0107,meta-analysis-subset,exact-doi-or-full-citation,Price 2025,doi,,Maye & Hurley 2026,medical-spaced-repetition
+RA09,PP0108,review-table,exact-doi-or-full-citation,Abdullah Al-Malki 2020,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0109,review-table,table-author-year,Aprilani 2021,author-year-title,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0110,review-table,table-author-year,Atalan 2023,author-year-title,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0111,review-table,exact-doi-or-full-citation,Boroughani 2023,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0112,review-table,exact-doi-or-full-citation,Bueno-Alastuey 2022,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0008,review-table,exact-doi-or-full-citation,Chaikovska 2020,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0113,review-table,exact-doi-or-full-citation,Chen 2021,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0011,review-table,exact-doi-or-full-citation,Ho 2021,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0114,review-table,table-author-year,Hsu 2023,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0115,review-table,exact-doi-or-full-citation,Ipek 2021,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0116,review-table,table-author-year,Jiang 2022,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0117,review-table,table-author-year,Jiang 2021a,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0118,review-table,table-author-year,Kurbakova 2020,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0119,review-table,table-author-year,Liu 2022,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0120,review-table,table-author-year,Luan 2023,author-year-title,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0121,review-table,table-author-year,Muqaibal 2022,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0122,review-table,exact-doi-or-full-citation,Mykytka 2023,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0015,review-table,exact-doi-or-full-citation,Nguyen 2022,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0123,review-table,table-author-year,Nguyen 2023,author-year-title,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0124,review-table,table-author-year,Panfilova 2022,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0125,review-table,table-author-year,Pham 2022,author-year-title,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0126,review-table,exact-doi-or-full-citation,Pratiwi 2023,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0127,review-table,table-author-year,Saienko 2020,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0128,review-table,exact-doi-or-full-citation,Toy 2020,doi,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA09,PP0129,review-table,table-author-year,Ulla 2020,author-year,,Öcel & Su-Bergil 2025,quizlet-vocabulary
+RA12,PP0130,testing-effect-table,author-year-table,Barenberg 2019,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0131,testing-effect-table,author-year-table,Bouwmeester 2011,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0132,testing-effect-table,author-year-table,Cassidy 1995,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0133,testing-effect-table,author-year-table,Goossens 2014a,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0134,testing-effect-table,author-year-table,Goossens 2014b,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0135,testing-effect-table,author-year-table,Goossens 2016,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0136,testing-effect-table,author-year-table,Hanham 2017,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0137,testing-effect-table,author-year-table,Jaeger 2015,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0138,testing-effect-table,author-year-table,Karpicke 2014,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0139,testing-effect-table,author-year-table,Karpicke 2016,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0140,testing-effect-table,author-year-table,Kliegl 2018,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0141,testing-effect-table,author-year-table,Lima 2020,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0142,testing-effect-table,author-year-table,Lipko-Speed 2014,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0143,testing-effect-table,author-year-table,Lipowski 2014,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0144,testing-effect-table,author-year-table,Marsh 2012,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0145,testing-effect-table,author-year-table,McDermott 2014,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0146,testing-effect-table,author-year-table,Moreira 2019,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0147,testing-effect-table,author-year-table,Ortega-Tudela 2021,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0148,testing-effect-table,author-year-table,Roediger 2011,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0149,testing-effect-table,author-year-table,Rohrer 2010,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0150,testing-effect-table,author-year-table,Swanson 1983,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0151,testing-effect-table,author-year-table,Wiklund-Hornqvist 2022,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0152,spacing-effect-table,author-year-table,Gluckman 2014,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0153,spacing-effect-table,author-year-table,Goossens 2012,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0135,spacing-effect-table,author-year-table,Goossens 2016,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0154,spacing-effect-table,author-year-table,Price 2006,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0155,spacing-effect-table,author-year-table,Rea 1987,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0156,spacing-effect-table,author-year-table,Rogers 2021,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0157,spacing-effect-table,author-year-table,Samudra 2019,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0158,spacing-effect-table,author-year-table,Seabrook 2005,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0159,spacing-effect-table,author-year-table,Slone 2017,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0160,spacing-effect-table,author-year-table,Sobel 2011,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0161,spacing-effect-table,author-year-table,Toppino 1984,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0162,spacing-effect-table,author-year-table,Toppino 1991,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0163,spacing-effect-table,author-year-table,Toppino 2009,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0164,spacing-effect-table,author-year-table,Vlach 2008,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0165,spacing-effect-table,author-year-table,Vlach 2012,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0166,spacing-effect-table,author-year-table,Vlach 2019,author-year,,Cadavid et al. 2025,children-memory-techniques
+RA12,PP0167,spacing-effect-table,author-year-table,Zigterman 2015,author-year,,Cadavid et al. 2025,children-memory-techniques
