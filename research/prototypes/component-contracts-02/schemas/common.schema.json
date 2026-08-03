@@ -1,0 +1,760 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.ara.example/component-contracts/0.2/common.schema.json",
+  "title": "ARA component contracts 0.2 common definitions",
+  "$defs": {
+    "semver": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "componentRef": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*@[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "capabilityAvailability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "source"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "available",
+            "unavailable",
+            "degraded",
+            "requires-network",
+            "requires-host"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "deployment-profile",
+            "component-manifest",
+            "runtime-probe",
+            "author-policy",
+            "research-protocol"
+          ]
+        },
+        "evaluatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "responseMetadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "adapterVersion",
+        "canonicalizationVersion",
+        "capabilityAvailability"
+      ],
+      "properties": {
+        "adapterVersion": {
+          "$ref": "#/$defs/semver"
+        },
+        "canonicalizationVersion": {
+          "$ref": "#/$defs/semver"
+        },
+        "capabilityAvailability": {
+          "$ref": "#/$defs/capabilityAvailability"
+        }
+      }
+    },
+    "validationLocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "authority",
+        "required"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "client-public",
+            "trusted-host-protected",
+            "human-review",
+            "probabilistic-assistance"
+          ]
+        },
+        "authority": {
+          "enum": [
+            "deterministic-validator",
+            "human-review",
+            "probabilistic-assistance",
+            "authored-rule"
+          ]
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "capabilityId": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "derivedStatePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "recomputable",
+        "cacheLifetime",
+        "canonicalForbiddenFields"
+      ],
+      "properties": {
+        "recomputable": {
+          "type": "boolean"
+        },
+        "cacheLifetime": {
+          "enum": [
+            "none",
+            "session",
+            "device-cache",
+            "deployment-cache"
+          ]
+        },
+        "canonicalForbiddenFields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "operationAlternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation",
+        "keyboard",
+        "nonvisual",
+        "statusAnnouncement",
+        "focusManagement",
+        "reflow"
+      ],
+      "properties": {
+        "operation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "keyboard": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nonvisual": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statusAnnouncement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "focusManagement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reflow": {
+          "type": "string",
+          "minLength": 1
+        },
+        "knownLimits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "accessibilityContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operations",
+        "textAlternative",
+        "knownLimits"
+      ],
+      "properties": {
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/operationAlternative"
+          },
+          "minItems": 1
+        },
+        "textAlternative": {
+          "type": "string",
+          "minLength": 1
+        },
+        "knownLimits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "measuredPackageProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "method",
+        "environment"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "measured",
+            "estimated",
+            "not-measured"
+          ]
+        },
+        "packagedBytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coldStartMs": {
+          "type": "number",
+          "minimum": 0
+        },
+        "heapUsedBytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "environment": {
+          "type": "string",
+          "minLength": 1
+        },
+        "measuredAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "validationEvidencePolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "defaultVisibility",
+        "retention",
+        "redactionRequired"
+      ],
+      "properties": {
+        "defaultVisibility": {
+          "enum": [
+            "learner",
+            "author",
+            "reviewer",
+            "researcher",
+            "system-only"
+          ]
+        },
+        "retention": {
+          "enum": [
+            "none",
+            "session",
+            "attempt",
+            "course-version",
+            "protocol-defined"
+          ]
+        },
+        "redactionRequired": {
+          "type": "boolean"
+        },
+        "protectedKinds": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "protected-tests",
+              "review-notes",
+              "probabilistic-trace",
+              "security-diagnostics",
+              "personal-data"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "runtimeLimits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "timeMs",
+        "memoryMiB",
+        "outputBytes",
+        "outputMessages",
+        "cancellationRequired",
+        "network",
+        "filesystem"
+      ],
+      "properties": {
+        "timeMs": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "memoryMiB": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "outputBytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "outputMessages": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "cancellationRequired": {
+          "type": "boolean"
+        },
+        "network": {
+          "enum": [
+            "none",
+            "allowlist",
+            "deployment-policy"
+          ]
+        },
+        "filesystem": {
+          "enum": [
+            "none",
+            "ephemeral-readonly",
+            "ephemeral-readwrite",
+            "deployment-policy"
+          ]
+        }
+      }
+    },
+    "runtimeRequirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "validationLocations",
+        "isolationAssurance",
+        "productionEligibility",
+        "limits"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "none",
+            "deterministic-local",
+            "sandboxed-execution",
+            "human-review",
+            "remote-service"
+          ]
+        },
+        "validationLocations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/validationLocation"
+          },
+          "minItems": 1
+        },
+        "isolationAssurance": {
+          "enum": [
+            "none",
+            "cooperative",
+            "browser-origin",
+            "process",
+            "container",
+            "microvm",
+            "external-certified-service"
+          ]
+        },
+        "productionEligibility": {
+          "enum": [
+            "research-only",
+            "conditionally-eligible",
+            "eligible",
+            "rejected"
+          ]
+        },
+        "runtimeVersion": {
+          "type": "string"
+        },
+        "reproducibilityDigest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "limits": {
+          "$ref": "#/$defs/runtimeLimits"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "securityBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "courseSuppliedCode",
+        "learnerCode",
+        "trustedComponentCode",
+        "sensitiveData"
+      ],
+      "properties": {
+        "courseSuppliedCode": {
+          "const": "forbidden"
+        },
+        "learnerCode": {
+          "enum": [
+            "forbidden",
+            "data-only",
+            "untrusted-isolated"
+          ]
+        },
+        "trustedComponentCode": {
+          "enum": [
+            "built-in",
+            "installed-approved-adapter",
+            "external-governed-service"
+          ]
+        },
+        "sensitiveData": {
+          "enum": [
+            "forbidden",
+            "protocol-governed",
+            "deployment-governed"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "offlineProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "grade",
+        "networkDuringStudy",
+        "packageRequirements"
+      ],
+      "properties": {
+        "grade": {
+          "enum": [
+            "full",
+            "package-required",
+            "public-validation-only",
+            "not-supported"
+          ]
+        },
+        "networkDuringStudy": {
+          "enum": [
+            "forbidden",
+            "optional",
+            "required"
+          ]
+        },
+        "packageRequirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "feedbackItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "target",
+        "content",
+        "authority",
+        "reveal"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "confirmation",
+            "interpretation-preview",
+            "diagnostic",
+            "explanation",
+            "next-step",
+            "review-note",
+            "capability-status"
+          ]
+        },
+        "target": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "authority": {
+          "enum": [
+            "deterministic-validator",
+            "human-review",
+            "probabilistic-assistance",
+            "authored-rule"
+          ]
+        },
+        "reveal": {
+          "enum": [
+            "immediate",
+            "after-confirmation",
+            "after-attempt",
+            "after-review",
+            "author-configured"
+          ]
+        }
+      }
+    },
+    "feedbackContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "timing",
+        "items",
+        "scoreIndependent",
+        "retryPolicy"
+      ],
+      "properties": {
+        "timing": {
+          "enum": [
+            "immediate",
+            "after-confirmation",
+            "after-attempt",
+            "after-review",
+            "author-configured"
+          ]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/feedbackItem"
+          }
+        },
+        "scoreIndependent": {
+          "type": "boolean"
+        },
+        "retryPolicy": {
+          "enum": [
+            "unlimited-formative",
+            "limited",
+            "none",
+            "author-configured",
+            "protocol-locked"
+          ]
+        }
+      }
+    },
+    "criterionOutcome": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criterionId",
+        "state",
+        "authority"
+      ],
+      "properties": {
+        "criterionId": {
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "satisfied",
+            "not-satisfied",
+            "partial",
+            "unsupported",
+            "review-required"
+          ]
+        },
+        "authority": {
+          "enum": [
+            "deterministic-validator",
+            "human-review",
+            "probabilistic-assistance",
+            "authored-rule"
+          ]
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0
+        },
+        "evidenceRef": {
+          "type": "string"
+        }
+      }
+    },
+    "validationResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "contract",
+        "version",
+        "validity",
+        "criteria",
+        "authority",
+        "finalState",
+        "validationLocations",
+        "evidencePolicy",
+        "feedback"
+      ],
+      "properties": {
+        "contract": {
+          "const": "ara.adapter-validation-result"
+        },
+        "version": {
+          "const": "0.2.0"
+        },
+        "validity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state",
+            "issues"
+          ],
+          "properties": {
+            "state": {
+              "enum": [
+                "valid",
+                "invalid",
+                "unsupported"
+              ]
+            },
+            "issues": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/criterionOutcome"
+          }
+        },
+        "authority": {
+          "enum": [
+            "deterministic-validator",
+            "human-review",
+            "probabilistic-assistance",
+            "mixed"
+          ]
+        },
+        "finalState": {
+          "enum": [
+            "invalid",
+            "unsupported",
+            "incorrect",
+            "partial",
+            "correct",
+            "review-required"
+          ]
+        },
+        "validationLocations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/validationLocation"
+          },
+          "minItems": 1
+        },
+        "evidencePolicy": {
+          "$ref": "#/$defs/validationEvidencePolicy"
+        },
+        "evidence": {
+          "type": "object"
+        },
+        "feedback": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/feedbackItem"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority",
+        "createdAt",
+        "sourceIds",
+        "license"
+      ],
+      "properties": {
+        "authority": {
+          "enum": [
+            "project-authored",
+            "migrated",
+            "course-author",
+            "institution",
+            "research-protocol"
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "license": {
+          "type": "string"
+        },
+        "contentDigest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}

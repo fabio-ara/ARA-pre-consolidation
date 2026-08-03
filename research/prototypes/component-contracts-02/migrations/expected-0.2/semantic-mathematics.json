@@ -1,0 +1,246 @@
+{
+  "contract": "ara.component-prototype",
+  "version": "0.2.0",
+  "componentRef": "org.ara.prototype.semantic-expression@0.2.0",
+  "family": "semantic-mathematics",
+  "representation": {
+    "kind": "semantic-expression",
+    "languageTag": "pt-BR",
+    "expression": {
+      "kind": "add",
+      "args": [
+        {
+          "kind": "multiply",
+          "args": [
+            {
+              "kind": "number",
+              "value": 2
+            },
+            {
+              "kind": "symbol",
+              "name": "x"
+            }
+          ]
+        },
+        {
+          "kind": "number",
+          "value": 6
+        }
+      ]
+    },
+    "accessibleText": "dois x mais seis",
+    "variables": [
+      "x"
+    ],
+    "assumptions": [
+      "x is real"
+    ]
+  },
+  "activity": {
+    "id": "act-math",
+    "objective": "Produzir forma fatorada equivalente.",
+    "phase": "independent-practice",
+    "operation": "factor",
+    "prompt": "Escreva uma forma fatorada equivalente a 2x + 6.",
+    "scaffolds": []
+  },
+  "response": {
+    "id": "resp-math",
+    "inputFormat": "math-json",
+    "originalInput": "2*(x+3)",
+    "submittedExpression": {
+      "kind": "multiply",
+      "args": [
+        {
+          "kind": "number",
+          "value": 2
+        },
+        {
+          "kind": "add",
+          "args": [
+            {
+              "kind": "symbol",
+              "name": "x"
+            },
+            {
+              "kind": "number",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    "interpretationPreview": "2 × (x + 3)",
+    "submittedAt": "2026-08-03T04:45:00Z",
+    "metadata": {
+      "adapterVersion": "0.2.0",
+      "canonicalizationVersion": "0.2.0",
+      "capabilityAvailability": {
+        "state": "available",
+        "source": "component-manifest",
+        "evaluatedAt": "2026-08-03T04:45:00Z"
+      }
+    }
+  },
+  "validator": {
+    "id": "val-math",
+    "validityChecks": [
+      "parseable",
+      "symbols-declared",
+      "domain-defined"
+    ],
+    "propertyTests": [
+      {
+        "criterionId": "equivalence",
+        "test": "equivalent-to-reference",
+        "referenceExpression": {
+          "kind": "add",
+          "args": [
+            {
+              "kind": "multiply",
+              "args": [
+                {
+                  "kind": "number",
+                  "value": 2
+                },
+                {
+                  "kind": "symbol",
+                  "name": "x"
+                }
+              ]
+            },
+            {
+              "kind": "number",
+              "value": 6
+            }
+          ]
+        },
+        "weight": 0.7
+      },
+      {
+        "criterionId": "factorized-form",
+        "test": "required-form",
+        "requiredForm": "factorized",
+        "weight": 0.3
+      }
+    ],
+    "authority": "deterministic-validator",
+    "interpretationPreviewRequired": true,
+    "validationLocations": [
+      {
+        "kind": "client-public",
+        "authority": "deterministic-validator",
+        "required": true,
+        "capabilityId": "semantic-math-validator"
+      }
+    ]
+  },
+  "feedback": {
+    "timing": "after-confirmation",
+    "items": [
+      {
+        "id": "fb-math-preview",
+        "kind": "interpretation-preview",
+        "target": "response.submittedExpression",
+        "content": "A resposta foi interpretada como 2 × (x + 3).",
+        "authority": "deterministic-validator",
+        "reveal": "after-confirmation"
+      },
+      {
+        "id": "fb-math-form",
+        "kind": "explanation",
+        "target": "criterion:factorized-form",
+        "content": "A expressão está na forma fatorada solicitada.",
+        "authority": "authored-rule",
+        "reveal": "after-attempt"
+      }
+    ],
+    "scoreIndependent": true,
+    "retryPolicy": "unlimited-formative"
+  },
+  "runtimeRequirements": {
+    "kind": "deterministic-local",
+    "validationLocations": [
+      {
+        "kind": "client-public",
+        "authority": "deterministic-validator",
+        "required": true,
+        "capabilityId": "semantic-math-validator"
+      }
+    ],
+    "isolationAssurance": "none",
+    "productionEligibility": "conditionally-eligible",
+    "runtimeVersion": "migrated-semantic-mathematics-0.2",
+    "limits": {
+      "timeMs": 2000,
+      "memoryMiB": 64,
+      "outputBytes": 65536,
+      "outputMessages": 128,
+      "cancellationRequired": true,
+      "network": "none",
+      "filesystem": "none"
+    },
+    "notes": "Migrated from contract 0.1."
+  },
+  "securityBoundary": {
+    "courseSuppliedCode": "forbidden",
+    "learnerCode": "data-only",
+    "trustedComponentCode": "installed-approved-adapter",
+    "sensitiveData": "forbidden"
+  },
+  "accessibility": {
+    "operations": [
+      {
+        "operation": "enter-expression",
+        "keyboard": "Physical and virtual keyboard input.",
+        "nonvisual": "Semantic input with interpretation preview.",
+        "statusAnnouncement": "Announce parsed form and validity.",
+        "focusManagement": "Return focus to the first issue.",
+        "reflow": "Input and preview reflow.",
+        "knownLimits": [
+          "Requires notation and locale testing."
+        ]
+      }
+    ],
+    "textAlternative": "Accessible reading of the canonical expression is required.",
+    "knownLimits": [
+      "No assistive-technology user evaluation in this round."
+    ]
+  },
+  "offlineProfile": {
+    "grade": "package-required",
+    "networkDuringStudy": "forbidden",
+    "packageRequirements": [
+      "semantic-input",
+      "symbolic-validator"
+    ],
+    "limitations": [
+      "Package size depends on the selected symbolic engine."
+    ]
+  },
+  "derivedStatePolicy": {
+    "recomputable": true,
+    "cacheLifetime": "session",
+    "canonicalForbiddenFields": [
+      "layout",
+      "x",
+      "y",
+      "position",
+      "rendererState",
+      "workerHandle",
+      "libraryObject"
+    ],
+    "notes": "Renderer and runtime state are disposable and never authoritative."
+  },
+  "validationEvidencePolicy": {
+    "defaultVisibility": "learner",
+    "retention": "attempt",
+    "redactionRequired": true,
+    "protectedKinds": [
+      "protected-tests",
+      "review-notes",
+      "probabilistic-trace",
+      "security-diagnostics"
+    ]
+  }
+}

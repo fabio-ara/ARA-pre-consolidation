@@ -1,0 +1,154 @@
+{
+  "contract": "ara.component-manifest",
+  "version": "0.2.0",
+  "componentId": "org.ara.prototype.executable-programming",
+  "release": "0.2.0",
+  "family": "executable-programming",
+  "schemas": {
+    "representation": "executable-programming.schema.json#/$defs/representation",
+    "activity": "executable-programming.schema.json#/$defs/activity",
+    "response": "executable-programming.schema.json#/$defs/response",
+    "validator": "executable-programming.schema.json#/$defs/validator",
+    "feedback": "common.schema.json#/$defs/feedbackContract"
+  },
+  "capabilities": {
+    "responseModes": [
+      "code-document",
+      "execution-request"
+    ],
+    "validatorModes": [
+      "deterministic"
+    ],
+    "determinism": "fully-deterministic",
+    "rendererGeometryCanonical": false
+  },
+  "derivedStatePolicy": {
+    "recomputable": true,
+    "cacheLifetime": "session",
+    "canonicalForbiddenFields": [
+      "layout",
+      "x",
+      "y",
+      "position",
+      "rendererState",
+      "workerHandle",
+      "libraryObject"
+    ],
+    "notes": "Renderer and runtime state are disposable and never authoritative."
+  },
+  "runtimeRequirements": {
+    "kind": "sandboxed-execution",
+    "validationLocations": [
+      {
+        "kind": "client-public",
+        "authority": "deterministic-validator",
+        "required": false,
+        "capabilityId": "public-test-runner",
+        "notes": "Provides convenience only; not a security boundary."
+      },
+      {
+        "kind": "trusted-host-protected",
+        "authority": "deterministic-validator",
+        "required": true,
+        "capabilityId": "protected-test-service"
+      }
+    ],
+    "isolationAssurance": "cooperative",
+    "productionEligibility": "rejected",
+    "runtimeVersion": "reference-only-no-production-runtime",
+    "limits": {
+      "timeMs": 2500,
+      "memoryMiB": 128,
+      "outputBytes": 65536,
+      "outputMessages": 128,
+      "cancellationRequired": true,
+      "network": "none",
+      "filesystem": "ephemeral-readwrite"
+    },
+    "notes": "A conformant deployment must replace this research profile with a reviewed isolation service."
+  },
+  "securityBoundary": {
+    "courseSuppliedCode": "forbidden",
+    "learnerCode": "untrusted-isolated",
+    "trustedComponentCode": "external-governed-service",
+    "sensitiveData": "forbidden",
+    "notes": "Research Worker/vm adapters are not production isolation."
+  },
+  "accessibility": {
+    "operations": [
+      {
+        "operation": "edit-code",
+        "keyboard": "Full keyboard editing and diagnostic navigation.",
+        "nonvisual": "Editor exposes lines, diagnostics and output semantically.",
+        "statusAnnouncement": "Announce syntax, runtime and test states.",
+        "focusManagement": "Preserve cursor and allow navigation to diagnostics.",
+        "reflow": "Page reflows; editor may scroll internally.",
+        "knownLimits": [
+          "Production editor and screen-reader behavior require a separate evaluation."
+        ]
+      },
+      {
+        "operation": "run-or-cancel",
+        "keyboard": "Run and cancel controls are keyboard reachable.",
+        "nonvisual": "Execution state and cancellation are announced.",
+        "statusAnnouncement": "Assertive status for runtime termination.",
+        "focusManagement": "Return focus to run or first diagnostic.",
+        "reflow": "Controls remain visible.",
+        "knownLimits": []
+      }
+    ],
+    "textAlternative": "Code, diagnostics and test outcomes require text equivalents.",
+    "knownLimits": [
+      "No production execution service is selected."
+    ]
+  },
+  "offlineProfile": {
+    "grade": "public-validation-only",
+    "networkDuringStudy": "optional",
+    "packageRequirements": [
+      "code-editor",
+      "public-runner"
+    ],
+    "limitations": [
+      "Protected validation requires a trusted host."
+    ]
+  },
+  "measuredPackageProfile": {
+    "status": "not-measured",
+    "method": "No external runtime bundled in the contract package.",
+    "environment": "schema-level contract package",
+    "limitations": [
+      "Candidate adapter measurements are stored separately."
+    ]
+  },
+  "validationEvidencePolicy": {
+    "defaultVisibility": "learner",
+    "retention": "attempt",
+    "redactionRequired": true,
+    "protectedKinds": [
+      "protected-tests",
+      "review-notes",
+      "probabilistic-trace",
+      "security-diagnostics"
+    ]
+  },
+  "localization": {
+    "uiLocales": [
+      "pt-BR",
+      "pt-PT",
+      "en"
+    ],
+    "authoredContentLanguageMetadata": "required",
+    "translatableInterfaceStringsSeparate": true
+  },
+  "provenance": {
+    "authority": "project-authored",
+    "createdAt": "2026-08-03T04:45:00Z",
+    "sourceIds": [
+      "SYS09",
+      "SYS10",
+      "PR39"
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

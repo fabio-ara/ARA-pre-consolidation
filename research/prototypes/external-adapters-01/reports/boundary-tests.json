@@ -1,0 +1,21 @@
+{
+  "round": "external-adapters-source-audit-01",
+  "command": "node --test tests/*.test.mjs",
+  "environment": {
+    "node": "v22.16.0",
+    "platform": "linux",
+    "architecture": "x86_64"
+  },
+  "tests": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0
+  },
+  "covered": [
+    "MathLive-oriented state to canonical math response",
+    "Cytoscape-oriented elements to semantic graph response without geometry",
+    "Recogito W3C selectors to canonical annotations",
+    "adapter replacement leaves course-side documents unchanged"
+  ],
+  "runtime_candidate_execution": "not performed"
+}

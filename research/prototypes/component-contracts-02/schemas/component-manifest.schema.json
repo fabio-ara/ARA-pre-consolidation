@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.ara.example/component-contracts/0.2/component-manifest.schema.json",
+  "title": "ARA component manifest 0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract",
+    "version",
+    "componentId",
+    "release",
+    "family",
+    "schemas",
+    "capabilities",
+    "derivedStatePolicy",
+    "runtimeRequirements",
+    "securityBoundary",
+    "accessibility",
+    "offlineProfile",
+    "measuredPackageProfile",
+    "validationEvidencePolicy",
+    "localization",
+    "provenance"
+  ],
+  "properties": {
+    "contract": {
+      "const": "ara.component-manifest"
+    },
+    "version": {
+      "const": "0.2.0"
+    },
+    "componentId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "release": {
+      "$ref": "common.schema.json#/$defs/semver"
+    },
+    "family": {
+      "enum": [
+        "semantic-mathematics",
+        "relational-construction",
+        "executable-programming",
+        "source-argument"
+      ]
+    },
+    "schemas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "representation",
+        "activity",
+        "response",
+        "validator",
+        "feedback"
+      ],
+      "properties": {
+        "representation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "activity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "response": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "responseModes",
+        "validatorModes",
+        "determinism",
+        "rendererGeometryCanonical"
+      ],
+      "properties": {
+        "responseModes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "validatorModes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "deterministic",
+              "human-review",
+              "probabilistic-assistance"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "determinism": {
+          "enum": [
+            "fully-deterministic",
+            "mixed-authority",
+            "human-final"
+          ]
+        },
+        "rendererGeometryCanonical": {
+          "const": false
+        }
+      }
+    },
+    "derivedStatePolicy": {
+      "$ref": "common.schema.json#/$defs/derivedStatePolicy"
+    },
+    "runtimeRequirements": {
+      "$ref": "common.schema.json#/$defs/runtimeRequirements"
+    },
+    "securityBoundary": {
+      "$ref": "common.schema.json#/$defs/securityBoundary"
+    },
+    "accessibility": {
+      "$ref": "common.schema.json#/$defs/accessibilityContract"
+    },
+    "offlineProfile": {
+      "$ref": "common.schema.json#/$defs/offlineProfile"
+    },
+    "measuredPackageProfile": {
+      "$ref": "common.schema.json#/$defs/measuredPackageProfile"
+    },
+    "validationEvidencePolicy": {
+      "$ref": "common.schema.json#/$defs/validationEvidencePolicy"
+    },
+    "localization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "uiLocales",
+        "authoredContentLanguageMetadata",
+        "translatableInterfaceStringsSeparate"
+      ],
+      "properties": {
+        "uiLocales": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "pt-BR",
+              "pt-PT",
+              "en"
+            ]
+          },
+          "minItems": 3,
+          "uniqueItems": true
+        },
+        "authoredContentLanguageMetadata": {
+          "const": "required"
+        },
+        "translatableInterfaceStringsSeparate": {
+          "const": true
+        }
+      }
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    }
+  }
+}

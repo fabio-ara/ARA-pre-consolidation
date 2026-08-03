@@ -1,0 +1,156 @@
+{
+  "contract": "ara.component-prototype",
+  "version": "0.1.0",
+  "componentRef": "org.ara.prototype.source-argument@0.1.0",
+  "family": "source-argument",
+  "representation": {
+    "kind": "source-set",
+    "sources": [
+      {
+        "id": "src-1",
+        "title": "Proposta de ampliação",
+        "languageTag": "pt-BR",
+        "content": "A biblioteca deve ampliar o horário. Muitos estudantes trabalham durante o dia e só conseguem estudar à noite.",
+        "digest": "sha256:90a00fed32303f2d62c117342309e5ed97fcb4eb1a83285867d1d5fbe068f9b1",
+        "citation": "Fonte didática produzida para o protótipo."
+      }
+    ]
+  },
+  "activity": {
+    "id": "act-source",
+    "objective": "Selecionar evidência e formular uma razão.",
+    "phase": "independent-practice",
+    "operation": "construct-argument",
+    "prompt": "Marque a evidência e escreva uma razão.",
+    "rubricId": "rubric-source-01",
+    "scaffolds": []
+  },
+  "response": {
+    "id": "resp-source",
+    "annotations": [
+      {
+        "id": "ann-1",
+        "sourceId": "src-1",
+        "selector": {
+          "quote": "Muitos estudantes trabalham durante o dia",
+          "prefix": "lioteca deve ampliar o horário. ",
+          "suffix": " e só conseguem estudar à noite.",
+          "start": 37,
+          "end": 78,
+          "sourceDigest": "sha256:90a00fed32303f2d62c117342309e5ed97fcb4eb1a83285867d1d5fbe068f9b1"
+        },
+        "purpose": "evidence",
+        "body": "O horário atual exclui estudantes trabalhadores.",
+        "tags": [
+          "acesso"
+        ]
+      }
+    ],
+    "argumentNodes": [
+      {
+        "id": "claim-1",
+        "kind": "claim",
+        "text": "A biblioteca deve ampliar o horário."
+      },
+      {
+        "id": "reason-1",
+        "kind": "reason",
+        "text": "Estudantes que trabalham durante o dia precisam de acesso noturno."
+      }
+    ],
+    "links": [
+      {
+        "from": "reason-1",
+        "to": "claim-1",
+        "relation": "supports"
+      },
+      {
+        "from": "ann-1",
+        "to": "reason-1",
+        "relation": "uses-evidence"
+      }
+    ],
+    "submittedAt": "2026-08-03T04:45:00Z"
+  },
+  "validator": {
+    "id": "val-source",
+    "deterministicChecks": [
+      "source-digest-matches",
+      "selector-resolves",
+      "quote-matches",
+      "links-resolve",
+      "evidence-linked"
+    ],
+    "rubricCriteria": [
+      {
+        "criterionId": "relevance",
+        "description": "A evidência é relevante.",
+        "authority": "human-review",
+        "weight": 0.4
+      },
+      {
+        "criterionId": "warrant",
+        "description": "A razão explicita o vínculo.",
+        "authority": "human-review",
+        "weight": 0.6
+      },
+      {
+        "criterionId": "language-support",
+        "description": "Sugestões locais não concluem a avaliação.",
+        "authority": "probabilistic-assistance",
+        "weight": 0
+      }
+    ],
+    "finalAuthority": "human-review",
+    "probabilisticAssistanceAllowed": true,
+    "assistanceCannotFinalize": true
+  },
+  "feedback": {
+    "timing": "after-review",
+    "items": [
+      {
+        "id": "fb-source",
+        "kind": "confirmation",
+        "target": "response.annotations",
+        "content": "A integridade dos seletores foi verificada; a qualidade argumentativa exige revisão humana.",
+        "authority": "deterministic-validator",
+        "reveal": "after-confirmation"
+      }
+    ],
+    "scoreIndependent": true,
+    "retryPolicy": "author-configured"
+  },
+  "runtimeRequirements": {
+    "kind": "human-review",
+    "network": "none",
+    "filesystem": "none",
+    "execution": "none"
+  },
+  "securityBoundary": {
+    "courseSuppliedCode": "forbidden",
+    "learnerCode": "data-only",
+    "trustedComponentCode": "installed-approved-adapter",
+    "sensitiveData": "forbidden"
+  },
+  "accessibility": {
+    "keyboard": "required",
+    "screenReader": "required",
+    "reflow": "required",
+    "nonDragAlternative": "required",
+    "focusOrder": "required",
+    "textAlternative": "required",
+    "knownLimits": [
+      "Overlapping annotations require later specialist validation."
+    ]
+  },
+  "offlineProfile": {
+    "grade": "full",
+    "networkDuringStudy": "forbidden",
+    "packageRequirements": [
+      "source-annotation-adapter"
+    ],
+    "limitations": [
+      "Human review can be queued and synchronized later."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+amendment_id,decision,contract_location,change,rationale
+CA-01,accept,response metadata,Add adapterVersion and canonicalizationVersion,All four round trips require migration authority independent of component release.
+CA-02,accept-modified,runtime requirements,Add isolationAssurance and productionEligibility with explicit low-assurance values,The programming prototype showed that a Worker or vm label can overstate security.
+CA-03,accept,validator and runtime,Separate client-public trusted-host-protected human-review and probabilistic-assistance locations,Authority and execution location are independent.
+CA-04,accept,component manifest and instance,Add derivedStatePolicy with forbidden fields and cache lifetime,Renderer geometry and runtime handles must be disposable.
+CA-05,accept,response metadata,Add capabilityAvailability with source and explicit unsupported provenance,Unavailable validation must not make a structurally valid response invalid.
+CA-06,accept,source-argument validator,Add selector order ambiguity outcome and source-version policy,Repeated or drifted quotations require non-silent handling.
+CA-07,accept-modified,accessibility contract,Replace family-wide booleans with operation-level alternatives and known limits,A boolean does not describe how the same operation is performed without drag or sight.
+CA-08,accept,component manifest,Add measuredPackageProfile with method environment and limitations,Offline grades alone do not support device or deployment decisions.
+CA-09,accept,validation result and manifest,Add validationEvidencePolicy for visibility retention redaction and protected kinds,Protected tests review notes and probabilistic traces have different disclosure rules.
+CA-10,accept,runtime limits,Separate time memory output messages cancellation network and filesystem,Resource policy must be enforceable and diagnostically explicit.

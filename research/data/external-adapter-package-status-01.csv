@@ -1,0 +1,7 @@
+artifact,bytes,measurement_scope,status,limitation
+MathLive boundary adapter,2046,project-authored source,measured,no external runtime bundled
+Cytoscape boundary adapter,1980,project-authored source,measured,no external runtime bundled
+Recogito boundary adapter,2606,project-authored source,measured,no external runtime bundled
+MathLive candidate runtime,,external package,not-measured,network-enabled bake-off required
+Cytoscape.js candidate runtime,305180,official minified ESM artifact at pinned source snapshot,source-size-observed-only,snapshot is unstable; pin stable release before execution
+Recogito Text Annotator candidate runtime,,external package,not-measured,network-enabled bake-off required

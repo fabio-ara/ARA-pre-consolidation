@@ -1,0 +1,143 @@
+{
+  "contract": "ara.component-manifest",
+  "version": "0.2.0",
+  "componentId": "org.ara.prototype.relational-construction",
+  "release": "0.2.0",
+  "family": "relational-construction",
+  "schemas": {
+    "representation": "relational-construction.schema.json#/$defs/representation",
+    "activity": "relational-construction.schema.json#/$defs/activity",
+    "response": "relational-construction.schema.json#/$defs/response",
+    "validator": "relational-construction.schema.json#/$defs/validator",
+    "feedback": "common.schema.json#/$defs/feedbackContract"
+  },
+  "capabilities": {
+    "responseModes": [
+      "semantic-final-state",
+      "operation-log"
+    ],
+    "validatorModes": [
+      "deterministic"
+    ],
+    "determinism": "fully-deterministic",
+    "rendererGeometryCanonical": false
+  },
+  "derivedStatePolicy": {
+    "recomputable": true,
+    "cacheLifetime": "session",
+    "canonicalForbiddenFields": [
+      "layout",
+      "x",
+      "y",
+      "position",
+      "rendererState",
+      "workerHandle",
+      "libraryObject"
+    ],
+    "notes": "Renderer and runtime state are disposable and never authoritative."
+  },
+  "runtimeRequirements": {
+    "kind": "deterministic-local",
+    "validationLocations": [
+      {
+        "kind": "client-public",
+        "authority": "deterministic-validator",
+        "required": true,
+        "capabilityId": "relational-predicate-engine"
+      }
+    ],
+    "isolationAssurance": "none",
+    "productionEligibility": "conditionally-eligible",
+    "runtimeVersion": "semantic-relational-adapter-0.2",
+    "limits": {
+      "timeMs": 1000,
+      "memoryMiB": 64,
+      "outputBytes": 65536,
+      "outputMessages": 128,
+      "cancellationRequired": false,
+      "network": "none",
+      "filesystem": "none"
+    }
+  },
+  "securityBoundary": {
+    "courseSuppliedCode": "forbidden",
+    "learnerCode": "data-only",
+    "trustedComponentCode": "installed-approved-adapter",
+    "sensitiveData": "forbidden"
+  },
+  "accessibility": {
+    "operations": [
+      {
+        "operation": "add-edge",
+        "keyboard": "Select endpoints and activate add.",
+        "nonvisual": "Linear node-edge editor.",
+        "statusAnnouncement": "Announce added edge and current edge count.",
+        "focusManagement": "Return focus to endpoint controls.",
+        "reflow": "Visual board may use a bidimensional exception with an equivalent linear view.",
+        "knownLimits": [
+          "Dense graphs may overload both representations."
+        ]
+      },
+      {
+        "operation": "remove-edge",
+        "keyboard": "Select endpoints and activate remove.",
+        "nonvisual": "Linear edge list supports deletion.",
+        "statusAnnouncement": "Announce removal or absence.",
+        "focusManagement": "Restore focus after mutation.",
+        "reflow": "Linear view reflows.",
+        "knownLimits": []
+      }
+    ],
+    "textAlternative": "A linear node-edge representation is mandatory.",
+    "knownLimits": [
+      "Domain-specific accessible interaction remains to be validated."
+    ]
+  },
+  "offlineProfile": {
+    "grade": "full",
+    "networkDuringStudy": "forbidden",
+    "packageRequirements": [
+      "relational-model",
+      "renderer-adapter"
+    ],
+    "limitations": []
+  },
+  "measuredPackageProfile": {
+    "status": "not-measured",
+    "method": "No external runtime bundled in the contract package.",
+    "environment": "schema-level contract package",
+    "limitations": [
+      "Candidate adapter measurements are stored separately."
+    ]
+  },
+  "validationEvidencePolicy": {
+    "defaultVisibility": "learner",
+    "retention": "attempt",
+    "redactionRequired": true,
+    "protectedKinds": [
+      "protected-tests",
+      "review-notes",
+      "probabilistic-trace",
+      "security-diagnostics"
+    ]
+  },
+  "localization": {
+    "uiLocales": [
+      "pt-BR",
+      "pt-PT",
+      "en"
+    ],
+    "authoredContentLanguageMetadata": "required",
+    "translatableInterfaceStringsSeparate": true
+  },
+  "provenance": {
+    "authority": "project-authored",
+    "createdAt": "2026-08-03T04:45:00Z",
+    "sourceIds": [
+      "SYS08",
+      "SYS11",
+      "PR39"
+    ],
+    "license": "CC-BY-4.0"
+  }
+}
