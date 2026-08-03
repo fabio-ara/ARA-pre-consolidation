@@ -63,6 +63,7 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/aralearn-resource-gap-targets-01.csv`: formal gap and structured-practice targets by resource.
 - `data/aralearn-domain-scenario-coverage-01.csv`: disciplinary coverage and current response limitations.
 - `data/aralearn-resource-audit-summary-01.json`: source commit, canonical resource list and audit-level conclusions.
+- `data/aralearn-resource-audit-source-manifest-01.csv`: audited source paths, roles and authority status.
 
 ### Search records
 
