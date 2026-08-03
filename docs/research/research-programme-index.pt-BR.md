@@ -1,6 +1,6 @@
 # Índice canônico do programa de pesquisa
 
-**Estado:** pesquisa, produto, arquitetura e UX concluídos  
+**Estado:** baselines e programa de implementação concluídos  
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
@@ -13,36 +13,27 @@
 | #6 | requisitos e domínio v1 | `research/data/issue6-artifact-manifest-v1.json` |
 | #7 | arquitetura e ADRs v1 | `research/data/issue7-artifact-manifest-v1.json` |
 | #8 | UX, acessibilidade e protótipo v1 | `research/data/issue8-artifact-manifest-v1.json` |
+| #9 | releases, quality gates e backlog v1 | `research/data/issue9-artifact-manifest-v1.json` |
 
-## UX aceita
+## Programa de implementação
 
-- 36 telas/contratos e estados;
-- 15 jornadas cobertas;
-- mobile-first com panes contextuais no desktop;
-- profiles/overlays antes de parâmetros avançados;
-- autoria GPT+MCP + inspeção/controle no ARA;
-- placement/revision/diff/provenance visíveis;
-- audit/repair/approval/publication separados;
-- offline/sync/conflict/capability/permission como estados normais;
-- analytics orientados por pergunta e papel;
-- WCAG 2.2 AA target e alternativas não visuais;
-- strings críticas em en, pt-BR e pt-PT;
-- protótipo em `prototypes/ux-v1/`;
-- evaluation plan sem autorização automática de participantes.
+Seis releases verticais foram aprovadas:
 
-## Próxima e última fase de preparação — Issue #9
+- R0 — proteção, toolchain/PWA e domínio/pacotes;
+- R1 — estudo pessoal offline;
+- R2 — autoria privada visível e MCP delimitado;
+- R3 — sync, colaboração e operações conectadas;
+- R4 — pesquisa, ensino formal e perfil institucional confidencial;
+- R5 — publicação aberta, capabilities controladas, migração e evidência ARA v1.
 
-Issue #9 deverá:
+As únicas issues executáveis são #59–#74, na ordem registrada em `research/data/issue9-implementation-backlog-v1.csv`.
 
-- definir releases verticais e dependências;
-- estabelecer branch protection e revisão obrigatória;
-- criar CI para lint, typecheck, tests, package/schema, accessibility, security, dependency, build/budgets e docs;
-- definir Definition of Done e quality gates;
-- criar estratégia de migração AraLearn → ARA sem legado oculto;
-- definir backup, rollback, evidence package e release notes;
-- criar issues de implementação autossuficientes para Codex;
-- impedir que implementação comece fora da sequência aprovada.
+## Estado atual
+
+Todo o trabalho de pesquisa, definição, arquitetura, UX e planejamento está materializado. A implementação de código está bloqueada por **#59 — Enable protected main and verify governance gate**.
+
+O conector GitHub disponível nesta sessão não permite configurar rulesets/branch protection. O administrador do repositório deve aplicar `docs/releases/main-branch-protection-v1.md`, verificar que o check `governance` bloqueia merge quando falha e fechar #59. Somente então #60 pode começar.
 
 ## Pesquisa contínua
 
-A Issue #3 permanece disponível para lacunas específicas descobertas na implementação/avaliação. Mudanças nas baselines exigem nova versão e decisão.
+A Issue #3 permanece disponível para lacunas específicas encontradas na implementação ou avaliação. Nenhuma descoberta reabre automaticamente as baselines; mudanças exigem versão, evidência e decisão.
