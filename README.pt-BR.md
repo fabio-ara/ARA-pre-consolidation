@@ -14,7 +14,21 @@ O projeto sucede o [AraLearn](https://github.com/fabio-ara/AraLearn), que perman
 
 ## Estágio atual
 
-A ARA encontra-se na etapa de pesquisa, definição do produto e governança. Inicialmente, o repositório reunirá a base de evidências, o modelo pedagógico, protocolos de investigação, análises jurídicas e institucionais, requisitos do produto, decisões de arquitetura e especificações de UX necessárias antes da implementação.
+A ARA encontra-se na etapa de pesquisa, definição do produto e governança. O repositório reúne a base de evidências, as sínteses de pesquisa, a visão do produto e as regras necessárias antes da aprovação dos requisitos, da arquitetura, da UX e da implementação.
+
+A fase ativa é a taxonomia de parametrização pedagógica e de pesquisa, governada pela Issue #4.
+
+## Comece por aqui
+
+O entendimento atual do projeto não deve ser reconstruído somente pelo histórico das issues. Leia, nesta ordem:
+
+1. [Visão atual do produto](docs/vision/product-vision.pt-BR.md)
+2. [Reconstrução histórica canônica da pesquisa e das decisões](docs/history/reconstrucao-historica-pesquisa-decisoes.pt-BR.md)
+3. [Índice canônico do backlog](docs/roadmap/backlog-index.md)
+4. [Autoridade documental e rastreabilidade](docs/governance/document-authority-and-traceability.md)
+5. [Programa de pesquisa orientado a decisões](docs/research/research-programme-index.pt-BR.md)
+6. [Padrão para issues e trabalhos](docs/governance/work-item-standard.md)
+7. [Roadmap canônico — Issue #10](https://github.com/fabio-ara/ARA/issues/10)
 
 ## Finalidades orientadoras
 
@@ -23,11 +37,18 @@ A ARA destina-se simultaneamente a:
 - estudantes autodidatas que desejem personalizar a forma como estudam; e
 - pesquisadores e instituições que necessitem de condições pedagógicas reproduzíveis, instrumentação configurável e governança de dados educacionais.
 
-A plataforma preservará uma estrutura estável de cursos e cards, permitindo que configurações pedagógicas, avaliativas, interacionais e de pesquisa variem explicitamente.
+A plataforma preservará uma experiência reconhecível de cursos e cards, permitindo que configurações pedagógicas, avaliativas, interacionais, de pesquisa e de governança variem explicitamente.
+
+## Modelo de registro
+
+- documentos canônicos descrevem o entendimento atual aprovado;
+- issues preservam backlog, protocolos e histórico do trabalho;
+- pull requests, commits, dados de pesquisa e testes preservam evidência primária;
+- protótipos exploratórios permanecem recuperáveis, mas não são requisitos de produção sem adoção explícita.
 
 ## Governança do repositório
 
-As Issues do GitHub constituem o backlog canônico. Requisitos e decisões não podem depender de conversas privadas ou instruções não registradas. Consulte:
+As Issues do GitHub constituem o backlog e o registro primário de trabalho. A interpretação atual e a implementação futura também devem seguir os documentos canônicos acima. Requisitos e decisões não podem depender de conversas privadas ou instruções não registradas. Consulte:
 
 - [Governança do repositório](docs/governance/repository-governance.pt-BR.md)
 - [Política linguística](docs/governance/language-policy.pt-BR.md)
