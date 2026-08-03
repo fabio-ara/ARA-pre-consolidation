@@ -12,7 +12,7 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 ## Fase atual
 
-Investigação, configuração, protocolos/analytics, produto/domínio, arquitetura, UX e o programa de implementação R0–R5 estão materializados. O código do produto ainda não começou. A única ação atual é a Issue #59: aplicar e verificar a proteção obrigatória da branch `main`; a Issue #60 será o primeiro trabalho de código após esse bloqueio.
+O ARA encontra-se em investigação, definição do produto e exploração de design, antes do desenvolvimento. As Issues #4–#8 produziram baselines de configuração, investigação/analytics, produto/domínio, arquitetura e UX. Servem o brainstorming e a revisão posterior; nenhuma issue de implementação está ativa ou autorizada.
 
 ## Caminho canónico
 
@@ -21,15 +21,13 @@ Investigação, configuração, protocolos/analytics, produto/domínio, arquitet
 3. [Modelo de domínio](docs/product/domain-model-v1.md)
 4. [Arquitetura](docs/architecture/reference-architecture-v1.md)
 5. [UX](docs/ux/ux-specification-v1.md)
-6. [Programa de implementação](docs/releases/implementation-programme-v1.md)
-7. [Backlog executável](docs/roadmap/backlog-index.md)
+6. [Programa de investigação](docs/research/research-programme-index.pt-BR.md)
+7. [Backlog e regras das fases](docs/roadmap/backlog-index.md)
 
-O protótipo estrutural está em [`prototypes/ux-v1/`](prototypes/ux-v1/). Apenas as Issues #59–#74 autorizam implementação, pela ordem de dependências declarada.
+O protótipo estrutural em [`prototypes/ux-v1/`](prototypes/ux-v1/) não é produto e serve apenas à discussão. A entrada em desenvolvimento exigirá uma decisão explícita posterior do proprietário e um novo programa de implementação revisto.
 
 ## Governação e licenciamento
 
-- [Quality gates](docs/releases/quality-gates-v1.md)
-- [Proteção obrigatória da main](docs/releases/main-branch-protection-v1.md)
 - [Governação](docs/governance/repository-governance.pt-PT.md)
 - [Política linguística](docs/governance/language-policy.pt-PT.md)
 - [Como contribuir](CONTRIBUTING.pt-PT.md)

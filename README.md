@@ -12,7 +12,7 @@ course version → module/lesson → placement → microsequence revision → ca
 
 ## Current stage
 
-Research, configuration, protocols/analytics, product/domain, architecture, UX and the R0–R5 implementation programme are materialized. Product code has not started. The only current action is Issue #59: apply and verify the required `main` branch protection; Issue #60 is the first product-code item after that blocker closes.
+ARA is in pre-development research, product definition and design exploration. Issues #4–#8 produced configuration, research/analytics, product/domain, architecture and UX baselines. They are inputs for continued brainstorming and later review; no product implementation issue is active or authorized.
 
 ## Canonical path
 
@@ -21,15 +21,13 @@ Research, configuration, protocols/analytics, product/domain, architecture, UX a
 3. [Domain model](docs/product/domain-model-v1.md)
 4. [Reference architecture](docs/architecture/reference-architecture-v1.md)
 5. [UX specification](docs/ux/ux-specification-v1.md)
-6. [Implementation programme](docs/releases/implementation-programme-v1.md)
-7. [Executable backlog](docs/roadmap/backlog-index.md)
+6. [Research programme](docs/research/research-programme-index.pt-BR.md)
+7. [Backlog and phase rules](docs/roadmap/backlog-index.md)
 
-The structural UX prototype is in [`prototypes/ux-v1/`](prototypes/ux-v1/). Only Issues #59–#74 authorize implementation, in their declared dependency order.
+The structural UX prototype in [`prototypes/ux-v1/`](prototypes/ux-v1/) is non-production and supports discussion only. Entering implementation requires a later explicit owner decision and a newly reviewed implementation programme.
 
 ## Governance and licensing
 
-- [Quality gates](docs/releases/quality-gates-v1.md)
-- [Required main protection](docs/releases/main-branch-protection-v1.md)
 - [Governance](docs/governance/repository-governance.md)
 - [Language policy](docs/governance/language-policy.md)
 - [Contributing](CONTRIBUTING.md)

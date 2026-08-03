@@ -1,10 +1,10 @@
 # Índice canônico do programa de pesquisa
 
-**Estado:** baselines e programa de implementação concluídos  
+**Estado:** baselines conceituais concluídas; pré-desenvolvimento  
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
-## Baselines
+## Baselines disponíveis
 
 | Issue | Saída | Manifesto |
 |---|---|---|
@@ -13,27 +13,35 @@
 | #6 | requisitos e domínio v1 | `research/data/issue6-artifact-manifest-v1.json` |
 | #7 | arquitetura e ADRs v1 | `research/data/issue7-artifact-manifest-v1.json` |
 | #8 | UX, acessibilidade e protótipo v1 | `research/data/issue8-artifact-manifest-v1.json` |
-| #9 | releases, quality gates e backlog v1 | `research/data/issue9-artifact-manifest-v1.json` |
 
-## Programa de implementação
+Esses artefatos consolidam o brainstorming e as hipóteses atuais. Não autorizam implementação e podem ser revistos de forma versionada antes de qualquer código de produto.
 
-Seis releases verticais foram aprovadas:
+## Estado do trabalho
 
-- R0 — proteção, toolchain/PWA e domínio/pacotes;
-- R1 — estudo pessoal offline;
-- R2 — autoria privada visível e MCP delimitado;
-- R3 — sync, colaboração e operações conectadas;
-- R4 — pesquisa, ensino formal e perfil institucional confidencial;
-- R5 — publicação aberta, capabilities controladas, migração e evidência ARA v1.
+O projeto permanece anterior ao desenvolvimento. Não há release, gate de branch, CI de produto, issue executável ou cronograma de implementação ativo.
 
-As únicas issues executáveis são #59–#74, na ordem registrada em `research/data/issue9-implementation-backlog-v1.csv`.
-
-## Estado atual
-
-Todo o trabalho de pesquisa, definição, arquitetura, UX e planejamento está materializado. A implementação de código está bloqueada por **#59 — Enable protected main and verify governance gate**.
-
-O conector GitHub disponível nesta sessão não permite configurar rulesets/branch protection. O administrador do repositório deve aplicar `docs/releases/main-branch-protection-v1.md`, verificar que o check `governance` bloqueia merge quando falha e fechar #59. Somente então #60 pode começar.
+A Issue #9 continua sendo uma fase futura. Ela somente deverá ser retomada quando o proprietário decidir explicitamente sair do brainstorming e entrar em planejamento de implementação.
 
 ## Pesquisa contínua
 
-A Issue #3 permanece disponível para lacunas específicas encontradas na implementação ou avaliação. Nenhuma descoberta reabre automaticamente as baselines; mudanças exigem versão, evidência e decisão.
+A Issue #3 permanece disponível para:
+
+- aprofundar literatura e repositórios;
+- revisar decisões de parametrização;
+- investigar a composição por microssequências e placements;
+- comparar alternativas de domínio, arquitetura ou UX;
+- registrar novos cenários, riscos e dúvidas do proprietário.
+
+Mudanças nas baselines exigem nova versão, evidência e decisão. Nenhuma descoberta gera requisito ou código automaticamente.
+
+## Não autorizações
+
+A fase atual não autoriza:
+
+- monorepo, PWA ou backend;
+- banco, Storage, IndexedDB ou sincronização;
+- endpoints MCP de produção;
+- migrations;
+- workflows obrigatórios ou proteção de branch;
+- issues de implementação;
+- código de produto.

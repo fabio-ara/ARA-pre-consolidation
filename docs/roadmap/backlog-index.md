@@ -1,103 +1,73 @@
 # Backlog e fluxo de trabalho do ARA
 
-**Estado:** implementação preparada; bloqueio administrativo ativo  
+**Estado:** pré-desenvolvimento; brainstorming e revisão  
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
-## 1. Gates concluídos
+## 1. Estado das fases
 
 ```text
-#4 taxonomia ✓
-→ #5 pesquisa/analytics ✓
-→ #6 produto/domínio ✓
-→ #7 arquitetura/ADRs ✓
-→ #8 UX/UI ✓
-→ #9 programa/releases/quality/backlog materializado
+#3 evidência contínua
+→ #4 taxonomia — concluída
+→ #5 pesquisa/analytics — concluída
+→ #6 produto/domínio — baseline conceitual
+→ #7 arquitetura — baseline conceitual
+→ #8 UX/UI — baseline conceitual e protótipo não produtivo
+→ #9 planejamento de implementação — futuro, não iniciado
 ```
 
-Baselines e manifestos das Issues #4–#9 são obrigatórios. Issue #3 permanece contínua; #2 paralela.
+A conclusão de uma baseline significa que existe material suficiente para discussão e revisão. Não significa que o projeto entrou em desenvolvimento.
 
-## 2. Bloqueio atual
+## 2. Trabalho atual
 
-**#59 — Enable protected main and verify governance gate**.
+O trabalho atual permanece aberto a brainstorming, investigação bibliográfica, análise de repositórios, revisão de hipóteses e clarificações do proprietário.
 
-A implementação não pode começar antes de:
+Não existe bloqueio administrativo, branch protegida obrigatória, release ativa ou issue de código autorizada.
 
-- aplicar `docs/releases/main-branch-protection-v1.md`;
-- exigir PR, histórico linear, resolução de conversas e check `governance`;
-- verificar por PR de teste que um check falho impede merge;
-- registrar a evidência e fechar #59.
+## 3. Baselines de consulta
 
-A integração disponível não expõe a mutação de rulesets; isso exige ação administrativa no GitHub.
+- `research/data/issue4-final-artifact-manifest-v1.json`;
+- `research/data/issue5-artifact-manifest-v1.json`;
+- `research/data/issue6-artifact-manifest-v1.json`;
+- `research/data/issue7-artifact-manifest-v1.json`;
+- `research/data/issue8-artifact-manifest-v1.json`;
+- `docs/product/product-requirements-v1.md`;
+- `docs/product/domain-model-v1.md`;
+- `docs/architecture/reference-architecture-v1.md`;
+- `docs/ux/ux-specification-v1.md`.
 
-## 3. Releases e issues executáveis
+Esses documentos são propostas consolidadas, sujeitas a revisão versionada antes da implementação.
 
-### R0 — foundation
+## 4. Entrada futura em desenvolvimento
 
-- #59 proteção da `main`;
-- #60 TypeScript monorepo e PWA shell;
-- #61 domínio/configuração/pacotes executáveis.
+A Issue #9 somente deverá ser executada após decisão explícita do proprietário de iniciar a fase de desenvolvimento.
 
-### R1 — personal offline study
+Nesse momento, e não antes, será necessário:
 
-- #62 biblioteca e materialização atômica;
-- #63 resources/práticas/card cycle;
-- #64 estado contextual, review/resume e evidence package.
+- revisar novamente requisitos, domínio, arquitetura e UX;
+- decidir o primeiro escopo implementável;
+- criar releases e issues executáveis;
+- escolher quality gates proporcionais ao estágio;
+- decidir se qualquer proteção de branch realmente agrega valor;
+- definir migração, rollback e evidência de release.
 
-### R2 — visible private authoring
+Nenhuma dessas escolhas é pré-condição para continuar pesquisando ou refinando o produto.
 
-- #65 workspace/composição/versions/diffs;
-- #66 annotations/audit/repair/approval/private publication;
-- #67 bounded MCP authoring/audit/repair.
+## 5. Regras permanentes
 
-### R3 — connected collaboration
+- possibilidade descoberta não se converte automaticamente em requisito;
+- baseline conceitual não autoriza código;
+- implementação futura não poderá inventar silenciosamente domínio ou UX;
+- AraLearn permanece fonte de evidência e predecessor, não legado obrigatório;
+- nenhum fallback, compatibilidade ou bloqueio será criado sem decisão explícita;
+- pesquisa, decisão, produto, arquitetura, UX e implementação permanecem distinguíveis.
 
-- #68 PostgreSQL/artifact storage/OIDC adapters;
-- #69 sync/outbox/conflicts;
-- #70 collaboration/publication/operations.
-
-### R4 — research/formal/institutional
-
-- #71 protocols/instruments/authorized evidence;
-- #72 formal teaching/confidential institutional profiles.
-
-### R5 — open/capabilities/migration
-
-- #73 public/OER catalogue and controlled capabilities;
-- #74 AraLearn migration, cross-profile conformance and ARA v1 evidence.
-
-Canonical dependency registry: `research/data/issue9-implementation-backlog-v1.csv`.
-
-## 4. Regras permanentes de implementação
-
-- somente #59–#74 autorizam código;
-- cada PR fecha uma issue e pertence a uma release;
-- cada mudança aponta requisitos/entidades, ADRs, jornadas/screen IDs, testes, documentação e rollback;
-- implementação não inventa UX, domínio ou fallback;
-- nenhum curso fornece código arbitrário;
-- conflito semântico não sofre auto-merge;
-- evento disponível não autoriza coleta;
-- cada release é end-to-end e publica evidence package/known limitations;
-- conformidade não demonstra efetividade educacional.
-
-## 5. Quality programme
-
-- `docs/releases/implementation-programme-v1.md`;
-- `docs/releases/quality-gates-v1.md`;
-- `docs/releases/main-branch-protection-v1.md`;
-- `docs/releases/aralearn-migration-v1.md`;
-- `docs/releases/release-evidence-v1.md`;
-- workflow `governance`, CODEOWNERS e templates em `.github/`;
-- manifesto `research/data/issue9-artifact-manifest-v1.json`.
-
-## 6. AraLearn
-
-Migração é explícita, versionada, auditada e source-preserving. ARA não contém runtime legacy/fallback para contratos, banco ou API do AraLearn. Tags importadas são labels/hipóteses até revisão; reparos semânticos entram no workflow de autoria.
-
-## 7. Registros históricos
+## 6. Registros históricos
 
 #36–#40 permanecem experimentos não normativos; #42 permanece adiado. #50 e #53 são placeholders acidentais `not_planned`.
 
-## 8. Próxima ação inequívoca
+As Issues #59–#74 foram criadas prematuramente durante uma interpretação incorreta da fase do projeto e deverão permanecer encerradas como `not_planned`. Não constituem backlog atual nem autorização futura.
 
-Aplicar e fechar #59. Depois executar #60; nenhuma outra issue deve iniciar em paralelo fora das dependências registradas.
+## 7. Próxima ação
+
+Continuar o brainstorming ou a pesquisa conforme as novas questões do proprietário. Não iniciar desenvolvimento até nova decisão explícita.
