@@ -12,7 +12,7 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 ## Estágio atual
 
-Pesquisa, configuração, protocolos/analytics, produto/domínio, arquitetura, UX e o programa de implementação R0–R5 estão materializados. O código do produto ainda não começou. A única ação atual é a Issue #59: aplicar e verificar a proteção obrigatória da branch `main`; a Issue #60 será o primeiro trabalho de código após esse bloqueio.
+O ARA está em pesquisa, definição do produto e exploração de design, antes do desenvolvimento. As Issues #4–#8 produziram baselines de configuração, pesquisa/analytics, produto/domínio, arquitetura e UX. Elas servem ao brainstorming e à revisão posterior; nenhuma issue de implementação está ativa ou autorizada.
 
 ## Caminho canônico
 
@@ -21,15 +21,13 @@ Pesquisa, configuração, protocolos/analytics, produto/domínio, arquitetura, U
 3. [Modelo de domínio](docs/product/domain-model-v1.md)
 4. [Arquitetura](docs/architecture/reference-architecture-v1.md)
 5. [UX](docs/ux/ux-specification-v1.md)
-6. [Programa de implementação](docs/releases/implementation-programme-v1.md)
-7. [Backlog executável](docs/roadmap/backlog-index.md)
+6. [Programa de pesquisa](docs/research/research-programme-index.pt-BR.md)
+7. [Backlog e regras das fases](docs/roadmap/backlog-index.md)
 
-O protótipo estrutural está em [`prototypes/ux-v1/`](prototypes/ux-v1/). Somente as Issues #59–#74 autorizam implementação, na ordem de dependências declarada.
+O protótipo estrutural em [`prototypes/ux-v1/`](prototypes/ux-v1/) não é produto e serve apenas à discussão. A entrada em desenvolvimento exigirá decisão explícita posterior do proprietário e novo programa de implementação revisado.
 
 ## Governança e licenciamento
 
-- [Quality gates](docs/releases/quality-gates-v1.md)
-- [Proteção obrigatória da main](docs/releases/main-branch-protection-v1.md)
 - [Governança](docs/governance/repository-governance.pt-BR.md)
 - [Política linguística](docs/governance/language-policy.pt-BR.md)
 - [Como contribuir](CONTRIBUTING.pt-BR.md)
