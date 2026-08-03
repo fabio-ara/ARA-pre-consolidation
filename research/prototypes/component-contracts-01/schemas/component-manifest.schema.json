@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ara:prototype:component-manifest:0.1",
+  "title": "ARA prototype component manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract", "version", "componentId", "release", "family", "authority", "schemas", "capabilities", "runtimeRequirements", "securityBoundary", "accessibility", "offlineProfile", "localization", "provenance"],
+  "properties": {
+    "contract": {"const": "ara.component-manifest"},
+    "version": {"const": "0.1.0"},
+    "componentId": {"type": "string", "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)+$"},
+    "release": {"$ref": "common.schema.json#/$defs/semver"},
+    "family": {"enum": ["semantic-mathematics", "relational-construction", "executable-programming", "source-argument"]},
+    "authority": {"enum": ["built-in", "installed-approved-adapter", "research-prototype"]},
+    "schemas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["representation", "activity", "response", "validator", "feedback"],
+      "properties": {
+        "representation": {"type": "string", "minLength": 1},
+        "activity": {"type": "string", "minLength": 1},
+        "response": {"type": "string", "minLength": 1},
+        "validator": {"type": "string", "minLength": 1},
+        "feedback": {"type": "string", "minLength": 1}
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["responseModes", "validatorModes", "determinism", "rendererGeometryCanonical"],
+      "properties": {
+        "responseModes": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+        "validatorModes": {"type": "array", "items": {"enum": ["deterministic", "human-review", "probabilistic-assistance"]}, "minItems": 1, "uniqueItems": true},
+        "determinism": {"enum": ["fully-deterministic", "mixed-authority", "external-review"]},
+        "rendererGeometryCanonical": {"const": false}
+      }
+    },
+    "runtimeRequirements": {"$ref": "common.schema.json#/$defs/runtimeRequirements"},
+    "securityBoundary": {"$ref": "common.schema.json#/$defs/securityBoundary"},
+    "accessibility": {"$ref": "common.schema.json#/$defs/accessibility"},
+    "offlineProfile": {"$ref": "common.schema.json#/$defs/offlineProfile"},
+    "localization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["uiLocales", "authoredContentLanguageMetadata"],
+      "properties": {
+        "uiLocales": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/languageTag"}, "minItems": 1, "uniqueItems": true},
+        "authoredContentLanguageMetadata": {"const": "required"},
+        "translatableInterfaceStringsSeparate": {"const": true}
+      }
+    },
+    "provenance": {"$ref": "common.schema.json#/$defs/provenance"}
+  }
+}
