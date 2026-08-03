@@ -4,7 +4,7 @@
 
 **ARA Platform — Learning Resources Environment**
 
-ARA is an open, configurable, mobile-first and offline-capable educational platform. It succeeds [AraLearn](https://github.com/fabio-ara/AraLearn), preserving its functional experience as the first reference configuration while rebuilding the product around explicit parametrization, modular architecture, portable infrastructure and MCP-assisted authoring.
+ARA is an open, configurable, mobile-first and offline-capable educational platform. It succeeds [AraLearn](https://github.com/fabio-ara/AraLearn), preserving its functional experience as the first reference configuration while rebuilding the product around explicit parametrization, visible human control, portable infrastructure and GPT+MCP-assisted authoring.
 
 The initial educational structure is:
 
@@ -14,7 +14,7 @@ course → module → lesson → microsequence → card
 
 ## Current stage
 
-The project is in research and product definition. Issue #4 governs the active pedagogical and research configuration taxonomy. Packages P1 and P2 are complete; P3—autonomy, self-regulation, adaptation, accessibility and AI assistance—is next. The new product has not entered implementation.
+The project is in research and product definition. Issue #4 governs the active pedagogical and research configuration taxonomy. Packages P1, P2 and P3 are complete; P4—instrumentation, experimental conditions, analytics and governance—is next. The new product has not entered implementation.
 
 ## Start here
 
@@ -28,7 +28,7 @@ GitHub Issues are authorized, self-contained work units. Research, decisions, sp
 
 ## Guiding purposes
 
-ARA is intended for self-directed learners, authors, researchers and institutions. It will preserve a recognizable course-and-card experience while allowing pedagogical, assessment, interaction, research and governance configurations to vary explicitly.
+ARA is intended for self-directed learners, authors, teachers, tutors, researchers and institutions. GPT+MCP will support planning, construction, audit and repair, while ARA will expose artifacts, versions, comments, deterministic operations and publication decisions to the user.
 
 ## Governance
 
