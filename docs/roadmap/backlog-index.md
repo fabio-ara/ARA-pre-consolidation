@@ -1,77 +1,103 @@
 # Backlog e fluxo de trabalho do ARA
 
-**Estado:** gate final de preparação  
+**Estado:** implementação preparada; bloqueio administrativo ativo  
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
-## 1. Caminho
+## 1. Gates concluídos
 
 ```text
-#4 taxonomia — concluída
-→ #5 pesquisa/analytics — concluída
-→ #6 produto/domínio — concluída
-→ #7 arquitetura — concluída
-→ #8 UX/UI — concluída
-→ #9 releases/quality/backlog — atual
-→ implementação
+#4 taxonomia ✓
+→ #5 pesquisa/analytics ✓
+→ #6 produto/domínio ✓
+→ #7 arquitetura/ADRs ✓
+→ #8 UX/UI ✓
+→ #9 programa/releases/quality/backlog materializado
 ```
 
-A Issue #3 permanece contínua e a #2 paralela.
+Baselines e manifestos das Issues #4–#9 são obrigatórios. Issue #3 permanece contínua; #2 paralela.
 
-## 2. Baselines obrigatórias
+## 2. Bloqueio atual
 
-- `research/data/issue4-final-artifact-manifest-v1.json`;
-- `research/data/issue5-artifact-manifest-v1.json`;
-- `research/data/issue6-artifact-manifest-v1.json`;
-- `research/data/issue7-artifact-manifest-v1.json`;
-- `research/data/issue8-artifact-manifest-v1.json`.
+**#59 — Enable protected main and verify governance gate**.
 
-Issues de implementação devem apontar entidade/requisito, ADR, screen IDs, release, aceite, testes, docs e rollback.
+A implementação não pode começar antes de:
 
-## 3. UX aprovada
+- aplicar `docs/releases/main-branch-protection-v1.md`;
+- exigir PR, histórico linear, resolução de conversas e check `governance`;
+- verificar por PR de teste que um check falho impede merge;
+- registrar a evidência e fechar #59.
 
-- task/question-oriented IA;
-- mobile one-primary-task and desktop contextual panes;
-- Study/Create/Review/Research/Admin based on role/capability;
-- offline, sync, conflict and failure first-class;
-- 36 screen contracts;
-- 15 journeys;
-- accessibility/localization/design tokens;
-- structural prototype;
-- evaluation plan.
+A integração disponível não expõe a mutação de rulesets; isso exige ação administrativa no GitHub.
 
-Implementation may refine presentation within approved behavior. Semantic or journey changes return to #6/#7/#8.
+## 3. Releases e issues executáveis
 
-## 4. Work current — Issue #9
+### R0 — foundation
 
-Required outputs:
+- #59 proteção da `main`;
+- #60 TypeScript monorepo e PWA shell;
+- #61 domínio/configuração/pacotes executáveis.
 
-- functional release sequence;
-- repository/module boundaries;
-- CI and branch protection policy;
-- Definition of Done;
-- security/privacy/accessibility/performance gates;
-- package/migration/rollback plan;
-- evidence package format;
-- AraLearn migration strategy;
-- issue templates for Codex;
-- executable implementation issues with explicit dependencies.
+### R1 — personal offline study
 
-## 5. Permanent controls
+- #62 biblioteca e materialização atômica;
+- #63 resources/práticas/card cycle;
+- #64 estado contextual, review/resume e evidence package.
 
-- no direct implementation from umbrella issues;
-- no hidden legacy/fallback/compatibility;
-- no course-supplied code;
-- no auto-merge of semantic conflicts;
-- no telemetry because event exists;
-- no UX invention by implementation;
-- no educational-effectiveness claim from conformance tests;
-- every release works end-to-end for its declared profile.
+### R2 — visible private authoring
 
-## 6. Historical records
+- #65 workspace/composição/versions/diffs;
+- #66 annotations/audit/repair/approval/private publication;
+- #67 bounded MCP authoring/audit/repair.
 
-Experiments #36–#40 remain non-normative; #42 deferred. Issues #50/#53 are accidental `not_planned` placeholders.
+### R3 — connected collaboration
 
-## 7. Next
+- #68 PostgreSQL/artifact storage/OIDC adapters;
+- #69 sync/outbox/conflicts;
+- #70 collaboration/publication/operations.
 
-Conclude Issue #9. Only its approved implementation subissues may start product code.
+### R4 — research/formal/institutional
+
+- #71 protocols/instruments/authorized evidence;
+- #72 formal teaching/confidential institutional profiles.
+
+### R5 — open/capabilities/migration
+
+- #73 public/OER catalogue and controlled capabilities;
+- #74 AraLearn migration, cross-profile conformance and ARA v1 evidence.
+
+Canonical dependency registry: `research/data/issue9-implementation-backlog-v1.csv`.
+
+## 4. Regras permanentes de implementação
+
+- somente #59–#74 autorizam código;
+- cada PR fecha uma issue e pertence a uma release;
+- cada mudança aponta requisitos/entidades, ADRs, jornadas/screen IDs, testes, documentação e rollback;
+- implementação não inventa UX, domínio ou fallback;
+- nenhum curso fornece código arbitrário;
+- conflito semântico não sofre auto-merge;
+- evento disponível não autoriza coleta;
+- cada release é end-to-end e publica evidence package/known limitations;
+- conformidade não demonstra efetividade educacional.
+
+## 5. Quality programme
+
+- `docs/releases/implementation-programme-v1.md`;
+- `docs/releases/quality-gates-v1.md`;
+- `docs/releases/main-branch-protection-v1.md`;
+- `docs/releases/aralearn-migration-v1.md`;
+- `docs/releases/release-evidence-v1.md`;
+- workflow `governance`, CODEOWNERS e templates em `.github/`;
+- manifesto `research/data/issue9-artifact-manifest-v1.json`.
+
+## 6. AraLearn
+
+Migração é explícita, versionada, auditada e source-preserving. ARA não contém runtime legacy/fallback para contratos, banco ou API do AraLearn. Tags importadas são labels/hipóteses até revisão; reparos semânticos entram no workflow de autoria.
+
+## 7. Registros históricos
+
+#36–#40 permanecem experimentos não normativos; #42 permanece adiado. #50 e #53 são placeholders acidentais `not_planned`.
+
+## 8. Próxima ação inequívoca
+
+Aplicar e fechar #59. Depois executar #60; nenhuma outra issue deve iniciar em paralelo fora das dependências registradas.
