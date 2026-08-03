@@ -299,7 +299,8 @@ P3 não autoriza:
 ## 14. Saídas
 
 - `research/data/p3-evidence-corpus-01.csv`;
-- `research/data/p3-parameter-records-01.csv`;
+- `research/data/p3-parameter-records-autonomy-adaptation-01.csv`;
+- `research/data/p3-parameter-records-accessibility-ai-01.csv`;
 - `research/data/p3-profile-comparison-01.csv`;
 - `research/data/p3-decision-synthesis-01.json`;
 - `research/pt-BR/p3-sintese-autonomia-adaptacao-acessibilidade-IA-01.md`;
