@@ -89,7 +89,7 @@ Resultado:
 ### 3.3 P3 — autonomia, autorregulação, adaptação, acessibilidade e IA
 
 **Estado:** `concluído` para a primeira taxonomia.  
-**PR:** a registrar após integração.
+**PR:** #48.
 
 Artefatos:
 
