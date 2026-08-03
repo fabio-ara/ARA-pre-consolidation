@@ -14,7 +14,7 @@ curso → módulo → lição → microssequência → card
 
 ## Fase atual
 
-O projeto encontra-se na fase de investigação e definição do produto. A Issue #4 governa a taxonomia ativa de parametrização pedagógica e de investigação. O Pacote P1 foi concluído; o próximo é o P2 — progressão, sequenciamento, espaçamento, revisão, exemplos e scaffolding. A implementação do novo produto ainda não começou.
+O projeto encontra-se na fase de investigação e definição do produto. A Issue #4 governa a taxonomia ativa de parametrização pedagógica e de investigação. Os Pacotes P1 e P2 foram concluídos; o próximo é o P3 — autonomia, autorregulação, adaptação, acessibilidade e assistência por IA. A implementação do novo produto ainda não começou.
 
 ## Começar por aqui
 
