@@ -1,0 +1,54 @@
+{
+  "round": "component-contracts-v02-external-adapters-01",
+  "issue": 40,
+  "status": "contract revision and source-level external adapter evaluation complete; runtime bake-off pending",
+  "contract_version": "0.2.0",
+  "schemas": 6,
+  "component_manifests": 4,
+  "component_instances": 4,
+  "migration_fixtures": 4,
+  "validation_scenarios": 3,
+  "amendments": {
+    "total": 10,
+    "accepted": 9,
+    "accepted_modified": 1,
+    "deferred": 0,
+    "rejected": 0
+  },
+  "validation": {
+    "json_schema_checks": 15,
+    "node_contract_tests": 6,
+    "external_boundary_tests": 4,
+    "failures": 0
+  },
+  "external_candidates": [
+    {
+      "name": "MathLive",
+      "source_audit": "complete",
+      "boundary_test": "pass",
+      "runtime_test": "deferred"
+    },
+    {
+      "name": "Cytoscape.js",
+      "source_audit": "complete",
+      "boundary_test": "pass",
+      "runtime_test": "deferred"
+    },
+    {
+      "name": "Recogito Text Annotator",
+      "source_audit": "complete",
+      "boundary_test": "pass",
+      "runtime_test": "deferred"
+    }
+  ],
+  "programming_architecture_decision": "client-only public validation is distinct from trusted-host protected validation; Worker and vm are not production sandboxes",
+  "issue_closure_eligible": false,
+  "remaining_acceptance_work": [
+    "Run pinned stable external packages in a network-enabled reproducible environment.",
+    "Measure package bytes cold start memory offline behavior and exit cost.",
+    "Execute browser interaction and manual accessibility walkthroughs against the actual candidates.",
+    "Update candidate decisions without silently selecting a stack."
+  ],
+  "artifact_files_excluding_manifest": 52,
+  "file_manifest": "research/data/component-contract-v02-file-manifest.csv"
+}
