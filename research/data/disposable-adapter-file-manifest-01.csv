@@ -4,6 +4,7 @@ research/prototypes/disposable-adapters-01/fixtures/instances.mjs,7463,19a373a29
 research/prototypes/disposable-adapters-01/index.html,5049,1a82137cf6b5a760062be45ef906c4bf21474045cdb9e530ce27fd511a5bc1f6,stable-source-or-test
 research/prototypes/disposable-adapters-01/package-lock.json,308,9dec16ee36509f1b7ffabead23e7b375866fc0b91784478c17a727b25cfbf998,stable-source-or-test
 research/prototypes/disposable-adapters-01/package.json,311,dd2eb4ff0c8b32bc81e031638816b25b76bc35c6653b97a165d3860d3bc65122,stable-source-or-test
+research/prototypes/disposable-adapters-01/reports/accessibility-tree.json,515,1f089203038a3b122524e745ec8a36d0ab299945ae73edc33284c7de7b82b54e,stable-source-or-test
 research/prototypes/disposable-adapters-01/reports/node-tests.json,604,bb9bec9a96bf977b9cc062f2df7f880bec25f57968a984590103ed47d27d88ce,stable-source-or-test
 research/prototypes/disposable-adapters-01/scripts/build-standalone.mjs,1414,ea37b3a22edfc67d943e11af19827ba441f3dda1e52753db1c4f3dfd34b84761,stable-source-or-test
 research/prototypes/disposable-adapters-01/scripts/measure.mjs,2004,9052a77036e9b876c96049fc4867a784f478e145a928aa2d01e703e09cc1d1bd,stable-source-or-test
@@ -20,7 +21,7 @@ research/prototypes/disposable-adapters-01/src/browser/styles.css,1464,5a442bdfd
 research/prototypes/disposable-adapters-01/src/core/adapter.mjs,3420,b5485c5a7229244ae20bf1172d3d04f5b59758d567807a9b231d9fdbfc3eaf51,stable-source-or-test
 research/prototypes/disposable-adapters-01/tests/adapters.test.mjs,5112,966cbdf074dc278a021b26c9dd18c662dae89950496f9080a6ceb95c98c5bcbb,stable-source-or-test
 research/prototypes/disposable-adapters-01/tests/browser_walkthrough.py,7366,f843b911497117e510fbbe8df4e1001d468bd9e00b8efec9c38023d29f01e8aa,stable-source-or-test
-research/data/disposable-adapter-accessibility-walkthrough-01.csv,1339,8086fbb25cf6631e7aafd5489b8066e6b0ce26478534224e734258c8c9209ec2,structured-result
+research/data/disposable-adapter-accessibility-walkthrough-01.csv,1905,d2a52f66d005179e8a2a6d91c2254e4240b360b684f0389b3f8c1894522ca71d,structured-result
 research/data/disposable-adapter-comparison-01.csv,1492,72ed27bdcd8d29e6a1ff145d139686ca30d39ff2f5744f49b3572e6de5aa64e6,structured-result
 research/data/disposable-adapter-contract-amendments-01.csv,1917,7bbce9ab77f7b4a23b14412feabdf2858e431e289ca37cd73e7034cf9ee7a2cb,structured-result
 research/data/disposable-adapter-license-risk-01.csv,1316,7bb2533ee6b288017d1e043673f2c6ffa11abc07e319212ba10a42a3076de1df,structured-result
