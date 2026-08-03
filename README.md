@@ -14,7 +14,7 @@ course → module → lesson → microsequence → card
 
 ## Current stage
 
-The project is in research and product definition. Packages P1 through P5 under Issue #4 are complete. The next deliverable is the integrated final synthesis of the first configuration taxonomy; the new product has not entered implementation.
+Issue #4 is complete with `ara.configuration-taxonomy.v1`. The current phase is Issue #5—research protocols, instrumentation and learning analytics. The new product has not entered implementation.
 
 ## Start here
 
