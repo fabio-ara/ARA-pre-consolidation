@@ -4,51 +4,35 @@
 
 **Plataforma ARA — Ambiente de Recursos de Aprendizagem**
 
-A ARA é uma plataforma educacional aberta, configurável, mobile-first e preparada para uso offline, destinada à criação, organização, ao estudo e à investigação de cursos estruturados em:
+A ARA é uma plataforma educacional aberta, configurável, mobile-first e preparada para uso offline. O projeto sucede o [AraLearn](https://github.com/fabio-ara/AraLearn), preservando sua experiência funcional como primeira configuração de referência e reconstruindo o produto com parametrização explícita, arquitetura modular, infraestrutura portável e autoria por MCP.
+
+A estrutura educacional inicial é:
 
 ```text
 curso → módulo → lição → microssequência → card
 ```
 
-O projeto sucede o [AraLearn](https://github.com/fabio-ara/AraLearn), que permanece como predecessor funcional e primeira configuração de referência da plataforma mais ampla.
-
 ## Estágio atual
 
-A ARA encontra-se na etapa de pesquisa, definição do produto e governança. O repositório reúne a base de evidências, as sínteses de pesquisa, a visão do produto e as regras necessárias antes da aprovação dos requisitos, da arquitetura, da UX e da implementação.
-
-A fase ativa é a taxonomia de parametrização pedagógica e de pesquisa, governada pela Issue #4.
+O projeto está na fase de pesquisa e definição do produto. A Issue #4 governa a taxonomia ativa de parametrização pedagógica e de pesquisa. O Pacote P1 foi concluído; o próximo é o P2 — progressão, sequenciamento, espaçamento, revisão, exemplos e scaffolding. A implementação do novo produto ainda não começou.
 
 ## Comece por aqui
 
-O entendimento atual do projeto não deve ser reconstruído somente pelo histórico das issues. Leia, nesta ordem:
+A navegação principal possui três fontes, nesta ordem:
 
-1. [Visão atual do produto](docs/vision/product-vision.pt-BR.md)
-2. [Reconstrução histórica canônica da pesquisa e das decisões](docs/history/reconstrucao-historica-pesquisa-decisoes.pt-BR.md)
-3. [Índice canônico do backlog](docs/roadmap/backlog-index.md)
-4. [Autoridade documental e rastreabilidade](docs/governance/document-authority-and-traceability.md)
-5. [Programa de pesquisa orientado a decisões](docs/research/research-programme-index.pt-BR.md)
-6. [Padrão para issues e trabalhos](docs/governance/work-item-standard.md)
-7. [Roadmap canônico — Issue #10](https://github.com/fabio-ara/ARA/issues/10)
+1. [Visão do produto](docs/vision/product-vision.pt-BR.md)
+2. [Programa de pesquisa](docs/research/research-programme-index.pt-BR.md)
+3. [Backlog, fases e regras das issues](docs/roadmap/backlog-index.md)
+
+As Issues do GitHub são unidades de trabalho autorizadas e autossuficientes. Pesquisa, decisão, especificação, arquitetura, UX e implementação permanecem separadas. O Codex somente poderá implementar issues derivadas de requisitos, decisões arquiteturais e especificações de UX aprovados.
 
 ## Finalidades orientadoras
 
-A ARA destina-se simultaneamente a:
+A ARA deverá servir a estudantes autodidatas, autores, pesquisadores e instituições. A plataforma preservará uma experiência reconhecível de cursos e cards, permitindo que configurações pedagógicas, avaliativas, interacionais, de pesquisa e de governança variem explicitamente.
 
-- estudantes autodidatas que desejem personalizar a forma como estudam; e
-- pesquisadores e instituições que necessitem de condições pedagógicas reproduzíveis, instrumentação configurável e governança de dados educacionais.
+## Governança
 
-A plataforma preservará uma experiência reconhecível de cursos e cards, permitindo que configurações pedagógicas, avaliativas, interacionais, de pesquisa e de governança variem explicitamente.
-
-## Modelo de registro
-
-- documentos canônicos descrevem o entendimento atual aprovado;
-- issues preservam backlog, protocolos e histórico do trabalho;
-- pull requests, commits, dados de pesquisa e testes preservam evidência primária;
-- protótipos exploratórios permanecem recuperáveis, mas não são requisitos de produção sem adoção explícita.
-
-## Governança do repositório
-
-As Issues do GitHub constituem o backlog e o registro primário de trabalho. A interpretação atual e a implementação futura também devem seguir os documentos canônicos acima. Requisitos e decisões não podem depender de conversas privadas ou instruções não registradas. Consulte:
+Consulte:
 
 - [Governança do repositório](docs/governance/repository-governance.pt-BR.md)
 - [Política linguística](docs/governance/language-policy.pt-BR.md)
@@ -56,12 +40,12 @@ As Issues do GitHub constituem o backlog e o registro primário de trabalho. A i
 
 ## Idiomas
 
-A interface será preparada desde o início para português brasileiro (`pt-BR`), português europeu (`pt-PT`) e inglês (`en`). A documentação pública estável será mantida nessas três variantes quando aplicável. Documentos de pesquisa em elaboração usarão normalmente o português brasileiro como idioma canônico de redação.
+A interface será preparada para português brasileiro (`pt-BR`), português europeu (`pt-PT`) e inglês (`en`). Documentos de pesquisa em elaboração usarão normalmente o português brasileiro como idioma canônico.
 
 ## Licenciamento
 
 - Código-fonte: [GNU Affero General Public License versão 3 ou posterior](LICENSE)
-- Documentação do projeto, salvo indicação em contrário: [Creative Commons Atribuição 4.0 Internacional](LICENSE-DOCUMENTATION.md)
-- O nome ARA, o kanji, o logotipo e a identidade visual não são licenciados por essas licenças. Consulte a [política de marca](TRADEMARKS.md).
+- Documentação: [Creative Commons Atribuição 4.0 Internacional](LICENSE-DOCUMENTATION.md), salvo indicação em contrário
+- Nome, kanji, logotipo e identidade visual: consulte [TRADEMARKS.md](TRADEMARKS.md)
 
-Consulte [LICENSING.md](LICENSING.md) para conhecer os limites completos de licenciamento.
+Consulte [LICENSING.md](LICENSING.md) para os limites completos.
