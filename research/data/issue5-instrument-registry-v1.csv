@@ -1,0 +1,15 @@
+instrument_id,label,method_family,timing,representation,required_metadata,permitted_role,prohibited_shortcut
+knowledge_pretest,Knowledge pre-test,quantitative assessment,before condition exposure,QTI/linked artifact,"version, language, scoring, accommodations",baseline/outcome covariate,not interchangeable across unvalidated translations
+knowledge_posttest,Knowledge post-test,quantitative assessment,immediate post,QTI/linked artifact,same,primary/secondary outcome,not learning from structural completion
+knowledge_delayed,Delayed knowledge test,quantitative assessment,declared delay,QTI/linked artifact,same + timing tolerance,retention outcome,not replaceable by review events
+self_regulation_scale,Self-regulation scale,validated questionnaire,pre/post as protocol states,linked instrument,"license, version, language, scoring",construct measure when validated,not inferred from traces
+usability_scale,Usability questionnaire,questionnaire,after task/period,linked instrument,version/language,usability perception,not educational effectiveness
+cognitive_load_item,Cognitive load measure,single/multi-item scale,after task,linked instrument,wording/timing,subjective load,not objective cognitive capacity
+confidence_judgment,Confidence judgment,participant rating,after response/test item,inline instrument,"scale, optionality, accessibility",calibration research,not competence alone
+rubric_assessment,Rubric assessment,structured human/AI-assisted rating,after artifact/task,versioned rubric,"criterion, rater qualification, adjudication",artifact/performance evidence,not reliable without rater process
+interview,Semi-structured interview,qualitative,scheduled,guide + recording/transcript policy,"guide version, consent, transcription",interpretive evidence,not quantitative prevalence
+focus_group,Focus group,qualitative group,scheduled,guide,"facilitation, consent, confidentiality limits",shared experience themes,not anonymous data
+diary,Participant diary,longitudinal qualitative,declared cadence,prompt set,"burden, optionality, language",experience/context evidence,not direct behavior
+observation,Structured observation,qualitative/quantitative,task/session,observation protocol,"observer training, coding",workflow/accessibility evidence,not participant internal state
+artifact_analysis,Artifact/content analysis,qualitative/mixed,versioned artifact set,coding scheme,"unitization, coders, provenance",authoring/course evidence,not learner outcome
+system_usability_walkthrough,Expert walkthrough,inspection,prototype/release,heuristic protocol,reviewer profile/version,UX defects/hypotheses,not user study

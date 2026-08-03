@@ -14,11 +14,9 @@ course → module → lesson → microsequence → card
 
 ## Current stage
 
-Issue #4 is complete with `ara.configuration-taxonomy.v1`. The current phase is Issue #5—research protocols, instrumentation and learning analytics. The new product has not entered implementation.
+Issues #4 and #5 are complete with `ara.configuration-taxonomy.v1` and `ara.research-framework.v1`. The current phase is Issue #6—product requirements and the domain model. Product implementation has not started.
 
 ## Start here
-
-Primary navigation has three sources:
 
 1. [Product vision](docs/vision/product-vision.pt-BR.md)
 2. [Research programme](docs/research/research-programme-index.pt-BR.md)
