@@ -39,6 +39,11 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/formal-search-round-01-cross-database-duplicates.csv`: deterministic PubMed–ERIC duplicate mappings.
 - `data/formal-search-round-01-related-publications.csv`: related publications retained as distinct records.
 - `data/formal-search-round-01-summary.json`: final formal-search and deduplication counts.
+- `pt-BR/triagem-titulo-resumo-rodada-01.md`: first single-reviewer title-and-abstract screening report.
+- `data/formal-search-round-01-screening-summary.json`: screening decisions, source counts, priority tiers and audit totals.
+- `data/formal-search-round-01-screening-reason-counts.csv`: counts by screening decision and reason code.
+- `data/formal-search-round-01-screening-manual-overrides.csv`: documented manual changes and refined reasons.
+- `data/formal-search-round-01-screening-file-manifest.csv`: hashes for the complete screening package handed to the project owner.
 
 ### Search records
 
@@ -65,6 +70,6 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.
