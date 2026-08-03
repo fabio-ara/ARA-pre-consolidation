@@ -1,0 +1,70 @@
+{
+  "round": "external-adapters-source-audit-01",
+  "executed_at": "2026-08-03T04:45:00Z",
+  "method": "Pinned official repository source and API audit plus boundary-adapter tests. External browser runtimes were not executed in this environment.",
+  "candidates": [
+    {
+      "candidate": "MathLive / MathJSON-oriented adapter",
+      "repository": "arnog/mathlive",
+      "pinned_commit": "d10bd8dd0f428b4d1c0b19293431cba8373566d6",
+      "package_version_at_commit": "0.110.0",
+      "license": "MIT",
+      "audited_paths": [
+        "package.json",
+        "src/api.md",
+        "src/public/mathfield-element.ts"
+      ],
+      "observed_boundary": [
+        "web component math input",
+        "LaTeX value",
+        "semantic interchange through MathJSON-oriented mapping"
+      ],
+      "ARA_decision": "source-compatible candidate; runtime and accessibility bake-off deferred",
+      "authority_limit": "input and interpretation only; not proof or correctness authority"
+    },
+    {
+      "candidate": "Cytoscape.js adapter",
+      "repository": "cytoscape/cytoscape.js",
+      "pinned_commit": "c668509bf965340ebf2a46d1ab0dcb3b4dd6fb0e",
+      "package_version_at_commit": "3.35.0-unstable",
+      "published_stable_version_observed": "3.34.0",
+      "license": "MIT",
+      "audited_paths": [
+        "package.json",
+        "index.d.ts",
+        "documentation/md/intro.md",
+        "dist/cytoscape.esm.min.mjs"
+      ],
+      "observed_dist_bytes": 305180,
+      "observed_boundary": [
+        "elements data",
+        "optional renderer",
+        "headless graph model and algorithms"
+      ],
+      "ARA_decision": "source-compatible candidate; stable release must be pinned before runtime bake-off",
+      "authority_limit": "graph engine and renderer only; domain grammar and educational predicates remain ARA concerns"
+    },
+    {
+      "candidate": "Recogito Text Annotator",
+      "repository": "recogito/text-annotator-js",
+      "pinned_commit": "092be72b5fc6d670123b8f918998fe9c424050a1",
+      "package_version_at_commit": "4.2.5",
+      "license": "BSD-3-Clause",
+      "audited_paths": [
+        "package.json",
+        "packages/text-annotator/src/model/w3c/w3c-text-annotation.ts",
+        "packages/text-annotator/src/model/w3c/w3c-text-format-adapter.ts",
+        "packages/text-annotator/test/annotations.w3c.json"
+      ],
+      "observed_boundary": [
+        "W3C-style annotation",
+        "TextQuoteSelector",
+        "TextPositionSelector"
+      ],
+      "ARA_decision": "source-compatible candidate; runtime range-selection and assistive-technology bake-off deferred",
+      "authority_limit": "annotation capture and selector interchange only; argument quality remains human-reviewed"
+    }
+  ],
+  "runtime_execution_status": "not-executed-environment-network-resolution-blocked",
+  "interpretation": "Source-level compatibility is demonstrated only at the canonical boundary. No candidate is selected or accepted as production-ready."
+}

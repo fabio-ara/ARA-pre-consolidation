@@ -1,0 +1,277 @@
+{
+  "contract": "ara.component-prototype",
+  "version": "0.2.0",
+  "componentRef": "org.ara.prototype.relational-construction@0.2.0",
+  "family": "relational-construction",
+  "representation": {
+    "kind": "relational-construction",
+    "initialState": {
+      "grammar": "graph-theory",
+      "nodes": [
+        {
+          "id": "A",
+          "kind": "vertex",
+          "label": "A"
+        },
+        {
+          "id": "B",
+          "kind": "vertex",
+          "label": "B"
+        },
+        {
+          "id": "C",
+          "kind": "vertex",
+          "label": "C"
+        },
+        {
+          "id": "D",
+          "kind": "vertex",
+          "label": "D"
+        }
+      ],
+      "edges": [],
+      "semanticConstraints": [
+        "simple-undirected-graph"
+      ]
+    }
+  },
+  "activity": {
+    "id": "act-rel",
+    "objective": "Construir um caminho A–B–D.",
+    "phase": "guided-practice",
+    "operation": "construct-path",
+    "prompt": "Adicione A–B e B–D.",
+    "allowedOperations": [
+      "add-edge",
+      "remove-edge"
+    ],
+    "scaffolds": []
+  },
+  "response": {
+    "id": "resp-rel",
+    "finalState": {
+      "grammar": "graph-theory",
+      "nodes": [
+        {
+          "id": "A",
+          "kind": "vertex",
+          "label": "A"
+        },
+        {
+          "id": "B",
+          "kind": "vertex",
+          "label": "B"
+        },
+        {
+          "id": "C",
+          "kind": "vertex",
+          "label": "C"
+        },
+        {
+          "id": "D",
+          "kind": "vertex",
+          "label": "D"
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "from": "A",
+          "to": "B",
+          "directed": false,
+          "label": "A–B"
+        },
+        {
+          "id": "e2",
+          "from": "B",
+          "to": "D",
+          "directed": false,
+          "label": "B–D"
+        }
+      ],
+      "semanticConstraints": [
+        "simple-undirected-graph"
+      ]
+    },
+    "operationLog": [
+      {
+        "sequence": 1,
+        "operation": "add-edge",
+        "targetIds": [
+          "A",
+          "B"
+        ],
+        "value": {
+          "edgeId": "e1"
+        }
+      },
+      {
+        "sequence": 2,
+        "operation": "add-edge",
+        "targetIds": [
+          "B",
+          "D"
+        ],
+        "value": {
+          "edgeId": "e2"
+        }
+      }
+    ],
+    "submittedAt": "2026-08-03T04:45:00Z",
+    "metadata": {
+      "adapterVersion": "0.2.0",
+      "canonicalizationVersion": "0.2.0",
+      "capabilityAvailability": {
+        "state": "available",
+        "source": "component-manifest",
+        "evaluatedAt": "2026-08-03T04:45:00Z"
+      }
+    }
+  },
+  "validator": {
+    "id": "val-rel",
+    "structuralChecks": [
+      "unique-ids",
+      "endpoints-exist",
+      "grammar-conforms",
+      "allowed-operations-only"
+    ],
+    "predicates": [
+      {
+        "criterionId": "path-a-d",
+        "predicate": "path-exists",
+        "parameters": {
+          "from": "A",
+          "to": "D",
+          "maxEdges": 2
+        },
+        "weight": 0.6
+      },
+      {
+        "criterionId": "exact-edges",
+        "predicate": "edge-set-equals",
+        "parameters": {
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "D"
+            ]
+          ]
+        },
+        "weight": 0.4
+      }
+    ],
+    "authority": "deterministic-validator",
+    "validateSemanticStateOnly": true,
+    "validationLocations": [
+      {
+        "kind": "client-public",
+        "authority": "deterministic-validator",
+        "required": true,
+        "capabilityId": "relational-predicate-engine"
+      }
+    ]
+  },
+  "feedback": {
+    "timing": "after-confirmation",
+    "items": [
+      {
+        "id": "fb-rel",
+        "kind": "explanation",
+        "target": "criterion:path-a-d",
+        "content": "A–B–D forma o caminho solicitado.",
+        "authority": "authored-rule",
+        "reveal": "after-attempt"
+      }
+    ],
+    "scoreIndependent": true,
+    "retryPolicy": "unlimited-formative"
+  },
+  "runtimeRequirements": {
+    "kind": "deterministic-local",
+    "validationLocations": [
+      {
+        "kind": "client-public",
+        "authority": "deterministic-validator",
+        "required": true,
+        "capabilityId": "relational-predicate-engine"
+      }
+    ],
+    "isolationAssurance": "none",
+    "productionEligibility": "conditionally-eligible",
+    "runtimeVersion": "migrated-relational-construction-0.2",
+    "limits": {
+      "timeMs": 2000,
+      "memoryMiB": 64,
+      "outputBytes": 65536,
+      "outputMessages": 128,
+      "cancellationRequired": false,
+      "network": "none",
+      "filesystem": "none"
+    },
+    "notes": "Migrated from contract 0.1."
+  },
+  "securityBoundary": {
+    "courseSuppliedCode": "forbidden",
+    "learnerCode": "data-only",
+    "trustedComponentCode": "installed-approved-adapter",
+    "sensitiveData": "forbidden"
+  },
+  "accessibility": {
+    "operations": [
+      {
+        "operation": "edit-relation",
+        "keyboard": "Endpoint controls and action buttons.",
+        "nonvisual": "Linear node-edge editor.",
+        "statusAnnouncement": "Announce mutations and current state.",
+        "focusManagement": "Restore focus after mutation.",
+        "reflow": "Use an equivalent linear view for bidimensional content.",
+        "knownLimits": [
+          "Dense graphs require specialist evaluation."
+        ]
+      }
+    ],
+    "textAlternative": "A linear node-edge representation is mandatory.",
+    "knownLimits": [
+      "Domain-specific accessible interaction remains to be validated."
+    ]
+  },
+  "offlineProfile": {
+    "grade": "full",
+    "networkDuringStudy": "forbidden",
+    "packageRequirements": [
+      "relational-model",
+      "renderer-adapter"
+    ],
+    "limitations": []
+  },
+  "derivedStatePolicy": {
+    "recomputable": true,
+    "cacheLifetime": "session",
+    "canonicalForbiddenFields": [
+      "layout",
+      "x",
+      "y",
+      "position",
+      "rendererState",
+      "workerHandle",
+      "libraryObject"
+    ],
+    "notes": "Renderer and runtime state are disposable and never authoritative."
+  },
+  "validationEvidencePolicy": {
+    "defaultVisibility": "learner",
+    "retention": "attempt",
+    "redactionRequired": true,
+    "protectedKinds": [
+      "protected-tests",
+      "review-notes",
+      "probabilistic-trace",
+      "security-diagnostics"
+    ]
+  }
+}

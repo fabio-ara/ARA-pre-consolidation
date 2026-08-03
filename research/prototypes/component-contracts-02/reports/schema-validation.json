@@ -1,0 +1,16 @@
+{
+  "round": "component-contracts-v02-01",
+  "command": "python validate_examples.py",
+  "environment": {
+    "python": "3.13.5",
+    "jsonschema": "installed runtime"
+  },
+  "checks": {
+    "manifests": 4,
+    "component_instances": 4,
+    "migrated_instances": 4,
+    "validation_scenarios": 3,
+    "total": 15,
+    "failures": 0
+  }
+}

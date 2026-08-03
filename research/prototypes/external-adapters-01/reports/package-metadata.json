@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-08-03T04:45:00Z",
+  "candidates": [
+    {
+      "package": "mathlive",
+      "version": "0.110.0",
+      "license": "MIT",
+      "source": "official package.json at pinned commit",
+      "bundled": false
+    },
+    {
+      "package": "cytoscape",
+      "version_at_pinned_commit": "3.35.0-unstable",
+      "published_stable_version_observed": "3.34.0",
+      "license": "MIT",
+      "source": "official package.json and package metadata",
+      "bundled": false
+    },
+    {
+      "package": "@recogito/text-annotator",
+      "version": "4.2.5",
+      "license": "BSD-3-Clause",
+      "source": "official monorepo package.json and package metadata",
+      "bundled": false
+    }
+  ]
+}

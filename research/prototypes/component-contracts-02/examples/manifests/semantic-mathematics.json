@@ -1,0 +1,145 @@
+{
+  "contract": "ara.component-manifest",
+  "version": "0.2.0",
+  "componentId": "org.ara.prototype.semantic-expression",
+  "release": "0.2.0",
+  "family": "semantic-mathematics",
+  "schemas": {
+    "representation": "semantic-mathematics.schema.json#/$defs/representation",
+    "activity": "semantic-mathematics.schema.json#/$defs/activity",
+    "response": "semantic-mathematics.schema.json#/$defs/response",
+    "validator": "semantic-mathematics.schema.json#/$defs/validator",
+    "feedback": "common.schema.json#/$defs/feedbackContract"
+  },
+  "capabilities": {
+    "responseModes": [
+      "semantic-expression"
+    ],
+    "validatorModes": [
+      "deterministic"
+    ],
+    "determinism": "fully-deterministic",
+    "rendererGeometryCanonical": false
+  },
+  "derivedStatePolicy": {
+    "recomputable": true,
+    "cacheLifetime": "session",
+    "canonicalForbiddenFields": [
+      "layout",
+      "x",
+      "y",
+      "position",
+      "rendererState",
+      "workerHandle",
+      "libraryObject"
+    ],
+    "notes": "Renderer and runtime state are disposable and never authoritative."
+  },
+  "runtimeRequirements": {
+    "kind": "deterministic-local",
+    "validationLocations": [
+      {
+        "kind": "client-public",
+        "authority": "deterministic-validator",
+        "required": true,
+        "capabilityId": "semantic-math-validator"
+      }
+    ],
+    "isolationAssurance": "none",
+    "productionEligibility": "conditionally-eligible",
+    "runtimeVersion": "governed-symbolic-validator-required",
+    "limits": {
+      "timeMs": 2000,
+      "memoryMiB": 64,
+      "outputBytes": 65536,
+      "outputMessages": 128,
+      "cancellationRequired": true,
+      "network": "none",
+      "filesystem": "none"
+    },
+    "notes": "The input widget is not the authority for correctness."
+  },
+  "securityBoundary": {
+    "courseSuppliedCode": "forbidden",
+    "learnerCode": "data-only",
+    "trustedComponentCode": "installed-approved-adapter",
+    "sensitiveData": "forbidden"
+  },
+  "accessibility": {
+    "operations": [
+      {
+        "operation": "enter-expression",
+        "keyboard": "Physical and virtual keyboard input.",
+        "nonvisual": "Semantic expression input with interpretation preview.",
+        "statusAnnouncement": "Announce parsed form and validity.",
+        "focusManagement": "Return focus to the first invalid token or input.",
+        "reflow": "Input and preview reflow without horizontal page overflow.",
+        "knownLimits": [
+          "Mathematical speech requires locale and notation testing."
+        ]
+      },
+      {
+        "operation": "confirm-interpretation",
+        "keyboard": "Reachable confirmation control.",
+        "nonvisual": "Preview is exposed as text.",
+        "statusAnnouncement": "Announce confirmation and evaluation state.",
+        "focusManagement": "Keep focus on confirmation or move to first issue.",
+        "reflow": "Control remains visible at 320 CSS pixels.",
+        "knownLimits": []
+      }
+    ],
+    "textAlternative": "Accessible reading of the canonical expression is required.",
+    "knownLimits": [
+      "No assistive-technology user evaluation in this round."
+    ]
+  },
+  "offlineProfile": {
+    "grade": "package-required",
+    "networkDuringStudy": "forbidden",
+    "packageRequirements": [
+      "semantic-input",
+      "symbolic-validator"
+    ],
+    "limitations": [
+      "Package size depends on the selected symbolic engine."
+    ]
+  },
+  "measuredPackageProfile": {
+    "status": "not-measured",
+    "method": "No external runtime bundled in the contract package.",
+    "environment": "schema-level contract package",
+    "limitations": [
+      "Candidate adapter measurements are stored separately."
+    ]
+  },
+  "validationEvidencePolicy": {
+    "defaultVisibility": "learner",
+    "retention": "attempt",
+    "redactionRequired": true,
+    "protectedKinds": [
+      "protected-tests",
+      "review-notes",
+      "probabilistic-trace",
+      "security-diagnostics"
+    ]
+  },
+  "localization": {
+    "uiLocales": [
+      "pt-BR",
+      "pt-PT",
+      "en"
+    ],
+    "authoredContentLanguageMetadata": "required",
+    "translatableInterfaceStringsSeparate": true
+  },
+  "provenance": {
+    "authority": "project-authored",
+    "createdAt": "2026-08-03T04:45:00Z",
+    "sourceIds": [
+      "SYS04",
+      "SYS06",
+      "PR39"
+    ],
+    "license": "CC-BY-4.0"
+  }
+}

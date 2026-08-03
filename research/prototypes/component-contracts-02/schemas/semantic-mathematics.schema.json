@@ -1,0 +1,353 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.ara.example/component-contracts/0.2/semantic-mathematics.schema.json",
+  "title": "ARA semantic-mathematics component contract 0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract",
+    "version",
+    "componentRef",
+    "family",
+    "representation",
+    "activity",
+    "response",
+    "validator",
+    "feedback",
+    "runtimeRequirements",
+    "securityBoundary",
+    "accessibility",
+    "offlineProfile",
+    "derivedStatePolicy",
+    "validationEvidencePolicy"
+  ],
+  "properties": {
+    "contract": {
+      "const": "ara.component-prototype"
+    },
+    "version": {
+      "const": "0.2.0"
+    },
+    "componentRef": {
+      "$ref": "common.schema.json#/$defs/componentRef"
+    },
+    "family": {
+      "const": "semantic-mathematics"
+    },
+    "representation": {
+      "$ref": "#/$defs/representation"
+    },
+    "activity": {
+      "$ref": "#/$defs/activity"
+    },
+    "response": {
+      "$ref": "#/$defs/response"
+    },
+    "validator": {
+      "$ref": "#/$defs/validator"
+    },
+    "feedback": {
+      "$ref": "common.schema.json#/$defs/feedbackContract"
+    },
+    "runtimeRequirements": {
+      "$ref": "common.schema.json#/$defs/runtimeRequirements"
+    },
+    "securityBoundary": {
+      "$ref": "common.schema.json#/$defs/securityBoundary"
+    },
+    "accessibility": {
+      "$ref": "common.schema.json#/$defs/accessibilityContract"
+    },
+    "offlineProfile": {
+      "$ref": "common.schema.json#/$defs/offlineProfile"
+    },
+    "derivedStatePolicy": {
+      "$ref": "common.schema.json#/$defs/derivedStatePolicy"
+    },
+    "validationEvidencePolicy": {
+      "$ref": "common.schema.json#/$defs/validationEvidencePolicy"
+    }
+  },
+  "$defs": {
+    "expression": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "number",
+            "symbol",
+            "add",
+            "multiply",
+            "divide",
+            "power",
+            "function",
+            "relation"
+          ]
+        },
+        "value": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "args": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/expression"
+          },
+          "minItems": 1
+        },
+        "numerator": {
+          "$ref": "#/$defs/expression"
+        },
+        "denominator": {
+          "$ref": "#/$defs/expression"
+        },
+        "base": {
+          "$ref": "#/$defs/expression"
+        },
+        "exponent": {
+          "$ref": "#/$defs/expression"
+        },
+        "left": {
+          "$ref": "#/$defs/expression"
+        },
+        "right": {
+          "$ref": "#/$defs/expression"
+        },
+        "operator": {
+          "enum": [
+            "=",
+            "<",
+            ">",
+            "<=",
+            ">="
+          ]
+        }
+      }
+    },
+    "representation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "languageTag",
+        "expression",
+        "accessibleText",
+        "variables"
+      ],
+      "properties": {
+        "kind": {
+          "const": "semantic-expression"
+        },
+        "languageTag": {
+          "type": "string"
+        },
+        "expression": {
+          "$ref": "#/$defs/expression"
+        },
+        "accessibleText": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "objective",
+        "phase",
+        "operation",
+        "prompt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "objective": {
+          "type": "string"
+        },
+        "phase": {
+          "enum": [
+            "theory",
+            "guided-practice",
+            "independent-practice",
+            "reflection",
+            "transfer"
+          ]
+        },
+        "operation": {
+          "enum": [
+            "interpret",
+            "construct-equivalent",
+            "simplify",
+            "factor",
+            "solve",
+            "differentiate",
+            "prove-property",
+            "explain"
+          ]
+        },
+        "prompt": {
+          "type": "string"
+        },
+        "scaffolds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "metadata",
+        "inputFormat",
+        "originalInput",
+        "submittedExpression"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "metadata": {
+          "$ref": "common.schema.json#/$defs/responseMetadata"
+        },
+        "inputFormat": {
+          "enum": [
+            "math-json",
+            "latex",
+            "mathml",
+            "ascii-math",
+            "infix-text"
+          ]
+        },
+        "originalInput": {
+          "type": "string"
+        },
+        "submittedExpression": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/expression"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "interpretationPreview": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "submittedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "validator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "validityChecks",
+        "propertyTests",
+        "authority",
+        "interpretationPreviewRequired",
+        "validationLocations"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "validityChecks": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "parseable",
+              "symbols-declared",
+              "domain-defined",
+              "units-valid"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "propertyTests": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "criterionId",
+              "test",
+              "weight"
+            ],
+            "properties": {
+              "criterionId": {
+                "type": "string"
+              },
+              "test": {
+                "enum": [
+                  "equivalent-to-reference",
+                  "required-form",
+                  "numeric-tolerance",
+                  "unit-equivalence",
+                  "property-satisfied"
+                ]
+              },
+              "referenceExpression": {
+                "$ref": "#/$defs/expression"
+              },
+              "requiredForm": {
+                "type": "string"
+              },
+              "weight": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          }
+        },
+        "authority": {
+          "const": "deterministic-validator"
+        },
+        "interpretationPreviewRequired": {
+          "const": true
+        },
+        "validationLocations": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/validationLocation"
+          },
+          "minItems": 1
+        }
+      }
+    }
+  }
+}

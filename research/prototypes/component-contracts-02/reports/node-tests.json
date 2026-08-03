@@ -1,0 +1,22 @@
+{
+  "round": "component-contracts-v02-01",
+  "command": "node --test tests/*.test.mjs",
+  "environment": {
+    "node": "v22.16.0",
+    "platform": "linux",
+    "architecture": "x86_64"
+  },
+  "tests": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0
+  },
+  "covered": [
+    "deterministic 0.1 to 0.2 migration",
+    "response adapter and canonicalization versions",
+    "derived-state forbidden fields",
+    "protected programming material removed from course JSON",
+    "non-silent selector ambiguity",
+    "validation location separated from authority"
+  ]
+}
