@@ -2,46 +2,27 @@
 
 **Data local:** 3 de agosto de 2026  
 **Issue:** #38  
-**Estado:** rodada de adapters de referência concluída; não constitui seleção de stack nem implementação produtiva
+**Estado:** rodada executável de referência concluída; não constitui seleção de stack nem implementação produtiva
 
 ## 1. Finalidade
 
-A rodada anterior demonstrou, em nível de schema, que matemática semântica, construção relacional, programação executável e anotação de fontes podem compartilhar um envelope contratual sem compartilhar a mesma gramática disciplinar.
+A rodada de schemas anterior propôs um envelope comum para matemática semântica, construção relacional, programação executável e anotação de fontes. Esta rodada tentou falsificar essa proposta com quatro adapters funcionais e substituíveis.
 
-Esta rodada tentou falsificar essa conclusão por meio de quatro adapters executáveis. O objetivo não foi criar componentes finais, mas verificar se um adapter consegue:
+Cada adapter precisava:
 
-1. receber uma instância canônica;
-2. iniciar uma atividade;
-3. importar e exportar resposta;
+1. carregar uma instância canônica;
+2. iniciar a atividade;
+3. importar e exportar respostas;
 4. separar validade de correção ou revisão;
 5. produzir feedback;
 6. descartar estado visual ou de runtime;
-7. operar sem introduzir campos próprios do renderer no JSON da ARA.
+7. preservar o JSON da ARA sem campos próprios de bibliotecas.
 
 ## 2. Método
 
-Foi criado um pacote sem dependências JavaScript externas, executado com:
+Foi criado um pacote sem dependências JavaScript externas, executado com Node.js 22.16.0, Python 3.13.5, Playwright e Chromium 144.0.7559.96. A ausência de bibliotecas externas foi deliberada: primeiro se testou o contrato; MathLive, Cytoscape.js, Pyodide, Papyros e Recogito permanecem candidatos para uma rodada comparativa posterior.
 
-- Node.js 22.16.0;
-- Python 3.13.5 e Playwright;
-- Chromium 144.0.7559.96.
-
-A ausência de dependências externas nesta rodada foi deliberada. Ela permitiu testar o contrato antes de testar bibliotecas específicas. MathLive, Cytoscape.js, Pyodide, Papyros e Recogito continuam candidatos de benchmark, não dependências escolhidas.
-
-O pacote contém:
-
-- uma interface comum de lifecycle;
-- quatro adapters;
-- fixtures canônicas;
-- testes Node;
-- demonstração independente e offline;
-- walkthrough em navegador;
-- medições;
-- análise de segurança, acessibilidade, licenças e alterações contratuais.
-
-## 3. Lifecycle comum
-
-Os quatro adapters implementam:
+O lifecycle comum implementado foi:
 
 ```text
 load(instance)
@@ -53,287 +34,121 @@ produceFeedback(validation)
 dispose()
 ```
 
-O método decisivo é `exportResponse()`. Ele define a fronteira canônica e exclui:
+`exportResponse()` funciona como fronteira canônica. Coordenadas, layouts, workers, estado transitório, testes protegidos e objetos específicos do renderer ficam fora da resposta.
 
-- coordenadas e layout;
-- handles de worker;
-- estado transitório da interface;
-- testes protegidos;
-- detalhes internos de interpretação;
-- objetos específicos de bibliotecas.
+## 3. Matemática semântica
 
-Esse lifecycle funcionou nas quatro famílias. Portanto, o contrato comum não precisa ser uma gramática universal de `resource`.
+O adapter de referência interpreta uma gramática mínima de números, símbolos, adição, multiplicação, divisão, potência e parênteses. Foram demonstrados três estados:
 
-## 4. Matemática semântica
+- `2*(x+` — entrada inválida;
+- `2*x+6` — válida e equivalente, mas fora da forma fatorada solicitada;
+- `2*(x+3)` — válida, equivalente e na forma solicitada.
 
-O adapter implementa uma gramática mínima de expressões com:
+Isso confirma a separação entre interpretação, validade, equivalência e forma requerida.
 
-- números;
-- símbolos;
-- adição;
-- multiplicação;
-- divisão;
-- potência;
-- parênteses;
-- multiplicação implícita em casos simples.
+A equivalência foi testada por amostragem em pontos determinísticos. Esse procedimento serve apenas para testar o lifecycle e **não constitui prova matemática geral**. O validador foi rejeitado para produção; uma implementação real exigirá um motor simbólico governado e um escopo formal de expressões.
 
-O fluxo testado foi:
+## 4. Construção relacional
 
-```text
-entrada textual
-→ parsing
-→ AST semântica
-→ prévia de interpretação
-→ símbolos declarados
-→ testes de propriedades
-→ resultado e feedback
-```
+O adapter persiste nós, arestas, restrições e histórico de operações. O layout circular fica em `derivedState`; a resposta exportada não contém `x`, `y`, `position`, `layout` ou `rendererState`.
 
-Foram observados três estados distintos:
+O cenário exigiu exatamente as arestas A–B e B–D. A validação verificou IDs, endpoints, operações permitidas, caminho A–D em no máximo duas arestas e igualdade do conjunto de arestas.
 
-1. `2*(x+` — inválido, pois não pode ser interpretado;
-2. `2*x+6` — válido e equivalente, mas não na forma fatorada solicitada;
-3. `2*(x+3)` — válido, equivalente e na forma requerida.
+Toda operação possui caminho sem arrastar, por seletores e botões. Uma lista linear de arestas oferece alternativa ao SVG. O princípio de estado semântico independente do renderer foi confirmado. Grafos densos e gramáticas como autômatos, circuitos e argumentos ainda exigem avaliação própria.
 
-Isso confirma que validade, equivalência e forma de resposta são critérios diferentes.
+## 5. Programação executável
 
-### Limite crítico
+Foram usados dois runtimes de referência:
 
-A equivalência foi demonstrada por avaliação em pontos determinísticos. Esse método é útil para testar o lifecycle, mas **não é prova matemática geral**. O validador de referência foi, por isso, rejeitado como solução produtiva. Uma implementação real exigirá motor simbólico governado, escopo explícito de expressões e testes contra casos de fronteira.
+- Node Worker com `vm`, para testes locais e testes protegidos injetados pelo host;
+- Web Worker, para testes públicos no navegador.
 
-## 5. Construção relacional
+O fluxo diferencia erro de parsing, falha de teste, satisfação parcial, sucesso, timeout e interrupção. Os testes protegidos não aparecem no curso servido nem na resposta exportada.
 
-O adapter representa:
+O runtime foi, contudo, **rejeitado para produção**. Web Worker não é sandbox de segurança, e Node `vm` não é fronteira adequada contra código hostil. Remover APIs de rede não impede todas as formas de escape, o navegador não oferece limite rígido de memória por Worker e testes secretos não podem permanecer protegidos num pacote estático entregue ao cliente.
 
-- nós;
-- arestas;
-- restrições semânticas;
-- histórico opcional de operações.
+A expressão contratual `sandboxed-worker` mostrou-se vaga. O contrato precisa registrar nível de garantia, localização da validação, limites independentes e elegibilidade produtiva.
 
-O renderer calcula um layout circular, mas esse layout fica em `derivedState`. A resposta exportada não contém `x`, `y`, `layout`, `position` ou `rendererState`.
+## 6. Anotação de fonte e argumento
 
-O cenário exigiu construir exatamente:
+O adapter usa fonte versionada por SHA-256, seletor por citação, offsets, prefixo e sufixo, anotação do estudante, nós argumentativos e relações `supports` e `uses-evidence`.
 
-```text
-A — B — D
-```
+Os offsets foram alterados deliberadamente. O trecho foi reencontrado pela combinação de citação e contexto, mantendo a integridade da resposta. Digest, seletor e links são verificados deterministicamente; relevância da evidência e qualidade da justificativa permanecem sob revisão humana.
 
-A validação verificou:
+A separação entre integridade documental e avaliação interpretativa foi confirmada. Permanecem abertos o tratamento de citações repetidas, a política de versões imutáveis e a avaliação da seleção de intervalos com tecnologias assistivas.
 
-- IDs únicos;
-- existência dos endpoints;
-- operações permitidas;
-- caminho de A até D com no máximo duas arestas;
-- igualdade exata do conjunto de arestas.
-
-A interface utiliza seletores e botões. O estudante não precisa arrastar elementos. Também existe uma lista linear de arestas como alternativa ao SVG.
-
-### Resultado
-
-O princípio de estado semântico independente do renderer foi confirmado. O adapter permanece um precedente contratual viável, mas não escolhe um motor de grafos. Estruturas densas e gramáticas especializadas — autômatos, argumentos, circuitos ou redes causais — ainda exigem avaliação própria.
-
-## 6. Programação executável
-
-Foram implementados dois ambientes de referência:
-
-- Node worker com `vm` para testes locais e suíte protegida injetada pelo host;
-- Web Worker em navegador para testes públicos.
-
-O cenário usa JavaScript, permitido pelo schema da família, e distingue:
-
-- erro de parsing;
-- falha de teste;
-- satisfação parcial;
-- sucesso;
-- timeout;
-- interrupção pelo estudante.
-
-Os testes protegidos residem fora da resposta e fora do conteúdo servido ao navegador. O JSON exportado contém somente o código submetido e o pedido de execução.
-
-### Resultado de segurança
-
-O lifecycle e a separação dos testes foram demonstrados, mas o runtime foi **rejeitado para produção**.
-
-Razões:
-
-- Web Worker isola execução da interface, mas não é sandbox de segurança;
-- Node `vm` não deve ser tratado como fronteira contra código hostil;
-- remover APIs como `fetch` não impede todas as formas de escape;
-- o navegador não oferece limite rígido de memória por Worker;
-- testes realmente protegidos não podem ser secretos num pacote estático entregue ao cliente.
-
-A nomenclatura `sandboxed-worker` mostrou-se excessivamente vaga. O contrato precisa registrar nível de garantia, localização da validação e elegibilidade produtiva.
-
-## 7. Anotação de fonte e argumento
-
-O adapter usa:
-
-- fonte versionada por SHA-256;
-- seletor com citação, offsets, prefixo e sufixo;
-- anotação do estudante;
-- reivindicação e razão;
-- links `supports` e `uses-evidence`.
-
-O cenário alterou deliberadamente os offsets da anotação. O trecho foi reencontrado pelo par citação–contexto e a resposta permaneceu válida.
-
-A validação determinística verificou:
-
-- digest da fonte;
-- resolução do seletor;
-- existência dos links;
-- ligação entre evidência e razão.
-
-A relevância da evidência e a qualidade da justificativa permaneceram em `review-required`, sob autoridade humana.
-
-### Resultado
-
-A separação entre integridade documental e qualidade argumentativa foi confirmada. Ainda são necessários:
-
-- política de versões imutáveis da fonte;
-- tratamento de citações repetidas e ambíguas;
-- avaliação com leitor de tela para seleção de intervalos;
-- fluxo institucional de revisão e devolução.
-
-## 8. Validação executada
+## 7. Validação executada
 
 ### Testes Node
 
-Foram executados cinco testes:
+Foram executados seis testes:
 
-1. matemática inválida, parcial e correta;
+1. estados matemáticos inválido, parcial e correto;
 2. round-trip relacional sem geometria;
 3. proteção dos testes de programação;
 4. parsing, falha e timeout de programação;
-5. re-resolução de seletor e revisão humana.
+5. re-resolução de seletor e revisão humana;
+6. round-trip canônico explícito nas quatro famílias.
 
-Resultado: **5 de 5 aprovados**.
+Resultado: **6 de 6 aprovados**.
 
 ### Walkthrough em Chromium
 
-Foram executadas quinze verificações:
-
-- três estados matemáticos;
-- construção relacional correta;
-- ausência de geometria no JSON;
-- visualização linear de arestas;
-- falha e sucesso em teste público;
-- ausência de teste protegido na resposta;
-- timeout;
-- handoff para revisão humana;
-- re-resolução de seletor;
-- ordem de foco;
-- regiões de status;
-- reflow a 320 CSS pixels.
+Foram executadas quinze verificações sobre estados matemáticos, construção relacional, ausência de geometria, alternativa linear, testes públicos, ausência de testes protegidos, timeout, revisão humana, re-resolução, foco, regiões de status e reflow a 320 CSS pixels.
 
 Resultado: **15 de 15 aprovadas**.
 
-Esses resultados não constituem conformidade de acessibilidade. Não houve estudo com usuários nem avaliação completa em tecnologias assistivas.
+Isso não constitui conformidade de acessibilidade. Não houve estudo com usuários nem avaliação completa com tecnologias assistivas.
 
-## 9. Medições
+## 8. Medições
 
-A demonstração independente possui 46.023 bytes e não fez solicitações externas. Na execução observada:
+A demonstração independente gerada possui 46.023 bytes e não realizou solicitações externas. Na execução registrada:
 
-- inicialização: aproximadamente 163,55 ms;
-- heap JavaScript usado após o walkthrough: aproximadamente 3,27 MB;
-- heap total reportado: aproximadamente 5,85 MB.
+- inicialização aproximada: 163,55 ms;
+- heap JavaScript usado após o walkthrough: 3,27 MB;
+- heap total reportado: 5,85 MB.
 
-Os adapters possuem entre 4,3 KB e 9,2 KB de código-fonte individual. Essas medidas descrevem somente as implementações de referência sem dependências externas. Não predizem o custo de um CAS, Pyodide, MathLive, Cytoscape.js ou editor especializado.
+Os adapters individuais possuem entre 4,3 KB e 9,2 KB de código-fonte. Esses números descrevem implementações sem runtimes externos e não predizem o custo de CAS, Pyodide, MathLive, Cytoscape.js ou editores especializados. Deltas de heap medidos em loops Node são ruidosos e não representam picos de memória.
 
-Os deltas de heap medidos em loops Node são ruidosos e não devem ser tratados como picos de memória.
+## 9. Acessibilidade e segurança
 
-## 10. Acessibilidade
+O protótipo confirmou controles por teclado, foco visível, ordem de foco, regiões `aria-live`, alternativa linear ao grafo, ausência de arrasto obrigatório e reflow sem overflow horizontal a 320 CSS pixels.
 
-Foram confirmados no protótipo:
+Permanecem abertas a leitura semântica de matemática, grafos densos, navegação em editores de código, anúncio de traces e seleção de texto por leitor de tela.
 
-- controles alcançáveis por teclado;
-- foco visível;
-- ordem de foco estável;
-- regiões `aria-live`;
-- alternativa linear ao grafo;
-- ausência de interação obrigatória por arrastar;
-- reflow sem overflow horizontal a 320 CSS pixels.
-
-Permanecem abertos:
-
-- leitura de expressões matemáticas e prévia ambígua;
-- grafos densos;
-- navegação eficiente em editor de código;
-- anúncio de traces e diagnósticos;
-- seleção de intervalos de texto por leitor de tela;
-- avaliação com usuários com deficiência.
-
-## 11. Segurança
-
-Foram aceitos como invariantes:
+Foram preservados como invariantes:
 
 - curso não fornece código de componente;
 - saída do estudante é inserida como texto;
 - geometria não é canônica;
 - testes protegidos não são exportados;
-- timeout e limite de saída produzem estados explícitos;
-- fonte e seletor possuem verificação de integridade.
+- timeout e limite de saída têm estados explícitos;
+- fonte e seletor têm verificação de integridade.
 
-Foi rejeitada a hipótese de que `Worker` ou `vm` seja, por si só, sandbox suficiente. Uma arquitetura produtiva de programação precisará definir, conforme o perfil:
+Worker e `vm` não foram aceitos como sandbox produtiva. Uma arquitetura real deverá definir isolamento, rede, sistema de arquivos, CPU, memória, saída, pacotes, testes protegidos, reprodução do runtime e resposta a abuso.
 
-- isolamento em processo, origem ou serviço dedicado;
-- política de rede;
-- sistema de arquivos;
-- limites de CPU, memória e saída;
-- pacotes permitidos;
-- localização de testes protegidos;
-- reprodutibilidade do runtime;
-- resposta a abuso.
+## 10. Alterações contratuais propostas
 
-## 12. Licenças e bibliotecas
+A implementação revelou dez alterações candidatas para `0.2`:
 
-Nenhuma biblioteca de runtime externa foi incorporada. O código do protótipo é AGPL-3.0-or-later.
-
-Os seguintes candidatos permanecem referenciados para uma rodada posterior:
-
-- MathLive/MathJSON — MIT;
-- Cytoscape.js — MIT;
-- Pyodide — MPL-2.0;
-- Papyros — MIT;
-- Recogito Text Annotator — BSD-3-Clause.
-
-A próxima comparação deverá medir versão, bundle, acessibilidade, contratos, dependências transitivas e substituibilidade. A ausência de dependências nesta rodada não é recomendação para reconstruir todas as capacidades internamente.
-
-## 13. Alterações contratuais propostas
-
-A implementação revelou dez alterações candidatas para uma versão `0.2`:
-
-1. `adapterVersion` e `canonicalizationVersion` na resposta;
-2. `isolationAssurance` e `productionEligibility` no runtime;
+1. `adapterVersion` e `canonicalizationVersion`;
+2. `isolationAssurance` e `productionEligibility`;
 3. localização da validação: cliente público, host protegido ou revisão humana;
 4. política explícita para `derivedState`;
-5. estado de capacidade indisponível com proveniência;
+5. capacidade indisponível com proveniência;
 6. política de re-resolução e ambiguidade de seletores;
-7. alternativas de acessibilidade descritas por operação;
+7. alternativas de acessibilidade por operação;
 8. perfil medido de pacote, inicialização e memória;
 9. visibilidade e retenção das evidências de validação;
 10. limites separados de tempo, memória, saída e cancelamento.
 
-Essas alterações ainda são propostas. Devem ser revisadas contra os quatro contratos e, quando possível, contra uma segunda implementação de cada família.
+Essas alterações permanecem propostas até revisão dos contratos e comparação com adapters de bibliotecas externas.
 
-## 14. Conclusão
+## 11. Conclusão
 
-A rodada confirmou a hipótese principal:
+A interface comum mostrou-se viável sem substituir as gramáticas específicas dos domínios. A rodada também produziu duas rejeições explícitas:
 
-> uma interface comum de componente é viável, desde que não tente substituir as gramáticas específicas dos domínios.
+- equivalência matemática por amostragem não serve como validador produtivo geral;
+- Worker e `vm` não servem como sandbox produtiva para código hostil.
 
-Também produziu duas rejeições importantes:
-
-- a equivalência matemática por amostragem não serve como validador produtivo geral;
-- Worker e `vm` não servem como sandbox produtiva de código hostil.
-
-Assim, o protótipo não congela uma stack. Ele melhora o contrato ao mostrar quais fronteiras são reais e quais termos estavam vagos.
-
-## 15. Próximo trabalho
-
-A sequência recomendada é:
-
-1. revisar os contratos para `0.2`;
-2. executar um bake-off de bibliotecas atrás do mesmo adapter;
-3. especificar a arquitetura de código não confiável e testes protegidos;
-4. incorporar as fronteiras confirmadas à taxonomia pedagógica da Issue #4;
-5. consolidar depois instrumentação, analytics e modelo de domínio.
+O próximo trabalho é revisar o contrato para `0.2`, executar um bake-off de bibliotecas atrás da mesma fronteira e especificar separadamente a arquitetura de código não confiável e testes protegidos. Somente depois essas fronteiras devem alimentar a taxonomia pedagógica, a instrumentação e o modelo de domínio.
