@@ -6,34 +6,30 @@
 
 A ARA é uma plataforma educativa aberta, configurável, mobile-first e preparada para utilização offline, sucessora direta do [AraLearn](https://github.com/fabio-ara/AraLearn).
 
-Composição inicial:
-
 ```text
 versão de curso → módulo/lição → placement → revisão de microssequência → card
 ```
 
 ## Fase atual
 
-As Issues #4–#6 foram concluídas: taxonomia de configuração, framework de investigação/analytics, requisitos e modelo de domínio. A fase atual é a Issue #7 — arquitetura de referência e perfis de implantação. A implementação do produto ainda não começou.
+As Issues #4–#7 foram concluídas: configuração, investigação/analytics, produto/domínio e arquitetura de referência. A fase atual é a Issue #8 — especificação completa de UX, acessibilidade e sistema visual. A implementação do produto ainda não começou.
 
 ## Começar por aqui
 
 1. [Visão do produto](docs/vision/product-vision.pt-BR.md)
-2. [Programa de investigação](docs/research/research-programme-index.pt-BR.md)
-3. [Backlog e regras de execução](docs/roadmap/backlog-index.md)
-4. [Requisitos do produto](docs/product/product-requirements-v1.md)
-5. [Modelo de domínio](docs/product/domain-model-v1.md)
+2. [Requisitos do produto](docs/product/product-requirements-v1.md)
+3. [Modelo de domínio](docs/product/domain-model-v1.md)
+4. [Arquitetura de referência](docs/architecture/reference-architecture-v1.md)
+5. [Programa de investigação](docs/research/research-programme-index.pt-BR.md)
+6. [Backlog](docs/roadmap/backlog-index.md)
 
-Investigação, produto, arquitetura, UX e implementação permanecem gates separados. GPT+MCP apoia autoria e reparação semânticos delimitados; o ARA expõe artefactos em evolução e controlo humano determinístico.
+GPT+MCP fornece autoria semântica delimitada; o ARA oferece controlo humano determinístico e visível. Investigação, produto, arquitetura, UX e implementação permanecem gates separados.
 
-## Governação
+## Governação e licenciamento
 
-- [Governação do repositório](docs/governance/repository-governance.pt-PT.md)
+- [Governação](docs/governance/repository-governance.pt-PT.md)
 - [Política linguística](docs/governance/language-policy.pt-PT.md)
 - [Como contribuir](CONTRIBUTING.pt-PT.md)
-
-## Licenciamento
-
 - Código: [AGPL-3.0-or-later](LICENSE)
 - Documentação: [CC BY 4.0](LICENSE-DOCUMENTATION.md)
-- Nome e identidade visual: [TRADEMARKS.md](TRADEMARKS.md)
+- Identidade: [TRADEMARKS.md](TRADEMARKS.md)
