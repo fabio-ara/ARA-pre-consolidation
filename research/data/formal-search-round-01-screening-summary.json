@@ -1,0 +1,38 @@
+{
+  "screening_round": "01",
+  "screening_scope": "title-and-abstract single-reviewer first pass assisted by deterministic rules and manual audit",
+  "corpus_publications": 1471,
+  "decisions": {
+    "include": 732,
+    "maybe": 504,
+    "exclude": 235
+  },
+  "priority_tiers": {
+    "D-borderline": 504,
+    "B-direct-applied": 425,
+    "C-direct-mechanism": 281,
+    "none": 235,
+    "A-synthesis": 26
+  },
+  "source_decisions": {
+    "ERIC": {
+      "include": 322,
+      "maybe": 211,
+      "exclude": 111
+    },
+    "PubMed": {
+      "include": 410,
+      "maybe": 293,
+      "exclude": 124
+    }
+  },
+  "abstracts_missing_or_short": 18,
+  "audit": {
+    "sample_size": 90,
+    "stratification": "15 records per database per initial status",
+    "agreement_count": 80,
+    "changed_decision_count": 10,
+    "manual_overrides_total": 14
+  },
+  "interpretation": "include and maybe are not evidence-quality judgments; they indicate relevance for later retrieval or review"
+}
