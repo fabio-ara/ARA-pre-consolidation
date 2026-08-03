@@ -1,0 +1,29 @@
+{
+  "environment": {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36",
+    "viewport": {"width": 1280, "height": 900},
+    "external_requests": [],
+    "standalone_bytes": 46023,
+    "initialization_ms": 163.54826999986471,
+    "performance_metrics": {"Documents": 2, "Frames": 1, "Nodes": 517, "JSHeapUsedSize": 3268272, "JSHeapTotalSize": 5849088}
+  },
+  "checks": [
+    {"id": "math-invalid", "passed": true, "observed": "Resposta inválida; corrija a interpretação ou a estrutura."},
+    {"id": "math-partial", "passed": true, "observed": "Resposta válida e parcialmente satisfatória."},
+    {"id": "math-correct", "passed": true, "observed": {"status": "A expressão está correta e na forma solicitada.", "preview": "2 * (x + 3)"}},
+    {"id": "graph-correct", "passed": true, "observed": "A construção está correta."},
+    {"id": "graph-no-geometry", "passed": true, "observed": "canonical graph response excluded x, y, layout and rendererState"},
+    {"id": "graph-linear-view", "passed": true, "observed": "A–B\nB–D"},
+    {"id": "program-public-fail", "passed": true, "observed": "Há falhas nos testes públicos."},
+    {"id": "program-public-pass", "passed": true, "observed": "Testes públicos corretos. A suíte protegida permanece fora do cliente."},
+    {"id": "program-no-protected-export", "passed": true, "observed": "exported response excluded protected identifiers"},
+    {"id": "program-timeout", "passed": true, "observed": "Execução interrompida por limite de tempo."},
+    {"id": "source-review-handoff", "passed": true, "observed": "Integridade confirmada. Qualidade argumentativa enviada para revisão humana."},
+    {"id": "source-selector-reresolution", "passed": true, "observed": {"state": "review-required", "method": "quote-context"}},
+    {"id": "keyboard-focus-order", "passed": true, "observed": ["math-input", "math-validate", "edge-from", "edge-to", "edge-add", "edge-remove", "graph-validate", "code-input", "code-run", "code-stop", "source-text", "capture-selection", "annotation-body", "claim-input", "reason-input", "source-validate"]},
+    {"id": "status-announcements", "passed": true, "observed": 5},
+    {"id": "reflow-320", "passed": true, "observed": 0}
+  ],
+  "requests": ["blob:worker-1", "blob:worker-2", "blob:worker-3"],
+  "summary": {"total": 15, "passed": 15, "failed": []}
+}
