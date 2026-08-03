@@ -4,7 +4,7 @@
 
 **Plataforma ARA — Ambiente de Recursos de Aprendizagem**
 
-A ARA é uma plataforma educativa aberta, configurável, mobile-first e preparada para utilização offline. O projeto sucede o [AraLearn](https://github.com/fabio-ara/AraLearn), preservando a sua experiência funcional como primeira configuração de referência e reconstruindo o produto com parametrização explícita, controlo humano visível, infraestrutura portável e autoria por GPT+MCP.
+A ARA é uma plataforma educativa aberta, configurável, mobile-first e preparada para utilização offline. O projeto sucede o [AraLearn](https://github.com/fabio-ara/AraLearn), preservando a sua experiência funcional como primeira configuração de referência e reconstruindo o produto com parametrização explícita, controlo humano visível, infraestrutura portável e autoria assistida por GPT+MCP.
 
 A estrutura educativa inicial é:
 
@@ -14,25 +14,23 @@ curso → módulo → lição → microssequência → card
 
 ## Fase atual
 
-O projeto encontra-se na fase de investigação e definição do produto. A Issue #4 governa a taxonomia ativa de parametrização pedagógica e de investigação. Os Pacotes P1, P2 e P3 foram concluídos; o próximo é o P4 — instrumentação, condições experimentais, analytics e governação. A implementação do novo produto ainda não começou.
+O projeto encontra-se na fase de investigação e definição do produto. A Issue #4 governa a taxonomia ativa. Os Pacotes P1 a P4 foram concluídos; o próximo é o P5 — autoria, revisão, reparação, publicação e políticas institucionais. A implementação do novo produto ainda não começou.
 
 ## Começar por aqui
 
-A navegação principal possui três fontes, por esta ordem:
+A navegação principal possui três fontes:
 
 1. [Visão do produto](docs/vision/product-vision.pt-BR.md)
 2. [Programa de investigação](docs/research/research-programme-index.pt-BR.md)
 3. [Backlog, fases e regras das issues](docs/roadmap/backlog-index.md)
 
-As Issues do GitHub são unidades de trabalho autorizadas e autossuficientes. Investigação, decisão, especificação, arquitetura, UX e implementação permanecem separadas. O Codex apenas poderá implementar issues derivadas de requisitos, decisões arquiteturais e especificações de UX aprovados.
+As Issues do GitHub são unidades autorizadas e autossuficientes. Investigação, decisão, produto, arquitetura, UX e implementação permanecem separados. O Codex apenas poderá implementar issues derivadas de requisitos, decisões arquiteturais e especificações de UX aprovados.
 
 ## Finalidades orientadoras
 
-A ARA deverá servir estudantes autodidatas, autores, professores, tutores, investigadores e instituições. GPT+MCP apoiará planeamento, construção, auditoria e reparação, enquanto o ARA dará ao utilizador acesso aos artefactos, versões, comentários, operações determinísticas e decisões de publicação.
+A ARA destina-se a autodidatas, autores, professores, tutores, investigadores e instituições. GPT+MCP apoia planeamento semântico, construção, auditoria e reparação; o ARA renderiza artefactos em evolução e oferece controlo determinístico sobre versões, comentários, diffs, aprovação e publicação.
 
 ## Governação
-
-Consulte:
 
 - [Governação do repositório](docs/governance/repository-governance.pt-PT.md)
 - [Política linguística](docs/governance/language-policy.pt-PT.md)
@@ -40,7 +38,7 @@ Consulte:
 
 ## Idiomas
 
-A interface será preparada para português do Brasil (`pt-BR`), português europeu (`pt-PT`) e inglês (`en`). Os documentos de investigação em elaboração utilizarão normalmente o português do Brasil como idioma canónico.
+A interface será preparada para português do Brasil (`pt-BR`), português europeu (`pt-PT`) e inglês (`en`). Documentos de investigação em elaboração usam normalmente português do Brasil.
 
 ## Licenciamento
 

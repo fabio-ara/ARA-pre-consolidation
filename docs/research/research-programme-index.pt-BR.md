@@ -6,317 +6,171 @@
 
 ## 1. Finalidade
 
-Este índice organiza a pesquisa necessária para definir o ARA sem transferir ao proprietário o trabalho de interpretar um corpus bruto.
+Este índice organiza a pesquisa necessária para definir o ARA sem transferir ao proprietário o trabalho de interpretar corpus bruto.
 
-Cada frente deverá entregar:
+Cada pacote deve entregar conclusão, recomendação, alternativas, riscos, incertezas decisivas, parâmetros estruturados, perfis e handoffs. A pesquisa é ampla e finita: busca evidência suficiente para decidir, não exaustão universal.
 
-- conclusão principal;
-- caminho recomendado;
-- alternativas relevantes;
-- alternativas adiadas ou rejeitadas;
-- justificativa;
-- riscos;
-- incertezas capazes de alterar a decisão;
-- implicações para parametrização, produto, arquitetura, UX ou avaliação.
+## 2. Estados
 
-A pesquisa é ampla e finita. O objetivo é evidência suficiente para decidir, não exaustão universal.
+- `concluído`: pacote decisório entregue e incorporado;
+- `baseline-concluído`: evidência suficiente para iniciar modelagem;
+- `parcial`: evidência útil sem síntese decisória completa;
+- `exploratório`: precedentes ainda insuficientes;
+- `não-iniciado`: exige protocolo próprio;
+- `contínuo`: atualizado quando decisões futuras exigirem.
 
-## 2. Estados de cobertura
+## 3. Pacotes da Issue #4
 
-| Estado | Significado |
-|---|---|
-| `concluído` | Pacote decisório entregue e incorporado à fase corrente. |
-| `baseline-concluído` | Existe síntese suficiente para iniciar modelagem, com limitações registradas. |
-| `parcial` | Há evidência útil, mas falta síntese focada. |
-| `exploratório` | Existem precedentes ou literatura inicial, insuficientes para decisão normativa. |
-| `não-iniciado` | A frente precisa de protocolo e corpus próprios. |
-| `contínuo` | A pesquisa permanece aberta quando decisões futuras exigirem atualização. |
+### P1 — concluído — PR #45
 
-## 3. Evidência já produzida
+**Escopo:** prática, resposta, tentativas, reveal, feedback, consequências e precedência de acessibilidade.
 
-### 3.1 P1 — prática, resposta, tentativas, reveal, feedback e consequências
+**Resultado:** 21 dimensões aceitas; perfil AraLearn não punitivo preservado; prática separada de medição e consequência; telemetry de tentativas adiada; ranking público rejeitado.
 
-**Estado:** `concluído` para a primeira taxonomia.  
-**PR:** #45.
+Artefatos: `research/data/p1-*`, `research/pt-BR/p1-*`, protocolo e bibliografia P1.
 
-Artefatos:
+### P2 — concluído — PR #47
 
-- `research/searches/2026-08-03-p1-pratica-resposta-feedback-protocolo.md`;
-- `research/data/p1-evidence-corpus-01.csv`;
-- `research/data/p1-parameter-records-01.csv`;
-- `research/data/p1-profile-comparison-01.csv`;
-- `research/data/p1-decision-synthesis-01.json`;
-- `research/pt-BR/p1-sintese-pratica-resposta-tentativas-feedback-consequencias-01.md`;
-- `research/library/referencias-formatos-feedback.bib`.
+**Escopo:** progressão, mastery, sequência, ritmo, spacing, revisão, exemplos, scaffolding, segmentação e retomada.
 
-Resultado:
+**Resultado:** 36 dimensões aceitas; conclusão estrutural separada de mastery; sequência separada de ritmo; spacing separado de interleaving; scheduler, learner model e detecção automática adiados.
 
-- 21 dimensões aceitas;
-- prática, resposta, validade, crédito, tentativas, reveal, feedback e consequência separados;
-- perfil AraLearn preservado como referência não punitiva;
-- acessibilidade com precedência;
-- tentativa e confiança não autorizam telemetry;
-- ranking público rejeitado;
-- nenhuma implementação autorizada.
+Artefatos: `research/data/p2-*`, `research/pt-BR/p2-*`, protocolo e bibliografia P2.
 
-### 3.2 P2 — progressão, sequência, revisão e apoio
+### P3 — concluído — PR #48
 
-**Estado:** `concluído` para a primeira taxonomia.  
-**PR:** #47.
+**Escopo:** autonomia, autorregulação, adaptação, acessibilidade e assistência por IA.
 
-Artefatos:
+**Resultado:** 34 fontes, 50 dimensões e nove perfis; shared control; acessibilidade como baseline e precedência; IA como assistente delimitado; `preview-only` e `recommend-and-confirm`; ciclo `suggestion → draft → validated-structure → audited → human-approved → published`; chat/MCP e ARA como canais complementares.
 
-- `research/searches/2026-08-03-p2-progressao-sequenciamento-revisao-protocolo.md`;
-- `research/data/p2-evidence-corpus-01.csv`;
-- `research/data/p2-parameter-records-01.csv`;
-- `research/data/p2-profile-comparison-01.csv`;
-- `research/data/p2-decision-synthesis-01.json`;
-- `research/pt-BR/p2-sintese-progressao-sequenciamento-revisao-scaffolding-01.md`;
-- `research/library/referencias-progressao-sequenciamento.bib`.
+Artefatos: `research/data/p3-*`, `research/pt-BR/p3-*`, protocolo e bibliografia P3.
 
-Resultado:
-
-- 36 dimensões aceitas;
-- conclusão estrutural separada de mastery;
-- evidência, critério, remediação, override e rechecagem explícitos;
-- autoridade de sequência separada de ritmo;
-- spacing separado de interleaving;
-- agenda, horizonte, carga e adiamento separados;
-- exemplos, scaffolding, segmentação e retomada representados;
-- scheduler, learner model, branching e detecção automática adiados;
-- nenhuma implementação autorizada.
-
-### 3.3 P3 — autonomia, autorregulação, adaptação, acessibilidade e IA
-
-**Estado:** `concluído` para a primeira taxonomia.  
-**PR:** #48.
-
-Artefatos:
-
-- `research/searches/2026-08-03-p3-autonomia-adaptacao-acessibilidade-IA-protocolo.md`;
-- `research/data/p3-evidence-corpus-01.csv`;
-- `research/data/p3-parameter-records-autonomy-adaptation-01.csv`;
-- `research/data/p3-parameter-records-accessibility-ai-01.csv`;
-- `research/data/p3-profile-comparison-01.csv`;
-- `research/data/p3-decision-synthesis-01.json`;
-- `research/pt-BR/p3-sintese-autonomia-adaptacao-acessibilidade-IA-01.md`;
-- `research/library/referencias-autonomia-adaptacao-acessibilidade-IA.bib`.
-
-Resultado:
-
-- 34 fontes estruturadas;
-- 50 dimensões aceitas;
-- nove perfis e overlays;
-- autonomia separada de controle irrestrito;
-- autorregulação representada por suportes explícitos, não por traço inferido;
-- adaptação separada de acomodação e aplicação automática;
-- acessibilidade tratada como baseline e precedência;
-- IA dividida por função, contexto, status, autoridade, revisão, validação, provenance, dados e falha;
-- `preview-only` e `recommend-and-confirm` recomendados para propostas de IA;
-- ciclo `suggestion → draft → validated-structure → audited → human-approved → published`;
-- chat/MCP e ARA definidos como canais complementares;
-- perfis e overrides esparsos recomendados para reduzir carga do GPT e do usuário;
-- estudo baseline independente de LLM conectada;
-- nenhuma tecnologia, schema, UI ou implementação autorizada.
-
-### 3.4 Evidência contextual e técnica já disponível
-
-Também permanecem como entradas:
-
-- Issue #30 / PR #43 — síntese AraLearn + horizonte externo;
-- Issue #31 / PR #32 — auditoria dos resources do AraLearn;
-- Issues #33–#34 / PR #35 — benchmark de sistemas e gêneros;
-- Issues #36, #38 e #40 — experimentos técnicos não normativos;
-- Issue #42 — bake-off adiado, sem resultado de runtime.
-
-Programação executável, representações múltiplas, extensibilidade e runtimes continuam candidatos sujeitos às Issues #6 e #7.
-
-## 4. Pacotes da primeira taxonomia — Issue #4
-
-P1, P2 e P3 estão concluídos. Pacotes são subdivisões operacionais da Issue #4; não geram novas issues automaticamente.
-
-### P4 — próximo pacote
+### P4 — concluído — PR pendente
 
 **Escopo:** instrumentação, condições experimentais, analytics e governança.
 
-**Pergunta:** como representar pesquisa e analytics sem confundir evento, medida, constructo e inferência, sem transformar estudo pessoal em vigilância e sem perder comparabilidade entre configurações, variantes, versões e implantações?
+**Resultado:** corpus de 36 fontes, 31 dimensões e nove perfis. A cadeia obrigatória é:
 
-P4 deverá receber:
+```text
+pergunta/finalidade
+→ protocolo
+→ condição
+→ evento autorizado ou instrumento
+→ medida
+→ constructo
+→ interpretação
+→ decisão/intervenção
+```
 
-#### De P1
+Decisões principais:
 
-- `telemetry.attempt_capture`;
-- confiança opcional;
-- prática, resposta, feedback e consequência;
-- inferências proibidas sobre tentativa, erro e tempo.
+- perfil AraLearn data-minimal preservado como baseline pessoal;
+- protocolos e condições são objetos versionados e reproduzíveis;
+- eventos são seletivos e vinculados à finalidade;
+- evento, medida, constructo e inferência não se confundem;
+- toda medida exige fórmula, unidade, janela, missingness, limites e uso permitido;
+- consentimento, retirada, minimização, retenção, acesso e exportação são parâmetros;
+- analytics pessoais, pedagógicos, de pesquisa e operacionais têm autoridades separadas;
+- painéis respondem perguntas por papel, não expõem um dashboard técnico universal;
+- variantes de curso exigem diff de conteúdo, configuração, composição, capacidades e instrumentos;
+- Caliper/xAPI são candidatos de mapeamento, não o domínio do ARA;
+- telemetria operacional permanece separada de learning analytics;
+- event store, métricas de produção, early warning, coleta e dashboards foram adiados.
 
-#### De P2
+Artefatos:
 
-- progressão e mastery claims;
-- schedules, load budgets e deferral;
-- snapshots de sequência e apoio;
-- proibição de inferir struggle ou expertise de sinais brutos.
+- `research/searches/2026-08-03-p4-instrumentacao-analytics-governanca-protocolo.md`;
+- `research/data/p4-evidence-corpus-01.csv`;
+- `research/data/p4-parameter-records-01.csv`;
+- `research/data/p4-profile-comparison-01.csv`;
+- `research/data/p4-decision-synthesis-01.json`;
+- `research/pt-BR/p4-sintese-instrumentacao-condicoes-analytics-governanca-01.md`;
+- `research/library/referencias-instrumentacao-analytics-governanca.bib`.
 
-#### De P3
+### P5 — próximo pacote
 
-- autonomia e consentimento;
-- adaptação e effective-state snapshots;
-- acessibilidade e dados sensíveis;
-- funções, contexto, modelo/provedor, output status e cadeia de revisão da IA;
-- retenção mínima de chat;
-- contestação e override;
-- condições com IA bloqueada ou ausente.
+**Escopo:** autoria, revisão, auditoria, reparo, publicação e políticas institucionais.
 
-#### Das hipóteses de produto registradas após P2
-
-- cursos derivados sob parametrizações diferentes;
-- parâmetros de runtime versus conteúdo/materialização;
-- composição por microssequências e ocorrências contextuais;
-- conteúdo/configuração diffs;
-- dependências dentro e entre cursos;
-- materialização offline;
-- comentários e reparos situados;
-- analytics simples por papel;
-- custos de armazenamento, eventos e revisão.
+**Pergunta:** como o ARA deve organizar autoria humano–IA, busca e composição de microssequências, contexto autorizado, revisão, comentários, reparo, versões, provenance, publicação, permissões e retirada sem reduzir o controle humano nem sobrecarregar GPT e usuário?
 
 Pesquisa focada:
 
-- learning analytics;
-- event vocabularies;
-- experimentos e condições versionadas;
-- assignment e comparabilidade;
-- instrumentos quantitativos e qualitativos;
-- consentimento, retirada, pseudonimização e retenção;
-- medidas, constructos e inferências proibidas;
-- personal analytics;
-- analytics para professores, tutores e pesquisadores;
-- proveniência e equivalência entre implantações;
-- custo de coleta, armazenamento e processamento;
-- visualização compreensível sem ocultar auditabilidade.
+- human–AI co-authoring e mixed-initiative systems;
+- planner, builder, auditor, repairer e reauditor;
+- ChatGPT+MCP e ARA como dois canais;
+- autoria modular, objetos educacionais e composição curricular;
+- busca/reuso/fork de microssequências;
+- grounding, source anchoring e provenance;
+- comentários situados, revisão e reparo localizado;
+- peer/expert review e quality assurance;
+- versionamento, diffs, gates, publicação e rollback;
+- workspaces, papéis, permissões e separação de deveres;
+- licenciamento, confidencialidade, retirada, exclusão e referências;
+- políticas pessoais, acadêmicas e institucionais;
+- administração simples para autores não técnicos.
 
 Entrega:
 
-- parâmetros de instrumentação e governança;
-- modelo conceitual evento → medida → constructo → interpretação;
-- condições e snapshots reproduzíveis;
-- personal analytics separado de pesquisa/instituição;
-- regras de consentimento, retenção, exportação e acesso;
-- métricas candidatas com perguntas e limitações;
-- inferências proibidas;
-- perfis contrastantes;
-- handoff para Issue #5 e #6.
+- parâmetros e perfis de autoria/governança;
+- estados e autoridade do ciclo de produção;
+- políticas de contexto, busca, reuse, fork, auditoria, publicação e retirada;
+- riscos, alternativas e inferências proibidas;
+- handoff para #5, #6, #7 e #8.
 
-P4 não autoriza coleta, banco de eventos, dashboard, fórmulas de produção, experimentos com participantes ou código.
+P5 não autoriza MCP de produção, schema, UI, banco, Storage, versionamento técnico ou código.
 
-### P5 — futuro
+## 4. Hipóteses transversais obrigatórias
 
-**Escopo:** autoria, revisão, reparo, publicação e políticas institucionais.
+As seguintes hipóteses permanecem `discovered`, não normativas:
 
-Deverá investigar:
+- níveis de parametrização: runtime, conteúdo/materialização, composição/dependências, ciclo de vida e condição experimental;
+- microssequência versionada como candidata a unidade autoral/reutilizável;
+- curso como composição versionada de ocorrências contextuais;
+- snapshot local autossuficiente para uso offline;
+- estado por curso/versão/posição/card, não apenas por microssequência;
+- chat/MCP para direção semântica e ARA para visualização e operações determinísticas;
+- catálogo versionado + perfil + overrides esparsos;
+- administração em linguagem pedagógica, não de banco ou Storage;
+- cursos derivados com invariantes e diffs explícitos para pesquisa.
 
-- autoria humano–IA;
-- planner/builder/auditor/repairer;
-- ChatGPT+MCP e ARA como dois canais;
-- busca e composição de microssequências;
-- contexto autorizado entre cursos;
-- source anchoring e grounding;
-- comentários e reparo localizado;
-- revisão humana, pares e especialistas;
-- versões, forks, diffs e publication gates;
-- provenance, licenciamento e confidencialidade;
-- workspaces, papéis e permissões;
-- reutilização e retirada;
-- políticas pessoais, acadêmicas e institucionais.
-
-P5 deverá produzir parâmetros e requisitos candidatos, não ferramentas ou contratos de produção.
+A Issue #6 decidirá o domínio; a #7 decidirá arquitetura e persistência; a #8 decidirá UX.
 
 ## 5. Frentes posteriores
 
-### Issue #5 — protocolos, instrumentos e analytics
+### Issue #5
 
-Consolidará normativamente:
+Consolidará protocolo, condição, participant, assignment, eventos, instrumentos, medidas, constructos, interpretações, direitos, governança, exportação e equivalência.
 
-- protocolo, condição e assignment;
-- participante e direitos;
-- evento, medida, constructo e interpretação;
-- instrumentos e evidência qualitativa;
-- personal versus research analytics;
-- exportação e equivalência;
-- governança e custo.
+### Issue #6
 
-### Issue #6 — produto e domínio
+Definirá atores, jornadas, entidades, estados, composição, versões, referências, autoria, observação, auditoria, reparo, publicação, reutilização, retirada e integração da taxonomia.
 
-Decidirá:
+### Issue #7
 
-- atores, jornadas, entidades e estados;
-- curso, microssequência, card e composição;
-- perfil, override, effective configuration e snapshot;
-- versões, ocorrências, referências e provenance;
-- autoria, observação, auditoria, reparo e publicação;
-- reutilização, forks, compartilhamento, retirada e exclusão;
-- conteúdo pessoal, institucional, confidencial e público;
-- integração da taxonomia e do modelo de pesquisa.
+Comparará persistência, materialização, manifests, IndexedDB e alternativas, sincronização, event transport, pseudonimização, adapters, managed/self-hosted, custos e exit strategy.
 
-A premissa provisória de curso como objeto completo deverá ser revisitada explicitamente diante da hipótese de composição por microssequências.
+### Issue #8
 
-### Issue #7 — arquitetura e stack
+Especificará formulários, perfis, progressive disclosure, acompanhamento em tempo real, versões, diffs, comentários, dependências, analytics por papel, acessibilidade e offline.
 
-Comparará:
+### Issue #9
 
-- persistência e materialização;
-- manifests, artefatos e referências;
-- IndexedDB e alternativas locais;
-- sincronização e conflitos;
-- deduplicação e copy-on-write;
-- providers e gateways de IA;
-- schemas e contratos;
-- MCP e carregamento seletivo;
-- managed e self-hosted;
-- segurança, backup, atualização e rollback;
-- custos e exit strategy.
+Produzirá release slicing, quality gates, migração, rollback, evidence packages e issues executáveis pelo Codex.
 
-Saída: recomendações e ADRs, não catálogo bruto.
-
-### Issue #8 — UX/UI
-
-Pesquisará e especificará:
-
-- acompanhamento da autoria em tempo real;
-- chat e ARA como canais complementares;
-- formulários de parâmetros;
-- perfis e progressive disclosure;
-- preview, diff, versões e publicação;
-- comentários e reparo;
-- dependências e composição;
-- analytics por papel;
-- acessibilidade, mobile, offline e multilinguismo.
-
-### Issue #9 — releases e implementação
-
-Produzirá release slicing, quality gates, segurança, acessibilidade, migração, rollback, evidence packages e issues executáveis pelo Codex.
-
-## 6. Critérios gerais de suficiência
+## 6. Critérios de suficiência
 
 Uma frente pode avançar quando:
 
-1. possui síntese confiável ou conjunto justificado de fontes primárias;
+1. possui fontes primárias ou síntese confiável;
 2. contém casos contrastantes e limitações;
 3. cobre stakeholders e contextos decisivos;
-4. duas adições sucessivas não criam categoria decisiva nem alteram a recomendação;
+4. novas fontes não criam categoria decisiva nem alteram a recomendação;
 5. incertezas remanescentes estão explícitas;
-6. a decisão pode evoluir sem perder rastreabilidade;
+6. a decisão pode evoluir com rastreabilidade;
 7. nenhuma fonte indispensável é substituída por suposição.
 
-## 7. Papel do proprietário
+## 7. Próxima entrega verificável
 
-O proprietário receberá síntese, recomendação, justificativa, alternativas, riscos e incertezas decisivas.
+A próxima entrega é o **Pacote P5 da Issue #4**.
 
-Não receberá como produto final lista extensa de artigos, catálogo sem recomendação ou pergunta genérica para arquitetar sozinho.
-
-Sua decisão será solicitada somente diante de conflito estratégico ou valorativo não resolvido pela evidência.
-
-## 8. Próxima entrega verificável
-
-A próxima entrega é o **Pacote P4 da Issue #4**.
-
-A Issue #4 permanece aberta até P4, P5 e a síntese final da taxonomia. Nenhum código, schema de produção, adapter, analytics ou UX é autorizado durante esses pacotes.
+A Issue #4 permanece aberta até P5 e a síntese final da taxonomia. Nenhum código, schema de produção, adapter, coleta, dashboard ou UX é autorizado durante esses pacotes.
