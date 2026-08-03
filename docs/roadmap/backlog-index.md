@@ -3,33 +3,33 @@
 **Estado:** documento operacional vigente  
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026  
-**Público:** proprietário do projeto, Codex e outros agentes, colaboradores, avaliadores externos e investigação acadêmica.
+**Público:** proprietário, Codex e outros agentes, colaboradores, avaliadores externos e pesquisa acadêmica.
 
 ## 1. Função e navegação principal
 
-As Issues do GitHub são as unidades de trabalho autorizadas do ARA. Devem ser autossuficientes para sua finalidade: pesquisa, síntese, decisão, especificação, protótipo exploratório, implementação, validação ou avaliação.
+As Issues do GitHub são as unidades de trabalho autorizadas do ARA. Devem ser autossuficientes para pesquisa, síntese, decisão, especificação, protótipo exploratório, implementação, validação ou avaliação.
 
-A navegação principal possui somente três documentos:
+A navegação principal possui três documentos:
 
 1. `docs/vision/product-vision.pt-BR.md` — produto pretendido;
-2. `docs/research/research-programme-index.pt-BR.md` — pesquisa concluída, lacunas e pacotes decisórios;
-3. este documento — fases, autoridade, rastreabilidade, issues e regras operacionais.
+2. `docs/research/research-programme-index.pt-BR.md` — pesquisa concluída, lacunas e pacotes;
+3. este documento — fases, autoridade, rastreabilidade e regras das issues.
 
 Relatórios, datasets, protocolos, ADRs, especificações e planos de release são entregas das issues correspondentes. Não devem repetir integralmente os três documentos principais.
 
-## 2. Modelo de registro e autoridade
+## 2. Autoridade e fontes
 
-### 2.1 Classes de fonte
+### 2.1 Classes
 
-- **Fonte histórica primária:** documentos iniciais, histórico de edição das issues, comentários, PRs, diffs, commits, código, exports, hashes, datasets, testes e registros oficiais. Demonstra o que efetivamente ocorreu, mas não constitui automaticamente requisito atual.
-- **Evidência:** protocolo, busca, triagem, extração, revisão, benchmark, auditoria ou avaliação. Informa recomendações; não autoriza implementação diretamente.
-- **Síntese decisória:** integra evidência, alternativas, recomendação, riscos e incertezas. Orienta a fase normativa seguinte.
-- **Especificação aprovada:** taxonomia, requisito, modelo de domínio, arquitetura, ADR, contrato, UX ou plano de release aprovado. Governa o trabalho posterior no respectivo escopo.
-- **Registro de implementação:** issue de implementação, código, teste, migração, evidência de release e documentação operacional.
+- **Fonte histórica primária:** documentos iniciais, edição das issues, comentários, PRs, commits, código, exports, hashes, datasets e testes. Demonstra o que ocorreu, mas não é automaticamente requisito atual.
+- **Evidência:** protocolo, busca, triagem, extração, revisão, benchmark, auditoria ou avaliação. Informa recomendações; não autoriza implementação.
+- **Síntese decisória:** integra evidência, alternativas, recomendação, riscos e incertezas.
+- **Especificação aprovada:** taxonomia, requisito, domínio, arquitetura, ADR, contrato, UX ou release aprovado.
+- **Registro de implementação:** issue executável, código, teste, migração, release e documentação operacional.
 
 ### 2.2 Precedência
 
-Para comportamento atual e engenharia, use esta ordem:
+Para comportamento atual e engenharia:
 
 1. especificação aprovada da fase relevante;
 2. ADR ou decisão estratégica aprovada;
@@ -39,199 +39,210 @@ Para comportamento atual e engenharia, use esta ordem:
 6. issue, PR ou protótipo histórico;
 7. conversa ou memória não registrada.
 
-Para afirmar o que ocorreu historicamente, prevalecem as fontes históricas primárias. Para afirmações bibliográficas, prevalecem a fonte citada, o registro de extração e o estado de acesso.
+Para afirmar o que ocorreu, prevalecem fontes primárias. Para afirmações bibliográficas, prevalecem fonte citada, extração e estado de acesso.
 
-A ausência de classificação não torna um artefato normativo.
+Ausência de classificação não torna um artefato normativo.
 
-## 3. Caminho linear do projeto
+## 3. Caminho linear
 
 ```text
 #3 pesquisa bibliográfica, comparativa e contextual
 → síntese crítica e recomendação
 → #4 taxonomia de parametrização
 → #5 protocolos, instrumentação e analytics
-→ #6 requisitos e modelo de domínio
+→ #6 requisitos e domínio
 → #7 arquitetura, stack, perfis e ADRs
 → #8 UX/UI e acessibilidade
-→ #9 releases funcionais
-→ issues de implementação autossuficientes para o Codex
+→ #9 releases
+→ issues de implementação autossuficientes
 → validação e avaliação
 ```
 
-Uma possibilidade encontrada na pesquisa não se transforma automaticamente em requisito, contrato, protótipo, biblioteca ou implementação.
+Possibilidade de pesquisa não se transforma automaticamente em requisito, contrato, protótipo, biblioteca ou implementação.
 
-A Issue #2 prossegue em paralelo quando questões jurídicas, institucionais ou de identidade se tornam relevantes à decisão.
+A Issue #2 prossegue em paralelo quando questões jurídicas, institucionais ou de identidade se tornam relevantes.
 
 ## 4. Issues principais
 
-| Issue | Fase | Tipo | Estado | Autoridade e saída esperada |
-|---|---:|---|---|---|
-| #10 | 00 | governança e roadmap | aberta | Coordena fases, gates e regras. Deve apontar para os três documentos principais. |
-| #2 | 10 | pesquisa jurídica e identidade | aberta/paralela | Produzirá a base de propriedade intelectual, licenciamento, marca e questões institucionais. |
-| #3 | 20 | programa de evidência | aberta/contínua | Governa protocolos, buscas, corpora, bibliografia e sínteses. Não precisa ser “encerrada para sempre”. |
-| #4 | 30 | taxonomia de parametrização | aberta/ativa | Produzirá parâmetros, perfis, maturidade, autoridade, precedência, conflitos e handoff para #5 e #6. |
-| #5 | 40 | protocolos e analytics | futura | Produzirá condições, instrumentos, eventos, medidas, governança e inferências permitidas. |
-| #6 | 50 | produto e domínio | futura | Aceitará ou rejeitará conceitos e definirá atores, jornadas, entidades, estados e capacidades normativas. |
-| #7 | 60 | arquitetura e stack | futura | Separará requisitos duráveis, primeiro recorte, perfis e hipóteses; registrará decisões por ADR. |
-| #8 | 70 | UX, acessibilidade e sistema visual | futura | Definirá jornadas, telas, estados, transições e avaliação antes da implementação user-facing. |
-| #9 | 80 | releases e implementação | futura | Produzirá releases funcionais e issues executáveis pelo Codex. |
+| Issue | Fase | Estado | Saída e autoridade |
+|---|---:|---|---|
+| #10 | 00 | aberta | Coordena fases, gates e regras. |
+| #2 | 10 | paralela | Propriedade intelectual, licenciamento, marca e questões institucionais. |
+| #3 | 20 | contínua | Protocolos, buscas, corpora, bibliografia e sínteses. |
+| #4 | 30 | ativa | Parâmetros, perfis, maturidade, autoridade, precedência, conflitos e handoffs. |
+| #5 | 40 | futura | Protocolos, condições, eventos, medidas, instrumentos, governança e inferências. |
+| #6 | 50 | futura | Atores, jornadas, entidades, estados, capacidades e requisitos normativos. |
+| #7 | 60 | futura | Arquitetura, stack, perfis de implantação e ADRs. |
+| #8 | 70 | futura | Jornadas, telas, estados, acessibilidade e sistema visual. |
+| #9 | 80 | futura | Releases funcionais e backlog executável pelo Codex. |
 
 ## 5. Pesquisa e sínteses concluídas
 
-| Issue | PR(s) | Resultado | Uso atual |
+| Issue | PR(s) | Resultado | Autoridade atual |
 |---|---:|---|---|
-| #14 | #15 | primeira síntese de revisões centrais | evidência inicial sobre recuperação, quizzes, espaçamento e feedback |
-| #16 | #21–#23 | busca formal PubMed/ERIC e deduplicação | corpus formal de 1.471 publicações |
-| #17 | #19 | formatos de resposta e feedback | evidência-base do P1 |
-| #18 | #20 | programação móvel 2023–2026 | evidência parcial e situada |
-| #24 | #25 | triagem de título e resumo | relevância inicial, não avaliação de qualidade |
-| #26 | #27 | extração do corpus prioridade A | classificação e extração com estados de acesso explícitos |
-| #28 | #29 | sobreposição de estudos primários | prevenção de dupla contagem e núcleo não redundante |
-| #30 | #43 | síntese AraLearn + horizonte externo | referência AraLearn, descoberta ampla, normatização seletiva e extensibilidade governada |
-| #31 | #32 | auditoria dos resources do AraLearn | referência implementada, não decisão automática de migração |
-| #33–#34 | #35 | benchmark de sistemas e gêneros | precedentes, contrastes e riscos; não requisitos automáticos |
+| #14 | #15 | primeira síntese de revisões | evidência |
+| #16 | #21–#23 | busca formal e deduplicação | evidência/método |
+| #17 | #19 | formatos de resposta e feedback | evidência P1 |
+| #18 | #20 | programação móvel | evidência situada |
+| #24 | #25 | triagem de 1.471 registros | evidência inicial |
+| #26 | #27 | extração de prioridade A | evidência |
+| #28 | #29 | sobreposição de estudos | evidência/método |
+| #30 | #43 | síntese AraLearn + horizonte externo | síntese decisória |
+| #31 | #32 | auditoria dos resources | baseline de referência |
+| #33–#34 | #35 | benchmark de sistemas e gêneros | evidência comparativa |
+| #4/P1 | #45 | prática, resposta, tentativas, feedback e consequências | síntese decisória P1 |
+| #4/P2 | #47 | progressão, sequência, revisão e scaffolding | síntese decisória P2 |
+| #4/P3 | #48 | autonomia, adaptação, acessibilidade e IA | síntese decisória P3 |
 
 ## 6. Issue #4 — estado dos pacotes
 
 ### P1 — concluído
 
-**Escopo:** prática, resposta, tentativas, revelação, feedback, consequências e precedência de acessibilidade.  
-**PR:** #45  
-**Commit:** `eb3c6bdc16685a4d8e3b912e96b662d4735e4cdb`.
-
-Artefatos:
-
-- `research/searches/2026-08-03-p1-pratica-resposta-feedback-protocolo.md`;
-- `research/data/p1-evidence-corpus-01.csv`;
-- `research/data/p1-parameter-records-01.csv`;
-- `research/data/p1-profile-comparison-01.csv`;
-- `research/data/p1-decision-synthesis-01.json`;
-- `research/pt-BR/p1-sintese-pratica-resposta-tentativas-feedback-consequencias-01.md`;
-- `research/library/referencias-formatos-feedback.bib`.
-
-Resultados vigentes:
-
 - 21 dimensões aceitas;
-- perfil `aralearn-reference` preservado como não punitivo, não universal;
-- prática para aprender separada de medição e avaliação consequencial;
-- formato de resposta separado de demanda cognitiva;
-- validade, autoridade, crédito, tentativas, pistas, reveal, feedback e consequências combináveis;
+- perfil AraLearn não punitivo preservado;
+- prática separada de medição e consequência;
+- resposta, validade, crédito, tentativa, reveal e feedback combináveis;
 - acessibilidade com precedência;
-- coleta de tentativas desligada por padrão e adiada para P4/#5;
-- confiança e avaliação automática autoritativa de respostas abertas adiadas;
+- telemetry de tentativas adiada;
 - ranking público rejeitado;
-- nenhum schema, adapter, stack, UX, telemetry ou código autorizado.
+- nenhum schema, UX ou código autorizado.
 
-Os artefatos originais prevalecem sobre resumos posteriores.
+Artefatos originais em `research/data/p1-*`, `research/pt-BR/p1-*` e bibliografia P1 prevalecem sobre resumos.
 
 ### P2 — concluído
 
-**Escopo:** progressão, mastery, sequenciamento, ritmo, spacing, revisão, interleaving, exemplos resolvidos, scaffolding, segmentação e retomada.  
-**Estado:** pacote concluído; pendente da síntese final da Issue #4 com P3–P5.
+- 36 dimensões aceitas;
+- conclusão estrutural separada de mastery;
+- evidência, critério, remediação, override e rechecagem explícitos;
+- sequência separada de ritmo;
+- spacing separado de interleaving;
+- agenda, carga, adiamento e item relation separados;
+- exemplos, scaffolding, segmentação e retomada representados;
+- estimadores, scheduler e detecção automática adiados;
+- nenhum algoritmo, UX ou código autorizado.
+
+Artefatos originais em `research/data/p2-*`, `research/pt-BR/p2-*` e bibliografia P2 prevalecem sobre resumos.
+
+### P3 — concluído
+
+- corpus de 34 fontes;
+- 50 dimensões aceitas;
+- nove perfis e overlays;
+- autonomia separada de liberdade total;
+- autorregulação representada por suportes explícitos;
+- adaptação separada de acomodação e aplicação automática;
+- acessibilidade tratada como baseline e precedência;
+- IA separada por função, iniciação, contexto, grounding, status, autoridade, revisão, validação, incerteza, provenance, editabilidade, contestação, dados, retenção, provedor, fallback e falha;
+- `preview-only` e `recommend-and-confirm` recomendados;
+- ciclo de saída `suggestion → draft → validated-structure → audited → human-approved → published`;
+- chat/MCP e ARA definidos como canais complementares;
+- perfis e overrides esparsos recomendados;
+- estudo baseline independente de LLM conectada;
+- nenhuma tecnologia, schema, UI, coleta ou código autorizado.
 
 Artefatos:
 
-- `research/searches/2026-08-03-p2-progressao-sequenciamento-revisao-protocolo.md`;
-- `research/data/p2-evidence-corpus-01.csv`;
-- `research/data/p2-parameter-records-01.csv`;
-- `research/data/p2-profile-comparison-01.csv`;
-- `research/data/p2-decision-synthesis-01.json`;
-- `research/pt-BR/p2-sintese-progressao-sequenciamento-revisao-scaffolding-01.md`;
-- `research/library/referencias-progressao-sequenciamento.bib`.
+- `research/searches/2026-08-03-p3-autonomia-adaptacao-acessibilidade-IA-protocolo.md`;
+- `research/data/p3-evidence-corpus-01.csv`;
+- `research/data/p3-parameter-records-autonomy-adaptation-01.csv`;
+- `research/data/p3-parameter-records-accessibility-ai-01.csv`;
+- `research/data/p3-profile-comparison-01.csv`;
+- `research/data/p3-decision-synthesis-01.json`;
+- `research/pt-BR/p3-sintese-autonomia-adaptacao-acessibilidade-IA-01.md`;
+- `research/library/referencias-autonomia-adaptacao-acessibilidade-IA.bib`.
 
-Resultados vigentes:
+### P4 — próximo
 
-- 36 dimensões aceitas;
-- conclusão estrutural não equivale a mastery;
-- progressão por critério exige base de evidência, critério, escopo, remediação, override e rechecagem;
-- threshold universal rejeitado;
-- autoridade sobre sequência separada de ritmo;
-- shared control recomendado como direção geral;
-- hard prerequisites exigem justificativa, remediação e saída acessível;
-- spacing separado de interleaving;
-- agenda, intervalo, horizonte, carga, adiamento e relação entre itens modelados separadamente;
-- nenhum scheduler universal selecionado;
-- interleaving restrito a objetivos discriminativos e evidência contextual;
-- exemplos resolvidos recomendados para novatos e tarefas complexas, com prática independente;
-- scaffolding separado por tipo, acesso e fading;
-- fading automático por estimador não validado adiado;
-- segmentação coerente e learner-paced preservada;
-- retomada deve preservar estado e contexto sem telemetria comportamental;
-- nenhum algoritmo, schema, adaptação, UX ou código autorizado.
+Instrumentação, condições experimentais, analytics e governança.
 
-Perfis/overlays:
+Deverá integrar P1–P3 e as hipóteses de variantes, composição por microssequências, materialização offline e dois canais de autoria. Não autoriza coleta ou dashboard.
 
-- `aralearn-reference`;
-- `self-directed-guided`;
-- `formal-mastery-course`;
-- `summative-prerequisite-course`;
-- `research-locked-sequence`;
-- `novice-support-overlay`;
-- `expert-efficiency-overlay`;
-- `interruptible-mobile-overlay`.
+### P5 — futuro
 
-Candidatos adiados:
+Autoria, revisão, reparo, publicação e políticas institucionais.
 
-- `adaptive.mastery_estimator`;
-- `adaptive.review_scheduler`;
-- `adaptive.branching`;
-- `automatic.struggle_detection`;
-- `automatic.scaffold_fading`;
-- `generative.resumption_summary`.
+Deverá investigar GPT+MCP, ARA em tempo real, busca/reuso de microssequências, contexto autorizado, auditoria, comentários, forks, versões, provenance, publicação e papéis.
 
-Os artefatos originais prevalecem sobre resumos posteriores.
+Pacotes não geram novas issues automaticamente.
 
-### P3 — próximo pacote
+## 7. Hipóteses transversais obrigatórias
 
-**Escopo:** autonomia, autorregulação, adaptação, acessibilidade e assistência por IA.
+Foram registradas como `discovered`, não normativas:
 
-P3 deverá pesquisar e recomendar, sem implementar:
+### 7.1 Níveis de parametrização
 
-- self-regulated learning;
-- learner control e shared control;
-- adaptação e diagnóstico;
-- expertise, transparência e contestação;
-- neurodiversidade, acomodações e UDL;
-- IA em pistas, explicação, autoria e revisão;
-- override e fallback;
-- privacidade, dependência, erro e viés;
-- perfis pessoais, formais e experimentais.
+- runtime/configuração efetiva;
+- conteúdo/materialização;
+- composição e dependências;
+- ciclo de vida e governança;
+- condição experimental.
 
-Não autoriza LLM, modelo adaptativo, coleta de dados, schema, UX ou código.
+### 7.2 Composição por microssequências
 
-### P4 e P5 — futuros
+Candidato concreto:
 
-- **P4:** instrumentação, condições experimentais, analytics e governança;
-- **P5:** autoria, revisão, reparo, publicação e políticas institucionais.
+```text
+microssequência versionada
+→ posição em manifesto de curso versionado
+→ snapshot local autossuficiente
+→ estado contextual por curso/versão/posição/card
+```
 
-Pacotes são subdivisões operacionais da Issue #4; não geram novas issues automaticamente.
+A Issue #6 decidirá o domínio; a #7 decidirá persistência e materialização.
 
-## 7. Experimentos históricos
+### 7.3 Dois canais de autoria
 
-| Issue | PR | Classificação | Interpretação vigente |
+- chat/MCP: intenção semântica, planejamento, construção, auditoria e reparo;
+- ARA: renderização, versões, diffs, comentários, operações determinísticas, aprovação e publicação.
+
+### 7.4 Perfis e overrides
+
+Catálogo versionado + perfil nomeado + overrides esparsos + configuração efetiva. O usuário e o GPT não devem declarar o catálogo inteiro em cada artefato.
+
+### 7.5 Administração leiga
+
+Professores, tutores, pesquisadores e autodidatas devem administrar conceitos pedagógicos e operacionais, não detalhes de banco, Storage ou sincronização.
+
+Essas hipóteses são entradas obrigatórias para P4, P5 e Issues #5–#8. Não autorizam arquitetura ou implementação.
+
+## 8. Experimentos históricos
+
+| Issue | PR | Estado | Interpretação |
 |---|---:|---|---|
-| #36 | #37 | `historical-experiment` | contratos 0.1 de quatro famílias; não normativos |
-| #38 | #39 | `historical-experiment` | adapters descartáveis e achados negativos; não produção |
-| #40 | #41 | `historical-experiment` concluído | contratos 0.2, migrações e auditorias; não é o contrato do ARA |
-| #42 | — | `deferred` | protocolo de bake-off preservado, sem resultado de runtime |
+| #36 | #37 | fechado | contratos 0.1 não normativos |
+| #38 | #39 | fechado | adapters descartáveis e achados negativos |
+| #40 | #41 | concluído | contratos 0.2 e auditorias; não é o contrato do ARA |
+| #42 | — | adiado | protocolo de bake-off sem resultado |
 
-Esses trabalhos podem informar falhas, testes, segurança e padrões. Não selecionam stack, não definem requisitos e só podem retornar mediante necessidade aceita em #6 e pergunta arquitetural em #7.
+Podem informar falhas, testes e segurança. Não definem requisitos ou stack.
 
-## 8. Classificação obrigatória das issues
+## 9. Classificação obrigatória das issues
 
 Cada issue deve declarar:
 
-- **fase:** `00`, `10`, `20`, `25`, `30`, `40`, `50`, `60`, `70`, `80` ou `90`;
-- **tipo:** governança, pesquisa jurídica, protocolo, extração, análise comparativa, síntese decisória, taxonomia, especificação de produto, arquitetura/ADR, UX, protótipo exploratório, implementação, validação ou avaliação;
-- **autoridade:** `governing`, `normative-pending`, `accepted-normative`, `decision-synthesis`, `evidence`, `historical-experiment`, `deferred`, `superseded` ou `rejected`;
-- **fontes governantes**;
-- **dependências**;
-- **saída canônica ou verificável**;
-- **não autorizações**.
+- fase;
+- tipo;
+- autoridade;
+- fontes governantes;
+- dependências;
+- saída verificável;
+- não autorizações.
+
+Vocabulário de autoridade:
+
+- `governing`;
+- `normative-pending`;
+- `accepted-normative`;
+- `decision-synthesis`;
+- `evidence`;
+- `historical-experiment`;
+- `deferred`;
+- `superseded`;
+- `rejected`.
 
 Uma issue pode conter mais de uma atividade somente quando a dependência é direta e as saídas permanecem separáveis.
 
-## 9. Estrutura mínima de toda issue
+## 10. Estrutura mínima
 
 ```markdown
 ## Classification
@@ -255,87 +266,43 @@ Uma issue pode conter mais de uma atividade somente quando a dependência é dir
 ## Documentation and traceability
 ```
 
-Efeitos transversais relevantes devem cobrir, conforme o caso: pedagogia, validade de pesquisa, privacidade e ética, acessibilidade, segurança, mobile/offline, desempenho e custo, licenciamento e autoria por MCP.
+## 11. Regras por tipo
 
-## 10. Regras por tipo de trabalho
+### Pesquisa
 
-### 10.1 Pesquisa
+Deve registrar pergunta, decisão informada, método, fontes, datas, queries, amostragem, inclusão/exclusão, acesso, suficiência, extração, limitações, síntese e recomendação.
 
-Uma issue de pesquisa deve registrar:
+Não declarar pesquisa sistemática, exaustiva, causal ou duplamente revisada sem método correspondente. O proprietário não recebe corpus bruto como entrega final.
 
-- pergunta e decisão que pretende informar;
-- protocolo ou método;
-- bases, fontes, idiomas, datas e queries exatas quando aplicável;
-- amostragem de plataformas, domínios, stakeholders e implantações;
-- inclusão, exclusão, suficiência ou saturação;
-- estado de acesso;
-- extração, limitações, síntese e recomendação.
+### Síntese e decisão
 
-Não se deve declarar pesquisa sistemática, exaustiva, causal ou duplamente revisada sem método correspondente.
+Deve comparar alternativas limitadas e inteligíveis, com benefícios, custos, evidência, riscos e reversibilidade. Estados: `recommended`, `accepted`, `deferred`, `rejected` ou `owner-decision-required`.
 
-A entrega final deve incluir conclusão, caminho recomendado, alternativas adiadas/rejeitadas, justificativa, riscos, incertezas decisivas e classificação das implicações. O proprietário não deve receber um corpus bruto como produto final.
+### Protótipo exploratório
 
-### 10.2 Síntese e decisão
+Exige incerteza específica, hipótese, critério de falsificação, menor protótipo adequado, estado não normativo, regra de descarte/adoção e fase responsável pela decisão.
 
-A síntese deve comparar alternativas limitadas e inteligíveis, incluindo benefícios, custos, evidência, riscos e reversibilidade. O estado final deve ser `recommended`, `accepted`, `deferred`, `rejected` ou `owner-decision-required`.
+Não seleciona stack implicitamente nem vira dependência automática.
 
-A escolha do proprietário somente é solicitada quando persiste conflito estratégico, ético, pedagógico ou valorativo que a evidência não resolve. A recomendação deve ser explícita.
+### Produto e domínio
 
-### 10.3 Protótipo exploratório
+Importa decisões aceitas e define atores, jornadas, entidades, estados, invariantes e lifecycle. Separa núcleo, extensão, conectado, experimental e fora de escopo.
 
-Exige:
+### Arquitetura e ADR
 
-- incerteza específica;
-- evidência ou hipótese;
-- motivo pelo qual análise não basta;
-- critério de falsificação;
-- menor protótipo adequado;
-- estado não normativo;
-- regra de descarte, retenção ou adoção;
-- fase posterior com autoridade para aceitar o resultado.
+Informa requisito, perfil, horizonte, workload, alternativas, segurança, privacidade, acessibilidade, offline, desempenho, operação, custo, migração, recomendação e decisão.
 
-Não pode selecionar stack implicitamente, criar contrato permanente por conveniência, tornar-se dependência automática, ocultar riscos ou alegar efetividade educacional.
+### UX
 
-### 10.4 Produto e domínio
+Referencia ator, jornada, estado, requisito, parâmetro, permissão, falha, mobile/desktop/offline, acessibilidade e avaliação. Implementação não inventa comportamento user-facing.
 
-Deve importar parâmetros e decisões aceitos, definir atores, jornadas, entidades, estados, invariantes e lifecycle, classificar núcleo/extensão/conectado/experimental/fora de escopo e registrar questões que pertencem à arquitetura ou UX.
+### Implementação para o Codex
 
-### 10.5 Arquitetura e ADR
+Deve ser autossuficiente e identificar objetivo, release, requisito, domínio, ADR, contrato, jornada/tela, escopo, módulos, dados, comportamento, falhas, impactos, aceite, testes, documentação e rollback.
 
-Deve informar requisito servido, perfil de implantação, caráter durável ou de primeiro recorte, workloads, alternativas, segurança, privacidade, acessibilidade, offline, desempenho, operação, custo, saída/migração, protótipo usado, recomendação e decisão aceita.
+Quando requisito, ADR, contrato ou UX estiver ausente, a lacuna retorna à fase apropriada.
 
-Popularidade, uso atual no AraLearn ou existência de protótipo não bastam como justificativa.
-
-### 10.6 UX
-
-Deve referenciar ator, jornada, estado/transição, requisito, parâmetro, permissão, falha, mobile/desktop/offline, acessibilidade, protótipo e método de avaliação.
-
-A implementação não pode inventar comportamento user-facing ausente de especificação aprovada.
-
-### 10.7 Implementação para o Codex
-
-A issue deve ser autossuficiente e identificar:
-
-- objetivo e valor para o usuário;
-- release e requisito de origem;
-- conceito de domínio;
-- ADR ou arquitetura aceita;
-- versão de contrato;
-- jornada e tela, quando aplicável;
-- escopo e exclusões;
-- módulos e dados afetados;
-- comportamento esperado e falhas;
-- impacto de migração, segurança, privacidade, acessibilidade, offline e desempenho;
-- critérios de aceite;
-- plano de testes;
-- documentação;
-- rollback ou recuperação.
-
-Quando requisito, ADR, contrato ou UX necessário estiver ausente, o Codex não deve inventá-lo: a lacuna retorna à fase apropriada.
-
-## 11. Cadeia de rastreabilidade
-
-Uma função normativa deve ser recuperável por:
+## 12. Rastreabilidade
 
 ```text
 problema ou pergunta
@@ -343,7 +310,7 @@ problema ou pergunta
 → extração/análise
 → síntese decisória
 → requisito aceito
-→ conceito de domínio/política
+→ domínio/política
 → ADR/arquitetura
 → jornada e tela
 → release
@@ -352,51 +319,34 @@ problema ou pergunta
 → avaliação
 ```
 
-Nem toda função exige todos os elos; qualquer omissão deve ser justificada.
+Nem toda função exige todos os elos; omissões devem ser justificadas.
 
-## 12. Pull requests e conclusão
+## 13. Pull requests e conclusão
 
-Uma PR substancial deve registrar:
+Uma PR substancial registra issues, documentos atualizados, evidência ou decisão, validação, limitações, migração/rollback, encerramento e follow-up autorizado.
 
-- issues atendidas;
-- especificações ou índices atualizados;
-- evidência produzida ou decisão implementada;
-- validação executada;
-- limitações;
-- efeitos de migração e rollback;
-- se encerra a issue;
-- follow-up sem abertura automática, salvo autorização.
+Uma issue só conclui quando entregas e critérios estão verificados, limitações são explícitas e nenhum item inacabado é transferido silenciosamente.
 
-Uma issue só é concluída quando entregas e critérios de aceite estão verificados, limitações são explícitas, o índice foi atualizado quando necessário e nenhum critério inacabado foi transferido silenciosamente.
+Bloqueio ou pesquisa parcial é `parcial`, `adiado` ou `inconclusivo`, não concluído.
 
-Bloqueio ambiental ou pesquisa parcial deve ser classificado como parcial, adiado ou inconclusivo, não como concluído.
+## 14. Avaliação externa e reutilização acadêmica
 
-## 13. Avaliação externa e reutilização acadêmica
+O registro deve permitir distinguir intenção, método, evidência, mudanças, alternativas, decisões, incertezas, implementação e avaliação.
 
-O registro deve permitir distinguir:
+Dissertação, tese ou artigo deverá formular pergunta própria, selecionar corpus, citar fontes originais, distinguir desenvolvimento de efetividade educacional, declarar assistência por IA, respeitar privacidade/licenciamento e não apresentar planos como resultados.
 
-- intenção inicial;
-- método e evidência;
-- mudanças e justificativas;
-- alternativas consideradas;
-- decisões vigentes;
-- incertezas;
-- implementação e avaliação realizadas.
+## 15. Atualização documental
 
-Dissertação, tese ou artigo futuro deverá formular pergunta própria, selecionar o corpus relevante, citar literatura original, distinguir desenvolvimento de efetividade educacional, declarar assistência por IA, respeitar privacidade/licenciamento e não apresentar planos como resultados.
+O conjunto principal permanece limitado a visão, programa de pesquisa e backlog.
 
-## 14. Política documental e atualização
+Ao mudar decisão:
 
-O conjunto principal permanece limitado a visão, programa de pesquisa e backlog. Um novo documento transversal exige função exclusiva, responsável de manutenção e ausência demonstrável de duplicação.
-
-Ao mudar uma decisão:
-
-1. atualizar ou produzir síntese decisória;
-2. registrar por que evidência ou trade-off mudou;
-3. aprovar a decisão revisada;
-4. atualizar a especificação pertinente;
+1. atualizar síntese;
+2. registrar mudança de evidência ou trade-off;
+3. aprovar decisão;
+4. atualizar especificação;
 5. atualizar este índice;
-6. criar migração ou implementação somente depois;
-7. preservar o estado anterior no histórico do GitHub.
+6. implementar somente depois;
+7. preservar estado anterior no GitHub.
 
-Não se deve reescrever silenciosamente o passado para sugerir que a decisão final sempre existiu.
+Não reescrever silenciosamente o passado para sugerir que a decisão final sempre existiu.

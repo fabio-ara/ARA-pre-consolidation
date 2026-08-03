@@ -4,7 +4,7 @@
 
 **Plataforma ARA — Ambiente de Recursos de Aprendizagem**
 
-A ARA é uma plataforma educativa aberta, configurável, mobile-first e preparada para utilização offline. O projeto sucede o [AraLearn](https://github.com/fabio-ara/AraLearn), preservando a sua experiência funcional como primeira configuração de referência e reconstruindo o produto com parametrização explícita, arquitetura modular, infraestrutura portável e autoria por MCP.
+A ARA é uma plataforma educativa aberta, configurável, mobile-first e preparada para utilização offline. O projeto sucede o [AraLearn](https://github.com/fabio-ara/AraLearn), preservando a sua experiência funcional como primeira configuração de referência e reconstruindo o produto com parametrização explícita, controlo humano visível, infraestrutura portável e autoria por GPT+MCP.
 
 A estrutura educativa inicial é:
 
@@ -14,7 +14,7 @@ curso → módulo → lição → microssequência → card
 
 ## Fase atual
 
-O projeto encontra-se na fase de investigação e definição do produto. A Issue #4 governa a taxonomia ativa de parametrização pedagógica e de investigação. Os Pacotes P1 e P2 foram concluídos; o próximo é o P3 — autonomia, autorregulação, adaptação, acessibilidade e assistência por IA. A implementação do novo produto ainda não começou.
+O projeto encontra-se na fase de investigação e definição do produto. A Issue #4 governa a taxonomia ativa de parametrização pedagógica e de investigação. Os Pacotes P1, P2 e P3 foram concluídos; o próximo é o P4 — instrumentação, condições experimentais, analytics e governação. A implementação do novo produto ainda não começou.
 
 ## Começar por aqui
 
@@ -28,7 +28,7 @@ As Issues do GitHub são unidades de trabalho autorizadas e autossuficientes. In
 
 ## Finalidades orientadoras
 
-A ARA deverá servir estudantes autodidatas, autores, investigadores e instituições. A plataforma preservará uma experiência reconhecível de cursos e cards, permitindo que configurações pedagógicas, avaliativas, interacionais, de investigação e de governação variem explicitamente.
+A ARA deverá servir estudantes autodidatas, autores, professores, tutores, investigadores e instituições. GPT+MCP apoiará planeamento, construção, auditoria e reparação, enquanto o ARA dará ao utilizador acesso aos artefactos, versões, comentários, operações determinísticas e decisões de publicação.
 
 ## Governação
 
