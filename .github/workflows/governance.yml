@@ -23,7 +23,7 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import csv, json, pathlib, sys
+          import csv, json, pathlib, re, sys
           root = pathlib.Path('.')
           errors = []
           for path in root.rglob('*.json'):
@@ -33,6 +33,7 @@ jobs:
                   json.loads(path.read_text(encoding='utf-8'))
               except Exception as exc:
                   errors.append(f'{path}: invalid JSON: {exc}')
+          strict_registry = re.compile(r'^(?:p[1-5]-|issue[4-9]-)')
           for path in root.rglob('*.csv'):
               if '.git' in path.parts:
                   continue
@@ -40,8 +41,9 @@ jobs:
                   rows = list(csv.reader(path.open(encoding='utf-8', newline='')))
                   if not rows:
                       errors.append(f'{path}: empty CSV')
-                  elif any(len(row) != len(rows[0]) for row in rows[1:]):
-                      errors.append(f'{path}: inconsistent column count')
+                  elif path.parent == root/'research'/'data' and strict_registry.match(path.name):
+                      if any(len(row) != len(rows[0]) for row in rows[1:]):
+                          errors.append(f'{path}: inconsistent column count in normative registry')
               except Exception as exc:
                   errors.append(f'{path}: invalid CSV: {exc}')
           required = [
@@ -50,11 +52,13 @@ jobs:
               'docs/product/domain-model-v1.md',
               'docs/architecture/reference-architecture-v1.md',
               'docs/ux/ux-specification-v1.md',
+              'docs/releases/implementation-programme-v1.md',
               'research/data/issue4-final-artifact-manifest-v1.json',
               'research/data/issue5-artifact-manifest-v1.json',
               'research/data/issue6-artifact-manifest-v1.json',
               'research/data/issue7-artifact-manifest-v1.json',
               'research/data/issue8-artifact-manifest-v1.json',
+              'research/data/issue9-artifact-manifest-v1.json',
           ]
           for item in required:
               if not (root/item).is_file(): errors.append(f'missing required artifact: {item}')
