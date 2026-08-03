@@ -37,7 +37,7 @@ finalidade → protocolo → condição → evento/instrumento
 
 Eventos são seletivos; analytics pessoais, pedagógicos, de pesquisa e operacionais permanecem separados; variantes exigem snapshots e diffs; coleta, event store, dashboards, predição e early warning foram adiados.
 
-### P5 — concluído — PR desta branch
+### P5 — concluído — PR #51
 
 **Escopo:** autoria, revisão, auditoria, reparo, anotações, versões, reutilização, publicação, licenciamento e governança institucional.
 
@@ -90,13 +90,13 @@ A Issue #6 decidirá o domínio, a #7 a arquitetura e a #8 a UX.
 
 Antes de avançar para #5, integrar P1–P5 em uma primeira taxonomia coerente e versionada. A síntese final deverá:
 
-- deduplicar e harmonizar os parâmetros aceitos;
+- deduplicar e harmonizar parâmetros;
 - organizar famílias e níveis de incidência;
 - consolidar perfis e overlays;
 - formalizar autoridade, precedência, consentimento, locking e override;
 - registrar dependências, incompatibilidades e combinações não suportadas;
 - distinguir configuração, conteúdo/materialização, composição, lifecycle e condição experimental;
-- definir effective configuration e snapshots em nível conceitual;
+- definir effective configuration e snapshots conceitualmente;
 - preservar aceitos, adiados e rejeitados com rationale;
 - validar cenários pessoais, acadêmicos, institucionais, confidenciais e offline;
 - produzir handoff normativo para #5 e requisitos candidatos para #6;
