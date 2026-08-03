@@ -4,29 +4,27 @@
 
 **Plataforma ARA — Ambiente de Recursos de Aprendizagem**
 
-A ARA é uma plataforma educacional aberta, configurável, mobile-first e preparada para uso offline. O projeto sucede o [AraLearn](https://github.com/fabio-ara/AraLearn), preservando sua experiência funcional como primeira configuração de referência e reconstruindo o produto com parametrização explícita, controle humano visível, infraestrutura portável e autoria assistida por GPT+MCP.
+A ARA é uma plataforma educacional aberta, configurável, mobile-first e preparada para uso offline, sucessora direta do [AraLearn](https://github.com/fabio-ara/AraLearn).
 
-A estrutura educacional inicial é:
+Composição inicial:
 
 ```text
-curso → módulo → lição → microssequência → card
+versão de curso → módulo/lição → placement → revisão de microssequência → card
 ```
 
 ## Estágio atual
 
-As Issues #4 e #5 foram concluídas com `ara.configuration-taxonomy.v1` e `ara.research-framework.v1`. A fase atual é a Issue #6 — requisitos do produto e modelo de domínio. A implementação do produto ainda não começou.
+As Issues #4–#6 foram concluídas: taxonomia de configuração, framework de pesquisa/analytics, requisitos e modelo de domínio. A fase atual é a Issue #7 — arquitetura de referência e perfis de implantação. A implementação do produto ainda não começou.
 
 ## Comece por aqui
 
 1. [Visão do produto](docs/vision/product-vision.pt-BR.md)
 2. [Programa de pesquisa](docs/research/research-programme-index.pt-BR.md)
-3. [Backlog, fases e regras das issues](docs/roadmap/backlog-index.md)
+3. [Backlog e regras de execução](docs/roadmap/backlog-index.md)
+4. [Requisitos do produto](docs/product/product-requirements-v1.md)
+5. [Modelo de domínio](docs/product/domain-model-v1.md)
 
-As Issues do GitHub são unidades autorizadas e autossuficientes. Pesquisa, decisão, produto, arquitetura, UX e implementação permanecem separados. O Codex somente poderá implementar issues derivadas de requisitos, decisões arquiteturais e especificações de UX aprovados.
-
-## Finalidades orientadoras
-
-A ARA destina-se a autodidatas, autores, professores, tutores, pesquisadores e instituições. GPT+MCP apoia planejamento semântico, construção, auditoria e reparo; o ARA renderiza artefatos em evolução e oferece controle determinístico sobre versões, comentários, diffs, aprovação e publicação.
+Pesquisa, produto, arquitetura, UX e implementação permanecem gates separados. GPT+MCP apoia autoria e reparo semânticos delimitados; o ARA expõe os artefatos em evolução e o controle humano determinístico.
 
 ## Governança
 
@@ -34,14 +32,8 @@ A ARA destina-se a autodidatas, autores, professores, tutores, pesquisadores e i
 - [Política linguística](docs/governance/language-policy.pt-BR.md)
 - [Como contribuir](CONTRIBUTING.pt-BR.md)
 
-## Idiomas
-
-A interface será preparada para português brasileiro (`pt-BR`), português europeu (`pt-PT`) e inglês (`en`). Documentos de pesquisa em elaboração usam normalmente português brasileiro.
-
 ## Licenciamento
 
-- Código-fonte: [GNU Affero General Public License versão 3 ou posterior](LICENSE)
-- Documentação: [Creative Commons Atribuição 4.0 Internacional](LICENSE-DOCUMENTATION.md), salvo indicação em contrário
-- Nome, kanji, logotipo e identidade visual: consulte [TRADEMARKS.md](TRADEMARKS.md)
-
-Consulte [LICENSING.md](LICENSING.md) para os limites completos.
+- Código: [AGPL-3.0-or-later](LICENSE)
+- Documentação: [CC BY 4.0](LICENSE-DOCUMENTATION.md)
+- Nome e identidade visual: [TRADEMARKS.md](TRADEMARKS.md)

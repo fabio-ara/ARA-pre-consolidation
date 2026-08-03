@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "ara.product-domain-decision.v1",
+  "date": "2026-08-03",
+  "governingIssue": 6,
+  "status": "accepted-normative-handoff",
+  "principalConclusion": "ARA is one configurable product with a microsequence-first authoring/composition model. A MicrosequenceRevision is the initial reusable authored unit; a CourseVersion is an immutable, pedagogically complete composition of contextual Placements, structure, dependencies, configuration, provenance and publication policy. Study state belongs to the learner/course-version/placement/card context, not globally to reused content.",
+  "acceptedDecisions": [
+    "Accept MicrosequenceLineage/MicrosequenceRevision as the initial reusable authoring unit, explicitly revisable in future taxonomy/domain versions.",
+    "Accept Placement as the contextual occurrence joining a microsequence revision to a course version.",
+    "Accept typed RelationEdge and ConceptRef for dependencies/coverage; free-text tags are search aids only.",
+    "Accept immutable CourseVersion and PublicationSnapshot; mutable work exists only in authoring workspace state.",
+    "Separate ResourceInstance, PracticeDefinition, ResponseDefinition, ValidatorPolicy and FeedbackPolicy.",
+    "Accept one base profile + overlays + sparse overrides resolved into EffectiveConfigurationSnapshot.",
+    "Integrate Issue #5 research objects as normative optional-profile entities.",
+    "Keep personal baseline local/offline/data-minimal without mandatory sync or analytics.",
+    "Use workspace-scoped roles and audience-specific publication.",
+    "Distinguish reference, copy, fork, adaptation, translation, withdraw, supersede, archive, revoke and delete.",
+    "Classify capabilities as core, optional-local, optional-connected, research-experimental, deferred or prohibited.",
+    "Require provider-independent import/export and explicit unavailable capability semantics."
+  ],
+  "qualityConstraints": {
+    "referenceDevice": "Samsung Galaxy A07 class or equivalent modest Android device for first-scope benchmarks",
+    "offline": "baseline study after materialization; deterministic operations remain available",
+    "MCP": "bounded discovery, idempotent writes, expected revision, localized validation/repair",
+    "accessibility": "WCAG 2.2-oriented contracts, assistive alternatives, no rights-disabling profile",
+    "localization": "interface and course language independent; en, pt-BR and pt-PT",
+    "securityPrivacy": "least privilege, purpose binding, confidential workspace controls",
+    "portability": "provider-independent versioned packages and exit path"
+  },
+  "handoff": {
+    "Issue7": [
+      "Implement domain ports/adapters without changing entity semantics.",
+      "Compare relational metadata + immutable artifacts + local projection against alternatives.",
+      "Design revision-based sync with no silent semantic merge.",
+      "Define deployment profiles and capability manifests."
+    ],
+    "Issue8": [
+      "Design all journeys and state transitions; distinguish placement, revision, publication, reference and fork in user language.",
+      "Use progressive disclosure and role-oriented administration."
+    ],
+    "Issue9": [
+      "Release-slice core journey from authored microsequence composition to offline study, annotation, repair and republish."
+    ]
+  },
+  "nonAuthorizations": [
+    "framework/database/storage selection",
+    "production schema",
+    "MCP API contract",
+    "screen design",
+    "implementation"
+  ]
+}

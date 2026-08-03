@@ -4,104 +4,97 @@
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
-## 1. Navegação e autoridade
+## 1. Autoridade
 
-1. `docs/vision/product-vision.pt-BR.md`;
-2. `docs/research/research-programme-index.pt-BR.md`;
-3. este documento.
+Ordem para comportamento e engenharia:
 
-Especificações aprovadas da fase prevalecem sobre ADRs, issues operacionais, sínteses, evidência, protótipos e conversas, nessa ordem. Fontes primárias prevalecem para afirmar o que ocorreu.
+1. especificação aprovada da fase;
+2. ADR/decisão estratégica;
+3. issue operacional vigente;
+4. síntese decisória;
+5. evidência/dataset;
+6. protótipo ou registro histórico;
+7. conversa não registrada.
 
-## 2. Caminho linear
+## 2. Caminho
 
 ```text
 #3 evidência contínua
 → #4 taxonomia — concluída
-→ #5 protocolos e analytics — concluída
-→ #6 produto e domínio — atual
-→ #7 arquitetura e ADRs
+→ #5 pesquisa/analytics — concluída
+→ #6 produto/domínio — concluída
+→ #7 arquitetura — atual
 → #8 UX/UI
-→ #9 releases e backlog executável
-→ implementação e avaliação
+→ #9 releases/backlog
+→ implementação
 ```
 
-A Issue #2 corre em paralelo quando questões jurídicas e institucionais forem relevantes.
+## 3. Estado
 
-## 3. Estado das issues principais
+| Issue | Estado | Baseline/saída |
+|---|---|---|
+| #2 | paralela | licença, identidade e questões institucionais |
+| #3 | contínua | pesquisa atualizável |
+| #4 | concluída | `ara.configuration-taxonomy.v1` |
+| #5 | concluída | `ara.research-framework.v1` |
+| #6 | concluída | requisitos e modelo de domínio v1 |
+| #7 | ativa | arquitetura provider-independent e ADRs |
+| #8 | futura | UX, acessibilidade e protótipos |
+| #9 | futura | releases, CI e issues executáveis |
 
-| Issue | Fase | Estado | Saída |
-|---|---:|---|---|
-| #10 | 00 | aberta | roadmap e gates |
-| #2 | 10 | paralela | propriedade intelectual, licença e identidade |
-| #3 | 20 | contínua | evidência e atualização bibliográfica |
-| #4 | 30 | concluída | `ara.configuration-taxonomy.v1` |
-| #5 | 40 | concluída | `ara.research-framework.v1` |
-| #6 | 50 | ativa | requisitos, atores, jornadas, entidades e estados |
-| #7 | 60 | futura | arquitetura, perfis de implantação e ADRs |
-| #8 | 70 | futura | jornadas, telas, acessibilidade e sistema visual |
-| #9 | 80 | futura | releases, quality gates e issues executáveis |
+## 4. Handoff normativo para #7
 
-## 4. Handoffs concluídos
+A arquitetura deve preservar:
 
-### Issue #4
+- `MicrosequenceLineage`/`MicrosequenceRevision`;
+- `Placement` como ocorrência contextual;
+- `CourseVersion` e `PublicationSnapshot` imutáveis;
+- estado contextual por learner assignment/course version/placement/card;
+- Resource/Practice/Response/Validator/Feedback separados;
+- profiles/overlays/overrides/effective snapshot;
+- objetos de pesquisa da Issue #5;
+- workspaces e papéis locais;
+- reference/copy/fork/adaptation/translation;
+- typed relations e capability manifests;
+- baseline offline/data-minimal sem LLM ou event store obrigatórios.
 
-- 205 parâmetros canônicos;
-- 38 perfis;
-- camadas, precedência, aliases e snapshots;
-- 36 candidatos adiados e 41 princípios rejeitados.
+Manifestos:
 
-Manifesto: `research/data/issue4-final-artifact-manifest-v1.json`.
+- `research/data/issue4-final-artifact-manifest-v1.json`;
+- `research/data/issue5-artifact-manifest-v1.json`;
+- `research/data/issue6-artifact-manifest-v1.json`.
 
-### Issue #5
+## 5. Decisões que #7 precisa registrar por ADR
 
-- framework normativo de pergunta, protocolo, condição, assignment, evento, instrumento, evidência, medida, constructo e interpretação;
-- 24 eventos mínimos autorizáveis;
-- 16 medidas candidatas;
-- 14 famílias de instrumentos;
-- 15 regras de governança;
-- 12 cenários validados.
+- cliente web/PWA e estratégia de pacote;
+- persistência local;
+- metadata e immutable artifact stores;
+- materialização de course versions;
+- sync/outbox/conflitos;
+- identity e authorization;
+- MCP gateway e capability discovery;
+- research event/instrument adapters;
+- managed e self-hosted profiles;
+- backup/restore/migration/rollback;
+- security, privacy, accessibility, performance e cost budgets;
+- extensão controlada.
 
-Manifesto: `research/data/issue5-artifact-manifest-v1.json`.
+Primeiro-escopo e requisito durável não podem ser confundidos.
 
-Decisões permanentes:
+## 6. Regras de execução
 
-- evento disponível não autoriza coleta;
-- evento, medida, constructo, interpretação e intervenção permanecem separados;
-- perfil pessoal é data-minimal;
-- analytics pessoais, pedagógicos, de pesquisa e operacionais têm autoridades distintas;
-- Caliper/xAPI e outros padrões são mapeamentos, não o domínio do ARA.
+- Nenhum protótipo histórico vira arquitetura sem requisito + comparação + ADR.
+- Curso não contém código arbitrário.
+- Conflito semântico não sofre auto-merge silencioso.
+- Capacidade ausente é explícita.
+- Supabase pode ser adapter gerenciado, nunca domínio.
+- Implementação não inventa UX.
+- Cada PR substancial inclui decisão, validação, limites e documentação.
 
-## 5. Trabalho atual — Issue #6
+## 7. Registros não autorizados
 
-A Issue #6 deverá aceitar uma baseline normativa para:
-
-- atores e jornadas;
-- hierarquia educacional e composição;
-- curso, microssequência, placement, card, resource, prática, resposta, validator e feedback;
-- perfil, configuração efetiva, snapshot e capability;
-- protocolo, condição, participante, assignment, evento, instrumento, medida, constructo e evidência;
-- autoria, workspace, anotação, revisão, reparo, versão e publicação;
-- biblioteca, pasta, referência, coleção, programa e catálogo;
-- visibilidade, confidencialidade, licença, retenção, retirada e exclusão;
-- estado local, sincronizado e publicado;
-- importação, exportação, portabilidade e migração;
-- classificação de capacidades core, opcionais, conectadas, experimentais e fora de escopo.
-
-A hipótese de composição por microssequências deve receber decisão explícita. A Issue #6 não seleciona banco, framework, Storage ou interface.
-
-## 6. Regras permanentes
-
-- Pesquisa, decisão, produto, arquitetura, UX e implementação permanecem separados.
-- Não há fallback, compatibilidade ou legado não documentado.
-- Software tests não demonstram efetividade educacional.
-- Um recurso tecnicamente possível não se torna requisito automaticamente.
-- Issues de implementação para Codex devem apontar requisito, ADR, tela/jornada, aceite, testes, documentação e rollback.
-- Mudanças em taxonomia ou framework de pesquisa criam nova versão; não reescrevem silenciosamente as fontes.
-
-## 7. Experimentos e placeholders
-
-#36–#40 permanecem não normativos; #42 permanece adiado. Issues #50 e #53 foram placeholders acidentais encerrados como `not_planned` e não autorizam trabalho.
+Issues #50 e #53 são placeholders acidentais fechados como `not_planned`. Experimentos #36–#40 permanecem não normativos; #42 permanece adiado.
 
 ## 8. Próxima ação
 
-Executar e concluir a **Issue #6**. Somente depois iniciar #7.
+Concluir a **Issue #7** e seus ADRs; depois iniciar #8.

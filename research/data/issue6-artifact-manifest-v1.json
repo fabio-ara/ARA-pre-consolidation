@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "ara.issue6-artifact-manifest.v1",
+  "files": [
+    "docs/product/product-requirements-v1.md",
+    "docs/product/domain-model-v1.md",
+    "research/data/issue6-domain-entities-v1.csv",
+    "research/data/issue6-invariants-v1.csv",
+    "research/data/issue6-capability-classification-v1.csv",
+    "research/data/issue6-journey-registry-v1.csv",
+    "research/data/issue6-state-machines-v1.json",
+    "research/data/issue6-scenario-validation-v1.csv",
+    "research/data/issue6-decision-synthesis-v1.json",
+    "research/data/issue6-audit-v1.json"
+  ],
+  "counts": {
+    "entities": 65,
+    "invariants": 24,
+    "capabilities": 24,
+    "journeys": 15,
+    "scenarios": 16
+  }
+}

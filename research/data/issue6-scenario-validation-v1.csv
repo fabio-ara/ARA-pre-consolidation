@@ -1,0 +1,17 @@
+id,scenario,expected_resolution,status
+S01,Personal offline study,Course version materializes with baseline capabilities; state is local and resumable,passed
+S02,"Same content, different runtime parameters",Two effective configuration snapshots reference same content versions,passed
+S03,Content concentration variant,New microsequence revisions/course version created; not a renderer switch,passed
+S04,Microsequence reused in two courses,"One revision, two placements; progression state remains contextual",passed
+S05,Context-specific adaptation,Fork or placement override used; no silent change to other consumer,passed
+S06,MCP localized repair,Operation targets card/microsequence revision; new revision and re-audit created,passed
+S07,Research condition locked,Published content/config/composition snapshot immutable; rights deviation recorded,passed
+S08,Unavailable connected AI,Explicit unavailable/fallback state; baseline study continues,passed
+S09,Institutional confidential course,"Workspace policy restricts providers, visibility, export and retention",passed
+S10,OER with third-party asset,License/attribution by scope; incompatible asset blocks public gate,passed
+S11,Deletion of referenced unit,Impact analysis; withdraw/tombstone/supersede before eligible hard delete,passed
+S12,Folder move,Reference location changes; course identity and content unchanged,passed
+S13,Offline concurrent edits,Conflict yields explicit fork/reapply choice; no semantic auto-merge,passed
+S14,Participant withdrawal,Rights state stops collection and invokes declared retention/deletion policy,passed
+S15,Advanced runtime request without need,Classified deferred/optional; not added to core,passed
+S16,Low-end device baseline,Baseline document and assets bounded; heavier capability excluded or separate,passed

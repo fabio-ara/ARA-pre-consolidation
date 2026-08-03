@@ -1,105 +1,93 @@
 # Índice canônico do programa de pesquisa
 
-**Estado:** canônico para planejamento de pesquisa  
+**Estado:** evidência e decisões consolidadas para arquitetura  
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
-## 1. Issue #4 — concluída
+## 1. Baselines concluídas
 
-A Issue #4 produziu `ara.configuration-taxonomy.v1`:
+### Issue #4 — configuração
 
-- 205 parâmetros canônicos;
-- 38 perfis;
-- camadas de runtime, conteúdo, composição, lifecycle, pesquisa e direitos;
-- precedência, aliases, snapshots e combinações não suportadas;
-- 36 candidatos adiados e 41 princípios rejeitados.
+`ara.configuration-taxonomy.v1` define 205 parâmetros, 38 perfis, camadas, precedência, effective configuration e snapshots.
 
-Artefatos principais:
+Manifesto: `research/data/issue4-final-artifact-manifest-v1.json`.
 
-- `research/data/issue4-final-decision-synthesis-v1.json`;
-- `research/data/issue4-final-artifact-manifest-v1.json`;
-- `research/pt-BR/issue4-sintese-final-taxonomia-configuracao-v1.md`.
+### Issue #5 — pesquisa e analytics
 
-P1–P5 permanecem fontes primárias das definições e evidências.
+`ara.research-framework.v1` separa pergunta, protocolo, condição, evento/instrumento, evidência, medida, constructo, interpretação e intervenção.
 
-## 2. Issue #5 — concluída
+Manifesto: `research/data/issue5-artifact-manifest-v1.json`.
 
-A Issue #5 produziu `ara.research-framework.v1`.
+### Issue #6 — produto e domínio
 
-### Decisão central
+A baseline aceita:
 
 ```text
-pergunta/finalidade
-→ protocolo
-→ condição e assignment
-→ evento autorizado ou instrumento
-→ evidência
-→ medida
-→ constructo
-→ interpretação
-→ decisão/intervenção
+CourseVersion
+→ ModuleNode / LessonNode
+→ Placement
+→ MicrosequenceRevision
+→ Card
+→ Resource / Practice / Response / Validator / Feedback
 ```
 
-Nenhuma camada é inferida automaticamente da anterior.
+Decisões:
 
-### Entregas
+- `MicrosequenceRevision` é a unidade autoral reutilizável inicial, sem pretensão universal;
+- `Placement` fornece contexto de curso, dependências, posição, overrides e progressão;
+- `CourseVersion` é uma composição pedagógica completa e imutável;
+- estado do estudante é contextual por assignment, course version, placement e card;
+- relações tipadas substituem tags livres como núcleo de dependências;
+- conteúdo, prática, resposta, validator e feedback permanecem separados;
+- draft/workspace é mutável; revisões, snapshots e publicações são imutáveis;
+- pastas, coleções, programas e catálogo organizam referências;
+- research objects de #5 são entidades opcionais do mesmo domínio;
+- capacidades são core, opcionais locais, conectadas, experimentais, adiadas, fora de escopo ou proibidas.
 
-- `docs/research/research-protocols-analytics-v1.pt-BR.md`;
-- `research/data/issue5-research-framework-v1.json`;
-- `research/data/issue5-event-vocabulary-v1.csv`;
-- `research/data/issue5-measure-registry-v1.csv`;
-- `research/data/issue5-instrument-registry-v1.csv`;
-- `research/data/issue5-governance-matrix-v1.csv`;
-- `research/data/issue5-scenario-validation-v1.csv`;
-- `research/data/issue5-decision-synthesis-v1.json`;
-- `research/data/issue5-integration-audit-v1.json`;
-- `research/data/issue5-artifact-manifest-v1.json`.
+Artefatos:
 
-### Resultado
+- `docs/product/product-requirements-v1.md`;
+- `docs/product/domain-model-v1.md`;
+- `research/data/issue6-domain-entities-v1.csv`;
+- `research/data/issue6-invariants-v1.csv`;
+- `research/data/issue6-capability-classification-v1.csv`;
+- `research/data/issue6-journey-registry-v1.csv`;
+- `research/data/issue6-state-machines-v1.json`;
+- `research/data/issue6-scenario-validation-v1.csv`;
+- `research/data/issue6-decision-synthesis-v1.json`;
+- `research/data/issue6-artifact-manifest-v1.json`.
 
-- 24 fontes centrais;
-- 24 eventos mínimos e autorizáveis;
-- 16 medidas candidatas com fórmula, unidade, janela, missingness e uso permitido;
-- 14 famílias de instrumentos quantitativos, qualitativos e mistos;
-- 15 regras de governança;
-- 12 cenários aprovados.
+## 2. Pesquisa contínua
 
-Caliper, xAPI, QTI, DDI, PROV-O, RO-Crate e DPV são mapeamentos candidatos. Não substituem a semântica interna do ARA.
+A Issue #3 permanece aberta para revisões futuras quando:
 
-O perfil pessoal permanece data-minimal. Disponibilidade de evento nunca autoriza coleta. Analytics pessoais, pedagógicos, de pesquisa e operacionais possuem autoridade, visibilidade e retenção separadas.
+- uma decisão arquitetural revelar incerteza material;
+- uma capacidade opcional adquirir caso de uso concreto;
+- uma avaliação produzir evidência nova;
+- legislação, acessibilidade ou padrões relevantes mudarem.
 
-## 3. Próxima fase — Issue #6
+Novas fontes não reabrem automaticamente baselines aprovadas; alterações exigem versão e decisão.
 
-A próxima fase é **Issue #6 — requisitos do produto e modelo de domínio**.
+## 3. Próxima fase — Issue #7
 
-Ela deverá integrar normativamente:
+A arquitetura deverá:
 
-- `ara.configuration-taxonomy.v1`;
-- `ara.research-framework.v1`;
-- atores e jornadas;
-- curso, módulo, lição, microssequência, card e placement;
-- conteúdo, prática, resposta, validator e feedback;
-- perfil, configuração efetiva e snapshot;
-- protocolo, condição, participante, assignment, instrumento, evento, medida, constructo e evidência;
-- autoria, observação, revisão, reparo, versão, publicação e retirada;
-- biblioteca, pastas, referências, coleções, programas e catálogo;
-- offline, sync, importação, exportação, confidencialidade, licença e exclusão;
-- classificação de capacidades core, opcionais, conectadas, experimentais e fora de escopo.
-
-A hipótese de composição por microssequências deverá ser aceita, revisada ou rejeitada explicitamente.
+- preservar os conceitos e invariantes aprovados;
+- separar requisitos duráveis, primeiro escopo, perfis de implantação e hipóteses técnicas;
+- comparar cliente, persistência local, metadata store, immutable artifacts, sync, identity, MCP, analytics e deployment;
+- definir ports/adapters provider-independent;
+- dimensionar personal, research, formal, self-hosted e public/open profiles;
+- especificar offline, conflito, revogação, backup, restore, migração e rollback;
+- registrar decisões por ADR;
+- validar o baseline na classe Galaxy A07;
+- manter estudo pessoal sem event store ou LLM obrigatórios.
 
 ## 4. Fases seguintes
 
-- **Issue #7:** arquitetura, perfis de implantação e ADRs;
-- **Issue #8:** UX, acessibilidade, sistema visual e protótipos;
-- **Issue #9:** releases, quality gates e backlog executável.
+- **Issue #8:** jornadas, telas, estados, acessibilidade, idiomas, protótipos e sistema visual;
+- **Issue #9:** releases, CI, quality gates e backlog executável;
+- **Implementação:** somente depois dos três gates.
 
-## 5. Não autorizações
+## 5. Não autorizações atuais
 
-As Issues #4 e #5 não autorizam:
-
-- schema ou event store de produção;
-- banco, Storage, IndexedDB ou sincronização;
-- dashboard ou coleta de participantes;
-- predição, early warning ou intervenção automática;
-- arquitetura, stack, UI ou código.
+A conclusão das Issues #4–#6 não autoriza código de produto, schema físico, stack, UI, sync, event store, participant collection ou adoção automática de protótipos históricos.
