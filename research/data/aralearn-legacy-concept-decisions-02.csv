@@ -1,0 +1,22 @@
+legacy_concept,prototype_decision,destination,rationale,confidence
+card,retain-and-narrow,orchestration container,A card may host one or more component instances but must not define representation or scoring semantics by itself.,high
+paragraph,retain-concept,document representation,Continuous text remains necessary but is a representation family rather than a universal fallback.,high
+choice,split,response model and validator,Selection is an action/response pattern usable with many representations; it should not be a representation resource.,high
+composite,replace,general activity composition,Composition belongs to orchestration and multipart task structure rather than a visual resource type.,high
+code,split-and-rebuild,code representation; editable response; runtime; tests; diagnostics,"Static code, learner code and executable runtime have different trust and validation contracts.",high
+table,retain-concept,tabular representation grammar,Tables remain valuable but learner actions and validation must be independently typed.,high
+flow,split-and-rebuild,control-flow grammar plus relational primitives,Control flow has domain semantics that a generic node diagram cannot fully preserve; current dual practice mechanics should not be inherited.,medium-high
+tree,merge-primitives-specialize-grammar,relational engine with hierarchy/taxonomy/proof-tree grammars,Single-parent structure can share graph primitives while preserving domain constraints.,medium
+graph,replace-implementation,semantic relational state plus renderer and predicate adapters,Canonical coordinates and label hacks must not define content; construction responses are required.,high
+relation_map,merge-and-specialize,bipartite relation grammar or matching response,The two-set model is useful but too narrow as a standalone universal resource.,medium
+matrix,split-and-expand,matrix representation; semantic cell/vector response; mathematical validator,A matrix is not merely a table and requires algebraic semantics in some tasks.,high
+plane,replace,dynamic geometry or coordinate-construction grammar,Textual result gaps do not support point/vector construction or geometric predicates.,high
+formula,replace,semantic mathematics component family,"A typed mathematical AST, input interpretation and property validation are needed.",high
+chart,split-and-expand,data model; visualization adapter; selection/construction response; validator,Data values and learner manipulations must be semantic rather than tied to chart labels.,high
+sequence,split,ordered-set response; timeline grammar; procedural grammar,"Chronology, generic ordering and procedure execution share order but differ epistemically.",medium-high
+annotated_text,split-and-rebuild,source document; learner annotations; stable selectors; review workflow,The legacy type displays author annotations but does not model learner-produced evidence selections.,high
+linguistic_example,retain-concept-expand-domain,linguistic representation grammar,Aligned form reading IPA gloss and translation remain useful but do not cover production syntax morphology or optional speech.,medium-high
+system_map,retire-as-generic-resource,domain grammars for architecture causal systems circuits and other models,The IT-centric node kinds reveal false generality; only shared relational primitives should survive.,high
+reaction,expand-and-specialize,chemistry grammar coordinated with symbolic particulate and macroscopic representations,A reaction equation is one layer of chemistry and should not be treated as the complete domain model.,high
+gap,split,response adapter for targetable fields,"A gap is a response presentation, not a general pedagogical resource or validator.",high
+after,replace,typed feedback contract,Feedback needs target timing authority content and relation to scoring rather than a single trailing string.,high
