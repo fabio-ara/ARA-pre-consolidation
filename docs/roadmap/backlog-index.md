@@ -1,85 +1,77 @@
 # Backlog e fluxo de trabalho do ARA
 
-**Estado:** documento operacional vigente  
+**Estado:** gate final de preparação  
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
 ## 1. Caminho
 
 ```text
-#3 evidência contínua
-→ #4 taxonomia — concluída
+#4 taxonomia — concluída
 → #5 pesquisa/analytics — concluída
 → #6 produto/domínio — concluída
-→ #7 arquitetura/ADRs — concluída
-→ #8 UX/UI — atual
-→ #9 releases/backlog executável
+→ #7 arquitetura — concluída
+→ #8 UX/UI — concluída
+→ #9 releases/quality/backlog — atual
 → implementação
 ```
 
-## 2. Autoridade
+A Issue #3 permanece contínua e a #2 paralela.
 
-Especificação aprovada da fase → ADR → issue operacional → síntese → evidência → histórico → conversa.
+## 2. Baselines obrigatórias
 
-Implementação não pode inventar comportamento, entidade, arquitetura ou tela.
+- `research/data/issue4-final-artifact-manifest-v1.json`;
+- `research/data/issue5-artifact-manifest-v1.json`;
+- `research/data/issue6-artifact-manifest-v1.json`;
+- `research/data/issue7-artifact-manifest-v1.json`;
+- `research/data/issue8-artifact-manifest-v1.json`.
 
-## 3. Baselines
+Issues de implementação devem apontar entidade/requisito, ADR, screen IDs, release, aceite, testes, docs e rollback.
 
-- `ara.configuration-taxonomy.v1`;
-- `ara.research-framework.v1`;
-- `docs/product/product-requirements-v1.md`;
-- `docs/product/domain-model-v1.md`;
-- `docs/architecture/reference-architecture-v1.md`;
-- ADRs `0001`–`0007`;
-- manifests das Issues #4–#7.
+## 3. UX aprovada
 
-## 4. Arquitetura aceita
+- task/question-oriented IA;
+- mobile one-primary-task and desktop contextual panes;
+- Study/Create/Review/Research/Admin based on role/capability;
+- offline, sync, conflict and failure first-class;
+- 36 screen contracts;
+- 15 journeys;
+- accessibility/localization/design tokens;
+- structural prototype;
+- evaluation plan.
 
-- TypeScript strict monorepo;
-- React/Vite installable PWA;
-- IndexedDB local projection/outbox;
-- Service Worker + Cache API;
-- OPFS optional adapter after profiling;
-- PostgreSQL connected metadata/relations/policies;
-- S3-compatible immutable artifacts;
-- OIDC connected identity;
-- revision/operation-log sync with explicit conflict;
-- bounded MCP application gateway;
-- optional segregated research data plane;
-- trusted capability registry; no course-supplied code.
+Implementation may refine presentation within approved behavior. Semantic or journey changes return to #6/#7/#8.
 
-Managed and self-hosted profiles share domain/package conformance. Supabase is a managed adapter candidate only.
+## 4. Work current — Issue #9
 
-## 5. Trabalho atual — Issue #8
+Required outputs:
 
-Issue #8 must produce screen-level contracts and evaluated prototypes for:
+- functional release sequence;
+- repository/module boundaries;
+- CI and branch protection policy;
+- Definition of Done;
+- security/privacy/accessibility/performance gates;
+- package/migration/rollback plan;
+- evidence package format;
+- AraLearn migration strategy;
+- issue templates for Codex;
+- executable implementation issues with explicit dependencies.
 
-- learner library and folders;
-- course download/materialization and offline study;
-- card cycle, feedback, progress, study review and resumption;
-- configuration profiles/overlays/overrides and effective diff;
-- ARA authoring workspace + chat/MCP operation status;
-- microsequence/placement/dependency composition;
-- comments/findings, review, repair and publication;
-- protocols, participants, instruments and question-oriented analytics;
-- workspace roles and institutional/public/confidential administration;
-- sync, conflict, unavailable capability, permission and failure;
-- locale/accessibility/responsive behavior.
+## 5. Permanent controls
 
-Every journey needs mobile/desktop/offline/permission/error states and visible strings in en, pt-BR and pt-PT.
+- no direct implementation from umbrella issues;
+- no hidden legacy/fallback/compatibility;
+- no course-supplied code;
+- no auto-merge of semantic conflicts;
+- no telemetry because event exists;
+- no UX invention by implementation;
+- no educational-effectiveness claim from conformance tests;
+- every release works end-to-end for its declared profile.
 
-## 6. Quality and boundaries
+## 6. Historical records
 
-- Galaxy A07-class first-scope benchmark;
-- baseline study without connection/LLM;
-- accessibility target WCAG 2.2 AA plus manual AT review;
-- no universal LMS dashboard;
-- no decorative gamification;
-- usability does not establish learning effectiveness;
-- UX findings cannot change domain/architecture without explicit return.
+Experiments #36–#40 remain non-normative; #42 deferred. Issues #50/#53 are accidental `not_planned` placeholders.
 
 ## 7. Next
 
-After Issue #8, Issue #9 defines branch protection, CI, releases, migration, evidence packages and executable Codex issues.
-
-Issues #50/#53 remain accidental `not_planned`; experiments #36–#40 non-normative; #42 deferred.
+Conclude Issue #9. Only its approved implementation subissues may start product code.
