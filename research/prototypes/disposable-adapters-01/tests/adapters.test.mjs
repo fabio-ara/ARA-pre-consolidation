@@ -69,3 +69,25 @@ test("source selector re-resolves and defers quality to human review", async () 
   assert.equal(result.evidence.selectors[0].resolution.method, "quote-context");
   assert.equal(resolveSelector(source.content, annotation.selector).state, "resolved");
 });
+
+test("all four adapters preserve canonical response round trips", () => {
+  const cases = [
+    [new MathAdapter(), mathInstance],
+    [new RelationalAdapter(), relationalInstance],
+    [new ProgrammingAdapter({ protectedTests: protectedProgrammingTests }), programmingInstance],
+    [new SourceArgumentAdapter(), sourceInstance],
+  ];
+  for (const [adapter, instance] of cases) {
+    active(adapter, instance);
+    const exported = adapter.exportResponse();
+    const clone = active(
+      adapter instanceof MathAdapter ? new MathAdapter()
+        : adapter instanceof RelationalAdapter ? new RelationalAdapter()
+          : adapter instanceof ProgrammingAdapter ? new ProgrammingAdapter({ protectedTests: protectedProgrammingTests })
+            : new SourceArgumentAdapter(),
+      instance,
+    );
+    clone.importResponse(exported);
+    assert.deepEqual(clone.exportResponse(), exported);
+  }
+});
