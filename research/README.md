@@ -44,6 +44,11 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/formal-search-round-01-screening-reason-counts.csv`: counts by screening decision and reason code.
 - `data/formal-search-round-01-screening-manual-overrides.csv`: documented manual changes and refined reasons.
 - `data/formal-search-round-01-screening-file-manifest.csv`: hashes for the complete screening package handed to the project owner.
+- `pt-BR/sintese-corpus-prioridade-a-01.md`: critical extraction and reclassification of the 26 priority-A publications.
+- `data/priority-a-formal-syntheses-round-01.csv`: structured extraction of the 12 formal evidence syntheses.
+- `data/priority-a-other-evidence-round-01.csv`: structured extraction of narrative reviews, empirical/product studies and the secondary appraisal.
+- `data/priority-a-overlap-clusters-round-01.csv`: review-overlap and study-family risks.
+- `data/priority-a-extraction-summary.json`: corrected evidence groups and access-depth counts.
 
 ### Search records
 
@@ -66,10 +71,11 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `library/referencias-sistemas-iniciais.bib`: official and academic references for related learning systems.
 - `library/referencias-formatos-feedback.bib`: references for response formats, scoring and feedback.
 - `library/referencias-programacao-movel-2023-2026.bib`: references for the post-2022 mobile programming update.
-- `requests/textos-integrais.md`: precise requests for inaccessible material.
+- `requests/textos-integrais.md`: general precise requests for inaccessible material.
+- `requests/textos-integrais-prioridade-a.md`: three priority full-text requests required to deepen the priority-A extraction.
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.
