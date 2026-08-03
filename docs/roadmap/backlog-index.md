@@ -92,7 +92,7 @@ A Issue #2 prossegue em paralelo quando questões jurídicas, institucionais ou 
 | #33–#34 | #35 | benchmark de sistemas e gêneros | evidência comparativa |
 | #4/P1 | #45 | prática, resposta, tentativas, feedback e consequências | síntese decisória P1 |
 | #4/P2 | #47 | progressão, sequência, revisão e scaffolding | síntese decisória P2 |
-| #4/P3 | branch P3 | autonomia, adaptação, acessibilidade e IA | síntese decisória P3 |
+| #4/P3 | #48 | autonomia, adaptação, acessibilidade e IA | síntese decisória P3 |
 
 ## 6. Issue #4 — estado dos pacotes
 
