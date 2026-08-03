@@ -1,168 +1,345 @@
-# Canonical backlog index
+# Backlog e fluxo de trabalho do ARA
 
-**Status:** canonical navigation document  
-**Last reviewed:** 3 August 2026  
-**Audience:** project owner, Codex and other development agents, external reviewers, research supervisors and contributors.
+**Estado:** documento operacional vigente  
+**Idioma:** `pt-BR`  
+**Última revisão:** 3 de agosto de 2026  
+**Público:** proprietário do projeto, Codex e outros agentes, colaboradores, avaliadores externos e investigação acadêmica.
 
-## 1. Purpose
+## 1. Função e navegação principal
 
-GitHub Issues and pull requests preserve the primary history of work. This index states how each item should be interpreted **now**.
+As Issues do GitHub são as unidades de trabalho autorizadas do ARA. Devem ser autossuficientes para sua finalidade: pesquisa, síntese, decisão, especificação, protótipo exploratório, implementação, validação ou avaliação.
 
-It does not replace issue protocols, PR evidence or committed research artifacts. It prevents historical exploration, superseded assumptions and current specifications from being treated as equivalent authorities.
+A navegação principal possui somente três documentos:
 
-## 2. Authority legend
+1. `docs/vision/product-vision.pt-BR.md` — produto pretendido;
+2. `docs/research/research-programme-index.pt-BR.md` — pesquisa concluída, lacunas e pacotes decisórios;
+3. este documento — fases, autoridade, rastreabilidade, issues e regras operacionais.
 
-| Authority | Meaning |
-|---|---|
-| `governing` | Controls current process or phase order. |
-| `normative-pending` | Will produce a future normative specification; its current body is a work mandate, not a completed decision. |
-| `evidence` | Completed or continuing research that may inform decisions but does not define the product by itself. |
-| `decision-synthesis` | Integrates evidence and provides a current recommendation; later normative phases accept, revise or reject it explicitly. |
-| `historical-experiment` | Recoverable exploratory work; non-normative unless adopted later through a product decision and ADR. |
-| `deferred` | Legitimate question not active in the current route. |
+Relatórios, datasets, protocolos, ADRs, especificações e planos de release são entregas das issues correspondentes. Não devem repetir integralmente os três documentos principais.
 
-## 3. Current route
+## 2. Modelo de registro e autoridade
+
+### 2.1 Classes de fonte
+
+- **Fonte histórica primária:** documentos iniciais, histórico de edição das issues, comentários, PRs, diffs, commits, código, exports, hashes, datasets, testes e registros oficiais. Demonstra o que efetivamente ocorreu, mas não constitui automaticamente requisito atual.
+- **Evidência:** protocolo, busca, triagem, extração, revisão, benchmark, auditoria ou avaliação. Informa recomendações; não autoriza implementação diretamente.
+- **Síntese decisória:** integra evidência, alternativas, recomendação, riscos e incertezas. Orienta a fase normativa seguinte.
+- **Especificação aprovada:** taxonomia, requisito, modelo de domínio, arquitetura, ADR, contrato, UX ou plano de release aprovado. Governa o trabalho posterior no respectivo escopo.
+- **Registro de implementação:** issue de implementação, código, teste, migração, evidência de release e documentação operacional.
+
+### 2.2 Precedência
+
+Para comportamento atual e engenharia, use esta ordem:
+
+1. especificação aprovada da fase relevante;
+2. ADR ou decisão estratégica aprovada;
+3. issue operacional vigente e este índice;
+4. síntese decisória aceita;
+5. evidência e datasets;
+6. issue, PR ou protótipo histórico;
+7. conversa ou memória não registrada.
+
+Para afirmar o que ocorreu historicamente, prevalecem as fontes históricas primárias. Para afirmações bibliográficas, prevalecem a fonte citada, o registro de extração e o estado de acesso.
+
+A ausência de classificação não torna um artefato normativo.
+
+## 3. Caminho linear do projeto
 
 ```text
-#3 evidence programme
-→ completed integrated synthesis (#30 / PR #43)
-→ #4 parameter taxonomy
-→ #5 research protocols and analytics
-→ #6 product requirements and domain model
-→ #7 architecture, stack and ADRs
-→ #8 UX/UI
-→ #9 functional releases and implementation
+#3 pesquisa bibliográfica, comparativa e contextual
+→ síntese crítica e recomendação
+→ #4 taxonomia de parametrização
+→ #5 protocolos, instrumentação e analytics
+→ #6 requisitos e modelo de domínio
+→ #7 arquitetura, stack, perfis e ADRs
+→ #8 UX/UI e acessibilidade
+→ #9 releases funcionais
+→ issues de implementação autossuficientes para o Codex
+→ validação e avaliação
 ```
 
-Issue #2 proceeds in parallel when its legal and institutional questions become decision-relevant.
+Uma possibilidade encontrada na pesquisa não se transforma automaticamente em requisito, contrato, protótipo, biblioteca ou implementação.
 
-## 4. Governing and future normative issues
+A Issue #2 prossegue em paralelo quando questões jurídicas, institucionais ou de identidade se tornam relevantes à decisão.
 
-| Issue | Logical phase | Type | State | Authority | Expected canonical output | Dependencies | Current interpretation |
-|---|---:|---|---|---|---|---|---|
-| #10 | 00 | governance and roadmap | open | governing | roadmap, gates and execution rules | repository governance | Start-here issue. Canonical documents take precedence over historical issue wording. Current next work is #4, not the already completed #30. |
-| #2 | 10 | legal and identity research | open | normative-pending | IP, licensing, trademark and institutional baseline | governance; official legal/institutional sources | Parallel work. Does not block #4 unless a concrete legal dependency appears. |
-| #3 | 20 | master evidence programme | open | governing evidence | protocols, corpora, source status, bibliographies, syntheses and research agenda | governance | Continuing research infrastructure. Not a single review that must be “completed forever”. |
-| #4 | 30 | configuration taxonomy | open | normative-pending | parameter taxonomy, reference profiles, maturity and authority rules | #30 synthesis; evidence packages under #3 | **Current active product-definition work.** Must use focused bibliographic packages and recommendations, not raw evidence dumps. |
-| #5 | 40 | research protocols and analytics | open | normative-pending | protocol, condition, event, measure, instrument and governance model | accepted #4 taxonomy; evidence under #3 | Future phase. Must distinguish event, measure, construct and inference. |
-| #6 | 50 | product requirements and domain | open | normative-pending | product requirements and normative domain model | #4, #5, #30; relevant #2 findings | Accepts or rejects concepts. Historical component contracts do not define the domain. |
-| #7 | 60 | architecture and stack | open | normative-pending | reference architecture, stack decisions, deployment profiles and ADRs | accepted #5 and #6 outputs | Separates durable requirements, first-scope constraints, profiles and technical hypotheses. |
-| #8 | 70 | UX, accessibility and visual system | open | normative-pending | complete journey, information architecture, screen and visual specifications | #4–#7 | Codex may not invent user-facing behavior during implementation. |
-| #9 | 80 | releases and implementation planning | open | normative-pending | release plan and executable implementation backlog | approved #6–#8 | Implementation issues must trace to canonical requirements, decisions, contracts and screens. |
+## 4. Issues principais
 
-## 5. Decision synthesis
+| Issue | Fase | Tipo | Estado | Autoridade e saída esperada |
+|---|---:|---|---|---|
+| #10 | 00 | governança e roadmap | aberta | Coordena fases, gates e regras. Deve apontar para os três documentos principais. |
+| #2 | 10 | pesquisa jurídica e identidade | aberta/paralela | Produzirá a base de propriedade intelectual, licenciamento, marca e questões institucionais. |
+| #3 | 20 | programa de evidência | aberta/contínua | Governa protocolos, buscas, corpora, bibliografia e sínteses. Não precisa ser “encerrada para sempre”. |
+| #4 | 30 | taxonomia de parametrização | aberta/ativa | Produzirá parâmetros, perfis, maturidade, autoridade, precedência, conflitos e handoff para #5 e #6. |
+| #5 | 40 | protocolos e analytics | futura | Produzirá condições, instrumentos, eventos, medidas, governança e inferências permitidas. |
+| #6 | 50 | produto e domínio | futura | Aceitará ou rejeitará conceitos e definirá atores, jornadas, entidades, estados e capacidades normativas. |
+| #7 | 60 | arquitetura e stack | futura | Separará requisitos duráveis, primeiro recorte, perfis e hipóteses; registrará decisões por ADR. |
+| #8 | 70 | UX, acessibilidade e sistema visual | futura | Definirá jornadas, telas, estados, transições e avaliação antes da implementação user-facing. |
+| #9 | 80 | releases e implementação | futura | Produzirá releases funcionais e issues executáveis pelo Codex. |
 
-| Issue | PR | State | Authority | Canonical outputs | Current interpretation |
-|---|---:|---|---|---|---|
-| #30 | #43 | closed/completed | decision-synthesis | `research/pt-BR/sintese-configuracao-aralearn-horizonte-externo-01.md`; decision maps and JSON | Current recommendation: AraLearn reference profile + broad discovery + selective normatization + governed extensibility. Direct input to #4. |
+## 5. Pesquisa e sínteses concluídas
 
-## 6. Evidence programme: protocols, searches and syntheses
+| Issue | PR(s) | Resultado | Uso atual |
+|---|---:|---|---|
+| #14 | #15 | primeira síntese de revisões centrais | evidência inicial sobre recuperação, quizzes, espaçamento e feedback |
+| #16 | #21–#23 | busca formal PubMed/ERIC e deduplicação | corpus formal de 1.471 publicações |
+| #17 | #19 | formatos de resposta e feedback | evidência-base do P1 |
+| #18 | #20 | programação móvel 2023–2026 | evidência parcial e situada |
+| #24 | #25 | triagem de título e resumo | relevância inicial, não avaliação de qualidade |
+| #26 | #27 | extração do corpus prioridade A | classificação e extração com estados de acesso explícitos |
+| #28 | #29 | sobreposição de estudos primários | prevenção de dupla contagem e núcleo não redundante |
+| #30 | #43 | síntese AraLearn + horizonte externo | direção: referência AraLearn, descoberta ampla, normatização seletiva e extensibilidade governada |
+| #31 | #32 | auditoria dos resources do AraLearn | referência implementada, não decisão automática de migração |
+| #33–#34 | #35 | benchmark de sistemas e gêneros | precedentes, contrastes e riscos; não requisitos automáticos |
 
-| Issue | PR(s) | Type | State | Authority | Main output / role | Limit for current use |
-|---|---:|---|---|---|---|---|
-| #3 | #11, #12, #13 and all child work | master evidence programme | open | evidence/governing | protocol, antecedents, source schemas and research index | Broad programme; individual findings require synthesis before normatization. |
-| #14 | #15 | review of reviews | closed | evidence | first central synthesis on flashcards, retrieval, spacing, quizzes, feedback and mobile programming | Early evidence core; not exhaustive across domains or parameters. |
-| #16 | #21, #22, #23 | formal database search | closed | evidence | PubMed/ERIC execution, exports, hashes and deduplication; 1,471 unique publications | Search scope is concentrated in the first fronts. |
-| #17 | #19 | focused review | closed | evidence | response formats, scoring, feedback, timing and retry | Initial synthesis; domain transfer requires qualification. |
-| #18 | #20 | focused update | closed | evidence | mobile programming update and task matrix | Provisional post-2022 update, not general programming pedagogy. |
-| #24 | #25 | screening | closed | evidence | title/abstract screening of 1,471 records | Single-reviewer first pass; relevance is not quality. |
-| #26 | #27 | priority extraction | closed | evidence | classification and extraction of 26 priority publications | Some full texts remain unavailable; source status explicit. |
-| #28 | #29 | overlap mapping | closed | evidence | primary-publication overlap and non-redundant synthesis core | Bibliographic overlap, not a new meta-analysis. |
+## 6. Issue #4 — estado dos pacotes
 
-## 7. AraLearn and external system evidence
+### P1 — concluído
 
-| Issue | PR | Type | State | Authority | Main output / role | Current interpretation |
-|---|---:|---|---|---|---|---|
-| #31 | #32 | source audit | closed | evidence | canonical audit of 18 AraLearn resources and practice limits | Implemented reference baseline. Preserve/revise labels were provisional, not migration decisions. |
-| #33 | #35 | comparative system benchmark | closed | evidence | audit of 21 systems and capability families | Useful patterns and counterexamples. `legacy-seed` wording does not make AraLearn disposable. |
-| #34 | #35 | scholarly genre mapping | closed | evidence | neighbouring genres and literature beyond flashcards | Contextual framing, not a requirement to implement every genre. |
+**Escopo:** prática, resposta, tentativas, revelação, feedback, consequências e precedência de acessibilidade.  
+**PR:** #45  
+**Commit incorporado em `main`:** `eb3c6bdc16685a4d8e3b912e96b662d4735e4cdb`  
+**Estado:** pacote concluído, pendente apenas da síntese final da Issue #4 com P2–P5.
 
-## 8. Historical component experiments
+Artefatos preservados integralmente:
 
-| Issue | PR | State | Authority | Preserved result | Normative status / reactivation condition |
-|---|---:|---|---|---|---|
-| #36 | #37 | closed | historical-experiment | component-contract prototypes for four stress families | Non-normative. Reuse requires #6 need and #7 decision. |
-| #38 | #39 | closed | historical-experiment | disposable adapters, tests, measurements and negative findings | Non-production. Valid engineering evidence only. |
-| #40 | #41 | closed/completed | historical-experiment | version 0.2, migrations, boundary audits and untrusted-code decision record | Protocol and results preserved. Not the ARA course contract. |
-| #42 | — | closed/not planned | deferred | full runtime bake-off protocol for MathLive, Cytoscape.js and Recogito | No runtime result exists. May return only after accepted product need and ADR question. |
+- `research/searches/2026-08-03-p1-pratica-resposta-feedback-protocolo.md`;
+- `research/data/p1-evidence-corpus-01.csv`;
+- `research/data/p1-parameter-records-01.csv`;
+- `research/data/p1-profile-comparison-01.csv`;
+- `research/data/p1-decision-synthesis-01.json`;
+- `research/pt-BR/p1-sintese-pratica-resposta-tentativas-feedback-consequencias-01.md`;
+- `research/library/referencias-formatos-feedback.bib`;
+- atualização de `docs/research/research-programme-index.pt-BR.md`.
 
-## 9. Pull request chronology
+Resultados vigentes do P1:
 
-| PR | Related issue(s) | Primary contribution | Current authority |
-|---:|---|---|---|
-| #1 | governance | repository governance, language and licensing baseline | governing source |
-| #11 | #3 | master bibliographic protocol | evidence infrastructure |
-| #12 | #3 | formative app antecedents | evidence |
-| #13 | #3 | expanded system antecedents and search fronts | evidence |
-| #15 | #14 | first review-of-reviews synthesis | evidence |
-| #19 | #17 | response and feedback synthesis | evidence |
-| #20 | #18 | mobile programming update | evidence |
-| #21 | #16 | formal search preparation | method record |
-| #22 | #16 | validation of database exports | evidence/method |
-| #23 | #16 | deduplication and final corpus count | evidence/method |
-| #25 | #24 | title and abstract screening | evidence |
-| #27 | #26 | priority corpus extraction | evidence |
-| #29 | #28 | overlap mapping | evidence |
-| #32 | #31 | AraLearn source audit | evidence baseline |
-| #35 | #33, #34 | external systems and scholarly genres | comparative evidence |
-| #37 | #36 | component contracts 0.1 | historical experiment |
-| #39 | #38 | disposable adapters | historical experiment |
-| #41 | #40 | component contracts 0.2 and boundary audits | historical experiment |
-| #43 | #30 | integrated reference/external synthesis | current decision synthesis |
+- 21 dimensões aceitas para a primeira taxonomia;
+- perfil `aralearn-reference` preservado como configuração não punitiva, não como default universal;
+- perfis/overlays contrastantes: `self-directed-mastery`, `formal-formative-course`, `summative-institutional`, `research-condition` e `accessibility-overlay`;
+- prática para aprender separada de medição e avaliação consequencial;
+- formato de resposta separado de demanda cognitiva;
+- validade, autoridade, crédito, tentativas, pistas, reveal, feedback e consequências modelados como dimensões combináveis;
+- acessibilidade com precedência superior a preferências ordinárias;
+- coleta de tentativas desligada por padrão e adiada para P4/#5;
+- confiança e avaliação automática autoritativa de respostas abertas adiadas;
+- ranking público rejeitado na primeira taxonomia ativa;
+- nenhum schema, adapter, stack, UX, telemetry ou código autorizado.
 
-## 10. Current canonical document set
+O P1 não deve ser reduzido, reinterpretado ou substituído por resumos posteriores. Em caso de dúvida, prevalecem os artefatos listados e a síntese decisória estruturada.
 
-| Document | Status | Purpose |
-|---|---|---|
-| `docs/vision/product-vision.pt-BR.md` | current | Defines the product the project is trying to build. |
-| `docs/history/reconstrucao-historica-pesquisa-decisoes.pt-BR.md` | current | Coherent historical reconstruction with primary-source boundaries. |
-| `docs/roadmap/backlog-index.md` | current | Interprets issues and PRs and identifies current route. |
-| `docs/governance/document-authority-and-traceability.md` | current | Defines which source governs when records conflict. |
-| `docs/governance/work-item-standard.md` | current | Required structure for future research, decision and implementation work. |
-| `docs/research/research-programme-index.pt-BR.md` | current | Organizes completed evidence and the next bibliographic packages. |
-| Issue #10 | governing issue | Phase order and gates. |
-| Issue #30 / PR #43 outputs | decision synthesis | Direct handoff to #4. |
+### P2 — próximo pacote
 
-Future canonical documents will be added only when their phases produce substantive content:
+**Escopo:** progressão, sequenciamento, espaçamento, revisão, exemplos resolvidos e scaffolding.
 
-- parameter taxonomy;
-- research and analytics model;
-- product requirements;
-- domain model;
-- reference architecture;
-- stack and ADRs;
-- UX/UI specification;
-- release plan.
+Deve pesquisar e recomendar, sem implementar:
 
-Empty placeholders must not be presented as completed specifications.
+- mastery e critérios de progressão;
+- learner pacing e autoridade sobre a sequência;
+- spacing e interleaving;
+- agenda, carga, adiamento e retomada de revisão;
+- exemplos resolvidos, fading, hints e scaffolding;
+- carga cognitiva, segmentação e estudo fragmentado;
+- item equivalente e evidência de domínio.
 
-## 11. Rules for Codex and development agents
+### P3–P5
 
-Before work:
+- **P3:** autonomia, autorregulação, adaptação, acessibilidade e assistência por IA;
+- **P4:** instrumentação, condições experimentais, analytics e governança;
+- **P5:** autoria, revisão, reparo, publicação e políticas institucionais.
 
-1. read `docs/vision/product-vision.pt-BR.md`;
-2. read this index;
-3. read the relevant current canonical specification;
-4. read the governing issue;
-5. consult historical issues only for evidence or rationale.
+Pacotes são subdivisões operacionais da Issue #4; não geram novas issues automaticamente.
 
-Codex must not:
+## 7. Experimentos históricos
 
-- infer current requirements from a historical prototype;
-- implement from an issue whose authority is `evidence` or `historical-experiment`;
-- choose a stack before approved ADRs;
-- invent UX;
-- convert a research finding directly into code;
-- silently revive deferred work.
+| Issue | PR | Classificação | Interpretação vigente |
+|---|---:|---|---|
+| #36 | #37 | `historical-experiment` | contratos 0.1 de quatro famílias; não normativos |
+| #38 | #39 | `historical-experiment` | adapters descartáveis e achados negativos; não produção |
+| #40 | #41 | `historical-experiment` concluído | contratos 0.2, migrações e auditorias; não é o contrato do ARA |
+| #42 | — | `deferred` | protocolo de bake-off preservado, sem resultado de runtime |
 
-## 12. Update policy
+Esses trabalhos podem informar falhas, testes, segurança e padrões. Não selecionam stack, não definem requisitos e só podem retornar mediante necessidade aceita em #6 e pergunta arquitetural em #7.
 
-Update this index when:
+## 8. Classificação obrigatória das issues
 
-- a new issue or PR is created;
-- an issue changes authority or phase;
-- a decision synthesis is accepted or superseded;
-- a canonical document is added or revised;
-- a release is planned or completed.
+Cada issue deve declarar:
 
-Do not rewrite historical issue protocols merely to match current terminology. Correct their interpretation here and in canonical documents.
+- **fase:** `00`, `10`, `20`, `25`, `30`, `40`, `50`, `60`, `70`, `80` ou `90`;
+- **tipo:** governança, pesquisa jurídica, protocolo, extração, análise comparativa, síntese decisória, taxonomia, especificação de produto, arquitetura/ADR, UX, protótipo exploratório, implementação, validação ou avaliação;
+- **autoridade:** `governing`, `normative-pending`, `accepted-normative`, `decision-synthesis`, `evidence`, `historical-experiment`, `deferred`, `superseded` ou `rejected`;
+- **fontes governantes**;
+- **dependências**;
+- **saída canônica ou verificável**;
+- **não autorizações**.
+
+Uma issue pode conter mais de uma atividade somente quando a dependência é direta e as saídas permanecem separáveis.
+
+## 9. Estrutura mínima de toda issue
+
+```markdown
+## Classification
+- Phase:
+- Type:
+- Authority:
+- Governing sources:
+- Expected output:
+
+## Context and decision problem
+## Intended outcome
+## Evidence and prior decisions
+## Scope
+## Out of scope and non-authorizations
+## Dependencies
+## Method or proposed approach
+## Risks and cross-cutting effects
+## Deliverables
+## Acceptance criteria
+## Validation
+## Documentation and traceability
+```
+
+Efeitos transversais relevantes devem cobrir, conforme o caso: pedagogia, validade de pesquisa, privacidade e ética, acessibilidade, segurança, mobile/offline, desempenho e custo, licenciamento e autoria por MCP.
+
+## 10. Regras por tipo de trabalho
+
+### 10.1 Pesquisa
+
+Uma issue de pesquisa deve registrar:
+
+- pergunta e decisão que pretende informar;
+- protocolo ou método;
+- bases, fontes, idiomas, datas e queries exatas quando aplicável;
+- amostragem de plataformas, domínios, stakeholders e implantações;
+- inclusão, exclusão, suficiência ou saturação;
+- estado de acesso: texto integral, manuscrito, resumo, metadados, citação secundária, documentação oficial, experiência pessoal, código/schema primário ou fonte inacessível;
+- extração, limitações, síntese e recomendação.
+
+Não se deve declarar pesquisa sistemática, exaustiva, causal ou duplamente revisada sem método correspondente.
+
+A entrega final deve incluir conclusão, caminho recomendado, alternativas adiadas/rejeitadas, justificativa, riscos, incertezas decisivas e classificação das implicações. O proprietário não deve receber um corpus bruto como produto final.
+
+### 10.2 Síntese e decisão
+
+A síntese deve comparar alternativas limitadas e inteligíveis, incluindo benefícios, custos, evidência, riscos e reversibilidade. O estado final deve ser `recommended`, `accepted`, `deferred`, `rejected` ou `owner-decision-required`.
+
+A escolha do proprietário somente é solicitada quando persiste conflito estratégico, ético, pedagógico ou valorativo que a evidência não resolve. A recomendação deve ser explícita.
+
+### 10.3 Protótipo exploratório
+
+Exige:
+
+- incerteza específica;
+- evidência ou hipótese;
+- motivo pelo qual análise não basta;
+- critério de falsificação;
+- menor protótipo adequado;
+- estado não normativo;
+- regra de descarte, retenção ou adoção;
+- fase posterior com autoridade para aceitar o resultado.
+
+Não pode selecionar stack implicitamente, criar contrato permanente por conveniência, tornar-se dependência automática, ocultar riscos ou alegar efetividade educacional.
+
+### 10.4 Produto e domínio
+
+Deve importar parâmetros e decisões aceitos, definir atores, jornadas, entidades, estados, invariantes e lifecycle, classificar núcleo/extensão/conectado/experimental/fora de escopo e registrar questões que pertencem à arquitetura ou UX.
+
+### 10.5 Arquitetura e ADR
+
+Deve informar requisito servido, perfil de implantação, caráter durável ou de primeiro recorte, workloads, alternativas, segurança, privacidade, acessibilidade, offline, desempenho, operação, custo, saída/migração, protótipo usado, recomendação e decisão aceita.
+
+Popularidade, uso atual no AraLearn ou existência de protótipo não bastam como justificativa.
+
+### 10.6 UX
+
+Deve referenciar ator, jornada, estado/transição, requisito, parâmetro, permissão, falha, mobile/desktop/offline, acessibilidade, protótipo e método de avaliação.
+
+A implementação não pode inventar comportamento user-facing ausente de especificação aprovada.
+
+### 10.7 Implementação para o Codex
+
+A issue deve ser autossuficiente e identificar:
+
+- objetivo e valor para o usuário;
+- release e requisito de origem;
+- conceito de domínio;
+- ADR ou arquitetura aceita;
+- versão de contrato;
+- jornada e tela, quando aplicável;
+- escopo e exclusões;
+- módulos e dados afetados;
+- comportamento esperado e falhas;
+- impacto de migração, segurança, privacidade, acessibilidade, offline e desempenho;
+- critérios de aceite;
+- plano de testes;
+- documentação;
+- rollback ou recuperação.
+
+Quando requisito, ADR, contrato ou UX necessário estiver ausente, o Codex não deve inventá-lo: a lacuna retorna à fase apropriada.
+
+## 11. Cadeia de rastreabilidade
+
+Uma função normativa deve ser recuperável por:
+
+```text
+problema ou pergunta
+→ evidência
+→ extração/análise
+→ síntese decisória
+→ requisito aceito
+→ conceito de domínio/política
+→ ADR/arquitetura
+→ jornada e tela
+→ release
+→ issue de implementação
+→ código e testes
+→ avaliação
+```
+
+Nem toda função exige todos os elos; qualquer omissão deve ser justificada.
+
+## 12. Pull requests e conclusão
+
+Uma PR substancial deve registrar:
+
+- issues atendidas;
+- especificações ou índices atualizados;
+- evidência produzida ou decisão implementada;
+- validação executada;
+- limitações;
+- efeitos de migração e rollback;
+- se encerra a issue;
+- follow-up sem abertura automática, salvo autorização.
+
+Uma issue só é concluída quando entregas e critérios de aceite estão verificados, limitações são explícitas, o índice foi atualizado quando necessário e nenhum critério inacabado foi transferido silenciosamente.
+
+Bloqueio ambiental ou pesquisa parcial deve ser classificado como parcial, adiado ou inconclusivo, não como concluído.
+
+## 13. Avaliação externa e reutilização acadêmica
+
+O registro deve permitir distinguir:
+
+- intenção inicial;
+- método e evidência;
+- mudanças e justificativas;
+- alternativas consideradas;
+- decisões vigentes;
+- incertezas;
+- implementação e avaliação realizadas.
+
+Dissertação, tese ou artigo futuro deverá formular pergunta própria, selecionar o corpus relevante, citar literatura original, distinguir desenvolvimento de efetividade educacional, declarar assistência por IA, respeitar privacidade/licenciamento e não apresentar planos como resultados.
+
+## 14. Política documental e atualização
+
+O conjunto principal permanece limitado a visão, programa de pesquisa e backlog. Um novo documento transversal exige função exclusiva, responsável de manutenção e ausência demonstrável de duplicação.
+
+Ao mudar uma decisão:
+
+1. atualizar ou produzir síntese decisória;
+2. registrar por que evidência ou trade-off mudou;
+3. aprovar a decisão revisada;
+4. atualizar a especificação pertinente;
+5. atualizar este índice;
+6. criar migração ou implementação somente depois;
+7. preservar o estado anterior no histórico do GitHub.
+
+Não se deve reescrever silenciosamente o passado para sugerir que a decisão final sempre existiu.
