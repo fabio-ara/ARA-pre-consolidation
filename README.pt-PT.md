@@ -14,7 +14,7 @@ curso → módulo → lição → microssequência → card
 
 ## Fase atual
 
-O projeto encontra-se na fase de investigação e definição do produto. A Issue #4 governa a taxonomia ativa. Os Pacotes P1 a P4 foram concluídos; o próximo é o P5 — autoria, revisão, reparação, publicação e políticas institucionais. A implementação do novo produto ainda não começou.
+Os Pacotes P1 a P5 da Issue #4 foram concluídos. A próxima entrega é a síntese integrada final da primeira taxonomia de configuração; a implementação do novo produto ainda não começou.
 
 ## Começar por aqui
 

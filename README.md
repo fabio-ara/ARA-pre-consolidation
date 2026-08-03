@@ -14,7 +14,7 @@ course → module → lesson → microsequence → card
 
 ## Current stage
 
-The project is in research and product definition. Issue #4 governs the active configuration taxonomy. Packages P1 through P4 are complete; P5—authorship, review, repair, publication and institutional policies—is next. The new product has not entered implementation.
+The project is in research and product definition. Packages P1 through P5 under Issue #4 are complete. The next deliverable is the integrated final synthesis of the first configuration taxonomy; the new product has not entered implementation.
 
 ## Start here
 
