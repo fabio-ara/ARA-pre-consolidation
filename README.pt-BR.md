@@ -12,18 +12,18 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 ## Estágio atual
 
-As Issues #4–#7 foram concluídas: configuração, pesquisa/analytics, produto/domínio e arquitetura de referência. A fase atual é a Issue #8 — especificação completa de UX, acessibilidade e sistema visual. A implementação do produto ainda não começou.
+As Issues #4–#8 foram concluídas: configuração, pesquisa/analytics, produto/domínio, arquitetura e especificação completa de UX. A Issue #9 é a última fase de preparação — releases funcionais, quality gates e backlog executável. A implementação do produto ainda não começou.
 
-## Comece por aqui
+## Caminho canônico
 
 1. [Visão do produto](docs/vision/product-vision.pt-BR.md)
-2. [Requisitos do produto](docs/product/product-requirements-v1.md)
+2. [Requisitos](docs/product/product-requirements-v1.md)
 3. [Modelo de domínio](docs/product/domain-model-v1.md)
-4. [Arquitetura de referência](docs/architecture/reference-architecture-v1.md)
-5. [Programa de pesquisa](docs/research/research-programme-index.pt-BR.md)
+4. [Arquitetura](docs/architecture/reference-architecture-v1.md)
+5. [UX](docs/ux/ux-specification-v1.md)
 6. [Backlog](docs/roadmap/backlog-index.md)
 
-GPT+MCP fornece autoria semântica delimitada; o ARA oferece controle humano determinístico e visível. Pesquisa, produto, arquitetura, UX e implementação permanecem gates separados.
+O protótipo estrutural está em [`prototypes/ux-v1/`](prototypes/ux-v1/). Pesquisa, produto, arquitetura, UX e implementação permanecem gates separados.
 
 ## Governança e licenciamento
 
