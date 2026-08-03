@@ -26,6 +26,8 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `pt-BR/antecedentes-aplicativos.md`: situated account of formative applications, MOOCs and learning environments.
 - `pt-BR/enquadramento-genero-ara-01.md`: provisional scholarly and product-genre framing beyond flashcards.
 - `pt-BR/briefing-redesenho-resources-primeiros-principios-01.md`: first-principles brief for representations, activities, responses, validators and runtimes.
+- `pt-BR/prototipos-contratos-componentes-primeiros-principios-01.md`: schema-level prototype synthesis across four response families.
+- `pt-BR/registro-decisoes-legado-aralearn-prototipos-01.md`: provisional retain, split, replace, merge and retire decisions for AraLearn concepts.
 
 ### Syntheses and structured data
 
@@ -73,6 +75,19 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/cross-domain-knowledge-domain-coverage-01.csv`: coverage of knowledge domains absent or weak in the AraLearn-origin corpus.
 - `data/structured-learning-literature-01.csv`: exploratory scholarly map for structured interactive learning environments.
 - `data/cross-domain-benchmark-summary-01.json`: machine-readable benchmark and genre conclusions.
+- `data/component-contract-comparison-01.csv`: cross-track comparison of representation, activity, response, validity, authority and domain grammar.
+- `data/component-contract-accessibility-security-01.csv`: accessibility, offline and security requirements by prototype family.
+- `data/aralearn-legacy-concept-decisions-02.csv`: prototype-informed decisions for AraLearn legacy concepts.
+- `data/component-contract-validation-report-01.json`: reproducible JSON Schema validation result and limitations.
+- `data/component-contract-prototype-summary-01.json`: machine-readable conclusions and next work.
+- `data/component-contract-file-manifest-01.csv`: sizes and SHA-256 hashes for the prototype artifacts.
+
+### Prototype contracts
+
+- `prototypes/component-contracts-01/README.md`: package scope, files, reproduction command and normative limits.
+- `prototypes/component-contracts-01/schemas/`: shared manifest, lifecycle and four domain-family schemas.
+- `prototypes/component-contracts-01/examples/`: manifests, complete instances, validation scenarios and microsequences.
+- `prototypes/component-contracts-01/validate_examples.py`: local Draft 2020-12 validation script.
 
 ### Search records
 
@@ -102,6 +117,6 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28; canonical AraLearn resource auditing is governed by Issue #31; cross-domain system benchmarking is governed by Issue #33; scholarly genre mapping is governed by Issue #34.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28; canonical AraLearn resource auditing is governed by Issue #31; cross-domain system benchmarking is governed by Issue #33; scholarly genre mapping is governed by Issue #34; first-principles component-contract prototyping is governed by Issue #36.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.
