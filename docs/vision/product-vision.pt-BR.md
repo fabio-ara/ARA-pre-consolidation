@@ -3,51 +3,55 @@
 **Estado:** canônico para a fase de pesquisa e definição do produto  
 **Idioma de trabalho:** `pt-BR`  
 **Última consolidação:** 3 de agosto de 2026  
-**Autoridade:** consolida a visão inicial, a memória do sucessor do AraLearn, a clarificação estratégica posterior e a síntese integrada da Issue #30. Não substitui as fontes históricas; governa a interpretação atual delas.
+**Autoridade:** consolida a visão inicial, a memória do sucessor do AraLearn, as clarificações estratégicas do proprietário, a síntese integrada da Issue #30 e os Pacotes P1–P3 da Issue #4. Não substitui as fontes históricas; governa sua interpretação atual.
 
 ## 1. Definição do produto
 
 ARA — Ambiente de Recursos de Aprendizagem / Learning Resources Environment — será o sucessor direto do AraLearn.
 
-O produto preservará a experiência funcional que já demonstrou valor no AraLearn, mas será reconstruído sobre uma arquitetura deliberadamente escolhida para:
+O produto preservará a experiência funcional que demonstrou valor no AraLearn, mas será reconstruído para oferecer:
 
-- parametrização pedagógica e experimental;
+- autoria, revisão, auditoria e reparo de cursos assistidos por GPT com MCP;
+- visualização e intervenção direta do usuário durante a construção;
+- parametrização pedagógica, operacional e experimental;
 - pesquisa acadêmica reproduzível;
-- autoria, revisão e reparo por ChatGPT com MCP;
 - estudo mobile-first e offline;
+- resources estruturados e validação determinística onde adequada;
+- versionamento, provenance e publicação explícita;
 - extensibilidade governada;
-- portabilidade de infraestrutura;
+- infraestrutura portável;
 - adoção pessoal, acadêmica e institucional.
 
-ARA não é apenas o AraLearn com mais opções. Também não é uma plataforma universal que deve implementar antecipadamente toda interação educacional possível.
+ARA não é apenas o AraLearn com mais opções. Também não é uma plataforma universal que implementará antecipadamente toda possibilidade educacional.
 
-A direção recomendada é:
+A direção vigente é:
 
 ```text
-experiência validada do AraLearn
-+ investigação externa ampla, representativa e finita
+experiência funcional do AraLearn
++ pesquisa ampla, representativa e finita
 + parametrização explícita e versionada
-+ kernel pequeno e controlado
-+ resources e capacidades independentes
++ autoria GPT+MCP com controle humano visível no ARA
++ kernel pequeno e capacidades separadas
 + infraestrutura por contratos e adapters
-+ pesquisa, decisão, arquitetura e UX antes da implementação
++ pesquisa → decisão → requisitos → arquitetura → UX → implementação
 ```
 
 ## 2. Continuidade com o AraLearn
 
-### 2.1 Preservar como referência comportamental
+### 2.1 Preservar como referência
 
-- estrutura `curso → módulo → lição → microssequência → card`;
+- estrutura inicial `curso → módulo → lição → microssequência → card`;
 - separação entre teoria e prática;
-- progressão simples e retomada rápida;
+- progressão estrutural separada de acerto ou mastery;
+- retomada rápida e estado de estudo não punitivo;
 - estudo mobile-first e offline;
 - resources estruturados;
 - validação determinística onde metodologicamente adequada;
-- autoria, auditoria e reparo por ChatGPT com MCP;
+- autoria, auditoria e reparo por GPT com MCP;
 - comentários e observações situados;
 - publicação e aplicação explícitas;
 - curadoria e autoridade humanas;
-- aprendizagem derivada dos casos reais, defeitos e correções do AraLearn.
+- aprendizagem acumulada dos defeitos e correções reais do AraLearn.
 
 ### 2.2 Não herdar automaticamente
 
@@ -58,271 +62,312 @@ experiência validada do AraLearn
 - acoplamento com Supabase;
 - frontend atual;
 - limitações históricas de resposta e prática;
-- preferências pessoais convertidas em regras universais;
+- preferências pessoais transformadas em regras universais;
 - decisões provisórias dos experimentos de componentes.
 
-AraLearn é a primeira configuração funcional de referência, uma fonte central de evidência e uma possível origem de lógica auditável. Não é o limite do espaço de possibilidades nem uma arquitetura obrigatória.
+AraLearn é a primeira configuração funcional de referência e uma fonte central de evidência. Não é o limite do espaço de possibilidades nem uma arquitetura obrigatória.
 
 ## 3. Transformação central: parametrização
 
 ARA deve tornar explícitas, versionadas e pesquisáveis decisões que podem variar entre cursos, usuários, condições experimentais, protocolos, implantações e políticas institucionais.
 
-As famílias candidatas incluem, sem se limitar a:
+P1–P3 demonstraram que parâmetros não devem ser agregados em modos monolíticos. A primeira taxonomia já separa, entre outras dimensões:
 
-- tentativas e novas tentativas;
-- progressão e bloqueios;
-- feedback: conteúdo, momento, persistência e autoridade;
-- revelação de respostas;
-- avaliação, pontuação, notas e consequências;
-- resposta selecionada, construída, explicativa ou executável;
-- repetição, revisão, espaçamento e intercalação;
-- sequenciamento;
-- extensão, segmentação e granularidade;
-- exemplos resolvidos, pistas e scaffolding;
-- adaptação;
-- autonomia e learner control;
-- acessibilidade e acomodações;
-- assistência por IA;
-- comentários, revisão, reparo e publicação;
-- eventos, analytics e retenção;
-- condições experimentais e bloqueio de configuração.
+- prática, resposta, tentativas, reveal, feedback e consequência;
+- progressão, evidência de mastery, sequência, ritmo, revisão e espaçamento;
+- exemplos resolvidos, scaffolding, segmentação e retomada;
+- autonomia, autorregulação e busca de ajuda;
+- adaptação, transparência, override, rollback e fallback;
+- acessibilidade, acomodação, equivalência e privacidade;
+- funções, contexto, autoridade, validação, provenance e falha da IA.
 
-Cada parâmetro deverá registrar:
+### 3.1 Níveis de incidência
 
-- definição;
-- origem e estado da evidência;
-- relação com o perfil AraLearn, inclusive `ausente` ou `não aplicável`;
-- valores possíveis;
-- escopo;
-- autoridade;
-- precedência e possibilidade de override;
-- conflitos e dependências;
-- implicações pedagógicas;
-- implicações para pesquisa e analytics;
-- acessibilidade, privacidade, offline, desempenho, MCP e UX;
-- maturidade: descoberto, candidato, recomendado, aceito, adiado ou rejeitado.
+A síntese final da Issue #4 deverá classificar cada parâmetro também pelo que ele altera:
+
+1. **runtime ou configuração efetiva** — modifica comportamento de estudo ou renderização sem reescrever o conteúdo;
+2. **conteúdo ou materialização** — altera distribuição, concentração, granularidade, exemplos ou composição do artefato;
+3. **estrutura e referências** — altera ordem, dependências, posições, relações entre unidades ou cursos;
+4. **ciclo de vida e governança** — altera versões, visibilidade, compartilhamento, retirada, provenance ou retenção;
+5. **condição experimental** — bloqueia invariantes e variações necessárias para comparação.
+
+Um parâmetro que transforma conteúdo não é um simples switch de interface e pode produzir novas revisões ou uma nova composição de curso.
+
+### 3.2 Perfis e overrides esparsos
+
+O catálogo completo não deve ser repetido em cada JSON nem enviado integralmente ao GPT.
+
+Direção candidata:
+
+```text
+catálogo versionado de parâmetros
+→ perfil ou preset nomeado
+→ overrides esparsos por escopo
+→ resolução determinística da configuração efetiva
+→ snapshot ou artefato materializado
+```
+
+O usuário escolhe em linguagem pedagógica e administrativa. O GPT declara somente perfis, diferenças e justificativas relevantes. A plataforma calcula, valida e torna inspecionável a configuração efetiva.
+
+Cada parâmetro deverá registrar definição, evidência, relação com o perfil AraLearn, valores, escopo, autoridade, precedência, overrides, conflitos, implicações e maturidade.
 
 A descoberta será ampla. A normatização será seletiva.
 
-## 4. Kernel
+## 4. Modelo operacional: dois canais complementares
+
+O usuário interage com o processo de autoria por dois canais que operam sobre o mesmo estado autorizado.
+
+### 4.1 Chat com GPT e MCP
+
+O chat serve a operações semânticas e de alto nível:
+
+- formular objetivo, público e escopo;
+- escolher ou discutir parâmetros;
+- planejar partes do curso;
+- construir microssequências e cards;
+- recuperar contexto autorizado de unidades anteriores ou outros cursos;
+- comparar versões ou variantes;
+- solicitar auditoria;
+- solicitar reparo localizado;
+- discutir decisões e trade-offs.
+
+O GPT deve consultar por MCP apenas os metadados, contratos, artefatos, dependências, comentários e fontes necessários à operação corrente.
+
+### 4.2 ARA como superfície de visualização e controle
+
+O ARA não será apenas o player final de cursos publicados. Ele será a superfície operacional na qual o usuário acompanha o que está sendo construído e intervém deterministicamente.
+
+Operações candidatas incluem:
+
+- visualizar em tempo real artefatos materializados;
+- navegar por curso, parte, microssequência, card e resource;
+- selecionar e comparar versões;
+- inspecionar diffs, configuração e provenance;
+- mover ou reorganizar unidades quando permitido;
+- comentar card, microssequência, dependência ou conjunto;
+- classificar observação como erro, dúvida, inadequação contextual ou solicitação;
+- aceitar, rejeitar ou aplicar parcialmente mudanças;
+- solicitar reparo pelo GPT;
+- acompanhar auditoria e reauditoria;
+- aprovar e publicar explicitamente.
+
+O usuário comum não deverá administrar tabelas, objetos de Storage, chaves, stores do IndexedDB ou protocolos de sincronização.
+
+### 4.3 Ciclo compartilhado de estado
+
+```text
+GPT/MCP planeja, grava ou propõe artefatos
+↔ ARA renderiza e oferece operações determinísticas
+↔ usuário registra decisões, comentários e observações
+↔ GPT/MCP recupera o estado autorizado e executa auditoria ou reparo
+```
+
+Banco, Storage, artefatos e persistência local funcionarão como intermediários técnicos conforme os contratos aprovados nas Issues #6 e #7. Esta visão não seleciona a tecnologia.
+
+## 5. Hipótese de composição por microssequências
+
+A reflexão do proprietário definiu uma hipótese concreta que deve ser investigada antes das decisões de domínio e arquitetura:
+
+```text
+microssequências versionadas independentemente
+→ manifesto ou composição versionada de curso
+→ posições que referenciam revisões
+→ materialização local autossuficiente para estudo offline
+→ estado e observações vinculados ao contexto da ocorrência
+```
+
+A microssequência é a principal candidata à unidade granular de criação, versionamento, comentário, auditoria, reparo e reutilização. Ainda não está aprovada como átomo universal.
+
+O curso continuaria sendo um objeto pedagógico completo por sua composição, objetivos, ordem, dependências, parâmetros e publicação, ainda que não possua cópia exclusiva de cada unidade.
+
+A pesquisa deverá comparar:
+
+- propriedade integral pelo curso;
+- referência a unidades imutáveis;
+- fork e copy-on-write;
+- deduplicação sem reutilização pedagógica;
+- snapshots offline;
+- versionamento e impacto de alterações;
+- exclusão, retirada de compartilhamento e confidencialidade;
+- progressão contextualizada por curso, versão, posição e card.
+
+Reutilização de conteúdo não transfere automaticamente conclusão, mastery ou estado de revisão.
+
+## 6. Kernel e categorias do produto
 
 ARA deve possuir um kernel pequeno, coeso, versionado e de evolução controlada.
 
-Responsabilidades transversais candidatas do kernel:
+Responsabilidades transversais candidatas:
 
-- carregar e validar cursos;
-- resolver versões e capacidades;
+- carregar e validar artefatos;
+- resolver versões, perfis e capacidades;
 - executar o ciclo de cards;
-- despachar resources, práticas e outras capacidades para implementações registradas;
-- aplicar configuração e políticas;
+- despachar resources, práticas e capacidades;
+- resolver configuração efetiva;
 - controlar estado, progressão, feedback e retomada;
 - persistir e operar offline;
 - registrar somente eventos autorizados;
-- integrar-se a contratos de infraestrutura;
-- tratar capacidades ausentes de modo previsível.
+- integrar contratos de infraestrutura;
+- tratar capacidades ausentes explicitamente.
 
-O kernel não deverá conter semântica específica de matemática, química, linguística, programação, grafos, diagramas, mapas, música ou outro domínio.
+O kernel não deverá conter semântica específica de matemática, química, linguística, programação, grafos, mapas ou outro domínio.
 
-Adicionar rotineiramente um resource, renderer, prática, validator, instrumento ou adapter não deverá exigir refatoração do kernel. Alterações do núcleo exigirão decisão arquitetural e versionamento de contrato.
+Um `resource` representa conteúdo declarativo. Não deve absorver silenciosamente prática, resposta, validator, runtime, instrumento de pesquisa, integração com IA ou serviço externo.
 
-A divisão exata de responsabilidades permanece sujeita à Issue #6 e à Issue #7.
+A divisão normativa entre curso, microssequência, card, resource, prática, resposta, validator, feedback, perfil, snapshot, protocolo e evidência pertence às Issues #6 e #7.
 
-## 5. Resources e categorias relacionadas
+## 7. Autoria assistida por IA
 
-Um `resource` representa e renderiza conteúdo declarativo armazenado no documento do curso. Exemplos: texto, fórmula, tabela, código formatado, citação e diagrama estruturado.
+O catálogo de capacidades deve crescer sem crescimento proporcional do contexto da LLM.
 
-`Resource` não deve absorver silenciosamente:
+Fluxo candidato:
 
-- prática;
-- resposta do estudante;
-- validator;
-- runtime;
-- editor executável;
-- instrumento de pesquisa;
-- avaliação discursiva;
-- integração com LLM;
-- serviço externo.
+1. planejar objetivo, conteúdo, parâmetros e dependências;
+2. consultar metadados e contratos necessários por MCP;
+3. buscar unidades ou contexto autorizados;
+4. construir uma parte ou microssequência;
+5. validar estrutura e referências;
+6. renderizar no ARA;
+7. auditar de forma independente;
+8. receber comentários do usuário;
+9. reparar localmente e reauditar;
+10. aprovar e publicar explicitamente;
+11. prosseguir para a parte seguinte.
 
-A pesquisa e o modelo de domínio poderão recomendar categorias adicionais.
+O padrão human-in-the-loop é:
 
-Cada tipo de resource deverá possuir contrato independente, incluindo conforme a necessidade:
+```text
+planejador/construtor
+→ auditor independente
+→ reparo e reauditoria
+→ revisão/aprovação humana
+→ publicação
+```
 
-- identidade e versão;
-- descrição resumida e finalidade;
-- schema e validação;
-- renderer;
-- alternativa acessível;
-- capacidades e limitações;
-- eventos possíveis, sem implicar coleta automática;
-- compatibilidade e migrações;
-- requisitos de pacote;
-- exemplos;
-- testes e critérios de auditoria.
+### 7.1 Estado da saída de IA
 
-O kernel conhecerá somente a interface comum necessária para descobrir, carregar, validar e despachar resources.
+Toda saída começa sem autoridade normativa:
 
-## 6. Autoria por ChatGPT com MCP
+```text
+suggestion
+→ draft
+→ validated-structure
+→ audited
+→ human-approved
+→ published
+```
 
-O modelo não deverá receber um schema monolítico com todo o catálogo.
+Também pode ser `rejected` ou `superseded`.
 
-Fluxo pretendido:
+A IA não promove a própria saída. Validação determinística não prova qualidade pedagógica. Auditoria por outra IA não substitui revisão humana ou especialista quando o risco ou consequência exigir.
 
-1. analisar a finalidade pedagógica, o conteúdo e a operação cognitiva;
-2. consultar por MCP a lista resumida de resources e capacidades disponíveis;
-3. selecionar candidatos por metadados;
-4. solicitar somente os contratos completos necessários;
-5. construir ou atualizar cards e cursos;
-6. validar deterministicamente;
-7. reparar erros localizados;
-8. produzir prévia;
-9. persistir, aplicar ou publicar somente segundo autoridade explícita.
+### 7.2 Autoridade, contexto e falha
 
-Operações conceituais futuras do MCP:
+A IA deverá operar com:
 
-- listar resources e capacidades;
-- consultar metadados;
-- obter contrato específico;
-- validar uma instância;
-- produzir prévia;
-- criar ou atualizar cards e cursos;
-- informar capacidades instaladas;
-- auditar e reparar conteúdo;
-- aplicar ou publicar alterações autorizadas.
+- função delimitada;
+- iniciação explícita;
+- contexto mínimo e inspecionável;
+- grounding e fontes;
+- status visível;
+- validação apropriada;
+- editabilidade e aplicação parcial;
+- contestação e rollback;
+- provenance;
+- fronteiras de dados;
+- retenção mínima;
+- política de provedor;
+- fallback offline;
+- falha explícita.
 
-O catálogo deve poder crescer sem crescimento proporcional do contexto enviado ao modelo.
+O estudo baseline e as operações determinísticas essenciais não dependerão de uma LLM conectada.
 
-## 7. Pesquisa e decisão
+## 8. Autonomia, adaptação e acessibilidade
 
-A pesquisa deve considerar amostras representativas de:
+ARA adotará shared control, não liberdade total nem adaptação oculta.
 
-- literatura educacional;
-- plataformas e sistemas;
-- áreas do conhecimento e práticas disciplinares;
-- currículos;
-- estudantes, autores, revisores e pesquisadores;
-- acessibilidade;
-- instituições;
-- contextos pessoais, acadêmicos, organizacionais e públicos;
-- requisitos jurídicos e de governança;
-- alternativas técnicas.
+- autores e protocolos definem estrutura, dependências e limites;
+- estudantes controlam ritmo e escolhas permitidas;
+- recomendações não se aplicam automaticamente;
+- adaptações devem declarar alvo, gatilho, evidência, autoridade e estado efetivo;
+- mudanças relevantes devem ser transparentes, contestáveis e reversíveis;
+- acessibilidade e direitos têm precedência sobre preferências ordinárias;
+- opções acessíveis devem ser oferecidas sem exigir diagnóstico sempre que possível;
+- equivalência e preservação de constructo precisam ser registradas;
+- dados de acessibilidade permanecem minimizados e protegidos.
 
-A pesquisa é ampla, mas finita. Toda frente deve declarar amostragem, limitações e critérios de suficiência ou saturação decisória.
+Não se deve inferir motivação, esforço, expertise, deficiência, struggle ou engagement de tempo, tentativas, pausas, comentários ou uso de ajuda sem modelo metodológico e autorização.
 
-O assistente deve:
+## 9. Pesquisa e decisão
 
-- integrar a evidência;
-- organizar alternativas e controvérsias;
-- eliminar caminhos claramente inadequados;
-- recomendar a melhor direção;
-- distinguir núcleo, parâmetro, extensão, capacidade conectada, experimento, documentação, adiamento e rejeição.
+A pesquisa considerará literatura, plataformas, áreas do conhecimento, currículos, usuários, acessibilidade, instituições, requisitos jurídicos e alternativas técnicas.
 
-Fabio não deve receber pesquisa bruta para arquitetar o produto sozinho. Sua escolha será solicitada somente quando persistir conflito estratégico, ético, pedagógico ou valorativo não resolvido pela evidência. Nesses casos, deverão ser apresentadas poucas opções compreensíveis e uma recomendação explícita.
+Toda frente deverá declarar amostragem, limitações e suficiência decisória.
 
-## 8. Gate entre pesquisa e engenharia
+O assistente deverá integrar evidência, comparar alternativas e recomendar uma direção. O proprietário receberá decisões compreensíveis, não um corpus bruto para arquitetar sozinho.
 
 Sequência obrigatória:
 
 ```text
 pesquisa
-→ organização das possibilidades
 → síntese crítica
 → alternativas e trade-offs
-→ recomendação fundamentada
+→ recomendação
 → decisão estratégica
-→ requisitos e modelo de domínio
+→ requisitos e domínio
 → arquitetura e stack
 → UX/UI
-→ planejamento de releases
+→ releases
 → implementação
 ```
 
-Uma possibilidade descoberta não se converte automaticamente em requisito, schema, contrato, adapter, biblioteca, protótipo ou issue de implementação.
+Uma possibilidade descoberta não se converte automaticamente em requisito, schema, adapter, biblioteca, protótipo ou código.
 
-Protótipos exploratórios são permitidos para responder a incertezas materiais. Permanecem não normativos até síntese e decisão explícitas.
+## 10. Arquitetura e infraestrutura
 
-## 9. Stack e arquitetura
-
-A stack será investigada, comparada e recomendada depois dos requisitos.
+A stack será investigada depois dos requisitos.
 
 Critérios obrigatórios:
 
-- aplicação web e experiência móvel;
-- tipagem forte;
-- contratos e schemas;
-- modularidade e fronteiras claras;
-- testes;
+- web e experiência móvel;
+- tipagem, contratos e schemas;
+- modularidade;
 - acessibilidade;
-- offline;
-- persistência local e sincronização;
-- desempenho em smartphones modestos;
-- carregamento seletivo de resources;
-- MCP;
-- implantação gerenciada e autogerenciada;
-- segurança e privacidade;
-- manutenção assistida por IA;
-- evolução de longo prazo;
-- custos e capacidade operacional.
-
-JavaScript puro, Supabase, IndexedDB, PWA, frameworks, bancos, runtimes e modelos de extensão permanecem candidatos ou hipóteses até decisão registrada em ADR.
-
-## 10. Infraestrutura portável
-
-O domínio não dependerá de Supabase nem de uma solução local específica.
-
-Contratos de infraestrutura deverão cobrir, conforme o modelo aprovado:
-
-- repositório de cursos;
-- armazenamento de artefatos;
-- identidade e autorização;
-- estado de estudo;
-- analytics;
-- sincronização;
-- workspaces;
-- publicação;
-- backup, restauração e diagnóstico.
-
-Uma implantação gerenciada pode usar Supabase como adapter de referência. Uma implantação autogerenciada deverá preservar os mesmos contratos funcionais, pedagógicos e analíticos relevantes.
-
-## 11. Administração, pesquisa e analytics
-
-O produto deverá oferecer uma superfície administrativa e de pesquisa coerente para organizar:
-
-- cursos e estrutura curricular;
-- versões e publicações;
-- configurações;
-- turmas e participantes;
-- condições experimentais;
-- capacidades e permissões;
-- fontes e proveniência;
-- observações, reparos e auditorias;
-- eventos e analytics;
-- instrumentos e exportações;
-- retenção;
-- implantação e operações.
-
-Analytics serão orientados por perguntas, constructos, eventos autorizados, fórmulas, unidades de análise, retenção, acesso e inferências permitidas. Disponibilidade técnica não autoriza coleta.
-
-## 12. UX/UI
-
-A arquitetura não autoriza o Codex a inventar a interface.
-
-Antes de implementação user-facing, deverão ser especificados e avaliados:
-
-- jornadas;
-- arquitetura de informação;
-- telas e estados;
-- transições;
-- controles, botões e ícones;
-- formulários;
-- mensagens e erros;
 - offline e sincronização;
-- permissões;
-- acessibilidade;
-- protótipos visuais.
+- desempenho em smartphones modestos;
+- MCP e carregamento seletivo;
+- implantação gerenciada e autogerenciada;
+- segurança, privacidade e provenance;
+- observabilidade, backup, restauração e rollback;
+- custo, manutenção e exit strategy.
 
-O formulário de parametrização deverá ser compreensível, progressivo, retomável e capaz de explicar consequências e comparar configurações.
+Supabase, IndexedDB, PWA, bancos, Storage, grafos, content addressing, runtimes e provedores de IA permanecem hipóteses até ADR.
 
-## 13. Perfis de implantação
+O domínio não dependerá de Supabase. Implantações gerenciadas e autogerenciadas deverão preservar os mesmos contratos funcionais, pedagógicos e analíticos relevantes.
+
+## 11. Administração, analytics e UX
+
+O produto deverá oferecer superfícies compreensíveis para estudantes, professores, tutores, autores, pesquisadores e instituições.
+
+A experiência comum deverá usar linguagem pedagógica e administrativa, com:
+
+- entrada por contexto e papel;
+- perfis recomendados;
+- progressive disclosure;
+- resumo das consequências;
+- preview de fluxo e configuração;
+- comparação entre versões e condições;
+- alertas de conflitos e capacidades ausentes;
+- mudanças reversíveis;
+- publicação confirmada;
+- analytics orientados a perguntas;
+- detalhes técnicos e auditáveis em camada avançada.
+
+Analytics serão definidos por pergunta, constructo, evento autorizado, fórmula, unidade de análise, retenção, acesso e inferência permitida. Disponibilidade técnica não autoriza coleta.
+
+Antes de implementação user-facing, a Issue #8 deverá especificar e avaliar jornadas, telas, estados, transições, formulários, mensagens, offline, permissões, acessibilidade e protótipos.
+
+## 12. Perfis de implantação
 
 Perfis iniciais de investigação:
 
@@ -331,42 +376,28 @@ Perfis iniciais de investigação:
 - ensino formal e turmas;
 - institucional autogerenciado;
 - publicação pública ou aberta;
-- conteúdo confidencial, inclusive contexto público-organizacional.
+- conteúdo confidencial.
 
-São perfis do mesmo produto e dos mesmos conceitos de domínio, embora capacidades e obrigações operacionais possam variar.
+São configurações do mesmo produto e domínio, embora capacidades e obrigações operacionais possam variar.
 
-## 14. Estado do trabalho exploratório
+## 13. Condição para implementação
 
-Experimentos sobre matemática semântica, estruturas relacionais, programação executável e anotação de fontes permanecem:
-
-- recuperáveis;
-- documentados;
-- não normativos;
-- não bloqueadores;
-- não aprovados para produção;
-- não rejeitados permanentemente.
-
-Sua retomada exige necessidade, caso concreto, classificação no produto e decisão arquitetural.
-
-## 15. Condição para iniciar implementação
-
-Antes do backlog de implementação, deverão existir documentos canônicos aprovados para:
+Antes do backlog de implementação, deverão existir documentos aprovados para:
 
 - visão do produto;
-- sínteses de pesquisa e decisões;
+- sínteses de pesquisa;
 - taxonomia de parametrização;
 - protocolos e analytics;
-- requisitos;
-- modelo de domínio;
-- arquitetura e stack;
+- requisitos e domínio;
+- arquitetura, stack e ADRs;
 - contratos;
 - UX/UI;
 - plano de releases.
 
 Issues de implementação deverão apontar para release, requisito, decisão, contrato, jornada ou tela, critérios de aceite e testes.
 
-## 16. Próxima etapa
+## 14. Próxima etapa
 
-A etapa corrente é a Issue #4: produzir a primeira taxonomia de parametrização por pacotes de evidência e síntese, sem iniciar arquitetura ou implementação.
+P1, P2 e P3 da Issue #4 estão concluídos. A próxima etapa é o Pacote P4: instrumentação, condições experimentais, analytics e governança.
 
-A taxonomia deverá entregar parâmetros candidatos e aceitos, perfis de referência e um handoff explícito para protocolos de pesquisa e modelo de domínio.
+P4 deverá receber os estados, snapshots, parâmetros, perfis, funções de IA, limites de inferência e hipóteses de variantes/composição definidos até aqui, sem iniciar arquitetura ou implementação.
