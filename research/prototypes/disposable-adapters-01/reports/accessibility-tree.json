@@ -1,0 +1,14 @@
+{
+  "environment": "Chromium accessibility tree via CDP",
+  "checks": {
+    "named_controls": true,
+    "status_nodes": 7,
+    "headings": 6
+  },
+  "observations": [
+    "All buttons, textboxes, comboboxes and the skip link exposed accessible names.",
+    "Polite and assertive live regions were present in the accessibility tree.",
+    "The page exposed a heading hierarchy for the prototype and four families.",
+    "This inspection is not a screen-reader user study or an accessibility conformance claim."
+  ]
+}

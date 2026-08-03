@@ -1,0 +1,22 @@
+{
+  "round": "disposable-adapters-01",
+  "command": "node --test tests/*.test.mjs",
+  "environment": {
+    "node": "v22.16.0",
+    "platform": "linux",
+    "architecture": "x64"
+  },
+  "tests": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0
+  },
+  "covered": [
+    "mathematical invalid, partial and correct states",
+    "relational round-trip without renderer geometry",
+    "host-only protected programming tests",
+    "programming parse, partial and timeout states",
+    "source selector re-resolution and human-review handoff",
+    "canonical response round trips across all four adapters"
+  ]
+}

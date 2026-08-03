@@ -1,0 +1,30 @@
+{
+  "round": "disposable-adapters-01",
+  "issue": 38,
+  "status": "reference adapter round complete",
+  "node_tests": {
+    "total": 6,
+    "passed": 6,
+    "failed": 0
+  },
+  "browser_walkthrough": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0
+  },
+  "environments": {
+    "node": "v22.16.0",
+    "python": "3.13.5",
+    "chromium": "144.0.7559.96",
+    "standalone_bytes": 46023,
+    "browser_initialization_ms": 163.54827,
+    "browser_js_heap_used_bytes_after_walkthrough": 3268272,
+    "external_network_requests": 0
+  },
+  "production_decisions": {
+    "semantic_math_reference_validator": "rejected for production because sample-point equivalence is not proof",
+    "relational_reference_adapter": "retained as a contract precedent, not a renderer selection",
+    "programming_reference_runtime": "rejected for production because Worker and vm are not security sandboxes",
+    "source_argument_reference_adapter": "retained as a contract precedent with human final authority"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "environment": {"node": "v22.16.0", "platform": "linux", "architecture": "x64"},
+  "iterations": 500,
+  "rows": [
+    {"family": "semantic-mathematics", "sourceBytes": 9195, "meanLifecycleMs": 0.033648602000000014, "heapDeltaBytes": 900704, "externalRuntimeBytes": 0, "networkDuringStudy": "none"},
+    {"family": "relational-construction", "sourceBytes": 5470, "meanLifecycleMs": 0.049849271999999986, "heapDeltaBytes": 812632, "externalRuntimeBytes": 0, "networkDuringStudy": "none"},
+    {"family": "executable-programming", "sourceBytes": 4333, "meanLifecycleMs": 0.031441092, "heapDeltaBytes": -286880, "externalRuntimeBytes": 0, "networkDuringStudy": "none"},
+    {"family": "source-argument", "sourceBytes": 7578, "meanLifecycleMs": 0.021214857999999993, "heapDeltaBytes": 517960, "externalRuntimeBytes": 0, "networkDuringStudy": "none"}
+  ]
+}

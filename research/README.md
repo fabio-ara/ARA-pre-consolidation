@@ -28,6 +28,7 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `pt-BR/briefing-redesenho-resources-primeiros-principios-01.md`: first-principles brief for representations, activities, responses, validators and runtimes.
 - `pt-BR/prototipos-contratos-componentes-primeiros-principios-01.md`: schema-level prototype synthesis across four response families.
 - `pt-BR/registro-decisoes-legado-aralearn-prototipos-01.md`: provisional retain, split, replace, merge and retire decisions for AraLearn concepts.
+- `pt-BR/relatorio-adapters-descartaveis-01.md`: executable adapter findings, rejected production assumptions and proposed contract amendments.
 
 ### Syntheses and structured data
 
@@ -81,6 +82,15 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/component-contract-validation-report-01.json`: reproducible JSON Schema validation result and limitations.
 - `data/component-contract-prototype-summary-01.json`: machine-readable conclusions and next work.
 - `data/component-contract-file-manifest-01.csv`: sizes and SHA-256 hashes for the prototype artifacts.
+- `data/disposable-adapter-comparison-01.csv`: representation, validity, authority, offline result and production blockers by adapter family.
+- `data/disposable-adapter-accessibility-walkthrough-01.csv`: keyboard, focus, live-region, reflow, visual and accessibility-tree observations.
+- `data/disposable-adapter-security-threat-model-01.csv`: executed and inferred security scenarios with production implications.
+- `data/disposable-adapter-license-risk-01.csv`: licenses and follow-up risks for the reference environment and candidate libraries.
+- `data/disposable-adapter-contract-amendments-01.csv`: ten implementation-informed amendments proposed for contract version `0.2`.
+- `data/disposable-adapter-measurements-01.csv`: source size and lifecycle measurements for the dependency-free reference adapters.
+- `data/disposable-adapter-test-summary-01.json`: Node, browser and environment validation counts.
+- `data/disposable-adapter-summary-01.json`: machine-readable round conclusions and next work.
+- `data/disposable-adapter-file-manifest-01.csv`: hashes for stable source, test and structured artifacts.
 
 ### Prototype contracts
 
@@ -88,6 +98,10 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `prototypes/component-contracts-01/schemas/`: shared manifest, lifecycle and four domain-family schemas.
 - `prototypes/component-contracts-01/examples/`: manifests, complete instances, validation scenarios and microsequences.
 - `prototypes/component-contracts-01/validate_examples.py`: local Draft 2020-12 validation script.
+- `prototypes/disposable-adapters-01/README.md`: scope, shared lifecycle, reproduction commands and explicit non-production limits.
+- `prototypes/disposable-adapters-01/src/`: four adapters, browser harness and worker references.
+- `prototypes/disposable-adapters-01/tests/`: Node contract tests and Chromium interaction walkthrough.
+- `prototypes/disposable-adapters-01/reports/`: raw test, measurement and accessibility-tree outputs.
 
 ### Search records
 
@@ -117,6 +131,6 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28; canonical AraLearn resource auditing is governed by Issue #31; cross-domain system benchmarking is governed by Issue #33; scholarly genre mapping is governed by Issue #34; first-principles component-contract prototyping is governed by Issue #36.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28; canonical AraLearn resource auditing is governed by Issue #31; cross-domain system benchmarking is governed by Issue #33; scholarly genre mapping is governed by Issue #34; first-principles component-contract prototyping is governed by Issue #36; disposable adapter implementation and testing is governed by Issue #38.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.

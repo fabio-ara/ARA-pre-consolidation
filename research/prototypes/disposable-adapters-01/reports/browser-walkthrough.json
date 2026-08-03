@@ -1,0 +1,163 @@
+{
+  "environment": {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "external_requests": [],
+    "standalone_bytes": 46023,
+    "initialization_ms": 163.54826999986471,
+    "performance_metrics": {
+      "Documents": 2,
+      "Frames": 1,
+      "Nodes": 517,
+      "JSHeapUsedSize": 3268272,
+      "JSHeapTotalSize": 5849088
+    }
+  },
+  "checks": [
+    {
+      "id": "math-invalid",
+      "passed": true,
+      "observed": "Resposta inválida; corrija a interpretação ou a estrutura."
+    },
+    {
+      "id": "math-partial",
+      "passed": true,
+      "observed": "Resposta válida e parcialmente satisfatória."
+    },
+    {
+      "id": "math-correct",
+      "passed": true,
+      "observed": {
+        "status": "A expressão está correta e na forma solicitada.",
+        "preview": "2 * (x + 3)"
+      }
+    },
+    {
+      "id": "graph-correct",
+      "passed": true,
+      "observed": "A construção está correta."
+    },
+    {
+      "id": "graph-no-geometry",
+      "passed": true,
+      "observed": "{\"id\": \"graph-response\", \"finalState\": {\"grammar\": \"graph-theory\", \"nodes\": [{\"id\": \"A\", \"kind\": \"vertex\", \"label\": \"A\"}, {\"id\": \"B\", \"kind\": \"vertex\", \"label\": \"B\"}, {\"id\": \"C\", \"kind\": \"vertex\", \"label\": \"C\"}, {\"id\": \"D\", \"kind\": \"vertex\", \"label\": \"D\"}], \"edges\": [{\"id\": \"e1\", \"from\": \"A\", \"to\": \"B\", \"directed\": false, \"label\": \"A\\u2013B\"}, {\"id\": \"e2\", \"from\": \"B\", \"to\": \"D\", \"directed\": false, \"label\": \"B\\u2013D\"}], \"semanticConstraints\": [\"simple-undirected-graph\"]}, \"operationLog\": [{\"sequence\": 1, \"operation\": \"add-edge\", \"targetIds\": [\"A\", \"B\"], \"value\": {\"edgeId\": \"e1\"}}, {\"sequence\": 2, \"operation\": \"add-edge\", \"targetIds\": [\"B\", \"D\"], \"value\": {\"edgeId\": \"e2\"}}]}"
+    },
+    {
+      "id": "graph-linear-view",
+      "passed": true,
+      "observed": "A–B\nB–D"
+    },
+    {
+      "id": "program-public-fail",
+      "passed": true,
+      "observed": "Há falhas nos testes públicos."
+    },
+    {
+      "id": "program-public-pass",
+      "passed": true,
+      "observed": "Testes públicos corretos. A suíte protegida permanece fora do cliente."
+    },
+    {
+      "id": "program-no-protected-export",
+      "passed": true,
+      "observed": "{\n  \"id\": \"code-response\",\n  \"files\": [\n    {\n      \"path\": \"main.js\",\n      \"content\": \"function sumEven(values) { return values.filter(v => v % 2 === 0).reduce((a,b) => a+b, 0); }\",\n      \"editable\": true,\n      \"language\": \"javascript\"\n    }\n  ],\n  \"requestedRun\": true\n}"
+    },
+    {
+      "id": "program-timeout",
+      "passed": true,
+      "observed": "Execução interrompida por limite de tempo."
+    },
+    {
+      "id": "source-review-handoff",
+      "passed": true,
+      "observed": "Integridade confirmada. Qualidade argumentativa enviada para revisão humana."
+    },
+    {
+      "id": "source-selector-reresolution",
+      "passed": true,
+      "observed": {
+        "state": "review-required",
+        "method": "quote-context"
+      }
+    },
+    {
+      "id": "keyboard-focus-order",
+      "passed": true,
+      "observed": [
+        "SUMMARY",
+        "BODY",
+        "skip-link",
+        "math-input",
+        "math-validate",
+        "SUMMARY",
+        "edge-from",
+        "edge-to",
+        "edge-add",
+        "edge-remove",
+        "graph-validate",
+        "SUMMARY",
+        "code-input",
+        "code-run",
+        "code-stop",
+        "SUMMARY",
+        "source-text",
+        "capture-selection",
+        "annotation-body",
+        "claim-input",
+        "reason-input",
+        "source-validate",
+        "SUMMARY",
+        "BODY"
+      ]
+    },
+    {
+      "id": "status-announcements",
+      "passed": true,
+      "observed": 5
+    },
+    {
+      "id": "reflow-320",
+      "passed": true,
+      "observed": 0
+    }
+  ],
+  "focus_sequence": [
+    "SUMMARY",
+    "BODY",
+    "skip-link",
+    "math-input",
+    "math-validate",
+    "SUMMARY",
+    "edge-from",
+    "edge-to",
+    "edge-add",
+    "edge-remove",
+    "graph-validate",
+    "SUMMARY",
+    "code-input",
+    "code-run",
+    "code-stop",
+    "SUMMARY",
+    "source-text",
+    "capture-selection",
+    "annotation-body",
+    "claim-input",
+    "reason-input",
+    "source-validate",
+    "SUMMARY",
+    "BODY"
+  ],
+  "requests": [
+    "blob:null/53b21d67-dd09-41bb-b49a-fa06b93873b8",
+    "blob:null/67bf4de3-a033-4de5-8f28-3a459a26aa29",
+    "blob:null/c6c8429c-9e20-436a-998a-5cd33cb4870d"
+  ],
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": []
+  }
+}

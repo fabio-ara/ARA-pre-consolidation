@@ -1,0 +1,11 @@
+amendment_id,proposed_change,evidence_from_tracks,status,rationale
+CA-01,Add adapterVersion and canonicalizationVersion to exported responses,all four,proposed,round trips need explicit migration authority independent of component release
+CA-02,Add isolationAssurance and productionEligibility to runtime requirements,programming,proposed,sandboxed-worker overstates security when Worker or vm only provides cooperative isolation
+CA-03,Separate validation availability into client-public host-protected and human-review,programming and source argument,proposed,one final validator label cannot express where authoritative checks can run
+CA-04,Add derivedStatePolicy with forbidden canonical fields and cache lifetime,relational and browser programming,proposed,layout worker handles and UI state must be disposable and noncanonical
+CA-05,Add capabilityAvailability and unsupported outcome provenance,all four,proposed,offline or deployment profiles may omit a validator without making the response invalid
+CA-06,Add selectorResolutionPolicy and ambiguity behavior,source argument,proposed,stable selectors require explicit fallback and failure semantics
+CA-07,Replace accessibility booleans with operation-level alternatives and known limits,relational programming and source argument,proposed,required does not specify how a learner performs the same action without drag or visually
+CA-08,Add measuredPackageProfile with bytes cold-start memory method and environment,all four,proposed,offline grade alone is insufficient for device and deployment decisions
+CA-09,Add validationEvidence visibility and retention,programming and source argument,proposed,protected tests reviewer notes and probabilistic suggestions have different disclosure rules
+CA-10,Add time memory output and cancellation limits as separate runtime fields,programming,proposed,resource-policy needs enforceable dimensions and diagnostic outcomes

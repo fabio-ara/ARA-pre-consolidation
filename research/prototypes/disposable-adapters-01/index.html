@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARA disposable adapters — round 01</title>
+  <link rel="stylesheet" href="./src/browser/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header>
+    <h1>ARA disposable adapters — round 01</h1>
+    <p>Protótipos não produtivos. O estado canônico é JSON; estados visuais e runtimes são descartáveis.</p>
+  </header>
+  <main id="main">
+    <section id="math-section" aria-labelledby="math-title">
+      <h2 id="math-title">Matemática semântica</h2>
+      <p>Escreva uma forma fatorada equivalente a <strong>2x + 6</strong>.</p>
+      <label for="math-input">Expressão</label>
+      <input id="math-input" value="2*(x+3)" autocomplete="off" spellcheck="false">
+      <div class="actions"><button id="math-validate" type="button">Interpretar e validar</button></div>
+      <p><strong>Interpretação:</strong> <output id="math-preview">—</output></p>
+      <div id="math-status" class="status" role="status" aria-live="polite"></div>
+      <details><summary>Resposta canônica</summary><pre id="math-json"></pre></details>
+    </section>
+
+    <section id="graph-section" aria-labelledby="graph-title">
+      <h2 id="graph-title">Construção relacional</h2>
+      <p>Construa exatamente as arestas A–B e B–D. Todos os comandos possuem alternativa sem arrastar.</p>
+      <div class="graph-layout">
+        <svg id="graph-svg" viewBox="0 0 300 260" role="img" aria-labelledby="graph-svg-title graph-svg-desc">
+          <title id="graph-svg-title">Grafo construído</title>
+          <desc id="graph-svg-desc">O conteúdo visual é derivado do estado semântico. Use a lista de arestas para uma alternativa linear.</desc>
+        </svg>
+        <div>
+          <fieldset>
+            <legend>Editar aresta</legend>
+            <label for="edge-from">Origem</label>
+            <select id="edge-from"></select>
+            <label for="edge-to">Destino</label>
+            <select id="edge-to"></select>
+            <div class="actions">
+              <button id="edge-add" type="button">Adicionar aresta</button>
+              <button id="edge-remove" type="button">Remover aresta</button>
+            </div>
+          </fieldset>
+          <h3>Arestas atuais</h3>
+          <ul id="edge-list" aria-live="polite"></ul>
+          <button id="graph-validate" type="button">Validar construção</button>
+          <div id="graph-status" class="status" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+      <details><summary>Resposta canônica</summary><pre id="graph-json"></pre></details>
+    </section>
+
+    <section id="program-section" aria-labelledby="program-title">
+      <h2 id="program-title">Programação executável</h2>
+      <p>Implemente <code>sumEven(values)</code>. O navegador executa somente testes públicos. Testes protegidos não são servidos ao cliente.</p>
+      <label for="code-input">Código JavaScript</label>
+      <textarea id="code-input" rows="8" spellcheck="false">function sumEven(values) {
+  return 0;
+}</textarea>
+      <div class="actions">
+        <button id="code-run" type="button">Executar testes públicos</button>
+        <button id="code-stop" type="button">Interromper</button>
+      </div>
+      <div id="code-status" class="status" role="status" aria-live="assertive"></div>
+      <pre id="code-output" aria-label="Diagnósticos de execução"></pre>
+      <details><summary>Resposta canônica</summary><pre id="code-json"></pre></details>
+    </section>
+
+    <section id="source-section" aria-labelledby="source-title">
+      <h2 id="source-title">Anotação de fonte e argumento</h2>
+      <p>Selecione no texto a evidência sobre estudantes trabalhadores. A integridade é determinística; a qualidade do argumento exige revisão humana.</p>
+      <label for="source-text">Fonte</label>
+      <textarea id="source-text" rows="5" readonly></textarea>
+      <button id="capture-selection" type="button">Usar trecho selecionado</button>
+      <p><strong>Trecho:</strong> <output id="selected-quote">—</output></p>
+      <label for="annotation-body">Comentário da anotação</label>
+      <input id="annotation-body" value="O horário atual limita o acesso de estudantes trabalhadores.">
+      <label for="claim-input">Reivindicação</label>
+      <input id="claim-input" value="A biblioteca deve ampliar o horário.">
+      <label for="reason-input">Razão</label>
+      <input id="reason-input" value="O acesso noturno atende estudantes que trabalham durante o dia.">
+      <div class="actions"><button id="source-validate" type="button">Validar integridade e enviar para revisão</button></div>
+      <div id="source-status" class="status" role="status" aria-live="polite"></div>
+      <details><summary>Resposta canônica</summary><pre id="source-json"></pre></details>
+    </section>
+  </main>
+  <script type="module" src="./src/browser/app.js"></script>
+</body>
+</html>
