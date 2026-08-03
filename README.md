@@ -14,7 +14,7 @@ course → module → lesson → microsequence → card
 
 ## Current stage
 
-The project is in research and product definition. Issue #4 governs the active pedagogical and research configuration taxonomy. Package P1 is complete; P2—progression, sequencing, spacing, review, examples and scaffolding—is next. The new product has not entered implementation.
+The project is in research and product definition. Issue #4 governs the active pedagogical and research configuration taxonomy. Packages P1 and P2 are complete; P3—autonomy, self-regulation, adaptation, accessibility and AI assistance—is next. The new product has not entered implementation.
 
 ## Start here
 
