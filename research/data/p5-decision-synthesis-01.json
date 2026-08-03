@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "ara.decision-synthesis.v1",
+  "id": "P5-authoring-review-repair-publication-institutional-governance-01",
+  "date": "2026-08-03",
+  "governingIssue": 4,
+  "status": "completed-package-pending-issue-4-final-synthesis",
+  "principalConclusion": "ARA must treat authorship as a governed, versioned sequence of contributions and decisions across two complementary user channels. GPT+MCP may plan, build, audit, repair and re-audit in bounded stages, while ARA exposes evolving artifacts, versions, diffs, annotations and deterministic approval/publication actions. Validation, review, audit, approval and publication remain distinct; provenance, licensing, confidentiality and contextual reuse are explicit; published or research-locked artifacts are never silently mutated.",
+  "recommendedPath": [
+    "Preserve AraLearn's staged workflow—plan, build, audit, repair, re-audit, approve/publish—as the first reference profile, while making roles, states, authorities and artifacts explicit.",
+    "Use chat/MCP for semantic direction, bounded context retrieval, planning, generation, audit and repair; use ARA for real-time rendering, situated comments, version/diff inspection, deterministic actions, approval and publication.",
+    "Represent human and agent contributions separately from legal authorship and decision authority; record sufficient model/tool/instruction/context provenance without retaining sensitive chats by default.",
+    "Require explicit, authorized context scopes and immutable context/version manifests for reproducible or consequential work.",
+    "Use structured grounding and source anchors proportional to risk; source presence does not establish correctness and inaccessible sources must be marked.",
+    "Separate structural validation, pedagogical/subject review, accessibility/licensing/privacy review, human approval and publication gates.",
+    "Permit the same GPT to perform different roles only in separate rounds against a frozen persisted snapshot; do not allow it to approve or publish its own work implicitly.",
+    "Use risk-based reviewer qualification and separation of duties; personal work may use lightweight self/AI review while institutional, public, research-locked or high-stakes content may require qualified humans and multiple approvals.",
+    "Model observations as situated annotations with explicit target, motivation, visibility, status and resolution links; replying does not resolve and reviewing does not repair.",
+    "Make semantic repairs create new revisions, preserve published/condition snapshots, re-audit affected scope and support rollback through explicit prior-version selection or revert revisions.",
+    "Distinguish reference, copy, fork, adaptation and translation; preserve origin, license and context fit; default to notify/preview rather than automatic update propagation.",
+    "Use explicit publication states, audience and gates; published does not mean public, private partial previews remain possible, and withdrawal/deletion are separate operations.",
+    "Record per-scope licensing, attribution, third-party materials and compatibility constraints; ambiguous compatibility requires human/legal review.",
+    "Use local workspace roles and simple role-oriented administration; technical identifiers, storage and provenance details remain inspectable in advanced views.",
+    "Defer exact schemas, MCP endpoints, storage/version mechanics, content-addressing, W3C PROV/C2PA adoption and UI to Issues #6–#8."
+  ],
+  "acceptedParameterIds": [
+    "authoring.mode", "authoring.entry_channel", "authoring.scope", "authoring.brief_policy", "authoring.role", "authoring.agent_identity", "authoring.context_scope", "authoring.context_authorization", "authoring.context_snapshot", "authoring.source_grounding", "authoring.source_anchor_granularity", "authoring.contribution_attribution", "authoring.provenance_capture", "authoring.output_status", "authoring.structural_validation", "authoring.capability_discovery",
+    "review.type", "review.rubric", "review.scope", "review.independence", "review.reviewer_qualification", "review.outcome", "review.finding_record", "review.approval_policy",
+    "repair.authority", "repair.scope", "repair.change_policy", "repair.regression_check", "repair.reaudit_policy",
+    "annotation.target", "annotation.motivation", "annotation.visibility", "annotation.status", "annotation.resolution_link",
+    "versioning.identity_policy", "versioning.revision_policy", "versioning.derivation_relation", "versioning.fork_policy", "versioning.diff_policy", "versioning.merge_policy", "versioning.rollback_policy",
+    "reuse.search_scope", "reuse.mode", "reuse.context_fit_check", "reuse.update_propagation",
+    "publication.status", "publication.gate", "publication.authority", "publication.preview_policy", "publication.withdrawal_policy", "publication.deletion_policy",
+    "licensing.policy", "licensing.attribution_policy", "licensing.compatibility_policy", "licensing.third_party_material",
+    "governance.workspace_type", "governance.role_model", "governance.separation_of_duties", "governance.approval_rule", "governance.exception_policy", "governance.audit_log", "governance.confidentiality_class", "governance.export_policy", "governance.retention_policy", "governance.institutional_lock", "governance.simple_administration", "governance.unavailable_capability"
+  ],
+  "referenceProfiles": [
+    "aralearn-reference", "personal-manual-author", "personal-ai-assisted-author", "collaborative-course-team", "research-locked-authoring", "institutional-controlled-publication", "open-oer-publication", "confidential-institutional", "external-expert-review-overlay", "accessibility-quality-overlay", "offline-authoring-overlay"
+  ],
+  "precedence": [
+    "law-rights-safety-accessibility", "participant-consent-and-research-protocol", "license-and-confidentiality-constraints", "institutional-and-catalogue-policy", "qualified-review-and-approval-gates", "workspace-owner-and-author-policy", "requester-choice-within-authorized-scope", "agent-recommendation", "product-default-and-technical-availability"
+  ],
+  "deferredCandidates": [
+    {"id":"technical.microsequence_manifest_model","destination":"Issue #6/#7","reason":"The domain must decide reusable unit, placement and snapshot semantics before architecture."},
+    {"id":"technical.content_addressed_storage","destination":"Issue #7","reason":"Deduplication and immutable artifact storage require workload and deletion/access analysis."},
+    {"id":"technical.W3C_PROV_internal_model","destination":"Issue #6/#7","reason":"PROV is a useful interchange mapping but may be too broad for the internal domain."},
+    {"id":"technical.C2PA_credentials","destination":"Issue #7/#8","reason":"Tamper-evident credentials may be useful for public assets but are not required for the first authoring workflow."},
+    {"id":"automation.automatic_source_verification","destination":"Issue #6/#7/P5 follow-up evidence","reason":"Retrieval and citation checks remain incomplete and cannot guarantee correctness."},
+    {"id":"automation.automatic_license_compatibility","destination":"Issue #6/#7 and legal review","reason":"Rules can assist but cannot resolve all scope, jurisdiction and third-party-rights questions."},
+    {"id":"automation.automatic_cross_course_repair","destination":"Issue #6/#7","reason":"Propagation requires contextual fit, versioning, permissions, preview and rollback."},
+    {"id":"automation.semantic_auto_merge","destination":"Issue #7","reason":"Educational meaning and context cannot be reliably merged from text diffs alone."},
+    {"id":"governance.reputation_or_ranking","destination":"future product research","reason":"Public author/reviewer ranking risks distortion and is unnecessary for the first product."},
+    {"id":"publication.marketplace","destination":"Issue #6 future scope","reason":"Public marketplace governance exceeds the current authoring/publication requirement."}
+  ],
+  "rejectedOrNotRecommended": [
+    "GPT or any agent as the sole author, auditor, approver and publisher of the same artifact without explicit human authority.",
+    "Silent cross-workspace or cross-course context access based on chat memory.",
+    "Treating schema validation as pedagogical audit or audit as evidence of educational effectiveness.",
+    "Review processes that modify content while presenting themselves as independent audits.",
+    "Automatic promotion from generated or validated to ready, approved or published.",
+    "Silent mutation of a published course, reusable unit or research condition.",
+    "Automatic update propagation to published consumers.",
+    "Free-text tags as the only dependency, provenance or annotation mechanism.",
+    "Deleting referenced or published content without impact analysis, tombstone or retention review.",
+    "Applying one license to a package while concealing incompatible or excluded third-party assets.",
+    "Storing all prompts, chats and intermediate reasoning indefinitely for future use.",
+    "A universal quality score that collapses content accuracy, pedagogy, accessibility, licensing and institutional policy.",
+    "LLM-as-a-judge as a substitute for expert review in factual, high-stakes or institutionally consequential content.",
+    "One global administrator role for all workspaces and capabilities.",
+    "Technical database/storage concepts as the primary vocabulary for teachers, tutors or self-directed authors."
+  ],
+  "risks": [
+    "Role proliferation and workflow burden if every profile inherits institutional gates.", "False confidence from AI review, automated rubric scores or source citations.", "Context leakage across private, confidential or participant-sensitive workspaces.", "Untraceable adaptation, plagiarism, missing attribution or incompatible licensing.", "Stale referenced units and unexpected downstream effects of updates.", "Published-version drift or research-condition contamination through silent repair.", "Review bottlenecks and insufficient qualified reviewers.", "Rubrics becoming static checklists disconnected from domain and learning purpose.", "Accessibility review treated as optional or postponed until publication.", "Annotation overload and unresolved comments without prioritization.", "Retention of sensitive chats, prompts or proprietary sources beyond necessity.", "Offline edits, concurrent revisions and conflicts producing hidden loss or incorrect merges.", "Users misunderstanding copy, fork, reference, withdrawal and deletion consequences.", "Provider/model changes reducing reproducibility of AI-generated or AI-reviewed content.", "Governance rules that centralize institutional control and undermine legitimate learner/author autonomy."
+  ],
+  "decisionChangingUncertainties": [
+    "Whether microsequence is the correct reusable authoring unit across all representative domains.", "The minimum provenance/context snapshot needed for reproducible GPT-assisted authorship without excessive storage or privacy cost.", "Reliability and workload of same-model separate-round audits compared with different agents and human reviewers.", "Which review criteria require subject-matter, instructional-design, accessibility, legal or privacy specialists.", "How to present source grounding and provenance so nontechnical users can verify claims without overload.", "Whether reference-based reuse, copy-on-write or immutable snapshots best balance repair propagation, storage and contextual independence.", "How institutions will configure approval and separation-of-duty rules without making personal use cumbersome.", "License compatibility and attribution requirements for composite microsequences containing multiple assets and generated material.", "Deletion and withdrawal behavior for offline snapshots, public licenses, research records and confidential material.", "How to preserve authors' pedagogical agency while allowing AI to propose plans, diffs, rubrics and repairs.", "Cross-language and cross-cultural review quality for pt-BR, pt-PT and English courses.", "Operational feasibility of accessible version/diff/provenance views on modest mobile devices."
+  ],
+  "saturation": {
+    "human_AI_authoring":"reached-for-bounded-staged-workflow-not-autonomy",
+    "review_and_quality_assurance":"reached-for-role-and-gate-taxonomy-not-universal-rubric",
+    "annotations_and_repair":"reached-for-situated-lifecycle-and-resolution-links",
+    "versioning_and_reuse":"reached-for-semantic-distinctions-not-storage-architecture",
+    "publication_and_withdrawal":"reached-for-state-and-authority-model",
+    "provenance_and_attribution":"reached-for-required-concepts-not-standard-adoption",
+    "licensing_and_confidentiality":"sufficient-for-parameterization-requires-later-legal-product-decisions",
+    "institutional_governance":"reached-for-profiles-and-separation-of-duties-not-final-role-matrix",
+    "nontechnical_administration":"sufficient-for-UX-requirements-not-screen-design"
+  },
+  "nonAuthorizations": [
+    "production MCP endpoint or tool contract", "production course or microsequence schema", "database or Storage layout", "IndexedDB store or synchronization protocol", "content-addressed storage or deduplication", "automatic source, factual or license verification", "automatic cross-course reuse, update or repair", "automatic semantic merge", "production review rubric implementation", "publication service or catalogue workflow implementation", "workspace/role permission implementation", "UI, dashboard or form design", "LLM/provider selection or prompt implementation", "participant or author behavioural analytics", "new authorized issue for P5"
+  ],
+  "nextStep": "Issue #4 integrated final taxonomy synthesis, then Issue #5",
+  "artifacts": [
+    "research/searches/2026-08-03-p5-autoria-revisao-publicacao-protocolo.md", "research/data/p5-evidence-corpus-01.csv", "research/data/p5-parameter-records-01.csv", "research/data/p5-profile-comparison-01.csv", "research/data/p5-decision-synthesis-01.json", "research/pt-BR/p5-sintese-autoria-revisao-publicacao-governanca-01.md", "research/library/referencias-autoria-revisao-publicacao.bib"
+  ]
+}
