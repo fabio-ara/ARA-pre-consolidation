@@ -1,93 +1,57 @@
 # Índice canônico do programa de pesquisa
 
-**Estado:** evidência e decisões consolidadas para arquitetura  
+**Estado:** baselines concluídas até arquitetura  
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
-## 1. Baselines concluídas
+## Baselines normativas
 
-### Issue #4 — configuração
+| Issue | Baseline | Manifesto |
+|---|---|---|
+| #4 | `ara.configuration-taxonomy.v1` | `research/data/issue4-final-artifact-manifest-v1.json` |
+| #5 | `ara.research-framework.v1` | `research/data/issue5-artifact-manifest-v1.json` |
+| #6 | requisitos e domínio v1 | `research/data/issue6-artifact-manifest-v1.json` |
+| #7 | arquitetura e perfis v1 | `research/data/issue7-artifact-manifest-v1.json` |
 
-`ara.configuration-taxonomy.v1` define 205 parâmetros, 38 perfis, camadas, precedência, effective configuration e snapshots.
-
-Manifesto: `research/data/issue4-final-artifact-manifest-v1.json`.
-
-### Issue #5 — pesquisa e analytics
-
-`ara.research-framework.v1` separa pergunta, protocolo, condição, evento/instrumento, evidência, medida, constructo, interpretação e intervenção.
-
-Manifesto: `research/data/issue5-artifact-manifest-v1.json`.
-
-### Issue #6 — produto e domínio
-
-A baseline aceita:
+## Arquitetura aceita
 
 ```text
-CourseVersion
-→ ModuleNode / LessonNode
-→ Placement
-→ MicrosequenceRevision
-→ Card
-→ Resource / Practice / Response / Validator / Feedback
+TypeScript React/Vite PWA
++ IndexedDB local projection/outbox
++ Service Worker/Cache API
++ PostgreSQL metadata/relations/policies
++ S3-compatible immutable artifacts
++ OIDC connected identity
++ operation-log/revision sync
++ bounded MCP gateway
++ optional segregated research data plane
 ```
 
-Decisões:
+Supabase é um adapter gerenciado candidato; o domínio e as application services permanecem provider-independent. Personal baseline não exige conta, sync, LLM ou event store.
 
-- `MicrosequenceRevision` é a unidade autoral reutilizável inicial, sem pretensão universal;
-- `Placement` fornece contexto de curso, dependências, posição, overrides e progressão;
-- `CourseVersion` é uma composição pedagógica completa e imutável;
-- estado do estudante é contextual por assignment, course version, placement e card;
-- relações tipadas substituem tags livres como núcleo de dependências;
-- conteúdo, prática, resposta, validator e feedback permanecem separados;
-- draft/workspace é mutável; revisões, snapshots e publicações são imutáveis;
-- pastas, coleções, programas e catálogo organizam referências;
-- research objects de #5 são entidades opcionais do mesmo domínio;
-- capacidades são core, opcionais locais, conectadas, experimentais, adiadas, fora de escopo ou proibidas.
+## Próxima fase — Issue #8
 
-Artefatos:
+A Issue #8 deverá especificar e prototipar:
 
-- `docs/product/product-requirements-v1.md`;
-- `docs/product/domain-model-v1.md`;
-- `research/data/issue6-domain-entities-v1.csv`;
-- `research/data/issue6-invariants-v1.csv`;
-- `research/data/issue6-capability-classification-v1.csv`;
-- `research/data/issue6-journey-registry-v1.csv`;
-- `research/data/issue6-state-machines-v1.json`;
-- `research/data/issue6-scenario-validation-v1.csv`;
-- `research/data/issue6-decision-synthesis-v1.json`;
-- `research/data/issue6-artifact-manifest-v1.json`.
+- architecture of information e navegação;
+- todas as jornadas da Issue #6;
+- biblioteca, pastas e referências;
+- estudo, teoria, prática, feedback, progresso e retomada;
+- configuração por perfis, overlays e overrides;
+- autoria em tempo real, versões, diffs, comments, findings, repair e publication;
+- dependências/placements e composição entre cursos;
+- protocolos, consentimento, instrumentos e analytics por pergunta/papel;
+- online, offline, sync, conflito, permissões e falhas;
+- design tokens, responsive/mobile, teclado e assistive technology;
+- en, pt-BR e pt-PT;
+- testes de compreensão, usabilidade e acessibilidade.
 
-## 2. Pesquisa contínua
+A UX não altera domínio ou arquitetura silenciosamente. Lacunas voltam à issue apropriada.
 
-A Issue #3 permanece aberta para revisões futuras quando:
+## Fase seguinte
 
-- uma decisão arquitetural revelar incerteza material;
-- uma capacidade opcional adquirir caso de uso concreto;
-- uma avaliação produzir evidência nova;
-- legislação, acessibilidade ou padrões relevantes mudarem.
+A Issue #9 transformará requisitos, ADRs e screen contracts aprovados em releases, CI/quality gates e issues executáveis.
 
-Novas fontes não reabrem automaticamente baselines aprovadas; alterações exigem versão e decisão.
+## Pesquisa contínua
 
-## 3. Próxima fase — Issue #7
-
-A arquitetura deverá:
-
-- preservar os conceitos e invariantes aprovados;
-- separar requisitos duráveis, primeiro escopo, perfis de implantação e hipóteses técnicas;
-- comparar cliente, persistência local, metadata store, immutable artifacts, sync, identity, MCP, analytics e deployment;
-- definir ports/adapters provider-independent;
-- dimensionar personal, research, formal, self-hosted e public/open profiles;
-- especificar offline, conflito, revogação, backup, restore, migração e rollback;
-- registrar decisões por ADR;
-- validar o baseline na classe Galaxy A07;
-- manter estudo pessoal sem event store ou LLM obrigatórios.
-
-## 4. Fases seguintes
-
-- **Issue #8:** jornadas, telas, estados, acessibilidade, idiomas, protótipos e sistema visual;
-- **Issue #9:** releases, CI, quality gates e backlog executável;
-- **Implementação:** somente depois dos três gates.
-
-## 5. Não autorizações atuais
-
-A conclusão das Issues #4–#6 não autoriza código de produto, schema físico, stack, UI, sync, event store, participant collection ou adoção automática de protótipos históricos.
+A Issue #3 permanece aberta para novas perguntas específicas. Evidência nova exige síntese e decisão versionada; não reabre automaticamente baselines.

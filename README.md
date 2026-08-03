@@ -6,34 +6,30 @@
 
 ARA is an open, configurable, mobile-first and offline-capable educational platform and the direct successor to [AraLearn](https://github.com/fabio-ara/AraLearn).
 
-Initial composition:
-
 ```text
 course version → module/lesson → placement → microsequence revision → card
 ```
 
 ## Current stage
 
-Issues #4–#6 are complete: configuration taxonomy, research/analytics framework, product requirements and domain model. The current phase is Issue #7—reference architecture and deployment profiles. Product implementation has not started.
+Issues #4–#7 are complete: configuration, research/analytics, product/domain and reference architecture. The current phase is Issue #8—complete UX, accessibility and visual specification. Product implementation has not started.
 
 ## Start here
 
 1. [Product vision](docs/vision/product-vision.pt-BR.md)
-2. [Research programme](docs/research/research-programme-index.pt-BR.md)
-3. [Backlog and execution rules](docs/roadmap/backlog-index.md)
-4. [Product requirements](docs/product/product-requirements-v1.md)
-5. [Domain model](docs/product/domain-model-v1.md)
+2. [Product requirements](docs/product/product-requirements-v1.md)
+3. [Domain model](docs/product/domain-model-v1.md)
+4. [Reference architecture](docs/architecture/reference-architecture-v1.md)
+5. [Research programme](docs/research/research-programme-index.pt-BR.md)
+6. [Backlog](docs/roadmap/backlog-index.md)
 
-Research, product, architecture, UX and implementation remain separate gates. GPT+MCP supports bounded semantic authoring and repair; ARA exposes evolving artifacts and deterministic human control.
+GPT+MCP provides bounded semantic authoring; ARA provides visible deterministic human control. Research, product, architecture, UX and implementation remain separate gates.
 
-## Governance
+## Governance and licensing
 
-- [Repository governance](docs/governance/repository-governance.md)
+- [Governance](docs/governance/repository-governance.md)
 - [Language policy](docs/governance/language-policy.md)
 - [Contributing](CONTRIBUTING.md)
-
-## Licensing
-
 - Source: [AGPL-3.0-or-later](LICENSE)
 - Documentation: [CC BY 4.0](LICENSE-DOCUMENTATION.md)
-- Name and visual identity: [TRADEMARKS.md](TRADEMARKS.md)
+- Identity: [TRADEMARKS.md](TRADEMARKS.md)
