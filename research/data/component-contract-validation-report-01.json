@@ -1,0 +1,29 @@
+{
+  "round": "component-contract-prototypes-01",
+  "schema_draft": "2020-12",
+  "validator": "python-jsonschema 4.26.0",
+  "validated_at": "2026-08-03T03:25:00Z",
+  "checks": {
+    "component_manifests": 4,
+    "component_instances": 4,
+    "microsequences": 4,
+    "validation_results": 7,
+    "total": 19,
+    "failures": 0
+  },
+  "invariants_checked": [
+    "all schemas reject unknown top-level fields",
+    "course-supplied executable component code is forbidden in every security boundary",
+    "renderer geometry is noncanonical in every manifest",
+    "mathematics and programming separate validity from correctness",
+    "relational construction persists semantic state without coordinates",
+    "source arguments require stable selectors and human final authority",
+    "each microsequence contains theory guided practice and independent practice"
+  ],
+  "limitations": [
+    "the schemas were validated structurally; no production renderer validator CAS or execution runtime was implemented",
+    "cross-document semantic constraints such as unique graph IDs and selector start less than end require runtime validators",
+    "accessibility requirements are contractual assertions awaiting interaction prototypes and user evaluation",
+    "library choices remain disposable adapter hypotheses"
+  ]
+}
