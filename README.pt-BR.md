@@ -14,11 +14,9 @@ curso → módulo → lição → microssequência → card
 
 ## Estágio atual
 
-A Issue #4 foi concluída com `ara.configuration-taxonomy.v1`. A fase atual é a Issue #5 — protocolos de pesquisa, instrumentação e learning analytics. A implementação do novo produto ainda não começou.
+As Issues #4 e #5 foram concluídas com `ara.configuration-taxonomy.v1` e `ara.research-framework.v1`. A fase atual é a Issue #6 — requisitos do produto e modelo de domínio. A implementação do produto ainda não começou.
 
 ## Comece por aqui
-
-A navegação principal possui três fontes:
 
 1. [Visão do produto](docs/vision/product-vision.pt-BR.md)
 2. [Programa de pesquisa](docs/research/research-programme-index.pt-BR.md)
