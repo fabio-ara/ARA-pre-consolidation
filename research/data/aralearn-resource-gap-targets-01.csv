@@ -1,0 +1,22 @@
+resource,targets,response_model,status_note
+paragraph,text,literal text or choice gap,implemented
+choice,,native option set; does not use gap,implemented
+composite,targets exposed by child blocks,literal text or choice gap,implemented; no nested composite
+code,code,literal text or choice gap,implemented
+table,rows cells,literal text or choice gap,implemented
+flow,node text; condition; case condition,literal gap,implemented
+flow,structure.*.practice.shape,structured choice derived from node kind,implemented
+flow,structure.*.practice.text,structured choice or literal variants,implemented
+flow,structure.*.practice.labels.<yes|no|match|default>,structured choice or literal variants,implemented
+tree,nodes[].label,literal text or choice gap,implemented
+graph,vertices[].label; edges[].label; edges[].weight,literal text or choice gap,implemented
+relation_map,left/right item labels; relation labels; pairList; relationTable rows,literal text or choice gap,implemented
+matrix,values; sequence[].values,literal text or choice gap,implemented
+plane,result when textual,literal text or choice gap,implemented; coordinate objects are not gap targets
+formula,leaf node value plus mirrored accessibleText,literal text or choice gap,implemented; same markers/order required
+chart,x/y axis label and unit; series name,literal text or choice gap,implemented; data points are not gap targets
+sequence,items[].label; detail; code,literal text or choice gap,implemented
+annotated_text,segments[].text; annotations[].label; annotations[].note,literal text or choice gap,implemented
+linguistic_example,unit form/traditional/simplified/reading/ipa/gloss/translation,literal text or choice gap,implemented
+system_map,groups[].label; nodes[].label; links[].label,literal text or choice gap,implemented; membership and endpoints are not gap targets
+reaction,species coefficient when string; formula; name; conditions,literal text or choice gap,implemented
