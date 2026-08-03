@@ -4,97 +4,82 @@
 **Idioma:** `pt-BR`  
 **Última revisão:** 3 de agosto de 2026
 
-## 1. Autoridade
-
-Ordem para comportamento e engenharia:
-
-1. especificação aprovada da fase;
-2. ADR/decisão estratégica;
-3. issue operacional vigente;
-4. síntese decisória;
-5. evidência/dataset;
-6. protótipo ou registro histórico;
-7. conversa não registrada.
-
-## 2. Caminho
+## 1. Caminho
 
 ```text
 #3 evidência contínua
 → #4 taxonomia — concluída
 → #5 pesquisa/analytics — concluída
 → #6 produto/domínio — concluída
-→ #7 arquitetura — atual
-→ #8 UX/UI
-→ #9 releases/backlog
+→ #7 arquitetura/ADRs — concluída
+→ #8 UX/UI — atual
+→ #9 releases/backlog executável
 → implementação
 ```
 
-## 3. Estado
+## 2. Autoridade
 
-| Issue | Estado | Baseline/saída |
-|---|---|---|
-| #2 | paralela | licença, identidade e questões institucionais |
-| #3 | contínua | pesquisa atualizável |
-| #4 | concluída | `ara.configuration-taxonomy.v1` |
-| #5 | concluída | `ara.research-framework.v1` |
-| #6 | concluída | requisitos e modelo de domínio v1 |
-| #7 | ativa | arquitetura provider-independent e ADRs |
-| #8 | futura | UX, acessibilidade e protótipos |
-| #9 | futura | releases, CI e issues executáveis |
+Especificação aprovada da fase → ADR → issue operacional → síntese → evidência → histórico → conversa.
 
-## 4. Handoff normativo para #7
+Implementação não pode inventar comportamento, entidade, arquitetura ou tela.
 
-A arquitetura deve preservar:
+## 3. Baselines
 
-- `MicrosequenceLineage`/`MicrosequenceRevision`;
-- `Placement` como ocorrência contextual;
-- `CourseVersion` e `PublicationSnapshot` imutáveis;
-- estado contextual por learner assignment/course version/placement/card;
-- Resource/Practice/Response/Validator/Feedback separados;
-- profiles/overlays/overrides/effective snapshot;
-- objetos de pesquisa da Issue #5;
-- workspaces e papéis locais;
-- reference/copy/fork/adaptation/translation;
-- typed relations e capability manifests;
-- baseline offline/data-minimal sem LLM ou event store obrigatórios.
+- `ara.configuration-taxonomy.v1`;
+- `ara.research-framework.v1`;
+- `docs/product/product-requirements-v1.md`;
+- `docs/product/domain-model-v1.md`;
+- `docs/architecture/reference-architecture-v1.md`;
+- ADRs `0001`–`0007`;
+- manifests das Issues #4–#7.
 
-Manifestos:
+## 4. Arquitetura aceita
 
-- `research/data/issue4-final-artifact-manifest-v1.json`;
-- `research/data/issue5-artifact-manifest-v1.json`;
-- `research/data/issue6-artifact-manifest-v1.json`.
+- TypeScript strict monorepo;
+- React/Vite installable PWA;
+- IndexedDB local projection/outbox;
+- Service Worker + Cache API;
+- OPFS optional adapter after profiling;
+- PostgreSQL connected metadata/relations/policies;
+- S3-compatible immutable artifacts;
+- OIDC connected identity;
+- revision/operation-log sync with explicit conflict;
+- bounded MCP application gateway;
+- optional segregated research data plane;
+- trusted capability registry; no course-supplied code.
 
-## 5. Decisões que #7 precisa registrar por ADR
+Managed and self-hosted profiles share domain/package conformance. Supabase is a managed adapter candidate only.
 
-- cliente web/PWA e estratégia de pacote;
-- persistência local;
-- metadata e immutable artifact stores;
-- materialização de course versions;
-- sync/outbox/conflitos;
-- identity e authorization;
-- MCP gateway e capability discovery;
-- research event/instrument adapters;
-- managed e self-hosted profiles;
-- backup/restore/migration/rollback;
-- security, privacy, accessibility, performance e cost budgets;
-- extensão controlada.
+## 5. Trabalho atual — Issue #8
 
-Primeiro-escopo e requisito durável não podem ser confundidos.
+Issue #8 must produce screen-level contracts and evaluated prototypes for:
 
-## 6. Regras de execução
+- learner library and folders;
+- course download/materialization and offline study;
+- card cycle, feedback, progress, study review and resumption;
+- configuration profiles/overlays/overrides and effective diff;
+- ARA authoring workspace + chat/MCP operation status;
+- microsequence/placement/dependency composition;
+- comments/findings, review, repair and publication;
+- protocols, participants, instruments and question-oriented analytics;
+- workspace roles and institutional/public/confidential administration;
+- sync, conflict, unavailable capability, permission and failure;
+- locale/accessibility/responsive behavior.
 
-- Nenhum protótipo histórico vira arquitetura sem requisito + comparação + ADR.
-- Curso não contém código arbitrário.
-- Conflito semântico não sofre auto-merge silencioso.
-- Capacidade ausente é explícita.
-- Supabase pode ser adapter gerenciado, nunca domínio.
-- Implementação não inventa UX.
-- Cada PR substancial inclui decisão, validação, limites e documentação.
+Every journey needs mobile/desktop/offline/permission/error states and visible strings in en, pt-BR and pt-PT.
 
-## 7. Registros não autorizados
+## 6. Quality and boundaries
 
-Issues #50 e #53 são placeholders acidentais fechados como `not_planned`. Experimentos #36–#40 permanecem não normativos; #42 permanece adiado.
+- Galaxy A07-class first-scope benchmark;
+- baseline study without connection/LLM;
+- accessibility target WCAG 2.2 AA plus manual AT review;
+- no universal LMS dashboard;
+- no decorative gamification;
+- usability does not establish learning effectiveness;
+- UX findings cannot change domain/architecture without explicit return.
 
-## 8. Próxima ação
+## 7. Next
 
-Concluir a **Issue #7** e seus ADRs; depois iniciar #8.
+After Issue #8, Issue #9 defines branch protection, CI, releases, migration, evidence packages and executable Codex issues.
+
+Issues #50/#53 remain accidental `not_planned`; experiments #36–#40 non-normative; #42 deferred.
