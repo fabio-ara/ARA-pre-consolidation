@@ -14,25 +14,23 @@ course → module → lesson → microsequence → card
 
 ## Current stage
 
-The project is in research and product definition. Issue #4 governs the active pedagogical and research configuration taxonomy. Packages P1, P2 and P3 are complete; P4—instrumentation, experimental conditions, analytics and governance—is next. The new product has not entered implementation.
+The project is in research and product definition. Issue #4 governs the active configuration taxonomy. Packages P1 through P4 are complete; P5—authorship, review, repair, publication and institutional policies—is next. The new product has not entered implementation.
 
 ## Start here
 
-Primary navigation has three sources, in this order:
+Primary navigation has three sources:
 
 1. [Product vision](docs/vision/product-vision.pt-BR.md)
 2. [Research programme](docs/research/research-programme-index.pt-BR.md)
 3. [Backlog, phases and issue rules](docs/roadmap/backlog-index.md)
 
-GitHub Issues are authorized, self-contained work units. Research, decisions, specifications, architecture, UX and implementation remain distinct. Codex may implement only implementation issues derived from approved requirements, architecture decisions and UX specifications.
+GitHub Issues are authorized, self-contained work units. Research, decisions, product, architecture, UX and implementation remain distinct. Codex may implement only issues derived from approved requirements, architecture decisions and UX specifications.
 
 ## Guiding purposes
 
-ARA is intended for self-directed learners, authors, teachers, tutors, researchers and institutions. GPT+MCP will support planning, construction, audit and repair, while ARA will expose artifacts, versions, comments, deterministic operations and publication decisions to the user.
+ARA is intended for self-directed learners, authors, teachers, tutors, researchers and institutions. GPT+MCP supports semantic planning, construction, audit and repair; ARA renders evolving artifacts and gives users deterministic control over versions, comments, diffs, approval and publication.
 
 ## Governance
-
-See:
 
 - [Repository governance](docs/governance/repository-governance.md)
 - [Language policy](docs/governance/language-policy.md)
@@ -40,7 +38,7 @@ See:
 
 ## Languages
 
-The interface will support Brazilian Portuguese (`pt-BR`), European Portuguese (`pt-PT`) and English (`en`). Working research documents will normally use Brazilian Portuguese as their canonical drafting language.
+The interface will support Brazilian Portuguese (`pt-BR`), European Portuguese (`pt-PT`) and English (`en`). Working research documents normally use Brazilian Portuguese.
 
 ## Licensing
 
@@ -48,4 +46,4 @@ The interface will support Brazilian Portuguese (`pt-BR`), European Portuguese (
 - Documentation: [Creative Commons Attribution 4.0 International](LICENSE-DOCUMENTATION.md), unless otherwise stated
 - Name, kanji, logo and visual identity: see [TRADEMARKS.md](TRADEMARKS.md)
 
-See [LICENSING.md](LICENSING.md) for the complete boundaries.
+See [LICENSING.md](LICENSING.md) for complete boundaries.
