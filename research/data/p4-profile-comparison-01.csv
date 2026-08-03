@@ -1,0 +1,10 @@
+profile_id,context,event_policy,instrument_policy,interpretation_policy,authority_basis,visibility,retention,notes
+aralearn-reference,personal self-directed,minimal functional state,none,none,none,self-only,current state,No learning inference; cursor/completion/review marks remain functional.
+personal-reflective,self-directed opt-in,selected personal events,goals/notes/self-checks,descriptive only,opt-in,self-only,user-controlled,Supports reflection without institutional exposure.
+formal-formative-course,teaching/tutoring,authorized course interactions,rubrics/tests/comments,descriptive and formative,course policy,teacher aggregate + learner self,course-defined,No punitive inference from raw traces.
+research-between-participant,comparative research,protocol-authorized,pre/post/delayed + questionnaires,pre-registered comparisons,consent/legal basis,research deidentified,protocol-defined,Randomization/assignment and version locks required.
+research-within-participant,comparative research,protocol-authorized,repeated instruments,counterbalanced within-person,consent/legal basis,research deidentified,protocol-defined,Carryover and order effects explicit.
+qualitative-development,design research,minimal events + artifacts,interviews/diaries/observations/comments,qualitative or mixed,consent/legal basis,research controlled,protocol-defined,Content analysis and provenance required.
+institutional-quality-assurance,institution,limited authorized aggregates,rubrics/surveys/operations,aggregate quality indicators,legal/policy basis,role-based aggregates,policy-defined,No individual ranking by default.
+participant-rights-overlay,all research,consent/withdrawal/access events only,participant materials,rights status only,rights-based,participant + authorized staff,legal minimum,Overrides other profiles for rights and withdrawal.
+offline-research-overlay,offline/mobile,buffered authorized events,offline instruments where feasible,explicit timing uncertainty,protocol,research deidentified,bounded retention,Sync delay and device loss treated as data-quality issues.
