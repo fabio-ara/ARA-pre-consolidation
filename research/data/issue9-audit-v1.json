@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "ara.issue9-audit.v1",
+  "result": "programme-complete-with-one-external-administrative-blocker",
+  "checks": {
+    "dependencyOrderedFunctionalReleases": "passed",
+    "executableIssueCoverage": "passed",
+    "traceabilityToRequirementsADRsScreens": "passed",
+    "qualityGatesAndDefinitionOfDone": "passed",
+    "ciBaseline": "passed",
+    "codeownersAndTemplates": "passed",
+    "migrationStrategy": "passed",
+    "releaseEvidenceAndRollback": "passed",
+    "managedSelfHostedConformance": "passed",
+    "securityAccessibilityPerformanceLicensing": "passed",
+    "noUndocumentedRequirements": "passed",
+    "branchProtectionDefined": "passed",
+    "branchProtectionEnabled": "blocked-by-unavailable-connector-capability"
+  },
+  "counts": {"releases":6,"implementationIssues":16,"blockingAdministrativeIssues":1,"workflowFiles":1,"templates":3},
+  "blocker": {
+    "issue": 59,
+    "requiredAction": "Apply and verify the main-branch protection/ruleset documented in docs/releases/main-branch-protection-v1.md.",
+    "implementationEffect": "Issues #60–#74 must not start until #59 closes."
+  },
+  "limitations": [
+    "The plan does not implement or validate product code.",
+    "The initial governance workflow has no product jobs until R0 bootstraps the toolchain.",
+    "Release dates are intentionally not promised before measured implementation velocity."
+  ]
+}

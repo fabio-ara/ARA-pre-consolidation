@@ -1,0 +1,17 @@
+# Default owner
+* @fabio-ara
+
+# Governance and workflows
+/.github/ @fabio-ara
+/docs/governance/ @fabio-ara
+/docs/roadmap/ @fabio-ara
+
+# Normative baselines
+/docs/product/ @fabio-ara
+/docs/architecture/ @fabio-ara
+/docs/ux/ @fabio-ara
+/research/data/issue4-* @fabio-ara
+/research/data/issue5-* @fabio-ara
+/research/data/issue6-* @fabio-ara
+/research/data/issue7-* @fabio-ara
+/research/data/issue8-* @fabio-ara

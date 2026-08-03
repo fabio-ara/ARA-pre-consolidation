@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "ara.issue9-artifact-manifest.v1",
+  "files": [
+    "docs/releases/implementation-programme-v1.md",
+    "docs/releases/quality-gates-v1.md",
+    "docs/releases/main-branch-protection-v1.md",
+    "docs/releases/aralearn-migration-v1.md",
+    "docs/releases/release-evidence-v1.md",
+    ".github/workflows/governance.yml",
+    ".github/CODEOWNERS",
+    ".github/ISSUE_TEMPLATE/implementation.yml",
+    ".github/pull_request_template.md",
+    "research/data/issue9-implementation-backlog-v1.csv",
+    "research/data/issue9-decision-synthesis-v1.json",
+    "research/data/issue9-audit-v1.json"
+  ],
+  "releases": 6,
+  "implementationIssues": [59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74],
+  "externalAdministrativeBlocker": 59
+}

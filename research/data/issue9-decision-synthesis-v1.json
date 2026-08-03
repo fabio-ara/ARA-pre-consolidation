@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "ara.implementation-programme-decision.v1",
+  "date": "2026-08-03",
+  "governingIssue": 9,
+  "status": "accepted-programme-external-protection-verification-pending",
+  "principalConclusion": "ARA implementation must proceed through six dependency-ordered end-to-end releases, from a protected reproducible foundation to offline study, visible authoring/MCP repair, connected collaboration, research/formal institutional profiles, and open publication/migration/conformance. Only the executable issues #59–#74 authorize product work.",
+  "releaseSequence": [
+    {"id":"R0","outcome":"protected repository, reproducible TypeScript/PWA foundation and executable domain/packages","issues":[59,60,61]},
+    {"id":"R1","outcome":"usable personal offline study","issues":[62,63,64]},
+    {"id":"R2","outcome":"visible private authoring, audit/repair and bounded MCP","issues":[65,66,67]},
+    {"id":"R3","outcome":"connected adapters, synchronization, collaboration and operations","issues":[68,69,70]},
+    {"id":"R4","outcome":"research, formal teaching and confidential institutional profiles","issues":[71,72]},
+    {"id":"R5","outcome":"public/OER publication, controlled capabilities, migration and ARA v1 evidence","issues":[73,74]}
+  ],
+  "controls": [
+    "Every implementation PR links exactly one scoped executable issue and release.",
+    "Every user-facing change references approved screen IDs and journeys.",
+    "Every material technology boundary follows an accepted ADR.",
+    "Tests, documentation, migrations, accessibility, locales, failure states and rollback ship with the change.",
+    "No release closes without an immutable evidence package and known limitations.",
+    "No hidden AraLearn runtime compatibility or silent fallback is allowed.",
+    "Issue #59 must enable and verify main-branch protection before issue #60 starts."
+  ],
+  "administrativeBlocker": {
+    "issue": 59,
+    "reason": "The available GitHub connector cannot mutate branch protection or repository rulesets.",
+    "effect": "Product-code implementation remains blocked; the programme and backlog can be merged safely."
+  },
+  "nonAuthorizations": [
+    "starting issue #60 before #59 closes",
+    "implementing from umbrella issues #9/#10",
+    "merging infrastructure-only work as a functional release",
+    "claiming educational effectiveness from release conformance",
+    "unapproved features or hidden compatibility paths"
+  ]
+}

@@ -12,7 +12,7 @@ course version → module/lesson → placement → microsequence revision → ca
 
 ## Current stage
 
-Issues #4–#8 are complete: configuration, research/analytics, product/domain, architecture and complete UX specification. Issue #9 is the final preparation phase—functional releases, quality gates and executable implementation backlog. Product implementation has not started.
+Research, configuration, protocols/analytics, product/domain, architecture, UX and the R0–R5 implementation programme are materialized. Product code has not started. The only current action is Issue #59: apply and verify the required `main` branch protection; Issue #60 is the first product-code item after that blocker closes.
 
 ## Canonical path
 
@@ -21,12 +21,15 @@ Issues #4–#8 are complete: configuration, research/analytics, product/domain, 
 3. [Domain model](docs/product/domain-model-v1.md)
 4. [Reference architecture](docs/architecture/reference-architecture-v1.md)
 5. [UX specification](docs/ux/ux-specification-v1.md)
-6. [Backlog](docs/roadmap/backlog-index.md)
+6. [Implementation programme](docs/releases/implementation-programme-v1.md)
+7. [Executable backlog](docs/roadmap/backlog-index.md)
 
-The structural UX prototype is in [`prototypes/ux-v1/`](prototypes/ux-v1/). Research, product, architecture, UX and implementation remain separate gates.
+The structural UX prototype is in [`prototypes/ux-v1/`](prototypes/ux-v1/). Only Issues #59–#74 authorize implementation, in their declared dependency order.
 
 ## Governance and licensing
 
+- [Quality gates](docs/releases/quality-gates-v1.md)
+- [Required main protection](docs/releases/main-branch-protection-v1.md)
 - [Governance](docs/governance/repository-governance.md)
 - [Language policy](docs/governance/language-policy.md)
 - [Contributing](CONTRIBUTING.md)

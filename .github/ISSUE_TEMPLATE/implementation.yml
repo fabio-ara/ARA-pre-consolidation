@@ -1,0 +1,65 @@
+name: Implementation work item
+description: Executable, release-scoped ARA implementation issue
+title: "[R?] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not use this template without approved requirements, ADRs and UX contracts."
+  - type: input
+    id: release
+    attributes:
+      label: Release
+      placeholder: R1
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User-visible outcome
+      description: Describe the complete observable result, not an internal component.
+    validations:
+      required: true
+  - type: textarea
+    id: governing
+    attributes:
+      label: Governing specifications
+      description: Requirements, domain entities/invariants, ADRs, screen IDs and journeys.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and non-goals
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Behavior and states
+      description: Include offline, permission, failure, unavailable capability, accessibility and locale behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data, security, privacy and migration effects
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Required tests and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback, documentation and limitations
+    validations:
+      required: true

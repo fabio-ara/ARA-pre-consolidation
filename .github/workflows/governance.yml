@@ -1,0 +1,97 @@
+name: governance
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: governance-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Validate JSON, CSV and canonical artifacts
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import csv, json, pathlib, re, sys
+          root = pathlib.Path('.')
+          errors = []
+          for path in root.rglob('*.json'):
+              if '.git' in path.parts:
+                  continue
+              try:
+                  json.loads(path.read_text(encoding='utf-8'))
+              except Exception as exc:
+                  errors.append(f'{path}: invalid JSON: {exc}')
+          strict_registry = re.compile(r'^(?:p[1-5]-|issue[4-9]-)')
+          for path in root.rglob('*.csv'):
+              if '.git' in path.parts:
+                  continue
+              try:
+                  rows = list(csv.reader(path.open(encoding='utf-8', newline='')))
+                  if not rows:
+                      errors.append(f'{path}: empty CSV')
+                  elif path.parent == root/'research'/'data' and strict_registry.match(path.name):
+                      if any(len(row) != len(rows[0]) for row in rows[1:]):
+                          errors.append(f'{path}: inconsistent column count in normative registry')
+              except Exception as exc:
+                  errors.append(f'{path}: invalid CSV: {exc}')
+          required = [
+              'docs/vision/product-vision.pt-BR.md',
+              'docs/product/product-requirements-v1.md',
+              'docs/product/domain-model-v1.md',
+              'docs/architecture/reference-architecture-v1.md',
+              'docs/ux/ux-specification-v1.md',
+              'docs/releases/implementation-programme-v1.md',
+              'research/data/issue4-final-artifact-manifest-v1.json',
+              'research/data/issue5-artifact-manifest-v1.json',
+              'research/data/issue6-artifact-manifest-v1.json',
+              'research/data/issue7-artifact-manifest-v1.json',
+              'research/data/issue8-artifact-manifest-v1.json',
+              'research/data/issue9-artifact-manifest-v1.json',
+          ]
+          for item in required:
+              if not (root/item).is_file(): errors.append(f'missing required artifact: {item}')
+          for path in root.rglob('*'):
+              if path.is_file() and path.suffix.lower() in {'.md','.json','.csv','.yml','.yaml','.html','.js','.css'}:
+                  text = path.read_text(encoding='utf-8', errors='replace')
+                  if '\x00' in text: errors.append(f'{path}: NUL byte')
+          if errors:
+              print('\n'.join(errors), file=sys.stderr)
+              raise SystemExit(1)
+          print('Governance artifacts validated.')
+          PY
+      - name: Validate prototype landmarks
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('prototypes/ux-v1/index.html')
+          if p.exists():
+              t=p.read_text()
+              for s in ('<main','<nav','<h1','lang="pt-BR"','href="#main"'):
+                  assert s in t, f'missing prototype accessibility marker: {s}'
+          PY
+      - name: Run product quality scripts when bootstrapped
+        shell: bash
+        run: |
+          if [ -f package.json ]; then
+            corepack enable
+            pnpm install --frozen-lockfile
+            pnpm run lint
+            pnpm run typecheck
+            pnpm run test
+            pnpm run build
+          else
+            echo 'R0 product toolchain not bootstrapped yet; governance-only gate passed.'
+          fi
