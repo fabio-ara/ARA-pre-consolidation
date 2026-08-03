@@ -36,6 +36,9 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/system-activity-feedback-matrix.csv`: initial cross-system matrix of activities, feedback, progression, consequences and evidence status.
 - `data/formal-search-round-01-file-manifest.csv`: counts, sizes and SHA-256 hashes for the first formal PubMed and ERIC exports.
 - `data/eric-round-01-duplicate-decisions.csv`: explicit ERIC duplicate and study-family decisions.
+- `data/formal-search-round-01-cross-database-duplicates.csv`: deterministic PubMed–ERIC duplicate mappings.
+- `data/formal-search-round-01-related-publications.csv`: related publications retained as distinct records.
+- `data/formal-search-round-01-summary.json`: final formal-search and deduplication counts.
 
 ### Search records
 
@@ -45,7 +48,8 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `searches/2026-08-02-extracao-revisoes-centrais-01.md`: source verification and extraction record for the first review corpus.
 - `searches/2026-08-02-formal-search-links.md`: exact PubMed and ERIC pilot strings and official execution links.
 - `searches/2026-08-02-formal-search-execution-status.md`: initial execution blocker and completion requirements.
-- `searches/2026-08-02-formal-search-validation-round-01.md`: validation of the received exports, within-database deduplication and remaining cross-database requirement.
+- `searches/2026-08-02-formal-search-validation-round-01.md`: validation of the received identifier and ERIC exports.
+- `searches/2026-08-02-formal-search-completion-round-01.md`: completed PubMed–ERIC comparison and final publication count.
 
 ### Schemas, templates and libraries
 
