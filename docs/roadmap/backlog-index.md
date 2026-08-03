@@ -62,7 +62,7 @@ A Issue #2 corre em paralelo quando questões jurídicas/institucionais forem re
 - **P2 — PR #47:** 36 dimensões de progressão, mastery, sequência, ritmo, spacing, revisão, exemplos, scaffolding, segmentação e retomada.
 - **P3 — PR #48:** 50 dimensões e nove perfis de autonomia, autorregulação, adaptação, acessibilidade e IA.
 - **P4 — PR #49:** 31 dimensões e nove perfis de protocolos, condições, eventos, instrumentos, medidas, constructos, interpretações, provenance e analytics.
-- **P5 — PR desta branch:** 67 dimensões e 11 perfis de autoria, review, repair, annotation, versioning, reuse, publication, licensing e governance.
+- **P5 — PR #51:** 67 dimensões e 11 perfis de autoria, review, repair, annotation, versioning, reuse, publication, licensing e governance.
 
 Os artefatos em `research/data/p1-*` a `p5-*`, as sínteses, os protocolos e as bibliografias prevalecem sobre resumos.
 
