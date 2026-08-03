@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "ara.issue5-decision.v1",
+  "date": "2026-08-03",
+  "governingIssue": 5,
+  "status": "accepted-normative-handoff",
+  "principalConclusion": "ARA research and analytics must be governed by versioned questions, protocols and conditions. Observable events and instruments become evidence only when explicitly authorized; measures, constructs, interpretations and interventions remain separate. Personal, teaching, research and operational analytics have independent authority, visibility and retention.",
+  "acceptedDecisions": [
+    "Adopt the conceptual object model in issue5-research-framework-v1.json.",
+    "Use a minimal internal event vocabulary with versioned mappings to Caliper/xAPI rather than adopting either as the ARA domain.",
+    "Require a question, formula, unit, denominator, window, missing-data rule, limitation and permitted use for every measure.",
+    "Represent quantitative, qualitative, mixed-method and development-research instruments.",
+    "Make purpose binding, minimization, rights, identity mode, retention, access and export protocol-level rules.",
+    "Keep personal analytics opt-in/private by default and separate from teaching/research visibility.",
+    "Separate operational telemetry and incident data from educational analytics.",
+    "Require immutable condition snapshots and explicit deviation/fidelity records.",
+    "Require semantic conformance evidence before cross-deployment pooling.",
+    "Use role-oriented analytics questions rather than a universal dashboard."
+  ],
+  "deferred": [
+    "Production event schema/store and transport",
+    "Production metrics and dashboards",
+    "Predictive early warning and automated interventions",
+    "Participant recruitment or data collection",
+    "Choice of LRS, warehouse or analytics database",
+    "Final dissertation design and instruments",
+    "Jurisdiction-specific consent text",
+    "Architecture, UX and implementation"
+  ],
+  "handoff": {
+    "Issue6": [
+      "Adopt Protocol, Condition, Participant, Assignment, EventDefinition, InstrumentDefinition, MeasureDefinition, ConstructDefinition, InterpretationRule, EvidenceRecord and ResearchPackage as normative domain concepts.",
+      "Integrate research objects with configuration/content/composition snapshots and lifecycle."
+    ],
+    "Issue7": [
+      "Design ports/adapters for authorized events, instruments, research packages, privacy controls and cross-deployment conformance.",
+      "Keep baseline personal deployment free from a mandatory central event store."
+    ],
+    "Issue8": [
+      "Design protocol builder, consent/withdrawal, instrument schedule, question-oriented analytics and export explanations with role/rights boundaries."
+    ],
+    "Issue9": [
+      "Plan synthetic conformance fixtures and privacy/measure formula tests; do not treat them as educational evidence."
+    ]
+  },
+  "nonAuthorizations": [
+    "participant data collection",
+    "production event store",
+    "dashboard",
+    "predictive model",
+    "early-warning system",
+    "architecture/stack",
+    "UX implementation",
+    "code"
+  ]
+}
