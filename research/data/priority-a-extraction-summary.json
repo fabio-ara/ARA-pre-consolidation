@@ -1,0 +1,17 @@
+{
+  "extraction_round": "priority-a-01",
+  "corpus_publications": 26,
+  "corrected_groups": {
+    "formal_evidence_synthesis": 12,
+    "narrative_or_state_of_the_art_review": 4,
+    "empirical_or_product_evaluation": 9,
+    "secondary_evidence_appraisal": 1
+  },
+  "access_depth": {
+    "full_or_substantial_text": 15,
+    "detailed_abstract_or_metadata": 3,
+    "abstract_level": 8
+  },
+  "priority_full_text_requests": 3,
+  "interpretation": "Priority A denotes relevance, not methodological equivalence, quality or effectiveness."
+}
