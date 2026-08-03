@@ -1,0 +1,25 @@
+id,name,rule
+I001,Published immutability,Published and research-locked artifacts are immutable snapshots; semantic changes create new revisions.
+I002,Course completeness,"A CourseVersion is pedagogically complete through composition, objectives, dependencies, configuration and provenance, even when it references reusable revisions."
+I003,Reusable unit decision,"MicrosequenceRevision is the initial reusable authoring unit; this may be revised by a future version, not assumed universal."
+I004,Contextual occurrence,"Placement, not MicrosequenceRevision alone, owns course-local order, role, prerequisites, overrides and progression context."
+I005,Contextual state,Study progress is keyed to learner context + course version + placement + card; reuse does not transfer mastery automatically.
+I006,No free-text dependency core,Dependencies use stable identifiers and typed relations; labels/tags may assist search only.
+I007,Separation of content/practice,"Resource, PracticeDefinition, ResponseDefinition, ValidatorPolicy and FeedbackPolicy are distinct."
+I008,No arbitrary course code,Course artifacts cannot supply arbitrary executable renderer/validator code.
+I009,Effective configuration,Every consequential study/research/publication instance can produce a versioned EffectiveConfigurationSnapshot.
+I010,Rights precedence,"Accessibility, consent, withdrawal, confidentiality, safety and licensing constraints override ordinary preferences."
+I011,Capability explicitness,Unavailable capability produces explicit unsupported state or preauthorized fallback; no silent degradation.
+I012,Data minimal baseline,Personal baseline requires no central behavioral event store.
+I013,Analytics separation,"Event, measure, construct, interpretation and intervention remain distinct."
+I014,Local roles,Permissions are workspace-scoped; no implicit global super-administrator.
+I015,Agent bounded authority,Agent identity/role does not grant approval or publication authority.
+I016,Audit-repair separation,Review/audit does not mutate; repair creates a revision and re-audit record.
+I017,Publication audience,Published status and audience/visibility are separate.
+I018,Lifecycle distinctions,"Withdraw, supersede, archive, revoke access and hard delete are distinct operations."
+I019,License by scope,"Licensing and attribution can vary by course, microsequence, card, resource and asset."
+I020,Folder reference,Folder/collection/programme organization never duplicates or changes underlying course identity.
+I021,Offline continuity,Approved baseline study path remains functional offline after package materialization.
+I022,Portability,"Content, configuration and research packages are provider-independent at domain boundary."
+I023,Research fidelity,"Condition snapshots preserve content, composition, configuration, capabilities, instruments and event authorization."
+I024,No effectiveness claim,"Conformance, completion, validation, audit or usability do not establish educational effectiveness."
