@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "ara.configuration-taxonomy-decision.v1",
+  "taxonomyVersion": "ara.configuration-taxonomy.v1",
+  "date": "2026-08-03",
+  "governingIssue": 4,
+  "status": "accepted-normative-handoff",
+  "sourcePackages": {
+    "P1": {"acceptedParameters": 21, "profiles": 6, "pr": 45},
+    "P2": {"acceptedParameters": 36, "profiles": 8, "pr": 47},
+    "P3": {"acceptedParameters": 50, "profiles": 9, "pr": 48},
+    "P4": {"acceptedParameters": 31, "profiles": 9, "pr": 49},
+    "P5": {"acceptedParameters": 67, "profiles": 11, "pr": 51}
+  },
+  "integration": {
+    "sourceParameterRecords": 205,
+    "canonicalParameterRecords": 205,
+    "exactDuplicateParameterIds": 0,
+    "namespaceAliases": {
+      "review.trigger": "study_review.trigger",
+      "review.schedule_policy": "study_review.schedule_policy",
+      "review.interval_pattern": "study_review.interval_pattern",
+      "review.target_horizon": "study_review.target_horizon",
+      "review.load_budget": "study_review.load_budget",
+      "review.deferral_policy": "study_review.deferral_policy",
+      "review.item_relation": "study_review.item_relation",
+      "review.failure_policy": "study_review.failure_policy",
+      "review.type": "authoring_review.type",
+      "review.rubric": "authoring_review.rubric",
+      "review.scope": "authoring_review.scope",
+      "review.independence": "authoring_review.independence",
+      "review.reviewer_qualification": "authoring_review.reviewer_qualification",
+      "review.outcome": "authoring_review.outcome",
+      "review.finding_record": "authoring_review.finding_record",
+      "review.approval_policy": "authoring_review.approval_policy",
+      "withdrawal.policy": "participant.withdrawal_policy",
+      "export.policy": "research_export.policy"
+    },
+    "aliasCount": 18,
+    "sourceProfileOccurrences": 43,
+    "canonicalProfiles": 38,
+    "deduplicationConclusion": "No accepted source parameter was removed. Exact IDs were unique; semantic overlap was retained when scope or object differed. Ambiguous namespaces were harmonized through canonical aliases while source IDs remain traceable."
+  },
+  "principalConclusion": "ARA configuration is not one flat course JSON or one exercise mode. It is a versioned, layered resolution system in which pedagogical behavior, content transformation, composition/dependencies, lifecycle/governance and research conditions remain distinct but composable. Rights, consent, protocol locks, institutional policy, human authority, learner choice, defaults, adaptive rules, AI recommendations and technical capability have explicit roles and precedence.",
+  "effectLayers": [
+    {"id":"runtime-effective-configuration","definition":"Changes study, assessment, feedback, pacing, review, accessibility or assistance behavior without necessarily rewriting authored content."},
+    {"id":"content-materialization","definition":"Changes generated or edited theory, practice, examples, segmentation, scaffolds or other authored content and therefore creates a new artifact revision or derived variant."},
+    {"id":"composition-dependencies","definition":"Changes order, prerequisite relations, occurrences, reuse, branching, placement or cross-course composition and therefore creates a new composition/version snapshot."},
+    {"id":"lifecycle-governance","definition":"Controls authorship states, review, repair, versioning, publication, access, licensing, retention, withdrawal, deletion and institutional authority."},
+    {"id":"research-condition","definition":"Locks purpose, condition, assignment, events, instruments, measures, constructs, analysis, provenance and allowed interpretations for reproducible study."},
+    {"id":"rights-accessibility","definition":"Cross-cutting constraints and accommodations that may override ordinary configuration and require construct/comparability documentation."}
+  ],
+  "configurationInputs": [
+    "taxonomy version",
+    "deployment and capability profile",
+    "named base profile",
+    "workspace and institutional policy",
+    "course configuration",
+    "research protocol and condition locks",
+    "module/lesson/microsequence/card/placement overrides",
+    "learner preferences and protected accommodations",
+    "accepted adaptive decisions or AI-assisted proposals",
+    "current capability availability and explicit fallback policy"
+  ],
+  "resolutionAlgorithm": [
+    "Validate taxonomy version, parameter IDs, value domains and scope.",
+    "Classify each parameter by effect layer and determine whether it changes runtime state, content revision, composition version, lifecycle policy or research condition.",
+    "Apply hard legal, safety, accessibility, confidentiality and licensing constraints.",
+    "Apply participant consent, refusal and withdrawal rights.",
+    "Apply approved protocol/condition locks and record any rights-required deviation.",
+    "Apply institutional and publication policies and qualified review gates.",
+    "Apply workspace/course/author policy.",
+    "Apply learner choices and accommodations within the permitted space.",
+    "Fill unspecified values from named profile and deterministic product defaults.",
+    "Evaluate validated adaptive rules and AI recommendations only within explicitly granted authority; recommendations remain advisory unless confirmation/application mode authorizes otherwise.",
+    "Validate dependencies, incompatibilities, unsupported combinations and capability availability.",
+    "Use only explicit fallbacks; otherwise return unsupported/unresolved state.",
+    "Produce a versioned effective-configuration snapshot with value provenance, locks, overrides, aliases, capabilities, content/composition versions and unresolved warnings."
+  ],
+  "snapshotMinimum": [
+    "taxonomyVersion",
+    "baseProfileId",
+    "overlayProfileIds",
+    "deploymentProfile",
+    "parameterValuesWithSourceAndScope",
+    "protocolAndConditionLocks",
+    "institutionalPolicies",
+    "learnerPreferencesAndAccommodationReferences",
+    "acceptedAdaptiveOrAIProposalReferences",
+    "contentVersionManifest",
+    "compositionVersionManifest",
+    "capabilityManifest",
+    "instrumentAndEventAuthorizationManifest",
+    "provenanceAndDerivationReferences",
+    "resolutionWarningsAndUnsupportedValues",
+    "createdAtAndAuthority"
+  ],
+  "profileComposition": {
+    "rule": "Use one named base profile plus zero or more compatible overlays and sparse scoped overrides.",
+    "requirements": [
+      "Profiles are versioned and never require every course artifact to repeat the full catalogue.",
+      "Overlays cannot disable baseline rights or accessibility.",
+      "Research profiles lock only declared dimensions and preserve participant rights.",
+      "Institutional profiles do not automatically apply to personal workspaces.",
+      "Capability/offline overlays must state unavailable behavior and explicit fallbacks.",
+      "Profile application produces a diff and an effective snapshot."
+    ]
+  },
+  "authorityPrecedenceFile": "research/data/issue4-final-precedence-model-v1.csv",
+  "parameterRegistryFile": "research/data/issue4-final-parameter-registry-v1.json",
+  "profileRegistryFile": "research/data/issue4-final-profile-registry-v1.json",
+  "deferredCandidatesFile": "research/data/issue4-final-deferred-candidates-v1.csv",
+  "rejectedPrinciplesFile": "research/data/issue4-final-rejected-principles-v1.csv",
+  "scenarioValidationFile": "research/data/issue4-final-scenario-validation-v1.csv",
+  "normativeDecisions": [
+    "AraLearn is the first complete reference profile and remains non-punitive, data-minimal, mobile/offline and human-controlled.",
+    "Taxonomy acceptance means representability and traceability, not implementation of every value in the first release.",
+    "Content-transforming parameters cannot be implemented as renderer switches; they produce new revisions or derived variants.",
+    "Composition/dependency parameters create versioned composition snapshots and cannot rely only on free-text tags.",
+    "Structural completion, event traces, AI fluency, citations, reviews and schema validation do not establish learning, correctness or effectiveness.",
+    "Accessibility is baseline and precedence, not a disableable profile.",
+    "AI is a bounded assistant; it cannot self-approve, self-publish or silently mutate consequential artifacts.",
+    "Events, measures, constructs, interpretations and interventions remain separate.",
+    "Published, shared or research-locked artifacts are immutable snapshots; change occurs through new revisions, explicit supersession or withdrawal.",
+    "Reference, copy, fork, adaptation and translation are distinct reuse relations.",
+    "GPT+MCP and ARA are complementary channels; deterministic user control remains visible in ARA.",
+    "The exact reusable unit, course composition domain, storage layout and synchronization model remain decisions for Issues #6 and #7."
+  ],
+  "deferredCandidateCount": 36,
+  "rejectedPrincipleCount": 41,
+  "validation": {
+    "scenarioCount": 15,
+    "allScenariosPassed": true,
+    "scope": "conceptual coherence, authority resolution and reproducibility; not educational effectiveness or technical feasibility"
+  },
+  "handoff": {
+    "Issue5": [
+      "Adopt accepted protocol, condition, participant-rights, event, measure, construct, interpretation, analytics and governance parameters.",
+      "Define normative objects, formulas, instruments, missing-data rules, export semantics and prohibited inferences without reopening pedagogical defaults.",
+      "Preserve data-minimal personal use and separate operational observability from educational analytics."
+    ],
+    "Issue6": [
+      "Decide normative entities and journeys for profiles, effective configuration, snapshots, content variants, composition, microsequences, placements, references, versions, annotations, review, repair, publication and lifecycle.",
+      "Accept, revise or reject discovered microsequence-first composition explicitly.",
+      "Classify first-release, optional, connected, research-only and deferred capabilities."
+    ],
+    "Issue7": [
+      "Choose provider-independent architecture for resolving profiles/overrides, materializing content/composition, local/offline snapshots, synchronization, provenance, event transport, access revocation and deletion.",
+      "Evaluate IndexedDB, Storage, relational/document/graph/content-addressed alternatives only after Issue #6 semantics.",
+      "Define explicit unavailable-capability and fallback behavior."
+    ],
+    "Issue8": [
+      "Design role-oriented, progressive and resumable forms for profiles, sparse overrides, diffs, versions, comments, review queues, publication and analytics.",
+      "Hide storage internals while keeping consequences, provenance, authority and conflicts inspectable.",
+      "Validate accessibility and comprehension with nontechnical users."
+    ]
+  },
+  "nonAuthorizations": [
+    "production schema or course contract",
+    "database or Storage layout",
+    "IndexedDB stores",
+    "MCP endpoints or tool contracts",
+    "architecture or stack selection",
+    "configuration UI",
+    "event store or dashboard",
+    "participant data collection",
+    "adaptive model or scheduler",
+    "automatic cross-course reuse or repair",
+    "code or migration"
+  ],
+  "issueCompletion": "Issue #4 acceptance criteria are satisfied by the source records plus the integrated registries, precedence model, scenario validation and final synthesis. Later revision must be versioned and must not silently rewrite P1-P5 evidence."
+}

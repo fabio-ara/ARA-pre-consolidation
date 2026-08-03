@@ -1,0 +1,37 @@
+taxonomy_version,candidate_id,source_packages,destinations,rationale,final_status
+ara.configuration-taxonomy.v1,AI-authoritative-open-response-scoring,P3,"later assessment research, #5 and #6","Validity, fairness, contestability and consequential authority remain insufficient.",deferred
+ara.configuration-taxonomy.v1,adaptive.branching,P2,P3 and Issue #6/#7,"Branching needs learner-control, adaptation, transparency, fallback and domain-valid evidence.",deferred
+ara.configuration-taxonomy.v1,adaptive.learner_model,P3,"P4, Issue #5, #6 and #7","Requires valid constructs, authorized observables, calibration, transparency, contestability, governance and cross-context evaluation.",deferred
+ara.configuration-taxonomy.v1,adaptive.mastery_estimator,P2,"P3/P4, Issue #5 and Issue #6","Mastery estimates require construct validity, evidence windows, calibration, transparency, contestability and governance.",deferred
+ara.configuration-taxonomy.v1,adaptive.review_scheduler,P2,Issue #6 and #7 after review requirements,"Spacing is supported, but no universal algorithm is established; product and deployment constraints remain undecided.",deferred
+ara.configuration-taxonomy.v1,authoritative-open-response-automation,P1,"later research, product and architecture decisions","Validity, fairness, transparency, contestability and authority remain insufficient for default consequential use.",deferred
+ara.configuration-taxonomy.v1,automated.causal_inference,P4,research method only,"Causal claims depend on design and assumptions, not a platform feature.",deferred
+ara.configuration-taxonomy.v1,automatic-accommodation-generation,P3,Issue #6/#8 with accessibility research,"Accommodations require learner involvement, construct review and privacy; model output cannot be treated as entitlement decision.",deferred
+ara.configuration-taxonomy.v1,automatic.cross_course_mastery_transfer,P4,#5/#6,Exposure and completion are not mastery; evidence and equivalence are unresolved.,deferred
+ara.configuration-taxonomy.v1,automatic.expertise_inference,P3,P4 and Issue #5,Expertise is domain- and task-specific and cannot be inferred safely from structural progress or traces alone.,deferred
+ara.configuration-taxonomy.v1,automatic.scaffold_fading,P2,"P3, Issue #5 and Issue #6",Fading depends on valid expertise or criterion evidence; universal automatic removal is not supported.,deferred
+ara.configuration-taxonomy.v1,automatic.struggle_detection,P2|P3,P3/P4 and Issue #5|P4 and Issue #5,"Behavioral signals do not automatically measure struggle and cannot be collected or interpreted without authorization. Attempts, time, delay, interruption, help use and comments are not direct measures of struggle.",deferred
+ara.configuration-taxonomy.v1,automation.automatic_cross_course_repair,P5,Issue #6/#7,"Propagation requires contextual fit, versioning, permissions, preview and rollback.",deferred
+ara.configuration-taxonomy.v1,automation.automatic_license_compatibility,P5,Issue #6/#7 and legal review,"Rules can assist but cannot resolve all scope, jurisdiction and third-party-rights questions.",deferred
+ara.configuration-taxonomy.v1,automation.automatic_source_verification,P5,Issue #6/#7/P5 follow-up evidence,Retrieval and citation checks remain incomplete and cannot guarantee correctness.,deferred
+ara.configuration-taxonomy.v1,automation.semantic_auto_merge,P5,Issue #7,Educational meaning and context cannot be reliably merged from text diffs alone.,deferred
+ara.configuration-taxonomy.v1,cross-course-AI-reuse-and-repair,P3,P5 and Issue #6/#7,"Requires accepted microsequence/reference model, permissions, provenance, versioning and impact analysis.",deferred
+ara.configuration-taxonomy.v1,emotion-or-neurotype-inference,P3,rejected unless future compelling ethical/legal evidence,"Highly sensitive constructs, weak proxies and unacceptable privacy/discrimination risk.",deferred
+ara.configuration-taxonomy.v1,fully_autonomous_course_adaptation,P3,Issue #6/#7 after requirements and validation,"Would combine content transformation, sequencing, accessibility, authority and publication without an accepted domain or architecture.",deferred
+ara.configuration-taxonomy.v1,generative.resumption_summary,P2,P3 and Issue #8,"Generative reentry support raises accuracy, privacy, offline and UX questions; deterministic cues remain sufficient.",deferred
+ara.configuration-taxonomy.v1,governance.reputation_or_ranking,P5,future product research,Public author/reviewer ranking risks distortion and is unnecessary for the first product.,deferred
+ara.configuration-taxonomy.v1,model-fine-tuning-on-user-content-or-behavior,P3,Issue #5/#7 and legal review,"Consent, licensing, confidentiality, retention, deletion and model-governance questions are unresolved.",deferred
+ara.configuration-taxonomy.v1,participant.data_collection,P4,future approved protocol,No participant study is authorized by P4.,deferred
+ara.configuration-taxonomy.v1,predictive.early_warning,P4,Issue #5/#6/#8,"Requires valid constructs, fairness analysis, human review and proportional interventions.",deferred
+ara.configuration-taxonomy.v1,production.event_schema,P4,Issue #5/#6/#7,Conceptual vocabulary and authorized layers must precede storage and transport design.,deferred
+ara.configuration-taxonomy.v1,production.metric_catalogue,P4,Issue #5,"Measures depend on concrete research questions, instruments and validity evidence.",deferred
+ara.configuration-taxonomy.v1,publication.marketplace,P5,Issue #6 future scope,Public marketplace governance exceeds the current authoring/publication requirement.,deferred
+ara.configuration-taxonomy.v1,response.confidence_elicitation,P1,P3/P4,"Potential diagnostic value exists, but burden, accessibility and interpretation require separate analysis.",deferred
+ara.configuration-taxonomy.v1,runtime-generative-content-personalization,P3,"P5, Issue #6/#7/#8","Raises content validity, provenance, offline, cost, accessibility, consistency and comparability problems.",deferred
+ara.configuration-taxonomy.v1,technical.C2PA_credentials,P5,Issue #7/#8,Tamper-evident credentials may be useful for public assets but are not required for the first workflow.,deferred
+ara.configuration-taxonomy.v1,technical.W3C_PROV_internal_model,P5,Issue #6/#7,PROV is a useful interchange mapping but may be too broad for the internal domain.,deferred
+ara.configuration-taxonomy.v1,technical.content_addressed_storage,P5,Issue #7,Deduplication and immutable artifact storage require workload and deletion/access analysis.,deferred
+ara.configuration-taxonomy.v1,technical.microsequence_manifest_model,P5,Issue #6/#7,"The domain must decide reusable unit, placement and snapshot semantics before architecture.",deferred
+ara.configuration-taxonomy.v1,telemetry.attempt_capture,P1,P4 and Issue #5,"Event availability does not authorize collection; consent, retention, construct and prohibited inference rules were not yet defined.",deferred
+ara.configuration-taxonomy.v1,universal-retry-target-default,P1,P2 and domain-specific research,"Same-item, equivalent-item, failed-step and later-review policies depend on progression and domain semantics.",deferred
+ara.configuration-taxonomy.v1,universal.dashboard,P4,Issue #8,Views must be role- and question-oriented.,deferred

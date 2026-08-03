@@ -14,7 +14,7 @@ curso → módulo → lição → microssequência → card
 
 ## Estágio atual
 
-Os Pacotes P1 a P5 da Issue #4 foram concluídos. A próxima entrega é a síntese integrada final da primeira taxonomia de configuração; a implementação do novo produto ainda não começou.
+A Issue #4 foi concluída com `ara.configuration-taxonomy.v1`. A fase atual é a Issue #5 — protocolos de pesquisa, instrumentação e learning analytics. A implementação do novo produto ainda não começou.
 
 ## Comece por aqui
 
