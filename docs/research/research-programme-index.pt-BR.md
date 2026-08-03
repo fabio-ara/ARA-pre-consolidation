@@ -25,62 +25,71 @@ A pesquisa é ampla e finita. O objetivo é evidência suficiente para decidir, 
 
 | Estado | Significado |
 |---|---|
-| `baseline-concluído` | Já existe síntese suficiente para iniciar modelagem de candidatos, com limitações registradas. |
-| `parcial` | Há evidência útil, mas falta uma síntese focada para decisão normativa. |
-| `exploratório` | Existem precedentes ou literatura inicial, insuficientes para decisão. |
+| `concluído` | Pacote decisório entregue e incorporado à fase corrente. |
+| `baseline-concluído` | Existe síntese suficiente para iniciar modelagem, com limitações registradas. |
+| `parcial` | Há evidência útil, mas falta síntese focada para decisão. |
+| `exploratório` | Existem precedentes ou literatura inicial, insuficientes para decisão normativa. |
 | `não-iniciado` | A frente precisa de protocolo e corpus próprios. |
-| `contínuo` | A pesquisa permanece aberta e é atualizada quando novas decisões exigirem. |
+| `contínuo` | A pesquisa permanece aberta e é atualizada quando decisões futuras exigirem. |
 
 ## 3. Evidência já produzida
 
-### 3.1 Prática de recuperação, flashcards, quizzes e espaçamento
+### 3.1 Recuperação, flashcards, quizzes e espaçamento
 
-**Estado:** `baseline-concluído` para descoberta de parâmetros; `parcial` para padrões e algoritmos.
+**Estado:** `baseline-concluído` para parâmetros; `parcial` para algoritmos e progressão.
 
-Fontes do projeto:
+Fontes principais:
 
 - Issue #14 / PR #15;
-- buscas e corpus das Issues #16, #24, #26 e #28;
+- Issues #16, #24, #26 e #28;
+- Pacote P1;
 - sínteses e datasets em `research/`.
 
-Decisões que já podem avançar:
+Já é possível:
 
-- separar produto, mecanismo, formato e agenda;
-- registrar resposta exigida;
-- distinguir recuperação, repetição, nota e consequência;
-- modelar objetivo temporal e autoridade sobre o agendamento.
+- separar produto, mecanismo, formato, agenda, feedback e consequência;
+- distinguir recuperação, repetição, nota e progressão;
+- representar objetivo temporal, resposta exigida e autoridade.
 
-Pesquisa adicional necessária antes de padrão normativo:
+Faltam para P2:
 
-- algoritmos e controle de revisão;
+- algoritmos e controle da revisão;
+- mastery e progressão;
 - adultos trabalhadores;
-- Brasil e Portugal;
 - transferência e retenção tardia;
-- carga de revisão, adiamento e abandono.
+- carga, adiamento, interrupção e abandono.
 
-### 3.2 Formatos de resposta e feedback
+### 3.2 Resposta, tentativas, reveal, feedback e consequências
 
-**Estado:** `baseline-concluído` para primeira taxonomia; `parcial` para domínios e respostas abertas.
+**Estado:** `concluído` pelo Pacote P1 para a primeira taxonomia.
 
-Fontes:
+Entregas:
 
-- Issue #17 / PR #19;
-- literatura estruturada de resposta e feedback;
-- benchmark externo e auditoria do AraLearn.
+- `research/searches/2026-08-03-p1-pratica-resposta-feedback-protocolo.md`;
+- `research/data/p1-evidence-corpus-01.csv`;
+- `research/data/p1-parameter-records-01.csv`;
+- `research/data/p1-profile-comparison-01.csv`;
+- `research/data/p1-decision-synthesis-01.json`;
+- `research/pt-BR/p1-sintese-pratica-resposta-tentativas-feedback-consequencias-01.md`;
+- bibliografia atualizada em `research/library/referencias-formatos-feedback.bib`.
 
-Dimensões candidatas:
+Resultado:
 
-- reconhecimento, recordação, resposta curta, explicação, resolução e execução;
-- validade, correção, crédito parcial e revisão humana;
-- conhecimento do resultado, resposta correta, elaboração, pista e exemplo;
-- timing, retry, reveal e persistência.
+- 21 dimensões aceitas para a primeira taxonomia;
+- perfil AraLearn formalizado como referência não punitiva;
+- perfis contrastantes para mastery pessoal, curso formativo, avaliação somativa, pesquisa e acessibilidade;
+- precedência entre direitos, consentimento, protocolo, instituição, autor, estudante, default e disponibilidade técnica;
+- telemetry de tentativas e confiança adiadas;
+- ranking rejeitado como capacidade ativa da primeira versão;
+- nenhum schema, adapter, UX ou código autorizado.
 
-Lacunas:
+Lacunas preservadas:
 
-- respostas abertas e rubricas;
-- equidade e validade de avaliação automática;
-- feedback adaptado a erro;
-- interação com conhecimento prévio e complexidade.
+- sequências ótimas entre pista, retry, reveal e item equivalente;
+- respostas abertas e IA;
+- acessibilidade de respostas estruturadas complexas;
+- múltiplas tentativas e agregação em cursos formais;
+- contextos brasileiros, portugueses e não WEIRD.
 
 ### 3.3 Programação móvel e feedback automatizado
 
@@ -89,53 +98,36 @@ Lacunas:
 Fontes:
 
 - Issue #18 / PR #20;
-- Coelho et al. e atualização 2023–2026;
 - benchmark de sistemas;
 - experimentos históricos #36–#41.
 
 Contribuições:
 
 - distinguir ler, prever, completar, escrever, executar, depurar e projetar;
-- não equiparar execução a aprendizagem;
-- separar tests, static analysis, diagnóstico, rubrica e revisão.
-
-Lacunas:
-
-- aprendizagem e transferência em adultos;
-- segurança e custo por perfil;
-- acessibilidade móvel;
-- ambientes avançados;
-- papel de IA generativa.
+- separar tests, análise estática, diagnóstico, rubrica e revisão;
+- não equiparar execução a aprendizagem.
 
 Programação executável permanece candidata a extensão, não requisito do primeiro recorte.
 
 ### 3.4 Representações múltiplas e resources estruturados
 
-**Estado:** `exploratório` com forte material comparativo.
+**Estado:** `exploratório` com material comparativo forte.
 
 Fontes:
 
-- auditoria AraLearn #31 / PR #32;
-- benchmark #33/#34 / PR #35;
-- literatura de representações múltiplas e ambientes interativos;
-- síntese #30 / PR #43.
+- #31 / PR #32;
+- #33/#34 / PR #35;
+- #30 / PR #43;
+- literatura de representações múltiplas.
 
-Contribuições:
+Conclusões:
 
-- mais tipos não significam melhor aprendizagem;
-- representação, atividade, resposta e feedback devem ser distinguíveis;
+- quantidade de tipos não é qualidade;
+- representação, atividade, resposta, validação e feedback precisam permanecer distinguíveis;
 - gramáticas de domínio podem ser legítimas;
-- coordenação e redundância exigem suporte.
+- coordenação, redundância e acessibilidade exigem pesquisa própria.
 
-Pesquisa necessária:
-
-- seleção e coordenação de representações;
-- autoria por schemas;
-- acessibilidade de visualizações;
-- resource versus prática/instrumento/capacidade;
-- critérios para catálogo inicial e extensão.
-
-A decisão final pertence às Issues #6 e #7, após parâmetros relevantes.
+A decisão de domínio e arquitetura pertence a #6 e #7.
 
 ### 3.5 Sistemas, gêneros e extensibilidade
 
@@ -143,157 +135,117 @@ A decisão final pertence às Issues #6 e #7, após parâmetros relevantes.
 
 Fontes:
 
-- Issues #33 e #34 / PR #35;
+- #33 e #34 / PR #35;
 - 21 sistemas e 16 fontes acadêmicas;
 - histórico #36–#42.
 
-Conclusões úteis:
+Conclusões:
 
 - ARA não é apenas flashcards;
 - não deve reivindicar ITS, LMS, simulação ou avaliação geral sem capacidades próprias;
-- extensibilidade precisa de governança;
+- extensibilidade requer governança;
 - plugins arbitrários ampliam segurança, operação e acessibilidade.
 
-Lacunas:
-
-- modelos de kernel e packages;
-- versionamento e descoberta;
-- extensão segura;
-- carregamento seletivo por MCP;
-- manutenção e migrações;
-- comparação de stacks.
-
-Essas decisões são posteriores a #6.
+Faltam modelos de kernel, packages, descoberta, carregamento seletivo por MCP, migração e comparação de stacks após #6.
 
 ## 4. Pacotes da primeira taxonomia — Issue #4
 
-A Issue #4 deve ser executada em pacotes sucessivos, com uma síntese integrada final. Esses pacotes são subdivisões operacionais da issue, não novas issues automáticas.
+A Issue #4 é executada por pacotes sucessivos e uma síntese integrada final. Pacotes não geram novas issues automaticamente.
 
-### Pacote P1 — prática, resposta, tentativas, revelação, feedback e consequências
+### P1 — prática, resposta, tentativas, revelação, feedback e consequências
 
-**Pergunta:** como descrever condições de prática e resposta sem confundir mecanismo, avaliação e consequência?
+**Estado:** `concluído`.
 
-Evidência existente:
+**Conclusão:** essas dimensões são combináveis e semanticamente independentes. O perfil AraLearn é preservado, mas não universalizado.
 
-- forte baseline em #14 e #17;
-- corpus formal e síntese de #30;
-- exemplos de AraLearn e plataformas externas.
+**Handoff para P2:**
 
-Pesquisa focada necessária:
+- `practice.purpose`;
+- `attempts.retry_target`;
+- `hints.access`;
+- `consequence.level`;
+- perfil `self-directed-mastery`;
+- incertezas sobre mastery, equivalência de itens e revisão posterior.
 
-- retry e error correction;
-- answer reveal e geração de erro;
-- consequências, notas e stakes;
-- relações entre formato de resposta, feedback e aprendizagem;
-- acessibilidade das respostas.
+### P2 — progressão, sequenciamento, espaçamento, revisão, exemplos e scaffolding
 
-Entrega:
-
-- registros de parâmetros candidatos;
-- perfil AraLearn;
-- modelos alternativos;
-- recomendação de primeira versão;
-- candidatos aceitos, adiados e rejeitados.
-
-### Pacote P2 — progressão, sequenciamento, espaçamento, revisão, exemplos e scaffolding
+**Estado:** próximo pacote.
 
 **Pergunta:** quem controla a sequência, quando o estudante avança e como apoio e revisão são distribuídos?
 
-Evidência existente:
+Pesquisa focada:
 
-- espaçamento e quizzes no corpus inicial;
-- experiência AraLearn;
-- literatura inicial de worked examples e feedback.
-
-Pesquisa focada necessária:
-
-- mastery/progression;
-- learner pacing;
-- spacing/interleaving;
-- worked examples, fading e hints;
+- mastery e progressão;
+- learner pacing e autonomia de sequência;
+- spacing e interleaving;
+- agenda, carga, adiamento e recuperação de revisão;
+- worked examples, fading, hints e scaffolding;
 - carga cognitiva e segmentação;
-- recuperação após interrupção.
+- interrupção, retomada e estudo fragmentado;
+- item equivalente e evidência de domínio.
 
 Entrega:
 
-- famílias de progressão e revisão;
-- regras de autoridade e precedência;
+- parâmetros de progressão, sequenciamento, revisão e apoio;
+- valores AraLearn e alternativas externas;
+- autoridade e precedência;
 - perfis contrastantes;
-- recomendações para o primeiro produto.
+- recomendação para primeira taxonomia;
+- aceitos, adiados e rejeitados;
+- handoff para P3, #5 e #6.
 
-### Pacote P3 — autonomia, autorregulação, adaptação, acessibilidade e assistência por IA
+Não autoriza algoritmo de produção, UX, banco, scheduler ou código.
 
-**Pergunta:** como separar escolha do estudante, acomodação, política institucional, condição experimental e adaptação algorítmica?
+### P3 — autonomia, autorregulação, adaptação, acessibilidade e assistência por IA
 
-Evidência existente:
+**Estado:** `parcial`.
 
-- parcial e dispersa;
-- experiência AraLearn;
-- mapa de sistemas e requisitos da visão.
-
-Pesquisa focada necessária:
+Pesquisa necessária:
 
 - self-regulated learning;
 - learner control;
 - adaptive learning;
-- accessibility accommodations;
-- neurodiversidade e condições de uso;
-- IA em hints, explicação, autoria e revisão;
-- riscos de dependência, erro e autoridade.
+- neurodiversidade e acomodações;
+- IA em pistas, explicação, autoria e revisão;
+- transparência, override, erro e autoridade.
 
 Entrega:
 
 - parâmetros e precedência;
 - limites de adaptação;
-- políticas de transparência e override;
+- políticas de transparência;
 - recomendações de IA por função.
 
-### Pacote P4 — instrumentação, condições experimentais, analytics e governança
+### P4 — instrumentação, condições experimentais, analytics e governança
 
-**Pergunta:** o que precisa ser configurável para pesquisa, sem transformar o sistema em vigilância?
+**Estado:** `parcial`.
 
-Evidência existente:
-
-- baseline conceitual na #5 e na visão;
-- cautelas do corpus sobre outcomes e inferência.
-
-Pesquisa focada necessária:
+Pesquisa necessária:
 
 - learning analytics;
-- event vocabularies;
-- research protocols;
-- consent, pseudonymization, withdrawal e retention;
-- métricas e constructos;
+- vocabulários de eventos;
+- protocolos e condições;
+- consentimento, pseudonimização, retirada e retenção;
+- métricas, constructos e inferências;
 - personal analytics;
 - interoperabilidade e exportação;
-- ética e legislação aplicável.
+- ética e legislação.
 
-Entrega:
+Receberá do P1, entre outros, `telemetry.attempt_capture` e as inferências proibidas.
 
-- parâmetros de instrumentação;
-- autoridade e consentimento;
-- proibições de inferência;
-- handoff para Issue #5.
+### P5 — autoria, revisão, reparo, publicação e políticas institucionais
 
-### Pacote P5 — autoria, revisão, reparo, publicação e políticas institucionais
+**Estado:** `parcial`.
 
-**Pergunta:** como configurar quem pode gerar, editar, revisar, aplicar e publicar, inclusive por agentes?
+Pesquisa necessária:
 
-Evidência existente:
-
-- experiência AraLearn e MCP;
-- histórico de fluxos administrativos;
-- literatura inicial de authoring tools.
-
-Pesquisa focada necessária:
-
-- human-AI authoring;
+- autoria humano–IA;
 - quality assurance;
-- provenance e source anchoring;
+- proveniência e source anchoring;
 - revisão por pares e especialistas;
 - permissões e workspaces;
 - publicação, versionamento e retirada;
-- ambientes institucionais.
+- contextos institucionais.
 
 Entrega:
 
@@ -302,126 +254,80 @@ Entrega:
 - limites de autoridade do agente;
 - requisitos candidatos para #6.
 
-## 5. Frentes posteriores à taxonomia
+## 5. Frentes posteriores
 
-### Issue #5 — protocolos, instrumentos e analytics
+### Issue #5 — pesquisa, instrumentos e analytics
 
-Pacotes previstos:
+Exigirá literatura metodológica sobre:
 
-- modelos de pesquisa;
+- modelos de investigação;
 - participantes e consentimento;
 - condições e assignment;
 - instrumentos quantitativos e qualitativos;
-- eventos e medidas;
+- eventos, medidas e constructos;
 - interpretação e inferências proibidas;
 - exportação e equivalência entre implantações.
 
-Cada pacote exigirá literatura metodológica própria.
-
 ### Issue #6 — produto e domínio
 
-Pesquisa necessária:
+Exigirá pesquisa e síntese sobre:
 
-- domain-driven design e modelagem de sistemas educacionais;
-- autoria e lifecycle de conteúdo;
+- modelagem de domínio;
+- lifecycle de conteúdo;
 - versionamento e proveniência;
-- bibliotecas e organização;
-- colaboração e papéis/capacidades;
+- biblioteca e organização;
+- colaboração e capacidades;
 - portabilidade e interoperabilidade;
 - requisitos institucionais.
 
-A Issue #6 não deve ser apenas uma sessão de modelagem técnica: decisões de domínio pedagógicas, administrativas e de pesquisa precisam de ancoragem.
+Não será apenas uma sessão de modelagem técnica.
 
 ### Issue #7 — arquitetura e stack
 
-Pesquisa técnica comparativa necessária:
+Exigirá comparação de:
 
-- arquiteturas modulares e plugin/package systems;
-- web/mobile/offline;
-- sincronização local-remota;
+- arquiteturas modulares e sistemas de packages;
+- web, mobile e offline;
+- persistência e sincronização;
 - schemas e contratos;
-- carregamento dinâmico;
-- MCP e agent tooling;
+- carregamento dinâmico e MCP;
 - segurança de extensões e runtimes;
-- deployment managed/self-hosted;
+- managed e self-hosted;
 - observabilidade, backup e atualização;
-- stacks candidatas e custos.
+- stacks candidatas, custos e exit strategy.
 
-Saída: recomendações e ADRs, não catálogo bruto de tecnologias.
+Saída: recomendações e ADRs, não catálogo bruto.
 
 ### Issue #8 — UX/UI
 
-Pesquisa necessária:
-
-- mobile learning UX;
-- progressive disclosure;
-- configuração complexa;
-- accessibility e assistive technology;
-- interruption recovery;
-- authoring interfaces;
-- research/admin UX;
-- multilingual design;
-- usability and comprehension methods.
+Exigirá pesquisa sobre mobile learning UX, progressive disclosure, configuração complexa, acessibilidade, interrupção, autoria, pesquisa/admin, multilinguismo e métodos de avaliação.
 
 ### Issue #9 — releases e implementação
 
-Pesquisa e boas práticas necessárias:
-
-- release slicing;
-- trunk/branch strategy;
-- CI/CD;
-- quality gates;
-- security and accessibility testing;
-- migration and rollback;
-- evidence packages;
-- open-source contribution governance.
+Exigirá boas práticas de release slicing, CI/CD, quality gates, segurança, acessibilidade, migração, rollback, evidence packages e colaboração aberta.
 
 ## 6. Critérios gerais de suficiência
 
-Uma frente pode avançar para recomendação quando:
+Uma frente pode avançar quando:
 
-1. possui pelo menos uma síntese confiável ou conjunto justificado de fontes primárias;
-2. contém casos contrastantes e limites;
-3. cobre os stakeholders e contextos relevantes à decisão;
-4. não surge nova categoria decisiva após duas adições sucessivas ao corpus;
+1. possui síntese confiável ou conjunto justificado de fontes primárias;
+2. contém casos contrastantes e limitações;
+3. cobre stakeholders e contextos decisivos;
+4. duas adições sucessivas não criam categoria decisiva nem alteram a recomendação;
 5. incertezas remanescentes estão explícitas;
-6. a recomendação pode ser alterada futuramente sem destruir silenciosamente rastreabilidade;
-7. nenhuma fonte inacessível indispensável está sendo substituída por suposição.
+6. a decisão pode evoluir sem perder rastreabilidade;
+7. nenhuma fonte indispensável é substituída por suposição.
 
 ## 7. Papel de Fabio
 
-Fabio deverá receber:
+Fabio receberá síntese, recomendação, justificativa, alternativas, riscos e incertezas decisivas.
 
-- síntese;
-- recomendação;
-- justificativa;
-- alternativas relevantes;
-- riscos;
-- incertezas decisivas.
+Não receberá como produto final lista extensa de artigos, catálogo sem recomendação ou pergunta genérica para arquitetar sozinho.
 
-Não deverá receber como produto final:
-
-- lista extensa de artigos sem integração;
-- catálogo de plataformas sem recomendação;
-- formulário de centenas de parâmetros sem priorização;
-- pergunta genérica para decidir arquitetura sem análise.
-
-Sua decisão será solicitada quando evidência e análise não resolverem conflito estratégico ou valorativo.
+Sua decisão será solicitada somente diante de conflito estratégico ou valorativo não resolvido pela evidência.
 
 ## 8. Próxima entrega verificável
 
-A próxima entrega é o **Pacote P1 da Issue #4**, seguido pelos demais pacotes e por uma síntese final da taxonomia.
+A próxima entrega é o **Pacote P2 da Issue #4**.
 
-P1 deverá produzir:
-
-- protocolo de pesquisa focado;
-- corpus e registro de fontes;
-- síntese crítica;
-- parâmetros de prática, resposta, tentativa, revelação, feedback e consequência;
-- valores AraLearn e alternativas externas;
-- autoridade, precedência e conflitos;
-- perfis contrastantes;
-- recomendações aceitas, adiadas e rejeitadas;
-- arquivo estruturado reutilizável pela Issue #5 e pela Issue #6.
-
-Nenhum código, schema de produção, adapter ou UX será implementado nessa entrega.
+A Issue #4 permanece aberta até P2–P5 e a síntese final da taxonomia. Nenhum código, schema de produção, adapter ou UX é autorizado durante esses pacotes.
