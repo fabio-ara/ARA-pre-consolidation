@@ -4,53 +4,35 @@
 
 **ARA Platform — Learning Resources Environment**
 
-ARA is an open, configurable, mobile-first and offline-capable educational platform for creating, organizing, studying and researching courses structured as:
+ARA is an open, configurable, mobile-first and offline-capable educational platform. It succeeds [AraLearn](https://github.com/fabio-ara/AraLearn), preserving its functional experience as the first reference configuration while rebuilding the product around explicit parametrization, modular architecture, portable infrastructure and MCP-assisted authoring.
+
+The initial educational structure is:
 
 ```text
 course → module → lesson → microsequence → card
 ```
 
-The project succeeds [AraLearn](https://github.com/fabio-ara/AraLearn), which remains the functional predecessor and the first reference configuration of the broader platform.
-
 ## Current stage
 
-ARA is currently in its research, product-definition and governance stage. The repository contains the evidence base, research syntheses, product vision and governing work required before product requirements, architecture, UX and implementation are approved.
-
-The current active phase is the pedagogical and research configuration taxonomy governed by Issue #4.
+The project is in research and product definition. Issue #4 governs the active pedagogical and research configuration taxonomy. Package P1 is complete; P2—progression, sequencing, spacing, review, examples and scaffolding—is next. The new product has not entered implementation.
 
 ## Start here
 
-Current project understanding is not reconstructed from issue history alone. Read these documents in order:
+Primary navigation has three sources, in this order:
 
-1. [Current product vision](docs/vision/product-vision.pt-BR.md)
-2. [Canonical research and decision history](docs/history/reconstrucao-historica-pesquisa-decisoes.pt-BR.md)
-3. [Canonical backlog index](docs/roadmap/backlog-index.md)
-4. [Document authority and traceability](docs/governance/document-authority-and-traceability.md)
-5. [Decision-oriented research programme](docs/research/research-programme-index.pt-BR.md)
-6. [Work item standard](docs/governance/work-item-standard.md)
-7. [Canonical roadmap — Issue #10](https://github.com/fabio-ara/ARA/issues/10)
+1. [Product vision](docs/vision/product-vision.pt-BR.md)
+2. [Research programme](docs/research/research-programme-index.pt-BR.md)
+3. [Backlog, phases and issue rules](docs/roadmap/backlog-index.md)
 
-The vision and research-history documents are currently maintained in Brazilian Portuguese because that is the project's canonical working language for research. Stable translations will be added when the documents mature.
+GitHub Issues are authorized, self-contained work units. Research, decisions, specifications, architecture, UX and implementation remain distinct. Codex may implement only implementation issues derived from approved requirements, architecture decisions and UX specifications.
 
 ## Guiding purposes
 
-ARA is intended to serve both:
+ARA is intended for self-directed learners, authors, researchers and institutions. It will preserve a recognizable course-and-card experience while allowing pedagogical, assessment, interaction, research and governance configurations to vary explicitly.
 
-- self-directed learners who want to customize how they study; and
-- researchers and institutions that need reproducible pedagogical conditions, configurable instrumentation and governed educational data.
+## Governance
 
-The platform will preserve a recognizable course and card experience while allowing pedagogical, assessment, interaction, research and governance settings to vary explicitly.
-
-## Record model
-
-- canonical documents describe the current approved understanding;
-- Issues preserve the backlog, protocols and work history;
-- pull requests, commits, research data and tests preserve primary evidence;
-- exploratory prototypes remain recoverable but are not production requirements unless adopted explicitly.
-
-## Repository governance
-
-GitHub Issues are the primary backlog and work record. Current interpretation and downstream implementation must also follow the canonical documents above. Requirements and decisions must not depend on private conversations or unrecorded instructions. See:
+See:
 
 - [Repository governance](docs/governance/repository-governance.md)
 - [Language policy](docs/governance/language-policy.md)
@@ -58,12 +40,12 @@ GitHub Issues are the primary backlog and work record. Current interpretation an
 
 ## Languages
 
-The user interface will support Brazilian Portuguese (`pt-BR`), European Portuguese (`pt-PT`) and English (`en`) from the beginning. Stable public documentation will be maintained in these three variants when applicable. Working research documents will normally use Brazilian Portuguese as their canonical drafting language.
+The interface will support Brazilian Portuguese (`pt-BR`), European Portuguese (`pt-PT`) and English (`en`). Working research documents will normally use Brazilian Portuguese as their canonical drafting language.
 
 ## Licensing
 
 - Source code: [GNU Affero General Public License v3.0 or later](LICENSE)
-- Project documentation, except where otherwise stated: [Creative Commons Attribution 4.0 International](LICENSE-DOCUMENTATION.md)
-- The ARA name, kanji, logo and visual identity are not granted under those licenses. See [Trademark policy](TRADEMARKS.md).
+- Documentation: [Creative Commons Attribution 4.0 International](LICENSE-DOCUMENTATION.md), unless otherwise stated
+- Name, kanji, logo and visual identity: see [TRADEMARKS.md](TRADEMARKS.md)
 
-See [LICENSING.md](LICENSING.md) for the complete licensing boundaries.
+See [LICENSING.md](LICENSING.md) for the complete boundaries.
