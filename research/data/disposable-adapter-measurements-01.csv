@@ -1,0 +1,5 @@
+family,adapter_source_bytes,mean_lifecycle_ms_500_iterations,heap_delta_bytes_noisy,external_runtime_bytes,network_during_study
+semantic-mathematics,9195,0.033648602,900704,0,none
+relational-construction,5470,0.049849272,812632,0,none
+executable-programming,4333,0.031441092,-286880,0,none
+source-argument,7578,0.021214858,517960,0,none
