@@ -12,18 +12,18 @@ course version → module/lesson → placement → microsequence revision → ca
 
 ## Current stage
 
-Issues #4–#7 are complete: configuration, research/analytics, product/domain and reference architecture. The current phase is Issue #8—complete UX, accessibility and visual specification. Product implementation has not started.
+Issues #4–#8 are complete: configuration, research/analytics, product/domain, architecture and complete UX specification. Issue #9 is the final preparation phase—functional releases, quality gates and executable implementation backlog. Product implementation has not started.
 
-## Start here
+## Canonical path
 
 1. [Product vision](docs/vision/product-vision.pt-BR.md)
 2. [Product requirements](docs/product/product-requirements-v1.md)
 3. [Domain model](docs/product/domain-model-v1.md)
 4. [Reference architecture](docs/architecture/reference-architecture-v1.md)
-5. [Research programme](docs/research/research-programme-index.pt-BR.md)
+5. [UX specification](docs/ux/ux-specification-v1.md)
 6. [Backlog](docs/roadmap/backlog-index.md)
 
-GPT+MCP provides bounded semantic authoring; ARA provides visible deterministic human control. Research, product, architecture, UX and implementation remain separate gates.
+The structural UX prototype is in [`prototypes/ux-v1/`](prototypes/ux-v1/). Research, product, architecture, UX and implementation remain separate gates.
 
 ## Governance and licensing
 
