@@ -87,7 +87,7 @@ A Issue #2 prossegue em paralelo quando questões jurídicas, institucionais ou 
 | #24 | #25 | triagem de título e resumo | relevância inicial, não avaliação de qualidade |
 | #26 | #27 | extração do corpus prioridade A | classificação e extração com estados de acesso explícitos |
 | #28 | #29 | sobreposição de estudos primários | prevenção de dupla contagem e núcleo não redundante |
-| #30 | #43 | síntese AraLearn + horizonte externo | direção: referência AraLearn, descoberta ampla, normatização seletiva e extensibilidade governada |
+| #30 | #43 | síntese AraLearn + horizonte externo | referência AraLearn, descoberta ampla, normatização seletiva e extensibilidade governada |
 | #31 | #32 | auditoria dos resources do AraLearn | referência implementada, não decisão automática de migração |
 | #33–#34 | #35 | benchmark de sistemas e gêneros | precedentes, contrastes e riscos; não requisitos automáticos |
 
@@ -97,10 +97,9 @@ A Issue #2 prossegue em paralelo quando questões jurídicas, institucionais ou 
 
 **Escopo:** prática, resposta, tentativas, revelação, feedback, consequências e precedência de acessibilidade.  
 **PR:** #45  
-**Commit incorporado em `main`:** `eb3c6bdc16685a4d8e3b912e96b662d4735e4cdb`  
-**Estado:** pacote concluído, pendente apenas da síntese final da Issue #4 com P2–P5.
+**Commit:** `eb3c6bdc16685a4d8e3b912e96b662d4735e4cdb`.
 
-Artefatos preservados integralmente:
+Artefatos:
 
 - `research/searches/2026-08-03-p1-pratica-resposta-feedback-protocolo.md`;
 - `research/data/p1-evidence-corpus-01.csv`;
@@ -108,42 +107,100 @@ Artefatos preservados integralmente:
 - `research/data/p1-profile-comparison-01.csv`;
 - `research/data/p1-decision-synthesis-01.json`;
 - `research/pt-BR/p1-sintese-pratica-resposta-tentativas-feedback-consequencias-01.md`;
-- `research/library/referencias-formatos-feedback.bib`;
-- atualização de `docs/research/research-programme-index.pt-BR.md`.
+- `research/library/referencias-formatos-feedback.bib`.
 
-Resultados vigentes do P1:
+Resultados vigentes:
 
-- 21 dimensões aceitas para a primeira taxonomia;
-- perfil `aralearn-reference` preservado como configuração não punitiva, não como default universal;
-- perfis/overlays contrastantes: `self-directed-mastery`, `formal-formative-course`, `summative-institutional`, `research-condition` e `accessibility-overlay`;
+- 21 dimensões aceitas;
+- perfil `aralearn-reference` preservado como não punitivo, não universal;
 - prática para aprender separada de medição e avaliação consequencial;
 - formato de resposta separado de demanda cognitiva;
-- validade, autoridade, crédito, tentativas, pistas, reveal, feedback e consequências modelados como dimensões combináveis;
-- acessibilidade com precedência superior a preferências ordinárias;
+- validade, autoridade, crédito, tentativas, pistas, reveal, feedback e consequências combináveis;
+- acessibilidade com precedência;
 - coleta de tentativas desligada por padrão e adiada para P4/#5;
 - confiança e avaliação automática autoritativa de respostas abertas adiadas;
-- ranking público rejeitado na primeira taxonomia ativa;
+- ranking público rejeitado;
 - nenhum schema, adapter, stack, UX, telemetry ou código autorizado.
 
-O P1 não deve ser reduzido, reinterpretado ou substituído por resumos posteriores. Em caso de dúvida, prevalecem os artefatos listados e a síntese decisória estruturada.
+Os artefatos originais prevalecem sobre resumos posteriores.
 
-### P2 — próximo pacote
+### P2 — concluído
 
-**Escopo:** progressão, sequenciamento, espaçamento, revisão, exemplos resolvidos e scaffolding.
+**Escopo:** progressão, mastery, sequenciamento, ritmo, spacing, revisão, interleaving, exemplos resolvidos, scaffolding, segmentação e retomada.  
+**Estado:** pacote concluído; pendente da síntese final da Issue #4 com P3–P5.
 
-Deve pesquisar e recomendar, sem implementar:
+Artefatos:
 
-- mastery e critérios de progressão;
-- learner pacing e autoridade sobre a sequência;
-- spacing e interleaving;
-- agenda, carga, adiamento e retomada de revisão;
-- exemplos resolvidos, fading, hints e scaffolding;
-- carga cognitiva, segmentação e estudo fragmentado;
-- item equivalente e evidência de domínio.
+- `research/searches/2026-08-03-p2-progressao-sequenciamento-revisao-protocolo.md`;
+- `research/data/p2-evidence-corpus-01.csv`;
+- `research/data/p2-parameter-records-01.csv`;
+- `research/data/p2-profile-comparison-01.csv`;
+- `research/data/p2-decision-synthesis-01.json`;
+- `research/pt-BR/p2-sintese-progressao-sequenciamento-revisao-scaffolding-01.md`;
+- `research/library/referencias-progressao-sequenciamento.bib`.
 
-### P3–P5
+Resultados vigentes:
 
-- **P3:** autonomia, autorregulação, adaptação, acessibilidade e assistência por IA;
+- 36 dimensões aceitas;
+- conclusão estrutural não equivale a mastery;
+- progressão por critério exige base de evidência, critério, escopo, remediação, override e rechecagem;
+- threshold universal rejeitado;
+- autoridade sobre sequência separada de ritmo;
+- shared control recomendado como direção geral;
+- hard prerequisites exigem justificativa, remediação e saída acessível;
+- spacing separado de interleaving;
+- agenda, intervalo, horizonte, carga, adiamento e relação entre itens modelados separadamente;
+- nenhum scheduler universal selecionado;
+- interleaving restrito a objetivos discriminativos e evidência contextual;
+- exemplos resolvidos recomendados para novatos e tarefas complexas, com prática independente;
+- scaffolding separado por tipo, acesso e fading;
+- fading automático por estimador não validado adiado;
+- segmentação coerente e learner-paced preservada;
+- retomada deve preservar estado e contexto sem telemetria comportamental;
+- nenhum algoritmo, schema, adaptação, UX ou código autorizado.
+
+Perfis/overlays:
+
+- `aralearn-reference`;
+- `self-directed-guided`;
+- `formal-mastery-course`;
+- `summative-prerequisite-course`;
+- `research-locked-sequence`;
+- `novice-support-overlay`;
+- `expert-efficiency-overlay`;
+- `interruptible-mobile-overlay`.
+
+Candidatos adiados:
+
+- `adaptive.mastery_estimator`;
+- `adaptive.review_scheduler`;
+- `adaptive.branching`;
+- `automatic.struggle_detection`;
+- `automatic.scaffold_fading`;
+- `generative.resumption_summary`.
+
+Os artefatos originais prevalecem sobre resumos posteriores.
+
+### P3 — próximo pacote
+
+**Escopo:** autonomia, autorregulação, adaptação, acessibilidade e assistência por IA.
+
+P3 deverá pesquisar e recomendar, sem implementar:
+
+- self-regulated learning;
+- learner control e shared control;
+- adaptação e diagnóstico;
+- expertise, transparência e contestação;
+- neurodiversidade, acomodações e UDL;
+- IA em pistas, explicação, autoria e revisão;
+- override e fallback;
+- privacidade, dependência, erro e viés;
+- perfis pessoais, formais e experimentais.
+
+Não autoriza LLM, modelo adaptativo, coleta de dados, schema, UX ou código.
+
+### P4 e P5 — futuros
+
 - **P4:** instrumentação, condições experimentais, analytics e governança;
 - **P5:** autoria, revisão, reparo, publicação e políticas institucionais.
 
@@ -211,7 +268,7 @@ Uma issue de pesquisa deve registrar:
 - bases, fontes, idiomas, datas e queries exatas quando aplicável;
 - amostragem de plataformas, domínios, stakeholders e implantações;
 - inclusão, exclusão, suficiência ou saturação;
-- estado de acesso: texto integral, manuscrito, resumo, metadados, citação secundária, documentação oficial, experiência pessoal, código/schema primário ou fonte inacessível;
+- estado de acesso;
 - extração, limitações, síntese e recomendação.
 
 Não se deve declarar pesquisa sistemática, exaustiva, causal ou duplamente revisada sem método correspondente.

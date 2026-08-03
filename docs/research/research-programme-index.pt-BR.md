@@ -34,36 +34,18 @@ A pesquisa é ampla e finita. O objetivo é evidência suficiente para decidir, 
 
 ## 3. Evidência já produzida
 
-### 3.1 Recuperação, flashcards, quizzes e espaçamento
+### 3.1 Recuperação, resposta e feedback
 
-**Estado:** `baseline-concluído` para parâmetros; `parcial` para algoritmos e progressão.
+**Estado:** P1 concluído para a primeira taxonomia.
 
 Fontes principais:
 
-- Issue #14 / PR #15;
-- Issues #16, #24, #26 e #28;
-- Pacote P1;
-- sínteses e datasets em `research/`.
+- Issues #14, #16, #17, #24, #26 e #28;
+- síntese da Issue #30;
+- auditoria do AraLearn;
+- Pacote P1 / PR #45.
 
-Já é possível:
-
-- separar produto, mecanismo, formato, agenda, feedback e consequência;
-- distinguir recuperação, repetição, nota e progressão;
-- representar objetivo temporal, resposta exigida e autoridade.
-
-Faltam para P2:
-
-- algoritmos e controle da revisão;
-- mastery e progressão;
-- adultos trabalhadores;
-- transferência e retenção tardia;
-- carga, adiamento, interrupção e abandono.
-
-### 3.2 Resposta, tentativas, reveal, feedback e consequências
-
-**Estado:** `concluído` pelo Pacote P1 para a primeira taxonomia.
-
-Entregas:
+Entregas P1:
 
 - `research/searches/2026-08-03-p1-pratica-resposta-feedback-protocolo.md`;
 - `research/data/p1-evidence-corpus-01.csv`;
@@ -71,25 +53,42 @@ Entregas:
 - `research/data/p1-profile-comparison-01.csv`;
 - `research/data/p1-decision-synthesis-01.json`;
 - `research/pt-BR/p1-sintese-pratica-resposta-tentativas-feedback-consequencias-01.md`;
-- bibliografia atualizada em `research/library/referencias-formatos-feedback.bib`.
+- `research/library/referencias-formatos-feedback.bib`.
 
 Resultado:
 
-- 21 dimensões aceitas para a primeira taxonomia;
-- perfil AraLearn formalizado como referência não punitiva;
-- perfis contrastantes para mastery pessoal, curso formativo, avaliação somativa, pesquisa e acessibilidade;
-- precedência entre direitos, consentimento, protocolo, instituição, autor, estudante, default e disponibilidade técnica;
+- prática, resposta, validade, crédito, tentativas, reveal, feedback, consequência e acessibilidade são dimensões distintas;
+- perfil AraLearn preservado como referência não punitiva;
 - telemetry de tentativas e confiança adiadas;
-- ranking rejeitado como capacidade ativa da primeira versão;
+- ranking público rejeitado na primeira taxonomia;
 - nenhum schema, adapter, UX ou código autorizado.
 
-Lacunas preservadas:
+### 3.2 Progressão, sequência, revisão e apoio
 
-- sequências ótimas entre pista, retry, reveal e item equivalente;
-- respostas abertas e IA;
-- acessibilidade de respostas estruturadas complexas;
-- múltiplas tentativas e agregação em cursos formais;
-- contextos brasileiros, portugueses e não WEIRD.
+**Estado:** P2 concluído para a primeira taxonomia.
+
+Entregas P2:
+
+- `research/searches/2026-08-03-p2-progressao-sequenciamento-revisao-protocolo.md`;
+- `research/data/p2-evidence-corpus-01.csv`;
+- `research/data/p2-parameter-records-01.csv`;
+- `research/data/p2-profile-comparison-01.csv`;
+- `research/data/p2-decision-synthesis-01.json`;
+- `research/pt-BR/p2-sintese-progressao-sequenciamento-revisao-scaffolding-01.md`;
+- `research/library/referencias-progressao-sequenciamento.bib`.
+
+Resultado:
+
+- 36 dimensões aceitas;
+- conclusão estrutural separada de mastery;
+- mastery por critério exige evidência, escopo, remediação, override e rechecagem;
+- autoridade de sequência separada de ritmo;
+- spacing separado de interleaving;
+- schedule, intervalo, horizonte, carga e adiamento separados;
+- exemplos resolvidos e scaffolds modelados por disponibilidade, posição, tipo, acesso e fading;
+- segmentação coerente e retomada não punitiva preservadas;
+- scheduler, mastery estimator, branching, struggle detection e fading automático adiados;
+- nenhum algoritmo, schema, UX ou código autorizado.
 
 ### 3.3 Programação móvel e feedback automatizado
 
@@ -104,7 +103,7 @@ Fontes:
 Contribuições:
 
 - distinguir ler, prever, completar, escrever, executar, depurar e projetar;
-- separar tests, análise estática, diagnóstico, rubrica e revisão;
+- separar testes, análise estática, diagnóstico, rubrica e revisão;
 - não equiparar execução a aprendizagem.
 
 Programação executável permanece candidata a extensão, não requisito do primeiro recorte.
@@ -152,13 +151,11 @@ Faltam modelos de kernel, packages, descoberta, carregamento seletivo por MCP, m
 
 A Issue #4 é executada por pacotes sucessivos e uma síntese integrada final. Pacotes não geram novas issues automaticamente.
 
-### P1 — prática, resposta, tentativas, revelação, feedback e consequências
+### P1 — concluído
 
-**Estado:** `concluído`.
+**Escopo:** prática, resposta, tentativas, revelação, feedback e consequências.
 
-**Conclusão:** essas dimensões são combináveis e semanticamente independentes. O perfil AraLearn é preservado, mas não universalizado.
-
-**Handoff para P2:**
+**Handoff preservado:**
 
 - `practice.purpose`;
 - `attempts.retry_target`;
@@ -167,75 +164,63 @@ A Issue #4 é executada por pacotes sucessivos e uma síntese integrada final. P
 - perfil `self-directed-mastery`;
 - incertezas sobre mastery, equivalência de itens e revisão posterior.
 
-### P2 — progressão, sequenciamento, espaçamento, revisão, exemplos e scaffolding
+### P2 — concluído
 
-**Estado:** próximo pacote.
+**Escopo:** progressão, sequenciamento, espaçamento, revisão, exemplos resolvidos, scaffolding, segmentação e retomada.
 
-**Pergunta:** quem controla a sequência, quando o estudante avança e como apoio e revisão são distribuídos?
+**Handoff para P3:**
+
+- autoridade e shared control;
+- learner pacing versus sequence control;
+- expertise e adaptação;
+- acesso e fading de scaffolds;
+- perfis `novice-support-overlay`, `expert-efficiency-overlay` e `interruptible-mobile-overlay`;
+- candidatos `adaptive.mastery_estimator`, `adaptive.branching`, `automatic.struggle_detection`, `automatic.scaffold_fading` e `generative.resumption_summary`;
+- proibição de inferir expertise, struggle ou disengagement de sinais brutos.
+
+### P3 — próximo pacote
+
+**Escopo:** autonomia, autorregulação, adaptação, acessibilidade e assistência por IA.
+
+**Pergunta:** como separar escolha do estudante, acomodação, política institucional, condição experimental, adaptação algorítmica e assistência por IA sem retirar autoridade humana ou criar inferências opacas?
 
 Pesquisa focada:
 
-- mastery e progressão;
-- learner pacing e autonomia de sequência;
-- spacing e interleaving;
-- agenda, carga, adiamento e recuperação de revisão;
-- worked examples, fading, hints e scaffolding;
-- carga cognitiva e segmentação;
-- interrupção, retomada e estudo fragmentado;
-- item equivalente e evidência de domínio.
-
-Entrega:
-
-- parâmetros de progressão, sequenciamento, revisão e apoio;
-- valores AraLearn e alternativas externas;
-- autoridade e precedência;
-- perfis contrastantes;
-- recomendação para primeira taxonomia;
-- aceitos, adiados e rejeitados;
-- handoff para P3, #5 e #6.
-
-Não autoriza algoritmo de produção, UX, banco, scheduler ou código.
-
-### P3 — autonomia, autorregulação, adaptação, acessibilidade e assistência por IA
-
-**Estado:** `parcial`.
-
-Pesquisa necessária:
-
 - self-regulated learning;
-- learner control;
+- learner control e shared control;
 - adaptive learning;
+- expertise, diagnóstico e transparência;
 - neurodiversidade e acomodações;
+- Universal Design for Learning e acessibilidade;
 - IA em pistas, explicação, autoria e revisão;
-- transparência, override, erro e autoridade.
+- riscos de dependência, erro, viés, privacidade e autoridade;
+- override, contestação e fallback offline;
+- perfis pessoais, formais e experimentais.
 
 Entrega:
 
-- parâmetros e precedência;
-- limites de adaptação;
-- políticas de transparência;
-- recomendações de IA por função.
+- parâmetros de autonomia, adaptação, acessibilidade e IA;
+- valores AraLearn e alternativas externas;
+- autoridade, consentimento, precedência e transparência;
+- perfis contrastantes;
+- aceitos, adiados e rejeitados;
+- handoff para P4, #5, #6, #7 e #8.
 
-### P4 — instrumentação, condições experimentais, analytics e governança
+Não autoriza modelo adaptativo, integração de LLM, coleta de dados, UX, schema ou código.
 
-**Estado:** `parcial`.
+### P4 — futuro
 
-Pesquisa necessária:
+**Escopo:** instrumentação, condições experimentais, analytics e governança.
 
-- learning analytics;
-- vocabulários de eventos;
-- protocolos e condições;
-- consentimento, pseudonimização, retirada e retenção;
-- métricas, constructos e inferências;
-- personal analytics;
-- interoperabilidade e exportação;
-- ética e legislação.
+Receberá:
 
-Receberá do P1, entre outros, `telemetry.attempt_capture` e as inferências proibidas.
+- `telemetry.attempt_capture` e inferências proibidas do P1;
+- snapshots, claims, schedules, deferral e constructos de struggle/expertise do P2;
+- transparência, consentimento e adaptação do P3.
 
-### P5 — autoria, revisão, reparo, publicação e políticas institucionais
+### P5 — futuro
 
-**Estado:** `parcial`.
+**Escopo:** autoria, revisão, reparo, publicação e políticas institucionais.
 
 Pesquisa necessária:
 
@@ -246,13 +231,6 @@ Pesquisa necessária:
 - permissões e workspaces;
 - publicação, versionamento e retirada;
 - contextos institucionais.
-
-Entrega:
-
-- parâmetros de autoria e governança;
-- perfis pessoais e institucionais;
-- limites de autoridade do agente;
-- requisitos candidatos para #6.
 
 ## 5. Frentes posteriores
 
@@ -328,6 +306,6 @@ Sua decisão será solicitada somente diante de conflito estratégico ou valorat
 
 ## 8. Próxima entrega verificável
 
-A próxima entrega é o **Pacote P2 da Issue #4**.
+A próxima entrega é o **Pacote P3 da Issue #4**.
 
-A Issue #4 permanece aberta até P2–P5 e a síntese final da taxonomia. Nenhum código, schema de produção, adapter ou UX é autorizado durante esses pacotes.
+A Issue #4 permanece aberta até P3–P5 e a síntese final da taxonomia. Nenhum código, schema de produção, adapter ou UX é autorizado durante esses pacotes.
