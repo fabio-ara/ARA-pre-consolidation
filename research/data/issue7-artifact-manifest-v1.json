@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "ara.issue7-artifact-manifest.v1",
+  "files": [
+    "docs/architecture/reference-architecture-v1.md",
+    "docs/architecture/deployment-profiles-v1.md",
+    "docs/architecture/conformance-plan-v1.md",
+    "docs/architecture/adrs/0001-typescript-react-pwa.md",
+    "docs/architecture/adrs/0002-hybrid-storage-topology.md",
+    "docs/architecture/adrs/0003-operation-log-sync.md",
+    "docs/architecture/adrs/0004-oidc-policy-authorization.md",
+    "docs/architecture/adrs/0005-mcp-authoring-gateway.md",
+    "docs/architecture/adrs/0006-research-data-separation.md",
+    "docs/architecture/adrs/0007-controlled-capability-packages.md",
+    "research/data/issue7-quality-budgets-v1.csv",
+    "research/data/issue7-decision-synthesis-v1.json",
+    "research/data/issue7-audit-v1.json"
+  ]
+}
