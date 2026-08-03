@@ -49,6 +49,15 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/priority-a-other-evidence-round-01.csv`: structured extraction of narrative reviews, empirical/product studies and the secondary appraisal.
 - `data/priority-a-overlap-clusters-round-01.csv`: review-overlap and study-family risks.
 - `data/priority-a-extraction-summary.json`: corrected evidence groups and access-depth counts.
+- `pt-BR/matriz-sobreposicao-estudos-primarios-01.md`: primary-publication overlap map for the 12 priority-A formal syntheses.
+- `data/priority-a-review-completeness-01.csv`: included-study-list completeness and metric eligibility by synthesis.
+- `data/priority-a-primary-publications-01.csv`: normalized recovered primary-publication keys.
+- `data/priority-a-review-publication-incidence-01.csv`: review-by-primary-publication incidence data.
+- `data/priority-a-pairwise-overlap-01.csv`: pairwise exact, bounded and ineligible overlap comparisons.
+- `data/priority-a-study-families-01.csv`: confirmed and probable cross-publication study-family links.
+- `data/priority-a-nonredundant-core-01.csv`: working non-redundant synthesis-core proposal.
+- `data/priority-a-overlap-summary-01.json`: overlap-map counts and bounded metrics.
+- `data/priority-a-overlap-file-manifest-01.csv`: hashes for the overlap-map package.
 
 ### Search records
 
@@ -76,6 +85,6 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.

@@ -1,0 +1,47 @@
+{
+  "round": "priority-a-primary-overlap-01",
+  "formal_syntheses": 12,
+  "reviews_with_any_recovered_list": 7,
+  "reviews_with_complete_exact_or_table_list": 4,
+  "reviews_with_complete_author_year_list": 1,
+  "reviews_with_partial_or_subset_list": 3,
+  "reviews_without_retrieved_list": 5,
+  "primary_publications_recovered_unique": 167,
+  "incidence_rows": 174,
+  "quizlet_overlap": {
+    "exact_shared_publications_identified": 3,
+    "RA02_identifiable_references": 22,
+    "RA02_declared_studies": 23,
+    "RA09_publications": 25,
+    "true_jaccard_range": [
+      0.06666666666666667,
+      0.09090909090909091
+    ],
+    "probable_cross-version_study_families": 2
+  },
+  "health_complete_subset": {
+    "review_ids": [
+      "RA05",
+      "RA06",
+      "RA07"
+    ],
+    "occurrences": 32,
+    "unique_publications": 29,
+    "number_of_reviews": 3,
+    "corrected_covered_area": 0.05172413793103448,
+    "interpretation": "slight overlap",
+    "shared_publications": [
+      "PP0083",
+      "PP0088",
+      "PP0089"
+    ],
+    "radiology_shared_count": 0
+  },
+  "cadavid_subsets": {
+    "testing_publication_keys_identified": 22,
+    "spacing_publication_keys_identified": 17,
+    "unique_across_both": 38,
+    "multi_mechanism_publications": 1
+  },
+  "interpretation": "This is a bibliographic overlap map, not a meta-analysis or a count of independent experiments."
+}
