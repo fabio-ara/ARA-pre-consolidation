@@ -34,6 +34,8 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `pt-BR/atualizacao-programacao-movel-2023-2026.md`: provisional post-2022 update of mobile and microlearning evidence in programming education.
 - `data/mobile-programming-update-2023-2026.csv`: structured source table for the programming update.
 - `data/system-activity-feedback-matrix.csv`: initial cross-system matrix of activities, feedback, progression, consequences and evidence status.
+- `data/formal-search-round-01-file-manifest.csv`: counts, sizes and SHA-256 hashes for the first formal PubMed and ERIC exports.
+- `data/eric-round-01-duplicate-decisions.csv`: explicit ERIC duplicate and study-family decisions.
 
 ### Search records
 
@@ -41,6 +43,9 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `searches/2026-08-02-expansao-sistemas-relacionados.md`: planned search fronts for additional systems and experiences.
 - `searches/2026-08-02-execucao-exploratoria-sistemas-ampliados.md`: verified exploratory execution for the expanded system map.
 - `searches/2026-08-02-extracao-revisoes-centrais-01.md`: source verification and extraction record for the first review corpus.
+- `searches/2026-08-02-formal-search-links.md`: exact PubMed and ERIC pilot strings and official execution links.
+- `searches/2026-08-02-formal-search-execution-status.md`: initial execution blocker and completion requirements.
+- `searches/2026-08-02-formal-search-validation-round-01.md`: validation of the received exports, within-database deduplication and remaining cross-database requirement.
 
 ### Schemas, templates and libraries
 
@@ -56,6 +61,6 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.
