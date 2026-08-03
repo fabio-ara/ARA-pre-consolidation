@@ -14,7 +14,23 @@ The project succeeds [AraLearn](https://github.com/fabio-ara/AraLearn), which re
 
 ## Current stage
 
-ARA is currently in its research, product-definition and governance stage. The repository will initially contain the evidence base, pedagogical model, research protocols, legal and institutional analysis, product requirements, architecture decisions and UX specifications required before implementation.
+ARA is currently in its research, product-definition and governance stage. The repository contains the evidence base, research syntheses, product vision and governing work required before product requirements, architecture, UX and implementation are approved.
+
+The current active phase is the pedagogical and research configuration taxonomy governed by Issue #4.
+
+## Start here
+
+Current project understanding is not reconstructed from issue history alone. Read these documents in order:
+
+1. [Current product vision](docs/vision/product-vision.pt-BR.md)
+2. [Canonical research and decision history](docs/history/reconstrucao-historica-pesquisa-decisoes.pt-BR.md)
+3. [Canonical backlog index](docs/roadmap/backlog-index.md)
+4. [Document authority and traceability](docs/governance/document-authority-and-traceability.md)
+5. [Decision-oriented research programme](docs/research/research-programme-index.pt-BR.md)
+6. [Work item standard](docs/governance/work-item-standard.md)
+7. [Canonical roadmap — Issue #10](https://github.com/fabio-ara/ARA/issues/10)
+
+The vision and research-history documents are currently maintained in Brazilian Portuguese because that is the project's canonical working language for research. Stable translations will be added when the documents mature.
 
 ## Guiding purposes
 
@@ -23,11 +39,18 @@ ARA is intended to serve both:
 - self-directed learners who want to customize how they study; and
 - researchers and institutions that need reproducible pedagogical conditions, configurable instrumentation and governed educational data.
 
-The platform will preserve a stable course and card structure while allowing pedagogical, assessment, interaction and research settings to vary explicitly.
+The platform will preserve a recognizable course and card experience while allowing pedagogical, assessment, interaction, research and governance settings to vary explicitly.
+
+## Record model
+
+- canonical documents describe the current approved understanding;
+- Issues preserve the backlog, protocols and work history;
+- pull requests, commits, research data and tests preserve primary evidence;
+- exploratory prototypes remain recoverable but are not production requirements unless adopted explicitly.
 
 ## Repository governance
 
-GitHub Issues are the canonical backlog. Requirements and decisions must not depend on private conversations or unrecorded instructions. See:
+GitHub Issues are the primary backlog and work record. Current interpretation and downstream implementation must also follow the canonical documents above. Requirements and decisions must not depend on private conversations or unrecorded instructions. See:
 
 - [Repository governance](docs/governance/repository-governance.md)
 - [Language policy](docs/governance/language-policy.md)
