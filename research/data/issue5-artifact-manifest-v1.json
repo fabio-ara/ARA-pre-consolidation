@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "ara.issue5-artifact-manifest.v1",
+  "files": [
+    "docs/research/research-protocols-analytics-v1.pt-BR.md",
+    "research/data/issue5-decision-synthesis-v1.json",
+    "research/data/issue5-event-vocabulary-v1.csv",
+    "research/data/issue5-governance-matrix-v1.csv",
+    "research/data/issue5-instrument-registry-v1.csv",
+    "research/data/issue5-integration-audit-v1.json",
+    "research/data/issue5-measure-registry-v1.csv",
+    "research/data/issue5-research-framework-v1.json",
+    "research/data/issue5-scenario-validation-v1.csv",
+    "research/data/issue5-source-corpus-v1.csv"
+  ],
+  "counts": {"sources":24,"events":24,"measures":16,"instruments":14,"governanceRules":15,"scenarios":12}
+}
