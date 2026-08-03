@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "ara.domain-state-machines.v1",
+  "CourseRevision": ["draft","generated","needs_review","audited","ready","approved","superseded"],
+  "PublicationSnapshot": ["private-preview","private-published","shared","institutional","public","withdrawn","superseded","archived"],
+  "MicrosequenceRevision": ["draft","generated","needs_review","audited","ready","approved","superseded"],
+  "Annotation": ["open","triaged","accepted","rejected","needs_information","repair_planned","resolved","superseded","withdrawn"],
+  "ReviewRecord": ["planned","in_progress","findings","no_blocker","changes_requested","conditionally_acceptable","approved_for_next_gate","inconclusive"],
+  "RepairRecord": ["requested","authorized","in_progress","completed","failed","reverted"],
+  "SyncOperation": ["queued","uploading","applied","conflict","rejected","retryable_failure","permanent_failure"],
+  "Protocol": ["draft","under_review","approved","registered","active","paused","completed","withdrawn","superseded"],
+  "ParticipantRights": ["not_applicable","information_provided","consent_pending","active","refused","withdrawal_requested","withdrawn","retention_review"],
+  "Capability": ["available","unavailable","disabled_by_policy","unsupported_by_profile","degraded_with_authorized_fallback"]
+}
