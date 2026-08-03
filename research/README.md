@@ -9,12 +9,15 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 ## Principles
 
 - The literature is investigated before product decisions are treated as general rules.
-- Evidence, inference, design hypothesis, operational decision and personal preference remain distinct.
+- AraLearn is the first functional reference configuration and a major source of evidence, but it does not bound the external possibility space.
+- Evidence, inference, design hypothesis, recommendation, strategic decision, operational decision and personal preference remain distinct.
+- Research must pass through critical synthesis, alternatives and recommendation before normative conversion.
 - Reviews, handbooks and institutional guidance are used to map a field; central claims are checked against primary studies when necessary.
 - A source is never represented as read in full when only metadata, an abstract or a secondary citation was available.
 - Restricted full texts are not committed to the public repository.
 - Search strings, dates, databases, result counts, screening decisions and extraction records are versioned.
 - Bibliographic work supports both self-directed customization and formal educational research.
+- Broad research uses representative sampling and decision-relative saturation rather than claiming a universal ontology.
 
 ## Current structure
 
@@ -25,10 +28,18 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `pt-BR/mapa-inicial-evidencias.md`: seed evidence map and first candidate sources.
 - `pt-BR/antecedentes-aplicativos.md`: situated account of formative applications, MOOCs and learning environments.
 - `pt-BR/enquadramento-genero-ara-01.md`: provisional scholarly and product-genre framing beyond flashcards.
-- `pt-BR/briefing-redesenho-resources-primeiros-principios-01.md`: first-principles brief for representations, activities, responses, validators and runtimes.
-- `pt-BR/prototipos-contratos-componentes-primeiros-principios-01.md`: schema-level prototype synthesis across four response families.
-- `pt-BR/registro-decisoes-legado-aralearn-prototipos-01.md`: provisional retain, split, replace, merge and retire decisions for AraLearn concepts.
-- `pt-BR/relatorio-adapters-descartaveis-01.md`: executable adapter findings, rejected production assumptions and proposed contract amendments.
+- `pt-BR/briefing-redesenho-resources-primeiros-principios-01.md`: historical first-principles brief for representations, activities, responses, validators and runtimes; exploratory and non-normative.
+- `pt-BR/prototipos-contratos-componentes-primeiros-principios-01.md`: schema-level prototype synthesis across four response families; exploratory and non-normative.
+- `pt-BR/registro-decisoes-legado-aralearn-prototipos-01.md`: provisional prototype-era decisions for AraLearn concepts; not normative product decisions.
+- `pt-BR/relatorio-adapters-descartaveis-01.md`: executable adapter findings, rejected production assumptions and proposed experimental contract amendments.
+
+### Integrated Issue #30 decision synthesis
+
+- `pt-BR/sintese-configuracao-aralearn-horizonte-externo-01.md`: integrated two-axis synthesis, alternatives, recommendation, risks and handoff to #4.
+- `data/ara-reference-configuration-map-01.csv`: implemented AraLearn reference profile, evidence status and parameter or product handoff.
+- `data/ara-external-opportunity-map-01.csv`: externally discovered configurations, resources, instruments and capabilities with provisional classifications.
+- `data/ara-representative-sampling-01.csv`: coverage, inclusion logic, saturation and remaining gaps across literature, platforms, domains, stakeholders and deployments.
+- `data/ara-decision-synthesis-01.json`: machine-readable conclusion, recommendation, alternatives, classifications, risks, uncertainties and #4 handoff.
 
 ### Syntheses and structured data
 
@@ -78,18 +89,18 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/cross-domain-benchmark-summary-01.json`: machine-readable benchmark and genre conclusions.
 - `data/component-contract-comparison-01.csv`: cross-track comparison of representation, activity, response, validity, authority and domain grammar.
 - `data/component-contract-accessibility-security-01.csv`: accessibility, offline and security requirements by prototype family.
-- `data/aralearn-legacy-concept-decisions-02.csv`: prototype-informed decisions for AraLearn legacy concepts.
+- `data/aralearn-legacy-concept-decisions-02.csv`: prototype-informed, non-normative decisions for AraLearn legacy concepts.
 - `data/component-contract-validation-report-01.json`: reproducible JSON Schema validation result and limitations.
-- `data/component-contract-prototype-summary-01.json`: machine-readable conclusions and next work.
+- `data/component-contract-prototype-summary-01.json`: machine-readable prototype conclusions and historical next work.
 - `data/component-contract-file-manifest-01.csv`: sizes and SHA-256 hashes for the prototype artifacts.
 - `data/disposable-adapter-comparison-01.csv`: representation, validity, authority, offline result and production blockers by adapter family.
 - `data/disposable-adapter-accessibility-walkthrough-01.csv`: keyboard, focus, live-region, reflow, visual and accessibility-tree observations.
 - `data/disposable-adapter-security-threat-model-01.csv`: executed and inferred security scenarios with production implications.
 - `data/disposable-adapter-license-risk-01.csv`: licenses and follow-up risks for the reference environment and candidate libraries.
-- `data/disposable-adapter-contract-amendments-01.csv`: ten implementation-informed amendments proposed for contract version `0.2`.
+- `data/disposable-adapter-contract-amendments-01.csv`: ten implementation-informed amendments proposed for experimental contract version `0.2`.
 - `data/disposable-adapter-measurements-01.csv`: source size and lifecycle measurements for the dependency-free reference adapters.
 - `data/disposable-adapter-test-summary-01.json`: Node, browser and environment validation counts.
-- `data/disposable-adapter-summary-01.json`: machine-readable round conclusions and next work.
+- `data/disposable-adapter-summary-01.json`: machine-readable round conclusions and historical next work.
 - `data/disposable-adapter-file-manifest-01.csv`: hashes for stable source, test and structured artifacts.
 
 ### Prototype contracts
@@ -131,6 +142,10 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28; canonical AraLearn resource auditing is governed by Issue #31; cross-domain system benchmarking is governed by Issue #33; scholarly genre mapping is governed by Issue #34; first-principles component-contract prototyping is governed by Issue #36; disposable adapter implementation and testing is governed by Issue #38.
+This programme is governed by GitHub Issue #3 and the canonical roadmap in Issue #10. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted.
+
+The integrated reference-and-external synthesis is governed by Issue #30. It is the decision gate that hands a bounded recommendation to Issue #4 without converting every discovered possibility into a product requirement.
+
+The first review-of-reviews corpus is governed by Issue #14; response formats and feedback by #17; the mobile programming update by #18; formal PubMed and ERIC execution by #16; first-pass title-and-abstract screening by #24; priority-A extraction by #26; primary-study overlap mapping by #28; canonical AraLearn resource auditing by #31; cross-domain system benchmarking by #33; scholarly genre mapping by #34; first-principles component-contract prototyping by #36; disposable adapter implementation by #38; component-contract `0.2` research by #40; and the deferred external runtime protocol by #42.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.
