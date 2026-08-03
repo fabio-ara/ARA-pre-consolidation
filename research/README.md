@@ -58,6 +58,11 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/priority-a-nonredundant-core-01.csv`: working non-redundant synthesis-core proposal.
 - `data/priority-a-overlap-summary-01.json`: overlap-map counts and bounded metrics.
 - `data/priority-a-overlap-file-manifest-01.csv`: hashes for the overlap-map package.
+- `pt-BR/auditoria-resources-aralearn-01.md`: canonical audit of the implemented AraLearn v4 resource contracts.
+- `data/aralearn-resource-inventory-01.csv`: resource structure, exercise modes, limits, provisional decisions and known constraints.
+- `data/aralearn-resource-gap-targets-01.csv`: formal gap and structured-practice targets by resource.
+- `data/aralearn-domain-scenario-coverage-01.csv`: disciplinary coverage and current response limitations.
+- `data/aralearn-resource-audit-summary-01.json`: source commit, canonical resource list and audit-level conclusions.
 
 ### Search records
 
@@ -85,6 +90,6 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28; canonical AraLearn resource auditing is governed by Issue #31.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.
