@@ -1,0 +1,84 @@
+{
+  "round": "cross-domain-resource-benchmark-01",
+  "execution_date_local": "2026-08-02",
+  "issues": [33, 34],
+  "systems_audited": 21,
+  "minimum_families_covered": 12,
+  "knowledge_domains_explicitly_covered": [
+    "mathematics",
+    "programming",
+    "chemistry and molecular biology",
+    "physics and dynamic systems",
+    "geography and spatial data",
+    "music",
+    "digital electronics and circuits",
+    "languages and writing",
+    "humanities and social sciences",
+    "data science and scientific computing",
+    "data structures and algorithms"
+  ],
+  "literature_sources_mapped": 16,
+  "literature_search_status": "exploratory scoping search; formal database searches remain required by thematic front",
+  "governing_decisions": [
+    "The 18 AraLearn resources are legacy seeds, not an ARA ontology.",
+    "Representation, activity, response, validation, feedback, runtime and rendering must be separately typed.",
+    "Courses may reference only installed and approved capabilities; course JSON must not supply executable component code.",
+    "Video remains outside the baseline; optional speech rendering is not a canonical audio resource.",
+    "Repository capabilities are technical precedents, not evidence of educational effectiveness."
+  ],
+  "provisional_genre": {
+    "pt_BR": "ambiente aberto e configurável de aprendizagem e autoria de recursos estruturados e interativos",
+    "en": "open configurable structured interactive learning and authoring environment",
+    "status": "project hypothesis, not an established bibliometric category"
+  },
+  "neighboring_genres": [
+    "retrieval-practice and flashcard system",
+    "computer-based formative assessment system",
+    "interactive learning environment",
+    "interactive educational authoring environment",
+    "interactive open educational resource infrastructure",
+    "intelligent tutoring system",
+    "adaptive learning system",
+    "simulation or virtual laboratory environment",
+    "learning management system",
+    "multimedia learning environment"
+  ],
+  "high_value_patterns": [
+    "validity before correctness",
+    "student-provided semantic answers",
+    "multipart tasks and follow-through assessment",
+    "separate scorer and validator registries",
+    "typed component manifests",
+    "semantic state instead of persisted renderer geometry",
+    "construction responses",
+    "governed optional runtimes",
+    "domain grammars over false universal schemas",
+    "accessibility and offline requirements in component contracts"
+  ],
+  "initial_prototype_tracks": [
+    "semantic mathematics",
+    "relational and geometric construction",
+    "executable programming",
+    "source annotation and evidence-based argument"
+  ],
+  "additional_domain_prototypes_after_core_comparison": [
+    "geospatial maps",
+    "chemistry and molecular structures",
+    "music notation",
+    "language production",
+    "digital circuits"
+  ],
+  "formal_literature_search_fronts": [
+    "multiple representations and representational coordination",
+    "constructed-response digital assessment",
+    "authoring tools and tutoring environments",
+    "executable programming assessment and feedback",
+    "symbolic mathematics, dynamic geometry and proof",
+    "simulations and virtual laboratories",
+    "chemistry and physics multiple representations",
+    "argumentation, source analysis and open responses",
+    "language learning and optional text-to-speech",
+    "accessibility of constructive and manipulative interactions"
+  ],
+  "interpretation": "The benchmark is sufficient to reject flashcard platform as the comprehensive genre of ARA and to define first-principles redesign work. It does not select a final stack or establish effectiveness."
+}

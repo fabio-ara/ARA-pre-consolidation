@@ -24,6 +24,8 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `pt-BR/inventario-ucs-metd.md`: initial mapping of the supplied University of Lisbon course-unit sheets.
 - `pt-BR/mapa-inicial-evidencias.md`: seed evidence map and first candidate sources.
 - `pt-BR/antecedentes-aplicativos.md`: situated account of formative applications, MOOCs and learning environments.
+- `pt-BR/enquadramento-genero-ara-01.md`: provisional scholarly and product-genre framing beyond flashcards.
+- `pt-BR/briefing-redesenho-resources-primeiros-principios-01.md`: first-principles brief for representations, activities, responses, validators and runtimes.
 
 ### Syntheses and structured data
 
@@ -64,6 +66,13 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `data/aralearn-domain-scenario-coverage-01.csv`: disciplinary coverage and current response limitations.
 - `data/aralearn-resource-audit-summary-01.json`: source commit, canonical resource list and audit-level conclusions.
 - `data/aralearn-resource-audit-source-manifest-01.csv`: audited source paths, roles and authority status.
+- `pt-BR/benchmark-sistemas-estruturados-transdominio-01.md`: critical comparison of 21 structured, interactive and domain-specific systems.
+- `data/cross-domain-repository-manifest-01.csv`: repositories, pinned revisions, paths, families and license status.
+- `data/cross-domain-system-benchmark-01.csv`: representation, response, validation, feedback, authoring and runtime comparison.
+- `data/cross-domain-capability-map-01.csv`: capabilities and first-principles directions derived from the benchmark.
+- `data/cross-domain-knowledge-domain-coverage-01.csv`: coverage of knowledge domains absent or weak in the AraLearn-origin corpus.
+- `data/structured-learning-literature-01.csv`: exploratory scholarly map for structured interactive learning environments.
+- `data/cross-domain-benchmark-summary-01.json`: machine-readable benchmark and genre conclusions.
 
 ### Search records
 
@@ -75,6 +84,7 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `searches/2026-08-02-formal-search-execution-status.md`: initial execution blocker and completion requirements.
 - `searches/2026-08-02-formal-search-validation-round-01.md`: validation of the received identifier and ERIC exports.
 - `searches/2026-08-02-formal-search-completion-round-01.md`: completed PubMed–ERIC comparison and final publication count.
+- `searches/2026-08-02-structured-interactive-environments-scoping.md`: exploratory search beyond flashcards and formal follow-up fronts.
 
 ### Schemas, templates and libraries
 
@@ -86,11 +96,12 @@ Brazilian Portuguese (`pt-BR`) is the canonical working language for protocols, 
 - `library/referencias-sistemas-iniciais.bib`: official and academic references for related learning systems.
 - `library/referencias-formatos-feedback.bib`: references for response formats, scoring and feedback.
 - `library/referencias-programacao-movel-2023-2026.bib`: references for the post-2022 mobile programming update.
+- `library/referencias-ambientes-interativos-01.bib`: open bibliography for interactive environments, representations, simulations and assessment.
 - `requests/textos-integrais.md`: general precise requests for inaccessible material.
 - `requests/textos-integrais-prioridade-a.md`: three priority full-text requests required to deepen the priority-A extraction.
 
 ## Governance
 
-This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28; canonical AraLearn resource auditing is governed by Issue #31.
+This programme is governed by GitHub Issue #3 and the canonical roadmap. Focused reviews receive their own protocols and issues when the initial mapping demonstrates that a narrower synthesis is warranted. The first review-of-reviews corpus is governed by Issue #14; response formats and feedback are governed by Issue #17; the mobile programming update is governed by Issue #18; formal PubMed and ERIC execution is governed by Issue #16; first-pass title-and-abstract screening is governed by Issue #24; priority-A full-text retrieval and extraction is governed by Issue #26; primary-study overlap mapping is governed by Issue #28; canonical AraLearn resource auditing is governed by Issue #31; cross-domain system benchmarking is governed by Issue #33; scholarly genre mapping is governed by Issue #34.
 
 Unless a file states otherwise, original documentation in this directory is licensed under CC BY 4.0.
