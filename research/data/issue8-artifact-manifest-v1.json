@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "ara.issue8-artifact-manifest.v1",
+  "files": [
+    "docs/ux/ux-specification-v1.md",
+    "docs/ux/design-system-v1.md",
+    "docs/ux/accessibility-localization-v1.md",
+    "docs/ux/evaluation-plan-v1.md",
+    "research/data/issue8-screen-contracts-v1.csv",
+    "research/data/issue8-journey-screen-matrix-v1.csv",
+    "research/data/issue8-critical-messages-v1.csv",
+    "research/data/issue8-decision-synthesis-v1.json",
+    "research/data/issue8-audit-v1.json",
+    "prototypes/ux-v1/index.html",
+    "prototypes/ux-v1/styles.css",
+    "prototypes/ux-v1/app.js"
+  ],
+  "counts": {"screenContracts":36,"journeys":15,"criticalMessages":22,"prototypeViews":5}
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARA UX v1 — protótipo estrutural</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+<header class="app-header">
+  <strong>ARA</strong>
+  <span id="network-status" role="status">Offline — alterações salvas neste dispositivo</span>
+</header>
+<nav aria-label="Navegação principal">
+  <button data-view="study" aria-current="page">Estudar</button>
+  <button data-view="author">Criar</button>
+  <button data-view="review">Revisar</button>
+  <button data-view="research">Pesquisa</button>
+  <button data-view="admin">Administrar</button>
+</nav>
+<main id="main" tabindex="-1">
+<section id="study" class="view">
+  <h1>Biblioteca</h1>
+  <article class="panel">
+    <h2>Dataprev: Teste</h2>
+    <p>Versão 7 · disponível offline · perfil AraLearn de referência</p>
+    <progress max="100" value="34">34%</progress>
+    <div class="actions"><button class="primary">Retomar estudo</button><button>Ver estrutura</button></div>
+  </article>
+  <article class="panel">
+    <h2>Card atual</h2>
+    <p><strong>Microssequência:</strong> Elasticidade e escalabilidade</p>
+    <p>Elasticidade ajusta recursos de acordo com a demanda; escalabilidade descreve a capacidade de ampliar recursos.</p>
+    <fieldset><legend>Qual afirmação está correta?</legend>
+      <label><input type="radio" name="answer"> Elasticidade e escalabilidade são sempre sinônimos.</label>
+      <label><input type="radio" name="answer"> Elasticidade envolve ajuste dinâmico; escalabilidade é uma capacidade mais ampla.</label>
+    </fieldset>
+    <button class="primary">Enviar resposta</button>
+  </article>
+</section>
+<section id="author" class="view" hidden>
+  <h1>Autoria em andamento</h1>
+  <div class="layout">
+    <aside class="panel" aria-label="Estrutura do curso">
+      <h2>Estrutura</h2>
+      <ol>
+        <li>Módulo: Nuvem
+          <ol><li><button class="linklike">Microssequência: conceitos básicos</button></li><li><button class="linklike" aria-current="true">Microssequência: elasticidade</button></li></ol>
+        </li>
+      </ol>
+      <button>Inserir placement</button>
+    </aside>
+    <article class="panel">
+      <h2>Elasticidade</h2>
+      <p><span class="badge">needs_review</span> Revisão 3 · placement 12</p>
+      <p>Prévia renderizada do conteúdo em evolução.</p>
+      <div class="actions"><button>Comentar</button><button>Comparar versões</button><button class="primary" data-open-dialog>Solicitar auditoria</button></div>
+    </article>
+    <aside class="panel" aria-label="Inspector">
+      <h2>Inspector</h2>
+      <dl><dt>Origem</dt><dd>Criada neste curso</dd><dt>Dependência</dt><dd>Conceitos básicos</dd><dt>Configuração</dt><dd>Perfil de referência + offline</dd></dl>
+    </aside>
+  </div>
+</section>
+<section id="review" class="view" hidden>
+  <h1>Fila de revisão</h1>
+  <article class="panel"><h2>Dependência ausente</h2><p>Microssequência “Elasticidade” · gravidade alta</p><p>O conceito de ajuste vertical é usado antes de ser introduzido.</p><div class="actions"><button>Abrir alvo</button><button class="primary">Autorizar reparo</button></div></article>
+</section>
+<section id="research" class="view" hidden>
+  <h1>Protocolo</h1>
+  <ol class="steps"><li class="done">Pergunta</li><li class="done">Condições</li><li aria-current="step">Instrumentos</li><li>Eventos</li><li>Medidas</li><li>Governança</li></ol>
+  <article class="panel"><h2>Instrumentos</h2><p>Defina o instrumento antes de autorizar eventos relacionados.</p><button class="primary">Adicionar pós-teste</button></article>
+</section>
+<section id="admin" class="view" hidden>
+  <h1>Administração</h1>
+  <div class="cards"><article class="panel"><h2>O que precisa de atenção?</h2><ul><li>2 publicações aguardam aprovação</li><li>1 conflito de sincronização</li><li>Backup testado há 8 dias</li></ul></article><article class="panel"><h2>Capacidades</h2><p>IA conectada: indisponível. Estudo offline: disponível.</p><button>Inspecionar capacidades</button></article></div>
+</section>
+</main>
+<dialog id="audit-dialog" aria-labelledby="audit-title">
+  <h2 id="audit-title">Solicitar auditoria</h2>
+  <p>Alvo: revisão 3 da microssequência “Elasticidade”. A auditoria não alterará conteúdo.</p>
+  <label>Escopo <select><option>Microssequência selecionada</option><option>Microssequência e dependências</option></select></label>
+  <div class="actions"><button data-close-dialog>Cancelar</button><button class="primary">Confirmar solicitação</button></div>
+</dialog>
+<footer><p>Protótipo estrutural não produtivo · <a href="../../docs/ux/ux-specification-v1.md">especificação</a></p></footer>
+</body>
+</html>

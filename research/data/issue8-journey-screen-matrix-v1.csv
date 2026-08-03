@@ -1,0 +1,16 @@
+journey_id,journey,screens,coverage_status
+J01,Personal offline study,"S01,S02,S04,S05,S06,S07,S08,S09,S10,S27,S36",passed
+J02,Learner accessibility,"S01,S04,S06,S11,S12,S14,S31,S36",passed
+J03,Personal author,"S02,S15,S16,S17,S18,S20,S21,S22,S23,S24,S25,S26,S27",passed
+J04,GPT-assisted author,"S16,S17,S18,S20,S21,S22,S24,S27,S36",passed
+J05,Course variant researcher,"S11,S12,S13,S14,S18,S21,S29,S30,S33",passed
+J06,Participant,"S01,S04,S05,S06,S31,S32,S33",passed
+J07,Teacher/tutor,"S02,S04,S07,S22,S33,S34",passed
+J08,Reviewer,"S15,S20,S21,S22,S23,S25,S26",passed
+J09,Institutional publisher,"S15,S21,S22,S23,S25,S26,S34,S35,S36",passed
+J10,Open OER publisher,"S19,S21,S22,S23,S26,S36",passed
+J11,Confidential workspace,"S15,S16,S19,S22,S26,S27,S34,S35,S36",passed
+J12,Cross-course composer,"S18,S19,S20,S21,S22,S36",passed
+J13,Offline conflict resolution,"S16,S21,S27,S28",passed
+J14,Administrator,"S27,S34,S35,S36",passed
+J15,Catalogue learner,"S01,S02,S04,S05,S06,S09",passed
