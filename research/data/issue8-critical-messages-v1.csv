@@ -1,0 +1,23 @@
+key,en,pt-BR,pt-PT
+nav.study,Study,Estudar,Estudar
+nav.create,Create,Criar,Criar
+nav.review,Review,Revisar,Rever
+nav.research,Research,Pesquisa,Investigação
+nav.admin,Admin,Administrar,Administrar
+status.offline,Offline — changes saved on this device,Offline — alterações salvas neste dispositivo,Offline — alterações guardadas neste dispositivo
+status.syncing,Syncing changes,Sincronizando alterações,A sincronizar alterações
+status.uptodate,Up to date,Atualizado,Atualizado
+status.attention,Attention required,Atenção necessária,Atenção necessária
+action.resume,Resume study,Retomar estudo,Retomar estudo
+action.download,Make available offline,Disponibilizar offline,Disponibilizar offline
+action.comment,Add comment,Adicionar comentário,Adicionar comentário
+action.audit,Request audit,Solicitar auditoria,Solicitar auditoria
+action.repair,Authorize repair,Autorizar reparo,Autorizar reparação
+action.publish,Publish version,Publicar versão,Publicar versão
+action.withdraw,Withdraw publication,Retirar publicação,Retirar publicação
+conflict.title,Changes need a decision,Alterações precisam de uma decisão,As alterações exigem uma decisão
+conflict.fork,Create a separate version,Criar versão separada,Criar versão separada
+capability.unavailable,This capability is unavailable in the current profile,Esta capacidade está indisponível no perfil atual,Esta capacidade está indisponível no perfil atual
+error.savedLocal,Your work remains saved on this device,Seu trabalho permanece salvo neste dispositivo,O seu trabalho permanece guardado neste dispositivo
+publication.audience,Publication audience,Público da publicação,Público da publicação
+rights.withdraw,Withdraw participation,Retirar participação,Retirar participação
