@@ -14,7 +14,7 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 O ARA encontra-se em investigação, definição do produto e exploração de design, antes do desenvolvimento. As Issues #4–#8 produziram baselines de configuração, investigação/analytics, produto/domínio, arquitetura e UX. Servem o brainstorming e a revisão posterior; nenhuma issue de implementação está ativa ou autorizada.
 
-Um rascunho não normativo de idealização do produto reúne agora a auditoria do AraLearn atual, alternativas de modularização entre kernel e resources, comparações de stack e BaaS, 169 itens candidatos de backlog, 37 descrições de ecrãs e 12 wireframes SVG minimalistas para discussão.
+Um rascunho não normativo de idealização do produto reúne agora a auditoria do AraLearn atual, alternativas de modularização entre kernel e resources, comparações de stack e BaaS, 171 itens candidatos de backlog, 37 descrições de ecrãs e 12 wireframes SVG minimalistas para discussão.
 
 ## Caminho canónico
 
