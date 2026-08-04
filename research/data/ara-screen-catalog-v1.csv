@@ -1,0 +1,38 @@
+id,area,screen,primary_question,primary_actions,key_states,wireframe
+S01,entrada,Entrada e perfil local,"Usar localmente ou entrar?","usar localmente|entrar|criar conta|importar backup","first-use|session-expired|offline|local-data",none
+S02,biblioteca,Biblioteca Continuar,"Onde retomo?","buscar|continuar|abrir|adicionar|importar","empty|offline|syncing|storage-warning|update",01-library.svg
+S03,biblioteca,Curso,"O que é e como está neste dispositivo?","continuar|baixar|atualizar|estrutura|parâmetros|remover local","remote-only|downloading|offline-ready|update|capability-missing",02-course-overview.svg
+S04,biblioteca,Estrutura do curso,"Como está organizado e do que depende?","expandir|abrir placement|estrutura/dependências/lista","complete|missing-dependency|cycle|unavailable",04-structure-dependencies.svg
+S05,biblioteca,Materialização offline,"O que será baixado e quanto ocupa?","confirmar|cancelar|pausar|retry|manter anterior","checking|downloading|installing|failed|ready|no-space",11-sync-offline.svg
+S06,estudo,Card de estudo,"O que compreender ou fazer agora?","responder|confirmar|limpar|revelar|observar|rever|navegar","theory|practice|edited|feedback|offline|fallback",03-study-card.svg
+S07,estudo,Retomada e mudança,"Onde parei e o que mudou?","continuar|ver mudanças|manter anterior|atualizar","same-version|moved|updated|removed",none
+S08,estudo,Rever,"O que marquei para retomar?","abrir|adiar|retirar marca|filtrar","empty|due|package-missing|offline",none
+S09,estudo,Observação situada,"Que dúvida ou problema registrar?","categoria|texto|visibilidade|salvar|retirar","new|sent|responded|corrected|target-superseded",07-comment-repair.svg
+S10,estudo,Dados pessoais locais,"O que existe e o que remover/exportar?","exportar|remover download|apagar rascunho|exclusão remota","local-only|synced|pending|retention-lock|error",12-admin-storage.svg
+S11,criar,Workspaces,"O que está em construção?","abrir|criar|buscar|filtrar|importar","empty|local-only|shared|conflict|denied",06-authoring-workspace.svg
+S12,criar,Visão do workspace,"Qual o estado do curso unidades e operações?","plano|composição|unidades|operações|findings|publicações","planned|partial|audit|ready|published",06-authoring-workspace.svg
+S13,criar,Brief e plano,"O que cobrir e para quem?","editar objetivo/público/escopo|fontes|invariantes|pedir plano","incomplete|validated|coverage-gap|locked",none
+S14,criar,Composição e dependências,"Que revisões integram e como se relacionam?","referenciar|criar unidade|mover placement|criar relação|alternar lista","valid|orphan|missing-prerequisite|cycle|update",04-structure-dependencies.svg
+S15,criar,Unidades reutilizáveis,"Já existe unidade adequada?","buscar|filtrar|preview|referenciar|copiar|fork|adaptar","no-result|denied|license-conflict|superseded",none
+S16,criar,Microssequência,"Qual o conteúdo papel estado e contexto?","cards|metadata|fontes|relações|versões|GPT","planned|draft|audited|reused|superseded",none
+S17,criar,Card em modo Editar,"Que parte alterar?","selecionar|editar|pedido GPT|preview|aplicar","clean|changed|generating|preview|invalid|stale|applied",03-study-card.svg
+S18,criar,Formulário de resource,"Quais campos semânticos exige?","editar campos|preview visual/acessível|validar|restaurar","valid|incomplete|limit|package-missing",none
+S19,configuração,Perfil e parâmetros,"Como o curso deve funcionar?","contexto|perfil|overlays|buscar|avançado|comparar","recommended|changed|conflict|rights-required|unsupported",05-parameter-profile.svg
+S20,configuração,Configuração efetiva e diff,"De onde vem cada valor e o que muda?","filtrar consequência|origem|escopo|reset|criar variante","runtime-only|content-transforming|composition|locked",05-parameter-profile.svg
+S21,agente,Operações GPT MCP,"O que o assistente faz e que decisão exige?","abrir|cancelar|informar|inspecionar contexto|aplicar|rejeitar","queued|running|needs-input|preview-ready|applied|failed|stale",09-mcp-operations.svg
+S22,versões,Preview e diff,"O que exatamente mudou?","conteúdo/estrutura/configuração|navegar|aplicar seleção|rejeitar","semantic-diff|generated|invalid|conflict|regression",08-version-diff.svg
+S23,revisão,Comentários e findings,"Que questões estão abertas e onde?","filtrar|abrir alvo|aceitar/rejeitar|responder|autorizar reparo","open|triaged|needs-info|repair-planned|resolved",07-comment-repair.svg
+S24,revisão,Auditoria,"Que versão rubrica e escopo examinar?","selecionar revisão/rubrica/revisor|iniciar|concluir|exportar","draft|running|incomplete|findings|blocked",none
+S25,revisão,Reparo e reauditoria,"Quais findings reparar e o que fica fora?","selecionar findings/alvos|autorizar|preview|regressão","authorized|partial|regression|reaudited|unresolved",07-comment-repair.svg
+S26,publicação,Aprovação e publicação,"O que publicar para quem e com quais restrições?","audiência|snapshot|licença|offline|aprovar|publicar","private-preview|private-complete|shared|institutional|public|research-locked",none
+S27,versões,Histórico e provenance,"De onde veio esta revisão?","lineage|timeline|atores|fontes|derivação|diff","original|fork|adaptation|translation|superseded",08-version-diff.svg
+S28,admin,Pessoas e papéis,"Quem pode ver ou fazer o quê?","convidar|alterar papel|retirar|transferir ownership","pending|active|expired|last-owner|offline-cache",none
+S29,pesquisa,Protocolo de pesquisa,"Que pergunta condição e evidência autoriza?","purpose|conditions|assignment|instruments|events|governance","draft|ready|locked|amended|closed",10-research-protocol.svg
+S30,pesquisa,Variantes e condições,"O que é igual e diferente?","invariantes|diff intencional|content/config/composition|auditar equivalência","comparable|accidental-diff|capability-mismatch|locked",10-research-protocol.svg
+S31,pesquisa,Participantes e direitos,"Que acesso consentimento/recusa e retenção?","eligibility|assignment|status|withdrawal|export/delete","invited|consented|refused|active|withdrawn|retention-only",none
+S32,pesquisa,Instrumentos e evidência,"Que instrumentos existem e quando?","criar/importar|schedule|version|accommodation|preview","draft|scheduled|completed|missing|invalidated",none
+S33,pesquisa,Analytics por pergunta,"Que pergunta é respondida e com que limites?","pergunta/papel|filtros|formula|definition|export","insufficient|missingness|aggregate|restricted|stale",none
+S34,admin,Capabilities e packages,"Que resources e serviços são suportados?","catálogo|versão|instalar/ativar/desativar|detalhes","built-in|lazy|installed|disabled|incompatible|policy-blocked",none
+S35,admin,Armazenamento e sincronização,"Onde estão os dados e há pendências?","filtro local/remoto|retry|export|limpar cache|abrir item","offline|synced|pending|rejected|quota-warning|corrupted",11-sync-offline.svg
+S36,admin,Administração de storage,"O que ocupa espaço e o que será afetado?","filtrar|impacto|arquivar|remover|exportar","under-budget|warning|limit|retention-lock|orphan",12-admin-storage.svg
+S37,admin,Diagnóstico,"Por que capability sync ou publicação falhou?","copiar relatório|retry checks|exportar|mostrar IDs","healthy|degraded|incompatible|provider-paused|migration-needed",none
