@@ -25,7 +25,7 @@ O conjunto [`docs/ideation/`](../ideation/README.md) confronta as baselines com 
 - separação candidata entre kernel, packages de resource/practice e adapters;
 - comparação de Supabase, outros BaaS, local stores, sync, PWA e wrappers Android;
 - 35 decisões preliminares de preservação/reformulação;
-- 169 itens candidatos de backlog distribuídos em 16 áreas;
+- 171 itens candidatos de backlog distribuídos em 16 áreas;
 - 37 telas descritas com controles e estados;
 - 12 wireframes SVG minimalistas;
 - 36 fontes registradas;
