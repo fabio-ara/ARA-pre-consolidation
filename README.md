@@ -14,7 +14,7 @@ course version → module/lesson → placement → microsequence revision → ca
 
 ARA is in pre-development research, product definition and design exploration. Issues #4–#8 produced configuration, research/analytics, product/domain, architecture and UX baselines. They are inputs for continued brainstorming and later review; no product implementation issue is active or authorized.
 
-A non-normative product-idealization draft now consolidates the current AraLearn audit, kernel/resource modularity alternatives, stack and BaaS comparisons, 169 candidate backlog items, 37 screen descriptions and 12 minimal SVG wireframes for discussion.
+A non-normative product-idealization draft now consolidates the current AraLearn audit, kernel/resource modularity alternatives, stack and BaaS comparisons, 171 candidate backlog items, 37 screen descriptions and 12 minimal SVG wireframes for discussion.
 
 ## Canonical path
 
