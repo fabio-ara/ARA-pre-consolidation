@@ -34,7 +34,7 @@ O conjunto contém:
 - mapa preservar/reformular/separar/adiar;
 - proposta de kernel estável e packages independentes de resource/practice;
 - alternativas de BaaS, store local, sync, hosting, framework e app Android;
-- backlog candidato com 169 itens em 16 áreas;
+- backlog candidato com 171 itens em 16 áreas;
 - catálogo de 37 telas e estados;
 - 12 wireframes SVG simples;
 - registries CSV para filtragem e discussão;
