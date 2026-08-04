@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "ara.ideation-draft-manifest.v1",
+  "date": "2026-08-03",
+  "status": "non-normative-pre-development-draft",
+  "purpose": "Integral AraLearn audit and broad ARA product/backlog/wireframe idealization for later owner discussion.",
+  "documents": [
+    "docs/ideation/README.md",
+    "docs/ideation/aralearn-integral-audit-v1.pt-BR.md",
+    "docs/ideation/ara-product-idealization-v1.pt-BR.md",
+    "docs/ideation/kernel-resource-modularity-v1.pt-BR.md",
+    "docs/ideation/technology-and-baas-options-v1.pt-BR.md",
+    "docs/ideation/draft-backlog-v1.pt-BR.md",
+    "docs/ideation/screens-and-states-v1.pt-BR.md"
+  ],
+  "registries": [
+    "research/data/aralearn-capability-preservation-matrix-v1.csv",
+    "research/data/ara-draft-backlog-v1.csv",
+    "research/data/ara-screen-catalog-v1.csv",
+    "research/data/ara-technology-options-v1.csv",
+    "research/data/ara-ideation-source-register-v1.csv"
+  ],
+  "wireframes": [
+    "docs/ideation/wireframes/01-library.svg",
+    "docs/ideation/wireframes/02-course-overview.svg",
+    "docs/ideation/wireframes/03-study-card.svg",
+    "docs/ideation/wireframes/04-structure-dependencies.svg",
+    "docs/ideation/wireframes/05-parameter-profile.svg",
+    "docs/ideation/wireframes/06-authoring-workspace.svg",
+    "docs/ideation/wireframes/07-comment-repair.svg",
+    "docs/ideation/wireframes/08-version-diff.svg",
+    "docs/ideation/wireframes/09-mcp-operations.svg",
+    "docs/ideation/wireframes/10-research-protocol.svg",
+    "docs/ideation/wireframes/11-sync-offline.svg",
+    "docs/ideation/wireframes/12-admin-storage.svg"
+  ],
+  "counts": {
+    "documents": 7,
+    "registries": 5,
+    "wireframes": 12,
+    "backlogItems": 171,
+    "screenContracts": 37,
+    "preservationDecisions": 35,
+    "technologyOptions": 30,
+    "sources": 36
+  },
+  "nonAuthorizations": [
+    "product implementation",
+    "executable GitHub issues",
+    "definitive backlog",
+    "selected stack or BaaS",
+    "schema or API implementation",
+    "branch protection or CI",
+    "release sequencing",
+    "educational-effectiveness claim"
+  ]
+}

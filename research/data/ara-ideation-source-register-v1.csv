@@ -1,0 +1,37 @@
+id,type,source,scope,authority,accessed
+SRC01,primary-repository,AraLearn README,"current product capabilities and deployment",primary,2026-08-03
+SRC02,primary-repository,AraLearn package.json,"tooling scripts tests dependencies",primary,2026-08-03
+SRC03,primary-repository,AraLearn docs/arquitetura.md,"published artifacts workspace personal state",primary,2026-08-03
+SRC04,primary-repository,AraLearn docs/persistencia-relacional.md,"Postgres Storage IndexedDB sync RLS",primary,2026-08-03
+SRC05,primary-repository,AraLearn docs/aralearn-contract.md,"v4 public content contract",primary,2026-08-03
+SRC06,primary-repository,AraLearn docs/recursos-de-card.md,"18 resources and semantic contracts",primary,2026-08-03
+SRC07,primary-repository,AraLearn docs/resource-system-refactor.md,"resource registry renderer authoring decisions",primary,2026-08-03
+SRC08,primary-repository,AraLearn docs/autoria-mcp.md,"MCP OAuth tools operations",primary,2026-08-03
+SRC09,primary-repository,AraLearn docs/uso-do-app.md,"user journeys and states",primary,2026-08-03
+SRC10,primary-repository,AraLearn docs/auditoria-front-end.md,"UI baseline Central editing observations CSS tests",primary,2026-08-03
+SRC11,primary-repository,AraLearn src/resources/registry/index.js,"physical resource registry concentration",primary,2026-08-03
+SRC12,primary-repository,AraLearn src/render/renderCardRuntime.js,"physical renderer concentration",primary,2026-08-03
+SRC13,primary-repository,AraLearn src/ui/lessonEditorApp.js,"UI orchestration concentration",primary,2026-08-03
+SRC14,primary-repository,AraLearn tests/v4,"contracts resources authoring failure and deployment fixtures",primary,2026-08-03
+SRC15,official,H5P Technical Overview,"core libraries editor integrations package format",comparative,2026-08-03
+SRC16,official,H5P Content Type Development,"library manifest semantic schema dependencies",comparative,2026-08-03
+SRC17,official,H5P Specification,"portable package structure",comparative,2026-08-03
+SRC18,official,H5P Content Type Hub,"independent package discovery/update",comparative,2026-08-03
+SRC19,official,Open edX XBlock Introduction,"independent composable course components",comparative,2026-08-03
+SRC20,official,Moodle Plugin Types,"extension taxonomy and optional components",comparative,2026-08-03
+SRC21,official,Moodle Question Subsystem,"question type behaviour renderer and bank separation",comparative,2026-08-03
+SRC22,official,Supabase Pricing and Billing,"free quotas and managed service trade-offs",current-technical,2026-08-03
+SRC23,official,Firebase Pricing and Firestore Pricing,"managed mobile BaaS trade-offs",current-technical,2026-08-03
+SRC24,official,Appwrite Pricing,"cloud/self-host integrated BaaS quotas",current-technical,2026-08-03
+SRC25,official,Nhost Local Development,"Postgres Hasura Auth Storage Functions stack",current-technical,2026-08-03
+SRC26,official,PocketBase FAQ and Production Guide,"single-server self-host alternative",current-technical,2026-08-03
+SRC27,official,PowerSync Architecture and Client Docs,"SQLite local-first sync checkpoints upload queue",current-technical,2026-08-03
+SRC28,official,RxDB Offline First and Replication,"browser local database and backend-neutral sync",current-technical,2026-08-03
+SRC29,official,web.dev Learn PWA,"installable offline web baseline",current-technical,2026-08-03
+SRC30,official,Android Trusted Web Activities,"minimal Android wrapper and web ownership",current-technical,2026-08-03
+SRC31,official,Capacitor Documentation,"web-first native wrapper and plugins",current-technical,2026-08-03
+SRC32,ARA-baseline,ara.configuration-taxonomy.v1,"configuration parameters profiles precedence",accepted-conceptual,2026-08-03
+SRC33,ARA-baseline,ara.research-framework.v1,"protocols instruments events measures governance",accepted-conceptual,2026-08-03
+SRC34,ARA-baseline,Issue 6 domain model v1,"entities placements microsequence revisions",accepted-conceptual,2026-08-03
+SRC35,ARA-baseline,Issue 7 architecture v1,"provider-independent alternatives and quality attributes",accepted-conceptual,2026-08-03
+SRC36,ARA-baseline,Issue 8 UX v1,"journeys screens states accessibility",accepted-conceptual,2026-08-03
