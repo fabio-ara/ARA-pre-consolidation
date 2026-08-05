@@ -1,0 +1,43 @@
+{
+  "schema": "ara.research-artifact-manifest.v1",
+  "id": "ara.versioning-storage-economics.v1",
+  "status": "candidate-non-normative",
+  "date": "2026-08-04",
+  "issues": [77, 79],
+  "artifacts": [
+    "research/searches/2026-08-04-versioning-storage-economics-protocol.md",
+    "research/data/versioning-storage-provider-evidence-v1.csv",
+    "research/data/versioning-storage-decision-synthesis-v1.json",
+    "docs/ideation/versioning-storage-economics-v1.pt-BR.md",
+    "docs/ideation/draft-backlog-versioning-storage-v1.pt-BR.md",
+    "research/data/ara-draft-backlog-versioning-storage-v1.csv",
+    "docs/ideation/draft-backlog-agent-profiles-analytics-v2.pt-BR.md",
+    "research/data/ara-draft-backlog-agent-profiles-analytics-v2.csv",
+    "docs/ideation/agent-profiles-participatory-analytics-correction-v2.pt-BR.md",
+    "research/data/ara-draft-backlog-v3-manifest.json"
+  ],
+  "counts": {
+    "provider_evidence_records": 11,
+    "area_r_items": 10,
+    "area_q_items_preserved": 26,
+    "draft_backlog_total_items": 207,
+    "draft_backlog_total_areas": 18
+  },
+  "principal_corrections": [
+    "AraLearn is functional contrast evidence rather than an equivalent modular fixture",
+    "ARA evals are based on target tasks, controlled cases, invariants and later real operations",
+    "versioning sustainability is a separate research and architecture concern",
+    "free-tier quotas and pausing do not define domain semantics or durability",
+    "provider selection is deferred until workload, retention, export and restore are measured"
+  ],
+  "non_authorizations": [
+    "product code",
+    "provider selection",
+    "paid-plan purchase",
+    "new account creation",
+    "AraLearn migration",
+    "production schema",
+    "automatic deletion of revisions",
+    "participant data collection"
+  ]
+}
