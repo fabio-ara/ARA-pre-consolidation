@@ -12,9 +12,11 @@ course version → module/lesson → placement → microsequence revision → ca
 
 ## Current stage
 
-ARA is in pre-development research, product definition and design exploration. Issues #4–#8 produced configuration, research/analytics, product/domain, architecture and UX baselines. They are inputs for continued brainstorming and later review; no product implementation issue is active or authorized.
+ARA is in pre-development research, product definition and design exploration. Issues #4–#8 produced configuration, research/analytics, product/domain, architecture and UX baselines. They support continued brainstorming and later review; no product implementation issue is active or authorized.
 
-A non-normative product-idealization draft now consolidates the current AraLearn audit, kernel/resource modularity alternatives, stack and BaaS comparisons, 171 candidate backlog items, 37 screen descriptions and 12 minimal SVG wireframes for discussion.
+Draft backlog v2 now contains **197 candidate items across 17 areas**, preserving the original 171 items and adding a new area for modular agent profiles, participatory curation, diffs, evals and quantitative, qualitative and mixed-method analytics.
+
+Issue #77 is the active focused research round. It investigates how to decompose AraLearn's monolithic GPT/MCP configuration into versioned instructions, domain profiles, templates, knowledge collections, context policies, tools/contracts and evals while preserving human control and a simple interface. The initial corpus contains 34 sources and authorizes neither product code nor participant collection.
 
 ## Canonical path
 
@@ -23,7 +25,7 @@ A non-normative product-idealization draft now consolidates the current AraLearn
 3. [Domain model](docs/product/domain-model-v1.md)
 4. [Reference architecture](docs/architecture/reference-architecture-v1.md)
 5. [UX specification](docs/ux/ux-specification-v1.md)
-6. [Product idealization and draft backlog (pt-BR)](docs/ideation/README.md)
+6. [Product ideation and draft backlog (pt-BR)](docs/ideation/README.md)
 7. [Research programme](docs/research/research-programme-index.pt-BR.md)
 8. [Backlog and phase rules](docs/roadmap/backlog-index.md)
 

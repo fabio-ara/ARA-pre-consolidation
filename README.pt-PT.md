@@ -14,7 +14,9 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 O ARA encontra-se em investigação, definição do produto e exploração de design, antes do desenvolvimento. As Issues #4–#8 produziram baselines de configuração, investigação/analytics, produto/domínio, arquitetura e UX. Servem o brainstorming e a revisão posterior; nenhuma issue de implementação está ativa ou autorizada.
 
-Um rascunho não normativo de idealização do produto reúne agora a auditoria do AraLearn atual, alternativas de modularização entre kernel e resources, comparações de stack e BaaS, 171 itens candidatos de backlog, 37 descrições de ecrãs e 12 wireframes SVG minimalistas para discussão.
+O pré-backlog v2 reúne agora **197 itens candidatos em 17 áreas**, preservando os 171 itens iniciais e acrescentando uma área dedicada a perfis modulares de agente, curadoria participativa, diffs, evals e analytics quantitativos, qualitativos e mistos.
+
+A Issue #77 é a frente focal ativa. Investiga como decompor a configuração monolítica de GPT/MCP do AraLearn em instruções, perfis de domínio, templates, coleções de conhecimento, contexto, tools/contracts e evals versionados, mantendo controlo humano e uma interface simples. O corpus inicial contém 34 fontes e não autoriza código nem recolha de participantes.
 
 ## Caminho canónico
 
@@ -23,7 +25,7 @@ Um rascunho não normativo de idealização do produto reúne agora a auditoria 
 3. [Modelo de domínio](docs/product/domain-model-v1.md)
 4. [Arquitetura](docs/architecture/reference-architecture-v1.md)
 5. [UX](docs/ux/ux-specification-v1.md)
-6. [Idealização do produto e rascunho amplo de backlog](docs/ideation/README.md)
+6. [Idealização do produto e pré-backlog](docs/ideation/README.md)
 7. [Programa de investigação](docs/research/research-programme-index.pt-BR.md)
 8. [Backlog e regras das fases](docs/roadmap/backlog-index.md)
 
