@@ -1,0 +1,23 @@
+id,family,role,responsibility,authority_boundary,status
+RL01,authorship,course-planner,"Define coverage structure assumptions and invariants","No content mutation unless separately authorized",candidate
+RL02,authorship,builder,"Create cards and microsequences within approved scope","Cannot audit approve or publish own output",candidate
+RL03,authorship,manual-editor,"Perform deterministic edits through ARA UI","Restricted to explicit object permissions",candidate
+RL04,review,domain-reviewer,"Assess factual disciplinary and epistemic adequacy","Findings only unless repair authority is granted",candidate
+RL05,review,pedagogical-auditor,"Assess sequencing practice feedback accessibility and audience fit","Read-only audit against frozen revision",candidate
+RL06,review,technical-auditor,"Assess contracts schemas tools retrieval and rendering behavior","No pedagogical conclusion without relevant evidence",candidate
+RL07,review,repairer,"Apply accepted findings to authorized targets","Creates new revisions and cannot approve them",candidate
+RL08,review,re-auditor,"Verify resolution and regressions against new revision","Read-only and independent where required",candidate
+RL09,curation,source-curator,"Maintain sources anchors licences and validity","Cannot treat source presence as proof of quality",candidate
+RL10,governance,approver-publisher,"Approve audience snapshot and publication decision","Human or institution authority only",candidate
+RL11,agent-evaluation,prompt-instruction-investigator,"Design and compare instructions examples and task templates","Cannot activate revisions without administrative decision",candidate
+RL12,agent-evaluation,knowledge-curator,"Build and review domain knowledge collections and retrieval corpora","Must preserve provenance access and validity",candidate
+RL13,agent-evaluation,retrieval-evaluator,"Measure query coverage retrieval relevance and context failures","No automatic corpus mutation",candidate
+RL14,agent-evaluation,mcp-contract-evaluator,"Assess tools resources schemas permissions and recovery behavior","Technical authority only",candidate
+RL15,agent-evaluation,eval-designer,"Create cases rubrics graders baselines and regression criteria","Expected results require review and versioning",candidate
+RL16,agent-evaluation,failure-analyst,"Classify failures across model prompt knowledge retrieval tool and contract","Recommendations only",candidate
+RL17,research,protocol-designer,"Define question design conditions instruments and analysis plan","Cannot silently reuse operational data",candidate
+RL18,research,quantitative-analyst,"Execute verified statistical analyses and sensitivity checks","Interpretation reviewed by researcher",candidate
+RL19,research,qualitative-analyst,"Code synthesize and compare qualitative evidence","Must preserve data context reflexivity and human review",candidate
+RL20,research,mixed-methods-integrator,"Integrate quantitative and qualitative results explicitly","No causal conclusion beyond design",candidate
+RL21,research,methodological-reviewer,"Review validity assumptions inference and reporting","Independent review where stakes require",candidate
+RL22,research,researcher-assistant-agent,"Support design analysis explanation and competing interpretations","Never final scientific authority",recommended
