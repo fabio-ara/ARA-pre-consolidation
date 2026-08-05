@@ -13,8 +13,9 @@
     {
       "areas": "Q",
       "items": 26,
-      "human_document": "docs/ideation/draft-backlog-agent-profiles-analytics-v1.pt-BR.md",
-      "registry": "research/data/ara-draft-backlog-agent-profiles-analytics-v1.csv"
+      "human_document": "docs/ideation/draft-backlog-agent-profiles-analytics-v2.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-agent-profiles-analytics-v2.csv",
+      "base_preserved": "docs/ideation/draft-backlog-agent-profiles-analytics-v1.pt-BR.md"
     },
     {
       "areas": "R",
@@ -27,6 +28,7 @@
   "total_areas": 18,
   "rules": [
     "preserve prior items without silent replacement",
+    "AraLearn is contrast evidence rather than an equivalent modular fixture",
     "no item authorizes product code",
     "provider and plan remain undecided",
     "prices and quotas require revalidation before decision",
