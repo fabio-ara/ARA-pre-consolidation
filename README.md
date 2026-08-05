@@ -12,17 +12,22 @@ course version → module/lesson → placement → microsequence revision → ca
 
 ## Current stage
 
-ARA is in pre-development research, product definition and design exploration. Issues #4–#8 produced conceptual baselines; no product implementation issue is active or authorized.
+ARA is in pre-development research, product definition and design exploration. No product implementation issue is active or authorized.
 
-Draft backlog v3 contains **207 candidate items across 18 areas**:
+Draft backlog v4 contains **233 candidate items across 19 areas**:
 
-- 171 original items;
-- 26 items for modular agent profiles, participatory curation and analytics;
-- 10 items for versioning, retention, storage and deployment economics.
+- 171 initial items;
+- 26 items for modular agents, participation and analytics;
+- 10 items for versioning, storage and economics;
+- 26 items for visible version graphs, derivative access and low-friction authorship.
 
-Issue #77 studies modular agents and analytics. AraLearn is treated as the main functional reference and a contrast case, not as an equivalent modular implementation.
+Focused research:
 
-Issue #79 studies how to sustain the intended versioning model: relational metadata, immutable artifacts, deduplication, retention, workloads, Supabase Free/Pro, object storage, portable alternatives, backup and restore. It neither selects nor authorizes purchase of a provider.
+- **#77:** modular agents, observations and analytics;
+- **#79:** immutable artifacts, object storage, workloads, retention and cost;
+- **#81:** visible version graphs, automatic checkpoints and public/private access inherited through derivation.
+
+Issue #81 combines precedents from hierarchical visibility, permission guardrails, attenuated delegation, derived-data information flow and relationship-based ACLs. The candidate technical term is **derivative access control with monotonic attenuation**. The common interface still uses only Public, Private and Who can access.
 
 ## Canonical path
 
@@ -35,7 +40,7 @@ Issue #79 studies how to sustain the intended versioning model: relational metad
 7. [Research programme](docs/research/research-programme-index.pt-BR.md)
 8. [Backlog and phase rules](docs/roadmap/backlog-index.md)
 
-The structural prototype and wireframes are not product. Entering implementation requires a later explicit owner decision, baseline review and a newly reviewed implementation programme.
+The structural prototype and wireframes are not product. Entering implementation requires an explicit owner decision, baseline review and a newly reviewed implementation programme.
 
 ## Governance and licensing
 
