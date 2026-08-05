@@ -1,0 +1,35 @@
+{
+  "schema": "ara.draft-backlog-manifest.v1",
+  "version": "3",
+  "status": "candidate-non-executable",
+  "date": "2026-08-04",
+  "composition": [
+    {
+      "areas": "A-P",
+      "items": 171,
+      "human_document": "docs/ideation/draft-backlog-v1.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-v1.csv"
+    },
+    {
+      "areas": "Q",
+      "items": 26,
+      "human_document": "docs/ideation/draft-backlog-agent-profiles-analytics-v1.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-agent-profiles-analytics-v1.csv"
+    },
+    {
+      "areas": "R",
+      "items": 10,
+      "human_document": "docs/ideation/draft-backlog-versioning-storage-v1.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-versioning-storage-v1.csv"
+    }
+  ],
+  "total_items": 207,
+  "total_areas": 18,
+  "rules": [
+    "preserve prior items without silent replacement",
+    "no item authorizes product code",
+    "provider and plan remain undecided",
+    "prices and quotas require revalidation before decision",
+    "promotion requires evidence, owner decision and implementation-ready acceptance criteria"
+  ]
+}
