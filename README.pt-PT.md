@@ -14,20 +14,22 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 O ARA encontra-se em investigação, definição do produto e exploração de design, antes do desenvolvimento. Nenhuma issue de implementação está ativa ou autorizada.
 
-O pré-backlog v4 reúne **233 itens candidatos em 19 áreas**:
+O pré-backlog v5 reúne **243 itens candidatos em 19 áreas**:
 
 - 171 itens iniciais;
 - 26 itens de agentes, participação e analytics;
-- 10 itens de versionamento, Storage e economia;
+- 20 itens de versionamento, arquitetura de histórico e economia operacional;
 - 26 itens de grafo, acesso derivacional e autoria sem burocracia.
 
 Frentes focais:
 
 - **#77:** agentes modulares, observações e analytics;
-- **#79:** artefactos imutáveis, Storage, workloads, retenção e custo;
-- **#81:** grafo visível de versões, checkpoints automáticos e público/privado com acesso herdado.
+- **#79:** razões do versionamento, alternativas técnicas e impactos na base de dados, Storage, IndexedDB, front-end e custo;
+- **#81:** grafo visível de versões e público/privado com acesso herdado.
 
-A direção da #81 combina precedentes de visibilidade hierárquica, guardrails, delegação atenuada, controlo de informação derivada e ACLs relacionais. O nome técnico candidato é **controlo de acesso derivacional com atenuação monotónica**. A interface comum continua a usar apenas Público, Privado e Quem pode aceder.
+O versionamento é adotado para reduzir burocracia: a edição comum é local e imediata; autosaves tornam-se checkpoints automáticos; revisões duráveis preservam erros, reparações, restauros e derivações. A investigação compara snapshots na base de dados ou Storage, content addressing, patches, event sourcing, tabelas temporais, bucket versioning, Git e camadas Git-like antes de qualquer escolha.
+
+A direção de acesso da #81 usa **controlo de acesso derivacional com atenuação monotónica** como nome técnico candidato. A interface comum continua a usar apenas Público, Privado e Quem pode aceder.
 
 ## Caminho canónico
 
