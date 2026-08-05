@@ -14,20 +14,22 @@ course version → module/lesson → placement → microsequence revision → ca
 
 ARA is in pre-development research, product definition and design exploration. No product implementation issue is active or authorized.
 
-Draft backlog v4 contains **233 candidate items across 19 areas**:
+Draft backlog v5 contains **243 candidate items across 19 areas**:
 
 - 171 initial items;
-- 26 items for modular agents, participation and analytics;
-- 10 items for versioning, storage and economics;
+- 26 items for agents, participation and analytics;
+- 20 items for versioning, history architecture and operational economics;
 - 26 items for visible version graphs, derivative access and low-friction authorship.
 
 Focused research:
 
 - **#77:** modular agents, observations and analytics;
-- **#79:** immutable artifacts, object storage, workloads, retention and cost;
-- **#81:** visible version graphs, automatic checkpoints and public/private access inherited through derivation.
+- **#79:** versioning rationale, technical alternatives and impacts on database, object storage, IndexedDB, front-end and cost;
+- **#81:** visible version graphs and public/private access inherited through derivation.
 
-Issue #81 combines precedents from hierarchical visibility, permission guardrails, attenuated delegation, derived-data information flow and relationship-based ACLs. The candidate technical term is **derivative access control with monotonic attenuation**. The common interface still uses only Public, Private and Who can access.
+Versioning is intended to reduce bureaucracy: ordinary editing is local and immediate; autosaves become automatic checkpoints; durable revisions preserve mistakes, repairs, restores and derivations. Research compares database or object-storage snapshots, content addressing, patches, event sourcing, temporal tables, bucket versioning, Git and Git-like layers before any selection.
+
+Issue #81 uses **derivative access control with monotonic attenuation** as a candidate technical term. The ordinary interface still uses only Public, Private and Who can access.
 
 ## Canonical path
 
