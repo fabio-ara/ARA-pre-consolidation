@@ -12,17 +12,22 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 ## Fase atual
 
-O ARA encontra-se em investigação, definição do produto e exploração de design, antes do desenvolvimento. As Issues #4–#8 produziram baselines conceptuais; nenhuma issue de implementação está ativa ou autorizada.
+O ARA encontra-se em investigação, definição do produto e exploração de design, antes do desenvolvimento. Nenhuma issue de implementação está ativa ou autorizada.
 
-O pré-backlog v3 reúne **207 itens candidatos em 18 áreas**:
+O pré-backlog v4 reúne **233 itens candidatos em 19 áreas**:
 
 - 171 itens iniciais;
-- 26 itens de perfis modulares de agente, curadoria participativa e analytics;
-- 10 itens de versionamento, retenção, armazenamento e economia operacional.
+- 26 itens de agentes, participação e analytics;
+- 10 itens de versionamento, Storage e economia;
+- 26 itens de grafo, acesso derivacional e autoria sem burocracia.
 
-A Issue #77 investiga agentes modulares e analytics. O AraLearn é tratado como referência funcional e caso de contraste, não como implementação modular equivalente.
+Frentes focais:
 
-A Issue #79 investiga como sustentar o versionamento previsto: metadata relacional, artefactos imutáveis, deduplicação, retenção, workloads, Supabase Free/Pro, object storage, alternativas portáteis, backup e restauro. Não seleciona nem autoriza contratação de fornecedor.
+- **#77:** agentes modulares, observações e analytics;
+- **#79:** artefactos imutáveis, Storage, workloads, retenção e custo;
+- **#81:** grafo visível de versões, checkpoints automáticos e público/privado com acesso herdado.
+
+A direção da #81 combina precedentes de visibilidade hierárquica, guardrails, delegação atenuada, controlo de informação derivada e ACLs relacionais. O nome técnico candidato é **controlo de acesso derivacional com atenuação monotónica**. A interface comum continua a usar apenas Público, Privado e Quem pode aceder.
 
 ## Caminho canónico
 
@@ -35,7 +40,7 @@ A Issue #79 investiga como sustentar o versionamento previsto: metadata relacion
 7. [Programa de investigação](docs/research/research-programme-index.pt-BR.md)
 8. [Backlog e regras das fases](docs/roadmap/backlog-index.md)
 
-O protótipo estrutural e os wireframes não são produto. A entrada em desenvolvimento exigirá uma decisão explícita posterior do proprietário, revisão das baselines e um novo programa de implementação revisto.
+O protótipo estrutural e os wireframes não são produto. A entrada em desenvolvimento exigirá uma decisão explícita do proprietário, revisão das baselines e um novo programa de implementação revisto.
 
 ## Governação e licenciamento
 

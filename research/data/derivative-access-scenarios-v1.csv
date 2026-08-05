@@ -1,0 +1,11 @@
+id,scenario,setup,effective_result,principle
+AC01,public root,A public,Everyone,Root audience is everyone
+AC02,private root,A private with Ana and class X,Author plus Ana plus current members of class X,Ordinary private sharing
+AC03,public to private derivation,A public and B private for Ana,Ana,Child may restrict
+AC04,private derivation subset,A private for Ana and Bruno and B derived for Ana,Ana,Child may select subset
+AC05,forbidden expansion,A private for Ana and B requests Ana and Carlos,Ana only and Carlos rejected,Child cannot broaden
+AC06,revocation cascade,A private for Ana and B authored by Ana then A removes Ana,Neither A nor B accessible to Ana,Authorship does not bypass required ancestor
+AC07,reactivation,Same as AC06 and A restores Ana,A and B become accessible if B policy still includes Ana,Graph was retained
+AC08,multiple parents,C derives from A and B,Intersection of effective audiences of A and B and C policy,Most restrictive required parent controls
+AC09,private container,Course private and card declared public,Card cannot exceed course audience,Container ceiling
+AC10,research snapshot,Group membership changes after experiment starts,Protocol uses frozen access policy snapshot for analysis,Operational access and research evidence separated

@@ -12,17 +12,22 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 ## Estágio atual
 
-O ARA está em pesquisa, definição do produto e exploração de design, antes do desenvolvimento. As Issues #4–#8 produziram baselines conceituais; nenhuma issue de implementação está ativa ou autorizada.
+O ARA está em pesquisa, definição do produto e exploração de design, antes do desenvolvimento. Nenhuma issue de implementação está ativa ou autorizada.
 
-O pré-backlog v3 reúne **207 itens candidatos em 18 áreas**:
+O pré-backlog v4 reúne **233 itens candidatos em 19 áreas**:
 
 - 171 itens iniciais;
-- 26 itens de perfis modulares de agente, curadoria participativa e analytics;
-- 10 itens de versionamento, retenção, armazenamento e economia operacional.
+- 26 itens de agentes, participação e analytics;
+- 10 itens de versionamento, Storage e economia;
+- 26 itens de grafo, acesso derivacional e autoria sem burocracia.
 
-A Issue #77 investiga agentes modulares e analytics. O AraLearn é tratado como referência funcional e caso de contraste, não como implementação modular equivalente.
+Frentes focais:
 
-A Issue #79 investiga como sustentar o versionamento previsto: metadata relacional, artefatos imutáveis, deduplicação, retenção, workloads, Supabase Free/Pro, object storage, alternativas portáteis, backup e restore. Não seleciona nem autoriza contratação de fornecedor.
+- **#77:** agentes modulares, observações e analytics;
+- **#79:** artefatos imutáveis, Storage, workloads, retenção e custo;
+- **#81:** grafo visível de versões, checkpoints automáticos e público/privado com acesso herdado.
+
+A direção da #81 combina precedentes de visibilidade hierárquica, guardrails, delegação atenuada, controle de informação derivada e ACLs relacionais. O nome técnico candidato é **controle de acesso derivacional com atenuação monotônica**. A interface comum continua usando apenas Público, Privado e Quem pode acessar.
 
 ## Caminho canônico
 

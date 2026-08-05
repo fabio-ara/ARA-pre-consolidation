@@ -1,0 +1,40 @@
+{
+  "schema": "ara.draft-backlog-manifest.v1",
+  "version": "4",
+  "status": "candidate-non-executable",
+  "date": "2026-08-05",
+  "composition": [
+    {
+      "areas": "A-P",
+      "items": 171,
+      "human_document": "docs/ideation/draft-backlog-v1.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-v1.csv"
+    },
+    {
+      "areas": "Q",
+      "items": 26,
+      "human_document": "docs/ideation/draft-backlog-agent-profiles-analytics-v2.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-agent-profiles-analytics-v2.csv"
+    },
+    {
+      "areas": "R",
+      "items": 10,
+      "human_document": "docs/ideation/draft-backlog-versioning-storage-v1.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-versioning-storage-v1.csv"
+    },
+    {
+      "areas": "S",
+      "items": 26,
+      "human_document": "docs/ideation/draft-backlog-version-graph-access-v1.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-version-graph-access-v1.csv"
+    }
+  ],
+  "total_items": 233,
+  "total_areas": 19,
+  "rules": [
+    "preserve prior areas without silent replacement",
+    "area S records version graph, derivative access and low-friction authorship",
+    "no item authorizes product code or provider selection",
+    "promotion requires evidence, owner decision and implementation-ready acceptance criteria"
+  ]
+}

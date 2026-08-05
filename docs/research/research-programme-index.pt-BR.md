@@ -2,7 +2,7 @@
 
 **Estado:** baselines conceituais concluídas; frentes focais em investigação; pré-desenvolvimento  
 **Idioma:** `pt-BR`  
-**Última revisão:** 4 de agosto de 2026
+**Última revisão:** 5 de agosto de 2026
 
 ## Baselines disponíveis
 
@@ -14,113 +14,119 @@
 | #7 | arquitetura e ADRs v1 | `research/data/issue7-artifact-manifest-v1.json` |
 | #8 | UX, acessibilidade e protótipo v1 | `research/data/issue8-artifact-manifest-v1.json` |
 
-Esses artefatos consolidam o brainstorming e as hipóteses disponíveis até 3 de agosto de 2026. Não autorizam implementação e podem ser revistos de forma versionada antes de qualquer código de produto.
+As baselines não autorizam implementação e podem receber correções versionadas.
 
-## Rascunho integrado para discussão
+## Rascunho integrado
 
-O conjunto [`docs/ideation/`](../ideation/README.md) confronta as baselines com o AraLearn funcional e com sistemas e alternativas externos. Ele materializa:
+O conjunto [`docs/ideation/`](../ideation/README.md) materializa:
 
-- auditoria integral do AraLearn;
-- proposta ampla de experiência do ARA;
-- separação candidata entre kernel, packages e adapters;
-- comparações técnicas e de deployment;
-- pré-backlog v3 com **207 itens candidatos em 18 áreas**;
-- 37 telas descritas e 12 wireframes;
-- investigação de perfis modulares de agente, curadoria participativa e analytics;
-- investigação de versionamento, retenção, armazenamento e economia operacional.
+- auditoria do AraLearn;
+- idealização do ARA;
+- kernel, packages e adapters;
+- agentes modulares e analytics;
+- versionamento e Storage;
+- autoria local-first e sem burocracia;
+- grafo visível de versões;
+- acesso derivacional com público/privado;
+- pré-backlog v4 com **233 itens candidatos em 19 áreas**.
 
 Manifestos principais:
 
 - `research/data/ara-ideation-draft-manifest-v1.json`;
-- `research/data/ara-draft-backlog-v3-manifest.json`;
-- `research/data/agent-profiles-participatory-analytics-manifest-v1.json`.
-
-O rascunho não substitui automaticamente as Issues #4–#8. Divergências exigem discussão e eventual revisão versionada.
+- `research/data/ara-draft-backlog-v4-manifest.json`;
+- `research/data/agent-profiles-participatory-analytics-manifest-v1.json`;
+- `research/data/versioning-storage-economics-manifest-v1.json`;
+- `research/data/derivative-access-version-graph-manifest-v1.json`.
 
 ## Frente focal — Issue #77
 
-A Issue #77 investiga a decomposição da configuração monolítica do GPT/MCP em objetos versionados e administráveis:
+Investiga:
 
-```text
-base comum
-+ papel
-+ perfil de domínio
-+ prompts/templates
-+ coleções de conhecimento
-+ contexto e escopo de escrita
-+ MCP resources/tools/contracts
-+ modelo/provider
-+ evals
-→ AgentConfigurationSnapshot
-```
+- decomposição da configuração monolítica GPT/MCP;
+- perfis de domínio, prompts/templates e knowledge;
+- contexto de leitura e escopo de escrita;
+- observações participativas e diffs;
+- analytics de autoria e pesquisa;
+- GPT como pesquisador-assistente.
 
-Também investiga:
-
-- observações participativas e síntese argumentativa;
-- diffs, findings, reparos e reauditorias;
-- analytics de autoria, agente, resources e sistema;
-- pesquisa quantitativa, qualitativa e mista;
-- GPT como pesquisador-assistente sob autoridade humana.
-
-### Correção metodológica
-
-O AraLearn é referência funcional e caso de contraste, mas não implementa a arquitetura modular proposta. Portanto:
-
-- não há exigência de fixtures equivalentes;
-- evals devem partir de tarefas-alvo, casos controlados, invariantes e exemplos sintéticos;
-- jornadas e falhas do AraLearn podem compor casos de contraste;
-- continuidade significa preservar somente os invariantes aceitos pelo proprietário, não reproduzir a configuração interna do predecessor.
-
-Documento de correção: `docs/ideation/draft-backlog-agent-profiles-analytics-v2.pt-BR.md`.
-
-### Saídas iniciais
-
-- síntese integrada: `docs/ideation/agent-profiles-participatory-analytics-v1.pt-BR.md`;
-- protocolo: `research/searches/2026-08-04-agent-profiles-participatory-analytics-protocol.md`;
-- corpus de 34 fontes: `research/data/agent-profiles-participatory-analytics-evidence-corpus-v1.csv`;
-- bibliografia: `research/library/agent-profiles-participatory-analytics-v1.bib`;
-- síntese de decisão e registries estruturados;
-- área Q corrigida: `research/data/ara-draft-backlog-agent-profiles-analytics-v2.csv`.
+O AraLearn é referência funcional e contraste; evals partem de tarefas-alvo do ARA.
 
 ## Frente focal — Issue #79
 
-A Issue #79 investiga a sustentabilidade do versionamento previsto pelo ARA:
+Investiga:
+
+- objetos versionados e imutáveis;
+- metadata, artifact storage e local store;
+- deduplicação, manifests e retenção;
+- workloads e custos;
+- Supabase e alternativas portáteis;
+- backup, exportação e restore.
+
+A hipótese central continua não normativa:
 
 ```text
 metadata relacional pequena
-+ artefatos imutáveis e deduplicados
++ artefatos imutáveis
 + materialização local
 + retenção/GC explícitos
-+ exportação e restore provider-neutral
++ export/restore provider-neutral
 ```
 
-Essa direção é hipótese, não arquitetura aceita.
+## Frente focal — Issue #81
 
-### Perguntas principais
+Investiga a composição de padrões que sustenta o novo modelo de autoria e acesso:
 
-- que objetos são revisionáveis, imutáveis, derivados ou temporários;
-- o que reside no banco, object storage ou local store;
-- como variantes compartilham revisões sem duplicar cursos;
-- como funcionam digest, deduplicação, retenção e garbage collection;
-- quanto custam 10 mil, 100 mil e 1 milhão de revisões;
-- se Supabase Pro, Supabase + object storage, stack portátil, BaaS alternativo ou local-only é mais adequado;
-- como provar backup, exportação e restauração.
+```text
+version DAG
++ local journal/checkpoints
++ public | private
++ lista de usuários/grupos
++ teto herdado de audiência
++ revogação em cascata
++ grafo navegável
+```
+
+### Resultado comparativo inicial
+
+Não existe um único modelo com todas as regras propostas. Foram encontrados precedentes em:
+
+- GitLab: visibilidade de filho não supera a do pai;
+- AWS Organizations: guardrails herdados e interseção de permissões;
+- OAuth/macaroons: delegação atenuada;
+- Decentralized Label Model e derived-data control: políticas que acompanham informação;
+- Zanzibar/OpenFGA: relações entre sujeitos, grupos e objetos;
+- W3C PROV e Git: proveniência e DAGs;
+- lakeFS: semântica Git-like sobre object storage;
+- local-first: edição local e sync posterior.
+
+Nome técnico candidato:
+
+> controle de acesso derivacional com atenuação monotônica
+
+A regra de bloquear o autor de uma derivação após revogação ancestral é específica do ARA e precisa de avaliação própria.
 
 ### Saídas iniciais
 
-- protocolo: `research/searches/2026-08-04-versioning-storage-economics-protocol.md`;
-- evidência oficial: `research/data/versioning-storage-provider-evidence-v1.csv`;
-- síntese: `docs/ideation/versioning-storage-economics-v1.pt-BR.md`;
-- síntese de decisão: `research/data/versioning-storage-decision-synthesis-v1.json`;
-- área R: `docs/ideation/draft-backlog-versioning-storage-v1.pt-BR.md`.
+- síntese: `docs/ideation/version-graph-derivative-access-low-friction-authorship-v1.pt-BR.md`;
+- decisões da conversa: `docs/ideation/conversation-decisions-since-pr80-v1.pt-BR.md`;
+- correção da idealização: `docs/ideation/product-idealization-versioning-access-correction-v2.pt-BR.md`;
+- stacks de grafo: `docs/ideation/version-graph-ui-options-v1.pt-BR.md`;
+- protocolo: `research/searches/2026-08-05-derivative-access-version-graph-protocol.md`;
+- corpus: `research/data/derivative-access-version-graph-evidence-corpus-v1.csv`;
+- bibliografia: `research/library/derivative-access-version-graph-v1.bib`;
+- área S: `docs/ideation/draft-backlog-version-graph-access-v1.pt-BR.md`.
 
-Preços e quotas são fotografias temporais e exigem nova verificação antes de decisão.
+## Relações entre as frentes
+
+- #77 define objetos, contexto, operações e analytics;
+- #79 mede como armazenar e operar as versões;
+- #81 define experiência, grafo e acesso herdado;
+- resultados podem motivar revisões de #5–#8;
+- #10 continua sendo o gate de fase.
 
 ## Estado do trabalho
 
-O projeto permanece anterior ao desenvolvimento. Não há release, gate de branch, CI de produto, issue executável ou cronograma de implementação ativo.
-
-A Issue #9 continua futura e somente deverá ser retomada após decisão explícita do proprietário.
+O projeto permanece anterior ao desenvolvimento. Não há release, CI de produto, issue executável ou cronograma de implementação ativo.
 
 ## Pesquisa contínua
 
@@ -128,35 +134,30 @@ A Issue #3 permanece disponível para:
 
 - aprofundar literatura e repositórios;
 - revisar parametrização, domínio, arquitetura e UX;
-- aprofundar #77 e #79;
-- investigar composição por microssequências e placements;
-- solicitar textos completos quando sua ausência limitar uma decisão;
+- aprofundar #77, #79 e #81;
+- solicitar textos completos quando necessários;
 - registrar novos cenários, riscos e dúvidas.
-
-Nenhuma descoberta gera requisito ou código automaticamente.
 
 ## Próxima sequência
 
-1. concluir o inventário contrastivo do AraLearn;
-2. definir tarefas-alvo e casos controlados de evals;
-3. inventariar objetos versionados do ARA;
-4. construir workload sintético e usar payloads do AraLearn apenas como amostra;
-5. simular Supabase Free/Pro, Supabase + object storage e alternativa portátil;
-6. definir retenção, GC, export e restore;
-7. aprofundar perfis de domínio, observações e analytics;
-8. propor revisões versionadas das baselines antes de qualquer implementação.
+1. validar o modelo de audiência com cenários e casos de borda;
+2. definir checkpoint, revisão, restore e merge;
+3. medir granularidade e workload sob #79;
+4. prototipar Mermaid, Cytoscape.js e React Flow/ELK;
+5. avaliar cache e invalidação de acesso efetivo;
+6. definir pacotes de contexto vertical e horizontal;
+7. revisar produto, domínio, arquitetura e UX;
+8. somente depois discutir implementação.
 
 ## Não autorizações
 
 A fase atual não autoriza:
 
-- monorepo, PWA ou backend;
-- banco, Storage, IndexedDB ou sincronização;
-- contratação de plano ou criação de nova conta;
-- seleção de provider, database ou object storage;
-- endpoints MCP de produção;
-- schemas ou migrations;
+- código, schema ou endpoint de produção;
+- contratação ou seleção de provider;
+- escolha de biblioteca de grafo;
+- migração do AraLearn;
 - coleta de participantes;
-- alteração autônoma de prompts, knowledge, resources ou publicações;
-- issues de implementação;
-- código de produto.
+- uso automático do histórico operacional como dado de pesquisa;
+- hard delete após revogação;
+- matriz geral de permissões ou confirmações por edição.

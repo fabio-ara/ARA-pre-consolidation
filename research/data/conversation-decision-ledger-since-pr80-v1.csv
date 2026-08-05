@@ -1,0 +1,33 @@
+id,status,statement
+CD001,accepted,Versioning is a central product requirement
+CD002,accepted,Direct editing is local-first and low-friction
+CD003,accepted,Automatic checkpoints replace per-edit confirmation
+CD004,accepted,Restore creates a new revision and preserves later history
+CD005,accepted,Version history may be a visible DAG
+CD006,accepted,Microsequence is main pedagogical context and cards may be deduplicated
+CD007,accepted,Vertical and horizontal GPT investigations are distinct and composable
+CD008,accepted,Publication is not the lifecycle center
+CD009,accepted,Ordinary visibility is public or private
+CD010,accepted,Private nodes can name users or groups
+CD011,accepted,Descendants cannot broaden ancestor access
+CD012,accepted,Ancestor revocation can block descendant authors
+CD013,accepted,Blocked descendants persist in the graph
+CD014,accepted,External study sources are not stored by default
+CD015,accepted,Versioned artifacts belong in object storage and metadata belongs in the database
+CD016,accepted,Research requires fixed content and access snapshots
+CD017,rejected,Global role hierarchy as primary everyday authorization
+CD018,rejected,General permission matrix exposed to users
+CD019,rejected,Delete later revisions after restore
+CD020,rejected,Hide the graph as a mandatory simplification
+CD021,rejected,Store external study sources by default
+CD022,rejected,Ask provenance questions for each source
+CD023,rejected,Equivalent AraLearn fixtures for a non-existing modular architecture
+CD024,rejected,Full event sourcing as universal architecture
+CD025,open,Checkpoint frequency and compaction
+CD026,open,Final artifact granularity
+CD027,open,Multiple-parent merge semantics
+CD028,open,Blocked-node metadata visibility
+CD029,open,Group changes versus research snapshots
+CD030,open,Graph stack
+CD031,open,BaaS selection and performance
+CD032,open,Retention and garbage collection

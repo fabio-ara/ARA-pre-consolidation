@@ -2,23 +2,25 @@
 
 **Estado:** rascunho não normativo, pré-desenvolvimento  
 **Data de corte inicial:** 3 de agosto de 2026  
-**Extensão atual:** 4 de agosto de 2026  
-**Finalidade:** materializar uma proposta ampla para leitura, crítica e discussão com o proprietário antes de qualquer backlog definitivo.
+**Extensão atual:** 5 de agosto de 2026  
+**Finalidade:** materializar propostas, evidências e decisões para discussão antes de qualquer backlog definitivo.
 
 ## O que este conjunto representa
 
 Este diretório descreve uma possível evolução do AraLearn para o ARA. Ele reúne:
 
-- auditoria do produto e do código atual do AraLearn;
-- funções a preservar, reformular, separar ou reconsiderar;
-- idealização do funcionamento do ARA;
-- alternativas de kernel, packages de resource, persistência, sincronização, BaaS e empacotamento móvel;
-- rascunho amplo de backlog, ainda sem autoridade de execução;
-- catálogo de telas, controles, estados e wireframes SVG deliberadamente simples;
-- investigação de perfis modulares de agente, knowledge, prompts/templates, MCP, evals e contexto;
-- curadoria participativa, diffs e analytics de autoria/sistema;
-- analytics quantitativos, qualitativos e mistos assistidos por IA para pesquisa educacional;
-- investigação de versionamento, retenção, deduplicação, armazenamento e custo operacional.
+- auditoria do predecessor;
+- experiência de estudo e autoria;
+- kernel, packages e adapters;
+- parametrização e analytics;
+- perfis modulares de agente;
+- versionamento, retenção e Storage;
+- autoria local-first e sem burocracia;
+- grafo visível de versões e derivações;
+- acesso público/privado com lista simples para privados;
+- atenuação de acesso ao longo das derivações;
+- rascunho amplo de pré-backlog;
+- telas e wireframes para discussão.
 
 ## O que este conjunto não representa
 
@@ -26,122 +28,137 @@ Não é:
 
 - backlog definitivo;
 - issue executável para Codex;
-- arquitetura selecionada;
+- arquitetura ou stack selecionada;
 - autorização para desenvolvimento;
-- promessa de cronograma;
 - alegação de efetividade educacional;
-- obrigação de reproduzir toda a complexidade atual do AraLearn;
-- alegação de que o AraLearn possua uma arquitetura modular equivalente ao ARA;
-- autorização para o GPT alterar prompts, knowledge, resources ou publicações autonomamente;
+- alegação de que o AraLearn possua arquitetura modular equivalente;
+- autorização para alterar configurações ou conteúdos autonomamente;
 - representação do GPT como autoridade científica;
-- seleção ou contratação de BaaS, banco ou object storage.
+- seleção ou contratação de BaaS, banco, object storage ou biblioteca de grafo;
+- sistema de armazenamento das fontes externas usadas para gerar cursos.
 
-## Artefatos
+## Artefatos principais
 
-1. [`aralearn-integral-audit-v1.pt-BR.md`](aralearn-integral-audit-v1.pt-BR.md) — leitura funcional e estrutural do predecessor.
-2. [`ara-product-idealization-v1.pt-BR.md`](ara-product-idealization-v1.pt-BR.md) — experiência pretendida e ciclos do produto.
-3. [`kernel-resource-modularity-v1.pt-BR.md`](kernel-resource-modularity-v1.pt-BR.md) — opções para kernel estável e resources independentes.
-4. [`technology-and-baas-options-v1.pt-BR.md`](technology-and-baas-options-v1.pt-BR.md) — alternativas técnicas e trade-offs.
-5. [`versioning-storage-economics-v1.pt-BR.md`](versioning-storage-economics-v1.pt-BR.md) — versionamento, retenção, storage e comparação inicial de deployments.
-6. [`draft-backlog-v1.pt-BR.md`](draft-backlog-v1.pt-BR.md) — áreas A–P do backlog candidato amplo.
-7. [`draft-backlog-agent-profiles-analytics-v1.pt-BR.md`](draft-backlog-agent-profiles-analytics-v1.pt-BR.md) — área Q original.
-8. [`draft-backlog-agent-profiles-analytics-v2.pt-BR.md`](draft-backlog-agent-profiles-analytics-v2.pt-BR.md) — correção versionada de Q01, Q10 e Q26.
-9. [`draft-backlog-versioning-storage-v1.pt-BR.md`](draft-backlog-versioning-storage-v1.pt-BR.md) — área R: versionamento e armazenamento sustentável.
-10. [`screens-and-states-v1.pt-BR.md`](screens-and-states-v1.pt-BR.md) — telas, controles, estados e ligações para wireframes.
-11. [`agent-profiles-participatory-analytics-v1.pt-BR.md`](agent-profiles-participatory-analytics-v1.pt-BR.md) — síntese integrada da frente de agentes e analytics.
-12. [`agent-profile-administration-ux-notes-v1.pt-BR.md`](agent-profile-administration-ux-notes-v1.pt-BR.md) — notas para administração sem aparência técnica.
-13. [`wireframes/`](wireframes/) — esquemas SVG minimalistas, não protótipos aprovados.
+1. [`aralearn-integral-audit-v1.pt-BR.md`](aralearn-integral-audit-v1.pt-BR.md) — leitura do predecessor.
+2. [`ara-product-idealization-v1.pt-BR.md`](ara-product-idealization-v1.pt-BR.md) — idealização inicial.
+3. [`product-idealization-versioning-access-correction-v2.pt-BR.md`](product-idealization-versioning-access-correction-v2.pt-BR.md) — correção de lifecycle, acesso e grafo.
+4. [`kernel-resource-modularity-v1.pt-BR.md`](kernel-resource-modularity-v1.pt-BR.md) — kernel e packages.
+5. [`technology-and-baas-options-v1.pt-BR.md`](technology-and-baas-options-v1.pt-BR.md) — alternativas técnicas.
+6. [`versioning-storage-economics-v1.pt-BR.md`](versioning-storage-economics-v1.pt-BR.md) — Storage e economia do versionamento.
+7. [`agent-profiles-participatory-analytics-v1.pt-BR.md`](agent-profiles-participatory-analytics-v1.pt-BR.md) — agentes, participação e analytics.
+8. [`version-graph-derivative-access-low-friction-authorship-v1.pt-BR.md`](version-graph-derivative-access-low-friction-authorship-v1.pt-BR.md) — síntese do grafo, autoria e acesso.
+9. [`conversation-decisions-since-pr80-v1.pt-BR.md`](conversation-decisions-since-pr80-v1.pt-BR.md) — ledger de decisões aceitas, rejeitadas e abertas.
+10. [`version-graph-ui-options-v1.pt-BR.md`](version-graph-ui-options-v1.pt-BR.md) — Mermaid, Cytoscape.js, React Flow e ELK.js.
+11. [`screens-and-states-v1.pt-BR.md`](screens-and-states-v1.pt-BR.md) — telas e estados anteriores.
+12. [`wireframes/`](wireframes/) — esquemas visuais não aprovados.
 
 ## Pré-backlog versionado
 
-O pré-backlog v3 é a união explícita de:
+O pré-backlog v4 é a união explícita de:
 
-- **A–P:** 171 itens preservados do rascunho inicial;
-- **Q:** 26 itens sobre agentes, participação e analytics, com correção v2;
-- **R:** 10 itens sobre versionamento, retenção, storage e economia operacional.
+- **A–P:** 171 itens iniciais;
+- **Q:** 26 itens de agentes, participação e analytics;
+- **R:** 10 itens de versionamento, retenção e economia operacional;
+- **S:** 26 itens de grafo, autoria sem burocracia e acesso derivacional.
 
-Total: **207 itens candidatos em 18 áreas**.
+Total: **233 itens candidatos em 19 áreas**.
 
-Manifesto: `research/data/ara-draft-backlog-v3-manifest.json`.
+Manifesto: `research/data/ara-draft-backlog-v4-manifest.json`.
 
-Registros estruturados principais:
+Documentos:
 
-- `research/data/ara-draft-backlog-v1.csv`;
-- `research/data/ara-draft-backlog-agent-profiles-analytics-v2.csv`;
-- `research/data/ara-draft-backlog-versioning-storage-v1.csv`;
-- `research/data/versioning-storage-provider-evidence-v1.csv`;
-- `research/data/versioning-storage-decision-synthesis-v1.json`;
-- `research/data/agent-profile-object-candidates-v1.csv`;
-- `research/data/agent-profile-role-candidates-v1.csv`;
-- `research/data/agent-profile-scope-examples-v1.csv`;
-- `research/data/agent-analytics-question-map-v1.csv`.
+- [`draft-backlog-v1.pt-BR.md`](draft-backlog-v1.pt-BR.md);
+- [`draft-backlog-agent-profiles-analytics-v2.pt-BR.md`](draft-backlog-agent-profiles-analytics-v2.pt-BR.md);
+- [`draft-backlog-versioning-storage-v1.pt-BR.md`](draft-backlog-versioning-storage-v1.pt-BR.md);
+- [`draft-backlog-version-graph-access-v1.pt-BR.md`](draft-backlog-version-graph-access-v1.pt-BR.md).
 
 ## Frentes focais
 
 ### Issue #77 — agentes e analytics
 
-Investiga:
+Investiga configuração modular do agente, perfis de domínio, knowledge, MCP, observações, diffs e pesquisa quantitativa, qualitativa e mista.
 
-- decomposição da configuração monolítica do agente do AraLearn;
-- perfis de domínio e coleções de conhecimento versionadas;
-- prompts/templates, MCP resources/tools e contratos;
-- contexto de leitura e escopo de escrita;
-- evals orientados às tarefas-alvo do ARA;
-- observações participativas e síntese argumentativa;
-- analytics de autoria, sistema e pesquisa;
-- GPT como pesquisador-assistente sob autoridade humana.
+### Issue #79 — versionamento e infraestrutura
 
-O AraLearn fornece jornadas, limitações e casos de contraste; não fornece fixtures equivalentes da arquitetura modular pretendida.
+Investiga objetos imutáveis, metadata versus artifact storage, deduplicação, retenção, workloads, custos, exportação e restore.
 
-### Issue #79 — versionamento e armazenamento
+### Issue #81 — grafo, autoria e acesso
 
 Investiga:
 
-- objetos versionados e imutáveis;
-- metadata relacional versus artifact repository;
-- content addressing e deduplicação;
-- retenção e garbage collection;
-- workloads de 10 mil, 100 mil e 1 milhão de revisões;
-- Supabase Free/Pro, object storage externo, stacks portáteis e alternativas;
-- disponibilidade, backup, exportação e restore;
-- budgets compreensíveis ao proprietário.
+- diário local e checkpoints automáticos;
+- revisões imutáveis e restauração não destrutiva;
+- grafo visível e navegável;
+- análise vertical e horizontal pelo GPT;
+- público/privado por nó;
+- pessoas e grupos em nós privados;
+- acesso do descendente limitado pelos ancestrais;
+- revogação ancestral em cascata;
+- stack de visualização e requisitos adicionais de BaaS.
 
-Nenhuma das frentes autoriza implementação ou seleção de fornecedor.
+Nome técnico candidato:
+
+> controle de acesso derivacional com atenuação monotônica
+
+A interface comum continua usando apenas Público, Privado e Quem pode acessar.
+
+## Resultado comparativo inicial
+
+A solução não corresponde a um único sistema pronto. Ela combina padrões existentes:
+
+- teto de visibilidade hierárquico;
+- guardrails herdados por interseção;
+- delegação de escopo atenuado;
+- políticas que acompanham informação derivada;
+- ACLs baseadas em relações;
+- provenance DAG;
+- versionamento Git-like sobre object storage.
+
+A regra de retirar do autor derivado o acesso ao próprio descendente quando o ancestral revoga acesso é uma decisão específica do ARA e precisa de validação própria.
+
+## Regras incorporadas
+
+- o usuário trabalha sem cerimônia e o sistema preserva histórico;
+- restauração nunca apaga caminhos posteriores;
+- o grafo pode aparecer na interface;
+- publicação não é endpoint final;
+- descendente pode restringir acesso, nunca ampliá-lo;
+- private pode listar pessoas e grupos;
+- fontes externas não são armazenadas automaticamente;
+- artifact storage guarda conteúdo imutável;
+- o banco guarda metadata, edges, refs e projeções;
+- logs operacionais não viram dados de pesquisa automaticamente.
 
 ## Linguagem de decisão
 
-Cada item usa uma das classificações:
-
-- **preservar:** valor demonstrado no AraLearn e compatível com o propósito do ARA;
-- **reformular:** finalidade preservada, solução atual não tomada como definitiva;
-- **separar:** responsabilidade atualmente acoplada que deve receber contrato/fronteira própria;
-- **alternativa a comparar:** opção plausível ainda sem escolha;
-- **adiar:** possibilidade legítima, mas não necessária para definir o produto-base;
-- **rejeitar como padrão:** comportamento que contradiz o propósito ou cria custo/risco desnecessário;
-- **questão aberta:** decisão que precisa de discussão, protótipo ou evidência adicional.
+- **preservar:** valor demonstrado e compatível;
+- **reformular:** finalidade mantida, solução aberta;
+- **separar:** responsabilidade precisa de fronteira;
+- **alternativa a comparar:** opção plausível sem escolha;
+- **adiar:** possibilidade legítima não necessária agora;
+- **rejeitar como padrão:** contradiz o propósito;
+- **questão aberta:** precisa de evidência, protótipo ou decisão.
 
 ## Fontes e rastreabilidade
 
-A auditoria usa como fontes primárias o código e a documentação atuais de `fabio-ara/AraLearn`. O predecessor é referência funcional e fonte de contraste, não implementação equivalente da arquitetura proposta.
+O AraLearn é referência funcional e caso de contraste. Literatura, standards e documentação oficial sustentam as comparações externas. Nenhuma descoberta substitui silenciosamente as baselines #4–#8.
 
-Comparações externas usam documentação oficial, literatura acadêmica, standards e orientações institucionais, mantendo capacidade técnica, evidência educacional, custo e decisão de produto separados. Preços e quotas são fotografias temporais e devem ser reverificados.
+Pacote #81:
 
-As baselines das Issues #4–#8 continuam separadas. Os rascunhos e as Issues #77/#79 podem motivar revisões versionadas futuras; não as substituem silenciosamente.
+- `research/searches/2026-08-05-derivative-access-version-graph-protocol.md`;
+- `research/data/derivative-access-version-graph-evidence-corpus-v1.csv`;
+- `research/library/derivative-access-version-graph-v1.bib`;
+- `research/data/derivative-access-version-graph-manifest-v1.json`.
 
-## Perguntas para a revisão com o proprietário
+## Perguntas abertas prioritárias
 
-1. Qual é o menor kernel que ainda preserva a identidade do AraLearn?
-2. A microssequência deve ser o primeiro objeto reutilizável ou apenas a unidade inicial de composição?
-3. Quais resources entram no pacote-base e quais podem ser instalados depois?
-4. Quanto do painel administrativo deve existir no primeiro produto utilizável?
-5. O usuário sem conta deve poder estudar e criar localmente?
-6. O Supabase continua como primeira implantação, em plano gratuito ou pago, ou apenas como adapter de referência?
-7. Metadata e artefatos devem usar o mesmo provider?
-8. Que retenção é necessária para publicação, pesquisa e rollback?
-9. Como comparar variantes sem duplicar conteúdo e sem introduzir diferenças acidentais?
-10. Como decompor a configuração funcional do GPT/MCP do AraLearn sem inventar equivalência?
-11. Quando um perfil de domínio é justificado?
-12. Que contexto o agente lê integralmente ou por índice em cada escopo?
-13. Como observações divergentes devem ser sintetizadas e decididas?
-14. Quais análises quantitativas, qualitativas e mistas entram primeiro no ARA?
-15. Qual workload deve governar a primeira decisão de infraestrutura?
+1. Quando checkpoints locais viram revisões duráveis?
+2. A unidade física ideal é microssequência, card ou combinação?
+3. Como funciona um merge com múltiplos pais?
+4. Que metadata pode aparecer num nó bloqueado?
+5. Como mudanças em grupos afetam snapshots de pesquisa?
+6. Como calcular e invalidar audiência efetiva em escala?
+7. Qual stack apresenta melhor o grafo no mobile?
+8. Que BaaS atende Storage imutável, metadata, acesso e sync?
+9. Como reter e coletar lixo sem apagar evidência necessária?
+10. Que exceções legais ou de segurança exigem fluxo próprio?
