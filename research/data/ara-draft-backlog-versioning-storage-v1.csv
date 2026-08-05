@@ -1,0 +1,11 @@
+id,area,title,classification,decision_needed
+R01,versionamento-storage,Inventário de objetos versionados,investigar,"Revisionável imutável derivado temporário e retenção"
+R02,versionamento-storage,Separação metadata artifact local,investigar,"Fronteiras consultas transações payloads e materialização"
+R03,versionamento-storage,Content addressing e deduplicação,propor,"Canonicalização digest referências e contexto"
+R04,versionamento-storage,Manifests e materialização,propor,"Reconstrução publicação export offline e cache"
+R05,versionamento-storage,Retenção e garbage collection,propor,"Referências janelas direitos protocolos e rollback"
+R06,versionamento-storage,Workload e simulação de custo,investigar,"10 mil 100 mil e 1 milhão de revisões"
+R07,versionamento-storage,Comparação de deployment,investigar,"Supabase Free Pro Supabase+object storage stack portátil BaaS alternativo local-only"
+R08,versionamento-storage,Disponibilidade e pausa,propor,"Always-on scale-to-zero degraded e offline"
+R09,versionamento-storage,Backup exportação e restauração,propor,"Formato provider-neutral e restore testado"
+R10,versionamento-storage,Budgets e administração compreensível,propor,"Espaço crescimento retenção custo e limpeza"

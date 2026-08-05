@@ -12,11 +12,17 @@ course version → module/lesson → placement → microsequence revision → ca
 
 ## Current stage
 
-ARA is in pre-development research, product definition and design exploration. Issues #4–#8 produced configuration, research/analytics, product/domain, architecture and UX baselines. They support continued brainstorming and later review; no product implementation issue is active or authorized.
+ARA is in pre-development research, product definition and design exploration. Issues #4–#8 produced conceptual baselines; no product implementation issue is active or authorized.
 
-Draft backlog v2 now contains **197 candidate items across 17 areas**, preserving the original 171 items and adding a new area for modular agent profiles, participatory curation, diffs, evals and quantitative, qualitative and mixed-method analytics.
+Draft backlog v3 contains **207 candidate items across 18 areas**:
 
-Issue #77 is the active focused research round. It investigates how to decompose AraLearn's monolithic GPT/MCP configuration into versioned instructions, domain profiles, templates, knowledge collections, context policies, tools/contracts and evals while preserving human control and a simple interface. The initial corpus contains 34 sources and authorizes neither product code nor participant collection.
+- 171 original items;
+- 26 items for modular agent profiles, participatory curation and analytics;
+- 10 items for versioning, retention, storage and deployment economics.
+
+Issue #77 studies modular agents and analytics. AraLearn is treated as the main functional reference and a contrast case, not as an equivalent modular implementation.
+
+Issue #79 studies how to sustain the intended versioning model: relational metadata, immutable artifacts, deduplication, retention, workloads, Supabase Free/Pro, object storage, portable alternatives, backup and restore. It neither selects nor authorizes purchase of a provider.
 
 ## Canonical path
 
@@ -29,7 +35,7 @@ Issue #77 is the active focused research round. It investigates how to decompose
 7. [Research programme](docs/research/research-programme-index.pt-BR.md)
 8. [Backlog and phase rules](docs/roadmap/backlog-index.md)
 
-The structural UX prototype in [`prototypes/ux-v1/`](prototypes/ux-v1/) and the ideation wireframes are non-production materials for discussion. Entering implementation requires a later explicit owner decision and a newly reviewed implementation programme.
+The structural prototype and wireframes are not product. Entering implementation requires a later explicit owner decision, baseline review and a newly reviewed implementation programme.
 
 ## Governance and licensing
 

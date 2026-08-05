@@ -12,11 +12,17 @@ versão de curso → módulo/lição → placement → revisão de microssequên
 
 ## Fase atual
 
-O ARA encontra-se em investigação, definição do produto e exploração de design, antes do desenvolvimento. As Issues #4–#8 produziram baselines de configuração, investigação/analytics, produto/domínio, arquitetura e UX. Servem o brainstorming e a revisão posterior; nenhuma issue de implementação está ativa ou autorizada.
+O ARA encontra-se em investigação, definição do produto e exploração de design, antes do desenvolvimento. As Issues #4–#8 produziram baselines conceptuais; nenhuma issue de implementação está ativa ou autorizada.
 
-O pré-backlog v2 reúne agora **197 itens candidatos em 17 áreas**, preservando os 171 itens iniciais e acrescentando uma área dedicada a perfis modulares de agente, curadoria participativa, diffs, evals e analytics quantitativos, qualitativos e mistos.
+O pré-backlog v3 reúne **207 itens candidatos em 18 áreas**:
 
-A Issue #77 é a frente focal ativa. Investiga como decompor a configuração monolítica de GPT/MCP do AraLearn em instruções, perfis de domínio, templates, coleções de conhecimento, contexto, tools/contracts e evals versionados, mantendo controlo humano e uma interface simples. O corpus inicial contém 34 fontes e não autoriza código nem recolha de participantes.
+- 171 itens iniciais;
+- 26 itens de perfis modulares de agente, curadoria participativa e analytics;
+- 10 itens de versionamento, retenção, armazenamento e economia operacional.
+
+A Issue #77 investiga agentes modulares e analytics. O AraLearn é tratado como referência funcional e caso de contraste, não como implementação modular equivalente.
+
+A Issue #79 investiga como sustentar o versionamento previsto: metadata relacional, artefactos imutáveis, deduplicação, retenção, workloads, Supabase Free/Pro, object storage, alternativas portáteis, backup e restauro. Não seleciona nem autoriza contratação de fornecedor.
 
 ## Caminho canónico
 
@@ -29,7 +35,7 @@ A Issue #77 é a frente focal ativa. Investiga como decompor a configuração mo
 7. [Programa de investigação](docs/research/research-programme-index.pt-BR.md)
 8. [Backlog e regras das fases](docs/roadmap/backlog-index.md)
 
-O protótipo estrutural em [`prototypes/ux-v1/`](prototypes/ux-v1/) e os wireframes de idealização não são produto e servem apenas à discussão. A entrada em desenvolvimento exigirá uma decisão explícita posterior do proprietário e um novo programa de implementação revisto.
+O protótipo estrutural e os wireframes não são produto. A entrada em desenvolvimento exigirá uma decisão explícita posterior do proprietário, revisão das baselines e um novo programa de implementação revisto.
 
 ## Governação e licenciamento
 

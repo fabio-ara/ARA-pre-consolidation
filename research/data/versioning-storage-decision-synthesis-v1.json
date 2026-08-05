@@ -1,0 +1,46 @@
+{
+  "schema": "ara.versioning-storage-decision-synthesis.v1",
+  "status": "candidate-non-normative",
+  "date": "2026-08-04",
+  "problem": "ARA requires extensive versioning while free-tier database and object-storage quotas and inactivity policies are insufficient as architectural authorities.",
+  "corrected_aralearn_role": {
+    "use_as": [
+      "functional journey evidence",
+      "contrast for monolithic agent and persistence limitations",
+      "source of observed failure modes",
+      "sample payloads for workload measurement"
+    ],
+    "do_not_use_as": [
+      "equivalent modular implementation fixture",
+      "complete specification of ARA agent profiles",
+      "upper bound for ARA workloads",
+      "mandatory physical architecture"
+    ]
+  },
+  "candidate_direction": "small relational metadata plus immutable artifacts plus local materialization behind provider-neutral adapters",
+  "required_comparisons": [
+    "Supabase Pro integrated",
+    "Supabase metadata/auth plus external S3-compatible object storage",
+    "managed PostgreSQL plus S3/OIDC/application API",
+    "alternative integrated BaaS",
+    "personal local-only deployment"
+  ],
+  "required_controls": [
+    "content addressing and deduplication",
+    "reference-aware retention and garbage collection",
+    "provider-neutral export and restore",
+    "research and publication retention locks",
+    "workload and monthly cost simulation",
+    "availability and degraded-provider behavior",
+    "human-readable storage budgets and consequences"
+  ],
+  "not_decided": [
+    "provider",
+    "paid plan",
+    "database",
+    "object storage",
+    "schema",
+    "sync engine",
+    "retention durations"
+  ]
+}
