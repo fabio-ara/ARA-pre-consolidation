@@ -1,0 +1,14 @@
+internal_term,possible_public_term,meaning,warning,status
+AgentProfile,"Perfil do assistente","Reusable administrative identity for an agent configuration","Do not imply a separate model or account",candidate
+AgentProfileVersion,"Versão do perfil","Immutable revision of the profile composition","Version is not a quality level",candidate
+DomainProfileVersion,"Orientação do domínio","Domain-specific terminology sources practices resources and rubrics","Do not present as universally correct pedagogy",candidate
+KnowledgeCollectionSnapshot,"Referências do perfil","Frozen collection of sources and derived indexes","Not the model's internal knowledge",candidate
+PromptTemplateVersion,"Roteiro de tarefa","Parameterized reusable task instruction","Public wording should not require prompt-engineering literacy",candidate
+ContextPolicyVersion,"Contexto disponível","Rules for integral indexed summarized and excluded context","Context availability is not write permission",candidate
+ToolCapabilityVersion,"Ações disponíveis","Typed operations the agent may request","Availability is not authority",candidate
+EvalSuiteVersion,"Casos de teste","Versioned cases rubrics and regression criteria","Test pass does not prove educational effectiveness",candidate
+AgentConfigurationSnapshot,"Configuração usada","Resolved prompt knowledge tools model and policies for one operation","Must be inspectable without exposing secrets",candidate
+AgentOperation,"Operação do assistente","Persisted request execution outputs and decisions","Chat transcript is not the operation record",candidate
+ObservationCorpusSnapshot,"Conjunto de observações analisado","Frozen contributions used in one synthesis","Not a vote count",candidate
+ResearchAnalysisRun,"Análise registrada","Reproducible quantitative qualitative or mixed analysis","Not a final scientific conclusion",candidate
+Prompt-engineering-researcher,"Avaliador de configurações do assistente","Investigates instructions examples retrieval tools and evals","Prompt engineering alone is too narrow",recommended
