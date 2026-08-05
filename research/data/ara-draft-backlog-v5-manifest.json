@@ -1,0 +1,41 @@
+{
+  "schema": "ara.draft-backlog-manifest.v1",
+  "version": "5",
+  "status": "candidate-non-executable",
+  "date": "2026-08-05",
+  "composition": [
+    {
+      "areas": "A-P",
+      "items": 171,
+      "human_document": "docs/ideation/draft-backlog-v1.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-v1.csv"
+    },
+    {
+      "areas": "Q",
+      "items": 26,
+      "human_document": "docs/ideation/draft-backlog-agent-profiles-analytics-v2.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-agent-profiles-analytics-v2.csv"
+    },
+    {
+      "areas": "R",
+      "items": 20,
+      "human_document": "docs/ideation/draft-backlog-versioning-storage-v2.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-versioning-storage-v2.csv"
+    },
+    {
+      "areas": "S",
+      "items": 26,
+      "human_document": "docs/ideation/draft-backlog-version-graph-access-v1.pt-BR.md",
+      "registry": "research/data/ara-draft-backlog-version-graph-access-v1.csv"
+    }
+  ],
+  "total_items": 243,
+  "total_areas": 19,
+  "rules": [
+    "versioning is a product and research requirement before it is a provider concern",
+    "ordinary editing remains low-friction and reversible",
+    "area R v2 replaces area R v1 for current reading without deleting history",
+    "no item authorizes code provider selection or schema",
+    "promotion requires measured impact on database storage local sync and front-end"
+  ]
+}
