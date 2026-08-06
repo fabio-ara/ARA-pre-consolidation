@@ -8,6 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: ruby .github/audit-purpose-scope.rb
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - run: |
           git config user.name "ARA consolidation control"
           git config user.email "actions@users.noreply.github.com"
