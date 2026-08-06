@@ -22,6 +22,7 @@ replacement = (
     needle
     + '        {"path": ".github/process-cross-domain-benchmark.py", "mode": "100644", "type": "blob", "sha": None},\n'
     + '        {"path": ".github/process-aralearn-reference.py", "mode": "100644", "type": "blob", "sha": None},\n'
+    + '        {"path": ".github/workflows/process-aralearn-reference.yml", "mode": "100644", "type": "blob", "sha": None},\n'
 )
 assert needle in code
 code = code.replace(needle, replacement, 1)
