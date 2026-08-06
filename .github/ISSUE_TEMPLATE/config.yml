@@ -1,5 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Read repository governance
-    url: https://github.com/fabio-ara/ARA/blob/main/docs/governance/repository-governance.md
-    about: Review the canonical backlog and traceability rules before opening an issue.

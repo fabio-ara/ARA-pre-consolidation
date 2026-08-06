@@ -1,6 +1,0 @@
-option,kind,best_fit,strengths,limits,status
-Mermaid,renderer,Small read-only DAGs and documentation,"Click callbacks and links; declarative; low setup","Limited rich interaction and scale; security mode caveat",prototype-only
-Cytoscape.js,graph-library,Investigative browsing and filtering,"Graph traversal; events; layouts; compound graphs; pan and zoom","Custom UI work; rich HTML nodes less direct",candidate
-React Flow,node-ui-framework,Authoring graph with rich custom nodes,"React components; selection; pan and zoom; editing","Needs layout engine; graph analytics less central",candidate
-ELK.js,layout-engine,Large directional DAG layout,"Layered layout; Web Worker; renderer independent","Not a renderer; configuration cost",complement
-Dagre,layout-engine,Simple hierarchical DAG layout,"Widely integrated with graph renderers","Less capable for complex or compound graphs",complement

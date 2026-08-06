@@ -1,9 +1,0 @@
-candidate_or_runtime,pinned_revision_or_version,license,bundled_in_round,role,risk_or_follow_up
-project-authored reference adapters,0.1.0,AGPL-3.0-or-later,yes,contract and lifecycle testing,no transitive runtime dependencies
-Node.js,v22.16.0,environment only,no,test and host-worker environment,not a browser production dependency decision
-Chromium,144.0.7559.96,environment only,no,browser interaction walkthrough,results may differ in other engines
-MathLive/MathJSON benchmark,d10bd8dd0f428b4d1c0b19293431cba8373566d6,MIT,no,candidate semantic input and rendering,requires separate bundle accessibility and canonical-format bake-off
-Cytoscape.js benchmark,c668509bf965340ebf2a46d1ab0dcb3b4dd6fb0e,MIT,no,candidate graph engine and renderer,requires keyboard adapter and geometry-isolation test
-Pyodide benchmark,9048e6309c6b027351673f2fc1856a6969ba7a9b,MPL-2.0,no,candidate Python browser runtime,large package supply-chain and isolation costs require separate round
-Papyros benchmark,831b58227e63a84313b841dcd46992c747165289,MIT,no,candidate code runner and debugger,COOP COEP service-worker and package costs require separate round
-Recogito Text Annotator benchmark,092be72b5fc6d670123b8f918998fe9c424050a1,BSD-3-Clause,no,candidate source annotation UI,selector and accessibility behavior require adapter test

@@ -1,6 +1,0 @@
-candidate,version,license,bundled,role,risk_or_follow_up
-project-authored contract and boundary adapters,0.2.0 / 0.1.0,AGPL-3.0-or-later,yes,prototype code,No external runtime dependency bundled.
-MathLive,0.110.0 at pinned commit,MIT,no,candidate math input and display,Verify transitive fonts assets and accessibility behavior during runtime bake-off.
-Cytoscape.js,3.35.0-unstable at pinned commit; stable 3.34.0 observed,MIT,no,candidate graph model and renderer,Use a stable release and verify keyboard adapter and bundle cost.
-@recogito/text-annotator,4.2.5,BSD-3-Clause,no,candidate source annotation UI,Verify selector conversion range interaction and transitive package licenses.
-External package runtime round,not executed,not applicable,no,environment status,No license compatibility conclusion depends on unexecuted integration.

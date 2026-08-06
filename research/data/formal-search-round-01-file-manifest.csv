@@ -1,7 +1,0 @@
-file,records,bytes,sha256,status
-pubmed-esearch-round-01.json,827,9906,67d69d01b9adf24d40ead5fedcae85343833ae3e327a6a1146e1715c23a346b2,received-and-validated
-pubmed-flashcardT-set.nbib,827,3008330,2ee729e0853bcd511fb911eab6251f681eb22bae797bcbf185c431a65f72642e,received-and-validated
-eric-round-01-001-200.nbib,200,445177,da27e8e9d6fd2c9c69f54de87b217396c03bd43281f71462e475cb91ac5265c5,received-and-validated
-eric-round-01-201-400.nbib,200,444345,3b244287e2b08c18c4d41ecc7b52bdadb2459729b50fecd03fcf73acdc117c67,received-and-validated
-eric-round-01-401-600.nbib,200,456480,d76d36ab7154efc817bc696bb2652fb297e1e8cf10d2598abfd81ec714c7fdc3,received-and-validated
-eric-round-01-601-728.nbib,128,216550,6e8ea2244eaf6e4c352fc4e0c9161dfe00fad2be6015fe541c74b5819b2efa08,received-and-validated

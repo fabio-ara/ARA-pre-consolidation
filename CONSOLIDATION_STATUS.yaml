@@ -1,65 +1,17 @@
-schema_version: 1
-control_branch: consolidation-control
-
 corpus:
-  repository: fabio-ara/ARA-pre-consolidation
   branch: main
   commit: d5f83c1fdb2047de0080510540d2b911aec3cd8b
-  tree: e63d7b17d4ecf842d3b4beda13169ba67789f536
-  cutoff_local: "2026-08-06T00:32:00-03:00"
-  cutoff_utc: "2026-08-06T03:32:00Z"
-  rule: >-
-    Integram o corpus somente os arquivos da árvore congelada e os objetos do
-    GitHub existentes até o marco temporal. Tudo criado em consolidation-control
-    fica fora do corpus.
+  cutoff: "2026-08-06T00:32:00-03:00"
 
-control:
-  excluded_from_corpus: true
-  files:
-    - CONSOLIDATION_STATUS.yaml
-    - SOURCE_INVENTORY.jsonl
-    - FINAL_AUDIT.md
-
-inventory:
-  fields:
-    - id
-    - type
-    - locator
-    - domain
-    - status
-    - relevant
-    - destination
-    - notes
-  states:
-    - identified
-    - processed
-    - discarded
-    - blocked
-    - verified
+phase: inventory
 
 counts:
-  inventory_records: 37
-  git_root_files: 12
-  git_structural_collections: 20
-  issues: 45
-  pull_requests: 40
-  issue_comments: null
-  pull_request_discussion_items: null
-  attachments: null
-  known_bibtex_files: 11
-  known_wireframe_svgs: 12
-  by_status:
-    identified: 37
-    processed: 0
-    discarded: 0
-    blocked: 0
-    verified: 0
-
-stage:
-  current: structural_inventory
-  substantive_transfer_started: false
-  public_history_started: false
-  implementation_units_opened: false
+  total: 104
+  identified: 104
+  processed: 0
+  discarded: 0
+  blocked: 0
+  verified: 0
 
 domains:
   finalidade_e_escopo: identified
@@ -69,19 +21,23 @@ domains:
   autoria_e_curadoria: identified
   interfaces_e_experiencia_de_uso: identified
   versionamento_e_proveniencia: identified
-  colaboracao_e_controle_de_acesso: identified
+  colaboracao_e_acesso: identified
   parametrizacao_e_experimentacao: identified
   dados_e_pesquisa_educacional: identified
   infraestrutura_e_armazenamento: identified
-  sincronizacao_e_uso_offline: identified
+  sincronizacao_e_funcionamento_offline: identified
   implantacao_e_interoperabilidade: identified
   avaliacao_e_validacao: identified
-  relacao_com_pesquisa_academica: identified
+  relacao_com_a_pesquisa_academica: identified
 
 blockers: []
 pending_decisions: []
 
+last_batch: >-
+  Corpos das 45 issues e dos 40 pull requests enumerados. Controle operacional
+  preparado para conter somente os três arquivos autorizados.
+
 next_step: >-
-  Enumerar individualmente os blobs da árvore congelada e os 45 issues e 40
-  pull requests. Registrar comentários substantivos separadamente; contabilizar
-  em conjunto comentários administrativos sem conteúdo substantivo.
+  Enumerar individualmente os arquivos de .github, docs/architecture,
+  docs/governance, docs/product, docs/research, docs/roadmap, docs/ux e
+  docs/vision; substituir os registros temporários desses diretórios.

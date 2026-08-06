@@ -1,5 +1,0 @@
-duplicate_record_id,canonical_record_id,decision,reason,doi,study_family
-ED602960,EJ1238295,remove-exact-publication-duplicate,"Same title, authors, DOI, year and journal publication; ED record is the grantee submission and explicitly points to the EJ journal record",10.1891/1945-8959.18.2.160,
-ED645719,EJ1401499,remove-exact-publication-duplicate,"Same title, author, DOI, year and journal publication; ED record is the online/grantee version and EJ is the journal record",10.1111/mbe.12375,
-ED285546,ED285546,retain-separate-publication,"1987 meeting paper reporting the same study later published as EJ385854; linked as a study family rather than removed",,SF-ERIC-001
-EJ385854,EJ385854,retain-separate-publication,"1988 journal article reporting the same study as ED285546; linked as a study family rather than removed",,SF-ERIC-001

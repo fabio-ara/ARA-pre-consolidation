@@ -1,4 +1,0 @@
-study_family_id,publication_id_1,publication_id_2,relationship,confidence,decision,reason
-SF-QZ-001,PP0006,PP0110,probable-thesis-derived-journal-publication,probable-not-confirmed,retain-both-publications,Related author/topic/time sequence; exact derivation must be confirmed from full texts.
-SF-QZ-002,PP0020,PP0128,probable-thesis-derived-journal-publication,probable-not-confirmed,retain-both-publications,Related author/topic/time sequence; exact derivation must be confirmed from full texts.
-SF-CAD-001,PP0135,PP0135,same-publication-classified-in-testing-and-spacing-subsets,confirmed,one-publication-multiple-mechanisms,Cadavid et al. include this publication in both testing and spacing tables.

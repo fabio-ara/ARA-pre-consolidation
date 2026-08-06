@@ -1,5 +1,0 @@
-family_id,record_1,record_2,relationship,decision,reason
-SF-ERIC-001,ERIC:ED285546,ERIC:EJ385854,conference-paper-and-journal-article,retain-both-publications,Separate publications reporting the same underlying study
-SF-PUBMED-001,PMID:38948698,PMID:39475218,preprint-and-journal-article,retain-both-publications-link-study-family,Same normalized title but distinct DOI and publication version
-RP-CROSS-001,PMID:21252317,ERIC:ED521113,primary-study-and-evidence-review,retain-both-publications,ERIC record is a WWC quick review of the PubMed-indexed primary study and not the same publication
-RP-CROSS-002,PMID:39804340,ERIC:EJ1507961,correction-and-original-article,retain-both-publications,PubMed record is a correction while the ERIC record is the original article
