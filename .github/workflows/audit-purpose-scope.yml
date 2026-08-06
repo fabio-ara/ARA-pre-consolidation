@@ -7,7 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: ruby .github/audit-purpose-scope.rb
+      - run: |
+          sed -i 's/status_counts = purpose.tally { |record| record.fetch("status") }/status_counts = purpose.map { |record| record.fetch("status") }.tally/' .github/audit-purpose-scope.rb
+          sed -i 's/final_counts = records.tally { |record| record.fetch("status") }/final_counts = records.map { |record| record.fetch("status") }.tally/' .github/audit-purpose-scope.rb
+          ruby .github/audit-purpose-scope.rb
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - run: |
