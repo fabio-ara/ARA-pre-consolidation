@@ -8,14 +8,14 @@ phase: processing
 counts:
   total: 558
   identified: 507
-  processed: 16
+  processed: 0
   discarded: 0
   blocked: 0
-  verified: 35
+  verified: 51
 
 domains:
   finalidade_e_escopo: verified
-  fundamentos_educacionais: pending_audit
+  fundamentos_educacionais: verified
   experiencias_e_sistemas_analisados: identified
   modelo_de_conteudo_e_recursos: identified
   autoria_e_curadoria: identified
@@ -34,13 +34,14 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Segundo lote de fundamentos educacionais concluído: sete fontes processadas.
-  Progressão e domínio, sequência e ritmo, revisão e intercalação, exemplos e
-  retomada, autonomia e adaptação, assistência por inteligência artificial e
-  orientação curricular foram consolidados em seis pendências sem decisões.
+  Auditoria do domínio fundamentos educacionais concluída sobre 16 fontes e
+  onze pendências. Evidências, recomendações e decisões permanecem separadas;
+  limitações e ausência de valores universais estão explícitas. A terminologia
+  pública foi normalizada e não foram encontradas referências privadas.
 
 next_step: >-
-  Auditar o domínio fundamentos educacionais: conferir as 16 fontes processadas,
-  a coerência de PED-001 a PED-011, a separação entre evidência, recomendação e
-  decisão, a ausência de defaults universais ou referências privadas e a cobertura
-  das limitações; depois marcar o domínio como verificado ou registrar correções.
+  Processar o primeiro lote de experiências e sistemas analisados sobre a
+  referência AraLearn: SRC-000034, SRC-000075, SRC-000139, SRC-000231 a
+  SRC-000237, SRC-000444, SRC-000446 e SRC-000463; separar capacidades
+  demonstradas, limitações, conflitos e decisões provisórias sem copiar a
+  implementação anterior nem promover classificações de auditoria a decisões.
