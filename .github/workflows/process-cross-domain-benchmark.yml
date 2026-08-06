@@ -1,19 +1,16 @@
 name: Process cross-domain benchmark batch
 on: [push]
-concurrency:
-  group: process-cross-domain-benchmark
-  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
   process:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Fetch and run processor
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          python3 - <<'PY'
+          python - <<'PY'
           import base64
           import json
           import os
