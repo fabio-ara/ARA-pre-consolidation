@@ -1,0 +1,19 @@
+name: Process educational foundations batch
+on: [push]
+permissions:
+  contents: write
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python .github/process-foundations-1.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: |
+          git config user.name "ARA consolidation control"
+          git config user.email "actions@users.noreply.github.com"
+          git rm .github/workflows/process-foundations-1.yml .github/process-foundations-1.py
+          git add CONSOLIDATION_STATUS.yaml SOURCE_INVENTORY.jsonl
+          git commit -m "chore: process educational foundations batch"
+          git push
