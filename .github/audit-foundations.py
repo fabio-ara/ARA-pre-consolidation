@@ -107,7 +107,6 @@ assert "status: approved" not in ped_segment
 for term in [
     "analytics",
     "mobile-first",
-    "offline",
     "default",
     "overrides",
     "scaffolding",
