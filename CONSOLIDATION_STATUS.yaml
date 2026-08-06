@@ -6,8 +6,8 @@ corpus:
 phase: inventory
 
 counts:
-  total: 171
-  identified: 171
+  total: 199
+  identified: 199
   processed: 0
   discarded: 0
   blocked: 0
@@ -34,11 +34,10 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Vinte e quatro documentos de ideação, doze wireframes SVG e três arquivos
-  do protótipo UX enumerados individualmente; dois registros temporários
-  substituídos por fontes atômicas.
+  Onze arquivos BibTeX e dezoito registros de busca enumerados individualmente;
+  o registro temporário da coleção bibliográfica foi substituído e três
+  identificadores com largura incorreta foram normalizados sem alterar fontes.
 
 next_step: >-
-  Enumerar individualmente os onze arquivos BibTeX de research/library e os
-  arquivos de research/searches; substituir o registro temporário da coleção
-  bibliográfica.
+  Enumerar individualmente os arquivos de research/data e research/schemas,
+  preservando conjuntos relacionados sem inventariar duplicações literais.
