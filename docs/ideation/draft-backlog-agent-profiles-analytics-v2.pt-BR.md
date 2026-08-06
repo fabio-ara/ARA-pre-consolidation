@@ -12,6 +12,8 @@ A área Q continua possuindo 26 itens. Esta versão substitui somente Q01, Q10, 
 
 A correção impede interpretar o AraLearn como implementação modular equivalente. O predecessor é referência funcional, evidência de limitações e fonte de casos de contraste.
 
+A síntese [`operational-provenance-retention-v1.pt-BR.md`](operational-provenance-retention-v1.pt-BR.md) detalha a leitura corrente de Q08, Q09, Q13, Q16, Q18, Q23 e Q25, em conjunto com a área R, sem acrescentar novos itens ao pré-backlog. Ela separa trabalho cognitivo do agente, registro automático pelo backend, materialização por alteração confirmada, proveniência contributiva, pacotes seletivos de contexto e classes sustentáveis de retenção.
+
 ## Q01 — Inventário contrastivo da configuração monolítica do AraLearn
 
 Mapear instruções do GPT, knowledge atual, papéis, prompts implícitos, tools MCP, resources/contratos, contexto, providers e fluxos de autoria/auditoria.
