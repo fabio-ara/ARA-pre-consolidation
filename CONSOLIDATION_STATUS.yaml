@@ -30,13 +30,7 @@ domains:
   avaliacao_e_validacao: identified
   relacao_com_a_pesquisa_academica: identified
 
-blockers:
-  - >-
-    Uma branch temporária criada acidentalmente durante a materialização operacional,
-    consolidation-control-temp-should-not-use, ainda precisa ser removida. Ela não
-    contém conteúdo exclusivo e não foi usada como fonte ou destino. O conector
-    disponível não expõe exclusão de refs e as tentativas de executar a limpeza por
-    GitHub Actions permaneceram sem novo runner.
+blockers: []
 
 pending_decisions:
   - MODEL-001
@@ -47,16 +41,15 @@ pending_decisions:
 
 last_batch: >-
   Primeiro lote de modelo de conteúdo e recursos materializado: onze fontes
-  relevantes processadas e um manifesto estrutural descartado. Cinco escolhas
-  históricas do modelo permanecem registradas como MODEL-001 a MODEL-005 em
-  pending_owner_approval, sem DEC-008 e sem autorização de implementação.
-  Auditorias e cenários do corpus foram tratados como coerência conceitual, não
-  como validação de factibilidade, usabilidade, acessibilidade com usuários ou
-  efetividade educacional.
+  relevantes processadas e um manifesto estrutural descartado. A branch temporária
+  criada acidentalmente durante a materialização foi removida e a raiz de
+  consolidation-control foi conferida com somente os três arquivos autorizados.
+  MODEL-001 a MODEL-005 permanecem em pending_owner_approval, sem DEC-008 e sem
+  autorização de implementação.
 
 next_step: >-
-  Remover exclusivamente a branch consolidation-control-temp-should-not-use e
-  conferir que consolidation-control contém somente CONSOLIDATION_STATUS.yaml,
-  SOURCE_INVENTORY.jsonl e FINAL_AUDIT.md. Não processar novas fontes enquanto
-  esse bloqueio operacional persistir; após a limpeza, registrar como próximo lote
-  SRC-000238 a SRC-000246 e SRC-000364 a SRC-000369.
+  Processar o segundo lote de modelo de conteúdo e recursos: SRC-000238 a
+  SRC-000246 e SRC-000364 a SRC-000369; avaliar os primeiros contratos
+  experimentais, acessibilidade, segurança, comparação de quatro famílias,
+  manifestos, instâncias, microssequências e validações, mantendo-os como
+  evidência de protótipo e não como contratos aprovados.
