@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 464
-  processed: 11
-  discarded: 1
+  identified: 449
+  processed: 24
+  discarded: 3
   blocked: 0
   verified: 82
 
@@ -40,16 +40,16 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote de modelo de conteúdo e recursos materializado: onze fontes
-  relevantes processadas e um manifesto estrutural descartado. A branch temporária
-  criada acidentalmente durante a materialização foi removida e a raiz de
-  consolidation-control foi conferida com somente os três arquivos autorizados.
-  MODEL-001 a MODEL-005 permanecem em pending_owner_approval, sem DEC-008 e sem
-  autorização de implementação.
+  Segundo lote de modelo de conteúdo e recursos concluído: treze fontes de contratos
+  e protótipos processadas e dois manifestos estruturais descartados. A conformidade
+  de esquemas e fronteiras conceituais em quatro famílias foi preservada como evidência
+  de protótipo, sem seleção de tecnologia, contrato aprovado, segurança de produção,
+  acessibilidade validada com usuários ou alegação de efetividade educacional. O
+  conteúdo foi deduplicado contra pendências públicas existentes, sem alteração do
+  repositório público.
 
 next_step: >-
-  Processar o segundo lote de modelo de conteúdo e recursos: SRC-000238 a
-  SRC-000246 e SRC-000364 a SRC-000369; avaliar os primeiros contratos
-  experimentais, acessibilidade, segurança, comparação de quatro famílias,
-  manifestos, instâncias, microssequências e validações, mantendo-os como
-  evidência de protótipo e não como contratos aprovados.
+  Processar o terceiro lote de modelo de conteúdo e recursos: SRC-000370 a
+  SRC-000376; concluir os esquemas específicos e o validador do primeiro protótipo,
+  separando contrato experimental, gramática de domínio e resultado de validação
+  estrutural. Não iniciar ainda os artefatos da versão 0.2.
