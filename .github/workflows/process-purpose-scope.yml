@@ -1,20 +1,14 @@
-name: Process initial purpose and scope batch
-on:
-  push:
-    branches:
-      - consolidation-control
+name: Process purpose and scope
+on: [push]
 permissions:
   contents: write
 jobs:
   process:
-    if: github.event.head_commit.message == 'chore: run purpose and scope processing'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Update inventory and status
-        run: python .github/process-purpose-scope.py
-      - name: Commit final control state
-        run: |
+      - run: python .github/process-purpose-scope.py
+      - run: |
           git config user.name "ARA consolidation control"
           git config user.email "actions@users.noreply.github.com"
           git rm .github/workflows/process-purpose-scope.yml .github/process-purpose-scope.py
