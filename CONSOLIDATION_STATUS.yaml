@@ -6,8 +6,8 @@ corpus:
 phase: inventory
 
 counts:
-  total: 199
-  identified: 199
+  total: 363
+  identified: 363
   processed: 0
   discarded: 0
   blocked: 0
@@ -34,10 +34,11 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Onze arquivos BibTeX e dezoito registros de busca enumerados individualmente;
-  o registro temporário da coleção bibliográfica foi substituído e três
-  identificadores com largura incorreta foram normalizados sem alterar fontes.
+  Cento e sessenta e dois arquivos de research/data e dois esquemas de
+  research/schemas enumerados individualmente, mantendo a estrutura dos
+  conjuntos relacionados e sem análise substantiva.
 
 next_step: >-
-  Enumerar individualmente os arquivos de research/data e research/schemas,
-  preservando conjuntos relacionados sem inventariar duplicações literais.
+  Enumerar individualmente os arquivos de research/prototypes, research/pt-BR,
+  research/requests e research/templates; depois verificar a cobertura
+  estrutural remanescente do snapshot Git.
