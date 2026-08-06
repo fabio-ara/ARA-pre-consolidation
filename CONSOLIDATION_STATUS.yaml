@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 507
-  processed: 0
+  identified: 494
+  processed: 13
   discarded: 0
   blocked: 0
   verified: 51
@@ -16,7 +16,7 @@ counts:
 domains:
   finalidade_e_escopo: verified
   fundamentos_educacionais: verified
-  experiencias_e_sistemas_analisados: identified
+  experiencias_e_sistemas_analisados: processing
   modelo_de_conteudo_e_recursos: identified
   autoria_e_curadoria: identified
   interfaces_e_experiencia_de_uso: identified
@@ -34,14 +34,14 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Auditoria do domínio fundamentos educacionais concluída sobre 16 fontes e
-  onze pendências. Evidências, recomendações e decisões permanecem separadas;
-  limitações e ausência de valores universais estão explícitas. A terminologia
-  pública foi normalizada e não foram encontradas referências privadas.
+  Primeiro lote de experiências e sistemas analisados concluído: 13 fontes da
+  referência AraLearn processadas. Capacidades demonstradas, limites, hierarquia
+  das evidências, reclassificações provisórias, compatibilidade e antecedentes
+  pessoais foram consolidados em seis pendências, sem decisões ou migração.
 
 next_step: >-
-  Processar o primeiro lote de experiências e sistemas analisados sobre a
-  referência AraLearn: SRC-000034, SRC-000075, SRC-000139, SRC-000231 a
-  SRC-000237, SRC-000444, SRC-000446 e SRC-000463; separar capacidades
-  demonstradas, limitações, conflitos e decisões provisórias sem copiar a
-  implementação anterior nem promover classificações de auditoria a decisões.
+  Processar o segundo lote de experiências e sistemas analisados sobre benchmark
+  transdomínio e espaço externo: SRC-000033, SRC-000035, SRC-000076,
+  SRC-000080, SRC-000223, SRC-000228, SRC-000248 a SRC-000252 e
+  SRC-000447; separar precedentes técnicos, evidência educacional, alternativas
+  e lacunas sem transformar funcionalidades de terceiros em requisitos.
