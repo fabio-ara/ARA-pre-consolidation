@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 476
-  processed: 0
-  discarded: 0
+  identified: 464
+  processed: 11
+  discarded: 1
   blocked: 0
   verified: 82
 
@@ -30,13 +30,7 @@ domains:
   avaliacao_e_validacao: identified
   relacao_com_a_pesquisa_academica: identified
 
-blockers:
-  - >-
-    A análise e a materialização pública do primeiro lote de modelo de conteúdo e
-    recursos foram concluídas, mas as execuções solicitadas para atualizar
-    SOURCE_INVENTORY.jsonl permaneceram sem novo job de runner. O inventário ainda
-    conserva as 12 fontes do lote como identified; nenhuma contagem de fonte foi
-    antecipada.
+blockers: []
 
 pending_decisions:
   - MODEL-001
@@ -46,16 +40,17 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote de modelo de conteúdo e recursos analisado integralmente. Cinco
-  escolhas históricas do modelo foram registradas no backlog público como
-  MODEL-001 a MODEL-005 em pending_owner_approval, sem DEC-008 e sem autorização de
-  implementação. A classificação operacional preparada é de onze fontes relevantes
-  a processar e um manifesto estrutural a descartar, ainda não materializada no
-  inventário por bloqueio de execução.
+  Primeiro lote de modelo de conteúdo e recursos materializado: onze fontes
+  relevantes processadas e um manifesto estrutural descartado. Cinco escolhas
+  históricas do modelo permanecem registradas como MODEL-001 a MODEL-005 em
+  pending_owner_approval, sem DEC-008 e sem autorização de implementação.
+  Auditorias e cenários do corpus foram tratados como coerência conceitual, não
+  como validação de factibilidade, usabilidade, acessibilidade com usuários ou
+  efetividade educacional.
 
 next_step: >-
-  Concluir somente a materialização operacional deste mesmo lote: alterar
-  SRC-000021, SRC-000090, SRC-000125 e SRC-000298 a SRC-000305 para processed,
-  alterar SRC-000297 para discarded, preservar notas e destinos já definidos,
-  conferir as contagens esperadas de 464 identified, 11 processed, 1 discarded e
-  82 verified e remover este bloqueio. Não iniciar o segundo lote antes disso.
+  Processar o segundo lote de modelo de conteúdo e recursos: SRC-000238 a
+  SRC-000246 e SRC-000364 a SRC-000369; avaliar os primeiros contratos
+  experimentais, acessibilidade, segurança, comparação de quatro famílias,
+  manifestos, instâncias, microssequências e validações, mantendo-os como
+  evidência de protótipo e não como contratos aprovados.
