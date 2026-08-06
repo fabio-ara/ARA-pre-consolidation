@@ -7,7 +7,7 @@ permissions:
   contents: write
 jobs:
   process:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Fetch and run processor
         env:
