@@ -6,8 +6,8 @@ corpus:
 phase: inventory
 
 counts:
-  total: 473
-  identified: 473
+  total: 558
+  identified: 558
   processed: 0
   discarded: 0
   blocked: 0
@@ -34,12 +34,12 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Oitenta arquivos de protótipos, vinte e seis sínteses em português, duas
-  solicitações e dois modelos enumerados individualmente. A cobertura dos
-  385 blobs do snapshot Git foi verificada integralmente.
+  Oitenta e seis comentários gerais examinados: 81 substantivos enumerados
+  individualmente e cinco procedimentais contabilizados em conjunto. Quatro
+  revisões formais substantivas enumeradas; nenhum comentário em linha e
+  nenhum anexo ou imagem incorporado localizado.
 
 next_step: >-
-  Examinar os comentários das issues e as discussões dos pull requests no
-  recorte temporal aprovado; inventariar separadamente apenas os itens
-  substantivos, contabilizar os administrativos em conjunto e identificar
-  anexos ou imagens ainda não cobertos.
+  Verificar a cobertura final do inventário contra os 385 blobs, 45 issues,
+  40 pull requests, 86 comentários gerais e quatro revisões formais; depois
+  iniciar o processamento substantivo pelo domínio finalidade e escopo.
