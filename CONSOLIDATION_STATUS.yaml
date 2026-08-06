@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 544
-  processed: 12
-  discarded: 2
+  identified: 536
+  processed: 16
+  discarded: 6
   blocked: 0
   verified: 0
 
@@ -34,14 +34,14 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Cobertura integral verificada contra 385 blobs, 45 issues, 40 pull requests,
-  86 comentários gerais e quatro revisões formais. Primeiro lote substantivo
-  de finalidade e escopo concluído: 12 fontes processadas e duas duplicações
-  linguísticas descartadas. Tese de produto, pré-desenvolvimento e gate de
-  implementação materializados no repositório público.
+  Segundo lote de finalidade e escopo concluído: licença confirmada, dois
+  placeholders acidentais descartados, gate administrativo superado separado
+  do gate conceitual vigente, política linguística reconciliada com DEC-002 e
+  hipótese de gênero preservada sem promoção a decisão. Quatro fontes foram
+  processadas e quatro descartadas.
 
 next_step: >-
-  Processar o segundo lote de finalidade e escopo: SRC-000007, SRC-000041 a
-  SRC-000043, SRC-000119 a SRC-000121 e SRC-000451; separar licenciamento,
-  política linguística, artefatos superados e síntese de enquadramento antes
-  de tratar os pré-backlogs e manifestos candidatos.
+  Processar o primeiro lote de pré-backlogs e manifestos candidatos de
+  finalidade e escopo: SRC-000138, SRC-000144, SRC-000212 a SRC-000219 e
+  SRC-000224 a SRC-000226; preservar somente itens únicos e questões abertas,
+  sem promover contagens ou propostas em bloco ao backlog canônico.
