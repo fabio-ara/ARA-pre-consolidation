@@ -8,13 +8,13 @@ phase: processing
 counts:
   total: 558
   identified: 523
-  processed: 24
-  discarded: 11
+  processed: 0
+  discarded: 0
   blocked: 0
-  verified: 0
+  verified: 35
 
 domains:
-  finalidade_e_escopo: pending_audit
+  finalidade_e_escopo: verified
   fundamentos_educacionais: identified
   experiencias_e_sistemas_analisados: identified
   modelo_de_conteudo_e_recursos: identified
@@ -34,13 +34,14 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Primeiro lote de pré-backlogs e manifestos concluído: oito fontes processadas
-  e cinco versões ou estruturas sem conteúdo residual descartadas. Sete
-  pendências únicas foram registradas no backlog público, sem promover
-  contagens, propostas agregadas ou alternativas a decisões.
+  Auditoria do domínio finalidade e escopo concluída sobre 35 fontes. A visão
+  integral foi distinguida de decisões aprovadas no README e SCOPE-006 foi
+  reescrito para não depender de artefato ausente do repositório público.
+  Backlog, decisões, método e licença estão consistentes; referências privadas
+  ou antigas não foram encontradas nos arquivos canônicos nem nas issues públicas.
 
 next_step: >-
-  Auditar o domínio finalidade e escopo: conferir as 35 fontes classificadas,
-  a coerência entre README.md, BACKLOG.yaml, DECISOES.md, METODO_DE_TRABALHO.md
-  e LICENSE, a ausência de referências privadas e o registro completo das
-  pendências; depois marcar o domínio como verificado ou registrar correções.
+  Processar o primeiro lote de fundamentos educacionais: SRC-000028,
+  SRC-000067, SRC-000317 a SRC-000320, SRC-000351, SRC-000456 e
+  SRC-000467; consolidar prática, formatos de resposta, tentativas, reveal,
+  feedback e consequências sem promover recomendações a decisões.
