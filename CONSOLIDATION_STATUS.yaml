@@ -17,7 +17,7 @@ domains:
   finalidade_e_escopo: verified
   fundamentos_educacionais: verified
   experiencias_e_sistemas_analisados: verified
-  modelo_de_conteudo_e_recursos: identified
+  modelo_de_conteudo_e_recursos: processing
   autoria_e_curadoria: identified
   interfaces_e_experiencia_de_uso: identified
   versionamento_e_proveniencia: identified
@@ -30,21 +30,32 @@ domains:
   avaliacao_e_validacao: identified
   relacao_com_a_pesquisa_academica: identified
 
-blockers: []
-pending_decisions: []
+blockers:
+  - >-
+    A análise e a materialização pública do primeiro lote de modelo de conteúdo e
+    recursos foram concluídas, mas as execuções solicitadas para atualizar
+    SOURCE_INVENTORY.jsonl permaneceram sem novo job de runner. O inventário ainda
+    conserva as 12 fontes do lote como identified; nenhuma contagem de fonte foi
+    antecipada.
+
+pending_decisions:
+  - MODEL-001
+  - MODEL-002
+  - MODEL-003
+  - MODEL-004
+  - MODEL-005
 
 last_batch: >-
-  Auditoria do domínio experiências e sistemas analisados concluída: 31 fontes
-  verificadas e EXP-001 a EXP-010 conferidos. Experiência situada, implementação,
-  descrição de produto, precedente técnico, estudo independente e alegação causal
-  permanecem categorias distintas; não há seleção tecnológica, requisito automático,
-  promoção silenciosa a decisão ou referência privada nos registros públicos. Uma
-  issue pública sem conteúdo substantivo teve sua redação neutralizada para remover
-  referência a bastidores operacionais, sem criar conteúdo de projeto.
+  Primeiro lote de modelo de conteúdo e recursos analisado integralmente. Cinco
+  escolhas históricas do modelo foram registradas no backlog público como
+  MODEL-001 a MODEL-005 em pending_owner_approval, sem DEC-008 e sem autorização de
+  implementação. A classificação operacional preparada é de onze fontes relevantes
+  a processar e um manifesto estrutural a descartar, ainda não materializada no
+  inventário por bloqueio de execução.
 
 next_step: >-
-  Processar o primeiro lote de modelo de conteúdo e recursos: SRC-000021,
-  SRC-000090, SRC-000125 e SRC-000297 a SRC-000305; consolidar modelo de domínio,
-  entidades, invariantes, jornadas, máquinas de estado, classificação de capacidades
-  e síntese decisória, separando contratos e recomendações candidatos de decisões
-  aprovadas e sem herdar automaticamente o modelo legado.
+  Concluir somente a materialização operacional deste mesmo lote: alterar
+  SRC-000021, SRC-000090, SRC-000125 e SRC-000298 a SRC-000305 para processed,
+  alterar SRC-000297 para discarded, preservar notas e destinos já definidos,
+  conferir as contagens esperadas de 464 identified, 11 processed, 1 discarded e
+  82 verified e remover este bloqueio. Não iniciar o segundo lote antes disso.
