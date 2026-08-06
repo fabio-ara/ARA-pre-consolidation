@@ -18,7 +18,12 @@ with urllib.request.urlopen(request) as response:
     obj = json.load(response)
 code = base64.b64decode(obj["content"]).decode("utf-8")
 needle = '        {"path": WORKFLOW_PATH, "mode": "100644", "type": "blob", "sha": None},\n'
-replacement = needle + '        {"path": ".github/process-cross-domain-benchmark.py", "mode": "100644", "type": "blob", "sha": None},\n'
+replacement = (
+    needle
+    + '        {"path": ".github/process-cross-domain-benchmark.py", "mode": "100644", "type": "blob", "sha": None},\n'
+    + '        {"path": ".github/process-aralearn-reference.py", "mode": "100644", "type": "blob", "sha": None},\n'
+    + '        {"path": ".github/workflows/process-aralearn-reference.yml", "mode": "100644", "type": "blob", "sha": None},\n'
+)
 assert needle in code
 code = code.replace(needle, replacement, 1)
 exec(compile(code, ".github/process-final-experience-batch.py", "exec"))
