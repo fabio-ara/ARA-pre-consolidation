@@ -6,8 +6,8 @@ corpus:
 phase: inventory
 
 counts:
-  total: 134
-  identified: 134
+  total: 171
+  identified: 171
   processed: 0
   discarded: 0
   blocked: 0
@@ -34,10 +34,11 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Trinta arquivos de .github, arquitetura, governança, produto, pesquisa,
-  roadmap, UX e visão enumerados individualmente.
+  Vinte e quatro documentos de ideação, doze wireframes SVG e três arquivos
+  do protótipo UX enumerados individualmente; dois registros temporários
+  substituídos por fontes atômicas.
 
 next_step: >-
-  Enumerar individualmente os arquivos de docs/ideation e prototypes/ux-v1,
-  incluindo os 12 wireframes SVG; substituir os registros temporários dessas
-  duas coleções.
+  Enumerar individualmente os onze arquivos BibTeX de research/library e os
+  arquivos de research/searches; substituir o registro temporário da coleção
+  bibliográfica.
