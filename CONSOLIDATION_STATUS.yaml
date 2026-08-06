@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 482
-  processed: 25
+  identified: 476
+  processed: 31
   discarded: 0
   blocked: 0
   verified: 51
@@ -16,7 +16,7 @@ counts:
 domains:
   finalidade_e_escopo: verified
   fundamentos_educacionais: verified
-  experiencias_e_sistemas_analisados: processing
+  experiencias_e_sistemas_analisados: pending_audit
   modelo_de_conteudo_e_recursos: identified
   autoria_e_curadoria: identified
   interfaces_e_experiencia_de_uso: identified
@@ -34,14 +34,15 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Segundo lote de experiências e sistemas analisados concluído: 12 fontes do
-  benchmark transdomínio e da síntese integrada processadas. Precedentes técnicos,
-  gramáticas de domínio, governança de capacidades e lacunas de validação foram
-  consolidados em quatro pendências, sem requisitos automáticos ou seleção de stack.
+  Lote final de experiências e sistemas analisados concluído: seis fontes sobre
+  antecedentes, sistemas relacionados e programação móvel processadas. As fontes
+  foram deduplicadas contra EXP-006, EXP-007, EXP-010, fundamentos pedagógicos e
+  procedência; nenhuma observação de produto foi tratada como evidência causal.
 
 next_step: >-
-  Processar o lote final de experiências e sistemas analisados: SRC-000029,
-  SRC-000064, SRC-000065, SRC-000068, SRC-000316 e SRC-000354; consolidar
-  antecedentes iniciais, sistemas relacionados, programação móvel e a matriz de
-  atividades e retorno pedagógico, deduplicar com EXP-001 a EXP-010 e preparar a
-  auditoria do domínio sem transformar observação de produto em evidência causal.
+  Auditar o domínio experiências e sistemas analisados: conferir as 31 fontes,
+  a coerência de EXP-001 a EXP-010, a separação entre experiência situada,
+  evidência implementada, descrição de produto, precedente técnico, estudo
+  independente e alegação causal, a ausência de seleção tecnológica ou requisito
+  automático e a ausência de referências privadas; marcar o domínio como verificado
+  ou materializar as correções encontradas.
