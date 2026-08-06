@@ -1,5 +1,8 @@
 name: Process AraLearn reference batch
 on: [push]
+concurrency:
+  group: process-aralearn-reference
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
