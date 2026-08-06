@@ -17,7 +17,7 @@ jobs:
       - run: |
           git config user.name "ARA consolidation control"
           git config user.email "actions@users.noreply.github.com"
-          git rm .github/workflows/audit-purpose-scope.yml .github/audit-purpose-scope.rb
+          git rm -f .github/workflows/audit-purpose-scope.yml .github/audit-purpose-scope.rb
           git add CONSOLIDATION_STATUS.yaml SOURCE_INVENTORY.jsonl
           git commit -m "chore: verify purpose and scope domain"
           git push
