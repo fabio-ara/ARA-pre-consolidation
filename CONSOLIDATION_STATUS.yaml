@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 494
-  processed: 13
+  identified: 482
+  processed: 25
   discarded: 0
   blocked: 0
   verified: 51
@@ -34,14 +34,14 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Primeiro lote de experiências e sistemas analisados concluído: 13 fontes da
-  referência AraLearn processadas. Capacidades demonstradas, limites, hierarquia
-  das evidências, reclassificações provisórias, compatibilidade e antecedentes
-  pessoais foram consolidados em seis pendências, sem decisões ou migração.
+  Segundo lote de experiências e sistemas analisados concluído: 12 fontes do
+  benchmark transdomínio e da síntese integrada processadas. Precedentes técnicos,
+  gramáticas de domínio, governança de capacidades e lacunas de validação foram
+  consolidados em quatro pendências, sem requisitos automáticos ou seleção de stack.
 
 next_step: >-
-  Processar o segundo lote de experiências e sistemas analisados sobre benchmark
-  transdomínio e espaço externo: SRC-000033, SRC-000035, SRC-000076,
-  SRC-000080, SRC-000223, SRC-000228, SRC-000248 a SRC-000252 e
-  SRC-000447; separar precedentes técnicos, evidência educacional, alternativas
-  e lacunas sem transformar funcionalidades de terceiros em requisitos.
+  Processar o lote final de experiências e sistemas analisados: SRC-000029,
+  SRC-000064, SRC-000065, SRC-000068, SRC-000316 e SRC-000354; consolidar
+  antecedentes iniciais, sistemas relacionados, programação móvel e a matriz de
+  atividades e retorno pedagógico, deduplicar com EXP-001 a EXP-010 e preparar a
+  auditoria do domínio sem transformar observação de produto em evidência causal.
