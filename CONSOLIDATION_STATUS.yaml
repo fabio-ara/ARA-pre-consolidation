@@ -6,8 +6,8 @@ corpus:
 phase: inventory
 
 counts:
-  total: 104
-  identified: 104
+  total: 134
+  identified: 134
   processed: 0
   discarded: 0
   blocked: 0
@@ -34,10 +34,10 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Corpos das 45 issues e dos 40 pull requests enumerados. Controle operacional
-  preparado para conter somente os três arquivos autorizados.
+  Trinta arquivos de .github, arquitetura, governança, produto, pesquisa,
+  roadmap, UX e visão enumerados individualmente.
 
 next_step: >-
-  Enumerar individualmente os arquivos de .github, docs/architecture,
-  docs/governance, docs/product, docs/research, docs/roadmap, docs/ux e
-  docs/vision; substituir os registros temporários desses diretórios.
+  Enumerar individualmente os arquivos de docs/ideation e prototypes/ux-v1,
+  incluindo os 12 wireframes SVG; substituir os registros temporários dessas
+  duas coleções.
