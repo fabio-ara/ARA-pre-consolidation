@@ -7,14 +7,14 @@ phase: processing
 
 counts:
   total: 558
-  identified: 536
-  processed: 16
-  discarded: 6
+  identified: 523
+  processed: 24
+  discarded: 11
   blocked: 0
   verified: 0
 
 domains:
-  finalidade_e_escopo: processing
+  finalidade_e_escopo: pending_audit
   fundamentos_educacionais: identified
   experiencias_e_sistemas_analisados: identified
   modelo_de_conteudo_e_recursos: identified
@@ -34,14 +34,13 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Segundo lote de finalidade e escopo concluído: licença confirmada, dois
-  placeholders acidentais descartados, gate administrativo superado separado
-  do gate conceitual vigente, política linguística reconciliada com DEC-002 e
-  hipótese de gênero preservada sem promoção a decisão. Quatro fontes foram
-  processadas e quatro descartadas.
+  Primeiro lote de pré-backlogs e manifestos concluído: oito fontes processadas
+  e cinco versões ou estruturas sem conteúdo residual descartadas. Sete
+  pendências únicas foram registradas no backlog público, sem promover
+  contagens, propostas agregadas ou alternativas a decisões.
 
 next_step: >-
-  Processar o primeiro lote de pré-backlogs e manifestos candidatos de
-  finalidade e escopo: SRC-000138, SRC-000144, SRC-000212 a SRC-000219 e
-  SRC-000224 a SRC-000226; preservar somente itens únicos e questões abertas,
-  sem promover contagens ou propostas em bloco ao backlog canônico.
+  Auditar o domínio finalidade e escopo: conferir as 35 fontes classificadas,
+  a coerência entre README.md, BACKLOG.yaml, DECISOES.md, METODO_DE_TRABALHO.md
+  e LICENSE, a ausência de referências privadas e o registro completo das
+  pendências; depois marcar o domínio como verificado ou registrar correções.
