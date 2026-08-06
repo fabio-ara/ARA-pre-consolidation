@@ -3,6 +3,7 @@ import json
 import os
 import urllib.request
 
+# Temporary bridge used only to trigger the current domain audit.
 repo = os.environ["GITHUB_REPOSITORY"]
 token = os.environ["GITHUB_TOKEN"]
 url = f"https://api.github.com/repos/{repo}/contents/.github/process-cross-domain-benchmark.py?ref=consolidation-control"
