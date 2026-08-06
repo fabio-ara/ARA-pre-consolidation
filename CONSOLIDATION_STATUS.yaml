@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 449
-  processed: 24
+  identified: 442
+  processed: 31
   discarded: 3
   blocked: 0
   verified: 82
@@ -40,16 +40,15 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Segundo lote de modelo de conteúdo e recursos concluído: treze fontes de contratos
-  e protótipos processadas e dois manifestos estruturais descartados. A conformidade
-  de esquemas e fronteiras conceituais em quatro famílias foi preservada como evidência
-  de protótipo, sem seleção de tecnologia, contrato aprovado, segurança de produção,
-  acessibilidade validada com usuários ou alegação de efetividade educacional. O
-  conteúdo foi deduplicado contra pendências públicas existentes, sem alteração do
-  repositório público.
+  Terceiro lote de modelo de conteúdo e recursos concluído: sete fontes do primeiro
+  protótipo processadas. Manifesto, microssequência, gramáticas específicas e script
+  de validação foram preservados como evidência de contrato experimental. A validação
+  registrada comprova somente conformidade estrutural dos documentos de exemplo e
+  não execução de runtime, segurança de produção, acessibilidade com usuários,
+  validade de revisão humana ou efetividade educacional. Nenhuma decisão nova foi criada.
 
 next_step: >-
-  Processar o terceiro lote de modelo de conteúdo e recursos: SRC-000370 a
-  SRC-000376; concluir os esquemas específicos e o validador do primeiro protótipo,
-  separando contrato experimental, gramática de domínio e resultado de validação
-  estrutural. Não iniciar ainda os artefatos da versão 0.2.
+  Processar o primeiro lote da versão 0.2 do protótipo de componentes: SRC-000377 a
+  SRC-000386; examinar README, quatro instâncias, quatro manifestos e cenários de
+  validação, comparando as mudanças com o protótipo 0.1 sem tratar migração, campos
+  adicionais, bibliotecas externas ou políticas de execução como contratos aprovados.
