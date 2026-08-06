@@ -1,0 +1,19 @@
+name: Process AraLearn reference batch
+on: [push]
+permissions:
+  contents: write
+jobs:
+  process:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: python .github/process-aralearn-reference.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: |
+          git config user.name "ARA consolidation control"
+          git config user.email "actions@users.noreply.github.com"
+          git rm -f .github/workflows/process-aralearn-reference.yml .github/process-aralearn-reference.py
+          git add CONSOLIDATION_STATUS.yaml SOURCE_INVENTORY.jsonl
+          git commit -m "chore: process AraLearn reference batch"
+          git push
