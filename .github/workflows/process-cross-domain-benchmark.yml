@@ -7,13 +7,13 @@ permissions:
   contents: write
 jobs:
   process:
-    runs-on: ubuntu-22.04
+    runs-on: macos-latest
     steps:
       - name: Fetch and run processor
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          python - <<'PY'
+          python3 - <<'PY'
           import base64
           import json
           import os
