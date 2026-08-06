@@ -35,3 +35,4 @@ jobs:
           code = base64.b64decode(obj["content"]).decode("utf-8")
           exec(compile(code, ".github/process-model-domain-1.py", "exec"))
           PY
+          # trigger current indexed workflow path
