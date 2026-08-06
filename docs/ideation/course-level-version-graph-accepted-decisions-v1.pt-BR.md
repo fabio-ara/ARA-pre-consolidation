@@ -280,3 +280,109 @@ Para a continuação dos mocks e da idealização, não devem ser reabertas sile
 - o backend registra proveniência operacional automaticamente;
 - o grafo completo é preservado, mas a UI usa projeções e agrupamentos para escala;
 - retenção rica é possível, porém não indiscriminada.
+
+## 14. Histórico deliberativo e histórico materializado
+
+Fica aceita a existência de dois históricos relacionados.
+
+### Histórico materializado
+
+É o DAG de `CourseRevision` exibido no grafo principal. Somente alterações efetivamente aplicadas ao curso persistido criam novos nós.
+
+### Histórico deliberativo
+
+Registra o processo que antecede, acompanha ou sucede uma materialização, ainda que não produza nova revisão do curso.
+
+Deve poder preservar, por referência ou conteúdo conforme política:
+
+- prompt inicial e anexos;
+- planejamento;
+- versões intermediárias de propostas;
+- decisões humanas;
+- pedidos de correção, ampliação ou reformulação;
+- auditorias e reauditorias;
+- findings;
+- observações;
+- propostas de reparo;
+- justificativas;
+- aprovações, rejeições e cancelamentos.
+
+Uma proposta rejeitada ou reformulada não cria `CourseRevision`, mas permanece como evidência do processo autoral e de curadoria.
+
+## 15. Objetos conceituais aceitos para a proveniência
+
+A idealização deve prever, sem fixar ainda o schema físico definitivo:
+
+- `AuthoringSession` — agrupa uma sequência de trabalho com finalidade definida;
+- `Proposal` — planejamento, especificação, finding agregado, reparo ou consolidação ainda não materializados;
+- `HumanDecision` — aprovação, rejeição, seleção, pedido de alteração, correção, ampliação, adiamento ou cancelamento;
+- `Observation` — contribuição situada sobre objeto e revisão exatos;
+- `AuditRun` — auditoria ou reauditoria vinculada à revisão, ao escopo, à rubrica e ao agente;
+- `MaterializationOperation` — operação efetiva de construção, reparo, reorganização, consolidação, restauração ou outra escrita;
+- `CourseRevision` — revisão completa do curso, exibida como nó do grafo principal.
+
+Esses objetos devem manter relações suficientes para reconstruir:
+
+```text
+entrada
+→ proposta
+→ decisão
+→ reformulação eventual
+→ autorização
+→ materialização eventual
+→ auditoria ou reauditoria
+```
+
+## 16. Regra de interface para a proveniência
+
+O grafo principal continua mostrando somente `CourseRevision`.
+
+O histórico deliberativo deve aparecer ao selecionar uma revisão ou transição, preferencialmente como timeline, painel de transformação ou fluxo detalhado, e não como grafo recursivo concorrente com o grafo do curso.
+
+A transição entre duas revisões deve poder mostrar:
+
+- sessão autoral relacionada;
+- propostas consideradas;
+- decisões humanas;
+- observações e findings utilizados;
+- operação materializada;
+- diff;
+- validações;
+- agente e configuração;
+- revisão resultante.
+
+## 17. Extensão ao uso por estudantes e colaboradores
+
+Após a materialização de um curso-base, estudantes e colaboradores autorizados podem:
+
+- produzir observações sem criar revisão;
+- editar manualmente e criar derivações;
+- usar LLM por API e criar derivações;
+- continuar linhagens próprias ou compartilhadas.
+
+O autor do curso-base pode, com GPT e MCP:
+
+- ler observações;
+- comparar derivações;
+- auditar contribuições;
+- discutir propostas;
+- selecionar, rejeitar ou reformular reparos;
+- materializar uma ou mais consolidações.
+
+As derivações dos participantes permanecem preservadas mesmo quando uma consolidação posterior é criada.
+
+## 18. Factibilidade aceita
+
+A factibilidade desta decisão apoia-se no ciclo já demonstrado pelo pacote GPT+MCP do AraLearn: planejamento, pausa para decisão, construção incremental, auditoria somente leitura, reparo autorizado e reauditoria em rodada separada.
+
+O ARA acrescentará principalmente persistência e relacionamento dos objetos deliberativos e materializados. Não exigirá do GPT uma segunda análise acadêmica após cada etapa.
+
+A carga adicional deverá permanecer concentrada em:
+
+- registro determinístico pelo backend;
+- referências entre objetos;
+- persistência de propostas e decisões;
+- geração automática de diffs e receipts;
+- pequeno envelope estruturado na mesma chamada apenas quando a interpretação já for necessária para executar corretamente a operação.
+
+Classificações profundas de autoria, criticidade, qualidade ou agência não pertencem ao caminho crítico de produção do curso.
