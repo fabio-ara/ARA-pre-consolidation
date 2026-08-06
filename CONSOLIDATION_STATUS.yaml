@@ -6,8 +6,8 @@ corpus:
 phase: inventory
 
 counts:
-  total: 363
-  identified: 363
+  total: 473
+  identified: 473
   processed: 0
   discarded: 0
   blocked: 0
@@ -34,11 +34,12 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Cento e sessenta e dois arquivos de research/data e dois esquemas de
-  research/schemas enumerados individualmente, mantendo a estrutura dos
-  conjuntos relacionados e sem análise substantiva.
+  Oitenta arquivos de protótipos, vinte e seis sínteses em português, duas
+  solicitações e dois modelos enumerados individualmente. A cobertura dos
+  385 blobs do snapshot Git foi verificada integralmente.
 
 next_step: >-
-  Enumerar individualmente os arquivos de research/prototypes, research/pt-BR,
-  research/requests e research/templates; depois verificar a cobertura
-  estrutural remanescente do snapshot Git.
+  Examinar os comentários das issues e as discussões dos pull requests no
+  recorte temporal aprovado; inventariar separadamente apenas os itens
+  substantivos, contabilizar os administrativos em conjunto e identificar
+  anexos ou imagens ainda não cobertos.
