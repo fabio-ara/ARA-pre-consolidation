@@ -4,7 +4,7 @@ permissions:
   contents: write
 jobs:
   process:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - run: python .github/process-aralearn-reference.py
