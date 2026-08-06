@@ -7,15 +7,15 @@ phase: processing
 
 counts:
   total: 558
-  identified: 514
-  processed: 9
+  identified: 507
+  processed: 16
   discarded: 0
   blocked: 0
   verified: 35
 
 domains:
   finalidade_e_escopo: verified
-  fundamentos_educacionais: processing
+  fundamentos_educacionais: pending_audit
   experiencias_e_sistemas_analisados: identified
   modelo_de_conteudo_e_recursos: identified
   autoria_e_curadoria: identified
@@ -34,13 +34,13 @@ blockers: []
 pending_decisions: []
 
 last_batch: >-
-  Primeiro lote de fundamentos educacionais concluído: nove fontes processadas.
-  Evidências, taxonomias, perfis e recomendações sobre prática, formatos de
-  resposta, tentativas, revelação, feedback, consequências e acessibilidade
-  foram consolidados em cinco pendências, sem criar decisões ou defaults.
+  Segundo lote de fundamentos educacionais concluído: sete fontes processadas.
+  Progressão e domínio, sequência e ritmo, revisão e intercalação, exemplos e
+  retomada, autonomia e adaptação, assistência por inteligência artificial e
+  orientação curricular foram consolidados em seis pendências sem decisões.
 
 next_step: >-
-  Processar o segundo lote de fundamentos educacionais: SRC-000321 a
-  SRC-000324, SRC-000452, SRC-000457 e SRC-000458; consolidar progressão,
-  sequenciamento, espaçamento, revisão, exemplos e scaffolding, mantendo
-  recomendações e perfis como candidatos até aprovação explícita.
+  Auditar o domínio fundamentos educacionais: conferir as 16 fontes processadas,
+  a coerência de PED-001 a PED-011, a separação entre evidência, recomendação e
+  decisão, a ausência de defaults universais ou referências privadas e a cobertura
+  das limitações; depois marcar o domínio como verificado ou registrar correções.
