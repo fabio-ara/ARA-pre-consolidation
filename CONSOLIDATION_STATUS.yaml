@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 423
-  processed: 50
+  identified: 411
+  processed: 62
   discarded: 3
   blocked: 0
   verified: 82
@@ -40,18 +40,23 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Segundo lote da versão 0.2 do protótipo de componentes concluído: quatro fixtures
-  0.1, quatro resultados esperados 0.2 e o script de migração processados. Nos casos
-  controlados, representação, atividade, resposta, critérios e retorno pedagógico são
-  preservados, enquanto a programação externaliza material protegido e as quatro
-  famílias recebem metadados e políticas operacionais 0.2. O script aceita somente
-  o contrato 0.1 e as quatro famílias conhecidas. O conjunto comprova conversão
-  experimental reprodutível dos fixtures, não compatibilidade geral nem decisão de
-  migração. EXP-005 já cobre a pendência pública e nenhuma decisão nova foi criada.
+  Terceiro lote da versão 0.2 do protótipo de componentes concluído: SRC-000396 a
+  SRC-000407, cobrindo metadados de pacote, dois relatórios, seis esquemas, testes de
+  contrato e o script de validação. O ambiente Node do experimento não declara
+  dependências externas e registra Node >=22; a validação Python usa jsonschema e
+  referencing disponíveis no runtime. Os relatórios registram 6/6 testes Node e 15/15
+  validações de esquema sem falhas no ambiente documentado. Esquemas e testes tornam
+  explícitas disponibilidade de capacidades, autoridade e localização da validação,
+  estado derivado, acessibilidade, limites de execução, segurança, funcionamento
+  offline, evidências e proveniência. O conteúdo foi tratado como evidência de
+  protótipo e deduplicado contra o backlog público existente, sem promover contratos,
+  arquitetura, políticas de execução ou escolhas tecnológicas. MODEL-001 a MODEL-005
+  permanecem pendentes de aprovação.
 
 next_step: >-
-  Processar o terceiro lote da versão 0.2 do protótipo de componentes: SRC-000396 a
-  SRC-000407; examinar metadados de pacote, relatórios de teste e validação, seis
-  esquemas, testes de contrato e script de validação, tratando dependências, resultados
-  de teste e políticas de execução como evidência do protótipo, não como contratos
-  ou escolhas tecnológicas aprovadas.
+  Processar as três sínteses restantes do domínio modelo de conteúdo e recursos:
+  SRC-000448, SRC-000449 e SRC-000462. Comparar o briefing de redesenho, a síntese dos
+  contratos 0.2 e adapters externos e a síntese dos protótipos por primeiros princípios
+  com MODEL-001 a MODEL-005 e com a evidência já consolidada, preservando recomendações
+  e resultados experimentais sem promover decisões nem antecipar o domínio de
+  implantação e interoperabilidade.
