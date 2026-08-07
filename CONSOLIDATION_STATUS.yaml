@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 405
-  processed: 0
+  identified: 398
+  processed: 7
   discarded: 0
   blocked: 0
   verified: 153
@@ -18,7 +18,7 @@ domains:
   fundamentos_educacionais: verified
   experiencias_e_sistemas_analisados: verified
   modelo_de_conteudo_e_recursos: verified
-  autoria_e_curadoria: identified
+  autoria_e_curadoria: processing
   interfaces_e_experiencia_de_uso: identified
   versionamento_e_proveniencia: identified
   colaboracao_e_acesso: identified
@@ -40,17 +40,21 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria do domínio modelo de conteúdo e recursos concluída. As 71 fontes primárias
-  foram conferidas quanto a cobertura, destino e classificação; os três manifestos sem
-  conteúdo intelectual residual tiveram o descarte confirmado antes da verificação.
-  Não foram encontradas perdas ou contradições. Protótipos, alternativas técnicas e
-  antigos itens de implementação permanecem não normativos; DEC-007 e SCOPE-002
-  preservam o gate de implementação. Todas as fontes do domínio estão verified e
-  MODEL-001 a MODEL-005 permanecem pendentes de aprovação.
+  Primeiro lote do domínio autoria e curadoria concluído: SRC-000059, SRC-000096,
+  SRC-000334 a SRC-000337 e SRC-000460. O ciclo canônico de autoria assistida e o
+  pacote P5 foram separados por autoridade: DEC-005 e DEC-006 já cobrem histórico
+  deliberativo e materializado e controle humano sobre aprovação e publicação; as
+  demais direções foram preservadas como pesquisa em AUTH-001, AUTH-002, CUR-001,
+  CUR-002 e PUB-001, com configuração modular de agentes deduplicada em AGENT-001.
+  O corpus P5 de 43 registros, as 67 dimensões candidatas e onze perfis foram
+  preservados como evidência, parâmetros e alternativas, sem promover schema,
+  arquitetura, interface, stack, provedor ou fluxo universal. Nenhuma nova decisão
+  foi criada.
 
 next_step: >-
-  Iniciar o domínio autoria e curadoria processando somente SRC-000059, SRC-000096,
-  SRC-000334 a SRC-000337 e SRC-000460. Consolidar primeiro o ciclo canônico de autoria
-  assistida e o pacote P5 sobre autoria, revisão, publicação e governança, separando
-  evidência, recomendações e decisões antes de confrontar as antigas issues de
-  implementação R2 ou artefatos administrativos.
+  Processar somente SRC-000049, SRC-000050 e SRC-000051, correspondentes às antigas
+  issues de implementação R2 sobre workspace e autoria, auditoria, reparo e publicação
+  e gateway de autoria assistida. Confrontá-las com AUTH-001, AUTH-002, CUR-001,
+  CUR-002, PUB-001, AGENT-001, DEC-005, DEC-006 e DEC-007, preservando invariantes
+  conceituais úteis e tratando releases, telas, contratos executáveis, dependências e
+  detalhes de implementação encerrados como evidência histórica não normativa.
