@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 411
-  processed: 62
+  identified: 408
+  processed: 65
   discarded: 3
   blocked: 0
   verified: 82
@@ -40,23 +40,20 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Terceiro lote da versão 0.2 do protótipo de componentes concluído: SRC-000396 a
-  SRC-000407, cobrindo metadados de pacote, dois relatórios, seis esquemas, testes de
-  contrato e o script de validação. O ambiente Node do experimento não declara
-  dependências externas e registra Node >=22; a validação Python usa jsonschema e
-  referencing disponíveis no runtime. Os relatórios registram 6/6 testes Node e 15/15
-  validações de esquema sem falhas no ambiente documentado. Esquemas e testes tornam
-  explícitas disponibilidade de capacidades, autoridade e localização da validação,
-  estado derivado, acessibilidade, limites de execução, segurança, funcionamento
-  offline, evidências e proveniência. O conteúdo foi tratado como evidência de
-  protótipo e deduplicado contra o backlog público existente, sem promover contratos,
-  arquitetura, políticas de execução ou escolhas tecnológicas. MODEL-001 a MODEL-005
-  permanecem pendentes de aprovação.
+  Três sínteses do domínio modelo de conteúdo e recursos processadas: SRC-000448,
+  SRC-000449 e SRC-000462. O briefing por primeiros princípios, a síntese contratual
+  0.2 e a síntese do primeiro protótipo confirmam a separação entre representação,
+  atividade, resposta, validação, retorno e runtime e a viabilidade experimental de
+  um envelope comum estreito com gramáticas disciplinares próprias. Resultados de
+  validação estrutural e compatibilidade de fronteira foram preservados como evidência
+  limitada; stacks, bibliotecas, runtimes e políticas não foram promovidos a decisão.
+  O conteúdo foi deduplicado contra MODEL-003, EXP-005, EXP-008, EXP-009, PED-004,
+  VAL-002 e INF-001. Detalhes de execução de adapters permanecem para implantação e
+  interoperabilidade. Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Processar as três sínteses restantes do domínio modelo de conteúdo e recursos:
-  SRC-000448, SRC-000449 e SRC-000462. Comparar o briefing de redesenho, a síntese dos
-  contratos 0.2 e adapters externos e a síntese dos protótipos por primeiros princípios
-  com MODEL-001 a MODEL-005 e com a evidência já consolidada, preservando recomendações
-  e resultados experimentais sem promover decisões nem antecipar o domínio de
-  implantação e interoperabilidade.
+  Processar as três fontes ainda identificadas no domínio modelo de conteúdo e recursos:
+  SRC-000045, SRC-000047 e SRC-000148. Examinar as issues #61 e #63 e o documento de
+  modularidade do kernel de recursos, comparando-os com MODEL-001 a MODEL-005 e com a
+  evidência de protótipos já consolidada; preservar alternativas e pendências sem
+  promover decisões e, ao final, verificar se o domínio está pronto para auditoria.
