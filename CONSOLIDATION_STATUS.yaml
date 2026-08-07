@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 408
-  processed: 65
+  identified: 405
+  processed: 68
   discarded: 3
   blocked: 0
   verified: 82
@@ -40,20 +40,20 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Três sínteses do domínio modelo de conteúdo e recursos processadas: SRC-000448,
-  SRC-000449 e SRC-000462. O briefing por primeiros princípios, a síntese contratual
-  0.2 e a síntese do primeiro protótipo confirmam a separação entre representação,
-  atividade, resposta, validação, retorno e runtime e a viabilidade experimental de
-  um envelope comum estreito com gramáticas disciplinares próprias. Resultados de
-  validação estrutural e compatibilidade de fronteira foram preservados como evidência
-  limitada; stacks, bibliotecas, runtimes e políticas não foram promovidos a decisão.
-  O conteúdo foi deduplicado contra MODEL-003, EXP-005, EXP-008, EXP-009, PED-004,
-  VAL-002 e INF-001. Detalhes de execução de adapters permanecem para implantação e
-  interoperabilidade. Nenhuma nova decisão foi criada.
+  Fontes SRC-000045, SRC-000047 e SRC-000148 processadas. As issues de implementação
+  R0 e R1 foram tratadas como propostas técnicas de um programa encerrado no retorno
+  ao pré-desenvolvimento; identidade, relações, separação de responsabilidades,
+  capacidades, offline e acessibilidade foram deduplicados contra o backlog vigente,
+  sem preservar releases, stack ou critérios executáveis como orientação atual. O
+  documento de modularidade foi preservado como alternativa de desenho: kernel,
+  packages, registry, estratégias de carregamento e estrutura de repositório não foram
+  promovidos a decisões. Não restam fontes primárias do domínio em estado identified;
+  MODEL-001 a MODEL-005 permanecem pendentes de aprovação.
 
 next_step: >-
-  Processar as três fontes ainda identificadas no domínio modelo de conteúdo e recursos:
-  SRC-000045, SRC-000047 e SRC-000148. Examinar as issues #61 e #63 e o documento de
-  modularidade do kernel de recursos, comparando-os com MODEL-001 a MODEL-005 e com a
-  evidência de protótipos já consolidada; preservar alternativas e pendências sem
-  promover decisões e, ao final, verificar se o domínio está pronto para auditoria.
+  Auditar o domínio modelo de conteúdo e recursos: conferir a cobertura de todas as
+  fontes primárias do domínio, a materialização e deduplicação em BACKLOG.yaml e
+  DECISOES.md, a coerência com DEC-007 e SCOPE-002 e a classificação de MODEL-001 a
+  MODEL-005. Se a auditoria confirmar ausência de perda ou contradição, marcar as fontes
+  do domínio como verified e o domínio como verified com as decisões pendentes ainda
+  explícitas, sem decidir esses itens em nome de Fabio.
