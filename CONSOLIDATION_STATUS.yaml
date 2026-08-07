@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 398
-  processed: 7
+  identified: 395
+  processed: 10
   discarded: 0
   blocked: 0
   verified: 153
@@ -40,21 +40,19 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote do domínio autoria e curadoria concluído: SRC-000059, SRC-000096,
-  SRC-000334 a SRC-000337 e SRC-000460. O ciclo canônico de autoria assistida e o
-  pacote P5 foram separados por autoridade: DEC-005 e DEC-006 já cobrem histórico
-  deliberativo e materializado e controle humano sobre aprovação e publicação; as
-  demais direções foram preservadas como pesquisa em AUTH-001, AUTH-002, CUR-001,
-  CUR-002 e PUB-001, com configuração modular de agentes deduplicada em AGENT-001.
-  O corpus P5 de 43 registros, as 67 dimensões candidatas e onze perfis foram
-  preservados como evidência, parâmetros e alternativas, sem promover schema,
-  arquitetura, interface, stack, provedor ou fluxo universal. Nenhuma nova decisão
-  foi criada.
+  Antigas issues R2 SRC-000049, SRC-000050 e SRC-000051 processadas. As três estavam
+  encerradas como not_planned e pertenciam ao programa de implementação superado. Os
+  invariantes conceituais úteis sobre autoria privada e escopo, auditoria sem mutação,
+  reparo autorizado, resolução rastreável, reauditoria, publicação explícita, contexto
+  delimitado, papéis e estado persistido independente do chat já estão cobertos por
+  AUTH-001, AUTH-002, CUR-001, CUR-002, PUB-001, AGENT-001, PROV-001 e decisões vigentes.
+  Releases, telas, gateways, OAuth, contratos executáveis, filas, identificadores de
+  requisição, fixtures e dependências não foram promovidos. Nenhuma alteração pública
+  ou nova decisão foi necessária.
 
 next_step: >-
-  Processar somente SRC-000049, SRC-000050 e SRC-000051, correspondentes às antigas
-  issues de implementação R2 sobre workspace e autoria, auditoria, reparo e publicação
-  e gateway de autoria assistida. Confrontá-las com AUTH-001, AUTH-002, CUR-001,
-  CUR-002, PUB-001, AGENT-001, DEC-005, DEC-006 e DEC-007, preservando invariantes
-  conceituais úteis e tratando releases, telas, contratos executáveis, dependências e
-  detalhes de implementação encerrados como evidência histórica não normativa.
+  Processar somente SRC-000201, SRC-000203 e SRC-000206 a SRC-000208, registros
+  estruturados de candidatos para administração, objetos, papéis, escopos e terminologia
+  de agentes. Confrontá-los com AGENT-001, AUTH-001 e AUTH-002, preservando distinções
+  conceituais e questões úteis sem promover taxonomias, objetos, permissões ou operações
+  administrativas a contratos ou decisões de produto.
