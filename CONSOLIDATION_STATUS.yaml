@@ -8,16 +8,16 @@ phase: processing
 counts:
   total: 558
   identified: 405
-  processed: 68
-  discarded: 3
+  processed: 0
+  discarded: 0
   blocked: 0
-  verified: 82
+  verified: 153
 
 domains:
   finalidade_e_escopo: verified
   fundamentos_educacionais: verified
   experiencias_e_sistemas_analisados: verified
-  modelo_de_conteudo_e_recursos: processing
+  modelo_de_conteudo_e_recursos: verified
   autoria_e_curadoria: identified
   interfaces_e_experiencia_de_uso: identified
   versionamento_e_proveniencia: identified
@@ -40,20 +40,17 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Fontes SRC-000045, SRC-000047 e SRC-000148 processadas. As issues de implementação
-  R0 e R1 foram tratadas como propostas técnicas de um programa encerrado no retorno
-  ao pré-desenvolvimento; identidade, relações, separação de responsabilidades,
-  capacidades, offline e acessibilidade foram deduplicados contra o backlog vigente,
-  sem preservar releases, stack ou critérios executáveis como orientação atual. O
-  documento de modularidade foi preservado como alternativa de desenho: kernel,
-  packages, registry, estratégias de carregamento e estrutura de repositório não foram
-  promovidos a decisões. Não restam fontes primárias do domínio em estado identified;
+  Auditoria do domínio modelo de conteúdo e recursos concluída. As 71 fontes primárias
+  foram conferidas quanto a cobertura, destino e classificação; os três manifestos sem
+  conteúdo intelectual residual tiveram o descarte confirmado antes da verificação.
+  Não foram encontradas perdas ou contradições. Protótipos, alternativas técnicas e
+  antigos itens de implementação permanecem não normativos; DEC-007 e SCOPE-002
+  preservam o gate de implementação. Todas as fontes do domínio estão verified e
   MODEL-001 a MODEL-005 permanecem pendentes de aprovação.
 
 next_step: >-
-  Auditar o domínio modelo de conteúdo e recursos: conferir a cobertura de todas as
-  fontes primárias do domínio, a materialização e deduplicação em BACKLOG.yaml e
-  DECISOES.md, a coerência com DEC-007 e SCOPE-002 e a classificação de MODEL-001 a
-  MODEL-005. Se a auditoria confirmar ausência de perda ou contradição, marcar as fontes
-  do domínio como verified e o domínio como verified com as decisões pendentes ainda
-  explícitas, sem decidir esses itens em nome de Fabio.
+  Iniciar o domínio autoria e curadoria processando somente SRC-000059, SRC-000096,
+  SRC-000334 a SRC-000337 e SRC-000460. Consolidar primeiro o ciclo canônico de autoria
+  assistida e o pacote P5 sobre autoria, revisão, publicação e governança, separando
+  evidência, recomendações e decisões antes de confrontar as antigas issues de
+  implementação R2 ou artefatos administrativos.
