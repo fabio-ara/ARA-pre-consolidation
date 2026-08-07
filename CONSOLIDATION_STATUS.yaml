@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 432
-  processed: 41
+  identified: 423
+  processed: 50
   discarded: 3
   blocked: 0
   verified: 82
@@ -40,17 +40,18 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote da versão 0.2 do protótipo de componentes concluído: README, quatro
-  instâncias, quatro manifestos e cenários de validação processados em comparação com
-  o protótipo 0.1. A revisão explicita separações entre validade, satisfação de critérios,
-  disponibilidade de capacidade, autoridade e evidências, além de estado derivado e
-  acessibilidade por operação. Essas formulações foram preservadas como evidência
-  experimental e na pendência VAL-002; migração, campos adicionados, bibliotecas,
-  runtimes, limites e políticas de execução não foram promovidos a contratos. Nenhuma
-  decisão nova foi criada.
+  Segundo lote da versão 0.2 do protótipo de componentes concluído: quatro fixtures
+  0.1, quatro resultados esperados 0.2 e o script de migração processados. Nos casos
+  controlados, representação, atividade, resposta, critérios e retorno pedagógico são
+  preservados, enquanto a programação externaliza material protegido e as quatro
+  famílias recebem metadados e políticas operacionais 0.2. O script aceita somente
+  o contrato 0.1 e as quatro famílias conhecidas. O conjunto comprova conversão
+  experimental reprodutível dos fixtures, não compatibilidade geral nem decisão de
+  migração. EXP-005 já cobre a pendência pública e nenhuma decisão nova foi criada.
 
 next_step: >-
-  Processar o segundo lote da versão 0.2 do protótipo de componentes: SRC-000387 a
-  SRC-000395; examinar quatro resultados esperados da migração, quatro fixtures 0.1 e
-  o script de migração, tratando-os como evidência de compatibilidade experimental,
-  não como decisão de migração ou contrato aprovado.
+  Processar o terceiro lote da versão 0.2 do protótipo de componentes: SRC-000396 a
+  SRC-000407; examinar metadados de pacote, relatórios de teste e validação, seis
+  esquemas, testes de contrato e script de validação, tratando dependências, resultados
+  de teste e políticas de execução como evidência do protótipo, não como contratos
+  ou escolhas tecnológicas aprovadas.
