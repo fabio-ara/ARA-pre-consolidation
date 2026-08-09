@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 368
-  processed: 15
+  identified: 353
+  processed: 30
   discarded: 1
   blocked: 0
   verified: 174
@@ -40,26 +40,25 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Camada textual e estruturada remanescente de interfaces e experiência de uso
-  processada em sete fontes: SRC-000061, SRC-000130, SRC-000131, SRC-000135,
-  SRC-000152, SRC-000155 e SRC-000229. A fonte posterior de grafo e navegação
-  confirmou DEC-003, DEC-004 e DEC-005 sem ampliar silenciosamente seu alcance;
-  projeções para grafos extensos e as alternativas Mermaid, Cytoscape.js e React Flow
-  combinado a ELK foram preservadas em UX-002, sem seleção de renderizador ou layout.
-  Acessibilidade e sistema de design foram consolidados em UX-004, no estado
-  pending_research, mantendo WCAG 2.2 AA, controles de 44 px, tokens, componentes e
-  política de localização como candidatos, não requisitos aprovados. Administração de
-  agentes, 37 telas candidatas e estados transversais foram deduplicados contra UX-002,
-  UX-003, UX-004, AGENT-001 e itens correlatos. Questões de acesso e versionamento foram
-  destinadas aos domínios próprios. Nenhuma nova decisão foi criada.
+  Lote visual e de protótipo de interfaces e experiência de uso processado em 15 fontes:
+  SRC-000014 e SRC-000158 a SRC-000171. Os doze wireframes e o protótipo estrutural
+  foram preservados publicamente como explorações não normativas, com autoridade
+  explicitamente separada das decisões vigentes. Nenhum wireframe histórico correspondia
+  integralmente à composição aprovada de DEC-003; por isso foi materializado um esquema
+  público específico, limitado ao painel esquerdo de pastas e cursos visíveis e ao grafo
+  principal de revisões completas do curso conforme DEC-003 e DEC-004, sem escolhas
+  adicionais de layout, stack, interação ou permissões. DECISOES.md passou a apontar para
+  esse artefato. O grafo de dependências interno, navegação candidata, MCP, perfis, fluxos
+  de pesquisa e administração, valores visuais e código do protótipo permanecem evidência
+  ou alternativas, não decisões. Nenhuma nova decisão de produto foi criada.
 
 next_step: >-
-  Processar somente SRC-000014 e SRC-000158 a SRC-000171, lote visual e de protótipo
-  do domínio interfaces e experiência de uso. Examinar o protótipo estático, os doze
-  wireframes e seus arquivos de comportamento e estilos contra SRC-000229, UX-001,
-  UX-002, UX-003, UX-004, VER-001, DEC-003, DEC-004, DEC-005 e DEC-007. Identificar e
-  preservar publicamente somente artefatos visuais compatíveis com decisões aprovadas
-  ou necessários como evidência claramente rotulada; não tratar navegação candidata,
-  MCP, parâmetros, fluxos de pesquisa ou administração nem detalhes visuais do protótipo
-  como decisões. Depois do lote, se não restarem outras fontes primárias identified no
-  domínio, registrar a auditoria de interfaces e experiência de uso como próximo passo.
+  Auditar o domínio interfaces e experiência de uso, conferindo as 31 fontes primárias
+  SRC-000014, SRC-000023, SRC-000061, SRC-000092, SRC-000130, SRC-000131, SRC-000133,
+  SRC-000135, SRC-000152, SRC-000155, SRC-000158 a SRC-000171, SRC-000229 e
+  SRC-000310 a SRC-000315. Verificar cobertura e destinos, a preservação dos artefatos
+  visuais e do protótipo, a distinção entre o esquema aprovado e as explorações não
+  normativas, coerência de UX-001 a UX-004 e VER-001 com DEC-003 a DEC-007, ausência de
+  promoção indevida de navegação, MCP, política trilíngue, WCAG, tokens, bibliotecas de
+  grafo ou fluxos candidatos e ausência de referência privada no diretório público de
+  interfaces.
