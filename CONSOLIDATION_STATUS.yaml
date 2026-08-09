@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 390
-  processed: 15
-  discarded: 0
+  identified: 385
+  processed: 18
+  discarded: 2
   blocked: 0
   verified: 153
 
@@ -40,22 +40,21 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Cinco registros estruturados de candidatos para configuração e governança de agentes
-  processados: SRC-000201, SRC-000203 e SRC-000206 a SRC-000208. Ações administrativas,
-  objetos, papéis, escopos e terminologia foram tratados como estruturas exploratórias,
-  não contratos. Foram preservadas as distinções entre perfil administrativo e identidade
-  do modelo ou conta, leitura de contexto e permissão de escrita, disponibilidade de
-  capacidade e autoridade, evidência de avaliação e ativação, e registro persistido de
-  operação e transcrição do chat. O conteúdo foi deduplicado contra SCOPE-004, AGENT-001,
-  AUTH-001, AUTH-002, CUR-001 e PUB-001. Nenhuma taxonomia, entidade, permissão, termo
-  público ou operação administrativa foi promovida a decisão e nenhuma alteração pública
-  foi necessária.
+  Fontes SRC-000004 a SRC-000006, SRC-000107 e SRC-000108 processadas. CONTRIBUTING.pt-BR
+  e os templates de work item e pull request preservam princípios de rastreabilidade,
+  escopo, evidência, validação e documentação já materializados em GOV-001 e
+  METODO_DE_TRABALHO.md. As versões em inglês e pt-PT foram descartadas como duplicações
+  sem conteúdo exclusivo. Regras antigas de issues como backlog canônico, documentação
+  trilíngue, engenharia documental em inglês, issue aprovada para todo trabalho e
+  convenções específicas de branch, commit e checklist foram tratadas como superadas por
+  DEC-001, DEC-002 e DEC-007. Licenciamento e marca permanecem para suas fontes próprias.
+  Nenhuma alteração pública ou nova decisão foi necessária.
 
 next_step: >-
-  Processar somente SRC-000004 a SRC-000006, SRC-000107 e SRC-000108, correspondentes
-  às três versões de CONTRIBUTING e aos templates de work item e pull request. Tratar
-  esses arquivos como artefatos de governança e autoria do repositório, identificar
-  duplicações linguísticas e separar regras procedimentais ainda úteis de convenções
-  do processo anterior. Confrontar com GOV-001, SCOPE-002 e METODO_DE_TRABALHO.md,
-  sem transferir processo histórico para o repositório público. Deixar SRC-000113,
-  o ADR do gateway MCP, para lote técnico posterior.
+  Processar somente SRC-000113, o ADR antigo do gateway MCP para autoria assistida.
+  Confrontá-lo com AGENT-001, AUTH-001, AUTH-002, CUR-001, DEC-006, DEC-007 e as
+  pendências técnicas correlatas, preservando apenas fronteiras conceituais úteis sobre
+  autorização, contexto, operações e autoridade. Não promover MCP, OAuth, contratos de
+  ferramentas, topologia de gateway, stack ou integração com cliente a arquitetura
+  aprovada. Se não restarem outras fontes primárias identified no domínio após esse lote,
+  registrar como próximo passo a auditoria de autoria e curadoria.
