@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 395
-  processed: 10
+  identified: 390
+  processed: 15
   discarded: 0
   blocked: 0
   verified: 153
@@ -40,19 +40,22 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Antigas issues R2 SRC-000049, SRC-000050 e SRC-000051 processadas. As três estavam
-  encerradas como not_planned e pertenciam ao programa de implementação superado. Os
-  invariantes conceituais úteis sobre autoria privada e escopo, auditoria sem mutação,
-  reparo autorizado, resolução rastreável, reauditoria, publicação explícita, contexto
-  delimitado, papéis e estado persistido independente do chat já estão cobertos por
-  AUTH-001, AUTH-002, CUR-001, CUR-002, PUB-001, AGENT-001, PROV-001 e decisões vigentes.
-  Releases, telas, gateways, OAuth, contratos executáveis, filas, identificadores de
-  requisição, fixtures e dependências não foram promovidos. Nenhuma alteração pública
-  ou nova decisão foi necessária.
+  Cinco registros estruturados de candidatos para configuração e governança de agentes
+  processados: SRC-000201, SRC-000203 e SRC-000206 a SRC-000208. Ações administrativas,
+  objetos, papéis, escopos e terminologia foram tratados como estruturas exploratórias,
+  não contratos. Foram preservadas as distinções entre perfil administrativo e identidade
+  do modelo ou conta, leitura de contexto e permissão de escrita, disponibilidade de
+  capacidade e autoridade, evidência de avaliação e ativação, e registro persistido de
+  operação e transcrição do chat. O conteúdo foi deduplicado contra SCOPE-004, AGENT-001,
+  AUTH-001, AUTH-002, CUR-001 e PUB-001. Nenhuma taxonomia, entidade, permissão, termo
+  público ou operação administrativa foi promovida a decisão e nenhuma alteração pública
+  foi necessária.
 
 next_step: >-
-  Processar somente SRC-000201, SRC-000203 e SRC-000206 a SRC-000208, registros
-  estruturados de candidatos para administração, objetos, papéis, escopos e terminologia
-  de agentes. Confrontá-los com AGENT-001, AUTH-001 e AUTH-002, preservando distinções
-  conceituais e questões úteis sem promover taxonomias, objetos, permissões ou operações
-  administrativas a contratos ou decisões de produto.
+  Processar somente SRC-000004 a SRC-000006, SRC-000107 e SRC-000108, correspondentes
+  às três versões de CONTRIBUTING e aos templates de work item e pull request. Tratar
+  esses arquivos como artefatos de governança e autoria do repositório, identificar
+  duplicações linguísticas e separar regras procedimentais ainda úteis de convenções
+  do processo anterior. Confrontar com GOV-001, SCOPE-002 e METODO_DE_TRABALHO.md,
+  sem transferir processo histórico para o repositório público. Deixar SRC-000113,
+  o ADR do gateway MCP, para lote técnico posterior.
