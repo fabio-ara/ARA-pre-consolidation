@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 385
-  processed: 18
+  identified: 384
+  processed: 19
   discarded: 2
   blocked: 0
   verified: 153
@@ -40,21 +40,24 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Fontes SRC-000004 a SRC-000006, SRC-000107 e SRC-000108 processadas. CONTRIBUTING.pt-BR
-  e os templates de work item e pull request preservam princípios de rastreabilidade,
-  escopo, evidência, validação e documentação já materializados em GOV-001 e
-  METODO_DE_TRABALHO.md. As versões em inglês e pt-PT foram descartadas como duplicações
-  sem conteúdo exclusivo. Regras antigas de issues como backlog canônico, documentação
-  trilíngue, engenharia documental em inglês, issue aprovada para todo trabalho e
-  convenções específicas de branch, commit e checklist foram tratadas como superadas por
-  DEC-001, DEC-002 e DEC-007. Licenciamento e marca permanecem para suas fontes próprias.
-  Nenhuma alteração pública ou nova decisão foi necessária.
+  SRC-000113, o ADR antigo do gateway MCP para autoria assistida, processado. A proposta
+  técnica histórica de gateway dedicado não foi herdada como arquitetura. Foram
+  preservadas somente fronteiras conceituais já cobertas por AGENT-001, AUTH-001,
+  AUTH-002, CUR-001 e DEC-006: autorização explícita, contexto e operações delimitados,
+  ausência de autoridade derivada da memória do chat, proveniência da operação e
+  proibição de aprovação ou publicação implícita. MCP, OIDC/OAuth, contratos de
+  ferramentas, request IDs, expected revisions, paginação, receipts, integração de
+  clientes e topologia permanecem alternativas técnicas não aprovadas sob DEC-007.
+  Nenhuma alteração pública ou nova decisão foi necessária. A auditoria do inventário
+  removeu uma alteração colateral de redação fora do lote; o resultado líquido contém
+  somente a mudança de SRC-000113. Com isso, as 21 fontes primárias do domínio estão
+  processadas ou descartadas, sem fonte primária identified remanescente.
 
 next_step: >-
-  Processar somente SRC-000113, o ADR antigo do gateway MCP para autoria assistida.
-  Confrontá-lo com AGENT-001, AUTH-001, AUTH-002, CUR-001, DEC-006, DEC-007 e as
-  pendências técnicas correlatas, preservando apenas fronteiras conceituais úteis sobre
-  autorização, contexto, operações e autoridade. Não promover MCP, OAuth, contratos de
-  ferramentas, topologia de gateway, stack ou integração com cliente a arquitetura
-  aprovada. Se não restarem outras fontes primárias identified no domínio após esse lote,
-  registrar como próximo passo a auditoria de autoria e curadoria.
+  Auditar o domínio autoria e curadoria, conferindo as 21 fontes primárias SRC-000004 a
+  SRC-000006, SRC-000049 a SRC-000051, SRC-000059, SRC-000096, SRC-000107, SRC-000108,
+  SRC-000113, SRC-000201, SRC-000203, SRC-000206 a SRC-000208, SRC-000334 a SRC-000337
+  e SRC-000460. Verificar cobertura, destinos, classificações, os dois descartes por
+  duplicação linguística, coerência de AUTH-001, AUTH-002, CUR-001, CUR-002, PUB-001 e
+  AGENT-001 com DEC-005, DEC-006 e DEC-007 e ausência de promoção indevida de taxonomias,
+  schemas, stack, MCP ou antigos fluxos de implementação.
