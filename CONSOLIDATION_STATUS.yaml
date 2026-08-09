@@ -8,17 +8,17 @@ phase: processing
 counts:
   total: 558
   identified: 384
-  processed: 19
-  discarded: 2
+  processed: 0
+  discarded: 0
   blocked: 0
-  verified: 153
+  verified: 174
 
 domains:
   finalidade_e_escopo: verified
   fundamentos_educacionais: verified
   experiencias_e_sistemas_analisados: verified
   modelo_de_conteudo_e_recursos: verified
-  autoria_e_curadoria: processing
+  autoria_e_curadoria: verified
   interfaces_e_experiencia_de_uso: identified
   versionamento_e_proveniencia: identified
   colaboracao_e_acesso: identified
@@ -40,24 +40,23 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  SRC-000113, o ADR antigo do gateway MCP para autoria assistida, processado. A proposta
-  técnica histórica de gateway dedicado não foi herdada como arquitetura. Foram
-  preservadas somente fronteiras conceituais já cobertas por AGENT-001, AUTH-001,
-  AUTH-002, CUR-001 e DEC-006: autorização explícita, contexto e operações delimitados,
-  ausência de autoridade derivada da memória do chat, proveniência da operação e
-  proibição de aprovação ou publicação implícita. MCP, OIDC/OAuth, contratos de
-  ferramentas, request IDs, expected revisions, paginação, receipts, integração de
-  clientes e topologia permanecem alternativas técnicas não aprovadas sob DEC-007.
-  Nenhuma alteração pública ou nova decisão foi necessária. A auditoria do inventário
-  removeu uma alteração colateral de redação fora do lote; o resultado líquido contém
-  somente a mudança de SRC-000113. Com isso, as 21 fontes primárias do domínio estão
-  processadas ou descartadas, sem fonte primária identified remanescente.
+  Auditoria do domínio autoria e curadoria concluída sobre 21 fontes primárias. As
+  19 fontes relevantes tiveram cobertura, destinos e materialização conferidos; os
+  dois descartes por duplicação linguística foram confirmados sem conteúdo residual
+  exclusivo. AUTH-001, AUTH-002, CUR-001, CUR-002, PUB-001 e AGENT-001 permanecem
+  coerentes com DEC-005, DEC-006 e DEC-007. Não houve promoção indevida de taxonomias,
+  schemas, stack, MCP, OAuth, gateway ou antigos fluxos de implementação. O pacote P5
+  permanece evidência, parâmetros e alternativas, não decisão; o ADR MCP permanece
+  precedente conceitual, não arquitetura. Nenhuma alteração pública ou nova decisão foi
+  necessária. As 21 fontes foram verificadas e o domínio foi concluído como verified.
 
 next_step: >-
-  Auditar o domínio autoria e curadoria, conferindo as 21 fontes primárias SRC-000004 a
-  SRC-000006, SRC-000049 a SRC-000051, SRC-000059, SRC-000096, SRC-000107, SRC-000108,
-  SRC-000113, SRC-000201, SRC-000203, SRC-000206 a SRC-000208, SRC-000334 a SRC-000337
-  e SRC-000460. Verificar cobertura, destinos, classificações, os dois descartes por
-  duplicação linguística, coerência de AUTH-001, AUTH-002, CUR-001, CUR-002, PUB-001 e
-  AGENT-001 com DEC-005, DEC-006 e DEC-007 e ausência de promoção indevida de taxonomias,
-  schemas, stack, MCP ou antigos fluxos de implementação.
+  Processar somente SRC-000023, SRC-000092, SRC-000133 e SRC-000310 a SRC-000315,
+  núcleo documental e estruturado do antigo pacote de UX: issue de especificação,
+  pull request integrado, especificação UX, manifesto, auditoria, mensagens críticas,
+  síntese de decisões, matriz jornada-tela e contratos de tela. Confrontar o conteúdo
+  com DEC-003, DEC-004, DEC-007, PED-004, LANG-001, LANG-002 e pendências correlatas,
+  preservando princípios, estados e evidências úteis sem herdar automaticamente a
+  navegação completa, os 36 contratos de tela, MCP, política trilíngue, tokens visuais
+  ou qualquer autorização de implementação. Deixar protótipo, wireframes e demais
+  artefatos visuais para lote visual subsequente.
