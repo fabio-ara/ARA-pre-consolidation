@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 384
-  processed: 0
-  discarded: 0
+  identified: 375
+  processed: 8
+  discarded: 1
   blocked: 0
   verified: 174
 
@@ -19,7 +19,7 @@ domains:
   experiencias_e_sistemas_analisados: verified
   modelo_de_conteudo_e_recursos: verified
   autoria_e_curadoria: verified
-  interfaces_e_experiencia_de_uso: identified
+  interfaces_e_experiencia_de_uso: processing
   versionamento_e_proveniencia: identified
   colaboracao_e_acesso: identified
   parametrizacao_e_experimentacao: identified
@@ -40,23 +40,28 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria do domínio autoria e curadoria concluída sobre 21 fontes primárias. As
-  19 fontes relevantes tiveram cobertura, destinos e materialização conferidos; os
-  dois descartes por duplicação linguística foram confirmados sem conteúdo residual
-  exclusivo. AUTH-001, AUTH-002, CUR-001, CUR-002, PUB-001 e AGENT-001 permanecem
-  coerentes com DEC-005, DEC-006 e DEC-007. Não houve promoção indevida de taxonomias,
-  schemas, stack, MCP, OAuth, gateway ou antigos fluxos de implementação. O pacote P5
-  permanece evidência, parâmetros e alternativas, não decisão; o ADR MCP permanece
-  precedente conceitual, não arquitetura. Nenhuma alteração pública ou nova decisão foi
-  necessária. As 21 fontes foram verificadas e o domínio foi concluído como verified.
+  Núcleo documental e estruturado do antigo pacote UX processado em nove fontes:
+  SRC-000023, SRC-000092, SRC-000133 e SRC-000310 a SRC-000315. O manifesto
+  SRC-000310 foi descartado como enumeração estrutural redundante; as outras oito
+  fontes foram processadas como evidência, propostas e artefatos de especificação.
+  A cobertura interna de 36 contratos de tela, 15 jornadas e 22 mensagens não foi
+  tratada como validação do produto, pois a própria auditoria registra ausência de
+  avaliação com usuários. O repositório público recebeu UX-002 e UX-003 em
+  pending_research para preservar arquitetura de informação responsiva e divulgação
+  progressiva, além de estados transversais, recuperação e transparência operacional.
+  DEC-003 e DEC-004 permanecem as únicas decisões vigentes de interface neste recorte;
+  navegação completa, contratos de tela, MCP, política trilíngue, tokens, alvo WCAG e
+  handoff de implementação não foram promovidos. DEC-007 continua prevalecendo sobre
+  qualquer autorização de desenvolvimento.
 
 next_step: >-
-  Processar somente SRC-000023, SRC-000092, SRC-000133 e SRC-000310 a SRC-000315,
-  núcleo documental e estruturado do antigo pacote de UX: issue de especificação,
-  pull request integrado, especificação UX, manifesto, auditoria, mensagens críticas,
-  síntese de decisões, matriz jornada-tela e contratos de tela. Confrontar o conteúdo
-  com DEC-003, DEC-004, DEC-007, PED-004, LANG-001, LANG-002 e pendências correlatas,
-  preservando princípios, estados e evidências úteis sem herdar automaticamente a
-  navegação completa, os 36 contratos de tela, MCP, política trilíngue, tokens visuais
-  ou qualquer autorização de implementação. Deixar protótipo, wireframes e demais
-  artefatos visuais para lote visual subsequente.
+  Processar somente SRC-000061, SRC-000130, SRC-000131, SRC-000135, SRC-000152,
+  SRC-000155 e SRC-000229, camada textual e estruturada remanescente de interfaces e
+  experiência de uso antes dos artefatos visuais. Confrontar a issue canônica posterior
+  do grafo e navegação com DEC-003, DEC-004 e DEC-005; tratar acessibilidade/localização,
+  design system, administração de perfis de agente, rascunho de telas, catálogo e opções
+  de renderização como evidências, requisitos candidatos ou alternativas conforme sua
+  autoridade. Não promover política trilíngue, WCAG como requisito aprovado, tokens,
+  catálogo de telas, MCP, bibliotecas de grafo ou mecanismos de acesso a decisões de
+  produto. Após esse lote, deixar SRC-000014 e SRC-000158 a SRC-000171 para o lote
+  visual e de protótipo.
