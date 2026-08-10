@@ -44,14 +44,14 @@ last_batch: >-
   A fonte é uma issue de governança de propriedade intelectual e marcas e não registra
   resultado jurídico concluído. A separação entre software, documentação, conteúdos
   educacionais, dados de pesquisa, materiais de terceiros, contribuições e identidade
-  já está preservada em LICENCIAMENTO.md; a política de identidade, a ausência de alegação
-  de marca registrada e as pendências de buscas e titularidade já estão em MARCAS.md e
-  PROV-003. O conteúdo residual sobre inventário datado de antecedentes, incluindo
-  AraLearn e AraTalk, e possíveis vínculos universitários ou empregatícios foi destinado
-  à análise de titularidade, sem publicação de correspondência sensível nem opinião
-  jurídica definitiva. A exigência histórica de políticas públicas trilíngues foi
-  considerada superada por DEC-002. Nenhuma alteração pública ou nova decisão foi
-  necessária. Não restam fontes primárias identified no domínio.
+  já está preservada em LICENCIAMENTO.md. PROV-003 foi ampliado, mantendo estado captured,
+  para registrar inventário datado de ativos preexistentes, incluindo AraLearn e AraTalk,
+  possíveis vínculos universitários, empregatícios ou de terceiros, proteção de
+  correspondência institucional sensível, buscas de marcas, análise de titularidade e
+  revisão qualificada quando houver necessidade de conclusão jurídica. MARCAS.md continua
+  registrando a ausência de alegação de marca registrada e os limites de uso da identidade.
+  A exigência histórica de políticas públicas trilíngues foi considerada superada por
+  DEC-002. Nenhuma nova decisão foi criada. Não restam fontes primárias identified no domínio.
 
 next_step: >-
   Auditar o domínio versionamento e proveniência, conferindo as 32 fontes primárias
