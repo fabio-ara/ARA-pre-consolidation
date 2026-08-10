@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 321
-  processed: 0
-  discarded: 0
+  identified: 314
+  processed: 4
+  discarded: 3
   blocked: 0
   verified: 237
 
@@ -21,7 +21,7 @@ domains:
   autoria_e_curadoria: verified
   interfaces_e_experiencia_de_uso: verified
   versionamento_e_proveniencia: verified
-  colaboracao_e_acesso: identified
+  colaboracao_e_acesso: processing
   parametrizacao_e_experimentacao: identified
   dados_e_pesquisa_educacional: identified
   infraestrutura_e_armazenamento: identified
@@ -40,35 +40,31 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria do domínio versionamento e proveniência concluída sobre 32 fontes primárias.
-  As 26 fontes substantivas têm destinos explícitos e as seis fontes descartadas por
-  duplicação, supersessão ou redundância estrutural conservaram as justificativas e foram
-  promovidas, junto com as demais, a verified. VER-001 e PROV-001 permanecem os únicos
-  itens aprovados próprios do domínio sob DEC-004 e DEC-005. VER-002, PROV-002,
-  PROV-003, PROV-004, ACCESS-001, PUB-001 e INF-001 mantêm estado não aprovado e
-  preservam checkpoints, restauração não destrutiva, completude lógica, múltiplos pais,
-  licenciamento de conteúdos, titularidade e marcas, proveniência operacional, retenção,
-  acesso derivacional e alternativas físicas como pendências ou alternativas. Os dois
-  documentos públicos de evidências permanecem históricos e não normativos; preços,
-  quotas e capacidades de provedores são evidência temporal sujeita a revalidação.
-  Nenhum modelo de ACL, provedor, BaaS, mecanismo de armazenamento, biblioteca de grafo,
-  stack, schema, granularidade ou política de retenção foi selecionado. A documentação
-  pública auditada não contém referência ao repositório de origem, à branch de controle
-  ou ao marco interno do corpus. Nenhuma nova decisão ou alteração pública adicional foi
-  necessária durante a auditoria.
+  Primeiro lote de colaboração e acesso processado em sete fontes: SRC-000054,
+  SRC-000062, SRC-000105, SRC-000112 e SRC-000122 a SRC-000124. Quatro fontes
+  substantivas foram processadas e três foram descartadas por caráter estrutural ou
+  duplicação linguística. O repositório público recebeu ACCESS-002 em pending_research
+  para separar autenticação de identidade, contexto colaborativo e autorização sobre
+  conteúdo e operações. Mínimo privilégio, negação por padrão, papéis e capacidades
+  locais, revogação, permissões separadas para conteúdo confidencial, pesquisa e
+  exportação e independência entre identificadores de domínio e de provedor permanecem
+  candidatos. OIDC, tokens, Row-Level Security, Supabase Auth, políticas, perfis de
+  provedor, RBAC, ABAC e mecanismos equivalentes não foram aprovados. A governança
+  histórica do repositório foi reconciliada com DEC-001, DEC-002 e DEC-007: autonomia
+  documental, ausência de requisitos ocultos, rastreabilidade e disciplina de escopo
+  permanecem cobertas por GOV-001 e METODO_DE_TRABALHO.md; Issues como backlog canônico,
+  documentação trilíngue, gate por issue, roadmap de implementação, proteção de branch
+  e CI não foram reativados. Nenhuma nova decisão foi criada. A inspeção do inventário
+  não encontrou outra fonte primária identified em colaboração e acesso.
 
 next_step: >-
-  Processar somente SRC-000054, SRC-000062, SRC-000105, SRC-000112 e SRC-000122 a
-  SRC-000124, primeiro lote do domínio colaboração e acesso. Confrontar a issue de
-  colaboração e acesso, o baseline inicial de governança, a configuração de templates,
-  o ADR histórico de autenticação e autorização e os documentos de governança do
-  repositório em inglês, pt-BR e pt-PT com ACCESS-001, PUB-001, AUTH-002, DEC-001,
-  DEC-002, DEC-006 e DEC-007. Distinguir governança do repositório de autorização do
-  produto, autenticação de identidade de autorização sobre conteúdo e papéis
-  administrativos de acesso cotidiano. Deduplicar versões linguísticas segundo DEC-002
-  sem perder cláusulas substantivas. Tratar OIDC, OAuth, RBAC, ABAC, policies, providers
-  de identidade e mecanismos equivalentes somente conforme as fontes sustentarem e sem
-  promovê-los a decisões atuais. Não reativar programa de implementação, não selecionar
-  provedor de identidade, modelo de ACL, schema, framework ou política de acesso. Após
-  o lote, verificar se restam fontes primárias identified em colaboração e acesso e
-  definir o próximo conjunto exato.
+  Auditar o domínio colaboração e acesso, conferindo SRC-000054, SRC-000062,
+  SRC-000105, SRC-000112 e SRC-000122 a SRC-000124. Verificar cobertura e destinos;
+  coerência de ACCESS-001, ACCESS-002, AUTH-002 e PUB-001 com DEC-001, DEC-002,
+  DEC-006 e DEC-007; separação entre governança do repositório, autenticação,
+  autorização de domínio, audiência e publicação; deduplicação linguística; ausência
+  de promoção de OIDC, OAuth, RBAC, ABAC, políticas, Row-Level Security, provedor de
+  identidade, schema, framework ou política de acesso a decisão aprovada; e ausência
+  de referências privadas nos documentos públicos afetados. Se a auditoria passar,
+  promover as sete fontes a verified, marcar colaboracao_e_acesso como verified e
+  registrar o primeiro lote exato de parametrizacao_e_experimentacao.
