@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 322
-  processed: 25
+  identified: 321
+  processed: 26
   discarded: 6
   blocked: 0
   verified: 205
@@ -40,30 +40,30 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Pacote de grafo derivacional, autoria de baixa burocracia e acesso processado em dez
-  fontes: SRC-000098, SRC-000145, SRC-000150, SRC-000154, SRC-000220,
-  SRC-000253 a SRC-000256 e SRC-000355. Nove fontes relevantes foram processadas e
-  SRC-000256 foi descartado como manifesto estrutural sem conteúdo residual exclusivo.
-  O repositório público recebeu ACCESS-001 em pending_research e uma síntese histórica
-  não normativa com vinte e dois precedentes comparativos e dez cenários candidatos.
-  Público ou Privado, pessoas e grupos, atenuação derivacional, interseção por múltiplas
-  origens, revogação ancestral, reativação e metadata de nós bloqueados permanecem
-  hipóteses de colaboração e acesso. Em particular, bloquear o próprio autor de um
-  descendente após revogação ancestral não foi promovido a decisão. O registro estruturado
-  de alternativas de UI confirmou a cobertura já existente em UX-002, sem seleção de
-  Mermaid, Cytoscape.js, React Flow, Dagre, ELK ou outro mecanismo. DEC-003, DEC-004,
-  DEC-005 e DEC-007 continuam delimitando a autoridade vigente. Nenhum modelo de ACL,
-  mecanismo de autorização, backend, BaaS, biblioteca, stack ou schema foi aprovado.
-  A inspeção dos blocos do inventário confirmou SRC-000017 como única fonte primária
-  ainda identified no domínio versionamento e proveniência.
+  Última fonte primária de versionamento e proveniência, SRC-000017, processada.
+  A fonte é uma issue de governança de propriedade intelectual e marcas e não registra
+  resultado jurídico concluído. A separação entre software, documentação, conteúdos
+  educacionais, dados de pesquisa, materiais de terceiros, contribuições e identidade
+  já está preservada em LICENCIAMENTO.md; a política de identidade, a ausência de alegação
+  de marca registrada e as pendências de buscas e titularidade já estão em MARCAS.md e
+  PROV-003. O conteúdo residual sobre inventário datado de antecedentes, incluindo
+  AraLearn e AraTalk, e possíveis vínculos universitários ou empregatícios foi destinado
+  à análise de titularidade, sem publicação de correspondência sensível nem opinião
+  jurídica definitiva. A exigência histórica de políticas públicas trilíngues foi
+  considerada superada por DEC-002. Nenhuma alteração pública ou nova decisão foi
+  necessária. Não restam fontes primárias identified no domínio.
 
 next_step: >-
-  Processar somente SRC-000017, única fonte primária ainda identified do domínio
-  versionamento e proveniência. Confrontar seu conteúdo com VER-001, VER-002,
-  PROV-001, PROV-002, PROV-003, PROV-004, ACCESS-001, PUB-001, INF-001,
-  DEC-004, DEC-005 e DEC-007. Preservar somente conteúdo residual não coberto,
-  mantendo licença, identidade, acesso, armazenamento e mecanismos técnicos nas
-  categorias e domínios adequados. Não reabrir decisões vigentes, não promover uma
-  formulação histórica a decisão atual e não selecionar stack, schema ou política.
-  Depois do processamento, se não restarem fontes primárias identified no domínio,
-  registrar a auditoria de versionamento e proveniência como próximo passo.
+  Auditar o domínio versionamento e proveniência, conferindo as 32 fontes primárias
+  SRC-000008 a SRC-000012, SRC-000017, SRC-000060, SRC-000098 a SRC-000100,
+  SRC-000140, SRC-000141, SRC-000145, SRC-000149, SRC-000150, SRC-000154,
+  SRC-000156, SRC-000220 a SRC-000222, SRC-000247, SRC-000253 a SRC-000256 e
+  SRC-000355 a SRC-000361. Verificar cobertura e destinos; coerência de VER-001,
+  VER-002, PROV-001 a PROV-004, ACCESS-001, PUB-001 e INF-001 com DEC-002,
+  DEC-004, DEC-005 e DEC-007; separação entre licenciamento, identidade, acesso,
+  proveniência, armazenamento e semântica de revisão; ausência de promoção de
+  checkpoints, restauração não destrutiva, acesso derivacional, retenção, provedor,
+  stack, schema, granularidade ou regras de marca a decisões não aprovadas; preservação
+  das evidências públicas e ausência de referências privadas nos documentos públicos
+  afetados. Se a auditoria passar, promover as fontes do domínio a verified, marcar
+  versionamento_e_proveniencia como verified e registrar o próximo domínio exato.
