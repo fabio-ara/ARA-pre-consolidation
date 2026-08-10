@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 314
-  processed: 0
+  identified: 307
+  processed: 7
   discarded: 0
   blocked: 0
   verified: 244
@@ -22,7 +22,7 @@ domains:
   interfaces_e_experiencia_de_uso: verified
   versionamento_e_proveniencia: verified
   colaboracao_e_acesso: verified
-  parametrizacao_e_experimentacao: identified
+  parametrizacao_e_experimentacao: processing
   dados_e_pesquisa_educacional: identified
   infraestrutura_e_armazenamento: identified
   sincronizacao_e_funcionamento_offline: identified
@@ -40,46 +40,42 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria do domínio colaboração e acesso concluída sobre sete fontes primárias:
-  SRC-000054, SRC-000062, SRC-000105, SRC-000112 e SRC-000122 a SRC-000124.
-  As quatro fontes substantivas têm destinos explícitos e as três fontes antes descartadas
-  por caráter estrutural ou duplicação linguística conservaram relevant false e suas
-  justificativas; todas foram promovidas a verified. ACCESS-001 permanece a pendência de
-  visibilidade, audiência e acesso em derivações, enquanto ACCESS-002 mantém separadas
-  autenticação de identidade, contexto colaborativo e autorização sobre conteúdo e
-  operações. AUTH-002 continua responsável por identidade, papel, contribuição e
-  autoridade na autoria, e PUB-001 pelos estados, audiência e gates de publicação.
-  A governança histórica do repositório permanece subordinada a DEC-001, DEC-002 e
-  DEC-007 e não reativa Issues como backlog canônico, documentação trilíngue, gate por
-  issue, roadmap de implementação, proteção de branch ou CI. OIDC, OAuth, RBAC, ABAC,
-  avaliação de políticas, Row-Level Security, Supabase Auth, provedores de identidade,
-  schemas, frameworks e políticas concretas de acesso não foram promovidos a decisão.
-  A busca nos artefatos públicos afetados não encontrou referência ao repositório de
-  origem, à branch de controle, ao marco interno do corpus ou a identificadores SRC.
-  Nenhuma alteração pública adicional foi necessária durante a auditoria. A substituição
-  integral do inventário introduziu em SRC-000444 apenas a explicitação terminológica
-  'descrição oficial do produto' no lugar de 'descrição oficial'; a auditoria confirmou
-  ausência de mudança de sentido, categoria, autoridade, destino ou conclusão, e a
-  formulação foi mantida por proporcionalidade para evitar nova substituição integral.
-  Nenhuma nova decisão foi criada.
+  Primeiro lote de parametrização e experimentação processado em sete fontes:
+  SRC-000019, SRC-000082 e SRC-000084 a SRC-000088. A Issue 4 e os PRs dos pacotes
+  P1 a P5 e da síntese integrada foram tratados como sequência histórica da taxonomia
+  de configuração, sem promover rótulos accepted, decision, normative handoff ou
+  ara.configuration-taxonomy.v1 a decisões vigentes. O repositório público recebeu
+  PARAM-001 e PARAM-002 em pending_research para preservar, respectivamente, taxonomia
+  versionada e maturidade dos parâmetros e a investigação de perfis, sobreposições,
+  precedência e configuração efetiva reproduzível. Permaneceram como conteúdo próprio
+  do domínio a separação de dimensões configuráveis, perfis de referência e overlays,
+  autoridade, locks e overrides candidatos, snapshots efetivos versionados e a exigência
+  de tornar explícita capacidade indisponível e qualquer fallback autorizado. Achados
+  pedagógicos, de dados, autoria, publicação e acesso foram deduplicados nos domínios já
+  existentes. Os 205 registros, 38 perfis, identificadores e namespaces, valores,
+  defaults, modelo histórico de precedência, MCP, banco, IndexedDB, adaptação, analytics,
+  vocabulário de eventos, stack, UI, schema e implementação não foram aprovados. O diff
+  público adicionou somente PARAM-001 e PARAM-002, sem alterar decisões. A primeira
+  substituição do inventário alterou indevidamente o locator de SRC-000195; o caminho
+  correto foi conferido contra a fonte congelada e restaurado. O efeito líquido auditado
+  do inventário ficou exatamente em sete adições e sete remoções. Nenhuma nova decisão
+  foi criada.
 
 next_step: >-
-  Processar somente SRC-000019, SRC-000082 e SRC-000084 a SRC-000088, primeiro lote do
-  domínio parametrização e experimentação. Ler a Issue 4 e os PRs 45, 47, 48, 49, 51
-  e 52 como sequência de evolução da taxonomia de configuração, dos pacotes P1 a P5 ao
-  handoff integrado final. Confrontar o conteúdo com PED-001 a PED-010, AUTH-001,
-  AUTH-002, CUR-001, CUR-002, PUB-001, AGENT-001, ACCESS-001, ACCESS-002, RES-002,
-  VAL-001, VAL-002, MODEL-001 a MODEL-005, DEC-001, DEC-002, DEC-006 e DEC-007.
-  Tratar rótulos históricos como accepted, decision, normative handoff e
-  ara.configuration-taxonomy.v1 segundo a autoridade canônica atual: nenhum deles cria
-  decisão vigente sem aprovação explícita do responsável. Preservar seletivamente o
-  conteúdo próprio de parametrização, incluindo separação de dimensões configuráveis,
-  perfis de referência e sobreposições, maturidade e autoridade de parâmetros,
-  precedência, configuração efetiva reproduzível e comportamento explícito diante de
-  capacidade indisponível, somente como evidência, hipótese, recomendação ou pendência
-  conforme a fonte sustentar. Deduplicar achados pedagógicos, de dados, autoria,
-  publicação e acesso já destinados aos seus domínios. Não aprovar defaults, namespaces,
-  os 205 registros históricos, os 38 perfis, modelo de precedência, MCP, banco,
-  IndexedDB, adaptação, analytics, vocabulário de eventos, stack, UI, schema ou
-  implementação. Não processar ainda SRC-000142, SRC-000143, SRC-000227, SRC-000278 a
-  SRC-000286, SRC-000325 a SRC-000329, SRC-000453 ou SRC-000465.
+  Processar somente SRC-000278 a SRC-000286 e SRC-000453, pacote integrado final da
+  taxonomia de configuração. Confrontar os artefatos estruturados e a síntese humana
+  com PARAM-001, PARAM-002, PED-001 a PED-010, AUTH-001, AUTH-002, CUR-001, CUR-002,
+  PUB-001, ACCESS-001, ACCESS-002, VAL-001, VAL-002, RES-002, MODEL-001 a MODEL-005 e
+  DEC-007. Tratar SRC-000278 como manifesto estrutural e descartá-lo se não houver
+  conteúdo intelectual residual exclusivo. Tratar rótulos historicamente accepted,
+  normative, passed e o nome ara.configuration-taxonomy.v1 como classificação do corpus,
+  não decisão vigente. Preservar seletivamente o registro de parâmetros, perfis,
+  precedência, candidatos adiados, princípios rejeitados e cenários como evidência e
+  pendências, sem copiar automaticamente os 205 registros ou 38 perfis para o backlog.
+  Estado passed dos cenários significa somente coerência conceitual interna, não
+  validação de produto, implementação, usabilidade, acessibilidade ou efetividade
+  educacional. Deduplicar conteúdo já destinado a pedagogia, autoria, dados, acesso,
+  publicação e modelo sem reabrir domínios verificados. Não aprovar identificadores,
+  aliases ou namespaces, valores, defaults, ordem de precedência, conteúdo dos perfis,
+  schema, UI, adaptação, analytics, arquitetura ou implementação. Não processar ainda
+  SRC-000142, SRC-000143, SRC-000227, SRC-000325 a SRC-000329 ou SRC-000465.
