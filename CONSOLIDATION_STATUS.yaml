@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 257
-  processed: 0
-  discarded: 0
+  identified: 248
+  processed: 8
+  discarded: 1
   blocked: 0
   verified: 301
 
@@ -24,7 +24,7 @@ domains:
   colaboracao_e_acesso: verified
   parametrizacao_e_experimentacao: verified
   dados_e_pesquisa_educacional: verified
-  infraestrutura_e_armazenamento: identified
+  infraestrutura_e_armazenamento: processing
   sincronizacao_e_funcionamento_offline: identified
   implantacao_e_interoperabilidade: identified
   avaliacao_e_validacao: identified
@@ -40,62 +40,62 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria do domínio dados e pesquisa educacional concluída sobre trinta e uma fontes
-  primárias: SRC-000020, SRC-000055, SRC-000089, SRC-000101, SRC-000114, SRC-000128,
-  SRC-000136, SRC-000137, SRC-000151, SRC-000200, SRC-000202, SRC-000204, SRC-000205,
-  SRC-000209, SRC-000210, SRC-000211, SRC-000287 a SRC-000296, SRC-000330 a SRC-000333
-  e SRC-000459. A auditoria confirmou cobertura e destinos coerentes em DATA-001,
-  DATA-002, DATA-003, AGENT-001, AUTH-002, PED-003, PROV-004, PARAM-001, PARAM-002,
-  VAL-001, VAL-002 e INF-001, além dos quatro documentos públicos de evidências sobre
-  protocolos e analytics, P4, perfis de agentes e factibilidade research-ready. Permanecem
-  separadas as categorias fato operacional, evidência de pesquisa, evento, medida,
-  construto, interpretação e decisão científica; disponibilidade técnica não concede
-  autorização de coleta; analytics pessoais, pedagógicos, de pesquisa e operacionais têm
-  finalidades e autoridades distintas; direitos de participantes e governança de dados
-  não foram reduzidos a política jurídica universal; assistência analítica por inteligência
-  artificial não recebeu autoridade científica. A correção v2 sobre AraLearn e evals foi
-  preservada: AraLearn é contraste funcional, não arquitetura modular equivalente. O
-  programa R4 permanece superado e encerrado como not_planned, enquanto a revisão de
-  factibilidade posterior continua evidência não executável. Rótulos históricos accepted,
-  normative handoff, normative objects, passed, decision, recommended, candidate e
-  equivalentes não foram promovidos a decisão vigente. Fontes normativas ou temporais
-  continuam sujeitas a revalidação futura conforme RES-002. Não foram aprovados event
-  schema, EventRecord, TransformationReceipt, DecisionParse, objetos ou campos de
-  pesquisa, fórmulas, limiares, métricas, perfis, precedências, políticas universais de
-  consentimento, retenção, acesso ou exportação, PostgreSQL, plano segregado de dados,
-  LRS, warehouse, event store, dashboard, early warning, modelo preditivo ou causal,
-  coleta com participantes, provider, MCP, arquitetura, UX, stack ou implementação.
-  SRC-000101, SRC-000211 e SRC-000287 conservaram relevant false, destination null e
-  suas justificativas de descarte ao serem promovidas a verified. Buscas no repositório
-  público não localizaram o nome do repositório de origem, a branch de controle,
-  identificadores SRC-* nem o marco interno do corpus. Nenhuma alteração pública foi
-  necessária durante a auditoria. A substituição integral do inventário produziu trinta e
-  duas adições e trinta e duas remoções: trinta e uma são exclusivamente as promoções de
-  status esperadas; a diferença adicional é uma correção gramatical sem mudança de sentido
-  em SRC-000152, de 'vínculo a doze wireframes' para 'vínculo com doze wireframes'. A
-  auditoria confirmou ausência de mudança de categoria, autoridade, relevância, destino ou
-  conclusão, e a formulação foi mantida por proporcionalidade para evitar nova substituição
-  integral do inventário. Nenhuma nova decisão foi criada.
+  Primeiro lote de infraestrutura e armazenamento processado em SRC-000022,
+  SRC-000091, SRC-000109, SRC-000110, SRC-000118 e SRC-000306 a SRC-000309.
+  A Issue 7 foi tratada como fonte central da arquitetura histórica e preservou uma
+  distinção metodológica útil entre requisitos duráveis, restrições do primeiro recorte,
+  capacidades dependentes do contexto de implantação e hipóteses técnicas. O PR 56,
+  os ADRs 0001 e 0002, a arquitetura de referência, a auditoria, a síntese decisória
+  e os budgets foram reclassificados segundo a autoridade canônica atual. Rótulos
+  accepted, accepted architecture baseline e accepted-normative-handoff não conferem
+  autoridade vigente e não superam DEC-007. TypeScript, React, Vite, PWA, Service
+  Worker, Cache API, IndexedDB, OPFS, PostgreSQL, armazenamento S3-compatible,
+  Supabase, OIDC, arquitetura local-first híbrida, ports and adapters, sincronização,
+  gateway MCP e packages permanecem alternativas históricas ou conteúdos dos domínios
+  próprios, sem aprovação de stack ou implementação. Foram preservados como critérios
+  de infraestrutura a independência semântica de provider, separação entre identidade
+  de domínio e chaves físicas, fronteiras entre projeção local, metadados e artefatos,
+  integridade entre stores, manifests e digests, portabilidade, materialização e
+  ativação verificáveis, backup e restauração, migração e rollback, diagnósticos,
+  workloads, comportamento diante de capacidade ausente e necessidade de medir
+  desempenho, memória, armazenamento, rede, segurança, privacidade, acessibilidade e
+  custo. Os dezoito quality budgets históricos foram preservados como pontos de
+  benchmark e formas de verificação, não como requisitos, SLAs ou critérios de aceite
+  atuais. O resultado no-blockers e os doze checks passed da auditoria histórica foram
+  classificados somente como coerência arquitetural e documental interna; a própria
+  fonte exige benchmarks de implementação antes de alegações de escala. SRC-000306
+  foi descartada como manifesto estrutural sem conteúdo intelectual residual exclusivo;
+  as outras oito fontes foram processadas e consideradas relevantes. O repositório
+  público recebeu docs/evidencias/arquitetura-infraestrutura-factibilidade-2026-08.md,
+  em estado histórico e não normativo, em um commit auditado com uma única adição de
+  210 linhas e nenhuma remoção; BACKLOG.yaml e DECISOES.md não foram alterados.
+  Buscas públicas não localizaram o nome do repositório de origem, a branch de controle,
+  identificadores SRC-* nem o marco interno do corpus. A substituição integral do
+  inventário foi auditada com exatamente nove adições e nove remoções, somente nas
+  nove fontes previstas. Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000022, SRC-000091, SRC-000109, SRC-000110, SRC-000118 e
-  SRC-000306 a SRC-000309, primeiro lote do domínio infraestrutura e armazenamento.
-  Ler a Issue 7, o PR 56, os ADRs históricos 0001 e 0002, a arquitetura de referência,
-  o manifesto, a auditoria, a síntese decisória e os quality budgets como um pacote de
-  arquitetura historicamente rotulado accepted ou normative handoff. Confrontar o pacote
-  com INF-001, SCOPE-002, SCOPE-005, EXP-005, EXP-009, VER-002, PROV-004, DATA-002,
-  DATA-003, ACCESS-002, AGENT-001, VAL-001, VAL-002, DEC-006 e DEC-007. Distinguir
-  requisitos duráveis, restrições do primeiro recorte, perfis de implantação e hipóteses
-  técnicas. Tratar TypeScript, React, Vite, PWA, Service Worker, Cache API, IndexedDB,
-  OPFS, PostgreSQL, armazenamento S3-compatible, Supabase, OIDC, local-first híbrido,
-  ports and adapters e demais escolhas históricas como alternativas ou recomendações
-  técnicas conforme a autoridade canônica atual, sem promovê-las a arquitetura aprovada.
-  Preservar seletivamente critérios próprios de infraestrutura: portabilidade e
-  independência de provider, fronteiras entre metadados e artefatos, integridade entre
-  stores, backup e restore, migração e rollback, diagnósticos, workloads, budgets de
-  desempenho, memória, armazenamento, rede, segurança, privacidade, acessibilidade e
-  custo, funcionamento em dispositivos modestos e comportamento explícito diante de
-  capacidades ausentes. Não processar ainda SRC-000044, SRC-000052, SRC-000097,
-  SRC-000146, SRC-000147, SRC-000153, SRC-000157, SRC-000230 ou SRC-000450, nem
-  fontes classificadas nos domínios sincronização e funcionamento offline, implantação
-  e interoperabilidade ou avaliação e validação.
+  Processar somente SRC-000097, SRC-000146, SRC-000147, SRC-000153, SRC-000157 e
+  SRC-000230, frente de pesquisa sobre tecnologia, versionamento e economia de
+  armazenamento. Tratar o PR 80 como pacote de pesquisa que corrige a relação com
+  AraLearn e organiza a investigação de objetos versionados, fronteiras entre metadata,
+  artefatos e estado local, content addressing, deduplicação, retenção, garbage
+  collection, workloads, custos, disponibilidade, backup, exportação, restauração e
+  alternativas de deployment. Ler SRC-000146 como versão histórica v1 e SRC-000147
+  como revisão v2 que a substitui para leitura corrente, preservando da v1 apenas
+  conteúdo residual exclusivo. Confrontar SRC-000153 e SRC-000230 como comparações
+  amplas de stacks, BaaS, local stores, sync, hosting, app, UI e carregamento de
+  capacidades, sem promover rótulos candidate, recommended, principal-hypothesis ou
+  equivalentes. Tratar preços, quotas, pausas e capacidades de fornecedores como
+  fotografia temporal do corpus e exigir revalidação futura conforme RES-002. Confrontar
+  SRC-000157 com INF-001, VER-002, PROV-004, EXP-005, EXP-009, SCOPE-002, SCOPE-005,
+  DATA-002, DATA-003, VAL-001, VAL-002, DEC-006 e DEC-007. Preservar seletivamente
+  critérios de portabilidade, durabilidade, referência e deduplicação, retenção e GC,
+  workloads de 10 mil, 100 mil e 1 milhão de revisões, custo operacional, backup,
+  exportação e restore, sem selecionar Supabase, Cloudflare R2/D1, Neon, Appwrite,
+  Firebase, Nhost, PocketBase, PostgreSQL, S3, OIDC, IndexedDB, Dexie, RxDB,
+  SQLite/OPFS, PGlite, PowerSync, GitHub Pages, PWA, TWA, Capacitor, React, Vue,
+  Svelte, Web Components ou qualquer provider, plano, banco, object storage, engine
+  de sync, framework, runtime, schema ou stack. Não processar ainda SRC-000044,
+  SRC-000052 ou SRC-000450, nem fontes de sincronização e funcionamento offline,
+  implantação e interoperabilidade ou avaliação e validação.
