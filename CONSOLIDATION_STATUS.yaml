@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 332
-  processed: 16
-  discarded: 5
+  identified: 322
+  processed: 25
+  discarded: 6
   blocked: 0
   verified: 205
 
@@ -40,28 +40,30 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Camada estruturada de alternativas, requisitos e economia de versionamento processada
-  em oito fontes: SRC-000221, SRC-000222 e SRC-000356 a SRC-000361. A versão v1 do
-  pré-backlog e os manifestos estruturais v1 e v2 foram descartados por supersessão ou
-  redundância sem conteúdo residual exclusivo; cinco fontes substantivas foram processadas.
-  O repositório público recebeu uma síntese de evidências técnica e temporal sobre vinte
-  motivadores, dez alternativas físicas e onze registros de provedores datados de 4 de
-  agosto de 2026. Valores de preço, quota, pausa e capacidade foram preservados como
-  evidência histórica sujeita a revalidação, sem pesquisa de atualização. Classificações
-  como principal hipótese, baseline ou adequação pertencem ao recorte analítico e não
-  selecionam arquitetura. VER-002, PROV-004 e INF-001 permanecem pendências; DEC-005 e
-  DEC-007 continuam delimitando autoridade e gate. Nenhum banco, BaaS, armazenamento,
-  schema, granularidade, política de retenção, provedor ou compra foi aprovado.
+  Pacote de grafo derivacional, autoria de baixa burocracia e acesso processado em dez
+  fontes: SRC-000098, SRC-000145, SRC-000150, SRC-000154, SRC-000220,
+  SRC-000253 a SRC-000256 e SRC-000355. Nove fontes relevantes foram processadas e
+  SRC-000256 foi descartado como manifesto estrutural sem conteúdo residual exclusivo.
+  O repositório público recebeu ACCESS-001 em pending_research e uma síntese histórica
+  não normativa com vinte e dois precedentes comparativos e dez cenários candidatos.
+  Público ou Privado, pessoas e grupos, atenuação derivacional, interseção por múltiplas
+  origens, revogação ancestral, reativação e metadata de nós bloqueados permanecem
+  hipóteses de colaboração e acesso. Em particular, bloquear o próprio autor de um
+  descendente após revogação ancestral não foi promovido a decisão. O registro estruturado
+  de alternativas de UI confirmou a cobertura já existente em UX-002, sem seleção de
+  Mermaid, Cytoscape.js, React Flow, Dagre, ELK ou outro mecanismo. DEC-003, DEC-004,
+  DEC-005 e DEC-007 continuam delimitando a autoridade vigente. Nenhum modelo de ACL,
+  mecanismo de autorização, backend, BaaS, biblioteca, stack ou schema foi aprovado.
+  A inspeção dos blocos do inventário confirmou SRC-000017 como única fonte primária
+  ainda identified no domínio versionamento e proveniência.
 
 next_step: >-
-  Processar somente SRC-000098, SRC-000145, SRC-000150, SRC-000154, SRC-000220,
-  SRC-000253 a SRC-000256 e SRC-000355, pacote de grafo derivacional, autoria de baixa
-  burocracia e acesso. Confrontar o conteúdo com VER-001, VER-002, PROV-001, PROV-004,
-  DEC-003, DEC-004, DEC-005 e DEC-007, separando semântica de linhagem e proveniência de
-  regras de autorização. Destinar público e privado, listas de usuários ou grupos,
-  atenuação, revogação ancestral, bloqueio de descendentes e projeções efetivas ao domínio
-  colaboração e acesso, sem promovê-los como decisões neste domínio. Preservar evidências
-  e cenários relevantes, descartar manifestos redundantes e não selecionar biblioteca de
-  grafo, modelo de ACL, mecanismo de autorização, stack ou schema. Após esse lote,
-  inventariar as fontes primárias restantes de versionamento e proveniência antes da
-  auditoria do domínio.
+  Processar somente SRC-000017, única fonte primária ainda identified do domínio
+  versionamento e proveniência. Confrontar seu conteúdo com VER-001, VER-002,
+  PROV-001, PROV-002, PROV-003, PROV-004, ACCESS-001, PUB-001, INF-001,
+  DEC-004, DEC-005 e DEC-007. Preservar somente conteúdo residual não coberto,
+  mantendo licença, identidade, acesso, armazenamento e mecanismos técnicos nas
+  categorias e domínios adequados. Não reabrir decisões vigentes, não promover uma
+  formulação histórica a decisão atual e não selecionar stack, schema ou política.
+  Depois do processamento, se não restarem fontes primárias identified no domínio,
+  registrar a auditoria de versionamento e proveniência como próximo passo.
