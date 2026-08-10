@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 297
-  processed: 16
+  identified: 288
+  processed: 25
   discarded: 1
   blocked: 0
   verified: 244
@@ -40,42 +40,46 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Pacote integrado final da taxonomia de configuração processado em dez fontes:
-  SRC-000278 a SRC-000286 e SRC-000453. SRC-000278 foi descartado como manifesto
-  estrutural redundante, sem conteúdo intelectual residual exclusivo; as outras nove
-  fontes foram processadas. O repositório público recebeu
-  docs/evidencias/taxonomia-de-configuracao-2026-08.md como síntese histórica e não
-  normativa, preservando a amplitude de 205 registros, 18 aliases, 38 perfis, 36
-  candidatos adiados, 41 princípios rejeitados ou não recomendados e 15 cenários de
-  coerência conceitual, sem canonizar o catálogo histórico. Foram preservadas como
-  evidência seis camadas analíticas de incidência da configuração e dez famílias de
-  perfis, além da distinção entre autoridade normativa e disponibilidade técnica. O
-  modelo histórico de onze níveis de precedência permanece alternativa analítica em
-  PARAM-002; sua ordem numérica e regras concretas não foram aprovadas. O estado passed
-  dos quinze cenários significa somente resolução conceitualmente coerente no modelo
-  histórico e não constitui validação de produto, implementação, usabilidade,
-  acessibilidade, efetividade educacional, desempenho, segurança ou validade de
-  instrumentos. O documento público foi auditado como uma única adição de 192 linhas,
-  sem alteração de BACKLOG.yaml ou DECISOES.md e sem referências privadas. O inventário
-  foi auditado com exatamente dez adições e dez remoções. Rótulos históricos accepted,
-  normative e accepted-normative-handoff não criaram decisão vigente. Nenhum
-  identificador, alias, namespace, perfil, default, ordem de precedência, schema, UI,
-  adaptação, analytics, arquitetura, stack ou implementação foi aprovado. Nenhuma nova
+  Lote restante de parametrização e experimentação processado em nove fontes:
+  SRC-000142, SRC-000143, SRC-000227, SRC-000325 a SRC-000329 e SRC-000465.
+  Todas foram processadas como relevantes. A versão v2 do pré-backlog de agentes foi
+  reconciliada com a v1: corrige Q01, Q10, Q26 e a sequência para tratar AraLearn como
+  contraste funcional, não implementação modular equivalente, enquanto Q02 a Q09 e Q11
+  a Q25 permanecem conteúdo residual da v1. O mapa de configuração de referência
+  preservou vinte e oito características como evidência situada e contraste, sem
+  transformar AraLearn em default universal. O pacote P3 preservou um corpus
+  bibliográfico de trinta e quatro registros, cinquenta dimensões históricas candidatas
+  distribuídas entre autonomia, autorregulação, adaptação, acessibilidade e assistência
+  por IA e nove perfis de contraste. O repositório público recebeu
+  docs/evidencias/referencia-configuracao-autonomia-ia-2026-08.md como evidência
+  histórica e não normativa, em uma única adição de 248 linhas, sem alteração de
+  BACKLOG.yaml ou DECISOES.md. Perfis, valores, defaults, precedência, adaptação
+  automática, inferências de estado do estudante, modelos, provedores, MCP, analytics,
+  schema, UI, arquitetura, stack e implementação não foram aprovados. A primeira
+  substituição integral do inventário introduziu quatro normalizações laterais em
+  SRC-000158, SRC-000356, SRC-000358 e SRC-000359; todas foram identificadas e
+  restauradas literalmente. O efeito líquido auditado desde o estado anterior ao lote
+  ficou exatamente em nove adições e nove remoções, somente nas nove fontes previstas.
+  A inspeção das faixas do inventário confirmou que nenhuma das vinte e seis fontes
+  primárias de parametrização e experimentação permanece identified. Nenhuma nova
   decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000142, SRC-000143, SRC-000227, SRC-000325 a SRC-000329 e
-  SRC-000465, lote restante de parametrização e experimentação sobre pré-backlog de
-  agentes e analytics, mapa de configuração de referência, pacote estruturado P3 e
-  síntese AraLearn versus horizonte externo. Confrontar com PARAM-001, PARAM-002,
-  PED-004, PED-010, AGENT-001, RES-002, VAL-001, VAL-002, DEC-006 e DEC-007. Deduplicar
-  as versões v1 e v2 do pré-backlog, tratar perfis e parâmetros como candidatos
-  históricos e preservar autonomia, adaptação, acessibilidade e assistência por IA
-  somente no que for próprio à metamodelagem de configuração; manter detalhes
-  pedagógicos em PED-004 e PED-010 e configuração de agentes em AGENT-001. Separar
-  configuração de referência, evidência situada e recomendações externas sem converter
-  a referência AraLearn em default universal. Não aprovar perfis, valores, defaults,
-  precedência, adaptação, inferências de estado do estudante, modelos, provedores, MCP,
-  analytics, schema, UI, arquitetura, stack ou implementação. Após esse lote, verificar
-  se não resta fonte primária identified em parametrização e experimentação e, se a
-  cobertura estiver completa, registrar a auditoria do domínio como próximo passo.
+  Auditar somente as vinte e seis fontes primárias do domínio parametrização e
+  experimentação: SRC-000019, SRC-000082, SRC-000084 a SRC-000088, SRC-000142,
+  SRC-000143, SRC-000227, SRC-000278 a SRC-000286, SRC-000325 a SRC-000329,
+  SRC-000453 e SRC-000465. Confrontar a cobertura e os destinos com PARAM-001,
+  PARAM-002, SCOPE-005, PED-004, PED-010, AGENT-001, RES-002, VAL-001, VAL-002,
+  DEC-006, DEC-007, docs/evidencias/taxonomia-de-configuracao-2026-08.md e
+  docs/evidencias/referencia-configuracao-autonomia-ia-2026-08.md. Verificar que
+  rótulos históricos accepted, decision, normative, passed e accepted-normative-handoff
+  não foram promovidos silenciosamente; que AraLearn permanece referência funcional e
+  não default universal; que os 205 registros, 38 perfis, cinquenta dimensões P3 e nove
+  perfis P3 permanecem evidência e não catálogo aprovado; que a precedência histórica
+  permanece candidata; que o corpus bibliográfico P3 foi preservado com suas limitações;
+  e que a correção v2 qualifica adequadamente as afirmações de modularidade e evals da
+  v1. Auditar também a ausência de referências privadas nos artefatos públicos e a
+  ausência de seleção de schema, provedor, MCP, modelo adaptativo, analytics, UI,
+  arquitetura, stack ou implementação. Se a auditoria passar, promover as vinte e seis
+  fontes a verified, marcar parametrizacao_e_experimentacao como verified e delimitar
+  o primeiro lote de dados e pesquisa educacional como próximo passo, sem executá-lo.
