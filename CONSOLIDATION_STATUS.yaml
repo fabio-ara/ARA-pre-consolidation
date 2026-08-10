@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 260
-  processed: 26
-  discarded: 2
+  identified: 257
+  processed: 28
+  discarded: 3
   blocked: 0
   verified: 270
 
@@ -40,54 +40,69 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Pacote de perfis de agentes e analytics participativo processado em nove fontes:
-  SRC-000136, SRC-000137, SRC-000200, SRC-000202, SRC-000204, SRC-000205 e
-  SRC-000209 a SRC-000211. Oito fontes foram classificadas como relevantes e
-  processadas; SRC-000211 foi descartado como manifesto estrutural sem conteúdo
-  intelectual residual exclusivo. O repositório público recebeu
-  docs/evidencias/perfis-agentes-analytics-participativo-2026-08.md como evidência
-  histórica e não normativa, em uma única adição auditada de 384 linhas, sem alteração
-  de BACKLOG.yaml ou DECISOES.md. Foram preservados um corpus inicial de trinta e quatro
-  registros, quatorze perguntas candidatas de analytics, dezesseis fixtures candidatos
-  de avaliação, dezessete questões abertas e trinta e dois campos candidatos para uma
-  execução de análise reproduzível. A correção v2 foi aplicada sem apagar o conteúdo
-  residual da v1: AraLearn permanece referência funcional e caso de contraste, não
-  implementação modular equivalente; evals futuros devem partir de tarefas-alvo do ARA,
-  invariantes de autorização, casos controlados e sintéticos, rubricas, casos negativos,
-  repetições e futuras operações reais. A consolidação separa fato operacional observável,
-  evidência, codificação analítica versionada, medida, construto, interpretação e decisão
-  científica. Observações participativas permanecem evidência situada, não votação, e
-  contribuição observável não autoriza percentuais automáticos de autoria, qualidade,
-  criticidade, dependência ou passividade. AGENT-001, AUTH-002, DATA-001 a DATA-003,
-  PED-003, PROV-004, PARAM-001/002, RES-002 e VAL-001/002 cobrem as pendências residuais,
-  por isso nenhum novo item de backlog foi criado. Rótulos accepted, decision,
-  recommended, research-only, candidate e equivalentes não criaram decisão vigente.
-  Não foram aprovados perfis, fixtures, métricas, taxonomias, campos, schemas, eventos,
-  modelos, provedores, MCP, base vetorial, motor de analytics, dashboard, coleta com
-  participantes, arquitetura, UX, stack ou implementação. A escrita do inventário foi
-  auditada com exatamente nove adições e nove remoções, somente em
-  SOURCE_INVENTORY.jsonl. Buscas no repositório público não localizaram o nome do
-  repositório de origem, a branch de controle nem identificadores SRC-*. Nenhuma nova
-  decisão foi criada.
+  Lote final de fontes primárias de dados e pesquisa educacional processado em
+  SRC-000055, SRC-000101 e SRC-000151. SRC-000055 foi processada como fonte relevante,
+  preservando somente os problemas de autorização de eventos e instrumentos, separação
+  entre evento, medida, construto e interpretação, direitos de participantes, snapshots
+  de condição, dados ausentes, fidelidade, exportação e separação entre evidência de
+  pesquisa, logs operacionais e estado pessoal. O programa de implementação R4 estava
+  encerrado como not_planned e não foi reativado; telas, releases, objetos, testes de
+  política, plano segregado de dados, conformance e critérios executáveis não autorizam
+  desenvolvimento sob DEC-007. SRC-000151 foi processada como síntese não executável de
+  factibilidade research-ready. Preserva quatro responsabilidades separadas: assistência
+  autoral, registro determinístico de fatos já conhecidos pelo sistema, instrumentação
+  educacional autorizada e análise posterior; evidência primária por referências;
+  eventos e receipts candidatos; codificação analítica versionada separada; alternativa
+  de envelope estruturado produzido na mesma inferência quando a interpretação já for
+  necessária, sem segunda chamada obrigatória apenas para telemetria; classes históricas
+  de retenção; e workloads indicativos de 10, 100 e 1.000 pessoas e 10 mil, 100 mil e
+  1 milhão de revisões ou eventos para medir tokens, latência, qualidade, armazenamento,
+  consulta, exportação, backup e restauração antes de congelar qualquer schema.
+  SRC-000101 foi descartada por duplicação material: o pull request introduz exatamente
+  a síntese preservada em SRC-000151 e seu corpo não contém conteúdo intelectual ou
+  autoridade residual exclusiva. O repositório público recebeu
+  docs/evidencias/factibilidade-instrumentacao-research-ready-2026-08.md como evidência
+  histórica e não normativa em uma única adição auditada de 264 linhas, sem alteração de
+  BACKLOG.yaml ou DECISOES.md. Nenhum DATA-004 foi criado porque PROV-004, DATA-002,
+  DATA-003, AGENT-001, AUTH-002, VAL-001, VAL-002 e INF-001 já preservam as pendências
+  correspondentes. Dados observáveis de autoria ou operação não foram promovidos a
+  autoria intelectual, qualidade, criticidade, dependência, passividade, aprendizagem ou
+  efetividade. EventRecord, TransformationReceipt, DecisionParse, taxonomias, campos,
+  métricas, políticas de coleta, retenção ou exportação, MCP, provider, banco, event
+  store, dashboard, arquitetura, UX, stack e implementação permanecem não aprovados.
+  A escrita do inventário foi auditada com exatamente três adições e três remoções,
+  somente em SOURCE_INVENTORY.jsonl. Buscas no repositório público não localizaram o
+  nome do repositório de origem, a branch de controle, identificadores SRC-* nem o marco
+  interno do corpus. A inspeção das faixas do inventário confirmou que nenhuma das 31
+  fontes primárias do domínio permanece identified. Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000055, SRC-000101 e SRC-000151, lote final de fontes primárias
-  do domínio dados e pesquisa educacional. Confrontar a Issue R4 de implementação
-  encerrada como not_planned com o pull request e a síntese posterior de factibilidade
-  de instrumentação research-ready, usando DATA-001, DATA-002, DATA-003, AGENT-001,
-  AUTH-002, PED-003, PROV-004, PARAM-001, PARAM-002, VAL-001, VAL-002, DEC-005,
-  DEC-006 e DEC-007. Distinguir o programa de implementação superado da investigação
-  posterior sobre factibilidade. Preservar somente problemas e evidências residuais sobre
-  registro determinístico de fatos já conhecidos pelo sistema, referências a evidências
-  primárias, eventos mínimos e versionados, codificação analítica posterior, eventual
-  envelope estruturado produzido sem segunda análise semântica obrigatória, custo de
-  tokens, latência, armazenamento, consulta, restauração, retenção e reprodutibilidade.
-  Não transformar métricas observáveis de autoria ou operação em construtos científicos
-  por padrão e não exigir segunda chamada de inteligência artificial apenas para
-  telemetria. Não reativar R4, não aprovar objetos, campos, schemas, taxonomias, métricas,
-  event store, banco, provider, MCP, modelo, dashboard, política de coleta, retenção ou
-  exportação, arquitetura, UX, stack ou implementação. Deduplicar SRC-000101 e
-  SRC-000151 quando forem materialmente equivalentes, preservando qualquer conteúdo
-  exclusivo. Após o lote, verificar que não resta fonte primária identified em dados e
-  pesquisa educacional e, se a cobertura estiver completa, definir a auditoria do
-  domínio como próximo passo exato.
+  Auditar o domínio dados e pesquisa educacional, conferindo exatamente SRC-000020,
+  SRC-000055, SRC-000089, SRC-000101, SRC-000114, SRC-000128, SRC-000136,
+  SRC-000137, SRC-000151, SRC-000200, SRC-000202, SRC-000204, SRC-000205,
+  SRC-000209, SRC-000210, SRC-000211, SRC-000287 a SRC-000296, SRC-000330 a
+  SRC-000333 e SRC-000459. Verificar cobertura e destinos em DATA-001, DATA-002,
+  DATA-003, AGENT-001, AUTH-002, PED-003, PROV-004, PARAM-001, PARAM-002,
+  VAL-001, VAL-002, INF-001 e nos quatro documentos públicos de evidências:
+  docs/evidencias/protocolos-dados-analytics-2026-08.md,
+  docs/evidencias/p4-instrumentacao-analytics-governanca-2026-08.md,
+  docs/evidencias/perfis-agentes-analytics-participativo-2026-08.md e
+  docs/evidencias/factibilidade-instrumentacao-research-ready-2026-08.md. Conferir a
+  separação entre fatos operacionais e evidência de pesquisa; evento, medida, construto
+  e interpretação; disponibilidade técnica e autorização de coleta; analytics pessoais,
+  pedagógicos, de pesquisa e operacionais; governança e direitos de participantes;
+  assistência analítica por inteligência artificial e autoridade científica; e programa
+  R4 superado versus revisão não executável de factibilidade. Verificar a correção v2 da
+  relação com AraLearn e dos evals, a revalidação futura de fontes temporais e normativas
+  conforme RES-002 e a ausência de promoção dos rótulos históricos accepted, normative
+  handoff, normative objects, passed, decision, recommended, candidate ou equivalentes.
+  Confirmar que não foram aprovados event schema, EventRecord, TransformationReceipt,
+  DecisionParse, objetos ou campos de pesquisa, fórmulas, limiares, métricas, perfis,
+  precedências, políticas universais de consentimento, retenção, acesso ou exportação,
+  PostgreSQL, plano segregado de dados, LRS, warehouse, event store, dashboard, early
+  warning, modelo preditivo ou causal, coleta com participantes, provider, MCP,
+  arquitetura, UX, stack ou implementação. Verificar as justificativas de descarte de
+  SRC-000101, SRC-000211 e SRC-000287 e a ausência de referências privadas nos
+  documentos públicos. Se a auditoria passar, promover as 31 fontes a verified,
+  preservando relevant, destination e notes, marcar dados_e_pesquisa_educacional como
+  verified e registrar o primeiro lote exato de infraestrutura_e_armazenamento.
