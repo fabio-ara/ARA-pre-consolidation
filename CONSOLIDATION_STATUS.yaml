@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 348
-  processed: 3
+  identified: 340
+  processed: 11
   discarded: 2
   blocked: 0
   verified: 205
@@ -40,28 +40,28 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote de versionamento e proveniência processado em SRC-000008 a SRC-000012.
-  O aviso de licença da documentação foi preservado publicamente em português do Brasil,
-  mantendo CC BY 4.0 e suas exclusões sem ampliar a cobertura jurídica. LICENSING.pt-BR.md
-  foi consolidado como fonte principal para distinguir código, documentação, conteúdos
-  educacionais, dados de pesquisa, materiais de terceiros, identidade e contribuições;
-  as versões inglesa e pt-PT foram descartadas como duplicações linguísticas sem conteúdo
-  material exclusivo conforme DEC-002. A política de identidade foi preservada sem alegar
-  marca registrada e sem usar o símbolo de registro. O repositório público recebeu
-  LICENSE-DOCUMENTATION.md, LICENCIAMENTO.md e MARCAS.md, e README.md passou a explicitar
-  esses limites. PROV-002 e PROV-003 foram registrados como pendências captured para
-  licenciamento de cursos e recursos e proteção formal da identidade. Nenhuma nova decisão
-  de produto foi criada e nenhuma interpretação jurídica além das fontes foi materializada.
+  Núcleo de semântica de revisões, histórico e proveniência operacional processado em
+  oito fontes: SRC-000060, SRC-000099, SRC-000100, SRC-000140, SRC-000141,
+  SRC-000149, SRC-000156 e SRC-000247. A Issue 79 foi tratada como autoridade posterior
+  dentro do corpus para distinguir mutação confirmada e persistida, checkpoint e revisão
+  durável, mas somente DEC-004 e DEC-005 permanecem decisões vigentes no repositório
+  público. O backlog público recebeu VER-002 e PROV-004 em pending_research e INF-001 foi
+  enriquecido com alternativas físicas sem seleção. Restauração não destrutiva, múltiplos
+  pais, completude lógica, proveniência operacional, receipts, retenção, manifests,
+  content addressing, event sourcing, IndexedDB, banco e object storage não foram
+  promovidos a decisões. Regras de audiência, atenuação e revogação foram deixadas para
+  colaboração e acesso. Uma alteração terminológica colateral em SRC-000252, detectada na
+  auditoria do inventário, foi restaurada ao texto verificado anterior. Nenhuma nova
+  decisão de produto foi criada.
 
 next_step: >-
-  Processar somente SRC-000060, SRC-000099, SRC-000100, SRC-000140, SRC-000141,
-  SRC-000149, SRC-000156 e SRC-000247, núcleo de semântica de revisões, histórico e
-  proveniência operacional do domínio versionamento e proveniência. Confrontar a Issue 79,
-  os PRs 83 e 84, o ledger pós-PR80, o registro de decisões aceitas, a síntese de
-  proveniência e retenção e a síntese v2 de alternativas com PROV-001, VER-001, DEC-004,
-  DEC-005, DEC-006 e DEC-007. Preservar como decisões somente o que já estiver aprovado
-  no repositório canônico; tratar materialização lógica, checkpoints, retenção, receipts,
-  manifests, content addressing, event sourcing, IndexedDB, banco, object storage e demais
-  mecanismos como requisitos candidatos ou alternativas conforme sua autoridade. Destinar
-  regras de audiência, atenuação e revogação ao domínio colaboração e acesso, sem promovê-las
-  neste lote. Não selecionar stack, provider, schema físico ou política de retenção.
+  Processar somente SRC-000221, SRC-000222 e SRC-000356 a SRC-000361, camada estruturada
+  de alternativas, requisitos e evidências de economia e arquitetura de histórico do
+  domínio versionamento e proveniência. Confrontar versões v1 e v2 com VER-002, PROV-004,
+  INF-001, DEC-005 e DEC-007, deduplicando itens superados e manifestos puramente
+  estruturais. Tratar números, quotas, preços, capacidades de providers e afirmações de
+  produto como evidência temporal do recorte, não como fato vigente, e não realizar nova
+  pesquisa de mercado durante a consolidação. Não selecionar banco, BaaS, object storage,
+  content addressing, event sourcing, Git, schema, granularidade ou política de retenção.
+  Após o lote, processar separadamente o pacote de grafo derivacional e acesso, destinando
+  suas regras de autorização ao domínio colaboração e acesso.
