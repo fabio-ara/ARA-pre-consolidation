@@ -7,9 +7,9 @@ phase: processing
 
 counts:
   total: 558
-  identified: 269
-  processed: 18
-  discarded: 1
+  identified: 260
+  processed: 26
+  discarded: 2
   blocked: 0
   verified: 270
 
@@ -40,51 +40,54 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Pacote P4 de instrumentação, condições, analytics e governança processado nas cinco
-  fontes SRC-000330 a SRC-000333 e SRC-000459. Todas foram classificadas como
-  relevantes e processadas. O repositório público recebeu
-  docs/evidencias/p4-instrumentacao-analytics-governanca-2026-08.md como evidência
-  histórica e não normativa, em uma única adição auditada de 285 linhas e sem alteração
-  de BACKLOG.yaml ou DECISOES.md. O documento preserva o corpus P4 de trinta e seis
-  registros entre literatura acadêmica, especificações, legislação, orientações
-  regulatórias, frameworks, políticas institucionais, princípios de governança e padrões
-  técnicos; as trinta e uma dimensões históricas; nove perfis de contraste; uma ordem
-  candidata de oito níveis de precedência; recomendações, caminhos não recomendados,
-  adiamentos e não autorizações. A presença de uma fonte no corpus não implica adoção, e
-  versões, vigência e aplicabilidade de materiais normativos ou temporais exigem
-  revalidação conforme RES-002. Os rótulos accepted, decision, recommendedPath,
-  acceptedParameterIds, completed-package e formulações equivalentes permanecem
-  autoridade histórica do pacote, não decisão pública atual. O perfil pessoal
-  data-minimal continua referência funcional e caso de contraste, não default aprovado.
-  DATA-001, DATA-002 e DATA-003 já cobrem os problemas residuais, por isso nenhum novo
-  item de backlog foi criado. Eventos, medidas, construtos e interpretações permanecem
-  distintos; rastros brutos não autorizam inferências diretas de aprendizagem, domínio,
-  esforço, atenção, dificuldade ou qualidade. A precedência histórica, os nove perfis,
-  identificadores, enums, valores, defaults, autoridades e políticas concretas não foram
-  aprovados. Não foram selecionados event schema, métricas de produção, event store, LRS,
-  warehouse, dashboard, early warning, modelo preditivo, coleta com participantes,
-  arquitetura, UX, stack ou implementação. A escrita do inventário foi auditada com
-  exatamente cinco adições e cinco remoções, somente em SOURCE_INVENTORY.jsonl. Buscas
-  no repositório público não localizaram o nome do repositório de origem, a branch de
-  controle, identificadores SRC-* nem o marco interno do corpus. Nenhuma nova decisão foi
-  criada.
+  Pacote de perfis de agentes e analytics participativo processado em nove fontes:
+  SRC-000136, SRC-000137, SRC-000200, SRC-000202, SRC-000204, SRC-000205 e
+  SRC-000209 a SRC-000211. Oito fontes foram classificadas como relevantes e
+  processadas; SRC-000211 foi descartado como manifesto estrutural sem conteúdo
+  intelectual residual exclusivo. O repositório público recebeu
+  docs/evidencias/perfis-agentes-analytics-participativo-2026-08.md como evidência
+  histórica e não normativa, em uma única adição auditada de 384 linhas, sem alteração
+  de BACKLOG.yaml ou DECISOES.md. Foram preservados um corpus inicial de trinta e quatro
+  registros, quatorze perguntas candidatas de analytics, dezesseis fixtures candidatos
+  de avaliação, dezessete questões abertas e trinta e dois campos candidatos para uma
+  execução de análise reproduzível. A correção v2 foi aplicada sem apagar o conteúdo
+  residual da v1: AraLearn permanece referência funcional e caso de contraste, não
+  implementação modular equivalente; evals futuros devem partir de tarefas-alvo do ARA,
+  invariantes de autorização, casos controlados e sintéticos, rubricas, casos negativos,
+  repetições e futuras operações reais. A consolidação separa fato operacional observável,
+  evidência, codificação analítica versionada, medida, construto, interpretação e decisão
+  científica. Observações participativas permanecem evidência situada, não votação, e
+  contribuição observável não autoriza percentuais automáticos de autoria, qualidade,
+  criticidade, dependência ou passividade. AGENT-001, AUTH-002, DATA-001 a DATA-003,
+  PED-003, PROV-004, PARAM-001/002, RES-002 e VAL-001/002 cobrem as pendências residuais,
+  por isso nenhum novo item de backlog foi criado. Rótulos accepted, decision,
+  recommended, research-only, candidate e equivalentes não criaram decisão vigente.
+  Não foram aprovados perfis, fixtures, métricas, taxonomias, campos, schemas, eventos,
+  modelos, provedores, MCP, base vetorial, motor de analytics, dashboard, coleta com
+  participantes, arquitetura, UX, stack ou implementação. A escrita do inventário foi
+  auditada com exatamente nove adições e nove remoções, somente em
+  SOURCE_INVENTORY.jsonl. Buscas no repositório público não localizaram o nome do
+  repositório de origem, a branch de controle nem identificadores SRC-*. Nenhuma nova
+  decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000136, SRC-000137, SRC-000200, SRC-000202, SRC-000204,
-  SRC-000205 e SRC-000209 a SRC-000211, pacote de perfis de agentes e analytics
-  participativo. Confrontar as versões v1 e de correção, o mapa de perguntas, os fixtures
-  candidatos de avaliação, as questões abertas, os campos candidatos de execução de
-  análise, a síntese decisória histórica, o corpus de evidências e o manifesto com
-  AGENT-001, DATA-001, DATA-002, DATA-003, AUTH-002, PED-003, PROV-004, PARAM-001,
-  PARAM-002, RES-002, VAL-001, VAL-002, DEC-006 e DEC-007. Preservar diferenças entre
-  fatos operacionais observáveis, evidência, codificação analítica, medida, construto,
-  interpretação e decisão científica; não transformar contribuição observável em
-  percentuais automáticos de autoria, qualidade, criticidade, dependência ou passividade.
-  Reconciliar a correção v2 sem apagar conteúdo residual exclusivo da v1. Tratar rótulos
-  accepted, decision, recommended, research-only, candidate ou equivalentes conforme a
-  autoridade real das fontes, sem promoção silenciosa. Não aprovar perfis de agentes,
-  fixtures, métricas, taxonomias, campos, schemas, eventos, modelos, provedores, MCP,
-  base vetorial, analytics engine, dashboard, coleta com participantes, arquitetura,
-  UX, stack ou implementação. Não processar ainda SRC-000055, SRC-000101 nem
-  SRC-000151; a Issue R4 encerrada como not_planned e a revisão posterior de
-  factibilidade permanecem para lote subsequente.
+  Processar somente SRC-000055, SRC-000101 e SRC-000151, lote final de fontes primárias
+  do domínio dados e pesquisa educacional. Confrontar a Issue R4 de implementação
+  encerrada como not_planned com o pull request e a síntese posterior de factibilidade
+  de instrumentação research-ready, usando DATA-001, DATA-002, DATA-003, AGENT-001,
+  AUTH-002, PED-003, PROV-004, PARAM-001, PARAM-002, VAL-001, VAL-002, DEC-005,
+  DEC-006 e DEC-007. Distinguir o programa de implementação superado da investigação
+  posterior sobre factibilidade. Preservar somente problemas e evidências residuais sobre
+  registro determinístico de fatos já conhecidos pelo sistema, referências a evidências
+  primárias, eventos mínimos e versionados, codificação analítica posterior, eventual
+  envelope estruturado produzido sem segunda análise semântica obrigatória, custo de
+  tokens, latência, armazenamento, consulta, restauração, retenção e reprodutibilidade.
+  Não transformar métricas observáveis de autoria ou operação em construtos científicos
+  por padrão e não exigir segunda chamada de inteligência artificial apenas para
+  telemetria. Não reativar R4, não aprovar objetos, campos, schemas, taxonomias, métricas,
+  event store, banco, provider, MCP, modelo, dashboard, política de coleta, retenção ou
+  exportação, arquitetura, UX, stack ou implementação. Deduplicar SRC-000101 e
+  SRC-000151 quando forem materialmente equivalentes, preservando qualquer conteúdo
+  exclusivo. Após o lote, verificar que não resta fonte primária identified em dados e
+  pesquisa educacional e, se a cobertura estiver completa, definir a auditoria do
+  domínio como próximo passo exato.
