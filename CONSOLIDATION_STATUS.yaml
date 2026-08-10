@@ -8,10 +8,10 @@ phase: processing
 counts:
   total: 558
   identified: 353
-  processed: 30
-  discarded: 1
+  processed: 0
+  discarded: 0
   blocked: 0
-  verified: 174
+  verified: 205
 
 domains:
   finalidade_e_escopo: verified
@@ -19,7 +19,7 @@ domains:
   experiencias_e_sistemas_analisados: verified
   modelo_de_conteudo_e_recursos: verified
   autoria_e_curadoria: verified
-  interfaces_e_experiencia_de_uso: processing
+  interfaces_e_experiencia_de_uso: verified
   versionamento_e_proveniencia: identified
   colaboracao_e_acesso: identified
   parametrizacao_e_experimentacao: identified
@@ -40,25 +40,28 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Lote visual e de protótipo de interfaces e experiência de uso processado em 15 fontes:
-  SRC-000014 e SRC-000158 a SRC-000171. Os doze wireframes e o protótipo estrutural
-  foram preservados publicamente como explorações não normativas, com autoridade
-  explicitamente separada das decisões vigentes. Nenhum wireframe histórico correspondia
-  integralmente à composição aprovada de DEC-003; por isso foi materializado um esquema
-  público específico, limitado ao painel esquerdo de pastas e cursos visíveis e ao grafo
-  principal de revisões completas do curso conforme DEC-003 e DEC-004, sem escolhas
-  adicionais de layout, stack, interação ou permissões. DECISOES.md passou a apontar para
-  esse artefato. O grafo de dependências interno, navegação candidata, MCP, perfis, fluxos
-  de pesquisa e administração, valores visuais e código do protótipo permanecem evidência
-  ou alternativas, não decisões. Nenhuma nova decisão de produto foi criada.
+  Auditoria do domínio interfaces e experiência de uso concluída sobre 31 fontes
+  primárias. As 30 fontes relevantes têm destinos explícitos e SRC-000310 permanece
+  como descarte justificado de manifesto estrutural redundante; todas passaram a
+  verified. UX-001 e VER-001 permanecem aprovados sob DEC-003 e DEC-004, enquanto
+  UX-002, UX-003 e UX-004 permanecem pending_research. O diretório público de interfaces
+  separa explicitamente a composição desktop aprovada das doze explorações não normativas
+  e do protótipo estrutural não normativo. A composição aprovada contém somente pastas e
+  cursos visíveis no painel esquerdo e o grafo de revisões completas do curso na área
+  principal. Navegação candidata, grafo interno de dependências, MCP, política trilíngue,
+  WCAG 2.2 AA, tokens, bibliotecas de grafo, fluxos de pesquisa e administração e detalhes
+  de implementação não foram promovidos. Não foram encontradas referências ao repositório
+  de origem nem ao marco interno do corpus nos artefatos públicos auditados. Nenhuma nova
+  decisão ou alteração pública adicional foi necessária.
 
 next_step: >-
-  Auditar o domínio interfaces e experiência de uso, conferindo as 31 fontes primárias
-  SRC-000014, SRC-000023, SRC-000061, SRC-000092, SRC-000130, SRC-000131, SRC-000133,
-  SRC-000135, SRC-000152, SRC-000155, SRC-000158 a SRC-000171, SRC-000229 e
-  SRC-000310 a SRC-000315. Verificar cobertura e destinos, a preservação dos artefatos
-  visuais e do protótipo, a distinção entre o esquema aprovado e as explorações não
-  normativas, coerência de UX-001 a UX-004 e VER-001 com DEC-003 a DEC-007, ausência de
-  promoção indevida de navegação, MCP, política trilíngue, WCAG, tokens, bibliotecas de
-  grafo ou fluxos candidatos e ausência de referência privada no diretório público de
-  interfaces.
+  Processar somente SRC-000008 a SRC-000012, primeiro lote do domínio versionamento e
+  proveniência, composto por licenciamento da documentação, documentos gerais de
+  licenciamento em inglês, pt-BR e pt-PT e política de marcas. Confrontar o conteúdo com
+  LICENSE, README.md, DEC-002 e os itens vigentes de proveniência, distinguindo licença de
+  código, documentação, dados, artefatos e uso de marcas conforme o que as próprias fontes
+  sustentarem. Tratar duplicações linguísticas segundo DEC-002 sem perder cláusulas ou
+  restrições substantivas. Não inferir cobertura jurídica não expressa, não transformar
+  orientações históricas em decisão nova e não ampliar o escopo de licenciamento por
+  interpretação. Após esse lote, definir o próximo conjunto do domínio a partir das fontes
+  de grafo de versões e proveniência ainda identified.
