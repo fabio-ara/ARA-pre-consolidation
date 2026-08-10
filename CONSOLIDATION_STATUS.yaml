@@ -8,10 +8,10 @@ phase: processing
 counts:
   total: 558
   identified: 321
-  processed: 26
-  discarded: 6
+  processed: 0
+  discarded: 0
   blocked: 0
-  verified: 205
+  verified: 237
 
 domains:
   finalidade_e_escopo: verified
@@ -20,7 +20,7 @@ domains:
   modelo_de_conteudo_e_recursos: verified
   autoria_e_curadoria: verified
   interfaces_e_experiencia_de_uso: verified
-  versionamento_e_proveniencia: processing
+  versionamento_e_proveniencia: verified
   colaboracao_e_acesso: identified
   parametrizacao_e_experimentacao: identified
   dados_e_pesquisa_educacional: identified
@@ -40,30 +40,35 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Última fonte primária de versionamento e proveniência, SRC-000017, processada.
-  A fonte é uma issue de governança de propriedade intelectual e marcas e não registra
-  resultado jurídico concluído. A separação entre software, documentação, conteúdos
-  educacionais, dados de pesquisa, materiais de terceiros, contribuições e identidade
-  já está preservada em LICENCIAMENTO.md. PROV-003 foi ampliado, mantendo estado captured,
-  para registrar inventário datado de ativos preexistentes, incluindo AraLearn e AraTalk,
-  possíveis vínculos universitários, empregatícios ou de terceiros, proteção de
-  correspondência institucional sensível, buscas de marcas, análise de titularidade e
-  revisão qualificada quando houver necessidade de conclusão jurídica. MARCAS.md continua
-  registrando a ausência de alegação de marca registrada e os limites de uso da identidade.
-  A exigência histórica de políticas públicas trilíngues foi considerada superada por
-  DEC-002. Nenhuma nova decisão foi criada. Não restam fontes primárias identified no domínio.
+  Auditoria do domínio versionamento e proveniência concluída sobre 32 fontes primárias.
+  As 26 fontes substantivas têm destinos explícitos e as seis fontes descartadas por
+  duplicação, supersessão ou redundância estrutural conservaram as justificativas e foram
+  promovidas, junto com as demais, a verified. VER-001 e PROV-001 permanecem os únicos
+  itens aprovados próprios do domínio sob DEC-004 e DEC-005. VER-002, PROV-002,
+  PROV-003, PROV-004, ACCESS-001, PUB-001 e INF-001 mantêm estado não aprovado e
+  preservam checkpoints, restauração não destrutiva, completude lógica, múltiplos pais,
+  licenciamento de conteúdos, titularidade e marcas, proveniência operacional, retenção,
+  acesso derivacional e alternativas físicas como pendências ou alternativas. Os dois
+  documentos públicos de evidências permanecem históricos e não normativos; preços,
+  quotas e capacidades de provedores são evidência temporal sujeita a revalidação.
+  Nenhum modelo de ACL, provedor, BaaS, mecanismo de armazenamento, biblioteca de grafo,
+  stack, schema, granularidade ou política de retenção foi selecionado. A documentação
+  pública auditada não contém referência ao repositório de origem, à branch de controle
+  ou ao marco interno do corpus. Nenhuma nova decisão ou alteração pública adicional foi
+  necessária durante a auditoria.
 
 next_step: >-
-  Auditar o domínio versionamento e proveniência, conferindo as 32 fontes primárias
-  SRC-000008 a SRC-000012, SRC-000017, SRC-000060, SRC-000098 a SRC-000100,
-  SRC-000140, SRC-000141, SRC-000145, SRC-000149, SRC-000150, SRC-000154,
-  SRC-000156, SRC-000220 a SRC-000222, SRC-000247, SRC-000253 a SRC-000256 e
-  SRC-000355 a SRC-000361. Verificar cobertura e destinos; coerência de VER-001,
-  VER-002, PROV-001 a PROV-004, ACCESS-001, PUB-001 e INF-001 com DEC-002,
-  DEC-004, DEC-005 e DEC-007; separação entre licenciamento, identidade, acesso,
-  proveniência, armazenamento e semântica de revisão; ausência de promoção de
-  checkpoints, restauração não destrutiva, acesso derivacional, retenção, provedor,
-  stack, schema, granularidade ou regras de marca a decisões não aprovadas; preservação
-  das evidências públicas e ausência de referências privadas nos documentos públicos
-  afetados. Se a auditoria passar, promover as fontes do domínio a verified, marcar
-  versionamento_e_proveniencia como verified e registrar o próximo domínio exato.
+  Processar somente SRC-000054, SRC-000062, SRC-000105, SRC-000112 e SRC-000122 a
+  SRC-000124, primeiro lote do domínio colaboração e acesso. Confrontar a issue de
+  colaboração e acesso, o baseline inicial de governança, a configuração de templates,
+  o ADR histórico de autenticação e autorização e os documentos de governança do
+  repositório em inglês, pt-BR e pt-PT com ACCESS-001, PUB-001, AUTH-002, DEC-001,
+  DEC-002, DEC-006 e DEC-007. Distinguir governança do repositório de autorização do
+  produto, autenticação de identidade de autorização sobre conteúdo e papéis
+  administrativos de acesso cotidiano. Deduplicar versões linguísticas segundo DEC-002
+  sem perder cláusulas substantivas. Tratar OIDC, OAuth, RBAC, ABAC, policies, providers
+  de identidade e mecanismos equivalentes somente conforme as fontes sustentarem e sem
+  promovê-los a decisões atuais. Não reativar programa de implementação, não selecionar
+  provedor de identidade, modelo de ACL, schema, framework ou política de acesso. Após
+  o lote, verificar se restam fontes primárias identified em colaboração e acesso e
+  definir o próximo conjunto exato.
