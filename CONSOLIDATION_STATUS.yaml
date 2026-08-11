@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 239
-  processed: 0
+  identified: 236
+  processed: 3
   discarded: 0
   blocked: 0
   verified: 319
@@ -25,7 +25,7 @@ domains:
   parametrizacao_e_experimentacao: verified
   dados_e_pesquisa_educacional: verified
   infraestrutura_e_armazenamento: verified
-  sincronizacao_e_funcionamento_offline: identified
+  sincronizacao_e_funcionamento_offline: processing
   implantacao_e_interoperabilidade: identified
   avaliacao_e_validacao: identified
   relacao_com_a_pesquisa_academica: identified
@@ -40,45 +40,48 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria integral de infraestrutura e armazenamento concluída nas dezoito fontes
-  primárias SRC-000022, SRC-000044, SRC-000052, SRC-000091, SRC-000097, SRC-000109,
-  SRC-000110, SRC-000118, SRC-000146, SRC-000147, SRC-000153, SRC-000157,
-  SRC-000230, SRC-000306 a SRC-000309 e SRC-000450. Cobertura, destinos e autoridade
-  foram confrontados com INF-001, SCOPE-002, SCOPE-005, EXP-005, EXP-009, VER-002,
-  PROV-004, ACCESS-002, DATA-002, DATA-003, MODEL-003, PED-004, VAL-001, VAL-002,
-  DEC-006, DEC-007 e os três documentos públicos de evidências do domínio. A auditoria
-  confirmou que rótulos históricos accepted, baseline, decision, provisional decision,
-  candidate, recommended e equivalentes não têm autoridade canônica atual; R0 e R3
-  permanecem encerrados como not_planned; os dezoito quality budgets são somente pontos
-  históricos de benchmark; as trinta alternativas tecnológicas permanecem espaço de
-  comparação; a revisão v2 prevalece sobre a v1 sem perder o residual de administração
-  compreensível do armazenamento; e preços, quotas e capacidades de fornecedores exigem
-  revalidação. Execução funcional, isolamento e autoridade de validação permanecem
-  distintos, sem seleção de runtime ou sandbox. As buscas públicas não localizaram o nome
-  do repositório de origem, a branch de controle, identificadores SRC-* nem o marco interno
-  do corpus. Nenhum provider, plano, banco, object storage, engine de sincronização,
-  framework, cliente, runtime, tecnologia de isolamento, schema, arquitetura, stack ou
-  implementação foi aprovado. Nenhuma alteração pública adicional foi necessária. A
-  contagem registrada no lote anterior para o documento público de fronteiras de execução
-  foi corrigida operacionalmente: a comparação efetiva mostra cento e noventa e quatro
-  linhas adicionadas, e não cento e setenta e três. A promoção do inventário foi auditada
-  com exatamente dezoito adições e dezoito remoções, somente nas dezoito fontes previstas;
-  SRC-000306 preservou relevant false, destination null e sua justificativa de descarte.
+  Primeiro lote de sincronização e funcionamento offline processado em SRC-000046,
+  SRC-000053 e SRC-000111. As três fontes foram consideradas relevantes. SRC-000046
+  e SRC-000053 são issues do programa de implementação R1 e R3 encerradas como
+  not_planned; delas foram preservados somente problemas e invariantes candidatos sobre
+  materialização local recuperável, atualização sem destruir a última versão válida,
+  reabertura sem conexão, pressão de armazenamento, idempotência quando necessária,
+  conflitos explícitos, preservação da intenção local, revogação, retirada de publicação
+  e ausência de perda silenciosa. SRC-000111 é ADR histórico accepted sem autoridade
+  canônica atual. Outbox, receipts, request ID, expected revision, compare-and-set,
+  reapply, fork e seleção humana foram preservados como alternativas históricas. A
+  exclusão v1 de CRDT e merge semântico automático não foi promovida a proibição
+  universal; permanece somente a restrição de que o corpus não autoriza merge semântico
+  silencioso sem semântica e autoridade definidas. O repositório público recebeu
+  docs/evidencias/sincronizacao-funcionamento-offline-2026-08.md como evidência histórica
+  e não normativa e dois itens novos no backlog: SYNC-001, para materialização,
+  atualização e recuperação offline, e SYNC-002, para sincronização, idempotência e
+  conflitos sem perda silenciosa, ambos pending_research. A comparação pública desde o
+  head anterior mostrou somente quarenta e três linhas adicionadas a BACKLOG.yaml e cento
+  e setenta e oito linhas no novo documento de evidências, sem remoções. DECISOES.md não
+  foi alterado. As buscas públicas não localizaram o nome do repositório de origem, a
+  branch de controle, identificadores SRC-* nem o marco interno do corpus. Nenhum banco
+  local, cache, formato de pacote, schema de outbox ou receipt, compare-and-set API,
+  CRDT, engine de sincronização, provider, transporte, interface de conflito ou
+  implementação foi selecionado. A substituição integral do inventário foi auditada com
+  exatamente três adições e três remoções, somente nas três fontes previstas. Busca no
+  inventário atual não encontrou outra fonte primária do domínio ainda identified.
   Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000046, SRC-000053 e SRC-000111, primeiro lote do domínio
-  sincronização e funcionamento offline. Tratar SRC-000046 e SRC-000053 como issues de
-  implementação R1 e R3 encerradas como not_planned, preservando apenas problemas,
-  invariantes candidatos e critérios não executáveis ainda úteis. Tratar SRC-000111 como
-  ADR histórico accepted sem autoridade de decisão canônica atual. Preservar como questões
-  a materialização atômica com recuperação após atualização interrompida ou corrompida,
-  filas offline inspecionáveis, repetíveis e exportáveis, idempotência, revisão esperada,
-  conflitos explícitos, preservação da intenção local, reapply, fork ou escolha humana,
-  tratamento explícito de revogação e retirada de publicação e ausência de perda oculta.
-  Não promover a proibição histórica de CRDT ou merge semântico automático a decisão
-  universal sem análise, mas preservar que o corpus não autoriza merge semântico silencioso.
-  Confrontar VER-002, PROV-004, UX-003, ACCESS-001, ACCESS-002, INF-001, VAL-001,
-  VAL-002 e DEC-007. Não selecionar IndexedDB, Cache API, schema de outbox ou receipt,
-  compare-and-set API, CRDT, engine de sincronização, provider, transporte, armazenamento,
-  interface de conflito ou implementação. Não processar outras fontes neste lote.
+  Auditar somente SRC-000046, SRC-000053 e SRC-000111, as três fontes primárias do
+  domínio sincronização e funcionamento offline. Confrontar cobertura, destinos e
+  autoridade com SYNC-001, SYNC-002, UX-003, VER-002, PROV-004, ACCESS-001,
+  ACCESS-002, INF-001, VAL-001, VAL-002, DEC-005 e DEC-007 e com
+  docs/evidencias/sincronizacao-funcionamento-offline-2026-08.md. Verificar que as
+  issues R1 e R3 permanecem superadas e not_planned; que o rótulo accepted do ADR não
+  foi promovido; que materialização atômica e preservação da versão anterior continuam
+  candidatos de comportamento; que outbox, receipts, request ID, expected revision,
+  compare-and-set, reapply, fork e escolha humana permanecem alternativas; que a
+  exclusão histórica de CRDT não se tornou proibição universal; e que nenhuma perda ou
+  merge semântico silencioso foi autorizado. Auditar também ausência de referências
+  privadas e de seleção de armazenamento local, cache, protocolo, engine de sync,
+  transporte, provider, schema, UI de conflito ou implementação. Se a auditoria passar,
+  promover as três fontes a verified, marcar sincronizacao_e_funcionamento_offline como
+  verified e delimitar o primeiro lote de implantacao_e_interoperabilidade como próximo
+  passo, sem executá-lo.
