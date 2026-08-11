@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 206
-  processed: 30
+  identified: 194
+  processed: 42
   discarded: 0
   blocked: 0
   verified: 322
@@ -40,66 +40,57 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Segundo lote de implantação e interoperabilidade processado em SRC-000408 a
-  SRC-000431 e SRC-000464, correspondente à rodada executável de adapters descartáveis
-  e sua síntese em português do Brasil. As vinte e cinco fontes foram consideradas
-  relevantes e registradas como processed porque, em conjunto, constituem instrumento
-  de pesquisa reproduzível: documentação, fixtures, demonstração de navegador,
-  ambiente Node, relatórios, scripts, servidor local, núcleo do lifecycle, quatro
-  adapters, código de navegador, testes e síntese. O repositório público preservou o
-  instrumento em docs/evidencias/prototipos/adapters-descartaveis-01/ e criou
-  docs/evidencias/adapters-descartaveis-2026-08.md como síntese histórica e não
-  normativa. O README público do artefato foi reescrito em português do Brasil sem
-  referências administrativas antigas. O standalone.html gerado não foi preservado
-  separadamente porque scripts/build-standalone.mjs permite regenerá-lo. A comparação
-  pública desde o head anterior mostrou exatamente vinte e cinco arquivos novos,
-  nenhuma remoção e nenhuma alteração de arquivo preexistente. O artefato preserva
-  quatro famílias: matemática semântica, construção relacional, programação executável
-  e argumento com fontes, e um lifecycle experimental load, start, importResponse,
-  exportResponse, validate, produceFeedback e dispose. Esse lifecycle e a fronteira
-  exportResponse permanecem evidência de representabilidade, não contratos vigentes.
-  Matemática separa parsing, interpretação, equivalência e forma solicitada; a
-  equivalência por amostragem foi rejeitada pela própria rodada como prova geral ou
-  validador produtivo. Construção relacional mantém geometria derivada fora da resposta.
-  Programação separa testes públicos e protegidos, parsing, falha e timeout; Web Worker
-  e Node vm foram rejeitados somente para a função situada de sandbox produtiva contra
-  código hostil, sem proibição universal para outros usos. Argumento com fontes separa
-  integridade determinística de digest e seletor da revisão humana de relevância e
-  justificativa. O relatório Node registra seis de seis testes aprovados; o walkthrough
-  Chromium registra quinze de quinze verificações aprovadas; a inspeção de
-  acessibilidade registra controles nomeados, sete nós de status e seis headings. Esses
-  resultados demonstram somente os ensaios executados e não constituem validação do
-  produto, conformidade de acessibilidade, segurança de produção, escalabilidade ou
-  efetividade educacional. As medições de tamanho, inicialização, heap e quinhentos
-  ciclos por adapter descrevem o ambiente registrado sem runtimes externos; deltas de
-  heap são ruidosos e não são budgets ou SLAs. Node.js 22.16.0, Python 3.13.5,
-  Playwright e Chromium 144.0.7559.96 permanecem ferramentas do experimento; a versão de
-  Playwright não está fixada em arquivo de dependências do pacote. As dez alterações
-  contratuais propostas permanecem propostas históricas. A regra experimental
-  courseSuppliedCode=forbidden não foi promovida: a governança de extensões fornecidas
-  pelo conteúdo continua pendente em EXP-009. Nenhum lifecycle, schema, formato de
-  resposta, runtime, biblioteca, worker, servidor, sandbox, arquitetura, stack ou
-  implementação foi aprovado. BACKLOG.yaml e DECISOES.md não foram alterados. As buscas
-  públicas não localizaram o nome do repositório de origem, a branch de controle,
-  identificadores SRC-* nem o marco interno do corpus. A substituição integral do
-  inventário foi auditada com exatamente vinte e cinco adições e vinte e cinco remoções,
-  somente nas fontes previstas. Nenhuma nova decisão foi criada.
+  Terceiro lote de implantação e interoperabilidade processado em SRC-000432 a
+  SRC-000443, correspondente ao protótipo external-adapters-01. As doze fontes foram
+  consideradas relevantes e registradas como processed. A rodada confronta três
+  bibliotecas externas candidatas com a fronteira experimental de componentes: MathLive
+  e mapeamento orientado a MathJSON, Cytoscape.js e Recogito Text Annotator. Somente os
+  wrappers escritos para o experimento, seus fixtures e quatro testes Node foram
+  executados; MathLive, Cytoscape.js e Recogito não foram instalados, empacotados nem
+  executados. O relatório registra quatro de quatro testes de boundary aprovados para
+  projeção de estado de forma semelhante às bibliotecas em dados canônicos e para
+  preservação dos documentos usados do lado do curso. Esse resultado não demonstra
+  compatibilidade real de runtime, acessibilidade, desempenho, bundle, comportamento de
+  interface ou adequação pedagógica das bibliotecas. A execução dos candidatos ficou
+  historicamente deferred porque o ambiente não resolvia hosts externos nem oferecia os
+  pacotes no espelho; a própria fonte registra explicitamente que isso não constitui
+  falha das bibliotecas. A auditoria de fontes oficiais preservou como fotografia temporal
+  MathLive 0.110.0 sob MIT, Cytoscape.js no commit auditado com versão
+  3.35.0-unstable e versão estável observada 3.34.0 sob MIT e Recogito Text Annotator
+  4.2.5 sob BSD-3-Clause. Esses dados precisam ser revalidados antes de qualquer decisão
+  futura. O campo histórico ARA_decision e a expressão source-compatible candidate foram
+  reclassificados como avaliação situada da rodada, sem autoridade canônica. O wrapper
+  MathLive cobre somente um subconjunto de MathJSON e não recebe autoridade de prova ou
+  correção; o wrapper Cytoscape remove geometria, estilo, classes, seleção e scratch data;
+  o wrapper Recogito preserva seletores textuais e digest da fonte sem importar DOM,
+  geometria ou store interno. Esses resultados preservam a hipótese de fronteiras
+  substituíveis sem selecionar biblioteca, API ou schema. O repositório público recebeu
+  docs/evidencias/adapters-externos-2026-08.md e o artefato reproduzível em
+  docs/evidencias/prototipos/adapters-externos-01/. A comparação desde o head público
+  anterior mostrou exatamente treze arquivos novos, nenhuma remoção e nenhuma alteração
+  de arquivo preexistente: uma síntese e doze arquivos do artefato. BACKLOG.yaml e
+  DECISOES.md permaneceram inalterados porque MODEL-003, EXP-007, EXP-008, EXP-009,
+  PED-004, INF-001, VAL-001, VAL-002, SCOPE-005, DEC-006 e DEC-007 já cobrem o conteúdo
+  residual. As buscas públicas não localizaram o nome do repositório de origem, a branch
+  de controle, identificadores SRC-* nem o marco interno do corpus. A substituição do
+  inventário foi auditada com exatamente doze adições e doze remoções, somente nas doze
+  fontes previstas. Nenhuma biblioteca, versão, package manager, adapter API, lifecycle,
+  MathJSON como semântica interna, renderer, runtime, schema, stack, arquitetura ou
+  implementação foi aprovada. Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000432 a SRC-000443, terceiro lote do domínio implantação e
-  interoperabilidade, correspondente ao protótipo external-adapters-01. Ler integralmente
-  README, fixtures, lockfile, package, quatro relatórios, três boundary adapters e o teste
-  de fronteira. Confrontar o lote com MODEL-003, EXP-007, EXP-008, EXP-009, PED-004,
-  INF-001, VAL-001, VAL-002, SCOPE-005, DEC-006, DEC-007, a síntese já verificada sobre
-  contratos 0.2 e os documentos públicos de evidências sobre adapters descartáveis,
-  fronteiras de execução e perfis de implantação. Separar compatibilidade do boundary
-  de execução real, disponibilidade do pacote, licença, acessibilidade, desempenho e
-  adequação pedagógica. MathLive, Cytoscape.js e Recogito devem permanecer bibliotecas
-  externas candidatas e não selecionadas; metadados de pacote, versões, licenças,
-  resultados de testes de fronteira e auditoria de fontes são evidência situada sujeita
-  aos limites do corpus. Não transformar package installed/resolved, boundary passed,
-  wrapper ou mapping em seleção tecnológica ou resultado validado do produto. Não
-  selecionar biblioteca, versão, package manager, adapter API, lifecycle, schema,
-  renderer, runtime, stack, arquitetura ou implementação. Não processar ainda
-  SRC-000445, que ficará como lote final primário de implantação e interoperabilidade,
-  nem SRC-000257 a SRC-000269, que pertencem ao domínio avaliação e validação.
+  Processar somente SRC-000445, lote final primário do domínio implantação e
+  interoperabilidade. Tratar a atualização sobre programação móvel de 2023 a 2026 como
+  síntese de pesquisa e confrontá-la com a Issue 18 já verificada, o corpus estruturado
+  SRC-000316, EXP-004, EXP-007, EXP-010, MODEL-003, PED-004, SCOPE-004, SCOPE-005,
+  INF-001, VAL-001, VAL-002, DEC-006 e DEC-007. Separar capacidades observadas em
+  ambientes e estudos de programação móvel de evidência de aprendizagem, preferência de
+  usuário, factibilidade técnica e requisito do ARA. Preservar diferenças entre tarefas,
+  dispositivos, modalidades de execução, feedback, avaliação, continuidade e limites de
+  transferência sem promover qualquer aplicativo, linguagem, runtime, editor, biblioteca,
+  plataforma ou arquitetura. Não inferir efetividade educacional a partir de uso,
+  engajamento, satisfação, conclusão ou resultados transversais. Não realizar nova
+  pesquisa externa extensa: lacunas normais devem permanecer pendências futuras. Após
+  processar SRC-000445, verificar se resta alguma fonte primária de implantação e
+  interoperabilidade em identified; se a cobertura estiver completa, registrar a
+  auditoria integral do domínio como próximo passo.
