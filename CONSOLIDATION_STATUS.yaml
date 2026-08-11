@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 236
-  processed: 0
+  identified: 231
+  processed: 5
   discarded: 0
   blocked: 0
   verified: 322
@@ -26,7 +26,7 @@ domains:
   dados_e_pesquisa_educacional: verified
   infraestrutura_e_armazenamento: verified
   sincronizacao_e_funcionamento_offline: verified
-  implantacao_e_interoperabilidade: identified
+  implantacao_e_interoperabilidade: processing
   avaliacao_e_validacao: identified
   relacao_com_a_pesquisa_academica: identified
 
@@ -40,48 +40,59 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria integral do domínio sincronização e funcionamento offline concluída sobre
-  SRC-000046, SRC-000053 e SRC-000111. A cobertura e a autoridade foram confrontadas
-  com SYNC-001, SYNC-002, UX-003, VER-002, PROV-004, ACCESS-001, ACCESS-002, INF-001,
-  VAL-001, VAL-002, DEC-005, DEC-007 e o documento público
-  docs/evidencias/sincronizacao-funcionamento-offline-2026-08.md. As issues R1 e R3
-  permanecem superadas e encerradas como not_planned, e o rótulo accepted do ADR não
-  possui autoridade canônica atual. Materialização atômica e preservação da versão local
-  anterior permanecem candidatos de comportamento em SYNC-001. Outbox, receipts,
-  request ID, expected revision, compare-and-set, reapply, fork e escolha humana
-  permanecem alternativas históricas em SYNC-002; a exclusão v1 de CRDT não foi
-  promovida a proibição universal. O corpus não autoriza perda oculta nem merge semântico
-  silencioso sem semântica e autoridade definidas. Eventos de transporte, filas e
-  receipts não foram confundidos com revisão materializada, decisão humana ou evidência
-  de pesquisa. Nenhum armazenamento local, cache, protocolo, engine de sincronização,
-  transporte, provider, schema, interface de conflito ou implementação foi selecionado.
-  Nenhuma alteração pública adicional foi necessária. Buscas no repositório público não
-  localizaram o nome do repositório de origem, a branch de controle, identificadores
-  SRC-* nem o marco interno do corpus. A promoção do inventário foi auditada com
-  exatamente três adições e três remoções, somente nas três fontes previstas, todas de
-  processed para verified, preservando relevância, destinos e notas. O domínio
-  sincronizacao_e_funcionamento_offline está verified e nenhuma nova decisão foi criada.
+  Primeiro lote de implantação e interoperabilidade processado em SRC-000056,
+  SRC-000057, SRC-000115, SRC-000117 e SRC-000350. As cinco fontes foram consideradas
+  relevantes e registradas como processed. As issues R4 e R5 permanecem encerradas como
+  not_planned e não reativam ensino formal, implantação institucional, catálogo OER ou
+  registry de capacidades como programa de implementação. O accepted do ADR 0007 não
+  possui autoridade canônica atual. Os seis perfis históricos de implantação foram
+  preservados apenas como casos de contraste entre uso pessoal offline, autoria
+  conectada, pesquisa acadêmica, ensino formal, implantação institucional confidencial
+  e publicação aberta. Os quatro perfis candidatos de execução preservam a distinção
+  entre execução local não protegida, execução protegida candidata, serviço
+  autogerenciado sujeito a conformidade e ferramenta local confiável de autoria.
+  Execução funcional, isolamento e autoridade de validação permanecem conceitos
+  distintos, e capacidade ausente ou fallback deve continuar explícita antes de qualquer
+  decisão técnica. A recomendação histórica contra código arbitrário fornecido pelo
+  curso foi preservada como recomendação de investigação em EXP-009, não como decisão
+  arquitetural universal. O repositório público recebeu
+  docs/evidencias/perfis-implantacao-capacidades-interoperabilidade-2026-08.md, documento
+  histórico e não normativo que preserva perfis, governança de capacidades, fronteiras de
+  confiança e sentidos distintos de interoperabilidade. A comparação pública mostrou um
+  único arquivo novo, com duzentas e vinte e sete linhas adicionadas e nenhuma remoção;
+  BACKLOG.yaml e DECISOES.md permaneceram inalterados porque SCOPE-004, SCOPE-005,
+  EXP-009, PARAM-002, MODEL-003, MODEL-005, PUB-001, PROV-002, ACCESS-001, ACCESS-002,
+  DATA-002, DATA-003, INF-001, SYNC-001, SYNC-002, VAL-001 e VAL-002 já cobrem as
+  pendências residuais sem exigir novo item de implantação. CapabilityManifest, registry,
+  packages assinados, catálogo público, organização/coorte, precedência histórica, PWA,
+  OIDC, PostgreSQL, S3-compatible, Supabase, GPT+MCP, CDN, container, microVM, runtime,
+  schema, provider policy, arquitetura e implementação não foram aprovados. A
+  substituição integral do inventário foi auditada com exatamente cinco adições e cinco
+  remoções, somente nas cinco fontes previstas. As buscas públicas não localizaram o
+  nome do repositório de origem, a branch de controle, identificadores SRC-* nem o marco
+  interno do corpus. Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000056, SRC-000057, SRC-000115, SRC-000117 e SRC-000350,
-  primeiro lote do domínio implantação e interoperabilidade. O lote reúne as issues de
-  implementação R4 e R5 encerradas como not_planned, o ADR histórico de packages de
-  capacidades controladas, os seis perfis históricos de implantação e quatro perfis
-  candidatos de execução de programação. Confrontar SCOPE-002, SCOPE-005, EXP-009,
-  MODEL-003, MODEL-005, PUB-001, PROV-002, ACCESS-001, ACCESS-002, DATA-002, DATA-003,
-  INF-001, SYNC-001, SYNC-002, VAL-001, VAL-002, DEC-006 e DEC-007. Separar requisitos
-  e problemas duráveis de capacidades específicas de perfil, mecanismos de implantação
-  e detalhes do programa de releases superado. Preservar como questões a diferenciação
-  entre uso pessoal offline, autoria conectada, pesquisa acadêmica, ensino formal,
-  implantação institucional confidencial e publicação aberta; portabilidade semântica
-  entre perfis; declaração explícita de capacidades disponíveis ou ausentes; isolamento
-  entre catálogo público, autoria e dados de participantes; governança de instalação,
-  atualização, desativação e rollback de capacidades; e diferenças entre execução local
-  não protegida e validação protegida. Não promover o accepted do ADR, os perfis v1, a
-  precedência histórica, CapabilityManifest, packages assinados, catálogo público,
-  containers, microVMs, PWA, OIDC, PostgreSQL, S3-compatible, Supabase, CDN, registry,
-  política de providers, modelo de organização/coorte, runtime, schema, arquitetura ou
-  implementação a decisões atuais. A proibição histórica de código arbitrário fornecido
-  por curso deve ser confrontada com EXP-009 como recomendação e problema de governança,
-  não convertida silenciosamente em decisão. Não processar ainda os protótipos de
-  adapters descartáveis ou adapters externos, nem SRC-000445 ou SRC-000464.
+  Processar somente SRC-000408 a SRC-000431 e SRC-000464, segundo lote do domínio
+  implantação e interoperabilidade, correspondente à rodada executável de adapters
+  descartáveis e sua síntese em português do Brasil. Tratar os quatro adapters de
+  matemática semântica, construção relacional, programação executável e argumento com
+  fontes como instrumentos de pesquisa substituíveis, não componentes de produção nem
+  seleção de stack. Confrontar MODEL-003, EXP-008, EXP-009, PED-004, INF-001, VAL-001,
+  VAL-002, SCOPE-005, DEC-006, DEC-007 e os documentos públicos de evidências sobre
+  fronteiras de execução e perfis de implantação. Separar compatibilidade do lifecycle e
+  do boundary canônico de elegibilidade produtiva, segurança, acessibilidade e
+  efetividade educacional. Preservar o ambiente Node.js, Python, Playwright e Chromium
+  somente como evidência de reprodução da rodada; os resultados históricos 6 de 6 em
+  testes Node e 15 de 15 no walkthrough de Chromium demonstram apenas o que os ensaios
+  cobriram e não constituem validação do produto ou conformidade de acessibilidade. As
+  medições de tamanho, inicialização e memória descrevem a execução registrada sem
+  runtimes externos e não devem ser generalizadas para bibliotecas ou produção. Manter
+  Web Worker e Node vm como mecanismos rejeitados naquele ensaio para sandbox produtiva
+  contra código hostil, sem transformar a rejeição situada em proibição universal de
+  tecnologia para outros usos. As dez alterações contratuais da síntese permanecem
+  propostas históricas. Não selecionar Node, Python, Playwright, Chromium, runtime,
+  biblioteca, worker, servidor, schema, lifecycle, formato de resposta, sandbox,
+  arquitetura ou implementação. Não processar ainda SRC-000257 a SRC-000265, que
+  pertencem a avaliação e validação, nem SRC-000432 a SRC-000443, SRC-000445 ou qualquer
+  fonte de adapters externos.
