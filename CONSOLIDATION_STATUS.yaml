@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 231
-  processed: 5
+  identified: 206
+  processed: 30
   discarded: 0
   blocked: 0
   verified: 322
@@ -40,59 +40,66 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote de implantação e interoperabilidade processado em SRC-000056,
-  SRC-000057, SRC-000115, SRC-000117 e SRC-000350. As cinco fontes foram consideradas
-  relevantes e registradas como processed. As issues R4 e R5 permanecem encerradas como
-  not_planned e não reativam ensino formal, implantação institucional, catálogo OER ou
-  registry de capacidades como programa de implementação. O accepted do ADR 0007 não
-  possui autoridade canônica atual. Os seis perfis históricos de implantação foram
-  preservados apenas como casos de contraste entre uso pessoal offline, autoria
-  conectada, pesquisa acadêmica, ensino formal, implantação institucional confidencial
-  e publicação aberta. Os quatro perfis candidatos de execução preservam a distinção
-  entre execução local não protegida, execução protegida candidata, serviço
-  autogerenciado sujeito a conformidade e ferramenta local confiável de autoria.
-  Execução funcional, isolamento e autoridade de validação permanecem conceitos
-  distintos, e capacidade ausente ou fallback deve continuar explícita antes de qualquer
-  decisão técnica. A recomendação histórica contra código arbitrário fornecido pelo
-  curso foi preservada como recomendação de investigação em EXP-009, não como decisão
-  arquitetural universal. O repositório público recebeu
-  docs/evidencias/perfis-implantacao-capacidades-interoperabilidade-2026-08.md, documento
-  histórico e não normativo que preserva perfis, governança de capacidades, fronteiras de
-  confiança e sentidos distintos de interoperabilidade. A comparação pública mostrou um
-  único arquivo novo, com duzentas e vinte e sete linhas adicionadas e nenhuma remoção;
-  BACKLOG.yaml e DECISOES.md permaneceram inalterados porque SCOPE-004, SCOPE-005,
-  EXP-009, PARAM-002, MODEL-003, MODEL-005, PUB-001, PROV-002, ACCESS-001, ACCESS-002,
-  DATA-002, DATA-003, INF-001, SYNC-001, SYNC-002, VAL-001 e VAL-002 já cobrem as
-  pendências residuais sem exigir novo item de implantação. CapabilityManifest, registry,
-  packages assinados, catálogo público, organização/coorte, precedência histórica, PWA,
-  OIDC, PostgreSQL, S3-compatible, Supabase, GPT+MCP, CDN, container, microVM, runtime,
-  schema, provider policy, arquitetura e implementação não foram aprovados. A
-  substituição integral do inventário foi auditada com exatamente cinco adições e cinco
-  remoções, somente nas cinco fontes previstas. As buscas públicas não localizaram o
-  nome do repositório de origem, a branch de controle, identificadores SRC-* nem o marco
-  interno do corpus. Nenhuma nova decisão foi criada.
+  Segundo lote de implantação e interoperabilidade processado em SRC-000408 a
+  SRC-000431 e SRC-000464, correspondente à rodada executável de adapters descartáveis
+  e sua síntese em português do Brasil. As vinte e cinco fontes foram consideradas
+  relevantes e registradas como processed porque, em conjunto, constituem instrumento
+  de pesquisa reproduzível: documentação, fixtures, demonstração de navegador,
+  ambiente Node, relatórios, scripts, servidor local, núcleo do lifecycle, quatro
+  adapters, código de navegador, testes e síntese. O repositório público preservou o
+  instrumento em docs/evidencias/prototipos/adapters-descartaveis-01/ e criou
+  docs/evidencias/adapters-descartaveis-2026-08.md como síntese histórica e não
+  normativa. O README público do artefato foi reescrito em português do Brasil sem
+  referências administrativas antigas. O standalone.html gerado não foi preservado
+  separadamente porque scripts/build-standalone.mjs permite regenerá-lo. A comparação
+  pública desde o head anterior mostrou exatamente vinte e cinco arquivos novos,
+  nenhuma remoção e nenhuma alteração de arquivo preexistente. O artefato preserva
+  quatro famílias: matemática semântica, construção relacional, programação executável
+  e argumento com fontes, e um lifecycle experimental load, start, importResponse,
+  exportResponse, validate, produceFeedback e dispose. Esse lifecycle e a fronteira
+  exportResponse permanecem evidência de representabilidade, não contratos vigentes.
+  Matemática separa parsing, interpretação, equivalência e forma solicitada; a
+  equivalência por amostragem foi rejeitada pela própria rodada como prova geral ou
+  validador produtivo. Construção relacional mantém geometria derivada fora da resposta.
+  Programação separa testes públicos e protegidos, parsing, falha e timeout; Web Worker
+  e Node vm foram rejeitados somente para a função situada de sandbox produtiva contra
+  código hostil, sem proibição universal para outros usos. Argumento com fontes separa
+  integridade determinística de digest e seletor da revisão humana de relevância e
+  justificativa. O relatório Node registra seis de seis testes aprovados; o walkthrough
+  Chromium registra quinze de quinze verificações aprovadas; a inspeção de
+  acessibilidade registra controles nomeados, sete nós de status e seis headings. Esses
+  resultados demonstram somente os ensaios executados e não constituem validação do
+  produto, conformidade de acessibilidade, segurança de produção, escalabilidade ou
+  efetividade educacional. As medições de tamanho, inicialização, heap e quinhentos
+  ciclos por adapter descrevem o ambiente registrado sem runtimes externos; deltas de
+  heap são ruidosos e não são budgets ou SLAs. Node.js 22.16.0, Python 3.13.5,
+  Playwright e Chromium 144.0.7559.96 permanecem ferramentas do experimento; a versão de
+  Playwright não está fixada em arquivo de dependências do pacote. As dez alterações
+  contratuais propostas permanecem propostas históricas. A regra experimental
+  courseSuppliedCode=forbidden não foi promovida: a governança de extensões fornecidas
+  pelo conteúdo continua pendente em EXP-009. Nenhum lifecycle, schema, formato de
+  resposta, runtime, biblioteca, worker, servidor, sandbox, arquitetura, stack ou
+  implementação foi aprovado. BACKLOG.yaml e DECISOES.md não foram alterados. As buscas
+  públicas não localizaram o nome do repositório de origem, a branch de controle,
+  identificadores SRC-* nem o marco interno do corpus. A substituição integral do
+  inventário foi auditada com exatamente vinte e cinco adições e vinte e cinco remoções,
+  somente nas fontes previstas. Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000408 a SRC-000431 e SRC-000464, segundo lote do domínio
-  implantação e interoperabilidade, correspondente à rodada executável de adapters
-  descartáveis e sua síntese em português do Brasil. Tratar os quatro adapters de
-  matemática semântica, construção relacional, programação executável e argumento com
-  fontes como instrumentos de pesquisa substituíveis, não componentes de produção nem
-  seleção de stack. Confrontar MODEL-003, EXP-008, EXP-009, PED-004, INF-001, VAL-001,
-  VAL-002, SCOPE-005, DEC-006, DEC-007 e os documentos públicos de evidências sobre
-  fronteiras de execução e perfis de implantação. Separar compatibilidade do lifecycle e
-  do boundary canônico de elegibilidade produtiva, segurança, acessibilidade e
-  efetividade educacional. Preservar o ambiente Node.js, Python, Playwright e Chromium
-  somente como evidência de reprodução da rodada; os resultados históricos 6 de 6 em
-  testes Node e 15 de 15 no walkthrough de Chromium demonstram apenas o que os ensaios
-  cobriram e não constituem validação do produto ou conformidade de acessibilidade. As
-  medições de tamanho, inicialização e memória descrevem a execução registrada sem
-  runtimes externos e não devem ser generalizadas para bibliotecas ou produção. Manter
-  Web Worker e Node vm como mecanismos rejeitados naquele ensaio para sandbox produtiva
-  contra código hostil, sem transformar a rejeição situada em proibição universal de
-  tecnologia para outros usos. As dez alterações contratuais da síntese permanecem
-  propostas históricas. Não selecionar Node, Python, Playwright, Chromium, runtime,
-  biblioteca, worker, servidor, schema, lifecycle, formato de resposta, sandbox,
-  arquitetura ou implementação. Não processar ainda SRC-000257 a SRC-000265, que
-  pertencem a avaliação e validação, nem SRC-000432 a SRC-000443, SRC-000445 ou qualquer
-  fonte de adapters externos.
+  Processar somente SRC-000432 a SRC-000443, terceiro lote do domínio implantação e
+  interoperabilidade, correspondente ao protótipo external-adapters-01. Ler integralmente
+  README, fixtures, lockfile, package, quatro relatórios, três boundary adapters e o teste
+  de fronteira. Confrontar o lote com MODEL-003, EXP-007, EXP-008, EXP-009, PED-004,
+  INF-001, VAL-001, VAL-002, SCOPE-005, DEC-006, DEC-007, a síntese já verificada sobre
+  contratos 0.2 e os documentos públicos de evidências sobre adapters descartáveis,
+  fronteiras de execução e perfis de implantação. Separar compatibilidade do boundary
+  de execução real, disponibilidade do pacote, licença, acessibilidade, desempenho e
+  adequação pedagógica. MathLive, Cytoscape.js e Recogito devem permanecer bibliotecas
+  externas candidatas e não selecionadas; metadados de pacote, versões, licenças,
+  resultados de testes de fronteira e auditoria de fontes são evidência situada sujeita
+  aos limites do corpus. Não transformar package installed/resolved, boundary passed,
+  wrapper ou mapping em seleção tecnológica ou resultado validado do produto. Não
+  selecionar biblioteca, versão, package manager, adapter API, lifecycle, schema,
+  renderer, runtime, stack, arquitetura ou implementação. Não processar ainda
+  SRC-000445, que ficará como lote final primário de implantação e interoperabilidade,
+  nem SRC-000257 a SRC-000269, que pertencem ao domínio avaliação e validação.
