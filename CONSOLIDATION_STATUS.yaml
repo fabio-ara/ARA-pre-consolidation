@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 242
-  processed: 14
+  identified: 239
+  processed: 17
   discarded: 1
   blocked: 0
   verified: 301
@@ -40,55 +40,60 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Frente de pesquisa sobre tecnologia, versionamento e economia de armazenamento processada
-  em seis fontes: SRC-000097, SRC-000146, SRC-000147, SRC-000153, SRC-000157 e
-  SRC-000230. As seis fontes foram consideradas relevantes e processadas. O PR de pesquisa
-  preserva a correção de que AraLearn é referência funcional e caso de contraste, não
-  arquitetura modular equivalente, e organiza questões de inventário de objetos versionados,
-  fronteiras entre metadados, artefatos e estado local, endereçamento por conteúdo,
-  deduplicação, retenção e garbage collection por referências, workloads, custo,
-  disponibilidade, backup, exportação, restauração e administração compreensível do
-  armazenamento. A versão v2 do pré-backlog substitui a v1 para leitura corrente e recoloca
-  versionamento antes da escolha física de armazenamento; a v1 conserva como conteúdo
-  residual próprio a preocupação explícita com comunicar espaço, crescimento, custo
-  estimado, objetos órfãos e consequências de limpeza. O mapa estruturado de trinta
-  alternativas em nove camadas foi preservado como espaço histórico de comparação. Rótulos
-  como candidate, recommended, candidate-baseline, principal-hypothesis e equivalentes não
-  conferem autoridade vigente. A comparação ampla de topologias, BaaS, armazenamento local,
-  sincronização, hospedagem, aplicação, frameworks e carregamento de capacidades foi
-  mantida como evidência, sem seleção técnica. Preços, quotas, políticas de pausa e
-  capacidades de fornecedores constituem fotografia temporal de agosto de 2026 e exigem
-  revalidação futura conforme RES-002. O documento público
-  docs/evidencias/arquitetura-infraestrutura-factibilidade-2026-08.md foi ampliado com a
-  evolução R v1 para R v2, o mapa das trinta alternativas, critérios de revalidação e
-  critérios consolidados para comparação futura. O commit público alterou somente esse
-  documento, com noventa e sete adições e uma remoção correspondente à ampliação do recorte
-  temporal de 3 de agosto para 3 a 5 de agosto. BACKLOG.yaml e DECISOES.md não foram
-  alterados. Buscas públicas não localizaram o nome do repositório de origem, a branch de
-  controle, identificadores SRC-* nem o marco interno do corpus. Nenhum provider, plano,
-  banco, object storage, engine de sincronização, framework, cliente, runtime, schema ou
-  stack foi aprovado. A substituição integral do inventário foi auditada com exatamente seis
-  adições e seis remoções, somente nas seis fontes previstas. Nenhuma nova decisão foi
-  criada.
+  Lote final primário de infraestrutura e armazenamento processado em SRC-000044,
+  SRC-000052 e SRC-000450. SRC-000044 e SRC-000052 foram tratados como issues de
+  implementação R0 e R3 encerradas como not_planned: somente critérios residuais de
+  factibilidade, reprodutibilidade, separação entre domínio/aplicação e infraestrutura,
+  independência de provedor, consistência entre metadados e artefatos, diagnóstico,
+  backup, restore, migração e rollback foram preservados. Releases, dependências,
+  TypeScript, React, Vite, PWA, Node, pnpm, PostgreSQL, OIDC, Supabase, armazenamento
+  S3-compatible, APIs, migrations, fixtures e critérios executáveis não foram reativados.
+  SRC-000450 foi preservada como síntese provisória histórica de fronteiras para execução
+  de código não confiável: resposta de código, validação pública, validação protegida,
+  serviço de execução, garantia de isolamento, política de recursos e evidência diagnóstica
+  permanecem responsabilidades distintas. Execução funcional não demonstra isolamento nem
+  autoridade avaliativa; execução local de baixo risco não equivale a validação protegida.
+  Web Worker e Node vm permanecem rejeitados somente, naquele recorte histórico, como
+  sandbox produtiva contra código hostil; container, microVM e runtimes de navegador são
+  categorias ou alternativas não selecionadas. O conteúdo residual foi confrontado com
+  INF-001, EXP-009, MODEL-003, PED-004 e VAL-002, sem necessidade de novo item de backlog.
+  O repositório público recebeu
+  docs/evidencias/fronteiras-execucao-codigo-nao-confiavel-2026-08.md como evidência
+  técnica histórica e não normativa. Durante a materialização foi detectada duplicação
+  transitória de um segundo documento sobre a mesma fonte; o arquivo redundante foi removido
+  antes do fechamento do lote. O efeito líquido auditado desde o head público anterior é
+  exatamente um arquivo novo, com cento e setenta e três linhas adicionadas e nenhuma
+  remoção. BACKLOG.yaml e DECISOES.md não foram alterados. Buscas públicas não localizaram
+  o nome do repositório de origem, a branch de controle, identificadores SRC-* nem o marco
+  interno do corpus. Uma tentativa posterior de substituir o inventário foi rejeitada com
+  conflito 409 por usar SHA já superado e não produziu escrita; a releitura confirmou que as
+  três linhas já haviam sido materializadas por operação anterior. A comparação desde o
+  estado de controle anterior mostra exatamente três adições e três remoções em
+  SOURCE_INVENTORY.jsonl, somente nas três fontes previstas. Todas as dezoito fontes
+  primárias de infraestrutura e armazenamento estão agora processed ou discarded; nenhuma
+  permanece identified. Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Processar somente SRC-000044, SRC-000052 e SRC-000450, lote final de fontes primárias do
-  domínio infraestrutura e armazenamento. Tratar SRC-000044 e SRC-000052 como itens do
-  programa prematuro de implementação R0 e R3, ambos encerrados como not_planned, preservando
-  somente critérios residuais não executáveis que ainda não estejam cobertos por INF-001,
-  SCOPE-002, EXP-005, EXP-009, VER-002, PROV-004, ACCESS-002, DATA-002, DATA-003, VAL-001,
-  VAL-002, DEC-006 e DEC-007. Não reativar releases, dependências, critérios executáveis,
-  TypeScript, React, Vite, PWA, PostgreSQL, OIDC, Supabase, armazenamento S3-compatible ou
-  qualquer baseline de implementação. Tratar SRC-000450 como decisão provisória histórica de
-  fronteiras para execução de código não confiável: preservar a separação entre resposta de
-  código, validação pública, validação protegida, serviço de execução, garantia de isolamento,
-  política de recursos e evidência diagnóstica; distinguir execução local de baixo risco de
-  validação protegida; manter como hipótese a exigência de ambiente confiável para testes
-  protegidos e como não selecionadas as tecnologias concretas de isolamento. Web Worker e
-  Node vm devem ser registrados apenas como rejeitados naquele recorte para função de sandbox
-  produtiva, sem converter a rodada em decisão atual. Container e microVM permanecem categorias
-  de alternativa, não escolhas. Confrontar também com MODEL-003, PED-004, EXP-009 e o futuro
-  domínio de implantação e interoperabilidade para não antecipar runtime ou política de
-  execução. Após o lote, verificar se nenhuma fonte primária de infraestrutura e armazenamento
-  permanece identified e, se a cobertura estiver completa, registrar a auditoria integral do
-  domínio como próximo passo.
+  Auditar somente as dezoito fontes primárias do domínio infraestrutura e armazenamento:
+  SRC-000022, SRC-000044, SRC-000052, SRC-000091, SRC-000097, SRC-000109, SRC-000110,
+  SRC-000118, SRC-000146, SRC-000147, SRC-000153, SRC-000157, SRC-000230, SRC-000306,
+  SRC-000307, SRC-000308, SRC-000309 e SRC-000450. Confrontar cobertura, destinos e
+  autoridade com INF-001, SCOPE-002, SCOPE-005, EXP-005, EXP-009, VER-002, PROV-004,
+  ACCESS-002, DATA-002, DATA-003, MODEL-003, PED-004, VAL-001, VAL-002, DEC-006 e
+  DEC-007, além de docs/evidencias/arquitetura-infraestrutura-factibilidade-2026-08.md,
+  docs/evidencias/versionamento-e-armazenamento-2026-08.md e
+  docs/evidencias/fronteiras-execucao-codigo-nao-confiavel-2026-08.md. Verificar que
+  rótulos históricos accepted, baseline, decision, provisional decision, candidate,
+  recommended e equivalentes não foram promovidos silenciosamente; que R0 e R3 permanecem
+  superados e encerrados como not_planned; que os dezoito quality budgets continuam pontos
+  históricos de benchmark e não requisitos; que as trinta alternativas tecnológicas
+  permanecem espaço de comparação; que a revisão v2 prevalece sobre a v1 sem perder o
+  residual de administração compreensível; que fatos temporais de fornecedores exigem
+  revalidação; e que execução funcional, isolamento e autoridade de validação permanecem
+  distintos, sem seleção de runtime ou sandbox. Auditar também a ausência de referências
+  privadas e de seleção de provider, plano, banco, object storage, engine de sync,
+  framework, cliente, runtime, tecnologia de isolamento, schema, arquitetura, stack ou
+  implementação. Se a auditoria passar, promover as dezoito fontes a verified, preservando
+  em SRC-000306 relevant false, destination null e sua justificativa de descarte, marcar
+  infraestrutura_e_armazenamento como verified e delimitar o primeiro lote de sincronização
+  e funcionamento offline como próximo passo, sem executá-lo.
