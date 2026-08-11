@@ -8,10 +8,10 @@ phase: processing
 counts:
   total: 558
   identified: 239
-  processed: 17
-  discarded: 1
+  processed: 0
+  discarded: 0
   blocked: 0
-  verified: 301
+  verified: 319
 
 domains:
   finalidade_e_escopo: verified
@@ -24,7 +24,7 @@ domains:
   colaboracao_e_acesso: verified
   parametrizacao_e_experimentacao: verified
   dados_e_pesquisa_educacional: verified
-  infraestrutura_e_armazenamento: processing
+  infraestrutura_e_armazenamento: verified
   sincronizacao_e_funcionamento_offline: identified
   implantacao_e_interoperabilidade: identified
   avaliacao_e_validacao: identified
@@ -40,60 +40,45 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Lote final primário de infraestrutura e armazenamento processado em SRC-000044,
-  SRC-000052 e SRC-000450. SRC-000044 e SRC-000052 foram tratados como issues de
-  implementação R0 e R3 encerradas como not_planned: somente critérios residuais de
-  factibilidade, reprodutibilidade, separação entre domínio/aplicação e infraestrutura,
-  independência de provedor, consistência entre metadados e artefatos, diagnóstico,
-  backup, restore, migração e rollback foram preservados. Releases, dependências,
-  TypeScript, React, Vite, PWA, Node, pnpm, PostgreSQL, OIDC, Supabase, armazenamento
-  S3-compatible, APIs, migrations, fixtures e critérios executáveis não foram reativados.
-  SRC-000450 foi preservada como síntese provisória histórica de fronteiras para execução
-  de código não confiável: resposta de código, validação pública, validação protegida,
-  serviço de execução, garantia de isolamento, política de recursos e evidência diagnóstica
-  permanecem responsabilidades distintas. Execução funcional não demonstra isolamento nem
-  autoridade avaliativa; execução local de baixo risco não equivale a validação protegida.
-  Web Worker e Node vm permanecem rejeitados somente, naquele recorte histórico, como
-  sandbox produtiva contra código hostil; container, microVM e runtimes de navegador são
-  categorias ou alternativas não selecionadas. O conteúdo residual foi confrontado com
-  INF-001, EXP-009, MODEL-003, PED-004 e VAL-002, sem necessidade de novo item de backlog.
-  O repositório público recebeu
-  docs/evidencias/fronteiras-execucao-codigo-nao-confiavel-2026-08.md como evidência
-  técnica histórica e não normativa. Durante a materialização foi detectada duplicação
-  transitória de um segundo documento sobre a mesma fonte; o arquivo redundante foi removido
-  antes do fechamento do lote. O efeito líquido auditado desde o head público anterior é
-  exatamente um arquivo novo, com cento e setenta e três linhas adicionadas e nenhuma
-  remoção. BACKLOG.yaml e DECISOES.md não foram alterados. Buscas públicas não localizaram
-  o nome do repositório de origem, a branch de controle, identificadores SRC-* nem o marco
-  interno do corpus. Uma tentativa posterior de substituir o inventário foi rejeitada com
-  conflito 409 por usar SHA já superado e não produziu escrita; a releitura confirmou que as
-  três linhas já haviam sido materializadas por operação anterior. A comparação desde o
-  estado de controle anterior mostra exatamente três adições e três remoções em
-  SOURCE_INVENTORY.jsonl, somente nas três fontes previstas. Todas as dezoito fontes
-  primárias de infraestrutura e armazenamento estão agora processed ou discarded; nenhuma
-  permanece identified. Nenhuma nova decisão foi criada.
+  Auditoria integral de infraestrutura e armazenamento concluída nas dezoito fontes
+  primárias SRC-000022, SRC-000044, SRC-000052, SRC-000091, SRC-000097, SRC-000109,
+  SRC-000110, SRC-000118, SRC-000146, SRC-000147, SRC-000153, SRC-000157,
+  SRC-000230, SRC-000306 a SRC-000309 e SRC-000450. Cobertura, destinos e autoridade
+  foram confrontados com INF-001, SCOPE-002, SCOPE-005, EXP-005, EXP-009, VER-002,
+  PROV-004, ACCESS-002, DATA-002, DATA-003, MODEL-003, PED-004, VAL-001, VAL-002,
+  DEC-006, DEC-007 e os três documentos públicos de evidências do domínio. A auditoria
+  confirmou que rótulos históricos accepted, baseline, decision, provisional decision,
+  candidate, recommended e equivalentes não têm autoridade canônica atual; R0 e R3
+  permanecem encerrados como not_planned; os dezoito quality budgets são somente pontos
+  históricos de benchmark; as trinta alternativas tecnológicas permanecem espaço de
+  comparação; a revisão v2 prevalece sobre a v1 sem perder o residual de administração
+  compreensível do armazenamento; e preços, quotas e capacidades de fornecedores exigem
+  revalidação. Execução funcional, isolamento e autoridade de validação permanecem
+  distintos, sem seleção de runtime ou sandbox. As buscas públicas não localizaram o nome
+  do repositório de origem, a branch de controle, identificadores SRC-* nem o marco interno
+  do corpus. Nenhum provider, plano, banco, object storage, engine de sincronização,
+  framework, cliente, runtime, tecnologia de isolamento, schema, arquitetura, stack ou
+  implementação foi aprovado. Nenhuma alteração pública adicional foi necessária. A
+  contagem registrada no lote anterior para o documento público de fronteiras de execução
+  foi corrigida operacionalmente: a comparação efetiva mostra cento e noventa e quatro
+  linhas adicionadas, e não cento e setenta e três. A promoção do inventário foi auditada
+  com exatamente dezoito adições e dezoito remoções, somente nas dezoito fontes previstas;
+  SRC-000306 preservou relevant false, destination null e sua justificativa de descarte.
+  Nenhuma nova decisão foi criada.
 
 next_step: >-
-  Auditar somente as dezoito fontes primárias do domínio infraestrutura e armazenamento:
-  SRC-000022, SRC-000044, SRC-000052, SRC-000091, SRC-000097, SRC-000109, SRC-000110,
-  SRC-000118, SRC-000146, SRC-000147, SRC-000153, SRC-000157, SRC-000230, SRC-000306,
-  SRC-000307, SRC-000308, SRC-000309 e SRC-000450. Confrontar cobertura, destinos e
-  autoridade com INF-001, SCOPE-002, SCOPE-005, EXP-005, EXP-009, VER-002, PROV-004,
-  ACCESS-002, DATA-002, DATA-003, MODEL-003, PED-004, VAL-001, VAL-002, DEC-006 e
-  DEC-007, além de docs/evidencias/arquitetura-infraestrutura-factibilidade-2026-08.md,
-  docs/evidencias/versionamento-e-armazenamento-2026-08.md e
-  docs/evidencias/fronteiras-execucao-codigo-nao-confiavel-2026-08.md. Verificar que
-  rótulos históricos accepted, baseline, decision, provisional decision, candidate,
-  recommended e equivalentes não foram promovidos silenciosamente; que R0 e R3 permanecem
-  superados e encerrados como not_planned; que os dezoito quality budgets continuam pontos
-  históricos de benchmark e não requisitos; que as trinta alternativas tecnológicas
-  permanecem espaço de comparação; que a revisão v2 prevalece sobre a v1 sem perder o
-  residual de administração compreensível; que fatos temporais de fornecedores exigem
-  revalidação; e que execução funcional, isolamento e autoridade de validação permanecem
-  distintos, sem seleção de runtime ou sandbox. Auditar também a ausência de referências
-  privadas e de seleção de provider, plano, banco, object storage, engine de sync,
-  framework, cliente, runtime, tecnologia de isolamento, schema, arquitetura, stack ou
-  implementação. Se a auditoria passar, promover as dezoito fontes a verified, preservando
-  em SRC-000306 relevant false, destination null e sua justificativa de descarte, marcar
-  infraestrutura_e_armazenamento como verified e delimitar o primeiro lote de sincronização
-  e funcionamento offline como próximo passo, sem executá-lo.
+  Processar somente SRC-000046, SRC-000053 e SRC-000111, primeiro lote do domínio
+  sincronização e funcionamento offline. Tratar SRC-000046 e SRC-000053 como issues de
+  implementação R1 e R3 encerradas como not_planned, preservando apenas problemas,
+  invariantes candidatos e critérios não executáveis ainda úteis. Tratar SRC-000111 como
+  ADR histórico accepted sem autoridade de decisão canônica atual. Preservar como questões
+  a materialização atômica com recuperação após atualização interrompida ou corrompida,
+  filas offline inspecionáveis, repetíveis e exportáveis, idempotência, revisão esperada,
+  conflitos explícitos, preservação da intenção local, reapply, fork ou escolha humana,
+  tratamento explícito de revogação e retirada de publicação e ausência de perda oculta.
+  Não promover a proibição histórica de CRDT ou merge semântico automático a decisão
+  universal sem análise, mas preservar que o corpus não autoriza merge semântico silencioso.
+  Confrontar VER-002, PROV-004, UX-003, ACCESS-001, ACCESS-002, INF-001, VAL-001,
+  VAL-002 e DEC-007. Não selecionar IndexedDB, Cache API, schema de outbox ou receipt,
+  compare-and-set API, CRDT, engine de sincronização, provider, transporte, armazenamento,
+  interface de conflito ou implementação. Não processar outras fontes neste lote.
