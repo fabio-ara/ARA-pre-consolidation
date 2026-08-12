@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 194
-  processed: 42
+  identified: 193
+  processed: 43
   discarded: 0
   blocked: 0
   verified: 322
@@ -40,57 +40,75 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Terceiro lote de implantação e interoperabilidade processado em SRC-000432 a
-  SRC-000443, correspondente ao protótipo external-adapters-01. As doze fontes foram
-  consideradas relevantes e registradas como processed. A rodada confronta três
-  bibliotecas externas candidatas com a fronteira experimental de componentes: MathLive
-  e mapeamento orientado a MathJSON, Cytoscape.js e Recogito Text Annotator. Somente os
-  wrappers escritos para o experimento, seus fixtures e quatro testes Node foram
-  executados; MathLive, Cytoscape.js e Recogito não foram instalados, empacotados nem
-  executados. O relatório registra quatro de quatro testes de boundary aprovados para
-  projeção de estado de forma semelhante às bibliotecas em dados canônicos e para
-  preservação dos documentos usados do lado do curso. Esse resultado não demonstra
-  compatibilidade real de runtime, acessibilidade, desempenho, bundle, comportamento de
-  interface ou adequação pedagógica das bibliotecas. A execução dos candidatos ficou
-  historicamente deferred porque o ambiente não resolvia hosts externos nem oferecia os
-  pacotes no espelho; a própria fonte registra explicitamente que isso não constitui
-  falha das bibliotecas. A auditoria de fontes oficiais preservou como fotografia temporal
-  MathLive 0.110.0 sob MIT, Cytoscape.js no commit auditado com versão
-  3.35.0-unstable e versão estável observada 3.34.0 sob MIT e Recogito Text Annotator
-  4.2.5 sob BSD-3-Clause. Esses dados precisam ser revalidados antes de qualquer decisão
-  futura. O campo histórico ARA_decision e a expressão source-compatible candidate foram
-  reclassificados como avaliação situada da rodada, sem autoridade canônica. O wrapper
-  MathLive cobre somente um subconjunto de MathJSON e não recebe autoridade de prova ou
-  correção; o wrapper Cytoscape remove geometria, estilo, classes, seleção e scratch data;
-  o wrapper Recogito preserva seletores textuais e digest da fonte sem importar DOM,
-  geometria ou store interno. Esses resultados preservam a hipótese de fronteiras
-  substituíveis sem selecionar biblioteca, API ou schema. O repositório público recebeu
-  docs/evidencias/adapters-externos-2026-08.md e o artefato reproduzível em
-  docs/evidencias/prototipos/adapters-externos-01/. A comparação desde o head público
-  anterior mostrou exatamente treze arquivos novos, nenhuma remoção e nenhuma alteração
-  de arquivo preexistente: uma síntese e doze arquivos do artefato. BACKLOG.yaml e
-  DECISOES.md permaneceram inalterados porque MODEL-003, EXP-007, EXP-008, EXP-009,
-  PED-004, INF-001, VAL-001, VAL-002, SCOPE-005, DEC-006 e DEC-007 já cobrem o conteúdo
-  residual. As buscas públicas não localizaram o nome do repositório de origem, a branch
-  de controle, identificadores SRC-* nem o marco interno do corpus. A substituição do
-  inventário foi auditada com exatamente doze adições e doze remoções, somente nas doze
-  fontes previstas. Nenhuma biblioteca, versão, package manager, adapter API, lifecycle,
-  MathJSON como semântica interna, renderer, runtime, schema, stack, arquitetura ou
-  implementação foi aprovada. Nenhuma nova decisão foi criada.
+  Lote final primário de implantação e interoperabilidade processado em SRC-000445,
+  síntese crítica provisória sobre aprendizagem móvel de programação e desenvolvimentos
+  de 2023 a 2026. A fonte foi confrontada com a Issue 18 já verificada, o corpus
+  estruturado de oito revisões ou estudos em SRC-000316, EXP-004, EXP-007, EXP-010,
+  MODEL-003, PED-004, SCOPE-004, SCOPE-005, INF-001, VAL-001, VAL-002, DEC-006 e
+  DEC-007. Foram preservadas a separação entre aprendizagem, notas, confiança,
+  engajamento, satisfação e continuidade; sete famílias de tarefas de programação;
+  diferenças entre execução, avaliação automática e retorno pedagógico; limites de
+  estudos transversais; evidências negativas; e lacunas sobre transferência, adultos
+  trabalhadores, contextos do Brasil e de Portugal, tópicos avançados, acessibilidade,
+  funcionamento offline, custos, abandono e validade de feedback por inteligência
+  artificial. As formulações históricas de capacidades que a plataforma deveria ter
+  foram reclassificadas como recomendações e questões de investigação, não requisitos.
+  SoloLearn, Mimo, Encode, Enki, linguagem, editor, compilador, interpretador, sandbox,
+  runtime, biblioteca, modelo de linguagem, mecanismo de feedback, política de
+  tentativas, plataforma e arquitetura não foram selecionados. Não foi feita pesquisa
+  externa adicional; a necessidade histórica de buscas formais futuras permanece lacuna
+  do domínio acadêmico. O repositório público recebeu
+  docs/evidencias/aprendizagem-movel-programacao-2023-2026.md como evidência histórica,
+  provisória e não normativa. A comparação pública registrou um único arquivo novo, com
+  duzentas e noventa linhas adicionadas e nenhuma remoção; BACKLOG.yaml e DECISOES.md
+  permaneceram inalterados. As buscas públicas não localizaram o nome do repositório de
+  origem, a branch de controle, identificadores SRC-* nem o marco interno do corpus.
+  SRC-000445 foi registrada como processed e relevant=true. A substituição integral do
+  inventário resultou em três adições e três remoções: uma corresponde ao processamento
+  de SRC-000445 e duas são correções redacionais neutras fora do lote, em SRC-000006
+  (ordem de "duplicada substantivamente") e SRC-000064 (especificação "descrição oficial
+  do produto"), sem mudança de categoria, estado, relevância, destino, autoridade ou
+  conclusão. Por proporcionalidade, não foi feita nova substituição integral apenas para
+  reverter essas duas redações. A busca no inventário atual confirmou que nenhuma fonte
+  primária de implantação e interoperabilidade permanece identified. Durante a seleção
+  de ações ocorreram duas criações indevidas de issues públicas, números 3 e 4; ambas
+  foram imediatamente neutralizadas com título e corpo sem conteúdo substantivo,
+  encerradas como not_planned e não foram usadas como fonte, backlog, decisão ou
+  evidência. Nenhuma nova decisão de produto foi criada.
 
 next_step: >-
-  Processar somente SRC-000445, lote final primário do domínio implantação e
-  interoperabilidade. Tratar a atualização sobre programação móvel de 2023 a 2026 como
-  síntese de pesquisa e confrontá-la com a Issue 18 já verificada, o corpus estruturado
-  SRC-000316, EXP-004, EXP-007, EXP-010, MODEL-003, PED-004, SCOPE-004, SCOPE-005,
-  INF-001, VAL-001, VAL-002, DEC-006 e DEC-007. Separar capacidades observadas em
-  ambientes e estudos de programação móvel de evidência de aprendizagem, preferência de
-  usuário, factibilidade técnica e requisito do ARA. Preservar diferenças entre tarefas,
-  dispositivos, modalidades de execução, feedback, avaliação, continuidade e limites de
-  transferência sem promover qualquer aplicativo, linguagem, runtime, editor, biblioteca,
-  plataforma ou arquitetura. Não inferir efetividade educacional a partir de uso,
-  engajamento, satisfação, conclusão ou resultados transversais. Não realizar nova
-  pesquisa externa extensa: lacunas normais devem permanecer pendências futuras. Após
-  processar SRC-000445, verificar se resta alguma fonte primária de implantação e
-  interoperabilidade em identified; se a cobertura estiver completa, registrar a
-  auditoria integral do domínio como próximo passo.
+  Auditar integralmente o domínio implantação e interoperabilidade, conferindo exatamente
+  SRC-000056, SRC-000057, SRC-000115, SRC-000117, SRC-000350, SRC-000408 a SRC-000443,
+  SRC-000445 e SRC-000464. Verificar cobertura e destinos nos itens SCOPE-004, SCOPE-005,
+  EXP-004, EXP-007, EXP-008, EXP-009, EXP-010, MODEL-003, PED-004, PARAM-002, PUB-001,
+  PROV-002, ACCESS-001, ACCESS-002, DATA-002, DATA-003, INF-001, SYNC-001, SYNC-002,
+  VAL-001 e VAL-002, além de DEC-006 e DEC-007 e dos documentos públicos
+  docs/evidencias/perfis-implantacao-capacidades-interoperabilidade-2026-08.md,
+  docs/evidencias/fronteiras-execucao-codigo-nao-confiavel-2026-08.md,
+  docs/evidencias/adapters-descartaveis-2026-08.md,
+  docs/evidencias/prototipos/adapters-descartaveis-01/,
+  docs/evidencias/adapters-externos-2026-08.md,
+  docs/evidencias/prototipos/adapters-externos-01/ e
+  docs/evidencias/aprendizagem-movel-programacao-2023-2026.md. Confirmar que perfis de
+  implantação e execução permanecem casos de contraste; que CapabilityManifest,
+  registry, packages assinados, OIDC, bancos, CDN, containers, microVMs, runtimes e
+  demais mecanismos não foram aprovados; e que execução funcional, isolamento e
+  autoridade de validação continuam separados. Conferir que os resultados 6 de 6 e 15
+  de 15 da rodada de adapters descartáveis permanecem limitados ao protótipo e não são
+  validação do produto, segurança ou conformidade de acessibilidade; que a rejeição de
+  Web Worker e Node vm permanece situada à função de sandbox produtiva contra código
+  hostil; e que as dez alterações contratuais continuam propostas históricas. Confirmar
+  que MathLive, Cytoscape.js e Recogito não foram executados nem selecionados, que os
+  quatro testes de boundary validam somente wrappers e fixtures, e que versões e licenças
+  registradas são fotografia temporal a revalidar. Conferir que a síntese de programação
+  móvel não infere aprendizagem a partir de uso, engajamento, satisfação, continuidade,
+  conclusão ou resultados transversais e não seleciona aplicativo, linguagem, runtime,
+  editor, sandbox, biblioteca, plataforma ou arquitetura. Verificar a autoridade de
+  DEC-006 e DEC-007 sobre todos os rótulos históricos accepted, candidate, passed,
+  source-compatible, decision ou equivalentes, a higiene dos documentos públicos e a
+  ausência de referências privadas. Verificar também que as issues públicas 3 e 4
+  criadas indevidamente durante o processamento estão encerradas como not_planned, sem
+  conteúdo substantivo e sem efeito canônico. Se a auditoria passar, promover as 43
+  fontes a verified, preservando relevant, destination e notes, marcar
+  implantacao_e_interoperabilidade como verified e delimitar, sem processar, o primeiro
+  lote exato de avaliacao_e_validacao.
