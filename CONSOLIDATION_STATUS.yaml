@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 116
-  processed: 54
+  identified: 114
+  processed: 56
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,28 +40,29 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Sétimo lote de relação com a pesquisa acadêmica processado em SRC-000454,
-  SRC-000455, SRC-000466, SRC-000468 e SRC-000469. As cinco sínteses foram lidas
-  integralmente e confrontadas com os artefatos estruturados e a documentação pública
-  já preservados. O mapa inicial manteve valor residual como corpus-semente de onze
-  referências, incluindo seis fontes que não reapareciam nos mapas públicos posteriores;
-  foi materializado em docs/evidencias/dados/fontes-semente-iniciais-2026-08.csv sem
-  atualização externa. A síntese de Prioridade A preservava extração quantitativa e
-  metodológica mais detalhada das 26 publicações; essa camada foi materializada em
-  docs/evidencias/dados/extracao-prioridade-a-2026-08.csv. A matriz de sobreposição, a
-  síntese das oito revisões centrais e a síntese da triagem foram confirmadas como
-  semanticamente cobertas pelos documentos públicos e artefatos estruturados já
-  processados. Todas as cinco fontes foram registradas como processed e relevant=true.
-  BACKLOG.yaml e DECISOES.md permaneceram inalterados. Nenhuma nova busca, decisão de
-  produto, requisito ou autorização de implementação foi criada.
+  Oitavo lote de relação com a pesquisa acadêmica processado em SRC-000470 e
+  SRC-000471. Os dois registros de solicitação de textos integrais foram lidos
+  integralmente e confrontados somente com evidência posterior existente no corpus.
+  Xu 2024, Van Hoof 2023 e Carpenter 2023 permanecem com texto integral não
+  recuperado no marco, em níveis de extração por resumo ou resumo detalhado; a
+  ausência de recuperação não foi reclassificada como indisponibilidade. Odo 2024
+  permanece planned, sem comprovação de solicitação externa ou recebimento.
+  Agarwal et al. 2021 foi posteriormente resolvido por manuscrito aceito aberto e
+  extração em texto integral, sem evidência de solicitação externa. Foi criado
+  docs/evidencias/dados/estado-acesso-textos-prioritarios-2026-08.csv para
+  preservar os cinco estados sem publicar PDFs ou detalhes administrativos.
+  BACKLOG.yaml e DECISOES.md permaneceram inalterados. Ambas as fontes foram
+  registradas como processed e relevant=true. Nenhuma pesquisa externa, download de
+  texto, decisão de produto, requisito ou autorização de implementação foi criada.
 
 next_step: >-
-  Processar somente SRC-000470 e SRC-000471 como oitavo lote exato de relação com a
-  pesquisa acadêmica. Ler integralmente os dois registros de solicitação de textos
-  integrais, distinguir solicitado, obtido, pendente, indisponível e posteriormente
-  resolvido usando somente evidência existente no corpus, relacionar os pedidos às
-  lacunas de acesso já registradas em Prioridade A e nas revisões centrais e determinar
-  se há conteúdo residual que precise ser preservado publicamente. Não buscar ou baixar
-  novos textos, não alterar estados de acesso por inferência e não realizar pesquisa
-  externa. Encerrar sem avançar para bibliografias, issues, pull requests, comentários
-  ou revisões.
+  Processar somente SRC-000016 e SRC-000172 a SRC-000181 como nono lote exato de
+  relação com a pesquisa acadêmica. Ler integralmente as onze bibliografias,
+  normalizar apenas o necessário para comparação, identificar duplicações entre
+  elas e com os corpora e registros bibliográficos já preservados, distinguir
+  referência bibliográfica de evidência efetivamente extraída e determinar quais
+  registros bibliográficos precisam ser preservados publicamente para impedir
+  perda de cobertura. Não completar metadados por pesquisa externa, não inferir
+  acesso ou qualidade a partir de presença em .bib e não transformar bibliografia
+  em evidência de eficácia. Encerrar sem avançar para issues, pull requests,
+  comentários ou revisões.
