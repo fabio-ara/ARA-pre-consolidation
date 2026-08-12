@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 121
-  processed: 49
+  identified: 116
+  processed: 54
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,33 +40,28 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Sexto lote de relação com a pesquisa acadêmica processado em SRC-000352 e
-  SRC-000353. O mapa de oito revisões amplas e o corpus de dezesseis fontes de
-  aprendizagem estruturada foram lidos integralmente e classificados como evidência
-  bibliográfica secundária ou conceitual, não como publicações primárias adicionais.
-  Três das oito revisões já integram as sínteses formais da Prioridade A, e Coelho
-  2023 já está preservado na evidência de aprendizagem móvel de programação. A
-  conferência por DOI, autoria e ano não encontrou correspondência direta das 24
-  referências com o registro das 167 publicações primárias recuperadas, portanto as
-  camadas não foram somadas. Foram preservados resultados e limites sobre flashcards,
-  spacing, retrieval, quizzes, feedback, múltiplas representações, sistemas tutores
-  inteligentes, autoria, simulação, laboratórios, multimídia, avaliação matemática,
-  pensamento computacional, programação e respostas abertas, sem universalizar efeitos
-  ou promover implicações históricas a requisitos. Foram criados
-  docs/evidencias/mapa-revisoes-literatura-estruturada-2026-08.md,
-  docs/evidencias/dados/revisoes-amplas-2026-08.csv e
-  docs/evidencias/dados/literatura-aprendizagem-estruturada-2026-08.csv. BACKLOG.yaml e
-  DECISOES.md permaneceram inalterados. Ambas as fontes foram registradas como processed
-  e relevant=true. Nenhuma decisão de produto, requisito ou autorização de implementação
-  foi criada.
+  Sétimo lote de relação com a pesquisa acadêmica processado em SRC-000454,
+  SRC-000455, SRC-000466, SRC-000468 e SRC-000469. As cinco sínteses foram lidas
+  integralmente e confrontadas com os artefatos estruturados e a documentação pública
+  já preservados. O mapa inicial manteve valor residual como corpus-semente de onze
+  referências, incluindo seis fontes que não reapareciam nos mapas públicos posteriores;
+  foi materializado em docs/evidencias/dados/fontes-semente-iniciais-2026-08.csv sem
+  atualização externa. A síntese de Prioridade A preservava extração quantitativa e
+  metodológica mais detalhada das 26 publicações; essa camada foi materializada em
+  docs/evidencias/dados/extracao-prioridade-a-2026-08.csv. A matriz de sobreposição, a
+  síntese das oito revisões centrais e a síntese da triagem foram confirmadas como
+  semanticamente cobertas pelos documentos públicos e artefatos estruturados já
+  processados. Todas as cinco fontes foram registradas como processed e relevant=true.
+  BACKLOG.yaml e DECISOES.md permaneceram inalterados. Nenhuma nova busca, decisão de
+  produto, requisito ou autorização de implementação foi criada.
 
 next_step: >-
-  Processar somente SRC-000454, SRC-000455, SRC-000466, SRC-000468 e SRC-000469 como
-  sétimo lote exato de relação com a pesquisa acadêmica. Ler integralmente mapa inicial
-  de evidências, matriz de sobreposição de estudos primários, síntese do corpus de
-  Prioridade A, síntese das revisões centrais e síntese da triagem por título e resumo.
-  Confrontar cada síntese com os artefatos estruturados e evidências públicas já
-  processados, distinguir síntese secundária de evidência subjacente, identificar
-  conteúdo residual versus duplicação e preservar correções, conflitos e limitações sem
-  promover conclusões pedagógicas a decisões. Encerrar sem avançar para SRC-000470,
-  SRC-000471, bibliografias, issues, pull requests, comentários ou revisões.
+  Processar somente SRC-000470 e SRC-000471 como oitavo lote exato de relação com a
+  pesquisa acadêmica. Ler integralmente os dois registros de solicitação de textos
+  integrais, distinguir solicitado, obtido, pendente, indisponível e posteriormente
+  resolvido usando somente evidência existente no corpus, relacionar os pedidos às
+  lacunas de acesso já registradas em Prioridade A e nas revisões centrais e determinar
+  se há conteúdo residual que precise ser preservado publicamente. Não buscar ou baixar
+  novos textos, não alterar estados de acesso por inferência e não realizar pesquisa
+  externa. Encerrar sem avançar para bibliografias, issues, pull requests, comentários
+  ou revisões.
