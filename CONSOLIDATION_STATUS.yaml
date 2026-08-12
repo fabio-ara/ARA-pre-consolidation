@@ -8,10 +8,10 @@ phase: processing
 counts:
   total: 558
   identified: 193
-  processed: 43
+  processed: 0
   discarded: 0
   blocked: 0
-  verified: 322
+  verified: 365
 
 domains:
   finalidade_e_escopo: verified
@@ -26,7 +26,7 @@ domains:
   dados_e_pesquisa_educacional: verified
   infraestrutura_e_armazenamento: verified
   sincronizacao_e_funcionamento_offline: verified
-  implantacao_e_interoperabilidade: processing
+  implantacao_e_interoperabilidade: verified
   avaliacao_e_validacao: identified
   relacao_com_a_pesquisa_academica: identified
 
@@ -40,75 +40,19 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Lote final primário de implantação e interoperabilidade processado em SRC-000445,
-  síntese crítica provisória sobre aprendizagem móvel de programação e desenvolvimentos
-  de 2023 a 2026. A fonte foi confrontada com a Issue 18 já verificada, o corpus
-  estruturado de oito revisões ou estudos em SRC-000316, EXP-004, EXP-007, EXP-010,
-  MODEL-003, PED-004, SCOPE-004, SCOPE-005, INF-001, VAL-001, VAL-002, DEC-006 e
-  DEC-007. Foram preservadas a separação entre aprendizagem, notas, confiança,
-  engajamento, satisfação e continuidade; sete famílias de tarefas de programação;
-  diferenças entre execução, avaliação automática e retorno pedagógico; limites de
-  estudos transversais; evidências negativas; e lacunas sobre transferência, adultos
-  trabalhadores, contextos do Brasil e de Portugal, tópicos avançados, acessibilidade,
-  funcionamento offline, custos, abandono e validade de feedback por inteligência
-  artificial. As formulações históricas de capacidades que a plataforma deveria ter
-  foram reclassificadas como recomendações e questões de investigação, não requisitos.
-  SoloLearn, Mimo, Encode, Enki, linguagem, editor, compilador, interpretador, sandbox,
-  runtime, biblioteca, modelo de linguagem, mecanismo de feedback, política de
-  tentativas, plataforma e arquitetura não foram selecionados. Não foi feita pesquisa
-  externa adicional; a necessidade histórica de buscas formais futuras permanece lacuna
-  do domínio acadêmico. O repositório público recebeu
-  docs/evidencias/aprendizagem-movel-programacao-2023-2026.md como evidência histórica,
-  provisória e não normativa. A comparação pública registrou um único arquivo novo, com
-  duzentas e noventa linhas adicionadas e nenhuma remoção; BACKLOG.yaml e DECISOES.md
-  permaneceram inalterados. As buscas públicas não localizaram o nome do repositório de
-  origem, a branch de controle, identificadores SRC-* nem o marco interno do corpus.
-  SRC-000445 foi registrada como processed e relevant=true. A substituição integral do
-  inventário resultou em três adições e três remoções: uma corresponde ao processamento
-  de SRC-000445 e duas são correções redacionais neutras fora do lote, em SRC-000006
-  (ordem de "duplicada substantivamente") e SRC-000064 (especificação "descrição oficial
-  do produto"), sem mudança de categoria, estado, relevância, destino, autoridade ou
-  conclusão. Por proporcionalidade, não foi feita nova substituição integral apenas para
-  reverter essas duas redações. A busca no inventário atual confirmou que nenhuma fonte
-  primária de implantação e interoperabilidade permanece identified. Durante a seleção
-  de ações ocorreram duas criações indevidas de issues públicas, números 3 e 4; ambas
-  foram imediatamente neutralizadas com título e corpo sem conteúdo substantivo,
-  encerradas como not_planned e não foram usadas como fonte, backlog, decisão ou
-  evidência. Nenhuma nova decisão de produto foi criada.
+  Auditoria integral de implantacao e interoperabilidade concluida sobre SRC-000056,
+  SRC-000057, SRC-000115, SRC-000117, SRC-000350, SRC-000408 a SRC-000443,
+  SRC-000445 e SRC-000464. Foram conferidos cobertura e destinos, autoridade de
+  DEC-006 e DEC-007, limites dos resultados 6/6, 15/15 e 4/4, rejeicao situada de
+  Web Worker e Node vm como sandbox produtiva contra codigo hostil, dez propostas
+  contratuais historicas, nao execucao e nao selecao das bibliotecas externas,
+  temporalidade de versoes e licencas, limites da sintese de programacao movel,
+  preservacao dos prototipos e higiene publica. Resultado: 43 fontes promovidas de
+  processed para verified; nenhuma alteracao no repositorio publico foi necessaria.
 
 next_step: >-
-  Auditar integralmente o domínio implantação e interoperabilidade, conferindo exatamente
-  SRC-000056, SRC-000057, SRC-000115, SRC-000117, SRC-000350, SRC-000408 a SRC-000443,
-  SRC-000445 e SRC-000464. Verificar cobertura e destinos nos itens SCOPE-004, SCOPE-005,
-  EXP-004, EXP-007, EXP-008, EXP-009, EXP-010, MODEL-003, PED-004, PARAM-002, PUB-001,
-  PROV-002, ACCESS-001, ACCESS-002, DATA-002, DATA-003, INF-001, SYNC-001, SYNC-002,
-  VAL-001 e VAL-002, além de DEC-006 e DEC-007 e dos documentos públicos
-  docs/evidencias/perfis-implantacao-capacidades-interoperabilidade-2026-08.md,
-  docs/evidencias/fronteiras-execucao-codigo-nao-confiavel-2026-08.md,
-  docs/evidencias/adapters-descartaveis-2026-08.md,
-  docs/evidencias/prototipos/adapters-descartaveis-01/,
-  docs/evidencias/adapters-externos-2026-08.md,
-  docs/evidencias/prototipos/adapters-externos-01/ e
-  docs/evidencias/aprendizagem-movel-programacao-2023-2026.md. Confirmar que perfis de
-  implantação e execução permanecem casos de contraste; que CapabilityManifest,
-  registry, packages assinados, OIDC, bancos, CDN, containers, microVMs, runtimes e
-  demais mecanismos não foram aprovados; e que execução funcional, isolamento e
-  autoridade de validação continuam separados. Conferir que os resultados 6 de 6 e 15
-  de 15 da rodada de adapters descartáveis permanecem limitados ao protótipo e não são
-  validação do produto, segurança ou conformidade de acessibilidade; que a rejeição de
-  Web Worker e Node vm permanece situada à função de sandbox produtiva contra código
-  hostil; e que as dez alterações contratuais continuam propostas históricas. Confirmar
-  que MathLive, Cytoscape.js e Recogito não foram executados nem selecionados, que os
-  quatro testes de boundary validam somente wrappers e fixtures, e que versões e licenças
-  registradas são fotografia temporal a revalidar. Conferir que a síntese de programação
-  móvel não infere aprendizagem a partir de uso, engajamento, satisfação, continuidade,
-  conclusão ou resultados transversais e não seleciona aplicativo, linguagem, runtime,
-  editor, sandbox, biblioteca, plataforma ou arquitetura. Verificar a autoridade de
-  DEC-006 e DEC-007 sobre todos os rótulos históricos accepted, candidate, passed,
-  source-compatible, decision ou equivalentes, a higiene dos documentos públicos e a
-  ausência de referências privadas. Verificar também que as issues públicas 3 e 4
-  criadas indevidamente durante o processamento estão encerradas como not_planned, sem
-  conteúdo substantivo e sem efeito canônico. Se a auditoria passar, promover as 43
-  fontes a verified, preservando relevant, destination e notes, marcar
-  implantacao_e_interoperabilidade como verified e delimitar, sem processar, o primeiro
-  lote exato de avaliacao_e_validacao.
+  Processar somente SRC-000037, SRC-000038, SRC-000039 e SRC-000040, as issues 36,
+  38, 40 e 42 no corpus congelado, como primeiro lote exato de avaliacao e validacao.
+  Ler integralmente as quatro fontes, classificar evidencias, ideias, requisitos
+  historicos e pendencias, confrontar os destinos canonicos pertinentes e encerrar o
+  lote antes de avancar para outra fonte do dominio.
