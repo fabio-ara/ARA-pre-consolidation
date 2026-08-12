@@ -40,19 +40,22 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria integral de implantacao e interoperabilidade concluida sobre SRC-000056,
+  Auditoria integral de implantação e interoperabilidade concluída sobre SRC-000056,
   SRC-000057, SRC-000115, SRC-000117, SRC-000350, SRC-000408 a SRC-000443,
   SRC-000445 e SRC-000464. Foram conferidos cobertura e destinos, autoridade de
-  DEC-006 e DEC-007, limites dos resultados 6/6, 15/15 e 4/4, rejeicao situada de
-  Web Worker e Node vm como sandbox produtiva contra codigo hostil, dez propostas
-  contratuais historicas, nao execucao e nao selecao das bibliotecas externas,
-  temporalidade de versoes e licencas, limites da sintese de programacao movel,
-  preservacao dos prototipos e higiene publica. Resultado: 43 fontes promovidas de
-  processed para verified; nenhuma alteracao no repositorio publico foi necessaria.
+  DEC-006 e DEC-007, limites dos resultados 6/6, 15/15 e 4/4, rejeição situada de
+  Web Worker e Node vm como sandbox produtiva contra código hostil, dez propostas
+  contratuais históricas, não execução e não seleção das bibliotecas externas,
+  temporalidade de versões e licenças, limites da síntese de programação móvel,
+  preservação dos protótipos e higiene pública. Resultado: 43 fontes promovidas de
+  processed para verified; nenhuma alteração no repositório público foi necessária.
+  A substituição integral do inventário também corrigiu, em SRC-000118, a expressão
+  "pacotes portáveis" para "pacotes portáteis", sem mudança de categoria, estado,
+  relevância, destino, autoridade ou conclusão.
 
 next_step: >-
   Processar somente SRC-000037, SRC-000038, SRC-000039 e SRC-000040, as issues 36,
-  38, 40 e 42 no corpus congelado, como primeiro lote exato de avaliacao e validacao.
-  Ler integralmente as quatro fontes, classificar evidencias, ideias, requisitos
-  historicos e pendencias, confrontar os destinos canonicos pertinentes e encerrar o
-  lote antes de avancar para outra fonte do dominio.
+  38, 40 e 42 no corpus congelado, como primeiro lote exato de avaliação e validação.
+  Ler integralmente as quatro fontes, classificar evidências, ideias, requisitos
+  históricos e pendências, confrontar os destinos canônicos pertinentes e encerrar o
+  lote antes de avançar para outra fonte do domínio.
