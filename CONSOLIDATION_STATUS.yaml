@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 173
-  processed: 20
+  identified: 170
+  processed: 23
   discarded: 0
   blocked: 0
   verified: 365
@@ -40,32 +40,29 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Quinto lote de avaliação e validação processado em SRC-000257 a SRC-000265,
-  os nove arquivos estruturados da rodada de adapters descartáveis. Foram
-  preservados como evidência substantiva o walkthrough de acessibilidade com quatro
-  resultados pass-with-limit, a comparação entre famílias, dez emendas todas
-  marcadas proposed, o registro temporal de licenças e candidatos, medições ruidosas,
-  o threat model com resultados pass, partial e fail-production e os dois resumos da
-  rodada. SRC-000260 foi classificada como relevant=false por ser apenas manifesto de
-  caminhos, tamanhos, hashes e escopo, sem conteúdo intelectual residual exclusivo.
-  Os resultados 6/6 e 15/15 continuam limitados aos cenários exercitados; o delta de
-  heap negativo confirma que as medições não constituem budgets; Worker e Node vm
-  permanecem rejeitados somente como sandbox produtiva contra código hostil. Campos
-  e expressões como production_decisions, accepted amendments e validated lifecycle
-  foram tratados como vocabulário interno da rodada, não decisões canônicas. A
-  evidência pública de adapters descartáveis foi ampliada somente para preservar a
-  fotografia histórica de MathLive/MathJSON, Cytoscape.js, Pyodide, Papyros e
-  Recogito como candidatos não empacotados nem executados, com revisões, licenças e
-  riscos registrados; nenhuma biblioteca ou runtime foi selecionado. BACKLOG.yaml e
-  DECISOES.md permaneceram inalterados. As nove fontes foram registradas como
-  processed; oito são relevant=true e uma relevant=false.
+  Sexto lote de avaliação e validação processado em SRC-000267 a SRC-000269,
+  os três arquivos estruturados da rodada de adapters externos. A comparação
+  confirma auditoria de fonte e API e testes de boundary aprovados nos fixtures,
+  sem execução dos runtimes reais nem de acessibilidade real; as classificações
+  de decisão são resultados de pesquisa e não seleção de biblioteca. O registro
+  temporal preserva MathLive 0.110.0 e Cytoscape.js sob MIT e Recogito 4.2.5
+  sob BSD-3-Clause, sem empacotamento externo e sem conclusão de compatibilidade
+  baseada em integração não executada. O estado de packages registra somente
+  2.046, 1.980 e 2.606 bytes dos wrappers próprios; os 305.180 bytes de Cytoscape
+  são tamanho do artefato ESM minificado de um snapshot oficial instável, não
+  bundle executado, bytes transferidos, cold start ou memória. A evidência pública
+  já cobria integralmente versões, licenças, limites de autoridade, ausência de
+  runtime, limitação ambiental, o tamanho do artefato e o método de revalidação;
+  nenhum arquivo público, BACKLOG.yaml ou DECISOES.md foi alterado. As três fontes
+  foram registradas como processed e relevant=true.
 
 next_step: >-
-  Processar somente SRC-000267, SRC-000268 e SRC-000269, os três arquivos
-  estruturados da rodada de adapters externos, como sexto lote exato de avaliação e
-  validação. Ler integralmente a comparação de adapters, o registro de risco e
-  licenças e o estado de packages; separar auditoria de fonte, teste de boundary,
-  execução real e limitação ambiental, conferir consistência com a evidência pública
-  já materializada e determinar se existe conteúdo residual ainda não preservado.
-  Encerrar o lote sem avançar para outras fontes de avaliação e validação nem para o
-  domínio de relação com a pesquisa acadêmica.
+  Auditar somente o domínio avaliação e validação, sem processar fontes de relação
+  com a pesquisa acadêmica. Conferir cobertura e destinos das 23 fontes processed
+  do domínio: SRC-000037 a SRC-000040, SRC-000048, SRC-000058, SRC-000077 a
+  SRC-000079, SRC-000116, SRC-000132, SRC-000257 a SRC-000265 e SRC-000267 a
+  SRC-000269. Revisar consistência entre inventário, BACKLOG.yaml, DECISOES.md e
+  evidências públicas, verificar ausência de decisões silenciosamente promovidas e
+  higiene pública. Se a auditoria passar, promover somente essas fontes de processed
+  para verified e marcar avaliacao_e_validacao: verified. Encerrar sem iniciar o
+  domínio relação com a pesquisa acadêmica.
