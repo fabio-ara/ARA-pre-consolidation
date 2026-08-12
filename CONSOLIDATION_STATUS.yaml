@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 187
-  processed: 6
+  identified: 184
+  processed: 9
   discarded: 0
   blocked: 0
   verified: 365
@@ -40,27 +40,31 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Segundo lote de avaliação e validação processado em SRC-000048 e SRC-000058.
-  As duas fontes pertenciam ao programa de implementação R1/R5 posteriormente
-  encerrado como not_planned. Foram preservados somente critérios residuais de
-  investigação e evidência: estado contextual e retomada recuperável, funcionamento
-  sem rede, acessibilidade e factibilidade medidas, migração explícita sem reparo
-  semântico silencioso, revisão de ambiguidades, conformidade comparável entre perfis,
-  workloads medidos, backup, restauração, atualização, rollback e registro de
-  limitações e capacidades não suportadas. MODEL-004 permanece pendente de aprovação;
-  EXP-005, VAL-001, VAL-002, PED-004, INF-001 e as evidências públicas existentes
-  cobrem o conteúdo residual. Releases, objetos executáveis, suítes R0-R5, gates de
-  release, Galaxy A07 como gate, checksums, attestations, instalação self-hosted e
-  fechamento ARA v1 não foram promovidos. DEC-007 prevalece. O repositório público
-  permaneceu inalterado e nenhuma nova decisão foi criada. SRC-000048 e SRC-000058
-  foram registradas como processed e relevant=true.
+  Terceiro lote de avaliação e validação processado em SRC-000077, SRC-000078 e
+  SRC-000079, os pull requests agregadores das rodadas de contratos por primeiros
+  princípios, adapters descartáveis e revisão experimental 0.2 com adapters externos.
+  Foram preservados como evidência limitada os resultados 19/19 de validação
+  estrutural, 6/6 testes Node, 15/15 verificações Chromium, 15 validações de esquema,
+  6 testes contratuais e 4 testes de fronteira, sempre com as limitações declaradas.
+  A avaliação de acessibilidade permaneceu parcial e sem estudo com tecnologias
+  assistivas; não havia CI no PR 39; runtimes externos não foram executados; a
+  limitação ambiental não foi atribuída às bibliotecas. Rótulos como production
+  decisions, accept, accept-modified, contrato 0.2 fechado e ARA_decision foram
+  tratados como conclusões internas dos experimentos, não decisões canônicas atuais.
+  A rejeição de equivalência matemática por amostragem, Web Worker e Node vm foi
+  preservada somente para as funções produtivas examinadas. Nenhuma biblioteca,
+  runtime, stack, schema, contrato ou tecnologia de isolamento foi selecionada.
+  MODEL-003, EXP-005, EXP-007 a EXP-010, PED-004, INF-001, VAL-001, VAL-002,
+  DEC-006 e DEC-007 e as evidências públicas existentes cobrem o conteúdo residual.
+  O repositório público permaneceu inalterado e nenhuma nova decisão foi criada. As
+  três fontes foram registradas como processed e relevant=true.
 
 next_step: >-
-  Processar somente SRC-000077, SRC-000078 e SRC-000079, os pull requests 37, 39 e
-  41 no corpus congelado, como terceiro lote exato de avaliação e validação. Ler
-  integralmente os três pull requests e suas alterações substantivas, classificar
-  evidências, resultados, limitações, recomendações e pendências, confrontar com
-  MODEL-003, EXP-005, EXP-007, EXP-008, EXP-009, EXP-010, PED-004, INF-001, VAL-001,
-  VAL-002, DEC-006 e DEC-007 e com as evidências públicas dos adapters. Encerrar o
-  lote sem avançar para SRC-000116, SRC-000132, arquivos de dados ou outras fontes
-  do domínio.
+  Processar somente SRC-000116 e SRC-000132, os arquivos
+  docs/architecture/conformance-plan-v1.md e docs/ux/evaluation-plan-v1.md no corpus
+  congelado, como quarto lote exato de avaliação e validação. Ler integralmente os
+  dois planos, separar critérios históricos de conformance de implementação dos
+  métodos e perguntas de avaliação de UX e acessibilidade, confrontar com VAL-001,
+  VAL-002, PED-004, UX-002, UX-003, UX-004, INF-001, SCOPE-002, DEC-006 e DEC-007 e
+  com as evidências públicas pertinentes. Encerrar o lote sem avançar para
+  SRC-000257 ou arquivos de dados e outras fontes do domínio.
