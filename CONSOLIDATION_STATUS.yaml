@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 184
-  processed: 9
+  identified: 182
+  processed: 11
   discarded: 0
   blocked: 0
   verified: 365
@@ -40,31 +40,25 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Terceiro lote de avaliação e validação processado em SRC-000077, SRC-000078 e
-  SRC-000079, os pull requests agregadores das rodadas de contratos por primeiros
-  princípios, adapters descartáveis e revisão experimental 0.2 com adapters externos.
-  Foram preservados como evidência limitada os resultados 19/19 de validação
-  estrutural, 6/6 testes Node, 15/15 verificações Chromium, 15 validações de esquema,
-  6 testes contratuais e 4 testes de fronteira, sempre com as limitações declaradas.
-  A avaliação de acessibilidade permaneceu parcial e sem estudo com tecnologias
-  assistivas; não havia CI no PR 39; runtimes externos não foram executados; a
-  limitação ambiental não foi atribuída às bibliotecas. Rótulos como production
-  decisions, accept, accept-modified, contrato 0.2 fechado e ARA_decision foram
-  tratados como conclusões internas dos experimentos, não decisões canônicas atuais.
-  A rejeição de equivalência matemática por amostragem, Web Worker e Node vm foi
-  preservada somente para as funções produtivas examinadas. Nenhuma biblioteca,
-  runtime, stack, schema, contrato ou tecnologia de isolamento foi selecionada.
-  MODEL-003, EXP-005, EXP-007 a EXP-010, PED-004, INF-001, VAL-001, VAL-002,
-  DEC-006 e DEC-007 e as evidências públicas existentes cobrem o conteúdo residual.
-  O repositório público permaneceu inalterado e nenhuma nova decisão foi criada. As
-  três fontes foram registradas como processed e relevant=true.
+  Quarto lote de avaliação e validação processado em SRC-000116 e SRC-000132.
+  O plano histórico de conformance preservou nove famílias de verificação, oito
+  fixtures representativos e uma regra de evidência com ambiente, versões, fixture,
+  resultado, limitações e artefatos, sem transformar conformance em efetividade
+  educacional ou alegação de escala. O plano formativo de UX preservou públicos, dez
+  tarefas, métodos de walkthrough, acessibilidade, dispositivo, localização e injeção
+  de falhas, critérios candidatos e pacote de evidências; não autorizava recrutamento
+  nem coleta. MCP, outbox, expected revision, URLs assinadas, CapabilityManifest,
+  Galaxy A07, locales en/pt-BR/pt-PT, alvo WCAG 2.2 AA e contratos de tela históricos
+  não foram promovidos a requisitos ou decisões. O método residual foi materializado
+  em docs/evidencias/metodos-avaliacao-validacao-2026-08.md; BACKLOG.yaml e
+  DECISOES.md permaneceram inalterados. As duas fontes foram registradas como
+  processed e relevant=true.
 
 next_step: >-
-  Processar somente SRC-000116 e SRC-000132, os arquivos
-  docs/architecture/conformance-plan-v1.md e docs/ux/evaluation-plan-v1.md no corpus
-  congelado, como quarto lote exato de avaliação e validação. Ler integralmente os
-  dois planos, separar critérios históricos de conformance de implementação dos
-  métodos e perguntas de avaliação de UX e acessibilidade, confrontar com VAL-001,
-  VAL-002, PED-004, UX-002, UX-003, UX-004, INF-001, SCOPE-002, DEC-006 e DEC-007 e
-  com as evidências públicas pertinentes. Encerrar o lote sem avançar para
-  SRC-000257 ou arquivos de dados e outras fontes do domínio.
+  Processar somente SRC-000257 a SRC-000265, os nove arquivos estruturados da rodada
+  de adapters descartáveis, como quinto lote exato de avaliação e validação. Ler
+  integralmente os registros de acessibilidade, comparação, emendas contratuais,
+  manifesto, licenças, medições, threat model e resumos; separar resultados executados
+  de inferências e propostas, conferir consistência com a evidência pública já
+  materializada e determinar quais fontes são substantivas ou estruturais. Encerrar o
+  lote sem avançar para SRC-000267 a SRC-000269 ou outras fontes.
