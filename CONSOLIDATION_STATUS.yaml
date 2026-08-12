@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 123
-  processed: 47
+  identified: 121
+  processed: 49
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,38 +40,33 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Quinto lote de relação com a pesquisa acadêmica processado em SRC-000338 a
-  SRC-000349. Os doze artefatos estruturados de Prioridade A foram auditados
-  integralmente. A seleção contém 26 publicações: 12 sínteses formais, 4 revisões
-  narrativas ou de estado da arte, 9 avaliações empíricas ou de produto e 1 avaliação
-  secundária de evidência. A profundidade de acesso registrada é 15 textos integrais
-  ou trechos substanciais, 3 resumos ou metadados detalhados e 8 registros em nível de
-  resumo, com 3 solicitações prioritárias de texto integral. A auditoria das listas das
-  12 sínteses mostrou completude desigual e restringiu métricas de sobreposição aos
-  subconjuntos sustentados. Foram recuperadas 167 publicações primárias únicas em 174
-  incidências. O conjunto registra sobreposição alta como risco editorial em saúde e
-  Quizlet, intervalo limitado de Jaccard para as duas revisões Quizlet, sobreposição
-  leve apenas no subconjunto exato de três revisões médicas, uma publicação infantil
-  presente em dois mecanismos e duas relações prováveis entre trabalho acadêmico e
-  publicação posterior ainda não confirmadas. Prioridade A, papel de âncora ou
-  suplemento e métricas de sobreposição não foram tratados como ranking de qualidade,
-  independência de estudos, inclusão final ou efetividade. Foi criado
-  docs/evidencias/corpus-prioridade-a-2026-08.md e preservado integralmente o registro
-  não redundante das 167 publicações em
-  docs/evidencias/dados/publicacoes-primarias-prioridade-a-2026-08.csv. SRC-000343 foi
-  classificado como manifesto estrutural sem conteúdo intelectual residual exclusivo;
-  as outras onze fontes são relevantes. BACKLOG.yaml e DECISOES.md permaneceram
-  inalterados. Nenhuma decisão de produto, requisito ou autorização de implementação
+  Sexto lote de relação com a pesquisa acadêmica processado em SRC-000352 e
+  SRC-000353. O mapa de oito revisões amplas e o corpus de dezesseis fontes de
+  aprendizagem estruturada foram lidos integralmente e classificados como evidência
+  bibliográfica secundária ou conceitual, não como publicações primárias adicionais.
+  Três das oito revisões já integram as sínteses formais da Prioridade A, e Coelho
+  2023 já está preservado na evidência de aprendizagem móvel de programação. A
+  conferência por DOI, autoria e ano não encontrou correspondência direta das 24
+  referências com o registro das 167 publicações primárias recuperadas, portanto as
+  camadas não foram somadas. Foram preservados resultados e limites sobre flashcards,
+  spacing, retrieval, quizzes, feedback, múltiplas representações, sistemas tutores
+  inteligentes, autoria, simulação, laboratórios, multimídia, avaliação matemática,
+  pensamento computacional, programação e respostas abertas, sem universalizar efeitos
+  ou promover implicações históricas a requisitos. Foram criados
+  docs/evidencias/mapa-revisoes-literatura-estruturada-2026-08.md,
+  docs/evidencias/dados/revisoes-amplas-2026-08.csv e
+  docs/evidencias/dados/literatura-aprendizagem-estruturada-2026-08.csv. BACKLOG.yaml e
+  DECISOES.md permaneceram inalterados. Ambas as fontes foram registradas como processed
+  e relevant=true. Nenhuma decisão de produto, requisito ou autorização de implementação
   foi criada.
 
 next_step: >-
-  Processar somente SRC-000352 e SRC-000353 como sexto lote exato de relação com a
-  pesquisa acadêmica. Ler integralmente review-of-reviews-01.csv e
-  structured-learning-literature-01.csv, distinguir revisão de revisões, literatura
-  estruturada, síntese secundária e evidência primária, conferir referências,
-  resultados, limites de transferência e relações com as 167 publicações primárias já
-  preservadas. Confrontar com RES-001, RES-002, PED-001 a PED-010, EXP-007, EXP-010 e
-  as evidências públicas de metodologia, triagem e Prioridade A, sem duplicar
-  conclusões pedagógicas já consolidadas nem transformar achados em decisões de
-  produto. Encerrar sem avançar para sínteses acadêmicas, bibliografias, requests,
-  issues, pull requests, comentários ou revisões.
+  Processar somente SRC-000454, SRC-000455, SRC-000466, SRC-000468 e SRC-000469 como
+  sétimo lote exato de relação com a pesquisa acadêmica. Ler integralmente mapa inicial
+  de evidências, matriz de sobreposição de estudos primários, síntese do corpus de
+  Prioridade A, síntese das revisões centrais e síntese da triagem por título e resumo.
+  Confrontar cada síntese com os artefatos estruturados e evidências públicas já
+  processados, distinguir síntese secundária de evidência subjacente, identificar
+  conteúdo residual versus duplicação e preservar correções, conflitos e limitações sem
+  promover conclusões pedagógicas a decisões. Encerrar sem avançar para SRC-000470,
+  SRC-000471, bibliografias, issues, pull requests, comentários ou revisões.
