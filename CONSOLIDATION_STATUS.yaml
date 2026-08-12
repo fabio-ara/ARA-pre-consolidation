@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 152
-  processed: 18
+  identified: 144
+  processed: 26
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,30 +40,34 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Segundo lote de relação com a pesquisa acadêmica processado em SRC-000182 a
-  SRC-000191. Foram distinguidos planejamento, exploração efetivamente executada,
-  extração dirigida, estado intermediário sem outputs oficiais, validação de outputs
-  e conclusão da primeira busca formal PubMed e ERIC. Estratégias planejadas e
-  strings formais foram preservadas sem converter planejamento em execução. A rodada
-  formal registrou 827 publicações PubMed e 728 registros ERIC brutos; duas
-  duplicações internas do ERIC foram removidas, 82 duplicações entre bases foram
-  identificadas e o conjunto final ficou em 1.471 publicações únicas. Essa contagem é
-  bibliográfica, não de estudos, experimentos, amostras ou registros incluídos após
-  triagem. Os estados intermediários sem contagens finais ou deduplicação completa
-  foram preservados para impedir reconstrução retrospectiva do método. O scoping de
-  ambientes estruturados ampliou o enquadramento além de flashcards sem alegar
-  completude, fluxo PRISMA ou gênero acadêmico definitivo. Foi criado
-  docs/evidencias/buscas-bibliograficas-iniciais-2026-08.md. RES-001, RES-002,
-  SCOPE-003, BACKLOG.yaml e DECISOES.md permaneceram inalterados. As dez fontes
-  foram registradas como processed e relevant=true.
+  Terceiro lote de relação com a pesquisa acadêmica processado em SRC-000192 a
+  SRC-000199. Foram preservados oito protocolos focais de 3 a 5 de agosto de 2026,
+  distinguindo protocolo prospectivo, execução documentada, revisão técnica com
+  fontes mobilizadas e protocolo de escopo sem resultado próprio. P1 e P2 preservam
+  estratégias e critérios sem transformar consultas orientadoras em buscas
+  executadas; P3 registra buscas e corpus de 34 fontes; P4 registra corpus de 36
+  fontes; P5 registra buscas temáticas sem contagem própria no protocolo; a frente
+  de agentes registra execução parcial com oito strings exploratórias e corpus de
+  34 fontes; versionamento registra uso de documentação oficial temporal de quatro
+  famílias de provedores; acesso derivacional preserva o desenho do protocolo,
+  enquanto os resultados comparativos permanecem na evidência temática própria. Foi
+  criado docs/evidencias/protocolos-pesquisa-focal-2026-08.md. Nenhuma decisão de
+  produto, stack, provider, schema, coleta ou implementação foi criada. BACKLOG.yaml
+  e DECISOES.md permaneceram inalterados. A próxima ação de RES-001 ainda precisa
+  ser reconciliada com o material já existente, mas a redação será revista somente
+  após a auditoria dos artefatos formais de deduplicação e triagem, para não definir
+  prematuramente o trabalho acadêmico restante. As oito fontes foram registradas
+  como processed e relevant=true.
 
 next_step: >-
-  Processar somente SRC-000192 a SRC-000199, os oito protocolos de busca focal de
-  3 a 5 de agosto de 2026, como terceiro lote exato de relação com a pesquisa
-  acadêmica. Ler integralmente os protocolos P1 a P5, perfis de agentes e analytics,
-  economia de versionamento e armazenamento e grafo derivacional e acesso;
-  distinguir pergunta, estratégia realmente executada, corpus ou fontes mobilizadas,
-  síntese já preservada em outros domínios e conteúdo puramente procedimental;
-  confrontar com RES-001, RES-002 e os documentos públicos de metodologia e buscas.
-  Encerrar sem avançar para bibliografias, arquivos de dados, sínteses acadêmicas,
-  issues, pull requests, comentários ou revisões.
+  Processar somente SRC-000266 e SRC-000270 a SRC-000277 como quarto lote exato de
+  relação com a pesquisa acadêmica. Auditar os artefatos estruturados da primeira
+  busca formal PubMed-ERIC: duplicações internas e entre bases, publicações
+  relacionadas, manifesto de arquivos, resumo da rodada e pacote de triagem com
+  contagens, overrides e razões. Separar registro bibliográfico, publicação, família
+  de estudo, decisão de deduplicação e decisão de triagem; conferir consistência com
+  as contagens públicas de 827 PubMed, 728 ERIC brutos, 726 ERIC deduplicados
+  internamente, 82 duplicações entre bases e 1.471 publicações únicas. Materializar
+  somente fatos e limitações sustentados pelos arquivos, sem inferir inclusão final,
+  efetividade ou completude. Encerrar sem avançar para outros arquivos de dados,
+  bibliografias, sínteses, requests, issues, pull requests, comentários ou revisões.
