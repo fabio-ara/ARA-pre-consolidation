@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 162
-  processed: 8
+  identified: 152
+  processed: 18
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,33 +40,30 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote de relação com a pesquisa acadêmica processado em SRC-000015,
-  SRC-000106, SRC-000127, SRC-000362, SRC-000363, SRC-000461, SRC-000472 e
-  SRC-000473. Foram preservados como conteúdo metodológico substantivo a orientação
-  geral de reprodutibilidade e estados de acesso, o esquema de extração adaptado ao
-  desenho do estudo, o registro estruturado de fontes e o protocolo mestre histórico
-  de revisão de escopo programática. A evidência pública materializa pergunta,
-  estratégia efetivamente executada, procedência, acesso, deduplicação, triagem,
-  extração, qualidade, limitações, ética, direitos autorais e alterações prospectivas,
-  sempre separando achado, interpretação, inferência, hipótese e implicação para o ARA.
-  JBI 2024 e PRISMA-ScR foram preservados somente como referências metodológicas
-  históricas sujeitas a revalidação; nenhuma busca foi declarada executada apenas por
-  estar planejada e nenhum levantamento recebeu classificação formal de revisão sem
-  auditoria específica. O template de issue, o índice operacional e os templates de
-  busca e triagem foram classificados relevant=false porque sua substância está
-  integralmente coberta pelas fontes metodológicas e o mecanismo administrativo foi
-  superado por DEC-001, DEC-002 e DEC-007. RES-001, RES-002 e RES-003 permaneceram
-  abertos e inalterados, assim como BACKLOG.yaml e DECISOES.md. Quatro fontes são
-  relevant=true e quatro relevant=false; todas as oito ficaram processed.
+  Segundo lote de relação com a pesquisa acadêmica processado em SRC-000182 a
+  SRC-000191. Foram distinguidos planejamento, exploração efetivamente executada,
+  extração dirigida, estado intermediário sem outputs oficiais, validação de outputs
+  e conclusão da primeira busca formal PubMed e ERIC. Estratégias planejadas e
+  strings formais foram preservadas sem converter planejamento em execução. A rodada
+  formal registrou 827 publicações PubMed e 728 registros ERIC brutos; duas
+  duplicações internas do ERIC foram removidas, 82 duplicações entre bases foram
+  identificadas e o conjunto final ficou em 1.471 publicações únicas. Essa contagem é
+  bibliográfica, não de estudos, experimentos, amostras ou registros incluídos após
+  triagem. Os estados intermediários sem contagens finais ou deduplicação completa
+  foram preservados para impedir reconstrução retrospectiva do método. O scoping de
+  ambientes estruturados ampliou o enquadramento além de flashcards sem alegar
+  completude, fluxo PRISMA ou gênero acadêmico definitivo. Foi criado
+  docs/evidencias/buscas-bibliograficas-iniciais-2026-08.md. RES-001, RES-002,
+  SCOPE-003, BACKLOG.yaml e DECISOES.md permaneceram inalterados. As dez fontes
+  foram registradas como processed e relevant=true.
 
 next_step: >-
-  Processar somente SRC-000182 a SRC-000191, os dez registros de busca de 2 de agosto
-  de 2026, como segundo lote exato de relação com a pesquisa acadêmica. Ler
-  integralmente os registros de exploração de aplicativos e sistemas, extração de
-  revisões centrais, execução, validação e conclusão da primeira busca formal e o
-  scoping de ambientes interativos; distinguir estratégia planejada, busca
-  efetivamente executada, fonte acessada, contagem, triagem, deduplicação, limitação
-  de acesso e inferência posterior; confrontar com RES-001, RES-002 e
-  docs/evidencias/metodologia-levantamento-bibliografico-2026-08.md. Encerrar sem
-  avançar para SRC-000192 ou posteriores, bibliografias, corpora estruturados, issues,
-  pull requests, comentários ou revisões.
+  Processar somente SRC-000192 a SRC-000199, os oito protocolos de busca focal de
+  3 a 5 de agosto de 2026, como terceiro lote exato de relação com a pesquisa
+  acadêmica. Ler integralmente os protocolos P1 a P5, perfis de agentes e analytics,
+  economia de versionamento e armazenamento e grafo derivacional e acesso;
+  distinguir pergunta, estratégia realmente executada, corpus ou fontes mobilizadas,
+  síntese já preservada em outros domínios e conteúdo puramente procedimental;
+  confrontar com RES-001, RES-002 e os documentos públicos de metodologia e buscas.
+  Encerrar sem avançar para bibliografias, arquivos de dados, sínteses acadêmicas,
+  issues, pull requests, comentários ou revisões.
