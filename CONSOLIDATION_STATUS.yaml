@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 144
-  processed: 26
+  identified: 135
+  processed: 35
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,34 +40,36 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Terceiro lote de relação com a pesquisa acadêmica processado em SRC-000192 a
-  SRC-000199. Foram preservados oito protocolos focais de 3 a 5 de agosto de 2026,
-  distinguindo protocolo prospectivo, execução documentada, revisão técnica com
-  fontes mobilizadas e protocolo de escopo sem resultado próprio. P1 e P2 preservam
-  estratégias e critérios sem transformar consultas orientadoras em buscas
-  executadas; P3 registra buscas e corpus de 34 fontes; P4 registra corpus de 36
-  fontes; P5 registra buscas temáticas sem contagem própria no protocolo; a frente
-  de agentes registra execução parcial com oito strings exploratórias e corpus de
-  34 fontes; versionamento registra uso de documentação oficial temporal de quatro
-  famílias de provedores; acesso derivacional preserva o desenho do protocolo,
-  enquanto os resultados comparativos permanecem na evidência temática própria. Foi
-  criado docs/evidencias/protocolos-pesquisa-focal-2026-08.md. Nenhuma decisão de
-  produto, stack, provider, schema, coleta ou implementação foi criada. BACKLOG.yaml
-  e DECISOES.md permaneceram inalterados. A próxima ação de RES-001 ainda precisa
-  ser reconciliada com o material já existente, mas a redação será revista somente
-  após a auditoria dos artefatos formais de deduplicação e triagem, para não definir
-  prematuramente o trabalho acadêmico restante. As oito fontes foram registradas
-  como processed e relevant=true.
+  Quarto lote de relação com a pesquisa acadêmica processado em SRC-000266 e
+  SRC-000270 a SRC-000277. A auditoria dos artefatos estruturados confirmou a primeira
+  busca formal PubMed-ERIC com 827 publicações PubMed, 728 registros ERIC brutos,
+  duas duplicações bibliográficas internas do ERIC, 726 publicações ERIC após essa
+  deduplicação, 82 duplicações entre bases e corpus final de 1.471 publicações únicas.
+  Foram preservadas separadamente publicações relacionadas pertencentes à mesma família
+  de estudo ou a versões e funções distintas, evitando confundir deduplicação de
+  publicação com deduplicação de estudo. A primeira triagem por título e resumo foi
+  confirmada como passagem de um único revisor assistida por regras determinísticas e
+  auditoria manual: 732 include, 504 maybe e 235 exclude; prioridades A=26, B=425,
+  C=281, D=504 e 235 sem prioridade; 18 resumos ausentes ou breves; amostra de auditoria
+  de 90 registros com 80 decisões mantidas e 10 alteradas, além de 14 overrides manuais
+  totais. Include, maybe e prioridade expressam relevância para recuperação ou revisão,
+  não qualidade de evidência nem inclusão acadêmica final. SRC-000271 e SRC-000273 foram
+  classificados como manifestos estruturais sem conteúdo intelectual residual exclusivo;
+  as outras sete fontes são relevantes. Foi criado
+  docs/evidencias/triagem-bibliografica-rodada-01-2026-08.md. RES-001 permaneceu captured,
+  mas sua próxima ação foi reconciliada para auditar e consolidar bibliografias, famílias
+  de estudo, textos recuperados, extrações e sínteses existentes antes de novas buscas.
+  Nenhuma decisão de produto, requisito ou autorização de implementação foi criada.
 
 next_step: >-
-  Processar somente SRC-000266 e SRC-000270 a SRC-000277 como quarto lote exato de
-  relação com a pesquisa acadêmica. Auditar os artefatos estruturados da primeira
-  busca formal PubMed-ERIC: duplicações internas e entre bases, publicações
-  relacionadas, manifesto de arquivos, resumo da rodada e pacote de triagem com
-  contagens, overrides e razões. Separar registro bibliográfico, publicação, família
-  de estudo, decisão de deduplicação e decisão de triagem; conferir consistência com
-  as contagens públicas de 827 PubMed, 728 ERIC brutos, 726 ERIC deduplicados
-  internamente, 82 duplicações entre bases e 1.471 publicações únicas. Materializar
-  somente fatos e limitações sustentados pelos arquivos, sem inferir inclusão final,
-  efetividade ou completude. Encerrar sem avançar para outros arquivos de dados,
-  bibliografias, sínteses, requests, issues, pull requests, comentários ou revisões.
+  Processar somente SRC-000338 a SRC-000349 como quinto lote exato de relação com a
+  pesquisa acadêmica. Auditar integralmente os doze artefatos estruturados de Prioridade A:
+  resumo de extração, sínteses formais, núcleo não redundante, outras evidências,
+  clusters e pares de sobreposição, manifesto, publicações primárias, completude das
+  revisões, incidência de publicações e famílias de estudo. Distinguir publicação,
+  estudo ou família de estudo, revisão, síntese e evidência primária; verificar contagens,
+  sobreposições, cobertura e limitações sem inferir independência de amostras, qualidade,
+  efetividade ou exaustão não sustentadas. Confrontar com RES-001, RES-002, a evidência
+  pública de triagem e as sínteses temáticas já materializadas. Encerrar sem avançar para
+  SRC-000352, SRC-000353, sínteses acadêmicas, bibliografias, requests, issues, pull
+  requests, comentários ou revisões.
