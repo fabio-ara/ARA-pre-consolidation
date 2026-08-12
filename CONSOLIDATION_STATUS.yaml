@@ -8,10 +8,10 @@ phase: processing
 counts:
   total: 558
   identified: 170
-  processed: 23
+  processed: 0
   discarded: 0
   blocked: 0
-  verified: 365
+  verified: 388
 
 domains:
   finalidade_e_escopo: verified
@@ -27,7 +27,7 @@ domains:
   infraestrutura_e_armazenamento: verified
   sincronizacao_e_funcionamento_offline: verified
   implantacao_e_interoperabilidade: verified
-  avaliacao_e_validacao: processing
+  avaliacao_e_validacao: verified
   relacao_com_a_pesquisa_academica: identified
 
 blockers: []
@@ -40,29 +40,31 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Sexto lote de avaliação e validação processado em SRC-000267 a SRC-000269,
-  os três arquivos estruturados da rodada de adapters externos. A comparação
-  confirma auditoria de fonte e API e testes de boundary aprovados nos fixtures,
-  sem execução dos runtimes reais nem de acessibilidade real; as classificações
-  de decisão são resultados de pesquisa e não seleção de biblioteca. O registro
-  temporal preserva MathLive 0.110.0 e Cytoscape.js sob MIT e Recogito 4.2.5
-  sob BSD-3-Clause, sem empacotamento externo e sem conclusão de compatibilidade
-  baseada em integração não executada. O estado de packages registra somente
-  2.046, 1.980 e 2.606 bytes dos wrappers próprios; os 305.180 bytes de Cytoscape
-  são tamanho do artefato ESM minificado de um snapshot oficial instável, não
-  bundle executado, bytes transferidos, cold start ou memória. A evidência pública
-  já cobria integralmente versões, licenças, limites de autoridade, ausência de
-  runtime, limitação ambiental, o tamanho do artefato e o método de revalidação;
-  nenhum arquivo público, BACKLOG.yaml ou DECISOES.md foi alterado. As três fontes
-  foram registradas como processed e relevant=true.
+  Domínio avaliação e validação auditado integralmente. As 23 fontes que estavam
+  processed foram conferidas quanto a cobertura, destinos, autoridade, conflitos e
+  higiene pública e promovidas para verified: SRC-000037 a SRC-000040, SRC-000048,
+  SRC-000058, SRC-000077 a SRC-000079, SRC-000116, SRC-000132, SRC-000257 a
+  SRC-000265 e SRC-000267 a SRC-000269. BACKLOG.yaml mantém VAL-001 e VAL-002 como
+  pendências de validação e MODEL-003 e MODEL-004 continuam pending_owner_approval;
+  nenhuma proposta, resultado de protótipo, gate histórico, biblioteca, runtime,
+  schema, contrato, budget, perfil, política de acessibilidade ou mecanismo de
+  implementação foi promovido silenciosamente a decisão ou requisito. Os documentos
+  públicos preservam explicitamente as diferenças entre conformidade técnica,
+  usabilidade, acessibilidade, segurança, factibilidade, escala e efetividade
+  educacional, bem como as limitações dos resultados 19/19, 6/6, 15/15, 15+6+4 e
+  4/4. A ausência de execução dos runtimes externos continua registrada como limitação
+  ambiental, não falha das bibliotecas. A higiene pública foi verificada sem referências
+  ao corpus, branch de controle, identificadores de inventário, commit congelado ou
+  localizadores administrativos antigos. Nenhum arquivo público foi alterado nesta
+  auditoria. O domínio foi marcado verified.
 
 next_step: >-
-  Auditar somente o domínio avaliação e validação, sem processar fontes de relação
-  com a pesquisa acadêmica. Conferir cobertura e destinos das 23 fontes processed
-  do domínio: SRC-000037 a SRC-000040, SRC-000048, SRC-000058, SRC-000077 a
-  SRC-000079, SRC-000116, SRC-000132, SRC-000257 a SRC-000265 e SRC-000267 a
-  SRC-000269. Revisar consistência entre inventário, BACKLOG.yaml, DECISOES.md e
-  evidências públicas, verificar ausência de decisões silenciosamente promovidas e
-  higiene pública. Se a auditoria passar, promover somente essas fontes de processed
-  para verified e marcar avaliacao_e_validacao: verified. Encerrar sem iniciar o
-  domínio relação com a pesquisa acadêmica.
+  Processar somente SRC-000015, SRC-000106, SRC-000127, SRC-000362, SRC-000363,
+  SRC-000461, SRC-000472 e SRC-000473 como primeiro lote exato de relação com a
+  pesquisa acadêmica. Ler integralmente o índice de pesquisa, o protocolo mestre,
+  o template histórico de pesquisa, os schemas de extração e registro de fonte e os
+  templates de busca e triagem; separar governança metodológica útil de mecanismos
+  administrativos superados por DEC-001, DEC-002 e DEC-007; confrontar com RES-001,
+  RES-002, RES-003, METODO_DE_TRABALHO.md e as evidências públicas pertinentes.
+  Encerrar o lote sem avançar para bibliografias, registros de busca, corpora,
+  issues, pull requests, comentários ou revisões.
