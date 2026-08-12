@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 189
-  processed: 4
+  identified: 187
+  processed: 6
   discarded: 0
   blocked: 0
   verified: 365
@@ -40,22 +40,27 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote de avaliação e validação processado em SRC-000037 a SRC-000040.
-  Foram preservados protocolos e resultados históricos de contratos por primeiros
-  princípios, adapters descartáveis, revisão contratual 0.2 e comparação futura de
-  runtimes externos, sempre separando conformidade estrutural, comportamento de
-  protótipo, execução real, segurança, acessibilidade e efetividade educacional.
-  As dez emendas permanecem propostas do protótipo sem autoridade canônica; MathLive,
-  Cytoscape.js e Recogito não foram executados nem selecionados. A limitação ambiental
-  não foi tratada como evidência contra bibliotecas. O documento público sobre adapters
-  externos recebeu as condições e o método histórico para eventual revalidação futura.
-  BACKLOG.yaml e DECISOES.md permaneceram inalterados; nenhuma nova decisão de produto
-  foi criada. As quatro fontes foram registradas como processed e relevant=true.
+  Segundo lote de avaliação e validação processado em SRC-000048 e SRC-000058.
+  As duas fontes pertenciam ao programa de implementação R1/R5 posteriormente
+  encerrado como not_planned. Foram preservados somente critérios residuais de
+  investigação e evidência: estado contextual e retomada recuperável, funcionamento
+  sem rede, acessibilidade e factibilidade medidas, migração explícita sem reparo
+  semântico silencioso, revisão de ambiguidades, conformidade comparável entre perfis,
+  workloads medidos, backup, restauração, atualização, rollback e registro de
+  limitações e capacidades não suportadas. MODEL-004 permanece pendente de aprovação;
+  EXP-005, VAL-001, VAL-002, PED-004, INF-001 e as evidências públicas existentes
+  cobrem o conteúdo residual. Releases, objetos executáveis, suítes R0-R5, gates de
+  release, Galaxy A07 como gate, checksums, attestations, instalação self-hosted e
+  fechamento ARA v1 não foram promovidos. DEC-007 prevalece. O repositório público
+  permaneceu inalterado e nenhuma nova decisão foi criada. SRC-000048 e SRC-000058
+  foram registradas como processed e relevant=true.
 
 next_step: >-
-  Processar somente SRC-000048 e SRC-000058, as issues 64 e 74 no corpus congelado,
-  como segundo lote exato de avaliação e validação. Separar critérios residuais de
-  avaliação, conformance e evidência dos requisitos executáveis do programa de releases
-  encerrado; confrontar com VAL-001, VAL-002, EXP-005, PED-004, INF-001, os domínios
-  correlatos e DEC-007; encerrar o lote sem avançar para pull requests, arquivos de
-  dados ou outras fontes de avaliação e validação.
+  Processar somente SRC-000077, SRC-000078 e SRC-000079, os pull requests 37, 39 e
+  41 no corpus congelado, como terceiro lote exato de avaliação e validação. Ler
+  integralmente os três pull requests e suas alterações substantivas, classificar
+  evidências, resultados, limitações, recomendações e pendências, confrontar com
+  MODEL-003, EXP-005, EXP-007, EXP-008, EXP-009, EXP-010, PED-004, INF-001, VAL-001,
+  VAL-002, DEC-006 e DEC-007 e com as evidências públicas dos adapters. Encerrar o
+  lote sem avançar para SRC-000116, SRC-000132, arquivos de dados ou outras fontes
+  do domínio.
