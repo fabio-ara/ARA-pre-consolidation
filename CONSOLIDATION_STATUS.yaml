@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 135
-  processed: 35
+  identified: 123
+  processed: 47
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,36 +40,38 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Quarto lote de relação com a pesquisa acadêmica processado em SRC-000266 e
-  SRC-000270 a SRC-000277. A auditoria dos artefatos estruturados confirmou a primeira
-  busca formal PubMed-ERIC com 827 publicações PubMed, 728 registros ERIC brutos,
-  duas duplicações bibliográficas internas do ERIC, 726 publicações ERIC após essa
-  deduplicação, 82 duplicações entre bases e corpus final de 1.471 publicações únicas.
-  Foram preservadas separadamente publicações relacionadas pertencentes à mesma família
-  de estudo ou a versões e funções distintas, evitando confundir deduplicação de
-  publicação com deduplicação de estudo. A primeira triagem por título e resumo foi
-  confirmada como passagem de um único revisor assistida por regras determinísticas e
-  auditoria manual: 732 include, 504 maybe e 235 exclude; prioridades A=26, B=425,
-  C=281, D=504 e 235 sem prioridade; 18 resumos ausentes ou breves; amostra de auditoria
-  de 90 registros com 80 decisões mantidas e 10 alteradas, além de 14 overrides manuais
-  totais. Include, maybe e prioridade expressam relevância para recuperação ou revisão,
-  não qualidade de evidência nem inclusão acadêmica final. SRC-000271 e SRC-000273 foram
-  classificados como manifestos estruturais sem conteúdo intelectual residual exclusivo;
-  as outras sete fontes são relevantes. Foi criado
-  docs/evidencias/triagem-bibliografica-rodada-01-2026-08.md. RES-001 permaneceu captured,
-  mas sua próxima ação foi reconciliada para auditar e consolidar bibliografias, famílias
-  de estudo, textos recuperados, extrações e sínteses existentes antes de novas buscas.
-  Nenhuma decisão de produto, requisito ou autorização de implementação foi criada.
+  Quinto lote de relação com a pesquisa acadêmica processado em SRC-000338 a
+  SRC-000349. Os doze artefatos estruturados de Prioridade A foram auditados
+  integralmente. A seleção contém 26 publicações: 12 sínteses formais, 4 revisões
+  narrativas ou de estado da arte, 9 avaliações empíricas ou de produto e 1 avaliação
+  secundária de evidência. A profundidade de acesso registrada é 15 textos integrais
+  ou trechos substanciais, 3 resumos ou metadados detalhados e 8 registros em nível de
+  resumo, com 3 solicitações prioritárias de texto integral. A auditoria das listas das
+  12 sínteses mostrou completude desigual e restringiu métricas de sobreposição aos
+  subconjuntos sustentados. Foram recuperadas 167 publicações primárias únicas em 174
+  incidências. O conjunto registra sobreposição alta como risco editorial em saúde e
+  Quizlet, intervalo limitado de Jaccard para as duas revisões Quizlet, sobreposição
+  leve apenas no subconjunto exato de três revisões médicas, uma publicação infantil
+  presente em dois mecanismos e duas relações prováveis entre trabalho acadêmico e
+  publicação posterior ainda não confirmadas. Prioridade A, papel de âncora ou
+  suplemento e métricas de sobreposição não foram tratados como ranking de qualidade,
+  independência de estudos, inclusão final ou efetividade. Foi criado
+  docs/evidencias/corpus-prioridade-a-2026-08.md e preservado integralmente o registro
+  não redundante das 167 publicações em
+  docs/evidencias/dados/publicacoes-primarias-prioridade-a-2026-08.csv. SRC-000343 foi
+  classificado como manifesto estrutural sem conteúdo intelectual residual exclusivo;
+  as outras onze fontes são relevantes. BACKLOG.yaml e DECISOES.md permaneceram
+  inalterados. Nenhuma decisão de produto, requisito ou autorização de implementação
+  foi criada.
 
 next_step: >-
-  Processar somente SRC-000338 a SRC-000349 como quinto lote exato de relação com a
-  pesquisa acadêmica. Auditar integralmente os doze artefatos estruturados de Prioridade A:
-  resumo de extração, sínteses formais, núcleo não redundante, outras evidências,
-  clusters e pares de sobreposição, manifesto, publicações primárias, completude das
-  revisões, incidência de publicações e famílias de estudo. Distinguir publicação,
-  estudo ou família de estudo, revisão, síntese e evidência primária; verificar contagens,
-  sobreposições, cobertura e limitações sem inferir independência de amostras, qualidade,
-  efetividade ou exaustão não sustentadas. Confrontar com RES-001, RES-002, a evidência
-  pública de triagem e as sínteses temáticas já materializadas. Encerrar sem avançar para
-  SRC-000352, SRC-000353, sínteses acadêmicas, bibliografias, requests, issues, pull
-  requests, comentários ou revisões.
+  Processar somente SRC-000352 e SRC-000353 como sexto lote exato de relação com a
+  pesquisa acadêmica. Ler integralmente review-of-reviews-01.csv e
+  structured-learning-literature-01.csv, distinguir revisão de revisões, literatura
+  estruturada, síntese secundária e evidência primária, conferir referências,
+  resultados, limites de transferência e relações com as 167 publicações primárias já
+  preservadas. Confrontar com RES-001, RES-002, PED-001 a PED-010, EXP-007, EXP-010 e
+  as evidências públicas de metodologia, triagem e Prioridade A, sem duplicar
+  conclusões pedagógicas já consolidadas nem transformar achados em decisões de
+  produto. Encerrar sem avançar para sínteses acadêmicas, bibliografias, requests,
+  issues, pull requests, comentários ou revisões.
