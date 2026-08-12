@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 193
-  processed: 0
+  identified: 189
+  processed: 4
   discarded: 0
   blocked: 0
   verified: 365
@@ -27,7 +27,7 @@ domains:
   infraestrutura_e_armazenamento: verified
   sincronizacao_e_funcionamento_offline: verified
   implantacao_e_interoperabilidade: verified
-  avaliacao_e_validacao: identified
+  avaliacao_e_validacao: processing
   relacao_com_a_pesquisa_academica: identified
 
 blockers: []
@@ -40,22 +40,22 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Auditoria integral de implantação e interoperabilidade concluída sobre SRC-000056,
-  SRC-000057, SRC-000115, SRC-000117, SRC-000350, SRC-000408 a SRC-000443,
-  SRC-000445 e SRC-000464. Foram conferidos cobertura e destinos, autoridade de
-  DEC-006 e DEC-007, limites dos resultados 6/6, 15/15 e 4/4, rejeição situada de
-  Web Worker e Node vm como sandbox produtiva contra código hostil, dez propostas
-  contratuais históricas, não execução e não seleção das bibliotecas externas,
-  temporalidade de versões e licenças, limites da síntese de programação móvel,
-  preservação dos protótipos e higiene pública. Resultado: 43 fontes promovidas de
-  processed para verified; nenhuma alteração no repositório público foi necessária.
-  A substituição integral do inventário também corrigiu, em SRC-000118, a expressão
-  "pacotes portáveis" para "pacotes portáteis", sem mudança de categoria, estado,
-  relevância, destino, autoridade ou conclusão.
+  Primeiro lote de avaliação e validação processado em SRC-000037 a SRC-000040.
+  Foram preservados protocolos e resultados históricos de contratos por primeiros
+  princípios, adapters descartáveis, revisão contratual 0.2 e comparação futura de
+  runtimes externos, sempre separando conformidade estrutural, comportamento de
+  protótipo, execução real, segurança, acessibilidade e efetividade educacional.
+  As dez emendas permanecem propostas do protótipo sem autoridade canônica; MathLive,
+  Cytoscape.js e Recogito não foram executados nem selecionados. A limitação ambiental
+  não foi tratada como evidência contra bibliotecas. O documento público sobre adapters
+  externos recebeu as condições e o método histórico para eventual revalidação futura.
+  BACKLOG.yaml e DECISOES.md permaneceram inalterados; nenhuma nova decisão de produto
+  foi criada. As quatro fontes foram registradas como processed e relevant=true.
 
 next_step: >-
-  Processar somente SRC-000037, SRC-000038, SRC-000039 e SRC-000040, as issues 36,
-  38, 40 e 42 no corpus congelado, como primeiro lote exato de avaliação e validação.
-  Ler integralmente as quatro fontes, classificar evidências, ideias, requisitos
-  históricos e pendências, confrontar os destinos canônicos pertinentes e encerrar o
-  lote antes de avançar para outra fonte do domínio.
+  Processar somente SRC-000048 e SRC-000058, as issues 64 e 74 no corpus congelado,
+  como segundo lote exato de avaliação e validação. Separar critérios residuais de
+  avaliação, conformance e evidência dos requisitos executáveis do programa de releases
+  encerrado; confrontar com VAL-001, VAL-002, EXP-005, PED-004, INF-001, os domínios
+  correlatos e DEC-007; encerrar o lote sem avançar para pull requests, arquivos de
+  dados ou outras fontes de avaliação e validação.
