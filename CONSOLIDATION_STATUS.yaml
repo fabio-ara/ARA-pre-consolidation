@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 103
-  processed: 67
+  identified: 96
+  processed: 74
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,28 +40,29 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Nono lote de relação com a pesquisa acadêmica processado em SRC-000016 e
-  SRC-000172 a SRC-000181. As onze bibliografias foram lidas integralmente e
-  classificadas como registros bibliográficos substantivos, todas relevant=true,
-  sem tratar presença em BibTeX como comprovação de acesso, qualidade, eficácia ou
-  adoção. Foram identificadas referências compartilhadas entre frentes temáticas;
-  essas ocorrências foram tratadas como sobreposição bibliográfica e não como
-  evidência independente adicional. Sete conjuntos já estavam suficientemente
-  preservados por corpora e evidências públicas existentes. Para evitar perda de
-  cobertura nas quatro frentes restantes, foram materializados BibTeX públicos de
-  autoria/revisão/publicação, formatos de resposta/feedback,
-  progressão/sequenciamento e sistemas iniciais, além de um índice público das onze
-  bibliografias e de suas regras de interpretação. Nenhum metadado foi completado
-  por pesquisa externa. BACKLOG.yaml e DECISOES.md permaneceram inalterados e
-  nenhuma decisão, requisito ou autorização de implementação foi criada.
+  Décimo lote de relação com a pesquisa acadêmica processado em SRC-000018,
+  SRC-000026, SRC-000027, SRC-000030, SRC-000031, SRC-000032 e SRC-000036.
+  As sete issues foram lidas integralmente no estado do cutoff e confrontadas com
+  o método, backlog, decisões e evidências acadêmicas já consolidadas. Todas foram
+  classificadas como processed e relevant=true. A issue mestra do programa
+  bibliográfico permanecia aberta no cutoff, mas seus componentes metodológicos e
+  pendências úteis já estão distribuídos em RES-001 a RES-003, SCOPE-003,
+  METODO_DE_TRABALHO.md e nas evidências públicas; sua abertura administrativa não
+  foi tratada como pendência canônica. As demais issues registram workflow histórico
+  de extração, busca formal, triagem, Prioridade A, sobreposição e enquadramento
+  acadêmico; seus encerramentos não foram promovidos a decisão, validação, qualidade,
+  eficácia ou completude. Nenhum conteúdo intelectual residual exigiu novo documento
+  público, alteração de backlog ou decisão. O repositório público não foi alterado
+  neste lote e nenhuma pesquisa externa ou autorização de implementação foi criada.
 
 next_step: >-
-  Processar somente SRC-000018, SRC-000026, SRC-000027, SRC-000030, SRC-000031,
-  SRC-000032 e SRC-000036 como décimo lote exato de relação com a pesquisa
-  acadêmica. Ler integralmente as sete issues no estado do cutoff, confrontá-las
-  com métodos, buscas, triagem, corpora, sínteses e bibliografias já processados,
-  separar workflow histórico e critérios de encerramento de problemas, evidências,
-  recomendações e pendências acadêmicas ainda válidas e preservar somente conteúdo
-  residual que ainda não tenha destino público. Não promover encerramento histórico
-  de issue a decisão ou validação do produto. Encerrar sem avançar para pull
-  requests, comentários ou revisões.
+  Processar somente SRC-000063, SRC-000066, SRC-000069, SRC-000070, SRC-000071,
+  SRC-000072, SRC-000073 e SRC-000074 como décimo primeiro lote exato de relação
+  com a pesquisa acadêmica. Ler integralmente os oito pull requests no estado do
+  cutoff, incluindo corpo, metadados e alterações necessárias para compreender seu
+  conteúdo substantivo, e confrontá-los com métodos, buscas, corpora, sínteses,
+  bibliografias e evidências já processados. Separar estado de merge, aprovação e
+  workflow histórico de evidências, recomendações, correções e pendências ainda
+  válidas; preservar somente conteúdo residual que ainda não tenha destino público.
+  Não promover merge ou aprovação histórica a decisão canônica ou resultado validado.
+  Encerrar sem avançar para comentários, revisões formais ou fontes multidomínio.
