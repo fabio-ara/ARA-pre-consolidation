@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 45
-  processed: 125
+  identified: 25
+  processed: 145
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,17 +40,13 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Segundo lote multidomínio processado em SRC-000494 a SRC-000513. Os vinte
-  comentários foram lidos e destinados. Correções posteriores preservam a continuidade
-  funcional com AraLearn e classificam protótipos transdomínio como evidência não
-  normativa. Hipóteses sobre microssequências reutilizáveis, estado contextual e
-  composição já estão cobertas por MODEL-001 a MODEL-005 e itens correlatos. Nenhuma
-  alteração no repositório público foi necessária.
+  Terceiro lote multidomínio processado em SRC-000514 a SRC-000533. Os vinte
+  comentários foram destinados sem nova alteração pública. Formulações normativas
+  históricas foram mantidas como evidência quando não correspondem à autoridade atual.
+  As cinco decisões MODEL permanecem pendentes.
 
 next_step: >-
-  Processar somente SRC-000514 a SRC-000533 como terceiro lote multidomínio. Ler
-  integralmente os vinte comentários no estado do cutoff e recuperar contexto apenas
-  quando indispensável. Separar confirmações, correções, decisões explícitas,
-  evidências, conflitos, recomendações e pendências; confrontar qualquer residual com
-  as fontes públicas canônicas já materializadas. Encerrar sem avançar para SRC-000534
-  ou posteriores nem para SRC-000555 a SRC-000558.
+  Processar somente SRC-000534 a SRC-000553 como quarto lote multidomínio. Ler os
+  vinte comentários no cutoff, recuperar contexto somente quando indispensável e
+  confrontar conteúdo residual com as fontes públicas canônicas. Encerrar sem avançar
+  para SRC-000554 nem para SRC-000555 a SRC-000558.
