@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 114
-  processed: 56
+  identified: 103
+  processed: 67
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,29 +40,28 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Oitavo lote de relação com a pesquisa acadêmica processado em SRC-000470 e
-  SRC-000471. Os dois registros de solicitação de textos integrais foram lidos
-  integralmente e confrontados somente com evidência posterior existente no corpus.
-  Xu 2024, Van Hoof 2023 e Carpenter 2023 permanecem com texto integral não
-  recuperado no marco, em níveis de extração por resumo ou resumo detalhado; a
-  ausência de recuperação não foi reclassificada como indisponibilidade. Odo 2024
-  permanece planned, sem comprovação de solicitação externa ou recebimento.
-  Agarwal et al. 2021 foi posteriormente resolvido por manuscrito aceito aberto e
-  extração em texto integral, sem evidência de solicitação externa. Foi criado
-  docs/evidencias/dados/estado-acesso-textos-prioritarios-2026-08.csv para
-  preservar os cinco estados sem publicar PDFs ou detalhes administrativos.
-  BACKLOG.yaml e DECISOES.md permaneceram inalterados. Ambas as fontes foram
-  registradas como processed e relevant=true. Nenhuma pesquisa externa, download de
-  texto, decisão de produto, requisito ou autorização de implementação foi criada.
+  Nono lote de relação com a pesquisa acadêmica processado em SRC-000016 e
+  SRC-000172 a SRC-000181. As onze bibliografias foram lidas integralmente e
+  classificadas como registros bibliográficos substantivos, todas relevant=true,
+  sem tratar presença em BibTeX como comprovação de acesso, qualidade, eficácia ou
+  adoção. Foram identificadas referências compartilhadas entre frentes temáticas;
+  essas ocorrências foram tratadas como sobreposição bibliográfica e não como
+  evidência independente adicional. Sete conjuntos já estavam suficientemente
+  preservados por corpora e evidências públicas existentes. Para evitar perda de
+  cobertura nas quatro frentes restantes, foram materializados BibTeX públicos de
+  autoria/revisão/publicação, formatos de resposta/feedback,
+  progressão/sequenciamento e sistemas iniciais, além de um índice público das onze
+  bibliografias e de suas regras de interpretação. Nenhum metadado foi completado
+  por pesquisa externa. BACKLOG.yaml e DECISOES.md permaneceram inalterados e
+  nenhuma decisão, requisito ou autorização de implementação foi criada.
 
 next_step: >-
-  Processar somente SRC-000016 e SRC-000172 a SRC-000181 como nono lote exato de
-  relação com a pesquisa acadêmica. Ler integralmente as onze bibliografias,
-  normalizar apenas o necessário para comparação, identificar duplicações entre
-  elas e com os corpora e registros bibliográficos já preservados, distinguir
-  referência bibliográfica de evidência efetivamente extraída e determinar quais
-  registros bibliográficos precisam ser preservados publicamente para impedir
-  perda de cobertura. Não completar metadados por pesquisa externa, não inferir
-  acesso ou qualidade a partir de presença em .bib e não transformar bibliografia
-  em evidência de eficácia. Encerrar sem avançar para issues, pull requests,
-  comentários ou revisões.
+  Processar somente SRC-000018, SRC-000026, SRC-000027, SRC-000030, SRC-000031,
+  SRC-000032 e SRC-000036 como décimo lote exato de relação com a pesquisa
+  acadêmica. Ler integralmente as sete issues no estado do cutoff, confrontá-las
+  com métodos, buscas, triagem, corpora, sínteses e bibliografias já processados,
+  separar workflow histórico e critérios de encerramento de problemas, evidências,
+  recomendações e pendências acadêmicas ainda válidas e preservar somente conteúdo
+  residual que ainda não tenha destino público. Não promover encerramento histórico
+  de issue a decisão ou validação do produto. Encerrar sem avançar para pull
+  requests, comentários ou revisões.
