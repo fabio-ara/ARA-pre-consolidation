@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 65
-  processed: 105
+  identified: 45
+  processed: 125
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,32 +40,17 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Primeiro lote multidomínio processado em SRC-000102, SRC-000103, SRC-000104 e
-  SRC-000474 a SRC-000493. As três coleções agregadas foram validadas contra o
-  inventário: os 86 comentários gerais correspondem a 81 comentários substantivos
-  enumerados individualmente e cinco mensagens procedimentais contabilizadas somente
-  em conjunto; as quatro revisões formais estão enumeradas em SRC-000555 a SRC-000558;
-  não há comentários de revisão em linha nem anexos ou imagens no recorte registrado.
-  As três coleções ficaram processed e relevant=false por terem função apenas de
-  cobertura. Os vinte comentários foram lidos integralmente no estado do cutoff e
-  ficaram processed e relevant=true. A maior parte confirma pesquisas, auditorias e
-  protótipos já consolidados. As correções explícitas mais importantes impedem usar o
-  corpus centrado em flashcards como fronteira da taxonomia, tratam card como unidade
-  de orquestração e não como sinônimo de flashcard, distinguem representação,
-  atividade, resposta, validação e retorno pedagógico e reclassificam os 18 recursos
-  anteriores como sementes legadas situadas. Essas correções já estão preservadas em
-  SCOPE-003, SCOPE-005, EXP-003, EXP-004, MODEL-001, MODEL-003 e evidências públicas;
-  a linguagem forte dos comentários não foi promovida a decisão porque MODEL-001 a
-  MODEL-005 continuam pending_owner_approval. Nenhum conteúdo residual exigiu nova
-  alteração pública, de backlog ou de decisões.
+  Segundo lote multidomínio processado em SRC-000494 a SRC-000513. Os vinte
+  comentários foram lidos e destinados. Correções posteriores preservam a continuidade
+  funcional com AraLearn e classificam protótipos transdomínio como evidência não
+  normativa. Hipóteses sobre microssequências reutilizáveis, estado contextual e
+  composição já estão cobertas por MODEL-001 a MODEL-005 e itens correlatos. Nenhuma
+  alteração no repositório público foi necessária.
 
 next_step: >-
-  Processar somente SRC-000494 a SRC-000513 como segundo lote exato multidomínio.
-  Ler integralmente os vinte comentários no estado do cutoff e recuperar o contexto
-  da issue ou pull request somente quando necessário para interpretar seu conteúdo.
-  Separar confirmações e coordenação histórica de correções, decisões explícitas do
-  responsável, evidências, conflitos, recomendações e pendências ainda válidas;
-  confrontar qualquer residual com README.md, METODO_DE_TRABALHO.md, BACKLOG.yaml,
-  DECISOES.md e evidências públicas já materializadas. Não promover aprovação
-  informal, reação, merge ou encerramento administrativo a decisão canônica. Encerrar
-  sem avançar para SRC-000514 ou posteriores nem para SRC-000555 a SRC-000558.
+  Processar somente SRC-000514 a SRC-000533 como terceiro lote multidomínio. Ler
+  integralmente os vinte comentários no estado do cutoff e recuperar contexto apenas
+  quando indispensável. Separar confirmações, correções, decisões explícitas,
+  evidências, conflitos, recomendações e pendências; confrontar qualquer residual com
+  as fontes públicas canônicas já materializadas. Encerrar sem avançar para SRC-000534
+  ou posteriores nem para SRC-000555 a SRC-000558.
