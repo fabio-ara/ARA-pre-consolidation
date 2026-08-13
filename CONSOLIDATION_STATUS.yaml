@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 96
-  processed: 74
+  identified: 88
+  processed: 82
   discarded: 0
   blocked: 0
   verified: 388
@@ -28,7 +28,7 @@ domains:
   sincronizacao_e_funcionamento_offline: verified
   implantacao_e_interoperabilidade: verified
   avaliacao_e_validacao: verified
-  relacao_com_a_pesquisa_academica: processing
+  relacao_com_a_pesquisa_academica: verified
 
 blockers: []
 
@@ -40,29 +40,35 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Décimo lote de relação com a pesquisa acadêmica processado em SRC-000018,
-  SRC-000026, SRC-000027, SRC-000030, SRC-000031, SRC-000032 e SRC-000036.
-  As sete issues foram lidas integralmente no estado do cutoff e confrontadas com
-  o método, backlog, decisões e evidências acadêmicas já consolidadas. Todas foram
-  classificadas como processed e relevant=true. A issue mestra do programa
-  bibliográfico permanecia aberta no cutoff, mas seus componentes metodológicos e
-  pendências úteis já estão distribuídos em RES-001 a RES-003, SCOPE-003,
-  METODO_DE_TRABALHO.md e nas evidências públicas; sua abertura administrativa não
-  foi tratada como pendência canônica. As demais issues registram workflow histórico
-  de extração, busca formal, triagem, Prioridade A, sobreposição e enquadramento
-  acadêmico; seus encerramentos não foram promovidos a decisão, validação, qualidade,
-  eficácia ou completude. Nenhum conteúdo intelectual residual exigiu novo documento
-  público, alteração de backlog ou decisão. O repositório público não foi alterado
-  neste lote e nenhuma pesquisa externa ou autorização de implementação foi criada.
+  Décimo primeiro lote de relação com a pesquisa acadêmica processado em
+  SRC-000063, SRC-000066 e SRC-000069 a SRC-000074. Os oito pull requests foram
+  lidos em corpo e metadados, e seus arquivos alterados e diffs foram examinados
+  na medida necessária para conferir conteúdo substantivo e mudanças de estado
+  metodológico, sem ler comentários ou revisões formais. Todos os arquivos
+  substantivos modificados por esses PRs já haviam sido processados individualmente,
+  portanto merge e fechamento foram tratados somente como workflow histórico, sem
+  autoridade para criar decisão, requisito, validação, qualidade ou efetividade.
+  A sequência entre preparação sem contagens, validação intermediária, conclusão da
+  busca, triagem, Prioridade A e auditoria de sobreposição permaneceu explícita. A
+  auditoria revelou uma limitação material ainda não registrada publicamente: os
+  exports brutos PubMed/ERIC e os conjuntos completos de triagem, amostra auditada,
+  subconjunto A/B e pacote compactado foram historicamente recebidos ou entregues,
+  mas seus bytes não integram o material versionado disponível. Essa limitação foi
+  preservada em docs/evidencias/dados/README.md sem reconstruir arquivos a partir de
+  hashes ou contagens. BACKLOG.yaml e DECISOES.md permaneceram inalterados. Todos os
+  oito PRs ficaram processed e relevant=true. Não resta fonte diretamente classificada
+  como relação com a pesquisa acadêmica em estado identified, por isso o domínio foi
+  marcado verified, sujeito à auditoria transversal das fontes multidomínio restantes.
 
 next_step: >-
-  Processar somente SRC-000063, SRC-000066, SRC-000069, SRC-000070, SRC-000071,
-  SRC-000072, SRC-000073 e SRC-000074 como décimo primeiro lote exato de relação
-  com a pesquisa acadêmica. Ler integralmente os oito pull requests no estado do
-  cutoff, incluindo corpo, metadados e alterações necessárias para compreender seu
-  conteúdo substantivo, e confrontá-los com métodos, buscas, corpora, sínteses,
-  bibliografias e evidências já processados. Separar estado de merge, aprovação e
-  workflow histórico de evidências, recomendações, correções e pendências ainda
-  válidas; preservar somente conteúdo residual que ainda não tenha destino público.
-  Não promover merge ou aprovação histórica a decisão canônica ou resultado validado.
-  Encerrar sem avançar para comentários, revisões formais ou fontes multidomínio.
+  Processar somente SRC-000102, SRC-000103, SRC-000104 e SRC-000474 a SRC-000493
+  como primeiro lote exato multidomínio. Validar as três coleções agregadas contra o
+  inventário e ler integralmente os vinte primeiros comentários substantivos no estado
+  do cutoff, identificando a issue ou pull request de contexto quando necessário para
+  interpretar o comentário sem ampliar o corpus. Separar mensagens procedimentais,
+  duplicações e confirmações de conteúdo substantivo de correções, decisões explícitas
+  do responsável, evidências, conflitos, recomendações e pendências ainda válidas;
+  confrontar qualquer residual com README.md, METODO_DE_TRABALHO.md, BACKLOG.yaml,
+  DECISOES.md e evidências públicas já materializadas. Não promover aprovação informal,
+  reação, merge ou encerramento administrativo a decisão canônica. Encerrar sem avançar
+  para SRC-000494 ou posteriores nem para SRC-000555 a SRC-000558.
