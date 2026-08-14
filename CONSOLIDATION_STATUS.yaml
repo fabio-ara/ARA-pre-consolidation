@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 25
-  processed: 145
+  identified: 5
+  processed: 165
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,13 +40,18 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Terceiro lote multidomínio processado em SRC-000514 a SRC-000533. Os vinte
-  comentários foram destinados sem nova alteração pública. Formulações normativas
-  históricas foram mantidas como evidência quando não correspondem à autoridade atual.
-  As cinco decisões MODEL permanecem pendentes.
+  Quarto lote multidomínio processado em SRC-000534 a SRC-000553. Dezenove
+  comentários substantivos foram destinados às fontes públicas já existentes e
+  SRC-000536 foi classificado como instrução administrativa sem conteúdo intelectual
+  residual. Handoffs de implementação, versionamento, acesso, agentes e instrumentação
+  foram reconciliados com a autoridade canônica atual sem promover formulações
+  históricas a decisões ou requisitos. Nenhuma alteração pública foi necessária.
 
 next_step: >-
-  Processar somente SRC-000534 a SRC-000553 como quarto lote multidomínio. Ler os
-  vinte comentários no cutoff, recuperar contexto somente quando indispensável e
-  confrontar conteúdo residual com as fontes públicas canônicas. Encerrar sem avançar
-  para SRC-000554 nem para SRC-000555 a SRC-000558.
+  Processar somente SRC-000554 e SRC-000555 a SRC-000558 como último lote de fontes
+  ainda identified. Ler integralmente o comentário final e as quatro revisões formais
+  no estado do cutoff, recuperando contexto somente quando indispensável. Separar
+  revisão administrativa, aprovação de pull request e merge de evidências, correções,
+  decisões explícitas, conflitos e pendências ainda válidas. Confrontar qualquer
+  residual com README.md, METODO_DE_TRABALHO.md, BACKLOG.yaml, DECISOES.md e evidências
+  públicas. Encerrar o lote sem iniciar FINAL_AUDIT.md nem declarar a missão concluída.
