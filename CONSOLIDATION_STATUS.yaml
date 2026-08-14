@@ -7,8 +7,8 @@ phase: processing
 
 counts:
   total: 558
-  identified: 5
-  processed: 165
+  identified: 0
+  processed: 170
   discarded: 0
   blocked: 0
   verified: 388
@@ -40,18 +40,19 @@ pending_decisions:
   - MODEL-005
 
 last_batch: >-
-  Quarto lote multidomínio processado em SRC-000534 a SRC-000553. Dezenove
-  comentários substantivos foram destinados às fontes públicas já existentes e
-  SRC-000536 foi classificado como instrução administrativa sem conteúdo intelectual
-  residual. Handoffs de implementação, versionamento, acesso, agentes e instrumentação
-  foram reconciliados com a autoridade canônica atual sem promover formulações
-  históricas a decisões ou requisitos. Nenhuma alteração pública foi necessária.
+  Último lote de fontes identificadas processado em SRC-000554 a SRC-000558.
+  O comentário final e as quatro revisões formais foram lidos e reconciliados
+  com a autoridade canônica atual. A conexão entre DAG de revisões e pesquisa
+  já está preservada em proveniência, dados e instrumentação; o handoff normativo
+  da taxonomia permanece histórico; o programa R0-R5 e seu gate administrativo
+  foram explicitamente superados pelo retorno ao pré-desenvolvimento. As cinco
+  fontes foram registradas como processed e relevant=true. Nenhuma alteração
+  pública foi necessária. Não restam fontes identified.
 
 next_step: >-
-  Processar somente SRC-000554 e SRC-000555 a SRC-000558 como último lote de fontes
-  ainda identified. Ler integralmente o comentário final e as quatro revisões formais
-  no estado do cutoff, recuperando contexto somente quando indispensável. Separar
-  revisão administrativa, aprovação de pull request e merge de evidências, correções,
-  decisões explícitas, conflitos e pendências ainda válidas. Confrontar qualquer
-  residual com README.md, METODO_DE_TRABALHO.md, BACKLOG.yaml, DECISOES.md e evidências
-  públicas. Encerrar o lote sem iniciar FINAL_AUDIT.md nem declarar a missão concluída.
+  Submeter somente MODEL-001 a MODEL-005 a Fabio para decisão como próximo passo.
+  Apresentar entendimento consolidado, evidências, conflitos, alternativas,
+  consequências, recomendação e alterações públicas propostas para cada item,
+  sem decidir pelo responsável. Não alterar BACKLOG.yaml ou DECISOES.md antes da
+  resposta de Fabio e não iniciar FINAL_AUDIT.md enquanto essas cinco decisões
+  permanecerem pendentes.
